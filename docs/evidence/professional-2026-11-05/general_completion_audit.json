@@ -1,0 +1,15 @@
+{
+  "completed_epochs": 128,
+  "steps": 64000,
+  "selected_epoch": 128,
+  "stage": "holdout",
+  "seconds": 3461,
+  "seed": 20281023,
+  "config_overrides": {
+    "width": 256,
+    "layers": 4,
+    "heads": 8
+  },
+  "training_seconds": 2661.50400000019,
+  "all_epochs_complete": true
+}

@@ -36,6 +36,7 @@ MODELS = {
 def load_holdout(cfg, path, device):
     checkpoint = torch.load(path, map_location='cpu', weights_only=True)
     assert checkpoint['stage'] == 'holdout'
+    assert not checkpoint.get('smoke', False), 'Smoke checkpoints cannot qualify a model'
     settings = dict(cfg, **checkpoint.get('cfg_overrides', {}))
     model = L.SpectrumCandidateModel(settings).to(device)
     model.load_state_dict(checkpoint['state_dict'])
@@ -105,7 +106,7 @@ def main():
     assert len(cands) == len(unseen.files) == 234
     provenance, summaries, rows, scores = {}, {}, [], {}
     custom = dict(s.split('=', 1) for s in args.checkpoint)
-    models = dict(MODELS, **{name:Path(path) for name,path in custom.items()})
+    models = dict(MODELS, **{name:Path(path).resolve() for name,path in custom.items()})
     selected = (args.models or list(custom)) if custom else (args.models or list(MODELS))
     for name in selected:
         path = models[name]

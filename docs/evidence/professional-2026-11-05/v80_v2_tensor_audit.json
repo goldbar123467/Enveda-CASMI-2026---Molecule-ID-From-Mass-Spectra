@@ -1,0 +1,7 @@
+{
+  "public_v2_vs_v80_full_state_max_abs_error": 0.0,
+  "identical_model_tensors": true,
+  "public_epoch": 52,
+  "v80_epoch": 52,
+  "inference_performed": false
+}

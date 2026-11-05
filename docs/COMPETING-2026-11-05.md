@@ -238,3 +238,95 @@ alternate v80-last gives **0.919135** (delta +0.002126, interval
 whereas baseline and v80-last trigger one. Thus the earlier positive-only
 interval from omitting the physical rule overstates the strength of local
 evidence. The actual submitted hidden scores remain the deciding measurement.
+
+## Current 0.481 public notebook: inspect, reproduce components, reject weak changes
+
+The November 5 source of [zz3t3rn41's notebook](https://www.kaggle.com/code/zz3t3rn41/casmi26-peaks-to-structures-v2)
+reports 0.481 and attaches accessible v2/v4 model datasets and a 149,983-structure
+[LOTUS dataset](https://www.kaggle.com/datasets/qwertykeypadapple/casmi26-lotus-candidates).
+Its published model configurations differ: v2 is 192/6/3 with embedding192 and
+52 refit epochs; v4 is 256/8/3 with embedding256 and 109 refit epochs. These are
+full-data refits, explicitly including former validation identities. We download
+them for provenance/production inspection and **do not score them on the panel**.
+The original trainer notebooks return 403. No holdout checkpoint from those
+private trainers is assumed available.
+
+Test the fixed final-layer policy separately with excluded-identity raw neural
+channels: source weights POP=0.10, SPEC=0.10, NP=0.12, library gate0.78, augmented
+LOTUS membership, and low-library NP leader promotion requiring a 0.055 score
+margin plus a better neural rank. No threshold is fitted here. Against the
+physical baseline panel MRR0.917009, the original-neural control gives0.906184,
+v80-best proxy0.906938 and v80-last0.915797. **Reject this composite prior/promotion
+policy on the panel.** The exact published three-model ensemble is not evaluated
+by these numbers. Its claimed score and claims of protected leaders cannot be
+treated as measured guarantees for our run.
+
+Tensor-level provenance check: the downloaded published v2 full model and P01's
+v80 full model have **identical state tensors, maximum absolute error 0.0**, both
+at epoch52. Their serialized file hashes differ. This resolves the concern that
+the v80 attachment introduced different learned weights; it does not turn the
+reported public score into an observed score on our account. No inference on
+training molecules was needed for this check.
+
+## First completed wide run and the next controlled test
+
+PL08 completed on the RTX2070 at **20:03 UTC**: 128 complete epochs, **64,000
+optimizer steps**, fixed final epoch128, 3,461 seconds including diagnostics.
+The saved model is the final checkpoint, although the legacy retrieval monitor
+peaked at epoch114. It gives native familiar MRR0.456220, formula-oracle MRR0.484772,
+and hard185 oracle MRR0.393802. None of those is a Kaggle score.
+
+On the exact in-list physical panel replay, original50%/general20-50% plus the
+fixed P01 prior gives0.922160 versus baseline0.917009. The prespecified
+original50%/v80-25%/general20-25% blend gives0.922864. Against P01's holdout proxy
+0.918796, that latter difference is+0.004067 (paired interval
+[-0.000298,+0.012500], one improved / one harmed). Thus the point estimate is
+promising but still uncertain and based on reused targets.
+
+Local PL09 starts the matching native-preferred seed20 at **20:04 UTC**. Its
+actual manifest matches the general run's training/exclusion hashes. Native
+views exist for163,854 of246,233 training molecules, with1,030,691 native rows.
+An exposure audit is essential: under the original uniform-by-molecule sampler,
+the expected native-view fraction is already **65.8957%**, rising only to
+**66.5443%** under native preference. Only3,810 training molecules have both
+matched native and other views. The validation acquisition mismatch was real,
+but the proposed native sampler changes training exposure only slightly. Finish
+the paired experiment and avoid extrapolating a large domain-correction effect.
+
+The second Kaggle session P07 prepares a fixed general20 production refit on
+GPU0 and a union-excluded replica of the published v4 architecture on GPU1.
+Version1 failed at argument parsing before any epoch; version2 uses a checked
+structured dispatcher. The replica deliberately uses original seed0 with its
+different architecture through the training library API. The production model
+will never be evaluated on its former holdout.
+
+The next preregistered hypothesis changes **chemical-domain sampling** instead.
+The public metadata/LOTUS union annotates23,076 of246,233 training molecules
+(9.3716%). Hold the parent weights, loss, new AdamW initialization and learning
+rate2e-5 fixed, then compare32 full epochs under:
+
+- Original uniform-by-molecule sampling.
+- `q(m)=0.5 Uniform(all training identities)+0.5 Uniform(annotated NP training identities)`.
+
+The second condition assigns54.6858% probability mass to annotated NP identities
+before sampling each batch without replacement. This is an annotation-defined
+subpopulation, not a complete classification of natural products. The original
+hard-negative pools, fingerprint auxiliary loss and fingerprint class weights
+remain unchanged; the in-batch negative composition naturally follows the
+sampled positive molecules. Both conditions reset optimizer state equally.
+
+Use independent parents general20 (local) and general21 (Kaggle), preserving all
+27,600 exclusions. Compare each continuation with its parent and with the
+ordinary continuation on native234, hard185 and the exact physical panel. Do
+not pool two seeds as468 independent targets: report each seed pair, then a
+molecule-paired mean over seeds with its limited interpretation. Keep the
+published blend weights fixed. Favor a production NP continuation only if the
+effect repeats across parents and does not worsen the final panel proxy; no
+threshold sweep or new rank-1 prior is part of this test.
+
+PL13 real RTX2070 smoke passes both conditions: four actual optimizer steps per
+condition, exact parent load, finite changed parameters, matched source hashes.
+The16-target toy diagnostic is explicitly unqualified and omitted from scientific
+results. Smoke checkpoints are rejected by the evaluation loader. P09 is
+packaged and will launch after P05 frees a Kaggle session; it has not consumed
+a scoring submission.

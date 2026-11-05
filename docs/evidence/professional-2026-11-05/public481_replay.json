@@ -1,0 +1,99 @@
+{
+  "n": 120,
+  "fresh_test": false,
+  "competition_mrr": false,
+  "full_pipeline": false,
+  "exact_in_list_physical_merge": true,
+  "candidate_generation_replayed": false,
+  "physical_source_sha256": "cd1594b3bbfa75ce30997559c5403438b7cec011879dcb9c0d48e111715dd85d",
+  "baseline_leader_moves": 1,
+  "leader_moves": {
+    "baseline": 1,
+    "v80_best": 2,
+    "v80_best_public481": 2,
+    "v80_last": 1,
+    "v80_last_public481": 1
+  },
+  "np_promotions": {
+    "public481_control": 2,
+    "v80_best": 0,
+    "v80_best_public481": 2,
+    "v80_last": 0,
+    "v80_last_public481": 0
+  },
+  "comparisons": {
+    "public479": {
+      "n": 120,
+      "baseline_mrr25": 0.917009144237405,
+      "candidate_mrr25": 0.9189049145299145,
+      "delta": 0.0018957702925094231,
+      "ci95": [
+        -0.000965188193449063,
+        0.005671272794234745
+      ],
+      "improved": 5,
+      "harmed": 1
+    },
+    "public481_control": {
+      "n": 120,
+      "baseline_mrr25": 0.917009144237405,
+      "candidate_mrr25": 0.906183954933955,
+      "delta": -0.010825189303450172,
+      "ci95": [
+        -0.025828886994647866,
+        0.0010396531306857315
+      ],
+      "improved": 4,
+      "harmed": 7
+    },
+    "v80_best": {
+      "n": 120,
+      "baseline_mrr25": 0.917009144237405,
+      "candidate_mrr25": 0.9187962962962963,
+      "delta": 0.0017871520588911899,
+      "ci95": [
+        -0.00972222222222222,
+        0.011587301587301589
+      ],
+      "improved": 6,
+      "harmed": 2
+    },
+    "v80_best_public481": {
+      "n": 120,
+      "baseline_mrr25": 0.917009144237405,
+      "candidate_mrr25": 0.9069381313131314,
+      "delta": -0.010071012924273794,
+      "ci95": [
+        -0.02805914933496455,
+        0.004444940476190468
+      ],
+      "improved": 5,
+      "harmed": 6
+    },
+    "v80_last": {
+      "n": 120,
+      "baseline_mrr25": 0.917009144237405,
+      "candidate_mrr25": 0.9191351776878094,
+      "delta": 0.0021260334504041595,
+      "ci95": [
+        -0.0037042124542124547,
+        0.008730088878830295
+      ],
+      "improved": 5,
+      "harmed": 2
+    },
+    "v80_last_public481": {
+      "n": 120,
+      "baseline_mrr25": 0.917009144237405,
+      "candidate_mrr25": 0.9157972582972583,
+      "delta": -0.00121188594014681,
+      "ci95": [
+        -0.008894656973461321,
+        0.0061662647437103835
+      ],
+      "improved": 4,
+      "harmed": 4
+    }
+  },
+  "seconds": 2.928649663925171
+}
