@@ -27,7 +27,10 @@ These rules come from the user's instructions of 2026-10-28 and replace everythi
 
 ## Submissions
 
-- Use **all 5 submissions every UTC day** (reset 00:00 UTC). Do not hold one back.
+- **Current override (2026-11-05): submit only after the two local rounds and
+  evidence of improvement over the best submitted method.** Do not spend the
+  daily allowance just to fill it. See `docs/SCIENCE-2026-11-05.md`.
+- Historical default, superseded by the current override: use all 5 submissions every UTC day.
 - **Submit at most 2 at a time** (user, 2026-11-02). When working a full day, spread the batches across the day so
   later picks can use earlier scores (scoring takes ~5 h); never send all 5 at once.
 - Only submit kernel versions that completed (`KernelWorkerStatus.COMPLETE`) and wrote `submission.csv`.

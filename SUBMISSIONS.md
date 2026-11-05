@@ -46,3 +46,10 @@ natural products. v1 (v33 residual) 0.477 = no effect. Analysis and the w20/w21 
 
 Queue and push/submit state: `kaggle/forks/queue.json` (10-28), `kaggle/forks/queue-2026-10-29.json`;
 orchestrator log: `outputs/autopilot.log`.
+
+2026-11-05: **no new submission**. Two full 32-epoch local RTX 2070 candidate-loss
+training/evaluation rounds completed. The selected tail-only fusion changed reserved
+confirmation MRR by -0.000056 / +0.000259; both 95% paired intervals include zero.
+The natural-product coefficient sweep also failed confirmation. Best submitted public
+score remains **0.477**. No Kaggle scoring run or extra GPU quota was used.
+See [`docs/SCIENCE-2026-11-05.md`](docs/SCIENCE-2026-11-05.md).

@@ -1,0 +1,118 @@
+{
+  "protocol": "NP identities excluded from these three historical models; first-seed development fits a coefficient, frozen for all confirmations; no candidate generator",
+  "n": 234,
+  "development": 129,
+  "confirmation": 105,
+  "selected_fingerprint_factor": 2.0,
+  "original_factor": 1.0,
+  "sweep": [
+    {
+      "fingerprint_factor": 0.0,
+      "mrr25": 0.5499681056963799
+    },
+    {
+      "fingerprint_factor": 0.25,
+      "mrr25": 0.5503293561397096
+    },
+    {
+      "fingerprint_factor": 0.5,
+      "mrr25": 0.5498182393495231
+    },
+    {
+      "fingerprint_factor": 1.0,
+      "mrr25": 0.5441119516664913
+    },
+    {
+      "fingerprint_factor": 2.0,
+      "mrr25": 0.5530020757835935
+    },
+    {
+      "fingerprint_factor": 4.0,
+      "mrr25": 0.544514948875414
+    }
+  ],
+  "models": [
+    {
+      "model": "np_np7_e64_11873492_1793295751.npz",
+      "development": {
+        "n": 129,
+        "baseline_mrr25": 0.5441119516664913,
+        "candidate_mrr25": 0.5530020757835935,
+        "delta": 0.008890124117102303,
+        "ci95": [
+          -0.004458076478245317,
+          0.023840589870519128
+        ],
+        "improved": 10,
+        "harmed": 5
+      },
+      "confirmation": {
+        "n": 105,
+        "baseline_mrr25": 0.5570140775119334,
+        "candidate_mrr25": 0.5539002960057033,
+        "delta": -0.003113781506230019,
+        "ci95": [
+          -0.014748035457846668,
+          0.004610126006293054
+        ],
+        "improved": 4,
+        "harmed": 5
+      }
+    },
+    {
+      "model": "np_np8_e64_11873492_1793304673.npz",
+      "development": {
+        "n": 129,
+        "baseline_mrr25": 0.492017395650784,
+        "candidate_mrr25": 0.4931723395714057,
+        "delta": 0.001154943920621795,
+        "ci95": [
+          -0.0035570290740704383,
+          0.005785614632831852
+        ],
+        "improved": 8,
+        "harmed": 5
+      },
+      "confirmation": {
+        "n": 105,
+        "baseline_mrr25": 0.5501287423181833,
+        "candidate_mrr25": 0.5511186783081193,
+        "delta": 0.0009899359899359903,
+        "ci95": [
+          -0.01313752913752914,
+          0.015116295741295737
+        ],
+        "improved": 6,
+        "harmed": 4
+      }
+    },
+    {
+      "model": "np_np9_e64_11873492_1793305997.npz",
+      "development": {
+        "n": 129,
+        "baseline_mrr25": 0.5404479309620068,
+        "candidate_mrr25": 0.5457543170823466,
+        "delta": 0.005306386120339608,
+        "ci95": [
+          -0.00033837824535498987,
+          0.014680155653992853
+        ],
+        "improved": 6,
+        "harmed": 3
+      },
+      "confirmation": {
+        "n": 105,
+        "baseline_mrr25": 0.5372307753510761,
+        "candidate_mrr25": 0.5311094601583324,
+        "delta": -0.006121315192743764,
+        "ci95": [
+          -0.017726757369614512,
+          0.0011125566893423994
+        ],
+        "improved": 4,
+        "harmed": 6
+      }
+    }
+  ],
+  "hidden_score_comparable": false
+}
