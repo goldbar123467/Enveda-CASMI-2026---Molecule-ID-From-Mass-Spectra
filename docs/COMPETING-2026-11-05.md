@@ -1,0 +1,240 @@
+# Competing toward an observed score above 0.477
+
+The user resumed work on 2026-11-05 with the explicit stopping condition: keep
+working until the submitted public score exceeds the current best **0.477**.
+An improved artificial retrieval metric is not completion of that objective.
+
+## Operating method
+
+1. Reproduce a strong, available baseline before inventing further changes. Keep
+   a clear distinction between an author's displayed score and our observed score.
+2. Validate metric-exact identities, real inference preprocessing and actual
+   candidate lists. Split at molecule identity, never at individual spectrum.
+3. Track distinct deployment cases: reference available, known structure without
+   reference, and a structure removed from the candidate pool. The last case is
+   still an optimistic novelty simulation, not a sample of genuinely new chemistry.
+4. Evaluate retrieval/ranking changes at the retrieval/ranking level. Fingerprint
+   or embedding quality alone is not a submission criterion. Use paired molecular
+   deltas, error counts, uncertainty and explicit missing-truth denominators.
+5. Predeclare a candidate and freeze its settings before hidden evaluation. Do
+   not treat many correlated seeds, reused panels, or public notebook clones as
+   independent evidence. Record negative results and failures too.
+6. Run local GPU scoring and training with two CPU threads. Keep full library
+   search and forward models on Kaggle; at most two GPU sessions and at most two
+   pending submissions. Do not spend the submission allowance on failed candidates.
+
+Sources: [official metric and notebook requirements](https://www.kaggle.com/competitions/enveda-CASMI26-molecule-id-mass-spectra/overview/evaluation),
+[CASMI practitioner notes](https://www.kaggle.com/competitions/enveda-CASMI26-molecule-id-mass-spectra/discussion/743254),
+[MassSpecGym](https://arxiv.org/abs/2410.23326),
+[Jürgens et al., selective molecular retrieval](https://arxiv.org/abs/2603.10950v2),
+and [MSAlign](https://arxiv.org/abs/2605.19752v2).
+The selective-retrieval paper supports assessing uncertainty at the target task
+level; we do not claim its risk guarantees transfer to these reused CASMI panels.
+
+## Candidate P01: reproduce the reported public 0.480 method
+
+Source: [alex chilton's 0.480 neural ensemble](https://www.kaggle.com/code/alexchilton/casmi26-lb-0-480-neural-ensemble),
+crediting bgunshui, Baidalin Adilzhan, Kunal Desale and the existing public lineage.
+The attached [public v80 rebuild](https://www.kaggle.com/code/alexchilton/casmi26-scorer-train-v80)
+is COMPLETE. It selected epoch 52 from 56 holdout epochs, then refit on all data
+for 52 epochs. Its displayed 0.480 claim predates that rebuilt attachment; an
+observed reproduction on our account is still required.
+
+The fixed recipe averages within-query standardized public and rebuilt neural
+scores at 0.5/0.5, uses the public leader-safe consensus, fragment merge, fixed
+documentation/spectral/NP prior on ranks 2–25, and tautomer-canonical connectivity
+deduplication with available backfills. No weights are tuned in this reproduction.
+
+Our private fork changes only robust hidden-rerun detection and a strict final
+audit: the second model must be found and the merge must actually apply. It runs
+a real smoke; fast placeholder commits do not qualify. Copied source `id_no` was
+removed after the first SaveKernel request was rejected before execution.
+
+Prospective submission criterion for this fixed external reproduction: available
+assets, exact local neural-score reproduction, positive regression-panel changes
+with both holdout checkpoints, supportive natural-product tail-prior checks,
+and successful real pipeline smoke with no silent fallback. These justify testing
+an expected improvement; they cannot guarantee the unseen Kaggle score. The
+previous strict two-seed rule concerned the newly fitted candidate-loss fusion,
+which remains rejected. This reproduction is a different, fixed candidate.
+
+## Correcting the validation input contract
+
+The old local cache uses float16 peak tensors and deduplicates model inputs.
+The deployed neural scorer constructs float32 tensors from raw query spectra
+without that deduplication. The 120-molecule public panel has five query-count
+differences against the local cache. Therefore the previous cached-input panel
+replays were approximate, even though validation identities were excluded.
+
+We downloaded the public panel's exact `effective_query_spectra.parquet` files,
+reapplied the deployed filters and checked every per-query spectrum count.
+The kit holdout model now reproduces all stored scores to maximum absolute
+error **1.90735e-6**. The old cached-input audit correctly failed instead of
+silently accepting a mismatch (PL01); raw replay PL02 passes.
+
+### Fixed public recipe, exact raw inputs, 120 regression molecules
+
+| Rule | MRR@25 | Delta from current-recipe proxy | Improved / harmed |
+|---|---:|---:|---:|
+| Current 0.477 consensus proxy | 0.912842 | — | — |
+| Documentation prior, original scorer | 0.914738 | +0.001896 | 5 / 1 |
+| Public 0.480 recipe, v80 best holdout | 0.918796 | +0.005954 | 6 / 1 |
+| Public 0.480 recipe, v80 last holdout | 0.914969 | +0.002126 | 5 / 2 |
+
+Best-checkpoint paired bootstrap 95% interval: **[+0.000240, +0.013267]**;
+last-checkpoint interval: **[-0.003704, +0.008730]**. Both point estimates improve.
+This reused public panel also participated in historical model selection; these
+are regression checks, not independent confirmation or hidden-test MRR. The
+local replay does not reproduce the full fragment merge or outsider recovery.
+
+Fixed alternatives averaging our two candidate-loss models, or those models and
+v80, added only +0.000150/+0.000058 against this public recipe, with wide intervals
+and five harmed molecules each. No production refit is justified for those blends.
+
+### Natural-product documentation-prior stress checks
+
+Apply the fixed tail prior to the existing top-25 lists, retaining rank 1 and
+keeping all 250 identities in each scenario, including missing truths as zero.
+This isolates a tail-prior regression check, not the full 0.480 neural pipeline.
+
+| Cached scenario | Baseline MRR | With fixed tail prior | Delta | Improved / harmed |
+|---|---:|---:|---:|---:|
+| Reference in other libraries | 0.954830 | 0.958667 | +0.003836 | 7 / 0 |
+| Structure in pool, no reference | 0.970641 | 0.972641 | +0.002000 | 4 / 0 |
+| Structure removed from pool | 0.360533 | 0.364333 | +0.003800 | 7 / 0 |
+
+The first two scenarios have optimistic absolute accuracy because upstream
+models may have seen the identities; deleting a known structure does not create
+genuinely novel chemistry. No headline Kaggle claim is based on these numbers.
+
+## Precision hypothesis: tested and rejected as a production change
+
+Float16 storage changes peak positions; high-frequency m/z features make this
+a reasonable failure hypothesis. Raw versus quantized inputs changed neural
+scores but gave identical final recipe rankings on the 120-molecule panel.
+
+P03 exported **54,665 raw spectra** for the fixed 234 NP holdout identities.
+RDKit **2026.03.3** verifies all 278 source SMILES map to their expected canonical
+identities. After the exact kit duplicate/filter rule, **49,512 spectra** remain,
+with all 234 query counts matching the training cache and no missing molecules.
+Median absolute m/z quantization error is **0.02684 Da**, 99th percentile **0.19413 Da**.
+
+On the 2070, three historical NP holdout models compare identical queries and
+fixed 256-candidate sets. Quantization minus raw MRR deltas are
+**-0.001758 / -0.000270 / +0.000243**. The molecule-paired mean-over-seeds delta is
+**-0.000595**, interval **[-0.001582, +0.000148]**. The seeds share the same molecules.
+Quantized scores also reproduce the historical NP diagnostics exactly. Thus
+quantization is a real input mismatch, but correcting deployment to quantized
+inputs has no supported benefit. Keep raw inference; do not promote this patch.
+
+## Run state
+
+P01 real GPU smoke completed: both models loaded, zero input failures, exact
+50/50 standardized-score agreement, merge applied, 400 valid rows, all 12 real
+smoke molecules processed. Commit output SHA-256:
+`5cb2f1ad75c64791fa63cbfabb7e70e29948e05d8cc3987de79d7e137cdc20b9`.
+The hidden rerun replaces that visible smoke output and runs every molecule.
+
+**Submitted P01 v1 at 2026-11-05 18:15 UTC, ref 58032057; pending hidden score.**
+P02 is the same documentation/dedup recipe with the original neural scorer only.
+Its smoke completed with 400 valid rows, 12 real processed molecules and zero
+input failures. Its 300 real neural candidate scores exactly match the original
+channel in P01 (maximum absolute error zero). Submitted at **18:40 UTC, ref
+58032626**. This control separates the new scorer from final-layer changes.
+
+The user requires at least **two submissions reserved for later decisions before
+00:00 UTC**, after the initial batch has scored. P01/P02 use two slots; three
+remain. No further batch will be sent before the initial scores are available.
+
+The read-only watcher polls every 180 seconds and requires a COMPLETE submission
+with a finite public score strictly greater than 0.477; a tie, pending result or
+invalid score cannot end the task. Objective remains active until an actual win.
+
+## Correcting the acquisition-domain validation
+
+The old 234-identity NP diagnostic used every reference spectrum of those
+identities: 54,665 raw spectra, including 25,771 from Riken, 9,837 GNPS, 6,212
+MassBank and 5,039 MoNA. Only **1,097 spectra** are the native Enveda NP timsTOF
+queries. The target identities were held out, but pooling acquisition domains
+made that diagnostic a poor stand-in for the hidden native query distribution.
+For example, NP64 seed9 changes from pooled-reference MRR about 0.5363 to native
+MRR 0.3764 on the same familiar 256-candidate groups. These are retrieval
+diagnostics, not full-pipeline or Kaggle scores.
+
+P04 additionally builds exact-formula candidate groups whose decoy identities
+are absent from **all 273,833 Kit cache identities**. There are 234 targets and
+10,724 unique decoys, at most 128 candidates per group. Group sizes range 1–128
+(median 28); report the 185 groups with at least eight candidates separately.
+The target identity is present first by construction, while decoys are unseen.
+These are explicitly **formula-oracle diagnostics**, with historically reused
+targets. They do not estimate competition MRR, and a value above 0.477 does not
+count as beating the submitted best.
+
+| Existing excluded-NP model | Native familiar MRR | Native unseen-formula MRR | Unseen groups with ≥8 candidates |
+|---|---:|---:|---:|
+| 16 epochs, seed1 | 0.2400 | 0.3773 | 0.2741 |
+| 32 epochs, seed6 | 0.3243 | 0.4007 | 0.2947 |
+| 64 epochs, seed7 | 0.3803 | 0.4321 | 0.3475 |
+| 128 epochs, seed8 | 0.4401 | 0.4511 | 0.3741 |
+| 256 epochs, seed10 | 0.4502 | 0.4933 | 0.4240 |
+| Width256, 128 epochs, seed12 | 0.4636 | 0.4802 | 0.4016 |
+
+Native-only raw/q16 checks remain mixed across three NP64 seeds; no precision
+patch is promoted. The acquisition finding motivates a controlled sampling
+experiment rather than another epoch-only ensemble.
+
+## Concurrent workstation and Kaggle GPU experiments
+
+The RTX 2070 and Kaggle T4×2 run independent fits concurrently. Both sources use
+the original training cache and loss, width256 / four layers / eight heads,
+128 complete epochs of 500 steps and a fixed final checkpoint. The exclusion
+cohort is the union of every original Kit validation identity and the NP234
+identities: **27,600 excluded, 246,233 training identities**. Thus the same new
+holdout checkpoints can be evaluated on both the public panel and native NP
+queries. Compare logical identity hashes across Windows and Linux; text-file
+byte hashes differ with line endings.
+
+Two conditions change only spectrum sampling within a training molecule:
+
+- General: original uniform choice from all its cached spectra.
+- Native-preferred: if a training molecule has a matched Enveda native view,
+  choose from its native views; otherwise retain its original views. Sampling
+  frequency per molecule, negative sampling, objective and architecture remain
+  the same. Held-out mappings are never modified.
+
+In notation, both minimize an average over the same training molecules,
+`E_m E_(s|m) loss(s,m)`. The experiment changes the conditional acquisition
+distribution `s|m`, while retaining the molecule distribution. This tests the
+acquisition hypothesis without introducing an additional loss or capacity change.
+The two paired seeds are 20 (RTX 2070, general then native) and 21 (T4 GPU0
+general, GPU1 native). Identical seeds reduce variation; the two seed pairs are
+the replication units for the training comparison, while molecule-paired
+intervals describe uncertainty over these reused evaluation targets.
+
+The native index streams 1,154,969 raw rows on one low-priority CPU core. It
+matches exact key + float16 peak tensor + float32 metadata + adduct digests,
+preserving the original cache labels. Of 1,148,546 unique eligible native inputs,
+**1,146,540 match** (99.825%); 6,423 raw rows have identities absent from the
+canonical cache and are omitted. Native preference therefore applies to
+matched inputs; no claim of complete native-only coverage is made.
+
+P06 precomputes the unchanged production fragment scorer in Kaggle, including
+optimized/baseline scores and per-energy-chunk votes for all 3,000 listed panel
+candidates. All 114 eligible first-12 candidate checks agree with the full-list
+batch scores. The lightweight local replay uses this numeric evidence and the
+same pinned physical rule; candidate generation and outside-list retrieval
+remain outside the replay. Cache the cloud's exact selected spectra as well:
+one of 114 molecules has a cross-platform NumPy peak tie-order difference.
+
+The completed exact in-list physical replay supersedes the simpler panel proxy
+for this comparison. Raw original-score terms reproduce the source with maximum
+errors 3.28e-7 (cosine), 1.49e-8 (fingerprint) and 3.81e-6 (total score). Baseline
+physical merge changes one leader, giving panel MRR **0.917009**. With the same
+physical rule, P02's fixed recipe gives **0.918905** (delta +0.001896, 95% paired
+interval [-0.000965,+0.005671]); P01's v80-best holdout proxy gives **0.918796**
+(delta +0.001787, interval [-0.009722,+0.011587], 6 improved / 2 harmed). The
+alternate v80-last gives **0.919135** (delta +0.002126, interval
+[-0.003704,+0.008730]). The v80-best proxy triggers two physical leader changes,
+whereas baseline and v80-last trigger one. Thus the earlier positive-only
+interval from omitting the physical rule overstates the strength of local
+evidence. The actual submitted hidden scores remain the deciding measurement.

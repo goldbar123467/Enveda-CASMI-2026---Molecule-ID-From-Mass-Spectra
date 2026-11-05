@@ -1,0 +1,12 @@
+{
+  "molecules": 120,
+  "candidate_rows": 3000,
+  "subset_invariance_checks": 114,
+  "physical_source_sha256": "cd1594b3bbfa75ce30997559c5403438b7cec011879dcb9c0d48e111715dd85d",
+  "query_file_sha256": [
+    "40b43ad8aff56cfe96503b4b441a6fb4d3b03356d0f284b4f99c662e2114bf7a",
+    "83694634b4dd94440e958e0fd69ab0d3bfe7bb46dc7707d4e692a068b37e0613"
+  ],
+  "seconds": 16.274693727493286,
+  "protocol": "Numeric scores for all listed candidates; exact production spectrum selection and optimized/baseline/chunk scorers; no rank fitting"
+}

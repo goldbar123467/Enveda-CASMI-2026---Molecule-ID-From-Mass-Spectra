@@ -1,0 +1,8 @@
+# Local scientific environment used on RTX 2070, Python 3.12.
+# Install torch from https://download.pytorch.org/whl/cu128 when recreating this environment.
+torch==2.11.0+cu128
+numpy==2.0.2
+pandas==2.3.3
+pyarrow==26.0.0
+rdkit==2026.3.3
+pillow==13.0.0

@@ -1,0 +1,21 @@
+{
+  "id": "clarkkitchen/casmi26-p05-paired-native",
+  "title": "casmi26 p05 paired native",
+  "code_file": "run.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_internet": false,
+  "dataset_sources": [
+    "sanpier/casmi-spectrum-model-v1"
+  ],
+  "kernel_sources": [
+    "clarkkitchen/casmi26-n0-scorer-prep",
+    "clarkkitchen/casmi26-p04-native-unseen"
+  ],
+  "competition_sources": [
+    "enveda-CASMI26-molecule-id-mass-spectra"
+  ],
+  "docker_image": "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461"
+}

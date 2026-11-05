@@ -47,9 +47,23 @@ natural products. v1 (v33 residual) 0.477 = no effect. Analysis and the w20/w21 
 Queue and push/submit state: `kaggle/forks/queue.json` (10-28), `kaggle/forks/queue-2026-10-29.json`;
 orchestrator log: `outputs/autopilot.log`.
 
-2026-11-05: **no new submission**. Two full 32-epoch local RTX 2070 candidate-loss
+Earlier 2026-11-05 session: **no new submission**. Two full 32-epoch local RTX 2070 candidate-loss
 training/evaluation rounds completed. The selected tail-only fusion changed reserved
 confirmation MRR by -0.000056 / +0.000259; both 95% paired intervals include zero.
 The natural-product coefficient sweep also failed confirmation. Best submitted public
 score remains **0.477**. No Kaggle scoring run or extra GPU quota was used.
 See [`docs/SCIENCE-2026-11-05.md`](docs/SCIENCE-2026-11-05.md).
+
+## Resumed professional competition run — 2026-11-05
+
+| Date (UTC) | Slot | Kernel | Change and qualifying evidence | Ref | Public LB |
+|---|---|---|---|---|---|
+| 2026-11-05 18:15 | P01 | casmi26-p01-public480 v1 | Fixed public 0.480 recipe: public + rebuilt v80 neural z-score ensemble, documentation prior, exact metric-identity dedup. Exact raw-panel score reproduction (max error 1.91e-6); panel proxy 0.912842 → 0.918796; alternate checkpoint also positive; NP tail checks positive; COMPLETE real smoke, zero input errors, both models and merge verified. | 58032057 | **Pending** |
+| 2026-11-05 18:40 | P02 | casmi26-p02-public479 v1 | Original Saner neural scorer with the same fixed documentation/dedup recipe. COMPLETE real smoke: 400 valid rows, 12 real molecules, zero input errors; all 300 real neural scores exactly equal P01's original channel (maximum error 0). | 58032626 | **Pending** |
+
+This is an expected-improvement test, not a claim that the displayed public
+notebook score has reproduced. The objective remains active until a completed
+submission actually exceeds the baseline **0.477**. At most two may be pending.
+Three daily slots remain. Keep at least two reserved until the initial scores
+are available; do not spend the remaining slots before reviewing that batch.
+Protocol: [`docs/COMPETING-2026-11-05.md`](docs/COMPETING-2026-11-05.md).

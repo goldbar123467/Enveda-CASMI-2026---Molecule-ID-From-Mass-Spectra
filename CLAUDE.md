@@ -31,6 +31,9 @@ These rules come from the user's instructions of 2026-10-28 and replace everythi
   evidence of improvement over the best submitted method.** Do not spend the
   daily allowance just to fill it. See `docs/SCIENCE-2026-11-05.md`.
 - Historical default, superseded by the current override: use all 5 submissions every UTC day.
+- **2026-11-05 reserve:** keep at least **2 submissions available until the first
+  batch has scored**, for later decisions before 00:00 UTC. P01/P02 use 2 of 5;
+  3 remain. Do not send another batch before their scores just to fill the cap.
 - **Submit at most 2 at a time** (user, 2026-11-02). When working a full day, spread the batches across the day so
   later picks can use earlier scores (scoring takes ~5 h); never send all 5 at once.
 - Only submit kernel versions that completed (`KernelWorkerStatus.COMPLETE`) and wrote `submission.csv`.
