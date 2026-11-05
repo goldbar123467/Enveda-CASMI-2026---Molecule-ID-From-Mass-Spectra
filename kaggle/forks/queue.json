@@ -1,0 +1,46 @@
+{
+  "date": "2026-10-28",
+  "daily_cap": 5,
+  "slots": [
+    {
+      "slot": "s1-p477",
+      "pushed_version": 1,
+      "message": "s1: fork of public 0.477 (busyaprime m1: fragment-check leader moves on V2 order + ranks 2-25 at neural 0.75)",
+      "last_status": "COMPLETE",
+      "final_status": "COMPLETE",
+      "submitted": "2026-10-28T19:52:08.990851+00:00"
+    },
+    {
+      "slot": "s2-parallax",
+      "pushed_version": 1,
+      "message": "s2: Spectral Parallax latest = 0.477 control + physical disagreement rescue",
+      "last_status": "COMPLETE",
+      "final_status": "COMPLETE",
+      "submitted": "2026-10-28T19:53:54.443122+00:00"
+    },
+    {
+      "slot": "s3-relaxmerge",
+      "message": "s3: 0.477 + keep fragment-check leader moves when the check also changed rank 25",
+      "pushed_version": 1,
+      "last_status": "COMPLETE",
+      "final_status": "COMPLETE",
+      "submitted": "2026-10-28T19:53:59.643421+00:00"
+    },
+    {
+      "slot": "s4-relaxmerge-tail3",
+      "message": "s4: s3 + 3-slot neural tail rescue of outside candidates",
+      "pushed_version": 1,
+      "last_status": "COMPLETE",
+      "final_status": "COMPLETE",
+      "submitted": "2026-10-28T19:55:37.484077+00:00"
+    },
+    {
+      "slot": "s5-relaxmerge-lib092",
+      "message": "s5: s3 + fragment-check library gate 0.87 -> 0.92",
+      "pushed_version": 1,
+      "last_status": "COMPLETE",
+      "final_status": "COMPLETE",
+      "submitted": "2026-10-28T19:55:41.859786+00:00"
+    }
+  ]
+}

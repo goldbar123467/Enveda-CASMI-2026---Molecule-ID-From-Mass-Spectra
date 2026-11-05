@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-29",
+  "daily_cap": 5,
+  "slots": [
+    {
+      "slot": "t1-loose",
+      "message": "t1: s3 + looser fragment-check rank-1 rule (lib 0.92, >=2 spectra, ranks 2-8, neural margin 0.15)",
+      "pushed_version": 1,
+      "last_status": "COMPLETE",
+      "final_status": "COMPLETE",
+      "cap_logged": true,
+      "submitted": "2026-10-29T00:00:44.050544+00:00"
+    },
+    {
+      "slot": "t2-ckptens",
+      "message": "t2: s3 + neural scorer averages final and last-validation checkpoints",
+      "pushed_version": 1,
+      "last_status": "COMPLETE",
+      "final_status": "COMPLETE",
+      "submitted": "2026-10-29T00:00:47.894230+00:00"
+    },
+    {
+      "slot": "t3-fpvote",
+      "message": "t3: s3 + fold-safe FPNet vote (5 models) blended into ranks 2-25",
+      "pushed_version": 1,
+      "last_status": "COMPLETE",
+      "final_status": "COMPLETE",
+      "submitted": "2026-10-29T00:00:51.473354+00:00"
+    },
+    {
+      "slot": "t4-fpvote10",
+      "message": "t4: s3 + fold-safe FPNet vote at weight 1.0 in ranks 2-25",
+      "pushed_version": 1,
+      "last_status": "COMPLETE",
+      "final_status": "COMPLETE",
+      "submitted": "2026-10-29T00:00:55.215291+00:00"
+    },
+    {
+      "slot": "t5-loose-fpvote",
+      "not_before": "2026-10-29T12:00:00+00:00",
+      "message": "t5: s3 + looser rank-1 rule + fold-safe FPNet vote 0.5 (fallback; replace after 10-28 scores)",
+      "pushed_version": 1,
+      "last_status": "COMPLETE",
+      "final_status": "COMPLETE",
+      "no_submit": true,
+      "note": "dropped 2026-10-29: s5 (lib 0.92) scored 0.473 < 0.477, loose rule looks negative"
+    }
+  ]
+}

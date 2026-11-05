@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-30",
+  "daily_cap": 5,
+  "slots": [
+    {
+      "slot": "w3-seedens9",
+      "message": "w3: s3 + neural scorer averaged over 9 seeds (original + 8 full-data refits)",
+      "pushed_version": 1,
+      "not_before": "2026-10-30T00:00:00+00:00",
+      "last_status": "COMPLETE",
+      "final_status": "COMPLETE"
+    },
+    {
+      "slot": "w6-seedens-e32",
+      "message": "w6: s3 + neural scorer = final_model + 8 refits trained 32 epochs (kit 16); holdout MRR 0.48->0.58 random, 0.38->0.43 natural products",
+      "pushed_version": 1,
+      "final_status": "COMPLETE",
+      "not_before": "2026-10-30T00:00:00+00:00"
+    },
+    {
+      "slot": "w7-seedens-e64",
+      "message": "w7: s3 + neural scorer = 8 refits trained 64 epochs (kit 16); holdout MRR 0.48->0.66 random, 0.38->0.55 natural products",
+      "pushed_version": 1,
+      "final_status": "COMPLETE",
+      "not_before": "2026-10-30T00:00:00+00:00"
+    },
+    {
+      "slot": "w8-seedens-e128",
+      "message": "w8: s3 + neural scorer = 4 refits trained 128 epochs (kit 16); holdout MRR 0.48->0.71 random, 0.37->0.60 natural products",
+      "pushed_version": 1,
+      "final_status": "COMPLETE",
+      "not_before": "2026-10-30T00:00:00+00:00"
+    },
+    {
+      "slot": "v1-v33residual",
+      "message": "v1: public v33 real-list residual (logistic re-sort of ranks 2-25 where library < 0.87, leaders fixed)",
+      "pushed_version": 1,
+      "final_status": "COMPLETE",
+      "not_before": "2026-10-30T00:00:00+00:00"
+    }
+  ]
+}

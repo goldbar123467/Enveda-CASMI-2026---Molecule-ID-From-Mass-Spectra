@@ -1,0 +1,24 @@
+.venv/
+.venv-gpu/
+__pycache__/
+*.py[cod]
+.local/
+/.ssh/
+.kaggle/
+.env
+.env.*
+!.env.example
+**/kaggle.json
+**/access_token
+**/credentials.json
+kaggle key.txt
+**/*[Kk]aggle*[Kk]ey*.txt
+data/
+outputs/
+artifacts/
+*.pt
+*.pth
+*.ckpt
+*.pkl
+*.parquet
+*.zip

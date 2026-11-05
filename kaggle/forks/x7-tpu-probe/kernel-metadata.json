@@ -1,0 +1,19 @@
+{
+  "id": "clarkkitchen/casmi26-x7-tpu-probe",
+  "title": "casmi26 x7 tpu probe",
+  "code_file": "notebook.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": false,
+  "enable_tpu": true,
+  "enable_internet": false,
+  "dataset_sources": [
+    "sanpier/casmi-spectrum-model-v1"
+  ],
+  "kernel_sources": [
+    "clarkkitchen/casmi26-n0-scorer-prep"
+  ],
+  "competition_sources": [],
+  "model_sources": []
+}

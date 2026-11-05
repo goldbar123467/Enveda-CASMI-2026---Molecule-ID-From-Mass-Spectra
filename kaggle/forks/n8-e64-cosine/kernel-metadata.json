@@ -1,0 +1,20 @@
+{
+  "id": "clarkkitchen/casmi26-n8-e64-cosine",
+  "title": "casmi26 n8 e64 cosine",
+  "code_file": "notebook.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "dataset_sources": [
+    "sanpier/casmi-spectrum-model-v1"
+  ],
+  "kernel_sources": [
+    "clarkkitchen/casmi26-n0-scorer-prep"
+  ],
+  "competition_sources": [],
+  "model_sources": [],
+  "docker_image": "gcr.io/kaggle-private-byod/python@sha256:9a6bcfda6d03b2cd9aa347ee8c1bae62043328ed0f4afe9bda014e4f8bbf9435"
+}

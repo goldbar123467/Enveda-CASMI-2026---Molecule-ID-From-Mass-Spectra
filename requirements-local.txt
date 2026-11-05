@@ -1,0 +1,3 @@
+# Local orchestration only. Training packages belong in Kaggle cloud.
+kaggle==2.2.4
+

@@ -1,0 +1,21 @@
+{
+  "id": "YOUR_KAGGLE_USERNAME/enveda-casmi-2026-cpu",
+  "title": "Enveda CASMI 2026 CPU",
+  "code_file": "notebook.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": false,
+  "enable_internet": false,
+  "competition_sources": [
+    "enveda-CASMI26-molecule-id-mass-spectra"
+  ],
+  "dataset_sources": [
+    "prvsiyan/coconut-casmi26-candidates",
+    "prvsiyan/casmi26-fp-models-v2",
+    "metric/rdkit-2026-3-3-wheel",
+    "dmitriigluzdov/casmi26-pubchem-popularity-prior"
+  ],
+  "kernel_sources": [],
+  "model_sources": []
+}
