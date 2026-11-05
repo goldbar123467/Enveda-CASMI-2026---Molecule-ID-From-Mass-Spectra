@@ -1,0 +1,16 @@
+{
+  "state": "submitted",
+  "utc": "2026-11-05T22:20:32.853744+00:00",
+  "competition": "enveda-CASMI26-molecule-id-mass-spectra",
+  "kernel": "clarkkitchen/casmi26-p11-np-anchor",
+  "version": 1,
+  "output_file": "submission.csv",
+  "description": "EOD11-20261105: public50 + NPcurriculum50 (128+32 epochs). Two excluded-parent validations improve native retrieval and final panel; full GPU smoke12 real/400 valid, exact blend and pinned weights. User-requested EOD best candidate; 2 daily slots reserved.",
+  "daily_used_before": 2,
+  "daily_unused_after": 2,
+  "submitted_utc": "2026-11-05T22:20:35.610742+00:00",
+  "submission_ref": 58036642,
+  "response_fields": [
+    "ref"
+  ]
+}

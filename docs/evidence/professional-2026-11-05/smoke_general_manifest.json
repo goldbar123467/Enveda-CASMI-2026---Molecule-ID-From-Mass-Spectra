@@ -1,0 +1,22 @@
+{
+  "training_molecules": 1024,
+  "annotated_np_molecules": 92,
+  "baseline_np_fraction": 0.08984375,
+  "sampled_np_fraction": 0.544921875,
+  "mixture_fraction": 0.5,
+  "mode": "general",
+  "stage": "holdout",
+  "smoke": true,
+  "epochs": 1,
+  "lr": 2e-05,
+  "parent_sha256": "57bc2bebad02c7ade2f2f5273adafddb9865711f20d928691ef555bd4a5470c6",
+  "parent_epoch": 128,
+  "original_training_source_sha256": "21e10e227ddcaa59039d83f60d42988fd61bd6bfa3c83812d7ee21def1d0668d",
+  "patched_training_source_sha256": "6ddd4866646f328d0b0d9be0d8d23e98799b6e065787aa57ae145f974db3ca15",
+  "curated_keys_sha256": "19d59131c440e04b98f43b7307cf53a65d41c2e90680937668170abd3723e420",
+  "training_indices_sha256": "69bedc2a810b02d9c9b46aea35b3b86f549a89548965ed65767ca6bf547e0332",
+  "heldout_identity_sha256": "815aeb38ac2d247258298780064ec1cb8644b6027e81478fce7b85a7f2dc018e",
+  "effective_np_fraction": 0.08984375,
+  "objective": "original retrieval + original fingerprint auxiliary; no distillation; original negative pools and FP class weights",
+  "fixed_final_epoch": true
+}

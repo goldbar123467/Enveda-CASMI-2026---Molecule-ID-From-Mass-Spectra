@@ -1,0 +1,7 @@
+{
+  "general_native_probability": 0.6589566890839176,
+  "np_subset_native_probability": 0.0016784670670750926,
+  "np_mixture_native_probability": 0.33031757807549633,
+  "annotated_np_with_native": 44,
+  "annotated_np_without_native": 23032
+}

@@ -1,0 +1,18 @@
+{
+  "protocol": "General vs native expert with union exclusion: all original kit validation identities AND all 234 NP target identities excluded from every training source",
+  "heldout": 27600,
+  "np_targets": 234,
+  "kit_validation": 27383,
+  "training_identities": 246233,
+  "epochs": 128,
+  "steps_per_epoch": 500,
+  "width": 256,
+  "layers": 4,
+  "heads": 8,
+  "local_seed": 20,
+  "mode": "general",
+  "holdout_keys_sha256": "58d710a37a8032083a95e56e27090d2bb42660695558f7482181fb809a94af21",
+  "checkpoint_policy": "fixed final epoch; native/unseen diagnostics evaluated after training; legacy random retrieval monitor is not the target metric",
+  "heldout_identity_sha256": "eab3823abf3ccef5859e144b94d5b2bf26d46712c2ffcc7c502ab50d2d65f5ef",
+  "training_indices_sha256": "464e4cdb3f664b5eb0e62e8b65bec3c1d968ab3824055189b195b708bd0a15f2"
+}

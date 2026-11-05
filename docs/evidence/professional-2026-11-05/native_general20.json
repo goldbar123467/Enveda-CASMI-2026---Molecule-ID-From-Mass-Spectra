@@ -1,0 +1,49 @@
+{
+  "protocol": "Native Enveda timsTOF NP queries; familiar mass-window diagnostic and oracle-formula untrained COCONUT diagnostic",
+  "competition_mrr": false,
+  "fresh_targets": false,
+  "n": 234,
+  "spectra": 1097,
+  "candidate_count_quantiles": {
+    "0": 1.0,
+    "0.25": 10.25,
+    "0.5": 28.0,
+    "0.75": 79.75,
+    "1": 128.0
+  },
+  "provenance": {
+    "general20": {
+      "path": "outputs\\local\\paired-native\\holdout_np\\casmi26_holdout_20_e128_heads8-layers4-width256.pt",
+      "epoch": 128,
+      "overrides": {
+        "width": 256,
+        "heads": 8,
+        "layers": 4
+      },
+      "sha256": "57bc2bebad02c7ade2f2f5273adafddb9865711f20d928691ef555bd4a5470c6"
+    }
+  },
+  "models": {
+    "general20": {
+      "familiar": {
+        "n": 234,
+        "mrr25": 0.456219768500535,
+        "top1": 0.3076923076923077,
+        "top5": 0.6410256410256411
+      },
+      "unseen": {
+        "n": 234,
+        "mrr25": 0.48477206283730695,
+        "top1": 0.32905982905982906,
+        "top5": 0.6837606837606838
+      },
+      "unseen_ambiguous8": {
+        "n": 185,
+        "mrr25": 0.3938017803816027,
+        "top1": 0.22702702702702704,
+        "top5": 0.6054054054054054
+      }
+    }
+  },
+  "seconds": 5.7932515144348145
+}

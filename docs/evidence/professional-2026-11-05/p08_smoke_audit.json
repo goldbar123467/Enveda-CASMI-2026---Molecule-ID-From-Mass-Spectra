@@ -1,0 +1,29 @@
+{
+  "valid_rows": 400,
+  "real_molecules": 12,
+  "official_identity_duplicates": 0,
+  "rdkit": "2026.03.3",
+  "canonicalized_unique_smiles": 301,
+  "independent_blend_max_abs_error": 4.440892098500626e-16,
+  "second_model_score_max_difference": 4.489806652069092,
+  "changed_rows_vs_frozen": 12,
+  "csv_sha256": "b843895803ee93e8d34271281a348462f332d550835dc70b810e8a397319fc3a",
+  "model": {
+    "checkpoint_sha256": "67ab9795ae72213bf89574bb2ca3fd6e6d624ea6b3f62ea53b45ab04f54c74b1",
+    "stage": "full_refit",
+    "epoch": 128,
+    "architecture": {
+      "width": 256,
+      "heads": 8,
+      "layers": 4,
+      "embedding": 192
+    },
+    "neural_weights": {
+      "original": 0.5,
+      "general20": 0.5
+    },
+    "source": "/kaggle/input/notebooks/clarkkitchen/casmi26-p07-refit-v4-replica/general_full20/refit/casmi26_seed_20_e128_embedding192-heads8-layers4-width256.pt"
+  },
+  "smoke_only": true,
+  "competition_score": null
+}

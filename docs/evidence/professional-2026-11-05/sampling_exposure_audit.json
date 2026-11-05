@@ -1,0 +1,6 @@
+{
+  "training_molecules": 246233,
+  "with_native": 163854,
+  "general_expected_native_probability": 0.6589566890839176,
+  "native_preferred_expected_native_probability": 0.6654428935195527
+}

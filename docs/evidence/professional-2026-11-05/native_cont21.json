@@ -1,0 +1,93 @@
+{
+  "protocol": "Native Enveda timsTOF NP queries; familiar mass-window diagnostic and oracle-formula untrained COCONUT diagnostic",
+  "competition_mrr": false,
+  "fresh_targets": false,
+  "n": 234,
+  "spectra": 1097,
+  "candidate_count_quantiles": {
+    "0": 1.0,
+    "0.25": 10.25,
+    "0.5": 28.0,
+    "0.75": 79.75,
+    "1": 128.0
+  },
+  "provenance": {
+    "general_cont21": {
+      "path": "outputs\\forks\\p09-np-continuation\\continuation\\general\\holdout_np\\casmi26_holdout_22_e32_lr2e-05_heads8-layers4-width256.pt",
+      "epoch": 32,
+      "overrides": {
+        "width": 256,
+        "heads": 8,
+        "layers": 4
+      },
+      "sha256": "fc6042881ef85c9642161c62cb2b6e02a3ee7d7365e059fdfa5d6d5c7942e21d",
+      "training_provenance": {
+        "stage": "holdout",
+        "epoch": 32,
+        "initialization_parent_sha256": "873dff477f45fe5977733dc91c93bafd7ed16de7e4aec70b6117357a7157baf3",
+        "initialization_parent_epoch": 128,
+        "continuation_epochs": 32
+      }
+    },
+    "np_cont21": {
+      "path": "outputs\\forks\\p09-np-continuation\\continuation\\np\\holdout_np\\casmi26_holdout_22_e32_lr2e-05_heads8-layers4-width256.pt",
+      "epoch": 32,
+      "overrides": {
+        "width": 256,
+        "heads": 8,
+        "layers": 4
+      },
+      "sha256": "831ed92b42e121394d0ff01d9dcb75d5c17097c80d451b30d8ead95989b0a5ff",
+      "training_provenance": {
+        "stage": "holdout",
+        "epoch": 32,
+        "initialization_parent_sha256": "873dff477f45fe5977733dc91c93bafd7ed16de7e4aec70b6117357a7157baf3",
+        "initialization_parent_epoch": 128,
+        "continuation_epochs": 32
+      }
+    }
+  },
+  "models": {
+    "general_cont21": {
+      "familiar": {
+        "n": 234,
+        "mrr25": 0.49693107835922634,
+        "top1": 0.34615384615384615,
+        "top5": 0.6923076923076923
+      },
+      "unseen": {
+        "n": 234,
+        "mrr25": 0.4804159589247956,
+        "top1": 0.31196581196581197,
+        "top5": 0.6923076923076923
+      },
+      "unseen_ambiguous8": {
+        "n": 185,
+        "mrr25": 0.39676036606343507,
+        "top1": 0.22162162162162163,
+        "top5": 0.6108108108108108
+      }
+    },
+    "np_cont21": {
+      "familiar": {
+        "n": 234,
+        "mrr25": 0.5443310217298072,
+        "top1": 0.3888888888888889,
+        "top5": 0.717948717948718
+      },
+      "unseen": {
+        "n": 234,
+        "mrr25": 0.5412641977564484,
+        "top1": 0.37606837606837606,
+        "top5": 0.7478632478632479
+      },
+      "unseen_ambiguous8": {
+        "n": 185,
+        "mrr25": 0.476157597882931,
+        "top1": 0.3081081081081081,
+        "top5": 0.6810810810810811
+      }
+    }
+  },
+  "seconds": 8.949167728424072
+}

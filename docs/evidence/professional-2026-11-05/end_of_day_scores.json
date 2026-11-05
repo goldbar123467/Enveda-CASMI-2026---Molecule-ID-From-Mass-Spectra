@@ -1,0 +1,37 @@
+{
+  "checked_utc": "2026-11-05T22:26:16.157027+00:00",
+  "target": 0.477,
+  "beaten": false,
+  "best": {
+    "ref": "57915490",
+    "status": "COMPLETE",
+    "public_score": 0.477,
+    "description": "v1: public v33 real-list residual (logistic re-sort of ranks 2-25 where library < 0.87, leaders fixed)",
+    "date": "2026-11-02 16:51:51.437000"
+  },
+  "pending": [
+    {
+      "ref": "58036642",
+      "status": "PENDING",
+      "public_score": null,
+      "description": "EOD11-20261105: public50 + NPcurriculum50 (128+32 epochs). Two excluded-parent validations improve native retrieval and final panel; full GPU smoke12 real/400 valid, exact blend and pinned weights. User-requested EOD best candidate; 2 daily slots reserved.",
+      "date": "2026-11-05 22:20:33.997000"
+    },
+    {
+      "ref": "58032626",
+      "status": "PENDING",
+      "public_score": null,
+      "description": "p02: original Saner scorer control plus fixed documentation prior and metric identity dedup; panel and three NP tail checks improve; real smoke zero errors, original scores match exactly",
+      "date": "2026-11-05 18:40:59.783000"
+    },
+    {
+      "ref": "58032057",
+      "status": "PENDING",
+      "public_score": null,
+      "description": "p01: public480 reproduction; public+v80 z-score ensemble, documentation prior, metric-key dedup; exact raw local panel .912842 to .918796; real smoke audited",
+      "date": "2026-11-05 18:15:17.103000"
+    }
+  ],
+  "daily_used": 3,
+  "daily_reserved": 2
+}

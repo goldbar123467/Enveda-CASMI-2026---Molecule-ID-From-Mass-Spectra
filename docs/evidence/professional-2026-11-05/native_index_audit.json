@@ -1,0 +1,12 @@
+{
+  "raw_rows": 1154969,
+  "prepared": 1148546,
+  "unknown_raw_identity": 6423,
+  "invalid": 0,
+  "unique_native_inputs": 1148546,
+  "matched_unique": 1146540,
+  "cache_spectra": 2430328,
+  "matched_cache_rows": 1146540,
+  "coverage": 0.9982534439195295,
+  "contract": "SHA256(canonical key + f16 peak tensor + f32 metadata + adduct), identical to training cache"
+}

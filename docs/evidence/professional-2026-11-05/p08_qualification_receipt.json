@@ -1,0 +1,30 @@
+{
+  "model": {
+    "checkpoint_sha256": "67ab9795ae72213bf89574bb2ca3fd6e6d624ea6b3f62ea53b45ab04f54c74b1",
+    "stage": "full_refit",
+    "epoch": 128,
+    "architecture": {
+      "width": 256,
+      "heads": 8,
+      "layers": 4,
+      "embedding": 192
+    },
+    "neural_weights": {
+      "original": 0.5,
+      "general20": 0.5
+    },
+    "source": "/kaggle/input/notebooks/clarkkitchen/casmi26-p07-refit-v4-replica/general_full20/refit/casmi26_seed_20_e128_embedding192-heads8-layers4-width256.pt"
+  },
+  "neural_score_max_abs_error": 0.0,
+  "real_scored_molecules": 12,
+  "pipeline": {
+    "source_sha256": "ca3c3f382eca90ac7ba2e0bbb76753f4a1d92b8c630a726ac28610727a8da6ab",
+    "mode": "submission",
+    "source_adaptations": [],
+    "candidate_promotion_fix": true,
+    "is_full_run": false,
+    "processed_molecules": 12
+  },
+  "merge_status": "applied",
+  "is_hidden_rerun": false
+}

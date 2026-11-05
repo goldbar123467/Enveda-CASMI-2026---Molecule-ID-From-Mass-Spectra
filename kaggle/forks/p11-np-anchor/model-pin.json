@@ -1,0 +1,13 @@
+{
+  "file": "casmi26_seed_23_e32_lr2e-05_embedding192-heads8-layers4-width256.pt",
+  "sha256": "fd05f0333711c568dccdc551eecfd9123a88b4c306515801f1767763abfbf699",
+  "parent_sha256": "67ab9795ae72213bf89574bb2ca3fd6e6d624ea6b3f62ea53b45ab04f54c74b1",
+  "stage": "full_refit",
+  "parent_epochs": 128,
+  "continuation_epochs": 32,
+  "mixture": 0.5,
+  "scoring_submission": true,
+  "submission_ref": 58036642,
+  "kernel_version": 1,
+  "submitted_utc": "2026-11-05T22:20:35.610742+00:00"
+}

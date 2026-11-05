@@ -8,6 +8,9 @@ The full candidate-generation pipeline and competition submissions run on Kaggle
 - [`docs/SCIENCE-2026-11-05.md`](docs/SCIENCE-2026-11-05.md) — current research,
   two-round experiment protocol, validation limits and submission decision.
 - [`NOTICE.md`](NOTICE.md) — upstream attribution and licensing scope.
+- [`docs/COMPETING-2026-11-05.md`](docs/COMPETING-2026-11-05.md) — resumed active
+  objective: continue until an actual submitted public score exceeds 0.477;
+  exact raw-spectrum validation and current submission evidence.
 
 - [`CLAUDE.md`](CLAUDE.md) — working rules, commands, safety patches applied to every variant.
 - [`STRATEGY.md`](STRATEGY.md) — how the current best pipeline works, what has been tried, next ideas.

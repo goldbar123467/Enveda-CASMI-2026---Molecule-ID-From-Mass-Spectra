@@ -1,0 +1,19 @@
+{
+  "id": "clarkkitchen/casmi26-p04-native-unseen",
+  "title": "casmi26 p04 native unseen",
+  "code_file": "prepare.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "dataset_sources": [
+    "sanpier/casmi-spectrum-model-v1",
+    "dmitriigluzdov/casmi26-pubchem-popularity-prior",
+    "metric/rdkit-2026-3-3-wheel"
+  ],
+  "kernel_sources": ["clarkkitchen/casmi26-p03-np-raw-export"],
+  "competition_sources": ["enveda-CASMI26-molecule-id-mass-spectra"],
+  "docker_image": "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461"
+}

@@ -47,9 +47,32 @@ natural products. v1 (v33 residual) 0.477 = no effect. Analysis and the w20/w21 
 Queue and push/submit state: `kaggle/forks/queue.json` (10-28), `kaggle/forks/queue-2026-10-29.json`;
 orchestrator log: `outputs/autopilot.log`.
 
-2026-11-05: **no new submission**. Two full 32-epoch local RTX 2070 candidate-loss
+Earlier 2026-11-05 session: **no new submission**. Two full 32-epoch local RTX 2070 candidate-loss
 training/evaluation rounds completed. The selected tail-only fusion changed reserved
 confirmation MRR by -0.000056 / +0.000259; both 95% paired intervals include zero.
 The natural-product coefficient sweep also failed confirmation. Best submitted public
 score remains **0.477**. No Kaggle scoring run or extra GPU quota was used.
 See [`docs/SCIENCE-2026-11-05.md`](docs/SCIENCE-2026-11-05.md).
+
+## Resumed professional competition run — 2026-11-05
+
+| Date (UTC) | Slot | Kernel | Change and qualifying evidence | Ref | Public LB |
+|---|---|---|---|---|---|
+| 2026-11-05 18:15 | P01 | casmi26-p01-public480 v1 | Fixed public 0.480 recipe: public + rebuilt v80 neural z-score ensemble, documentation prior, exact metric-identity dedup. Exact raw-panel score reproduction (max error 1.91e-6); panel proxy 0.912842 → 0.918796; alternate checkpoint also positive; NP tail checks positive; COMPLETE real smoke, zero input errors, both models and merge verified. | 58032057 | **Pending** |
+| 2026-11-05 18:40 | P02 | casmi26-p02-public479 v1 | Original Saner neural scorer with the same fixed documentation/dedup recipe. COMPLETE real smoke: 400 valid rows, 12 real molecules, zero input errors; all 300 real neural scores exactly equal P01's original channel (maximum error 0). | 58032626 | **Pending** |
+| 2026-11-05 22:20 | P11 | casmi26-p11-np-anchor v1 | Original50/NP-curriculum50; full-data general20 parent128 + fixed32 NP-mixture epochs. Both independent excluded parents improve native retrieval and final-panel point estimates. COMPLETE real GPU smoke: 400 valid rows, 12 real molecules, zero metric duplicates; independent blend error 4.44e-16; exact checkpoint/parent/source guards. | 58036642 | **Pending** |
+
+The latest user instruction explicitly requested one best-candidate submission
+after the current run, followed by an overnight pause. This authorizes one
+end-of-day exception to the two-pending limit; it does not authorize another
+submission. P11 was submitted from kernel version1, output `submission.csv`,
+at 22:20:35 UTC (unique description marker `EOD11-20261105`). The 22:26 UTC API
+check confirms **3 of 5 daily submissions used; 2 remain unused**. P01, P02 and
+P11 are all pending. The best completed public score is still **0.477**.
+
+These are expected-improvement tests; local diagnostics do not establish a
+hidden-score improvement. The goal is **paused for today at the user's request**.
+All training, experiment controllers, score watchers and the hourly run updater
+are stopped. Submitted Kaggle evaluations continue to return scores. No automatic
+restart or overnight submissions are scheduled. Resume only when the user asks.
+Protocol: [`docs/COMPETING-2026-11-05.md`](docs/COMPETING-2026-11-05.md).

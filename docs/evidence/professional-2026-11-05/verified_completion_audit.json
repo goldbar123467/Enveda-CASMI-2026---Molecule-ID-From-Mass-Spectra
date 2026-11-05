@@ -1,0 +1,58 @@
+{
+  "general": {
+    "completed_epochs": 128,
+    "steps": 64000,
+    "seconds": 4045,
+    "manifest": {
+      "mode": "general",
+      "seed": 20282023,
+      "epochs": 128,
+      "architecture": {
+        "width": 256,
+        "heads": 8,
+        "layers": 4
+      },
+      "sampling": "original all-spectrum sampling",
+      "training_identities": 246233,
+      "heldout_identities": 27600,
+      "training_indices_sha256": "464e4cdb3f664b5eb0e62e8b65bec3c1d968ab3824055189b195b708bd0a15f2",
+      "heldout_identity_sha256": "eab3823abf3ccef5859e144b94d5b2bf26d46712c2ffcc7c502ab50d2d65f5ef",
+      "fixed_final_epoch": true
+    },
+    "checkpoint_sha256": "873dff477f45fe5977733dc91c93bafd7ed16de7e4aec70b6117357a7157baf3"
+  },
+  "native": {
+    "completed_epochs": 128,
+    "steps": 64000,
+    "seconds": 4024,
+    "manifest": {
+      "mode": "native",
+      "seed": 20282023,
+      "epochs": 128,
+      "architecture": {
+        "width": 256,
+        "heads": 8,
+        "layers": 4
+      },
+      "sampling": "uniform by training molecule; native spectra preferred only within that molecule",
+      "training_identities": 246233,
+      "heldout_identities": 27600,
+      "training_indices_sha256": "464e4cdb3f664b5eb0e62e8b65bec3c1d968ab3824055189b195b708bd0a15f2",
+      "heldout_identity_sha256": "eab3823abf3ccef5859e144b94d5b2bf26d46712c2ffcc7c502ab50d2d65f5ef",
+      "fixed_final_epoch": true,
+      "native_training_molecules": 163855,
+      "native_training_spectra": 1031288,
+      "native_index_sha256": "6c510b22b9a8564ee35897bd739220f35995c0565a87d67a1f7d6dbf4a40cc08"
+    },
+    "checkpoint_sha256": "4bdd3baee65d269f79ed5b358a608ba882a117986361333f3e0bb88d82eafd6d"
+  },
+  "native_index_comparison": {
+    "identical_arrays": false,
+    "local_rows": 1146540,
+    "cloud_rows": 1147185,
+    "local_only": 826,
+    "cloud_only": 1471,
+    "jaccard": 0.9979991480917866,
+    "interpretation": "Each seed pair is controlled within platform; cross-platform replication has a small native-view-set difference, not identical preprocessing."
+  }
+}

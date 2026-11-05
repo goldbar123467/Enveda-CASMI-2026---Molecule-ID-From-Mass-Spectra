@@ -4,7 +4,6 @@
     e.g. python scripts/add_run.py n7a kaggle-gpu train "n7a-e128-refits v1" "Refits 221-222 at 128 epochs"
 """
 import csv
-import subprocess
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
@@ -28,7 +27,11 @@ def main():
         w = csv.DictWriter(f, fieldnames=fields)
         w.writeheader()
         w.writerows(rows)
-    subprocess.run([sys.executable, str(ROOT / "scripts/update_runs.py")], check=False)
+    # A new version is registered immediately before push. Refreshing here can
+    # read the preceding version's terminal status and permanently mislabel it.
+    # Render the just-recorded state; the next ordinary refresh observes the push.
+    from update_runs import render
+    render(rows)
 
 
 if __name__ == "__main__":

@@ -1,0 +1,79 @@
+{
+  "protocol": "Native Enveda timsTOF NP queries; familiar mass-window diagnostic and oracle-formula untrained COCONUT diagnostic",
+  "competition_mrr": false,
+  "fresh_targets": false,
+  "n": 234,
+  "spectra": 1097,
+  "candidate_count_quantiles": {
+    "0": 1.0,
+    "0.25": 10.25,
+    "0.5": 28.0,
+    "0.75": 79.75,
+    "1": 128.0
+  },
+  "provenance": {
+    "general21": {
+      "path": "outputs\\forks\\p05-paired-native\\paired\\general\\holdout_np\\casmi26_holdout_21_e128_heads8-layers4-width256.pt",
+      "epoch": 128,
+      "overrides": {
+        "width": 256,
+        "heads": 8,
+        "layers": 4
+      },
+      "sha256": "873dff477f45fe5977733dc91c93bafd7ed16de7e4aec70b6117357a7157baf3"
+    },
+    "native21": {
+      "path": "outputs\\forks\\p05-paired-native\\paired\\native\\holdout_np\\casmi26_holdout_21_e128_heads8-layers4-width256.pt",
+      "epoch": 128,
+      "overrides": {
+        "width": 256,
+        "heads": 8,
+        "layers": 4
+      },
+      "sha256": "4bdd3baee65d269f79ed5b358a608ba882a117986361333f3e0bb88d82eafd6d"
+    }
+  },
+  "models": {
+    "general21": {
+      "familiar": {
+        "n": 234,
+        "mrr25": 0.4866254187408034,
+        "top1": 0.3333333333333333,
+        "top5": 0.6623931623931624
+      },
+      "unseen": {
+        "n": 234,
+        "mrr25": 0.4777187070990159,
+        "top1": 0.3162393162393162,
+        "top5": 0.688034188034188
+      },
+      "unseen_ambiguous8": {
+        "n": 185,
+        "mrr25": 0.3888442024928093,
+        "top1": 0.22162162162162163,
+        "top5": 0.6054054054054054
+      }
+    },
+    "native21": {
+      "familiar": {
+        "n": 234,
+        "mrr25": 0.4719031150660705,
+        "top1": 0.32051282051282054,
+        "top5": 0.6538461538461539
+      },
+      "unseen": {
+        "n": 234,
+        "mrr25": 0.4965413646743182,
+        "top1": 0.3547008547008547,
+        "top5": 0.688034188034188
+      },
+      "unseen_ambiguous8": {
+        "n": 185,
+        "mrr25": 0.41868835675922766,
+        "top1": 0.2810810810810811,
+        "top5": 0.6054054054054054
+      }
+    }
+  },
+  "seconds": 8.827850103378296
+}

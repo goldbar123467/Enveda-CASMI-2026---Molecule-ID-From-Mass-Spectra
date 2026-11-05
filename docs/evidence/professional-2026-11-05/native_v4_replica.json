@@ -1,0 +1,53 @@
+{
+  "protocol": "Native Enveda timsTOF NP queries; familiar mass-window diagnostic and oracle-formula untrained COCONUT diagnostic",
+  "competition_mrr": false,
+  "fresh_targets": false,
+  "n": 234,
+  "spectra": 1097,
+  "candidate_count_quantiles": {
+    "0": 1.0,
+    "0.25": 10.25,
+    "0.5": 28.0,
+    "0.75": 79.75,
+    "1": 128.0
+  },
+  "provenance": {
+    "v4_replica0": {
+      "path": "outputs\\forks\\p07-refit-v4-replica\\v4_replica_holdout0\\holdout_np\\casmi26_holdout_0_e109_embedding256-heads8-layers3-width256.pt",
+      "epoch": 109,
+      "overrides": {
+        "width": 256,
+        "heads": 8,
+        "layers": 3
+      },
+      "sha256": "863be83e0019e811bd2b1999008634a38e0daa3edcc1788436a93a6f5cedb4c5",
+      "training_provenance": {
+        "stage": "holdout",
+        "epoch": 109
+      }
+    }
+  },
+  "models": {
+    "v4_replica0": {
+      "familiar": {
+        "n": 234,
+        "mrr25": 0.4226940643129022,
+        "top1": 0.2692307692307692,
+        "top5": 0.6068376068376068
+      },
+      "unseen": {
+        "n": 234,
+        "mrr25": 0.44693649348616804,
+        "top1": 0.2863247863247863,
+        "top5": 0.6452991452991453
+      },
+      "unseen_ambiguous8": {
+        "n": 185,
+        "mrr25": 0.37360255572484674,
+        "top1": 0.22162162162162163,
+        "top5": 0.5513513513513514
+      }
+    }
+  },
+  "seconds": 6.331305027008057
+}

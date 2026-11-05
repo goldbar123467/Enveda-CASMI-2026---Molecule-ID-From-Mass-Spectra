@@ -1,0 +1,87 @@
+{
+  "protocol": "Native Enveda timsTOF NP queries; familiar mass-window diagnostic and oracle-formula untrained COCONUT diagnostic",
+  "competition_mrr": false,
+  "fresh_targets": false,
+  "n": 234,
+  "spectra": 1097,
+  "candidate_count_quantiles": {
+    "0": 1.0,
+    "0.25": 10.25,
+    "0.5": 28.0,
+    "0.75": 79.75,
+    "1": 128.0
+  },
+  "provenance": {
+    "general20": {
+      "path": "outputs\\local\\paired-native\\holdout_np\\casmi26_holdout_20_e128_heads8-layers4-width256.pt",
+      "epoch": 128,
+      "overrides": {
+        "width": 256,
+        "heads": 8,
+        "layers": 4
+      },
+      "sha256": "57bc2bebad02c7ade2f2f5273adafddb9865711f20d928691ef555bd4a5470c6",
+      "training_provenance": {
+        "stage": "holdout",
+        "epoch": 128
+      }
+    },
+    "native20": {
+      "path": "outputs\\local\\paired-native\\native20\\holdout_np\\casmi26_holdout_20_e128_heads8-layers4-width256.pt",
+      "epoch": 128,
+      "overrides": {
+        "width": 256,
+        "heads": 8,
+        "layers": 4
+      },
+      "sha256": "dd77772d8d6e7f3ca82aa94cb379301914ba3b374327552dc7abe059611e7f8d",
+      "training_provenance": {
+        "stage": "holdout",
+        "epoch": 128
+      }
+    }
+  },
+  "models": {
+    "general20": {
+      "familiar": {
+        "n": 234,
+        "mrr25": 0.456219768500535,
+        "top1": 0.3076923076923077,
+        "top5": 0.6410256410256411
+      },
+      "unseen": {
+        "n": 234,
+        "mrr25": 0.48477206283730695,
+        "top1": 0.32905982905982906,
+        "top5": 0.6837606837606838
+      },
+      "unseen_ambiguous8": {
+        "n": 185,
+        "mrr25": 0.3938017803816027,
+        "top1": 0.22702702702702704,
+        "top5": 0.6054054054054054
+      }
+    },
+    "native20": {
+      "familiar": {
+        "n": 234,
+        "mrr25": 0.48752709309594405,
+        "top1": 0.3247863247863248,
+        "top5": 0.7094017094017094
+      },
+      "unseen": {
+        "n": 234,
+        "mrr25": 0.5022269829719326,
+        "top1": 0.358974358974359,
+        "top5": 0.6794871794871795
+      },
+      "unseen_ambiguous8": {
+        "n": 185,
+        "mrr25": 0.4295735892726066,
+        "top1": 0.2864864864864865,
+        "top5": 0.5945945945945946
+      }
+    }
+  },
+  "seconds": 8.620027780532837
+}

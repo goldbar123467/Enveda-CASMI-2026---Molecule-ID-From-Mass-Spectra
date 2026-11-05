@@ -1,0 +1,16 @@
+{
+  "public-v2": {
+    "stage": "full_refit",
+    "epoch": 52,
+    "parameters": 2963840,
+    "strict_architecture_load": true,
+    "inference_performed": false
+  },
+  "public-v4": {
+    "stage": "full_refit",
+    "epoch": 109,
+    "parameters": 4224000,
+    "strict_architecture_load": true,
+    "inference_performed": false
+  }
+}
