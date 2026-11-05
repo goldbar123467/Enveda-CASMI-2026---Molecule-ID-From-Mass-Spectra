@@ -1,0 +1,18 @@
+{
+  "seeds": [
+    202611051,
+    202611052
+  ],
+  "epochs": 32,
+  "steps_per_epoch": 500,
+  "negatives": 32,
+  "kit_sha256": {
+    "train.py": "6204c62462be4f686fa2e1d46d7d42b994c0087ee8e51fc84208e299d72081d2",
+    "model.py": "2547418857386d1c2513fd1ab6c70961e6a96e73d9d495bbfe3052197e69dc39",
+    "config.json": "563fb2a2a81ca48ea094f9ab78c157a48a6e9a5503e85e6ce8f0fb3615c1cc03"
+  },
+  "public_best": 0.477,
+  "objective": "candidate-only InfoNCE + unchanged auxiliary BCE",
+  "gate": "Both seeded confirmation delta and paired bootstrap lower 95% bound >0; no leader moves",
+  "submission": "Requires a full pipeline smoke and comparable holdout evidence; this script cannot submit"
+}

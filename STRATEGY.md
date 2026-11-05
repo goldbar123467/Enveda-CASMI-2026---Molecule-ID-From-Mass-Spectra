@@ -1,5 +1,38 @@
 # Strategy
 
+## 2026-11-05: candidate-based loss improves retrieval, tail fusion fails confirmation
+
+Current best submitted public MRR remains **0.477**, verified from Kaggle submissions.
+Two complete local RTX 2070 trainings, seeds 202611051/52, each 32 epochs × 500 steps,
+tested candidate-only InfoNCE with 32 training-only near-mass/same-formula negatives.
+This adapts the existing Saner model, motivated by MSAlign's candidate-based loss,
+rather than implementing the MSAlign foundation-model architecture.
+
+- New standalone kit retrieval MRR: **0.612352 / 0.612572** (top-1 0.481 each),
+  versus historical mixed-loss 32-epoch seed-3 **0.577967**. Different seeds and
+  negative counts prevent attribution to the objective alone.
+- A 16-configuration, development-only fusion sweep selected 25% standardized new
+  scorer, fingerprint coefficient 2, no prior correction. The public rank-1 decision
+  stays fixed. Freeze that choice for seed 2.
+- On 62 confirmation identities, current-recipe proxy **0.910455** → **0.910399 /
+  0.910714**. Deltas **-0.000056 / +0.000259**, both bootstrap intervals include zero.
+  Both local gates fail. No production refit/upload or competition submission.
+- A separate cached NP sweep selected doubled fingerprint weight on 129 development
+  identities (+0.008890), but deltas on 105 confirmation identities were
+  **-0.003114 / +0.000990 / -0.006121** across three existing NP holdout models.
+  Retain the existing coefficient.
+- Public notebooks now report **0.480** (standardized neural ensemble plus other
+  changes; public rebuilt scorer dependency) and **0.482** (missing overlay assets).
+  We examined their sources; neither score was reproduced on our account. The 0.480
+  reports replacement alone at 0.460, consistent with our earlier losses.
+
+Conclusion: stronger artificial retrieval remains insufficient evidence for production
+ranking changes. Better next evidence would be an identity-excluded, full-pipeline
+natural-product replay with realistic candidates and a reserved confirmation cohort.
+Do not retune on this experiment's confirmation outcomes and call them a fresh test.
+Protocol, sources, math, artifacts and numeric evidence:
+[`docs/SCIENCE-2026-11-05.md`](docs/SCIENCE-2026-11-05.md).
+
 Snapshot 2026-10-28 ~19:30 UTC.
 
 ## Where we stand

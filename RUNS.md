@@ -1,6 +1,6 @@
 # Runs
 
-Updated 2026-11-05 15:53 UTC by `scripts/update_runs.py` (hourly). Generated from `runs.csv` — edit that file, not this one.
+Updated 2026-11-05 16:23 UTC by `scripts/update_runs.py` (hourly). Generated from `runs.csv` — edit that file, not this one.
 
 - Kaggle quota: GPU 10.8 h used of 30 h · TPU 0.0 h of 20 h · resets 2026-11-07 00:00 UTC
 - Submissions today (UTC): 0 of 5 — see `SUBMISSIONS.md`
@@ -15,6 +15,8 @@ Updated 2026-11-05 15:53 UTC by `scripts/update_runs.py` (hourly). Generated fro
 
 | id | platform | kind | ref | started (UTC) | ended (UTC) | status | purpose | result |
 |---|---|---|---|---|---|---|---|---|
+| S01 | local-2070 | train | outputs/local/science-20261105/rounds.log | 2026-11-05 15:57 | 2026-11-05 16:23 | complete | Two complete 32-epoch candidate-only InfoNCE trainings (seeds 202611051/52); 1000-molecule retrieval and identity-separated tail-fusion sweep/confirmation; rank 1 locked to public scorer | Two seeds x32 complete epochs x500 steps =32000 steps on RTX2070. Retrieval MRR .612352/.612572, top1 .481 each. Frozen alpha .25; 62-identity confirmation baseline .910455 -> .910399/.910714 (deltas -.000056/+.000259); both 95% CIs include zero. Both gates fail; no submission; best public .477 retained. |
+| S02 | local-2070 | diag | outputs/local/science-20261105/np_cached_sweep.log | 2026-11-05 16:01 | 2026-11-05 16:04 | complete | Cached fair NP holdout scoring: fit fingerprint coefficient on development identities, freeze it and confirm on unseen identities across three 64-epoch seeds; no new GPU/CPU-heavy pipeline | 234 fair NP identities, 129 development/105 confirmation. Doubling fp: development +0.008890; confirmation deltas -0.003114/+0.000990/-0.006121 across NP7/8/9, all 95% CIs include zero. Rejected. |
 | n17 | kaggle-gpu | train | n17-w256-refits v1 | 2026-11-02 21:17 | 2026-11-02 23:55 | complete | Full-data refits 253-256 at 128 epochs, width 256 / heads 8 / layers 4 (2 per T4), for a 6-model wide ensemble |  |
 | w22-commit | kaggle-gpu | commit | w22-kit50-e128x12 v1 | 2026-11-02 21:55 | 2026-11-02 22:55 | complete | casmi26 w22 kit50 e128x12 |  |
 | w21-commit | kaggle-gpu | commit | w21-seed221-e128 v1 | 2026-11-02 21:54 | 2026-11-02 21:55 | complete | casmi26 w21 seed221 e128 |  |

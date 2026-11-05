@@ -1,0 +1,49 @@
+{
+  "rounds": [
+    {
+      "seed": 202611051,
+      "confirmation": {
+        "n": 62,
+        "baseline_mrr25": 0.910455486542443,
+        "candidate_mrr25": 0.9103993855606759,
+        "delta": -5.610098176718089e-05,
+        "ci95": [
+          -0.00016830294530154267,
+          0.0
+        ],
+        "improved": 0,
+        "harmed": 1
+      },
+      "selected": {
+        "alpha": 0.25,
+        "fp_weight": 2.0,
+        "correction": 0.0
+      },
+      "local_gate_passed": false
+    },
+    {
+      "seed": 202611052,
+      "confirmation": {
+        "n": 62,
+        "baseline_mrr25": 0.910455486542443,
+        "candidate_mrr25": 0.9107142857142858,
+        "delta": 0.00025879917184265007,
+        "ci95": [
+          0.0,
+          0.0007096106324717825
+        ],
+        "improved": 2,
+        "harmed": 0
+      },
+      "selected": {
+        "alpha": 0.25,
+        "fp_weight": 2.0,
+        "correction": 0.0
+      },
+      "local_gate_passed": false
+    }
+  ],
+  "both_local_gates_passed": false,
+  "submit_allowed": false,
+  "reason": "Full frozen-pipeline holdout is unavailable locally; proxy gains cannot prove hidden score >0.477"
+}
