@@ -105,6 +105,16 @@ the baseline `submission.csv` already on disk. **A score of exactly 0.465 means 
 
 ## Credentials and sharing
 
+### End-of-day override — 2026-11-05
+
+The user explicitly requested: finish the current run, submit the strongest
+validated candidate, pause for today, and stop all training/experiment runs
+overnight. Do not start additional training after the current q75 dose trial.
+One end-of-day submission is authorized even if P01/P02 remain pending; preserve
+two unused daily slots. This is a one-time exception to the normal two-pending
+batch rule. Stop the project watchers and hourly updater before pausing. Submitted
+Kaggle scoring reruns continue so they can return scores. Do not auto-resume.
+
 - The Kaggle token lives in `%USERPROFILE%\.kaggle\access_token` (also `kaggle key.txt`, git-ignored). Never print,
   log, commit or upload it; never put it in notebooks or metadata.
 - Keep forks private. No GitHub pushes unless the user asks.

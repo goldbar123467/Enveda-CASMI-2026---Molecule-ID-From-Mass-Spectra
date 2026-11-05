@@ -1,0 +1,93 @@
+{
+  "protocol": "Native Enveda timsTOF NP queries; familiar mass-window diagnostic and oracle-formula untrained COCONUT diagnostic",
+  "competition_mrr": false,
+  "fresh_targets": false,
+  "n": 234,
+  "spectra": 1097,
+  "candidate_count_quantiles": {
+    "0": 1.0,
+    "0.25": 10.25,
+    "0.5": 28.0,
+    "0.75": 79.75,
+    "1": 128.0
+  },
+  "provenance": {
+    "q25": {
+      "path": "outputs\\local\\paired-native\\mixture_sweep20\\q25\\holdout_np\\casmi26_holdout_23_e32_lr2e-05_heads8-layers4-width256.pt",
+      "epoch": 32,
+      "overrides": {
+        "width": 256,
+        "heads": 8,
+        "layers": 4
+      },
+      "sha256": "b625acf22772d7c7d6886bdbeb0ed8b0ee6cacbcac302aa02dfb6c1bfb78a2ad",
+      "training_provenance": {
+        "stage": "holdout",
+        "epoch": 32,
+        "initialization_parent_sha256": "57bc2bebad02c7ade2f2f5273adafddb9865711f20d928691ef555bd4a5470c6",
+        "initialization_parent_epoch": 128,
+        "continuation_epochs": 32
+      }
+    },
+    "q75": {
+      "path": "outputs\\local\\paired-native\\mixture_sweep20\\q75\\holdout_np\\casmi26_holdout_23_e32_lr2e-05_heads8-layers4-width256.pt",
+      "epoch": 32,
+      "overrides": {
+        "width": 256,
+        "heads": 8,
+        "layers": 4
+      },
+      "sha256": "1aec9454f28f0bc1234ee763196cfb3c4ef58c55b77fa3631a7ab41bed6cf666",
+      "training_provenance": {
+        "stage": "holdout",
+        "epoch": 32,
+        "initialization_parent_sha256": "57bc2bebad02c7ade2f2f5273adafddb9865711f20d928691ef555bd4a5470c6",
+        "initialization_parent_epoch": 128,
+        "continuation_epochs": 32
+      }
+    }
+  },
+  "models": {
+    "q25": {
+      "familiar": {
+        "n": 234,
+        "mrr25": 0.5120709232089917,
+        "top1": 0.3547008547008547,
+        "top5": 0.7008547008547008
+      },
+      "unseen": {
+        "n": 234,
+        "mrr25": 0.5243387065310245,
+        "top1": 0.3504273504273504,
+        "top5": 0.7307692307692307
+      },
+      "unseen_ambiguous8": {
+        "n": 185,
+        "mrr25": 0.4463707603329356,
+        "top1": 0.2594594594594595,
+        "top5": 0.6648648648648648
+      }
+    },
+    "q75": {
+      "familiar": {
+        "n": 234,
+        "mrr25": 0.5416989808997481,
+        "top1": 0.3717948717948718,
+        "top5": 0.7393162393162394
+      },
+      "unseen": {
+        "n": 234,
+        "mrr25": 0.5728362888207796,
+        "top1": 0.41452991452991456,
+        "top5": 0.782051282051282
+      },
+      "unseen_ambiguous8": {
+        "n": 185,
+        "mrr25": 0.5096956301841212,
+        "top1": 0.34594594594594597,
+        "top5": 0.7297297297297297
+      }
+    }
+  },
+  "seconds": 7.131991386413574
+}

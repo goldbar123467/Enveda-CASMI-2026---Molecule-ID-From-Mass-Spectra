@@ -1,0 +1,7 @@
+{
+  "file": "casmi26_seed_20_e128_embedding192-heads8-layers4-width256.pt",
+  "sha256": "67ab9795ae72213bf89574bb2ca3fd6e6d624ea6b3f62ea53b45ab04f54c74b1",
+  "stage": "full_refit",
+  "epochs": 128,
+  "scoring_submission": false
+}

@@ -40,6 +40,8 @@ def load_holdout(cfg, path, device):
     settings = dict(cfg, **checkpoint.get('cfg_overrides', {}))
     model = L.SpectrumCandidateModel(settings).to(device)
     model.load_state_dict(checkpoint['state_dict'])
+    model.training_provenance = {k:checkpoint[k] for k in
+        ['stage','epoch','initialization_parent_sha256','initialization_parent_epoch','continuation_epochs'] if k in checkpoint}
     return model.eval(), settings, checkpoint['epoch']
 
 
@@ -119,7 +121,8 @@ def main():
         model, settings, epoch = load_holdout(cfg, path, device)
         provenance[name] = dict(path=str(path.relative_to(ROOT)), epoch=epoch,
                                 overrides={k: settings[k] for k in ['width', 'heads', 'layers']},
-                                sha256=hashlib.sha256(path.read_bytes()).hexdigest())
+                                sha256=hashlib.sha256(path.read_bytes()).hexdigest(),
+                                training_provenance=model.training_provenance)
         model_rows = []
         for i, ids in cands.items():
             key = str(data.mol.key.iloc[i])

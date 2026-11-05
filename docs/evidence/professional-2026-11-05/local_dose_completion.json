@@ -1,0 +1,58 @@
+{
+  "state": "complete",
+  "finished": {
+    "q25": {
+      "epochs": 32,
+      "steps": 16000,
+      "manifest": {
+        "training_molecules": 246233,
+        "annotated_np_molecules": 23076,
+        "baseline_np_fraction": 0.0937161144119594,
+        "sampled_np_fraction": 0.3202870858089696,
+        "mixture_fraction": 0.25,
+        "mode": "np",
+        "stage": "holdout",
+        "smoke": false,
+        "epochs": 32,
+        "lr": 2e-05,
+        "parent_sha256": "57bc2bebad02c7ade2f2f5273adafddb9865711f20d928691ef555bd4a5470c6",
+        "parent_epoch": 128,
+        "original_training_source_sha256": "21e10e227ddcaa59039d83f60d42988fd61bd6bfa3c83812d7ee21def1d0668d",
+        "patched_training_source_sha256": "6ddd4866646f328d0b0d9be0d8d23e98799b6e065787aa57ae145f974db3ca15",
+        "curated_keys_sha256": "19d59131c440e04b98f43b7307cf53a65d41c2e90680937668170abd3723e420",
+        "training_indices_sha256": "464e4cdb3f664b5eb0e62e8b65bec3c1d968ab3824055189b195b708bd0a15f2",
+        "heldout_identity_sha256": "eab3823abf3ccef5859e144b94d5b2bf26d46712c2ffcc7c502ab50d2d65f5ef",
+        "effective_np_fraction": 0.3202870858089696,
+        "objective": "original retrieval + original fingerprint auxiliary; no distillation; original negative pools and FP class weights",
+        "fixed_final_epoch": true
+      }
+    },
+    "q75": {
+      "epochs": 32,
+      "steps": 16000,
+      "manifest": {
+        "training_molecules": 246233,
+        "annotated_np_molecules": 23076,
+        "baseline_np_fraction": 0.0937161144119594,
+        "sampled_np_fraction": 0.7734290286029897,
+        "mixture_fraction": 0.75,
+        "mode": "np",
+        "stage": "holdout",
+        "smoke": false,
+        "epochs": 32,
+        "lr": 2e-05,
+        "parent_sha256": "57bc2bebad02c7ade2f2f5273adafddb9865711f20d928691ef555bd4a5470c6",
+        "parent_epoch": 128,
+        "original_training_source_sha256": "21e10e227ddcaa59039d83f60d42988fd61bd6bfa3c83812d7ee21def1d0668d",
+        "patched_training_source_sha256": "6ddd4866646f328d0b0d9be0d8d23e98799b6e065787aa57ae145f974db3ca15",
+        "curated_keys_sha256": "19d59131c440e04b98f43b7307cf53a65d41c2e90680937668170abd3723e420",
+        "training_indices_sha256": "464e4cdb3f664b5eb0e62e8b65bec3c1d968ab3824055189b195b708bd0a15f2",
+        "heldout_identity_sha256": "eab3823abf3ccef5859e144b94d5b2bf26d46712c2ffcc7c502ab50d2d65f5ef",
+        "effective_np_fraction": 0.7734290286029897,
+        "objective": "original retrieval + original fingerprint auxiliary; no distillation; original negative pools and FP class weights",
+        "fixed_final_epoch": true
+      }
+    }
+  },
+  "updated_utc": "2026-11-05T22:13:42.429049+00:00"
+}

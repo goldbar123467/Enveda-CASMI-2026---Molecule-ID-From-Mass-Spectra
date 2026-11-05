@@ -1,0 +1,16 @@
+{
+  "general_full20": {
+    "completed_epochs": 128,
+    "steps": 64000,
+    "seconds": 3431,
+    "stage": "full_refit",
+    "checkpoint_sha256": "67ab9795ae72213bf89574bb2ca3fd6e6d624ea6b3f62ea53b45ab04f54c74b1"
+  },
+  "v4_replica_holdout0": {
+    "completed_epochs": 109,
+    "steps": 54500,
+    "seconds": 3264,
+    "stage": "holdout",
+    "checkpoint_sha256": "863be83e0019e811bd2b1999008634a38e0daa3edcc1788436a93a6f5cedb4c5"
+  }
+}

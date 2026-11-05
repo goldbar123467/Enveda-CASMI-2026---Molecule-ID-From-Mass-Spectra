@@ -1,0 +1,93 @@
+{
+  "protocol": "Native Enveda timsTOF NP queries; familiar mass-window diagnostic and oracle-formula untrained COCONUT diagnostic",
+  "competition_mrr": false,
+  "fresh_targets": false,
+  "n": 234,
+  "spectra": 1097,
+  "candidate_count_quantiles": {
+    "0": 1.0,
+    "0.25": 10.25,
+    "0.5": 28.0,
+    "0.75": 79.75,
+    "1": 128.0
+  },
+  "provenance": {
+    "general_cont20": {
+      "path": "outputs\\local\\paired-native\\continuation20\\general\\holdout_np\\casmi26_holdout_23_e32_lr2e-05_heads8-layers4-width256.pt",
+      "epoch": 32,
+      "overrides": {
+        "width": 256,
+        "heads": 8,
+        "layers": 4
+      },
+      "sha256": "4032ad20463ff6156615699e3a3c35ad8c7db7fcd5557466152cec753eb01dce",
+      "training_provenance": {
+        "stage": "holdout",
+        "epoch": 32,
+        "initialization_parent_sha256": "57bc2bebad02c7ade2f2f5273adafddb9865711f20d928691ef555bd4a5470c6",
+        "initialization_parent_epoch": 128,
+        "continuation_epochs": 32
+      }
+    },
+    "np_cont20": {
+      "path": "outputs\\local\\paired-native\\continuation20\\np\\holdout_np\\casmi26_holdout_23_e32_lr2e-05_heads8-layers4-width256.pt",
+      "epoch": 32,
+      "overrides": {
+        "width": 256,
+        "heads": 8,
+        "layers": 4
+      },
+      "sha256": "dfdedec00b36bd9bee3494e4e44de6b6444740b470a5dcdfb66d1ed11f2cfebc",
+      "training_provenance": {
+        "stage": "holdout",
+        "epoch": 32,
+        "initialization_parent_sha256": "57bc2bebad02c7ade2f2f5273adafddb9865711f20d928691ef555bd4a5470c6",
+        "initialization_parent_epoch": 128,
+        "continuation_epochs": 32
+      }
+    }
+  },
+  "models": {
+    "general_cont20": {
+      "familiar": {
+        "n": 234,
+        "mrr25": 0.49519144753588507,
+        "top1": 0.34615384615384615,
+        "top5": 0.6965811965811965
+      },
+      "unseen": {
+        "n": 234,
+        "mrr25": 0.5100772608546286,
+        "top1": 0.358974358974359,
+        "top5": 0.7008547008547008
+      },
+      "unseen_ambiguous8": {
+        "n": 185,
+        "mrr25": 0.4222058326485571,
+        "top1": 0.2594594594594595,
+        "top5": 0.6270270270270271
+      }
+    },
+    "np_cont20": {
+      "familiar": {
+        "n": 234,
+        "mrr25": 0.5510733298762842,
+        "top1": 0.3974358974358974,
+        "top5": 0.7393162393162394
+      },
+      "unseen": {
+        "n": 234,
+        "mrr25": 0.5485945681998313,
+        "top1": 0.3888888888888889,
+        "top5": 0.7521367521367521
+      },
+      "unseen_ambiguous8": {
+        "n": 185,
+        "mrr25": 0.4758799763536606,
+        "top1": 0.3081081081081081,
+        "top5": 0.6918918918918919
+      }
+    }
+  },
+  "seconds": 7.367030143737793
+}

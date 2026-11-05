@@ -1,0 +1,55 @@
+{
+  "valid_rows": 400,
+  "real_molecules": 12,
+  "official_identity_duplicates": 0,
+  "rdkit": "2026.03.3",
+  "canonicalized_unique_smiles": 301,
+  "independent_blend_max_abs_error": 4.440892098500626e-16,
+  "second_model_score_max_difference": 3.5812740325927734,
+  "changed_rows_vs_frozen": 12,
+  "csv_sha256": "dbffacce6411197c91e0b2a7394d2917cdbf1059396720762aa20508a856b28e",
+  "model": {
+    "checkpoint_sha256": "fd05f0333711c568dccdc551eecfd9123a88b4c306515801f1767763abfbf699",
+    "stage": "full_refit",
+    "epoch": 32,
+    "parent_epoch": 128,
+    "cumulative_epochs": 160,
+    "parent_sha256": "67ab9795ae72213bf89574bb2ca3fd6e6d624ea6b3f62ea53b45ab04f54c74b1",
+    "mixture_fraction": 0.5,
+    "architecture": {
+      "width": 256,
+      "heads": 8,
+      "layers": 4,
+      "embedding": 192
+    },
+    "neural_weights": {
+      "original": 0.5,
+      "np_curriculum": 0.5
+    },
+    "source": "/kaggle/input/notebooks/clarkkitchen/casmi26-p10-production-continuation/production/np/refit/casmi26_seed_23_e32_lr2e-05_embedding192-heads8-layers4-width256.pt",
+    "training_manifest": {
+      "training_molecules": 273833,
+      "annotated_np_molecules": 25916,
+      "baseline_np_fraction": 0.09464162463983523,
+      "sampled_np_fraction": 0.5473208123199178,
+      "mixture_fraction": 0.5,
+      "mode": "np",
+      "stage": "refit",
+      "smoke": false,
+      "epochs": 32,
+      "lr": 2e-05,
+      "parent_sha256": "67ab9795ae72213bf89574bb2ca3fd6e6d624ea6b3f62ea53b45ab04f54c74b1",
+      "parent_epoch": 128,
+      "original_training_source_sha256": "21e10e227ddcaa59039d83f60d42988fd61bd6bfa3c83812d7ee21def1d0668d",
+      "patched_training_source_sha256": "6ddd4866646f328d0b0d9be0d8d23e98799b6e065787aa57ae145f974db3ca15",
+      "curated_keys_sha256": "19d59131c440e04b98f43b7307cf53a65d41c2e90680937668170abd3723e420",
+      "training_indices_sha256": "7c78bc90eddda366629afdacc206e108a6f408efcbebe1ceeda9e45040a57687",
+      "heldout_identity_sha256": null,
+      "effective_np_fraction": 0.5473208123199178,
+      "objective": "original retrieval + original fingerprint auxiliary; no distillation; original negative pools and FP class weights",
+      "fixed_final_epoch": true
+    }
+  },
+  "smoke_only": true,
+  "competition_score": null
+}

@@ -55,6 +55,7 @@ def main():
     np.savez_compressed(args.out, **arrays)
     audit = dict(checkpoint=str(args.checkpoint), checkpoint_sha256=hashlib.sha256(args.checkpoint.read_bytes()).hexdigest(),
                  stage='holdout', epoch=epoch, panel_molecules=len(keys), excluded_identities=len(excluded),
+                 training_provenance=model.training_provenance,
                  heldout_identity_sha256=hashlib.sha256('\n'.join(sorted(excluded)).encode()).hexdigest(),
                  raw_queries=True, gpu=torch.cuda.get_device_name(), seconds=time.time()-started)
     args.out.with_suffix('.json').write_text(json.dumps(audit, indent=2))

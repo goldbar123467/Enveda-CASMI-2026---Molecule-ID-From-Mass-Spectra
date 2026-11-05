@@ -25,6 +25,7 @@ def main():
     ap.add_argument('--np-keys',type=Path,required=True)
     ap.add_argument('--stage',choices=['holdout','refit'],default='holdout')
     ap.add_argument('--seed',type=int,default=22)
+    ap.add_argument('--mixture',type=float,choices=[.25,.5,.75],default=.5)
     ap.add_argument('--smoke',action='store_true')
     args=ap.parse_args(); started=time.time()
     parent=torch.load(args.parent,map_location='cpu',weights_only=True)
@@ -41,15 +42,22 @@ def main():
     def setup(split):
         cfg,data,device=original_setup(split)
         if args.smoke:
-            data.train=data.train[:1024]
-            data.val=data.val[:16]
+            if args.stage=='holdout':
+                data.train=data.train[:1024]
+                data.val=data.val[:16]
             # Exercise real NN/optimizer/sampling, using tiny deterministic pools;
             # scientific metrics and the original pool construction are not tested by this smoke.
-            ids=data.train.copy()
-            L.T.hard_pools=lambda mol,allowed,count:{int(i):ids[ids!=i][:count] for i in ids}
+            ids=np.arange(len(data.mol)) if args.stage=='refit' else data.train.copy()
+            class TinyPools:
+                def __init__(self,allowed,count):
+                    self.small=np.asarray(allowed)[:count+1]
+                    self.count=count
+                def __getitem__(self,key):
+                    return self.small[self.small!=key][:self.count]
+            L.T.hard_pools=lambda mol,allowed,count:TinyPools(allowed,count)
             L.T.candidate_sets=lambda d,c:{int(i):np.r_[i,ids[:31]] for i in d.val}
         training=np.arange(len(data.mol)) if args.stage=='refit' else data.train
-        probability,audit=mixture_probabilities(training,data.mol.key.astype(str).to_numpy(),keys)
+        probability,audit=mixture_probabilities(training,data.mol.key.astype(str).to_numpy(),keys,args.mixture)
         assert args.smoke or audit['annotated_np_molecules']>1000
         original=inspect.getsource(L.T.train_stage)
         patched=patch_training_loop(original)

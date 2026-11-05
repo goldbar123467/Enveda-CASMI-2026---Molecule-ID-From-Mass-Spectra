@@ -1,0 +1,29 @@
+{
+  "completed": {
+    "RTX2070_general20": {
+      "epochs": 128,
+      "optimizer_steps": 64000,
+      "fit_seconds": 3461,
+      "median_500step_train_seconds": 20.75,
+      "training_seconds": 2661.50400000019
+    },
+    "T4_general21": {
+      "epochs": 128,
+      "optimizer_steps": 64000,
+      "fit_seconds": 4045,
+      "median_500step_train_seconds": 24.418098514500116,
+      "training_seconds": 3127.1537178749995
+    },
+    "T4_native21": {
+      "epochs": 128,
+      "optimizer_steps": 64000,
+      "fit_seconds": 4024,
+      "median_500step_train_seconds": 24.329128283000045,
+      "training_seconds": 3104.2696590200003
+    }
+  },
+  "observed_first_three_fit_window_minutes": 87,
+  "approx_serial_local_minutes": 173.05,
+  "approx_time_to_three_models_speedup": 1.989080459770115,
+  "interpretation": "End-to-end scheduling estimate from rounded launch/completion times, not a hardware-only benchmark. Cloud session includes native-index preparation; both T4 jobs ran concurrently."
+}

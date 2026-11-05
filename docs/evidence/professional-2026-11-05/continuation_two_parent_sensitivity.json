@@ -1,0 +1,129 @@
+{
+  "parents": 2,
+  "independent_targets_not_468": true,
+  "fresh_test": false,
+  "competition_mrr": false,
+  "caveat": "Conditional on two fitted parent pairs and reused target cohorts. Scaffold resampling is a sensitivity analysis; training/evaluation scaffolds may overlap.",
+  "native": {
+    "familiar": {
+      "paired": {
+        "n": 234,
+        "baseline_mrr25": 0.4960612629475557,
+        "candidate_mrr25": 0.5477021758030457,
+        "delta": 0.05164091285548991,
+        "ci95": [
+          0.03148206276010887,
+          0.07155724503642728
+        ],
+        "improved": 108,
+        "harmed": 42
+      },
+      "scaffold_sensitivity": {
+        "clusters": 171,
+        "largest_cluster": 11,
+        "ci95": [
+          0.0313048692811552,
+          0.07100504516152986
+        ],
+        "bootstrap_replicates": 5000,
+        "method": "resample Bemis-Murcko target clusters; weight members equally within the resulting sample"
+      }
+    },
+    "unseen": {
+      "paired": {
+        "n": 234,
+        "baseline_mrr25": 0.495246609889712,
+        "candidate_mrr25": 0.5449293829781398,
+        "delta": 0.04968277308842781,
+        "ci95": [
+          0.03192659585598855,
+          0.06792276831405783
+        ],
+        "improved": 107,
+        "harmed": 31
+      },
+      "scaffold_sensitivity": {
+        "clusters": 171,
+        "largest_cluster": 11,
+        "ci95": [
+          0.03236974981607411,
+          0.06757244765334378
+        ],
+        "bootstrap_replicates": 5000,
+        "method": "resample Bemis-Murcko target clusters; weight members equally within the resulting sample"
+      }
+    },
+    "hard185": {
+      "paired": {
+        "n": 185,
+        "baseline_mrr25": 0.4094830993559961,
+        "candidate_mrr25": 0.47601878711829576,
+        "delta": 0.06653568776229969,
+        "ci95": [
+          0.04580749351237893,
+          0.08745745876123197
+        ],
+        "improved": 104,
+        "harmed": 26
+      },
+      "scaffold_sensitivity": {
+        "clusters": 133,
+        "largest_cluster": 10,
+        "ci95": [
+          0.04774362658314053,
+          0.08671227065018405
+        ],
+        "bootstrap_replicates": 5000,
+        "method": "resample Bemis-Murcko target clusters; weight members equally within the resulting sample"
+      }
+    }
+  },
+  "panel_vs_ordinary": {
+    "paired": {
+      "n": 120,
+      "baseline_mrr25": 0.9253695436507937,
+      "candidate_mrr25": 0.9270969498910676,
+      "delta": 0.0017274062402738868,
+      "ci95": [
+        -0.0006634667755991288,
+        0.005396825396825396
+      ],
+      "improved": 3,
+      "harmed": 1
+    },
+    "scaffold_sensitivity": {
+      "clusters": 111,
+      "largest_cluster": 6,
+      "ci95": [
+        -0.0006634667755991288,
+        0.005342883530223683
+      ],
+      "bootstrap_replicates": 5000,
+      "method": "resample Bemis-Murcko target clusters; weight members equally within the resulting sample"
+    }
+  },
+  "panel_vs_s3": {
+    "paired": {
+      "n": 120,
+      "baseline_mrr25": 0.917009144237405,
+      "candidate_mrr25": 0.9270969498910676,
+      "delta": 0.01008780565366243,
+      "ci95": [
+        0.002855844209664542,
+        0.01920667989417989
+      ],
+      "improved": 8,
+      "harmed": 0
+    },
+    "scaffold_sensitivity": {
+      "clusters": 111,
+      "largest_cluster": 6,
+      "ci95": [
+        0.002586206896551724,
+        0.01882194603853535
+      ],
+      "bootstrap_replicates": 5000,
+      "method": "resample Bemis-Murcko target clusters; weight members equally within the resulting sample"
+    }
+  }
+}

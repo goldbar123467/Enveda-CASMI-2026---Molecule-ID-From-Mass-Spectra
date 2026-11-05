@@ -255,7 +255,7 @@ Test the fixed final-layer policy separately with excluded-identity raw neural
 channels: source weights POP=0.10, SPEC=0.10, NP=0.12, library gate0.78, augmented
 LOTUS membership, and low-library NP leader promotion requiring a 0.055 score
 margin plus a better neural rank. No threshold is fitted here. Against the
-physical baseline panel MRR0.917009, the original-neural control gives0.906184,
+physical baseline panel MRR0.917009, the original-neural control gives 0.906184,
 v80-best proxy0.906938 and v80-last0.915797. **Reject this composite prior/promotion
 policy on the panel.** The exact published three-model ensemble is not evaluated
 by these numbers. Its claimed score and claims of protected leaders cannot be
@@ -276,16 +276,16 @@ The saved model is the final checkpoint, although the legacy retrieval monitor
 peaked at epoch114. It gives native familiar MRR0.456220, formula-oracle MRR0.484772,
 and hard185 oracle MRR0.393802. None of those is a Kaggle score.
 
-On the exact in-list physical panel replay, original50%/general20-50% plus the
-fixed P01 prior gives0.922160 versus baseline0.917009. The prespecified
-original50%/v80-25%/general20-25% blend gives0.922864. Against P01's holdout proxy
+On the exact in-list physical panel replay, original50%/general 20-50% plus the
+fixed P01 prior gives 0.922160 versus baseline 0.917009. The prespecified
+original50%/v80-25%/general 20-25% blend gives 0.922864. Against P01's holdout proxy
 0.918796, that latter difference is+0.004067 (paired interval
 [-0.000298,+0.012500], one improved / one harmed). Thus the point estimate is
 promising but still uncertain and based on reused targets.
 
 Local PL09 starts the matching native-preferred seed20 at **20:04 UTC**. Its
 actual manifest matches the general run's training/exclusion hashes. Native
-views exist for163,854 of246,233 training molecules, with1,030,691 native rows.
+views exist for 163,854 of 246,233 training molecules, with 1,030,691 native rows.
 An exposure audit is essential: under the original uniform-by-molecule sampler,
 the expected native-view fraction is already **65.8957%**, rising only to
 **66.5443%** under native preference. Only3,810 training molecules have both
@@ -293,7 +293,7 @@ matched native and other views. The validation acquisition mismatch was real,
 but the proposed native sampler changes training exposure only slightly. Finish
 the paired experiment and avoid extrapolating a large domain-correction effect.
 
-The second Kaggle session P07 prepares a fixed general20 production refit on
+The second Kaggle session P07 prepares a fixed general 20 production refit on
 GPU0 and a union-excluded replica of the published v4 architecture on GPU1.
 Version1 failed at argument parsing before any epoch; version2 uses a checked
 structured dispatcher. The replica deliberately uses original seed0 with its
@@ -301,7 +301,7 @@ different architecture through the training library API. The production model
 will never be evaluated on its former holdout.
 
 The next preregistered hypothesis changes **chemical-domain sampling** instead.
-The public metadata/LOTUS union annotates23,076 of246,233 training molecules
+The public metadata/LOTUS union annotates 23,076 of 246,233 training molecules
 (9.3716%). Hold the parent weights, loss, new AdamW initialization and learning
 rate2e-5 fixed, then compare32 full epochs under:
 
@@ -315,9 +315,9 @@ hard-negative pools, fingerprint auxiliary loss and fingerprint class weights
 remain unchanged; the in-batch negative composition naturally follows the
 sampled positive molecules. Both conditions reset optimizer state equally.
 
-Use independent parents general20 (local) and general21 (Kaggle), preserving all
+Use independent parents general 20 (local) and general 21 (Kaggle), preserving all
 27,600 exclusions. Compare each continuation with its parent and with the
-ordinary continuation on native234, hard185 and the exact physical panel. Do
+ordinary continuation on native 234, hard185 and the exact physical panel. Do
 not pool two seeds as468 independent targets: report each seed pair, then a
 molecule-paired mean over seeds with its limited interpretation. Keep the
 published blend weights fixed. Favor a production NP continuation only if the
@@ -326,7 +326,201 @@ threshold sweep or new rank-1 prior is part of this test.
 
 PL13 real RTX2070 smoke passes both conditions: four actual optimizer steps per
 condition, exact parent load, finite changed parameters, matched source hashes.
-The16-target toy diagnostic is explicitly unqualified and omitted from scientific
+The 16-target toy diagnostic is explicitly unqualified and omitted from scientific
 results. Smoke checkpoints are rejected by the evaluation loader. P09 is
 packaged and will launch after P05 frees a Kaggle session; it has not consumed
 a scoring submission.
+
+## Completed T4 pair and an important curriculum caveat
+
+P05 completes both 128×500 trials. General/native training times are 4,045/4,024
+seconds, and both selected checkpoints are final epoch128. Training-index and
+held-out identity hashes exactly match the local cohort. Native matching is
+slightly platform-dependent: local 1,146,540 rows versus cloud 1,147,185, with 826
+local-only and1,471 cloud-only rows (Jaccard99.7999%). Raw eligible input counts
+agree; view sets do not. The cloud native trial covers163,855 training molecules
+versus local 163,854. Each general/native pair is controlled within its platform;
+the across-platform seed replication also includes this small preprocessing
+difference. It must not be described as identical byte-level preprocessing.
+
+| Seed21 condition | Native familiar MRR | Native unseen oracle MRR | Hard185 oracle MRR | Public50/new50 physical panel |
+|---|---:|---:|---:|---:|
+| General | 0.486625 | 0.477719 | 0.388844 | 0.926069 |
+| Native-preferred | 0.471903 | 0.496541 | 0.418688 | 0.923870 |
+
+Native preference changes familiar MRR by-0.014722 (paired interval
+[-0.053119,+0.024562]) and unseen-oracle MRR by+0.018823 (interval
+[-0.012981,+0.051631]). These mixed directions and wide intervals do not establish
+a win. The local seed20 native trial is still running. General's fixed50/50 panel
+blend improves in both independent fits (local 0.922160, cloud 0.926069), retaining
+the original public channel. This supports preparing the production general 20
+refit, while awaiting actual hidden scores.
+
+A further exposure audit shows **only 44** of the 23,076 annotated NP training
+identities have matched native views under this exact public-metadata join.
+Their mean native-view probability is 0.001678. The NP curriculum consequently
+reduces expected native-view exposure from 65.8957% to **33.0318%**. This is a
+combined chemical-population/acquisition intervention, not an isolated chemical
+mechanism. The annotations are incomplete and most matched NP training examples
+come from public references. Record this before reading continuation results;
+judge the available-data curriculum on native held-out spectra and the same
+panel, rather than interpreting a reference-only gain as transfer success.
+
+P09 launches at 20:33 UTC after P05's full-epoch and identity exclusions pass
+inspection. Its general 21 parent is independent of the native-index discrepancy,
+since the general trial uses the unchanged complete cache. Both32-epoch
+conditions initialize from that exact same parent. Two daily scoring slots
+remain reserved; only P01/P02 have been submitted.
+
+## Local acquisition replication and first curriculum result
+
+PL09 finishes at 21:02 UTC:128 complete epochs×500 steps, fixed final128 checkpoint,
+3,470 seconds. Native20 gives familiar0.487527, unseen-formula0.502227 and
+hard1850.429574. The unseen-oracle improvement over general 20 is+0.017455,
+similar to seed21's+0.018823. However, public50/native 20-50 final panel MRR is
+**0.916035**, versus general 20's0.922160 and baseline 0.917009. Native21 also
+reduces that panel proxy versus its general parent. Do not promote a native-preferred
+production refit: the final-ranking criterion fails despite the
+retrieval-proxy gains. The 2070 immediately starts the general 20 continuation
+control, followed sequentially by the NP-mixture condition (both seed23).
+
+P09's two actual32×500 continuation runs finish with matching parent, cohort,
+source and curated-key hashes. General/NP times are 1,124/1,172 seconds. Both use
+the same 128-epoch general 21 parent and a fresh optimizer atLR2e-5.
+
+| Native diagnostic | Ordinary continuation | NP curriculum | Delta | Conditional paired95% interval |
+|---|---:|---:|---:|---|
+| Familiar256 | 0.496931 | 0.544331 | +0.047400 | [+0.021214,+0.074490] |
+| Unseen formula-oracle234 | 0.480416 | 0.541264 | +0.060848 | [+0.039203,+0.084171] |
+| Unseen formula-oracle hard185 | 0.396760 | 0.476158 | +0.079397 | [+0.054322,+0.105757] |
+
+The fixed public50/new50 final physical-panel proxy is 0.924107 for ordinary
+continuation and **0.926416** for NP curriculum; the parent gives 0.926069 and
+baseline 0.917009. The NP variant improves8 baseline molecules and harms0 in this
+reused panel. The public50/v8025/NP25 alternative gives 0.922975. Keep both blend
+families visible; no weights are fitted to these outcomes.
+
+These are encouraging transfer diagnostics despite the lower native-source
+exposure. The unseen formula-decoy identities are absent from all training and
+also drawn from natural-product chemistry, so the result is more informative
+than favoring a memorized truth over familiar decoys. It still does not isolate
+one learned physical mechanism, establish scaffold-novel performance, or measure
+hidden competition MRR. Confirm with the independent general 20 parent before
+choosing a production curriculum. Full-data continuations may be prepared, but
+must never be scored on their training identities.
+
+Measured scheduling result: the first three128-epoch fits complete192,000
+training steps in approximately87 minutes. Three serial fits at the measured
+local duration would take173 minutes, giving about2× faster time to three models.
+This includes staggered starts and native-index preparation, not a hardware-only
+benchmark. Median500-step training epochs: RTX 2070: 20.75s; T4 general: 24.42s;
+T4 native: 24.33s. Independent fits across the two sources provide the benefit.
+
+## Independent continuation confirmation
+
+PL14/PL15 complete the second parent pair on the RTX 2070: each runs all
+32 epochs of 500 optimizer steps at LR 2e-5 with a fresh optimizer, from the
+same excluded general20 epoch128 parent. Ordinary/NP times are 951/1,012 seconds.
+The final epoch32 is selected in both conditions, without validation epoch selection.
+
+| Parent20 condition | Native familiar MRR | Unseen formula-oracle234 | Hard185 oracle | Public50/new50 physical panel |
+|---|---:|---:|---:|---:|
+| Ordinary continuation | 0.495191 | 0.510077 | 0.422206 | 0.926632 |
+| NP curriculum, q50 | 0.551073 | 0.548595 | 0.475880 | 0.927778 |
+
+The NP continuation improves native retrieval over the ordinary continuation
+in both independent parent pairs. Average the two fitted-pair effects within
+each target, keeping the 234 targets as 234 observations. The mean unseen-oracle
+gain is +0.049683; the molecule-paired 95% interval is [+0.031927,+0.067923].
+Resampling 171 Bemis-Murcko target clusters gives a sensitivity interval
+[+0.032370,+0.067572]. On the 185 ambiguous groups the mean gain is +0.066536,
+with scaffold sensitivity interval [+0.047744,+0.086712]. These intervals are
+conditional on the two fitted parent pairs and this reused target cohort.
+They neither quantify population uncertainty across training seeds nor make
+the test scaffold-disjoint from training.
+
+The mean final-panel proxy is 0.927097 for NP versus 0.925370 for ordinary
+continuation; the +0.001727 paired interval includes zero
+[-0.000663,+0.005397]. Relative to baseline S3's exact physical-panel 0.917009,
+the mean NP gain is +0.010088, with scaffold sensitivity interval
+[+0.002586,+0.018822]. Each NP parent blend improves eight baseline targets and
+harms none. These are reused-panel results, not a competition score or an
+independent confirmation set. They support choosing the fixed q50 curriculum
+over the other production-ready candidates, while awaiting Kaggle evidence.
+
+## Final dose sweep and production qualification
+
+The already-running local q25/q75 dose sweep completes at 22:13:42 UTC. Both
+conditions use the same general20 parent, RNG seed23, LR 2e-5 and full 32x500
+budget. Only evaluation and audits follow the user's request to stop after
+this run; no additional training is started.
+
+| Mixture coefficient | Native familiar | Unseen formula-oracle234 | Hard185 oracle | Fixed50/50 physical panel |
+|---|---:|---:|---:|---:|
+| q25 | 0.512071 | 0.524339 | 0.446371 | 0.926354 |
+| q50 | 0.551073 | 0.548595 | 0.475880 | 0.927778 |
+| q75 | 0.541699 | 0.572836 | 0.509696 | 0.927778 |
+
+q75 improves the formula-oracle diagnostic, loses familiar retrieval against
+q50, and gives no further panel gain. Its effect has only one parent pair;
+there is no production q75 refit or real submission-path smoke. Keep it as an
+unconfirmed future hypothesis. Select the two-parent-confirmed q50 candidate
+for the requested final submission.
+
+P07v2's actual T4 production general20 refit completes all 128x500 steps in
+3,431 seconds. The excluded public-v4 architecture replica completes 109x500
+in 3,264 seconds. Its native familiar/unseen/hard185 results are
+0.422694/0.446936/0.373603; its conservative public50/v450 panel is 0.922168.
+This does not support replacing the new NP curriculum with that replica.
+
+P10 completes both full-data 32x500 continuations from the production parent:
+ordinary 838 seconds, NP 884 seconds. There are 273,833 training identities,
+25,916 annotated NP identities and 54.7321% NP probability mass under q50.
+Neither full-data model is evaluated on its training targets. Real RTX 2070
+four-step full-parent smokes establish optimizer/code integrity before P10;
+their toy results are excluded from scientific comparisons.
+
+P08 and P11 both complete the real 12-molecule Kaggle GPU pipeline smoke.
+Each produces 400 valid rows, zero official metric-identity duplicates and
+independent 50/50 z-score blend error 4.44e-16. P11's new model changes actual
+candidate scores (maximum difference 3.581274), with all 12 real output rows
+changed from the frozen fallback. Checkpoint, parent, stage, non-smoke flag,
+architecture, epoch count, curated-key hash and full-data population are
+guarded. Every guarded extension cell deletes `submission.csv` on failure
+before reraising, preventing a silent submission of an earlier frozen CSV.
+The pinned frozen module literal is preserved exactly.
+
+P11's production checkpoint SHA256 is
+`fd05f0333711c568dccdc551eecfd9123a88b4c306515801f1767763abfbf699`;
+parent SHA256 is
+`67ab9795ae72213bf89574bb2ca3fd6e6d624ea6b3f62ea53b45ab04f54c74b1`.
+Its smoke CSV SHA256 is
+`dbffacce6411197c91e0b2a7394d2917cdbf1059396720762aa20508a856b28e`.
+The smoke CSV is a qualification artifact. The scoring submission uses the
+kernel-version rerun, allowing Kaggle to execute the full hidden pipeline.
+
+Validation totals: 54 unique checks pass across the CLI and GPU environments.
+The full CLI suite passes 36 and skips 18 numeric checks; all 18 numeric checks
+pass in the GPU environment. Candidate construction and failure-cleanup tests
+pass, alongside the actual GPU optimization and production-path smokes.
+
+## End-of-day submission and overnight pause
+
+The latest user directive authorizes one final best-candidate submission and
+then a pause. Submit P11 version1 from `submission.csv` at 22:20:35 UTC:
+**ref58036642**, description marker `EOD11-20261105`. This is an explicit
+one-time exception to the normal two-pending limit while P01/P02 are pending.
+The final 22:26 UTC read-only API audit confirms three submissions today and
+**two slots unused**. All three scores are pending; the best completed public
+MRR remains **0.477**. No observed hidden improvement is claimed.
+
+At 22:21:57 UTC, all project training, experiment controllers, score watchers
+and hourly run-update processes are stopped. The process audit finds zero
+remaining project workers; RTX 2070 utilization is 1% (desktop activity).
+Submitted Kaggle scoring evaluations continue so they can return scores.
+No training, automatic restart, submission or monitoring job is scheduled
+overnight. Pause the active goal after saving and merging these records.
+Resume only on a new user instruction, starting with the three pending
+submission results. See the compact
+[pause handoff](PAUSED-2026-11-05.md) and
+[evidence directory](evidence/professional-2026-11-05/).
