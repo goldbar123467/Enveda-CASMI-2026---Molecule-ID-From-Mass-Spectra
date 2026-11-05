@@ -20,5 +20,9 @@
       "pid": 17788,
       "script": "watch_score.py"
     }
-  ]
+  ],
+  "final_recheck_utc": "2026-11-05T22:31:02.1860198Z",
+  "relaunched_updater_stopped": true,
+  "pause_guard": ".local/compute-paused.json blocks update_runs.py --loop; explicit user resumption required",
+  "pause_guard_cli_check": "exited before refresh, zero remaining project workers"
 }

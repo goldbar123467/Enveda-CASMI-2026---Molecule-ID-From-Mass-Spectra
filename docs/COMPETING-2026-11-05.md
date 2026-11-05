@@ -524,3 +524,16 @@ Resume only on a new user instruction, starting with the three pending
 submission results. See the compact
 [pause handoff](PAUSED-2026-11-05.md) and
 [evidence directory](evidence/professional-2026-11-05/).
+
+Final shutdown follow-up: another session restarted `update_runs.py --loop`
+at 22:22:33 UTC. Stop that updater and its project-specific launch shells,
+then add a durable local pause marker. `update_runs.py --loop` now checks
+`.local/compute-paused.json` before any refresh and exits while the marker
+exists. Manual one-time refreshes remain possible. CLAUDE.md requires an
+explicit user resumption before removing it or starting any project worker.
+The actual guarded CLI exits immediately and the process recheck finds zero
+project workers. The final shutdown receipt records the recheck timestamp.
+Two regression checks verify blocked background refresh and permitted explicit
+one-time refresh. The full CLI suite now passes 38 checks and skips the same
+18 numeric checks previously passed in the GPU environment: 56 unique passing
+checks across environments. No training is restarted for these checks.

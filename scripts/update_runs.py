@@ -138,9 +138,16 @@ def once():
     print(now(), "runs:", len(rows), "active:", sum(r["status"] not in FINAL for r in rows), flush=True)
 
 
-if __name__ == "__main__":
+def main(loop=False):
     while True:
+        if loop and (ROOT / '.local/compute-paused.json').is_file():
+            print('Project paused: hourly updater disabled until explicit user resumption.', flush=True)
+            return
         once()
-        if "--loop" not in sys.argv:
+        if not loop:
             break
         time.sleep(3600)
+
+
+if __name__ == "__main__":
+    main(loop="--loop" in sys.argv)

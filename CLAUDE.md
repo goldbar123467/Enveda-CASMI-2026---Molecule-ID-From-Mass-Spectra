@@ -50,7 +50,7 @@ These rules come from the user's instructions of 2026-10-28 and replace everythi
   logs, purpose) — `scripts/add_run.py <id> <platform> <kind> "<ref>" "<purpose>" [expect]` does it.
   **Fill `result` when it finishes** (the numbers, not "done"). Then run
   `.venv/Scripts/python.exe scripts/update_runs.py` to regenerate `RUNS.md`. Never edit `RUNS.md` by hand.
-- Keep `scripts/update_runs.py --loop` running in the background (hourly refresh); restart it when a session resumes.
+- During active work, keep `scripts/update_runs.py --loop` running in the background (hourly refresh). If `.local/compute-paused.json` exists, do not restart it or any training/watcher/controller. Remove the pause marker only after an explicit user request to resume project work; merely opening a session does not resume work.
 - Conclusions belong in `STRATEGY.md`, scores in `SUBMISSIONS.md`; `runs.csv` holds the per-run facts.
 
 ## Layout
