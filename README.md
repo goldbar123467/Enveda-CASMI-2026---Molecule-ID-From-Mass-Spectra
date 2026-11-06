@@ -5,6 +5,11 @@ Private workspace for the Kaggle code competition
 Training and labelled scorer evaluation can run on the local RTX 2070 with `.venv-gpu`.
 The full candidate-generation pipeline and competition submissions run on Kaggle.
 
+To watch local training, run `.\training-monitor.cmd` for a browser dashboard, or
+`.\training-monitor.cmd --terminal` for a live terminal view. Both show progress,
+ETA, loss, memory and watchdog health. See [the monitor guide](docs/TRAINING-MONITOR.md)
+for options and future runs. Python standard library only; no installs needed.
+
 - [`docs/SCIENCE-2026-11-05.md`](docs/SCIENCE-2026-11-05.md) — current research,
   two-round experiment protocol, validation limits and submission decision.
 - [`NOTICE.md`](NOTICE.md) — upstream attribution and licensing scope.

@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Enveda · Training monitor</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="/style.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <aside class="sidebar">
+    <a class="brand" href="#overview"><span class="brand-mark">E<span>∙</span></span><span>ENVEDA<small>CASMI 2026</small></span></a>
+    <div class="side-label">WORKSPACE</div>
+    <nav aria-label="Dashboard sections">
+      <a class="nav-active" href="#overview"><span>◉</span> Training overview</a>
+      <a href="#models"><span>▤</span> Model queue</a>
+      <a href="#watchdog"><span>◇</span> Watchdog</a>
+      <a href="#logs"><span>⌁</span> Live log</a>
+    </nav>
+    <div class="side-bottom"><span class="local-dot"></span> LOCAL WORKSTATION<p>Reads status and logs only.<br>Closing this page keeps<br>your training running.</p><span class="side-version">TRAINING MONITOR / 01</span></div>
+  </aside>
+  <main>
+    <header class="topbar"><div class="breadcrumb">CASMI 2026 <span>/</span> Experiments <span>/</span> <strong id="run-id">—</strong></div><div class="top-actions"><span id="connection" class="connection">Connecting…</span><button id="refresh" type="button" title="Refresh dashboard now">↻ <span>Refresh</span></button></div></header>
+    <section class="heading" id="overview"><div><div class="eyebrow">SPECTRUM → MOLECULE</div><h1>Training overview<span>.</span></h1><p id="run-description">Connecting to your local training run.</p></div><div class="status-pill" id="run-state" role="status">Loading</div></section>
+    <div id="notice" class="notice" role="status" hidden></div>
+    <div class="summary-grid">
+      <section class="card progress-card"><div class="card-label">OVERALL PROGRESS <span id="model-counter">— models complete</span></div><div class="progress-head"><div><span id="overall" class="big-number">—</span><span class="percent">%</span></div><span id="epoch-total" class="muted">— epochs</span></div><div class="progress-track"><div id="overall-bar"></div></div><div id="segments" class="segments" aria-label="Progress per model"></div><div class="progress-foot"><span><i class="legend-dot"></i> <span id="active-model">Waiting for training</span></span><span id="active-epoch">—</span></div></section>
+      <section class="card eta-card"><div class="card-label">ESTIMATED TRAINING FINISH</div><div id="eta" class="eta-number">—</div><div id="eta-date" class="muted">Calculating from epoch timings</div><div class="eta-bottom"><span id="remaining">— remaining</span><span class="estimate-label">ESTIMATE</span></div></section>
+      <section class="card pace-card"><div class="card-label">TRAINING PACE</div><div class="pace-number"><span id="pace">—</span><small>s / epoch</small></div><div class="pace-detail"><span>Latest loss</span><strong id="loss">—</strong></div><div class="pace-detail"><span>Last heartbeat</span><strong id="heartbeat">—</strong></div></section>
+    </div>
+    <div class="middle-grid">
+      <section class="card chart-card"><div class="section-head"><div><h2>Learning curve</h2><p>Training loss by epoch</p></div><label class="sr-only" for="chart-model">Model to show</label><select id="chart-model"><option value="current">Current model</option></select></div><div class="chart-wrap"><canvas id="loss-chart" role="img" aria-label="Training loss by epoch"></canvas></div><div class="chart-foot"><span id="chart-label">Waiting for epoch records</span><span>LOWER LOSS IS BETTER</span></div></section>
+      <section class="card hardware-card"><div class="section-head"><div><h2>Workstation</h2><p id="gpu-name">GPU telemetry</p></div><span class="chip">LOCAL</span></div><div class="hardware-stat"><span>GPU utilization</span><strong id="gpu-util">—</strong></div><div class="meter green"><div id="gpu-bar"></div></div><div class="hardware-stat"><span>VRAM · whole GPU</span><strong id="vram">—</strong></div><div class="meter"><div id="vram-bar"></div></div><div class="hardware-stat"><span>System RAM · used</span><strong id="ram">—</strong></div><div class="meter"><div id="ram-bar"></div></div><div class="hardware-footer"><div><span>TEMPERATURE</span><strong id="temperature">—</strong></div><div><span>RAM AVAILABLE</span><strong id="ram-free">—</strong></div><div><span>TORCH RESERVED</span><strong id="torch-memory">—</strong></div></div><p class="telemetry-note">GPU readings refresh every 15s. Torch peak is from the latest epoch.</p></section>
+    </div>
+    <div class="bottom-grid">
+      <section class="card models-card" id="models"><div class="section-head"><div><h2>Model queue</h2><p>Paired control and external-data models · shared folds</p></div><span id="queue-count" class="chip">— / —</span></div><div class="table-wrap"><table><thead><tr><th>MODEL</th><th>FOLD</th><th>PROGRESS</th><th>STATUS</th><th>RETRIEVAL MRR</th></tr></thead><tbody id="model-rows"></tbody></table></div><p class="table-note">MRR is a local retrieval diagnostic, not a Kaggle score. Final validation and submission follow training.</p></section>
+      <section class="card watchdog-card" id="watchdog"><div class="section-head"><div><h2>Watchdog</h2><p>Independent recovery supervisor</p></div><span id="watchdog-dot" class="watchdog-dot"></span></div><div class="watchdog-status" id="watchdog-state">—</div><div class="watchdog-row"><span>Last check</span><strong id="watchdog-last">—</strong></div><div class="watchdog-row"><span>Next check</span><strong id="watchdog-next">—</strong></div><div class="watchdog-row"><span>Restarts used</span><strong id="watchdog-restarts">—</strong></div><div class="watchdog-reason" id="watchdog-reason" hidden></div><div class="watchdog-note"><span>◇</span><p>The existing watchdog handles recovery. This dashboard only observes the run.</p></div></section>
+    </div>
+    <section class="card log-card" id="logs"><div class="section-head"><div><h2>Live log</h2><p>Latest training output</p></div><span class="chip">READ ONLY</span></div><pre id="log-output" tabindex="0">Waiting for logs…</pre><details id="error-details" hidden><summary>Recent stderr</summary><pre id="error-output"></pre></details></section>
+    <footer><span>ENVEDA / CASMI 2026 <span class="footer-divider">·</span> Local training monitor</span><span id="last-updated">Auto-refresh every 5 seconds</span></footer>
+  </main>
+</body>
+</html>
