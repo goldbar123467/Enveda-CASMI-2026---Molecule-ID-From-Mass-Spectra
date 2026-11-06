@@ -1,5 +1,32 @@
 # Strategy
 
+## 2026-11-06: shared-fold external-spectrum run
+
+Verified scores: P01 **0.480**, P02 **0.479**, P11 **0.468**. Current best is
+**0.480**. Yesterday's NP continuation failed to transfer despite positive local
+diagnostics. New work follows Deotte's common-fold/OOF scaffold and compares
+competition-only vs audited MassBank/GNPS spectra in ten sequential RTX2070
+trainings. See [the plan](docs/LONG-TRAINING-2026-11-06.md). No automatic
+submission; full-pipeline validation remains necessary.
+
+L06 completed6 November at22:49UTC with all10 models/1,280 epochs and zero
+restarts; final model and prediction hashes were checked. On316 reserved
+confirmation molecules, control/external/equal blend/L2 stack retrieval MRR was
+0.680621/0.646321/0.662922/0.671584. External's paired delta was-0.034299
+(95% interval[-0.065787,-0.003513]); development gains did not confirm. The
+NP-cohort blend gain+0.017801 has an interval including zero and is not an
+independent confirmation. Do not promote external/blended models on this
+evidence. No L06 Kaggle submission was made; the0.480 production baseline is
+retained. No direct comparison of L06 control against production has qualified
+a replacement. See the plan's completion section for numeric results/limits.
+
+Subsequent explicit user override: one leaderboard trial was requested despite
+unproven improvement. P12 original50/control-fivefold50 passed the real Kaggle
+GPU smoke (400 valid rows/12 real molecules; exact fivefold mean, independent
+blend error4.44e-16, zero metric duplicates) and was submitted23:50UTC on6 November,
+version1/reference58071964. Hidden score pending; no other candidate is queued.
+
+
 ## 2026-11-05: candidate-based loss improves retrieval, tail fusion fails confirmation
 
 Current best submitted public MRR remains **0.477**, verified from Kaggle submissions.

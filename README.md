@@ -5,11 +5,20 @@ Private workspace for the Kaggle code competition
 Training and labelled scorer evaluation can run on the local RTX 2070 with `.venv-gpu`.
 The full candidate-generation pipeline and competition submissions run on Kaggle.
 
+Latest results (6 November): L06 completed all ten models / 1,280 epochs. Reserved
+local retrieval MRR was **0.6806 control / 0.6463 external data**; these are not
+Kaggle scores. The user-requested **P12 v1 trial, ref 58071964, is pending** after
+passing the real GPU smoke. Best verified public MRR remains **0.480**. See the
+[training results](docs/LONG-TRAINING-2026-11-06.md) and
+[submission record](docs/LONG-SUBMISSION-2026-11-06.md). Work is waiting for the
+user's next instruction; no further training or submission is queued.
+
 To watch local training, run `.\training-monitor.cmd` for a browser dashboard, or
 `.\training-monitor.cmd --terminal` for a live terminal view. Both show progress,
 ETA, loss, memory and watchdog health. See [the monitor guide](docs/TRAINING-MONITOR.md)
 for options and future runs. Python standard library only; no installs needed.
 
+- [`docs/LONG-TRAINING-2026-11-06.md`](docs/LONG-TRAINING-2026-11-06.md) — current shared-fold external-data training and resource/recovery plan.
 - [`docs/SCIENCE-2026-11-05.md`](docs/SCIENCE-2026-11-05.md) — current research,
   two-round experiment protocol, validation limits and submission decision.
 - [`NOTICE.md`](NOTICE.md) — upstream attribution and licensing scope.
@@ -25,7 +34,7 @@ for options and future runs. Python standard library only; no installs needed.
 - `docs/archive-2026-10-08/` — superseded Phase-1 documents, kept for history only.
 
 The current instruction is to submit only after evidence of improvement over the best
-submitted method (public MRR@25 **0.477**, checked 2026-11-05). It supersedes the older
+submitted method (public MRR@25 **0.480**, checked 2026-11-06). It supersedes the older
 daily submission quota policy. Local retrieval/panel MRR and Kaggle public MRR are
 different evaluations; their absolute values must not be compared.
 

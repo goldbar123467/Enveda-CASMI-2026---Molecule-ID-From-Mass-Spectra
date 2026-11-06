@@ -1,0 +1,17 @@
+{
+  "checked_utc": "2026-11-06T23:53:39.866288+00:00",
+  "cli": {
+    "tests": 82,
+    "skipped": 28,
+    "status": "passed"
+  },
+  "targeted_gpu_long_training": {
+    "tests": 7,
+    "status": "passed"
+  },
+  "targeted_gpu_ensemble": {
+    "tests": 3,
+    "status": "passed"
+  },
+  "real_kaggle_smoke": "passed; see p12_kaggle_smoke_audit.json"
+}

@@ -1,0 +1,307 @@
+{
+  "run_id": "L06",
+  "completed_utc": "2026-11-06T22:49:29.751216+00:00",
+  "models": 10,
+  "epochs": 1280,
+  "training_batches": 640000,
+  "watchdog_restarts": 0,
+  "fold_receipts": [
+    {
+      "family": "control",
+      "fold": 0,
+      "receipt": {
+        "epochs": 128,
+        "steps": 64000,
+        "metrics": {
+          "n": 299,
+          "mrr25": 0.6849883294492259,
+          "top1": 0.5719063545150501,
+          "recall25": 0.9531772575250836
+        },
+        "model_sha256": "8e255c3fce57ccb6d1b843f2e3c0dff2361d22df23284df67442da9b701c588c",
+        "predictions_sha256": "3c3a6f8169e0e41dfca32e02ce35f1de06c9057dc1fa4aa525e9c88631b0602f",
+        "smoke": false
+      }
+    },
+    {
+      "family": "control",
+      "fold": 1,
+      "receipt": {
+        "epochs": 128,
+        "steps": 64000,
+        "metrics": {
+          "n": 311,
+          "mrr25": 0.6680732237102369,
+          "top1": 0.5401929260450161,
+          "recall25": 0.9581993569131833
+        },
+        "model_sha256": "e6e97d9bd3b30ae193e93fd7b5f36997c586ac2d4d2c4c80a80eba4d7b458357",
+        "predictions_sha256": "f81f1a31e07ab4015bfde672f33c676a8c6c92590c034b9a0d780ddafe204fdd",
+        "smoke": false
+      }
+    },
+    {
+      "family": "control",
+      "fold": 2,
+      "receipt": {
+        "epochs": 128,
+        "steps": 64000,
+        "metrics": {
+          "n": 308,
+          "mrr25": 0.7043489847729726,
+          "top1": 0.5811688311688312,
+          "recall25": 0.9512987012987013
+        },
+        "model_sha256": "49a02c4bc72e2b48936de7834ae9fc6a705999de858e96780d3a50c6586e4eea",
+        "predictions_sha256": "ed01e8d0f8e8f905a8f436c9760b2ac38c6accf0081218b8257f15be6d04f22b",
+        "smoke": false
+      }
+    },
+    {
+      "family": "control",
+      "fold": 3,
+      "receipt": {
+        "epochs": 128,
+        "steps": 64000,
+        "metrics": {
+          "n": 294,
+          "mrr25": 0.7066398444714772,
+          "top1": 0.5918367346938775,
+          "recall25": 0.9625850340136054
+        },
+        "model_sha256": "c5ceefdb47058d409917007483648d6f68ef4feed6c084fd448dbd84e82b5c45",
+        "predictions_sha256": "d86788b421bdcb26ce1684d64a61d51bea91ba9cd18fd049f6e74d43fd49e667",
+        "smoke": false
+      }
+    },
+    {
+      "family": "control",
+      "fold": 4,
+      "receipt": {
+        "epochs": 128,
+        "steps": 64000,
+        "metrics": {
+          "n": 301,
+          "mrr25": 0.6960937585854529,
+          "top1": 0.5880398671096345,
+          "recall25": 0.9534883720930233
+        },
+        "model_sha256": "9faca3f087fc7e83b0d611687baf6962212c714214055cfca434b1ad93a86ca2",
+        "predictions_sha256": "a7a5ef42024f7f5aa25aacac67cf5d3cf31d1ce69ae5afa72a17c9a7c7cea820",
+        "smoke": false
+      }
+    },
+    {
+      "family": "external",
+      "fold": 0,
+      "receipt": {
+        "epochs": 128,
+        "steps": 64000,
+        "metrics": {
+          "n": 299,
+          "mrr25": 0.6883101105509133,
+          "top1": 0.568561872909699,
+          "recall25": 0.9531772575250836
+        },
+        "model_sha256": "29e5481f9a9da4e2d15cf2998a393c1de730dd2375c6bf87249fe6344712c093",
+        "predictions_sha256": "1f7bcd3a3d9ffac91c2f32a6d575a789d7ab877005b16ad5fc89946d6f0a26dd",
+        "smoke": false
+      }
+    },
+    {
+      "family": "external",
+      "fold": 1,
+      "receipt": {
+        "epochs": 128,
+        "steps": 64000,
+        "metrics": {
+          "n": 311,
+          "mrr25": 0.6858650005783491,
+          "top1": 0.5530546623794212,
+          "recall25": 0.9742765273311897
+        },
+        "model_sha256": "f40176a2e615e6297f54d408a02091cc88684265c6d2b8a525b8a54ddf5f6fcf",
+        "predictions_sha256": "f3f62be1e482bd0a8f5801a8a1f2d21b63dda0599b95d278925121f5594029bf",
+        "smoke": false
+      }
+    },
+    {
+      "family": "external",
+      "fold": 2,
+      "receipt": {
+        "epochs": 128,
+        "steps": 64000,
+        "metrics": {
+          "n": 308,
+          "mrr25": 0.7015287544276858,
+          "top1": 0.5746753246753247,
+          "recall25": 0.9577922077922078
+        },
+        "model_sha256": "3fb583352e18af5c625edfb5f00f30fcfc578a00d555832c2c3f921a960e0cca",
+        "predictions_sha256": "635d61d526c5c157b377101f4f19ff9560f2ba634e7984e5306dc823a55384d1",
+        "smoke": false
+      }
+    },
+    {
+      "family": "external",
+      "fold": 3,
+      "receipt": {
+        "epochs": 128,
+        "steps": 64000,
+        "metrics": {
+          "n": 294,
+          "mrr25": 0.6942620221823208,
+          "top1": 0.564625850340136,
+          "recall25": 0.9659863945578231
+        },
+        "model_sha256": "ddde50310aea0ddd7a1f005c9d613dd28069b2d0182ec7601ffef28fde1c0c24",
+        "predictions_sha256": "80523131c0c93d7064fad8eb0d1189babc901523e14307f1990f261036559549",
+        "smoke": false
+      }
+    },
+    {
+      "family": "external",
+      "fold": 4,
+      "receipt": {
+        "epochs": 128,
+        "steps": 64000,
+        "metrics": {
+          "n": 301,
+          "mrr25": 0.6780510155861668,
+          "top1": 0.5382059800664452,
+          "recall25": 0.9534883720930233
+        },
+        "model_sha256": "4f1d8edb2c4a0c2b0d44f73907f7d18a8fcdd8e2a9666013ec30677339bad27b",
+        "predictions_sha256": "076ef8d27916660048a656a96b3303fb3d10334541aa3765ab19a54c2d23d83f",
+        "smoke": false
+      }
+    }
+  ],
+  "stack_report": {
+    "weights": [
+      1.2520184516906738,
+      0.20924483239650726,
+      1.2885279655456543,
+      0.21146433055400848
+    ],
+    "no_automatic_submission": true,
+    "baseline_public_mrr": 0.48,
+    "limitation": "Truth-forced retrieval diagnostic, ordinary OOF (not nested end-to-end validation); full-pipeline independent confirmation still required",
+    "cohorts": {
+      "development": {
+        "n": 1197,
+        "control": {
+          "mrr25": 0.6948387564130414,
+          "delta": 0.0,
+          "delta_ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "external": {
+          "mrr25": 0.7010429880264161,
+          "delta": 0.006204231613374675,
+          "delta_ci95": [
+            -0.006466830561651106,
+            0.019309471428776724
+          ]
+        },
+        "equal_blend": {
+          "mrr25": 0.7012485794711348,
+          "delta": 0.006409823058093352,
+          "delta_ci95": [
+            -0.002168026176890966,
+            0.015432232759872131
+          ]
+        },
+        "l2_stack": {
+          "mrr25": 0.6970628704158155,
+          "delta": 0.0022241140027740394,
+          "delta_ci95": [
+            -0.007940569912286647,
+            0.011904072579151947
+          ]
+        }
+      },
+      "confirmation": {
+        "n": 316,
+        "control": {
+          "mrr25": 0.6806206157332367,
+          "delta": 0.0,
+          "delta_ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "external": {
+          "mrr25": 0.6463212915940988,
+          "delta": -0.03429932413913788,
+          "delta_ci95": [
+            -0.06578695791447711,
+            -0.003513242730325977
+          ]
+        },
+        "equal_blend": {
+          "mrr25": 0.6629221604696288,
+          "delta": -0.017698455263607908,
+          "delta_ci95": [
+            -0.03938321568318544,
+            0.005193207179083005
+          ]
+        },
+        "l2_stack": {
+          "mrr25": 0.6715835329145083,
+          "delta": -0.009037082818728387,
+          "delta_ci95": [
+            -0.03175418061115892,
+            0.013530042775644964
+          ]
+        }
+      },
+      "natural_products": {
+        "n": 234,
+        "control": {
+          "mrr25": 0.4708218777922529,
+          "delta": 0.0,
+          "delta_ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "external": {
+          "mrr25": 0.4735971090134089,
+          "delta": 0.0027752312211560617,
+          "delta_ci95": [
+            -0.030072399384723576,
+            0.03586939129123106
+          ]
+        },
+        "equal_blend": {
+          "mrr25": 0.4886229211570218,
+          "delta": 0.017801043364768853,
+          "delta_ci95": [
+            -0.0011315789636068838,
+            0.0390216340712664
+          ]
+        },
+        "l2_stack": {
+          "mrr25": 0.48288409214998873,
+          "delta": 0.012062214357735893,
+          "delta_ci95": [
+            -0.010970496506666264,
+            0.03652388829450752
+          ]
+        }
+      }
+    }
+  },
+  "limitation": "Local truth-forced retrieval OOF, not Kaggle scores or nested end-to-end validation.",
+  "leaderboard_trial": {
+    "kernel": "clarkkitchen/casmi26-p12-long-control",
+    "version": 1,
+    "reference": 58071964,
+    "status": "SubmissionStatus.PENDING",
+    "public_score": "",
+    "checked_utc": "2026-11-06T23:54:12.976476+00:00"
+  }
+}

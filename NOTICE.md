@@ -6,6 +6,18 @@ over those works. Retain their original notices and observe the license of each
 source before reuse. Training data, pretrained weights, caches and downloaded
 research notebooks are excluded from Git.
 
+The 2026-11-06 common-fold/model-folder/OOF/L2 ensemble workflow is inspired by
+[Chris Deotte's Kaggle Playground solutions](https://github.com/cdeotte/kaggle-playground-solutions)
+(Apache-2.0, commit e5a03fffe08a8904feb40c66b85142abb1ec6cc7). New trainer/stack
+code is written for molecular retrieval; no binary-classification or GPT recipe
+is transplanted. The Saner model/features remain credited below. New external
+spectra come from MassBank 2026.03 and directly contributed GNPS libraries;
+record-level source, accession and licenses are retained in the external cache.
+See docs/LONG-TRAINING-2026-11-06.md for upstream links, mirror hashes, exclusions
+and reproducibility constraints. The 0.480 lineage has now been reproduced on
+our account (submission 58032057, verified 2026-11-06); older statements below
+describe the earlier research snapshot.
+
 The public pipeline lineage is credited in the notebooks and `STRATEGY.md`:
 
 - Dmitrii Gluzdov: [data and attributed v4g reproduction assets](https://www.kaggle.com/code/dmitriigluzdov/casmi-26-the-data-behind-spectra-to-structures),

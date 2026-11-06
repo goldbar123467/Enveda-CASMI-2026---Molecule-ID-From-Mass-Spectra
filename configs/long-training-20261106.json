@@ -1,0 +1,22 @@
+{
+  "run_id": "L06",
+  "output": "outputs/local/long-20261106",
+  "external_cache": "outputs/external/cache-20261106",
+  "gpu_memory_fraction": 0.70,
+  "minimum_free_ram_gib": 4,
+  "maximum_hours": 12,
+  "evaluation_molecules_per_fold": 256,
+  "training": {
+    "seed": 20261106,
+    "width": 256,
+    "layers": 4,
+    "heads": 8,
+    "embedding": 192,
+    "batch_size": 96,
+    "epochs": 128,
+    "steps_per_epoch": 500,
+    "lr": 0.0002,
+    "hard_negatives": 16,
+    "negative_pool": 128
+  }
+}

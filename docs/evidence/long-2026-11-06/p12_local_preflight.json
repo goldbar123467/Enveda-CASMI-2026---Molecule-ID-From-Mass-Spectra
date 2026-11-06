@@ -1,0 +1,9 @@
+{
+  "real_scored_molecules": 12,
+  "rows": 688,
+  "models": 5,
+  "mean_error": 0.0,
+  "seconds": 30.617440938949585,
+  "gpu_peak_reserved_gib": 0.06640625,
+  "no_hidden_score": true
+}

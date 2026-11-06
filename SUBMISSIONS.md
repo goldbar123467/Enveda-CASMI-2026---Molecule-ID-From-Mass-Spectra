@@ -76,3 +76,26 @@ All training, experiment controllers, score watchers and the hourly run updater
 are stopped. Submitted Kaggle evaluations continue to return scores. No automatic
 restart or overnight submissions are scheduled. Resume only when the user asks.
 Protocol: [`docs/COMPETING-2026-11-05.md`](docs/COMPETING-2026-11-05.md).
+
+## Scores verified 2026-11-06
+
+| Submission | Kernel | Public MRR@25 | Interpretation |
+|---|---|---|---|
+| 58032057 | P01 public480 v1 | **0.480** | New best submitted baseline |
+| 58032626 | P02 original-scorer control v1 | **0.479** | Documentation/dedup control |
+| 58036642 | P11 NP curriculum v1 | **0.468** | Local gains did not transfer; not promoted |
+
+Verified through the Kaggle submissions API. No submission made on 6 November.
+
+## User-requested L06 trial — submitted 2026-11-06
+
+| Date (UTC) | Slot | Kernel | Change and execution evidence | Ref | Public LB |
+|---|---|---|---|---|---|
+| 2026-11-06 23:50 | P12 | casmi26-p12-long-control v1 | Original scorer50 + mean of five128-epoch L06 control fits50; fixed P01 documentation/physical/metric-dedup recipe. COMPLETE real12-molecule Kaggle GPU smoke,400 valid rows, zero input errors/metric duplicates, all5 pinned models used; independent raw-score mean error0.0 and public-blend error4.44e-16. Explicit user-requested leaderboard trial despite unproven hidden-score benefit. | 58071964 | **Pending** |
+
+Accepted at23:50:11UTC with unique marker`L06-P12-20261106`. This is exactly one
+submission; no other L06 candidate is queued. It preserves the verified0.480 P01
+baseline. The completion/OOF diagnostics did not qualify an expected improvement;
+the user's explicit **"Submit it use a submission"** overrides that promotion
+gate for this one trial. Scoring is pending; the smoke is not a hidden-test result.
+Protocol and receipts: [`docs/LONG-SUBMISSION-2026-11-06.md`](docs/LONG-SUBMISSION-2026-11-06.md).

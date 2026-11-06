@@ -1,5 +1,43 @@
 # Enveda CASMI 2026 — working rules
 
+## Current handoff — GitHub sync and wait, 2026-11-06
+
+The latest user instruction is **"Update and push everything it GitHub with
+results then wait"**. Save the current code/configs/notebook/research notes and
+compact numeric evidence to GitHub, then wait. Do not launch more training,
+experiments, submission controllers or extra scoring submissions until an
+explicit request to resume. P12 v1/ref58071964 is already submitted and still
+pending at the latest API check; its existing Kaggle scoring rerun may finish.
+The verified public best remains P01 **0.480**. The local pause marker records
+this handoff after the push succeeds. Read-only status updates remain allowed.
+
+Completed evidence: L06 ten models/1,280 epochs/640,000 batches, zero restarts;
+control/external reserved retrieval MRR0.680621/0.646321. P12 real Kaggle GPU
+smoke and independent fivefold/50:50-blend/metric-dedup checks passed. See
+`docs/LONG-SUBMISSION-2026-11-06.md` and `docs/evidence/long-2026-11-06/`.
+
+## Current resumption — 2026-11-06
+
+The user explicitly resumed work: research Deotte's systems and all CASMI
+discussions, launch a longer local2070 training and purge obsolete artifacts.
+Yesterday's end-of-day pause is superseded for that scope. Current verified best
+submitted public MRR is **0.480** (P01); P02 .479 and P11 .468. Follow
+`docs/LONG-TRAINING-2026-11-06.md` and its resource/recovery/validation contract.
+No automatic submission is queued. Obsolete-file deletion was blocked by execution
+policy; see the exact inventory in outputs/research/2026-11-06/purge-manifest.json.
+
+The user's latest explicit instruction after completion is **"Submit it use a
+submission"**. This authorizes one L06 leaderboard trial despite the earlier
+statistical promotion gate. Package the control fivefold family, the strongest
+reserved-confirmation family, as P12 with the fixed original50/control50 neural
+recipe. Required real Kaggle smoke, exact checkpoint and numeric ensemble checks
+still apply. Submit once after those execution checks; do not ask again or infer
+an authorization for additional candidates.
+
+That one trial is now submitted: **P12 v1, ref58071964, 2026-11-06 23:50UTC**.
+The real Kaggle GPU smoke and independent numeric/metric-dedup audit passed.
+Score pending; no additional candidate is queued or authorized by this request.
+
 Kaggle code competition [`enveda-CASMI26-molecule-id-mass-spectra`](https://www.kaggle.com/competitions/enveda-CASMI26-molecule-id-mass-spectra).
 Account `clarkkitchen`. Deadline 2026-12-14 23:59 UTC. Metric MRR@25 on ~400 hidden molecules; the public
 board uses ~31% (~125 molecules), so one rank-2→rank-1 flip ≈ +0.004 public.

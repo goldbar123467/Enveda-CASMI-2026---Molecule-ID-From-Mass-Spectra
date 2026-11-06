@@ -1,0 +1,40 @@
+{
+  "valid_rows": 400,
+  "real_molecules": 12,
+  "official_identity_duplicates": 0,
+  "rdkit": "2026.03.3",
+  "canonicalized_unique_smiles": 301,
+  "independent_blend_max_abs_error": 4.440892098500626e-16,
+  "second_model_score_max_difference": 2.9533029317855837,
+  "changed_rows_vs_frozen": 12,
+  "csv_sha256": "df38486dd2b5c2b20e44a98c29e29b74c6790bc803427c965f7d4b2489564e82",
+  "model": {
+    "manifest_sha256": "889f459c11a40e326de9564a31c45cd389b6f23acbca7555cca54176cd7f4c5c",
+    "models": 5,
+    "family": "control",
+    "epochs": 128,
+    "architecture": {
+      "width": 256,
+      "heads": 8,
+      "layers": 4,
+      "embedding": 192
+    },
+    "checkpoint_sha256": {
+      "fold-0.pt": "8e255c3fce57ccb6d1b843f2e3c0dff2361d22df23284df67442da9b701c588c",
+      "fold-1.pt": "e6e97d9bd3b30ae193e93fd7b5f36997c586ac2d4d2c4c80a80eba4d7b458357",
+      "fold-2.pt": "49a02c4bc72e2b48936de7834ae9fc6a705999de858e96780d3a50c6586e4eea",
+      "fold-3.pt": "c5ceefdb47058d409917007483648d6f68ef4feed6c084fd448dbd84e82b5c45",
+      "fold-4.pt": "9faca3f087fc7e83b0d611687baf6962212c714214055cfca434b1ad93a86ca2"
+    },
+    "neural_weights": {
+      "original": 0.5,
+      "long_control": 0.5
+    },
+    "hidden_score_unmeasured": true
+  },
+  "smoke_only": true,
+  "competition_score": null,
+  "control_models": 5,
+  "independent_fivefold_mean_error": 0.0,
+  "manifest_sha256": "889f459c11a40e326de9564a31c45cd389b6f23acbca7555cca54176cd7f4c5c"
+}

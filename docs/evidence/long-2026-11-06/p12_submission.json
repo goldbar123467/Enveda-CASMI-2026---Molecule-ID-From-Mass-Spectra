@@ -1,0 +1,11 @@
+{
+  "reference": 58071964,
+  "kernel": "clarkkitchen/casmi26-p12-long-control",
+  "version": 1,
+  "marker": "L06-P12-20261106",
+  "recorded_utc": "2026-11-06T23:50:11.883549+00:00",
+  "message": "",
+  "public_score": null,
+  "model_manifest_sha256": "889f459c11a40e326de9564a31c45cd389b6f23acbca7555cca54176cd7f4c5c",
+  "smoke_csv_sha256": "df38486dd2b5c2b20e44a98c29e29b74c6790bc803427c965f7d4b2489564e82"
+}

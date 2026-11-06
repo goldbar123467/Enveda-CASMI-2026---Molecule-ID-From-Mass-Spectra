@@ -1,0 +1,7 @@
+{
+  "dataset": "clarkkitchen/casmi26-long-control-20261106",
+  "manifest_sha256": "889f459c11a40e326de9564a31c45cd389b6f23acbca7555cca54176cd7f4c5c",
+  "models": 5,
+  "family": "control",
+  "epochs": 128
+}

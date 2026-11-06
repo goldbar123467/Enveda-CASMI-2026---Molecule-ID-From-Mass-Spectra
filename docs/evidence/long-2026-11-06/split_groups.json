@@ -1,0 +1,10 @@
+{
+  "molecules": 274829,
+  "groups": 273875,
+  "cross_label_input_matches": 2467,
+  "duplicate_external_inputs_removed": 80848,
+  "external_eligible_spectra": 354048,
+  "unique_input_signatures": 2781909,
+  "artifact_sha256": "06a2626d571272a4780ea3965624377e5f785dd5c23131d4527ce89e38f9698e",
+  "rule": "Connected components of byte-identical quantized model inputs share a fold; identity duplicates share an index"
+}

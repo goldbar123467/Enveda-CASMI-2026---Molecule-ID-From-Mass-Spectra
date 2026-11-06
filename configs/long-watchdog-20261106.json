@@ -1,0 +1,12 @@
+{
+  "interval_seconds": 1800,
+  "stale_after_minutes": 15,
+  "maximum_restarts": 3,
+  "restart_minimum_free_ram_gib": 6,
+  "restart_minimum_free_vram_gib": 1,
+  "deadline_utc": "2026-11-07T02:52:03.165710+00:00",
+  "submission_approved": true,
+  "approval_source": "User explicitly approved purge and submission after completion on 2026-11-06. Reuse this consent; do not request it again.",
+  "submission_conditions": "Complete training, choose the supported candidate, preserve the 0.480 baseline, package and pass the real Kaggle smoke and required validation before scoring submission.",
+  "completion_behavior": "Write completion-review.json with approved next action; scientific code fixes and production notebook validation require Codex review. This local supervisor does not edit pinned training code or submit unreviewed artifacts."
+}

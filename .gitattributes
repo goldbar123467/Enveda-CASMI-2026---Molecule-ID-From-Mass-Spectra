@@ -1,0 +1,4 @@
+# Keep byte-pinned L06 training sources reproducible across Windows checkouts.
+scripts/long_training.py text eol=lf
+scripts/stack_oof.py text eol=lf
+scripts/build_external_cache.py text eol=lf
