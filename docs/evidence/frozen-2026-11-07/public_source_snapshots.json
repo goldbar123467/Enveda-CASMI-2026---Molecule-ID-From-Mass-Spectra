@@ -1,0 +1,15 @@
+{
+  "checked_date": "2026-11-07",
+  "notebooks": [
+    {
+      "file": "peaks-v2\\casmi26-peaks-to-structures-v2.ipynb",
+      "sha256": "5a9f232f68246aaedd828584af87390d376522a7037dd50f57b1da2c4ae2d905",
+      "bytes": 688274
+    },
+    {
+      "file": "roman482\\0-482-casmi-from-peaks-to-structures.ipynb",
+      "sha256": "5bdea66bc23d299d9349122c9403a238e952bc91d356dffbe95d562e00553726",
+      "bytes": 798329
+    }
+  ]
+}

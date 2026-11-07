@@ -1,0 +1,11 @@
+{
+  "slot": "public_trial",
+  "marker": "F07-P13-20261107",
+  "reference": 58105681,
+  "kernel": "clarkkitchen/casmi26-p13-outside-blend",
+  "version": 1,
+  "file": "submission.csv",
+  "submitted_utc": "2026-11-07T22:04:58.171908+00:00",
+  "status": "submitted; score pending",
+  "smoke_csv_sha256": "5cb2f1ad75c64791fa63cbfabb7e70e29948e05d8cc3987de79d7e137cdc20b9"
+}

@@ -1,5 +1,29 @@
 # Enveda CASMI 2026 — working rules
 
+## Active resumption — 2026-11-07
+
+The user explicitly requested starting the proposed frozen-feature training,
+public mining while it starts, and approved **two new submissions**. This
+supersedes the wait below. Allocate one submission to a reproducible public-code
+trial and reserve the other for the new trained candidate after validation.
+Real Kaggle smoke and exact artifact checks remain required; no extra approval
+is needed for those two submissions. Avoid additional candidates beyond that cap.
+
+P13 v1 is now submitted, ref58105681 at2026-11-07T22:04UTC; score pending.
+Independent real12 smoke/400valid and exact P01 primary/outsider-blend/dedup
+checks passed. One trained-model slot remains approved; no second submission is
+queued. The current training is **F07R1**, output
+`outputs/local/long-frozen-20261107-r1`. It retains the original24h deadline,
+reuses the byte-verified molecule cache, fixes fragment m/z<=1000 before DreaMS,
+and passed the1000-step learning pilot. The superseded F07 was stopped before
+any head fit and is retained for provenance. Follow
+`docs/FROZEN-TRAINING-2026-11-07.md`; do not restart the superseded run.
+
+
+P12 ref58071964 has finished with an unhandled hidden-rerun error and **no score**;
+do not treat COMPLETE without a nonempty score as a successful leaderboard run.
+The verified best remains P01 **0.480**. Keep that working production baseline.
+
 ## Current handoff — GitHub sync and wait, 2026-11-06
 
 The latest user instruction is **"Update and push everything it GitHub with

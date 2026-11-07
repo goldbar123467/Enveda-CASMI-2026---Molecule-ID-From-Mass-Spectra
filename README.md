@@ -5,13 +5,17 @@ Private workspace for the Kaggle code competition
 Training and labelled scorer evaluation can run on the local RTX 2070 with `.venv-gpu`.
 The full candidate-generation pipeline and competition submissions run on Kaggle.
 
-Latest results (6 November): L06 completed all ten models / 1,280 epochs. Reserved
-local retrieval MRR was **0.6806 control / 0.6463 external data**; these are not
-Kaggle scores. The user-requested **P12 v1 trial, ref 58071964, is pending** after
-passing the real GPU smoke. Best verified public MRR remains **0.480**. See the
-[training results](docs/LONG-TRAINING-2026-11-06.md) and
-[submission record](docs/LONG-SUBMISSION-2026-11-06.md). Work is waiting for the
-user's next instruction; no further training or submission is queued.
+Active run (7 November): **F07R1** is preparing frozen DreaMS/MoLFormer features
+on the RTX 2070, then trains two projection heads with a shared 24-hour budget
+and a 30-minute recovery supervisor. **P13** passed its real Kaggle smoke and was submitted as ref58105681;
+its score is pending. It tests consistent public/private outsider blending. Two new scoring submissions are
+authorized: this public trial and a validated trained candidate.
+
+Best verified public MRR remains **0.480 (P01)**. P12 ref58071964 finished with
+an unhandled hidden-rerun error and **no score**, despite passing its visible
+smoke. L06 local retrieval MRR was0.6806 control /0.6463 external; these are not
+Kaggle scores. See [the new protocol](docs/FROZEN-TRAINING-2026-11-07.md),
+[research](docs/NEXT-LONG-RUN-2026-11-07.md) and [submission log](SUBMISSIONS.md).
 
 To watch local training, run `.\training-monitor.cmd` for a browser dashboard, or
 `.\training-monitor.cmd --terminal` for a live terminal view. Both show progress,

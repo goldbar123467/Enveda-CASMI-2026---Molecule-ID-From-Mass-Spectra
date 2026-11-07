@@ -1,0 +1,7 @@
+{
+  "dreams_batch": 8,
+  "dreams_spectra_per_second": 214.13303211890312,
+  "gpu_peak_reserved_gib": 3.201171875,
+  "molformer_batch": 8,
+  "molecule_dimension": 768
+}

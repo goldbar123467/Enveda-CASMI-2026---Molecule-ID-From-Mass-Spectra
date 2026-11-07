@@ -151,6 +151,8 @@ def build_snapshot(run, *, now=None, alive=process_alive, root=ROOT):
     """Small JSON files only; never open a checkpoint, dataset or NumPy array."""
     now = now or datetime.now(timezone.utc)
     manifest = read_json(run / 'manifest.json', {})
+    if manifest.get('kind') == 'frozen_retrieval':
+        return build_frozen_snapshot(run, manifest, now=now, alive=alive, root=root)
     spec = manifest.get('spec', {})
     cfg = spec.get('training', manifest.get('cfg', {}))
     target = int(cfg.get('epochs', 128))
@@ -237,6 +239,78 @@ def build_snapshot(run, *, now=None, alive=process_alive, root=ROOT):
                 monitor_mode='Read only. The existing watchdog handles recovery separately.')
 
 
+def build_frozen_snapshot(run, manifest, *, now, alive, root):
+    """Report encoder preparation separately from optimizer steps; JSON only."""
+    spec = manifest.get('spec', {})
+    target = int(spec.get('training', {}).get('steps', 0))
+    status = read_json(run / 'status.json', {})
+    stage = status.get('stage', 'Waiting for preparation')
+    models, timings = [], []
+    for seed in spec.get('seeds', []):
+        folder = run / 'models' / f'seed-{seed}'
+        history = read_json(folder / 'history.json', [])
+        history = [r for r in history if isinstance(r, dict)] if isinstance(history, list) else []
+        receipt = read_json(folder / 'complete.json', {})
+        current = status.get('seed') == seed and 'head training' in stage and status.get('state') != 'complete'
+        step = max([int(r.get('step', 0)) for r in history] + [int(receipt.get('steps', 0)), int(status.get('step', 0)) if current else 0])
+        previous = 0
+        for row in history:
+            delta = int(row.get('step', 0)) - previous
+            if delta > 0 and finite_number(row.get('seconds')) and row['seconds'] > 0 and not row.get('pilot'):
+                timings.append(row['seconds'] / delta)
+            previous = int(row.get('step', 0))
+        series = [dict(epoch=r['step'], loss=r['loss']) for r in history if finite_number(r.get('loss')) and 'step' in r]
+        models.append(dict(id=f'seed-{seed}', family='Projection head', seed=seed, fold=None,
+                           label=f'Seed {seed}', epoch=min(target, step), epochs=target, complete=bool(receipt),
+                           active=current, loss=status.get('loss') if current else series[-1]['loss'] if series else None,
+                           metrics=dict(mrr25=receipt.get('confirmation_mrr25')), series=series))
+    completed = sum(m['epoch'] for m in models)
+    total = target * len(models)
+    trainer_alive = alive(status.get('pid'))
+    heartbeat_age = age_seconds(status.get('updated_utc'), now)
+    state = status.get('state', 'waiting')
+    if state != 'complete':
+        if (root / '.local/compute-paused.json').exists():
+            state = 'paused'
+        elif trainer_alive is False:
+            state = 'stopped'
+        elif heartbeat_age is not None and heartbeat_age > 900:
+            state = 'stale'
+    failure = read_json(run / 'failure.json', {})
+    failure_time, heartbeat_time = parse_time(failure.get('utc')), parse_time(status.get('updated_utc'))
+    if state not in ('complete', 'paused') and failure_time and (not heartbeat_time or failure_time > heartbeat_time):
+        state = 'error'
+    watchdog = read_json(run / 'watchdog/status.json', {})
+    watchdog['alive'] = alive(watchdog.get('pid'))
+    watchdog['check_age_seconds'] = age_seconds(watchdog.get('checked_utc'), now)
+    next_check = parse_time(watchdog.get('next_check_utc'))
+    watchdog['overdue'] = bool(next_check and now > next_check + timedelta(minutes=2) and watchdog.get('action') == 'healthy')
+    pace = statistics.median(timings[-20:]) if timings else None
+    # Head pace cannot estimate uncached encoder work. Never label the 24h cap an ETA.
+    eta = (now + timedelta(seconds=(total-completed)*pace)).isoformat() if pace and (run/'all_spectra_encoded.json').exists() and state == 'training' else None
+    logs = sorted(run.glob('train-*.log'), key=lambda p: p.stat().st_mtime)
+    log = logs[-1] if logs else run/'train-0.log'
+    stage_completed, stage_total = status.get('stage_completed'), status.get('stage_total')
+    if 'head training' in stage:
+        stage_completed = status.get('step', 0)
+        stage_total = spec.get('pilot_steps') if stage.startswith('pilot') else target
+    return dict(kind='frozen_retrieval', run_id=spec.get('run_id', run.name), run_path=str(run), state=state,
+                sampled_utc=now.isoformat(), started_utc=read_json(run/'launch.json', {}).get('started_utc'),
+                updated_utc=status.get('updated_utc'), heartbeat_age_seconds=heartbeat_age,
+                trainer_pid=status.get('pid'), trainer_alive=trainer_alive,
+                description=f'{len(models)} projection heads · frozen DreaMS + MoLFormer · preparation then training',
+                progress=dict(unit='steps', completed_epochs=completed, total_epochs=total,
+                              completed_models=sum(m['complete'] for m in models), total_models=len(models),
+                              percent=100*completed/total if total else 0, seconds_per_epoch=pace, eta_utc=eta),
+                stage=dict(label=stage, completed=stage_completed, total=stage_total, deadline_utc=status.get('deadline_utc')),
+                active=dict(family=stage, fold=None, seed=status.get('seed'), epoch=status.get('step'), epochs=target),
+                resources=dict(status.get('resources', {}), loss=status.get('loss')), models=models, watchdog=watchdog,
+                failure=failure if state=='error' else None, log=tail(log), errors=tail(log.with_suffix('.err'), 6),
+                confirmation=read_json(run/'results.json'),
+                limitation='Truth-forced retrieval is a local diagnostic. Production pipeline validation and Kaggle scoring remain separate.',
+                monitor_mode='Read only. The independent supervisor audits every 30 minutes.')
+
+
 class Monitor:
     def __init__(self, run):
         self.run = run
@@ -301,6 +375,18 @@ def terminal_view(data):
     filled = int(progress['percent'] / 100 * 36)
     bar = '#' * filled + '.' * (36 - filled)
     age = data['heartbeat_age_seconds']
+    if data.get('kind') == 'frozen_retrieval':
+        stage = data['stage']
+        quantity = f"{stage['completed']:,}/{stage['total']:,}" if stage.get('total') else ''
+        watchdog = data['watchdog']
+        lines = [f"ENVEDA / {data['run_id']} / {data['state'].upper()}",
+                 f"Stage: {stage['label']} {quantity}",
+                 f"Head steps [{bar}] {progress['completed_epochs']:,}/{progress['total_epochs']:,}",
+                 f"Training ETA: {local_time(progress['eta_utc'])} | Budget ends: {local_time(stage.get('deadline_utc'))}",
+                 f"Heartbeat: {int(age) if age is not None else '--'}s | GPU: {display_number(gpu.get('utilization'), 0)}% | Free RAM: {display_number(data.get('memory', {}).get('free_gib'))} GiB"]
+        lines += [f"{m['label']}: {m['epoch']:,}/{m['epochs']:,} steps | {'complete' if m['complete'] else 'active' if m['active'] else 'queued'} | loss {display_number(m['loss'], 4)}" for m in data['models']]
+        lines += [f"Watchdog: {watchdog.get('action', '--')} | restarts {watchdog.get('restarts', '--')} | next {local_time(watchdog.get('next_check_utc'))}", data['limitation']]
+        return '\n'.join(lines)
     lines = [f"ENVEDA  /  TRAINING MONITOR                             {data['run_id']}",
              f"{data['state'].upper()} | heartbeat {int(age) if age is not None else '--'}s ago | PID {data['trainer_pid'] or '--'}",
              '', f"[{bar}] {progress['percent']:.1f}%",

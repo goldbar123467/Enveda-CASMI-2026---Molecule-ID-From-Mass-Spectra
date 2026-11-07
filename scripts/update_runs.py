@@ -44,6 +44,25 @@ def kaggle_status(ref):
 
 def local_status(row):
     log = ROOT / row["ref"]
+    manifest = log.parent / 'manifest.json'
+    if manifest.is_file():
+        try:
+            kind = json.loads(manifest.read_text()).get('kind')
+        except (OSError, ValueError):
+            kind = None
+        if kind == 'frozen_retrieval':
+            from training_monitor import build_snapshot
+            snapshot = build_snapshot(log.parent)
+            stage = snapshot['stage']
+            progress = snapshot['progress']
+            note = stage['label']
+            if stage.get('total'):
+                note += f" {stage['completed']:,}/{stage['total']:,}"
+            note += f"; head steps {progress['completed_epochs']:,}/{progress['total_epochs']:,}"
+            if snapshot['watchdog'].get('action') == 'needs_attention':
+                return 'error', note + '; supervisor needs attention'
+            return {'training': 'running', 'complete': 'complete', 'error': 'recovering',
+                    'stopped': 'stalled', 'stale': 'stalled'}.get(snapshot['state'], snapshot['state']), note
     if not log.is_file():
         return row["status"], ""
     text = log.read_text(encoding="utf-8", errors="replace")

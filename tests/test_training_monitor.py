@@ -93,6 +93,33 @@ class MonitorTests(unittest.TestCase):
         (smoke / 'manifest.json').write_text('{"smoke":true}', encoding='utf-8')
         self.assertEqual(monitor.discover_run(self.root), self.run)
 
+    def test_frozen_preparation_is_not_counted_as_optimizer_work(self):
+        self.write('manifest.json', dict(kind='frozen_retrieval', spec=dict(run_id='F07', seeds=[11, 12], training=dict(steps=50000))))
+        self.write('status.json', dict(state='training', stage='encoding molecule_embeddings', pid=42,
+                   stage_completed=30000, stage_total=273833, updated_utc=self.now.isoformat()))
+        data = self.snapshot()
+        self.assertEqual(len(data['models']), 2)
+        self.assertEqual(data['progress']['unit'], 'steps')
+        self.assertEqual(data['progress']['total_epochs'], 100000)
+        self.assertEqual(data['progress']['completed_epochs'], 0)
+        self.assertEqual(data['stage']['completed'], 30000)
+        self.assertIsNone(data['progress']['eta_utc'])
+        self.assertIn('30,000/273,833', monitor.terminal_view(data))
+
+    def test_frozen_resume_progress_never_double_counts_pilot(self):
+        self.write('manifest.json', dict(kind='frozen_retrieval', spec=dict(run_id='F07', seeds=[11, 12], training=dict(steps=50000))))
+        self.write('models/seed-11/history.json', [dict(step=1000, seconds=20, pilot=True, loss=3),
+                                                 dict(step=2000, seconds=30, pilot=False, loss=2)])
+        self.write('status.json', dict(state='training', stage='full head training', seed=11, step=2100,
+                   pid=42, updated_utc=self.now.isoformat()))
+        data = self.snapshot()
+        self.assertEqual(data['progress']['completed_epochs'], 2100)
+        self.assertEqual(data['progress']['seconds_per_epoch'], .03)
+        self.assertIsNone(data['progress']['eta_utc'])  # Uncached spectra remain.
+        self.write('all_spectra_encoded.json', dict(encoded_rows=50000))
+        self.assertIsNotNone(self.snapshot()['progress']['eta_utc'])
+        self.assertIsNone(self.snapshot(alive=lambda _: False)['progress']['eta_utc'])
+
     def test_http_routes_never_serve_arbitrary_project_files(self):
         data = self.snapshot()
         class FixedMonitor:

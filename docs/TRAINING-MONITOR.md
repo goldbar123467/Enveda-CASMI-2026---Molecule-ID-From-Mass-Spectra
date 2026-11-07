@@ -43,6 +43,12 @@ python scripts/training_monitor.py --terminal
 
 ## Other runs and future checkouts
 
+F07 frozen-feature runs are also supported. The monitor shows encoder stage
+counts separately from the two seeds' optimizer steps. It reads
+`models/seed-N/{history,complete}.json`, the frozen trainer status and latest
+`train-N.log/.err`. Its ETA appears only after all spectrum features are cached
+and full-training timing exists. The fixed24-hour deadline is a budget cap.
+
 The monitor selects the newest non-smoke `outputs/local/long-*/manifest.json` at
 startup. Select a particular run explicitly:
 

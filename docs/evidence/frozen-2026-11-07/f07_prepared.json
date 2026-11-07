@@ -1,0 +1,13 @@
+{
+  "molecules": 273833,
+  "selected_spectra": 673579,
+  "usable_spectra": 673579,
+  "training_molecules": 195811,
+  "fresh_development": 256,
+  "fresh_confirmation": 256,
+  "raw_train_sha256": "9423f90ec08b941a9646b535bf0606183e86ff0c5a297978f5a70693d41bcd98",
+  "mol_id_order_sha256": "2b945d6e40cc9e4fb60220b78078903541419f0a2dae2bc0333e0980c9cf2150",
+  "selection_sha256": "c322696abe1f217c08dfc92156e6368fa9320aac39fdfda24a206cd13917d3fe",
+  "supported": "singly positive allowed adducts, precursor <=1000Th, >=3 peaks",
+  "truth_forced_diagnostic": true
+}

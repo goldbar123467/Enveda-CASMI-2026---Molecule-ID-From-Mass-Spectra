@@ -1,0 +1,22 @@
+{
+  "model": {
+    "checkpoint_sha256": "c08d2101154d057890de088be63834eb622468892a3b842512fdc5a65e02ff46",
+    "lineage": "unchanged P01 v80",
+    "original_weight": 0.5,
+    "private_weight": 0.5
+  },
+  "neural_score_max_abs_error": 0.0,
+  "outside_blend_max_abs_error": 0.0,
+  "real_scored_molecules": 12,
+  "outside_scored_molecules": 12,
+  "pipeline": {
+    "source_sha256": "ca3c3f382eca90ac7ba2e0bbb76753f4a1d92b8c630a726ac28610727a8da6ab",
+    "mode": "submission",
+    "source_adaptations": [],
+    "candidate_promotion_fix": true,
+    "is_full_run": false,
+    "processed_molecules": 12
+  },
+  "merge_status": "applied",
+  "is_hidden_rerun": false
+}

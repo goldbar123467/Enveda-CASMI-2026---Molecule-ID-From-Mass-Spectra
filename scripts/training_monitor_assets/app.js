@@ -3,6 +3,7 @@ const $ = id => document.getElementById(id);
 const set = (id, value) => { $(id).textContent = value; };
 const num = (value, digits = 1) => Number.isFinite(value) ? value.toFixed(digits) : '—';
 const title = value => value ? value.charAt(0).toUpperCase() + value.slice(1).replaceAll('_', ' ') : '—';
+const modelLabel = model => model.label || `${title(model.family)} · fold ${model.fold}`;
 const clock = value => value ? new Date(value).toLocaleTimeString([], {hour: 'numeric', minute: '2-digit'}) : '—';
 const duration = seconds => {
   if (!Number.isFinite(seconds)) return '—';
@@ -35,28 +36,33 @@ function refreshTimes() {
 function render(data) {
   current = data;
   const p = data.progress, a = data.active, gpu = data.gpu || {}, ram = data.memory || {};
+  const frozen = data.kind === 'frozen_retrieval', unit = p.unit || 'epochs';
   const runLive = ['training', 'finalizing'].includes(data.state);
   set('run-id', data.run_id);
-  set('run-description', `${p.total_models} models · ${a.epochs} epochs each · paired control / external data`);
+  set('run-description', data.description || `${p.total_models} models · ${a.epochs} epochs each · paired control / external data`);
+  set('pace-unit', `s / ${unit === 'steps' ? 'step' : 'epoch'}`);
+  set('chart-description', `Training loss by ${unit === 'steps' ? 'step' : 'epoch'}`);
+  set('queue-description', frozen ? 'Two seeds · learned heads on frozen encoders' : 'Paired control and external-data models · shared folds');
+  set('model-index-heading', frozen ? 'SEED' : 'FOLD');
   const labels = {training: 'Training active', finalizing: 'Finalizing OOF', complete: 'Training complete', waiting: 'Waiting for run', stale: 'Heartbeat stale', stopped: 'Trainer stopped', error: 'Training error', paused: 'Project paused'};
   set('run-state', labels[data.state] || title(data.state));
   $('run-state').className = 'status-pill' + (['error', 'stopped'].includes(data.state) ? ' error-state' : ['stale', 'paused'].includes(data.state) ? ' warning-state' : '');
   set('overall', num(p.percent));
   percent('overall-bar', p.percent);
-  set('epoch-total', `${p.completed_epochs.toLocaleString()} / ${p.total_epochs.toLocaleString()} epochs`);
+  set('epoch-total', `${p.completed_epochs.toLocaleString()} / ${p.total_epochs.toLocaleString()} ${unit}`);
   set('model-counter', `${p.completed_models} / ${p.total_models} models complete`);
   set('queue-count', `${p.completed_models} / ${p.total_models}`);
-  set('active-model', data.state === 'complete' ? 'All training models complete' : a.family ? `${title(a.family)} · fold ${a.fold}` : 'Waiting for first epoch');
-  set('active-epoch', a.epoch && data.state !== 'complete' ? `Epoch ${a.epoch} / ${a.epochs}` : '');
+  set('active-model', data.state === 'complete' ? 'All training models complete' : frozen ? data.stage.label : a.family ? `${title(a.family)} · fold ${a.fold}` : 'Waiting for first epoch');
+  set('active-epoch', frozen && data.stage.total ? `${data.stage.completed.toLocaleString()} / ${data.stage.total.toLocaleString()}` : a.epoch && data.state !== 'complete' ? `${title(unit === 'steps' ? 'step' : 'epoch')} ${a.epoch} / ${a.epochs}` : '');
   const eta = p.eta_utc ? new Date(p.eta_utc) : null;
   set('eta', eta ? clock(p.eta_utc) : data.state === 'complete' ? 'Finished' : '—');
-  set('eta-date', eta ? eta.toLocaleDateString([], {weekday: 'short', month: 'short', day: 'numeric', timeZoneName: undefined}) + ' · your local time' : data.state === 'complete' ? 'Ready for validation' : 'Awaiting a healthy training heartbeat');
-  set('pace', num(p.seconds_per_epoch));
+  set('eta-date', eta ? eta.toLocaleDateString([], {weekday: 'short', month: 'short', day: 'numeric', timeZoneName: undefined}) + ' · your local time' : data.state === 'complete' ? 'Ready for validation' : frozen ? `Budget ends ${new Date(data.stage.deadline_utc).toLocaleString()}` : 'Awaiting a healthy training heartbeat');
+  set('pace', num(p.seconds_per_epoch, frozen ? 3 : 1));
   set('loss', num(data.resources.loss, 4));
   $('segments').replaceChildren(...data.models.map(model => {
     const segment = document.createElement('div'), fill = document.createElement('div');
     segment.className = 'segment' + (model.active ? ' active' : '');
-    segment.title = `${title(model.family)} fold ${model.fold}: ${model.epoch}/${model.epochs} epochs`;
+    segment.title = `${modelLabel(model)}: ${model.epoch}/${model.epochs} ${unit}`;
     fill.style.width = `${100 * model.epoch / model.epochs}%`;
     segment.append(fill); return segment;
   }));
@@ -75,8 +81,8 @@ function render(data) {
     row.className = model.active && runLive ? 'current-row' : '';
     const cells = Array.from({length: 5}, () => document.createElement('td'));
     cells[0].textContent = title(model.family);
-    cells[1].textContent = String(model.fold).padStart(2, '0');
-    cells[1].title = `Zero-based fold index ${model.fold}`;
+    cells[1].textContent = frozen ? String(model.seed) : String(model.fold).padStart(2, '0');
+    cells[1].title = frozen ? `Random seed ${model.seed}` : `Zero-based fold index ${model.fold}`;
     const progress = document.createElement('div'), meter = document.createElement('div'), fill = document.createElement('div'), text = document.createElement('span');
     progress.className = 'table-progress'; meter.className = 'mini-meter'; fill.style.width = `${100 * model.epoch / model.epochs}%`;
     text.textContent = `${model.epoch}/${model.epochs}`; meter.append(fill); progress.append(meter, text); cells[2].append(progress);
@@ -89,7 +95,7 @@ function render(data) {
     row.append(...cells); return row;
   }));
   const selected = $('chart-model').value;
-  $('chart-model').replaceChildren(...[['current', 'Current model'], ...data.models.map(model => [model.id, `${title(model.family)} · fold ${model.fold}`])].map(([value, label]) => {
+  $('chart-model').replaceChildren(...[['current', 'Current model'], ...data.models.map(model => [model.id, modelLabel(model)])].map(([value, label]) => {
     const option = document.createElement('option'); option.value = value; option.textContent = label; return option;
   }));
   $('chart-model').value = selected || 'current';
@@ -107,7 +113,7 @@ function render(data) {
   set('error-output', data.errors.join('\n'));
   $('error-details').hidden = !data.errors.length;
   let notice = '';
-  if (data.state === 'complete') notice = 'Training is complete. Review the final OOF diagnostics and qualify the production notebook before submission.';
+  if (data.state === 'complete') notice = 'Training is complete. Review the validation results and qualify the production notebook before submission.';
   else if (['stale', 'stopped', 'error', 'paused'].includes(data.state)) notice = `${labels[data.state]}. ${data.failure?.error || 'Check the watchdog status and recent logs below.'}`;
   else if (offline || watchdog.overdue) notice = 'The training supervisor needs attention. See the watchdog panel below.';
   $('notice').hidden = !notice;
@@ -128,8 +134,9 @@ function drawChart() {
   ctx.font = '9px Consolas, monospace'; ctx.lineWidth = 1;
   const series = model?.series || [];
   if (!series.length) {
-    ctx.fillStyle = '#94a088'; ctx.textAlign = 'center'; ctx.fillText('Waiting for completed epochs', width / 2, height / 2);
-    set('chart-label', 'Waiting for epoch records'); return;
+    canvas.setAttribute('aria-label', 'Training loss: awaiting optimizer records');
+    ctx.fillStyle = '#94a088'; ctx.textAlign = 'center'; ctx.fillText('Waiting for training records', width / 2, height / 2);
+    set('chart-label', current.kind === 'frozen_retrieval' ? 'Encoder preparation precedes head training' : 'Waiting for epoch records'); return;
   }
   let low = Math.min(...series.map(point => point.loss)), high = Math.max(...series.map(point => point.loss));
   const pad = Math.max((high - low) * .1, .05); low -= pad; high += pad;
@@ -147,8 +154,8 @@ function drawChart() {
   ctx.beginPath(); series.forEach((point, index) => index ? ctx.lineTo(x(point.epoch), y(point.loss)) : ctx.moveTo(x(point.epoch), y(point.loss))); ctx.lineWidth = 1.8; ctx.lineJoin = 'round'; ctx.strokeStyle = '#648451'; ctx.stroke();
   const last = series.at(-1); ctx.beginPath(); ctx.arc(x(last.epoch), y(last.loss), 3, 0, Math.PI * 2); ctx.fillStyle = '#426c37'; ctx.fill();
   const first = series[0];
-  set('chart-label', `${title(model.family)} · fold ${model.fold} · loss ${num(first.loss, 3)} → ${num(last.loss, 3)}`);
-  canvas.setAttribute('aria-label', `Training loss for ${model.family} fold ${model.fold}, from ${num(first.loss, 3)} at epoch ${first.epoch} to ${num(last.loss, 3)} at epoch ${last.epoch}.`);
+  set('chart-label', `${modelLabel(model)} · loss ${num(first.loss, 3)} → ${num(last.loss, 3)}`);
+  canvas.setAttribute('aria-label', `Training loss for ${modelLabel(model)}, from ${num(first.loss, 3)} at ${first.epoch} to ${num(last.loss, 3)} at ${last.epoch}.`);
 }
 
 async function refresh() {

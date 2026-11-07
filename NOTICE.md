@@ -6,6 +6,15 @@ over those works. Retain their original notices and observe the license of each
 source before reuse. Training data, pretrained weights, caches and downloaded
 research notebooks are excluded from Git.
 
+F07 (7 November) uses the frozen-feature alignment design from
+[MSAlign](https://github.com/KrzakalaPaul/MSAlign-NeurIPS2026), official
+[DreaMS](https://github.com/pluskal-lab/DreaMS) (MIT) and
+[IBM MoLFormer](https://huggingface.co/ibm-research/MoLFormer-XL-both-10pct)
+(Apache-2.0). Exact revisions and checkpoint provenance are recorded in
+`docs/FROZEN-TRAINING-2026-11-07.md`. P13's consistent outsider blend is inspired
+by [zz3t3rn41's public peaks-v2 notebook](https://www.kaggle.com/code/zz3t3rn41/casmi26-peaks-to-structures-v2).
+It retains the previously attributed P01 pipeline and checkpoint lineage.
+
 The 2026-11-06 common-fold/model-folder/OOF/L2 ensemble workflow is inspired by
 [Chris Deotte's Kaggle Playground solutions](https://github.com/cdeotte/kaggle-playground-solutions)
 (Apache-2.0, commit e5a03fffe08a8904feb40c66b85142abb1ec6cc7). New trainer/stack

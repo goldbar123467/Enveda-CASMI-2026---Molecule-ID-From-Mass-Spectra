@@ -69,3 +69,11 @@ all7 targeted long-training GPU tests and all3 numerical ensemble tests passed.
 No further experiment or submission is queued. Existing Kaggle scoring continues;
 local compute waits for a new explicit instruction. The read-only dashboard can
 remain available.
+
+## Result verified 7 November
+
+P12 ref58071964 finished COMPLETE with an empty score and Kaggle's unhandled
+hidden-rerun error. It did not score. The earlier pending statements describe
+the 6 November handoff only. No hidden traceback is available, so the precise
+failure cause is unconfirmed. Preserve P01 as the verified0.480 baseline.
+The current API evidence is `evidence/long-2026-11-06/p12_submission_status.json`.

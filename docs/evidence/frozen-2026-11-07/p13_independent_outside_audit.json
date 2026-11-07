@@ -1,0 +1,10 @@
+{
+  "rows": 240,
+  "outsider_molecules": 12,
+  "duplicate_candidate_rows": 0,
+  "independent_blend_max_abs_error": 2.080086303202222e-07,
+  "checkpoint_sha256": "c08d2101154d057890de088be63834eb622468892a3b842512fdc5a65e02ff46",
+  "csv_sha256": "5cb2f1ad75c64791fa63cbfabb7e70e29948e05d8cc3987de79d7e137cdc20b9",
+  "smoke_only": true,
+  "competition_score": null
+}

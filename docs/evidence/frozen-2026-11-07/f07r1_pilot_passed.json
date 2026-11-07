@@ -1,0 +1,7 @@
+{
+  "seed": 202611071,
+  "steps": 1000,
+  "initial_development_mrr25": 0.021024007969665137,
+  "development_mrr25": 0.12563851061032716,
+  "meaning": "Execution/learning pilot only; no production or leaderboard qualification"
+}

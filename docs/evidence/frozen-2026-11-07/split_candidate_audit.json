@@ -1,0 +1,12 @@
+{
+  "training_identities": 195811,
+  "development": 256,
+  "confirmation": 256,
+  "train_holdout_input_group_overlap": 0,
+  "negative_identity_leaks": 0,
+  "training_candidates": 128,
+  "finite_preprocessed_spectra": 673579,
+  "spectra_with_peak_mz_above1000": 4290,
+  "maximum_peak_mz": 3160.08740234375,
+  "scope": "Head-training isolation; frozen encoder pretraining overlap is not audited; truth-forced retrieval is not candidate recall."
+}

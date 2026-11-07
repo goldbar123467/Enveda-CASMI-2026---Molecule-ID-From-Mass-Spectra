@@ -1,0 +1,22 @@
+[
+  {
+    "distribution": "dreams-1.0.0.dist-info",
+    "source": {
+      "dir_info": {
+        "editable": true
+      },
+      "url": "file:///C:/Users/imsa/Documents/Enveda%20CASMI/outputs/vendor/DreaMS"
+    }
+  },
+  {
+    "distribution": "msml-1.0.dist-info",
+    "source": {
+      "url": "https://github.com/roman-bushuiev/msml_legacy_architectures.git",
+      "vcs_info": {
+        "commit_id": "d35b34b0caee38348098cda852bff30d8b25cd25",
+        "requested_revision": "main",
+        "vcs": "git"
+      }
+    }
+  }
+]

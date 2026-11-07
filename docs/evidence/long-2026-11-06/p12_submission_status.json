@@ -1,7 +1,7 @@
 {
   "reference": 58071964,
-  "status": "SubmissionStatus.PENDING",
+  "status": "SubmissionStatus.COMPLETE",
   "public_score": "",
-  "checked_utc": "2026-11-06T23:54:12.976476+00:00",
-  "submissions_today": 1
+  "error_description": "Your notebook hit an unhandled error while rerunning your code. Note that the hidden dataset can be larger/smaller/different than the public dataset",
+  "checked_utc": "2026-11-07T21:51:47.206300+00:00"
 }

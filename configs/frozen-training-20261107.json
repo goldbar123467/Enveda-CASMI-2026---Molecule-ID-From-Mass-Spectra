@@ -1,0 +1,39 @@
+{
+  "run_id": "F07R1",
+  "kind": "frozen_retrieval",
+  "output": "outputs/local/long-frozen-20261107-r1",
+  "raw_training": "outputs/competition-raw/train.parquet",
+  "encoders": "outputs/pretrained/frozen-20261107",
+  "base_cache": "outputs/local/n0/cache",
+  "split_groups": "outputs/local/long-20261106/spectrum_groups.npz",
+  "maximum_hours": 24,
+  "gpu_memory_fraction": 0.7,
+  "minimum_free_ram_gib": 4,
+  "spectra_per_molecule": 4,
+  "encoding_batch_size": 8,
+  "encoding_shard_size": 512,
+  "pilot_molecules": 5000,
+  "pilot_steps": 1000,
+  "validation_molecules": 256,
+  "seeds": [
+    202611071,
+    202611072
+  ],
+  "training": {
+    "steps": 50000,
+    "batch_size": 32,
+    "candidates": 128,
+    "hidden": 1024,
+    "dimension": 512,
+    "dropout": 0.2,
+    "lr": 0.0001,
+    "warmup_steps": 2000,
+    "evaluation_interval": 1000
+  },
+  "submission_budget": 2,
+  "submission_allocation": {
+    "public_trial": 1,
+    "trained_candidate": 1
+  },
+  "reuse_molecule_cache_from": "outputs/local/long-frozen-20261107"
+}

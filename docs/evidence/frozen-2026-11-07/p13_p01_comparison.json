@@ -1,0 +1,10 @@
+{
+  "primary_max_abs_errors": {
+    "neural_public.parquet": 0.0,
+    "neural_ours.parquet": 0.0,
+    "neural_candidate_features.parquet": 0.0
+  },
+  "primary_scoring_unchanged": true,
+  "changed_output_rows_vs_p01": 0,
+  "scope": "Visible12 smoke inputs only; unchanged outputs here do not establish hidden equivalence."
+}

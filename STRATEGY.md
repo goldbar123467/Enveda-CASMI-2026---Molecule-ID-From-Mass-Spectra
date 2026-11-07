@@ -1,3 +1,22 @@
+# Active F07R1 / public trial — 7 November
+
+F07R1 uses official frozen DreaMS/MoLFormer features with learned heads, fresh
+head-excluded identity/input groups and training-only mass-near negatives.
+Fragment m/z is filtered to<=1000Th; no superseded spectrum features are reused.
+The original24h deadline and exact completed molecule cache are retained.
+This tests a new representation rather than more of L06's unsuccessful external
+spectrum dose. Truth-forced retrieval diagnostics do not qualify a production
+submission; real candidate coverage and pipeline validation remain necessary.
+
+Public-source P13 isolates consistent outsider blending on the verified P01
+anchor. Its real12 smoke preserved P01 primary scores exactly and changed no
+visible rankings. Independent execution/numeric/dedup audits passed. Submitted
+v1/ref58105681 at22:04UTC; score pending. One further scoring slot is approved
+for a qualified trained candidate, with no extra candidate authorized beyond two.
+Best verified public score remains0.480. See`docs/FROZEN-TRAINING-2026-11-07.md`.
+
+---
+
 # Strategy
 
 ## 2026-11-06: shared-fold external-spectrum run
@@ -24,7 +43,7 @@ Subsequent explicit user override: one leaderboard trial was requested despite
 unproven improvement. P12 original50/control-fivefold50 passed the real Kaggle
 GPU smoke (400 valid rows/12 real molecules; exact fivefold mean, independent
 blend error4.44e-16, zero metric duplicates) and was submitted23:50UTC on6 November,
-version1/reference58071964. Hidden score pending; no other candidate is queued.
+version1/reference58071964. Hidden rerun failed with an unhandled error and no score (verified 7 November); root cause unconfirmed.
 
 
 ## 2026-11-05: candidate-based loss improves retrieval, tail fusion fails confirmation

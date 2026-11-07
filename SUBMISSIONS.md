@@ -91,7 +91,7 @@ Verified through the Kaggle submissions API. No submission made on 6 November.
 
 | Date (UTC) | Slot | Kernel | Change and execution evidence | Ref | Public LB |
 |---|---|---|---|---|---|
-| 2026-11-06 23:50 | P12 | casmi26-p12-long-control v1 | Original scorer50 + mean of five128-epoch L06 control fits50; fixed P01 documentation/physical/metric-dedup recipe. COMPLETE real12-molecule Kaggle GPU smoke,400 valid rows, zero input errors/metric duplicates, all5 pinned models used; independent raw-score mean error0.0 and public-blend error4.44e-16. Explicit user-requested leaderboard trial despite unproven hidden-score benefit. | 58071964 | **Pending** |
+| 2026-11-06 23:50 | P12 | casmi26-p12-long-control v1 | Original scorer50 + mean of five128-epoch L06 control fits50; fixed P01 documentation/physical/metric-dedup recipe. COMPLETE real12-molecule Kaggle GPU smoke,400 valid rows, zero input errors/metric duplicates, all5 pinned models used; independent raw-score mean error0.0 and public-blend error4.44e-16. Explicit user-requested leaderboard trial despite unproven hidden-score benefit. | 58071964 | **Error; no score** |
 
 Accepted at23:50:11UTC with unique marker`L06-P12-20261106`. This is exactly one
 submission; no other L06 candidate is queued. It preserves the verified0.480 P01
@@ -99,3 +99,19 @@ baseline. The completion/OOF diagnostics did not qualify an expected improvement
 the user's explicit **"Submit it use a submission"** overrides that promotion
 gate for this one trial. Scoring is pending; the smoke is not a hidden-test result.
 Protocol and receipts: [`docs/LONG-SUBMISSION-2026-11-06.md`](docs/LONG-SUBMISSION-2026-11-06.md).
+
+Verified 7 November: P12 is COMPLETE **with an error and an empty score**.
+Kaggle reports an unhandled error in the hidden rerun; no detailed hidden
+traceback is available. Its exact root cause is not established. This is not
+a leaderboard measurement. P01 remains the verified0.480 baseline.
+
+## Authorized public trial — 7 November
+
+| Date (UTC) | Slot | Kernel | Change and execution evidence | Ref | Public LB |
+|---|---|---|---|---|---|
+| 2026-11-07 22:04 | P13 | casmi26-p13-outside-blend v1 | Exact P01 primary scores and pinned v80; public50/v80-50 outsider scoring consistency. Real12 GPU smoke,400 valid rows, zero input failures/metric duplicates. Independent primary error4.44e-16, outsider error2.08e-7; visible12 rankings unchanged from P01. | 58105681 | **Pending** |
+
+First of two newly approved submissions accepted. Marker`F07-P13-20261107`.
+One slot remains reserved for a qualified F07R1 trained candidate. No second
+submission is currently queued. This trial does not establish an improvement;
+P01 remains the verified0.480 baseline until a new score actually arrives.

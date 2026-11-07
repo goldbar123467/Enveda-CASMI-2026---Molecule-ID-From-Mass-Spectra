@@ -1,0 +1,12 @@
+{
+  "checked_date": "2026-11-07",
+  "comments": [
+    {
+      "id": 3538202,
+      "posted_utc": "2026-10-13T20:48:38.123Z",
+      "author": "Marie Killian",
+      "summary": "Official checkpoints require original code and permitted data; DreaMS backbone approval is conditional on no prohibited data derivation. No need to rerun pretraining.",
+      "source": "https://www.kaggle.com/competitions/enveda-CASMI26-molecule-id-mass-spectra/discussion/748882"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "valid_rows": 400,
+  "real_molecules": 12,
+  "official_identity_duplicates": 0,
+  "rdkit": "2026.03.3",
+  "canonicalized_unique_smiles": 301,
+  "independent_blend_max_abs_error": 4.440892098500626e-16,
+  "second_model_score_max_difference": 2.7072625383734703,
+  "changed_rows_vs_frozen": 12,
+  "csv_sha256": "5cb2f1ad75c64791fa63cbfabb7e70e29948e05d8cc3987de79d7e137cdc20b9",
+  "model": {
+    "checkpoint_sha256": "c08d2101154d057890de088be63834eb622468892a3b842512fdc5a65e02ff46",
+    "lineage": "unchanged P01 v80",
+    "original_weight": 0.5,
+    "private_weight": 0.5
+  },
+  "smoke_only": true,
+  "competition_score": null
+}

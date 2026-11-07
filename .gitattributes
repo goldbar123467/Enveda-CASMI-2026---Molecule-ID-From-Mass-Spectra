@@ -2,3 +2,5 @@
 scripts/long_training.py text eol=lf
 scripts/stack_oof.py text eol=lf
 scripts/build_external_cache.py text eol=lf
+scripts/frozen_retrieval.py text eol=lf
+scripts/frozen_model.py text eol=lf

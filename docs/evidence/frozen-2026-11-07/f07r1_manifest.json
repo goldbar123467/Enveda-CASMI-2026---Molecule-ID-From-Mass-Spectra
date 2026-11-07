@@ -1,0 +1,48 @@
+{
+  "kind": "frozen_retrieval",
+  "spec": {
+    "run_id": "F07R1",
+    "kind": "frozen_retrieval",
+    "output": "outputs/local/long-frozen-20261107-r1",
+    "raw_training": "outputs/competition-raw/train.parquet",
+    "encoders": "outputs/pretrained/frozen-20261107",
+    "base_cache": "outputs/local/n0/cache",
+    "split_groups": "outputs/local/long-20261106/spectrum_groups.npz",
+    "maximum_hours": 24,
+    "gpu_memory_fraction": 0.7,
+    "minimum_free_ram_gib": 4,
+    "spectra_per_molecule": 4,
+    "encoding_batch_size": 8,
+    "encoding_shard_size": 512,
+    "pilot_molecules": 5000,
+    "pilot_steps": 1000,
+    "validation_molecules": 256,
+    "seeds": [
+      202611071,
+      202611072
+    ],
+    "training": {
+      "steps": 50000,
+      "batch_size": 32,
+      "candidates": 128,
+      "hidden": 1024,
+      "dimension": 512,
+      "dropout": 0.2,
+      "lr": 0.0001,
+      "warmup_steps": 2000,
+      "evaluation_interval": 1000
+    },
+    "submission_budget": 2,
+    "submission_allocation": {
+      "public_trial": 1,
+      "trained_candidate": 1
+    },
+    "reuse_molecule_cache_from": "outputs/local/long-frozen-20261107"
+  },
+  "encoder_manifest_sha256": "00ad5ccc4a51335a16df81735053f05833c794ab6a2b064e7b1943d0b28dd6ab",
+  "source_sha256": {
+    "scripts/frozen_retrieval.py": "7a6600e6712547cf90e9b1e3e59d2da5096d007b9831a83676e90ec06ea91bd1",
+    "scripts/frozen_model.py": "e5cc4ab14581f588664d8fadab973dcfa86d21d52bf4ffb4ecce8d2b35a3a12d",
+    "outputs/local/kit/features.py": "a97ad9b3ab3711517864d56e497e1672cb29bb05683c72b52db9f9b0a17b1455"
+  }
+}

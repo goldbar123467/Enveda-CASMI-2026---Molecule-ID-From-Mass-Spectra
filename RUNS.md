@@ -1,21 +1,24 @@
 # Runs
 
-Updated 2026-11-06 23:54 UTC by `scripts/update_runs.py` (hourly). Generated from `runs.csv` — edit that file, not this one.
+Updated 2026-11-07 22:09 UTC by `scripts/update_runs.py` (hourly). Generated from `runs.csv` — edit that file, not this one.
 
-- Kaggle quota: GPU 15.6 h used of 30 h · TPU 0.0 h of 20 h · resets 2026-11-07 00:00 UTC
+- Kaggle quota: GPU 0.4 h used of 30 h · TPU 0.0 h of 20 h · resets 2026-11-14 00:00 UTC
 - Submissions today (UTC): 1 of 5 — see `SUBMISSIONS.md`
 
 ## Active
 
 | id | platform | kind | ref | started (UTC) | status | purpose | progress |
 |---|---|---|---|---|---|---|---|
-| — | | | | | | | |
+| F07R1 | local-2070 | train | outputs/local/long-frozen-20261107-r1/train-0.log | 2026-11-07 22:02 | **running** | F07 intake correction before head fitting: retain fragments <=1000Th; reuse exact MoLFormer cache; same global deadline and two-seed plan | encoding spectrum_embeddings 34,688/654,526; head steps 1,000/100,000 |
 
 ## Finished (newest first)
 
 | id | platform | kind | ref | started (UTC) | ended (UTC) | status | purpose | result |
 |---|---|---|---|---|---|---|---|---|
-| P12 | kaggle-gpu | commit | p12-long-control v1 | 2026-11-06 23:25 | 2026-11-06 23:49 | complete | User-requested one L06 leaderboard trial: original50 plus fivefold long-control50, mandatory real12 GPU smoke with five model pins, numeric mean/blend/merge/dedup receipts; submit only after execution audit | COMPLETE real12 GPU smoke/400valid, zero input failures/metric duplicates; all5 model pins and raw mean verified,error0.0; independent original/control blend error4.44e-16. Submitted v1/ref58071964 at23:50UTC, markerL06-P12-20261106; score pending, one authorized trial only. |
+| P13 | kaggle-gpu | commit | p13-outside-blend v1 | 2026-11-07 21:40 | 2026-11-07 22:05 | complete | Authorized public trial1of2: known P01 original/v80 anchor; symmetric outsider score blend from public peaks-v2, duplicate/per-input failure handling; mandatory real12 GPU smoke and independent numeric audit | Real12 smoke/400valid, zero input errors/metric duplicates. Exact P01 primary scores; independent outsider fusion error2.08e-7/240candidates, visible rankings unchanged. Submitted v1/ref58105681 at22:04UTC; score pending. One trained-model slot remains. |
+| F07 | local-2070 | train | outputs/local/long-frozen-20261107/train-0.log | 2026-11-07 21:42 | 2026-11-07 22:03 | killed | 24h-bounded frozen DreaMS plus MoLFormer projection-head experiment; fresh excluded-group development/confirmation, mass-hard train-only candidates, two seeds, precise raw inputs; pilot then full feature cache and heads | Pre-head intake correction: 4290/673579 cached spectra had fragment m/z>1000. No head fit started; original artifacts/source retained; R1 reuses all273833 molecule embeddings and original deadline. |
+| E07 | local-2070 | prep | .local/encoder-download.log | 2026-11-07 21:25 | 2026-11-07 21:56 | complete | Fetch original DreaMS and IBM MoLFormer with revisions/checksums; isolated encoder environment and fresh precision-preserving competition spectra for frozen-feature training | Official DreaMS Zenodo MD5s matched; pinned IBM MoLFormer fetched. Both encoders finite. DreaMS real8 benchmark214.13 spectra/s, peak3.20GiB. Isolated encoder environment ready. |
+| P12 | kaggle-gpu | commit | p12-long-control v1 | 2026-11-06 23:25 | 2026-11-06 23:49 | complete | User-requested one L06 leaderboard trial: original50 plus fivefold long-control50, mandatory real12 GPU smoke with five model pins, numeric mean/blend/merge/dedup receipts; submit only after execution audit | COMPLETE real12 GPU smoke/400valid, zero input failures/metric duplicates; all5 model pins and raw mean verified,error0.0; independent original/control blend error4.44e-16. Submitted v1/ref58071964 at23:50UTC, markerL06-P12-20261106; Hidden rerun COMPLETE with unhandled error and no score (verified7Nov); precise cause unconfirmed. P01 remains0.480. |
 | LS12 | local-2070 | diag | outputs/local/long-p12-smoke.log | 2026-11-06 23:24 | 2026-11-06 23:26 | complete | Validate pinned fivefold control inference on 12 cached real query molecules; exact mean audit before private Kaggle GPU smoke | Pinned control fivefold mean: 12 real molecules/688 candidate rows; zero input failures and exact independent mean error0.0; 30.62s, peak Torch reserved0.0664GiB. Execution smoke only; no hidden-score claim. |
 | L06 | local-2070 | train | outputs/local/long-20261106/train.log | 2026-11-06 14:52 | 2026-11-06 22:49 | complete | Deotte common-fold scaffold: 5 identity/input-group folds x paired control/external; 128x500 each, FP16, fixed cosine LR; 436121 audited external spectra, 996 new structures; OOF+L2 stack; no auto submission | 10 models x128x500 complete; control confirmation retrieval MRR=0.680621, external confirmation retrieval MRR=0.646321, equal_blend confirmation retrieval MRR=0.662922, l2_stack confirmation retrieval MRR=0.671584; diagnostic only, no submission. |
 | E06 | local-2070 | prep | outputs/external/prepare.log | 2026-11-06 14:19 | 2026-11-06 14:47 | complete | Stream and audit public MassBank/GNPS; remove NIST-named/propagated/poor labels; canonical identity cache for paired fivefold long training | External cache complete: 436121 spectra/54271 canonical identities; MassBank 71651, GNPS 364470; all input MD5 and output SHA256/shape checks pass; 1891s. |

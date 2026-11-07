@@ -1,0 +1,15 @@
+{
+  "run_id": "F07R1",
+  "training_identities": 195809,
+  "development": 256,
+  "confirmation": 256,
+  "pilot": 5000,
+  "train_holdout_input_group_overlap": 0,
+  "negative_identity_leaks": 0,
+  "training_candidates": 128,
+  "finite_usable_spectra": 673551,
+  "spectra_with_peak_mz_above1000": 0,
+  "maximum_retained_peak_mz": 999.9949951171875,
+  "pretraining_overlap": "not audited",
+  "truth_forced_diagnostic": true
+}
