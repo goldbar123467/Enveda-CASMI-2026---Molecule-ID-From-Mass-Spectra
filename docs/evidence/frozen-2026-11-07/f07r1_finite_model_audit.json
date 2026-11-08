@@ -1,0 +1,18 @@
+{
+  "models": [
+    {
+      "seed": 202611071,
+      "best_step": 46000,
+      "evaluation_scores": 131072,
+      "finite_parameters": true,
+      "finite_scores": true
+    },
+    {
+      "seed": 202611072,
+      "best_step": 46000,
+      "evaluation_scores": 131072,
+      "finite_parameters": true,
+      "finite_scores": true
+    }
+  ]
+}

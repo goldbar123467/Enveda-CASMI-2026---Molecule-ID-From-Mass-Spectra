@@ -1,0 +1,77 @@
+{
+  "run_id": "F07R1",
+  "selected_seed": 202611071,
+  "weight": 0.5,
+  "numpy_version": "1.26.4",
+  "preprocess_sort": "stable_intensity_original_index",
+  "manifest_sha256": "22c5300c20a942fdd346aa26ca5f57237664e6a251e4c48ba18daaace16eac19",
+  "head_sha256": "81d117d0e81698ae46a4f3b0077c329c8710aae555bdba6331955c4fbe896350",
+  "scored_molecules": 11,
+  "known_structures": 120,
+  "new_structures": 155,
+  "coverage": [
+    {
+      "molecule_id": "m_005e53",
+      "total_spectra": 4,
+      "supported_spectra": 3
+    },
+    {
+      "molecule_id": "m_006153",
+      "total_spectra": 6,
+      "supported_spectra": 3
+    },
+    {
+      "molecule_id": "m_00b5aa",
+      "total_spectra": 2,
+      "supported_spectra": 2
+    },
+    {
+      "molecule_id": "m_01e922",
+      "total_spectra": 3,
+      "supported_spectra": 3
+    },
+    {
+      "molecule_id": "m_0259d4",
+      "total_spectra": 7,
+      "supported_spectra": 4
+    },
+    {
+      "molecule_id": "m_02d188",
+      "total_spectra": 2,
+      "supported_spectra": 2
+    },
+    {
+      "molecule_id": "m_0318b5",
+      "total_spectra": 3,
+      "supported_spectra": 3
+    },
+    {
+      "molecule_id": "m_043e86",
+      "total_spectra": 3,
+      "supported_spectra": 3
+    },
+    {
+      "molecule_id": "m_050bf1",
+      "total_spectra": 2,
+      "supported_spectra": 2
+    },
+    {
+      "molecule_id": "m_05b52e",
+      "total_spectra": 2,
+      "supported_spectra": 1
+    },
+    {
+      "molecule_id": "m_068354",
+      "total_spectra": 6,
+      "supported_spectra": 2
+    },
+    {
+      "molecule_id": "m_06e13d",
+      "total_spectra": 1,
+      "supported_spectra": 0
+    }
+  ],
+  "input_errors": 0,
+  "unsupported_fallback": "exact P01 baseline score",
+  "scope": "Final lists only; P01 outsider scorer unchanged"
+}

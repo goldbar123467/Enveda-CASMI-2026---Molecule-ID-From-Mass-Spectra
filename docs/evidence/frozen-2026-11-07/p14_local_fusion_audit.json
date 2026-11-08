@@ -1,0 +1,9 @@
+{
+  "real_queries": 12,
+  "supported_frozen": 11,
+  "exact_baseline_fallback": 1,
+  "unprocessed_passthrough": 388,
+  "independent_fusion_max_abs_error": 0.0,
+  "auxiliary_columns_unchanged": true,
+  "smoke_only": true
+}

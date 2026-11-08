@@ -1,0 +1,23 @@
+{
+  "models": [
+    {
+      "seed": 202611071,
+      "steps": 50000,
+      "best_step": 46000,
+      "development_mrr25": 0.6681677721810195,
+      "confirmation_mrr25": 0.643145853082209,
+      "model_sha256": "81d117d0e81698ae46a4f3b0077c329c8710aae555bdba6331955c4fbe896350",
+      "limitation": "Truth-forced mass-near retrieval; production end-to-end confirmation still required"
+    },
+    {
+      "seed": 202611072,
+      "steps": 50000,
+      "best_step": 46000,
+      "development_mrr25": 0.6687715222401923,
+      "confirmation_mrr25": 0.6656080553104606,
+      "model_sha256": "46bba73a0a0f401ddc87e16eca6366597009f85c7e7ce2d2aeccb4fe3eea41ab",
+      "limitation": "Truth-forced mass-near retrieval; production end-to-end confirmation still required"
+    }
+  ],
+  "automatic_submission": false
+}

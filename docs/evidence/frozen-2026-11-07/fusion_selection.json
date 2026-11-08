@@ -1,0 +1,72 @@
+{
+  "selection": "Development-only fixed candidate fusion",
+  "winner": {
+    "model": "202611071",
+    "weight": 0.5,
+    "development_mrr25": 0.7595114680582631
+  },
+  "trials": [
+    {
+      "model": "202611071",
+      "weight": 0.1,
+      "development_mrr25": 0.678584804493097
+    },
+    {
+      "model": "202611071",
+      "weight": 0.2,
+      "development_mrr25": 0.7146140311077168
+    },
+    {
+      "model": "202611071",
+      "weight": 0.35,
+      "development_mrr25": 0.7466191628246253
+    },
+    {
+      "model": "202611071",
+      "weight": 0.5,
+      "development_mrr25": 0.7595114680582631
+    },
+    {
+      "model": "202611072",
+      "weight": 0.1,
+      "development_mrr25": 0.673409405889964
+    },
+    {
+      "model": "202611072",
+      "weight": 0.2,
+      "development_mrr25": 0.7048327594714314
+    },
+    {
+      "model": "202611072",
+      "weight": 0.35,
+      "development_mrr25": 0.7325996261301263
+    },
+    {
+      "model": "202611072",
+      "weight": 0.5,
+      "development_mrr25": 0.7492426433786425
+    },
+    {
+      "model": "equal_heads",
+      "weight": 0.1,
+      "development_mrr25": 0.6791608189074265
+    },
+    {
+      "model": "equal_heads",
+      "weight": 0.2,
+      "development_mrr25": 0.7126824220277006
+    },
+    {
+      "model": "equal_heads",
+      "weight": 0.35,
+      "development_mrr25": 0.7424985181281137
+    },
+    {
+      "model": "equal_heads",
+      "weight": 0.5,
+      "development_mrr25": 0.7559482027539942
+    }
+  ],
+  "production_scope": "Final-list neural_score channel only; preserve P01 outsiders, priors, physical rules and unsupported-query fallback",
+  "limitation": "Truth forced among256 mass-near candidates; no candidate-recall or end-to-end MRR claim; baseline encoders were not retrained to exclude these identities."
+}

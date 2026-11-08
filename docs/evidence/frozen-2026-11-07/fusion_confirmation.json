@@ -1,0 +1,37 @@
+{
+  "development": {
+    "n": 256,
+    "baseline_mrr25": 0.6277181173777691,
+    "candidate_mrr25": 0.7595114680582631,
+    "delta": 0.13179335068049403,
+    "ci95": [
+      0.09302614481626945,
+      0.17071216432625666
+    ],
+    "improved": 98,
+    "harmed": 21
+  },
+  "confirmation": {
+    "n": 256,
+    "baseline_mrr25": 0.6374811616357232,
+    "candidate_mrr25": 0.7422686393319979,
+    "delta": 0.10478747769627472,
+    "ci95": [
+      0.07064297954786966,
+      0.14072894012191334
+    ],
+    "improved": 92,
+    "harmed": 23
+  },
+  "winner": {
+    "model": "202611071",
+    "weight": 0.5,
+    "development_mrr25": 0.7595114680582631
+  },
+  "positive_confirmation": true,
+  "baseline_weights_sha256": {
+    "public": "44436b2daec64373e66f9120dd2389c24fc83dd9430ebeeac18e3cb49dcb9642",
+    "v80": "c08d2101154d057890de088be63834eb622468892a3b842512fdc5a65e02ff46"
+  },
+  "qualification": "Conditional ranking only; execution smoke and actual pipeline still required"
+}

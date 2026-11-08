@@ -1,0 +1,11 @@
+{
+  "slot": "trained_candidate",
+  "marker": "F07-P14-20261107",
+  "reference": 58111204,
+  "kernel": "clarkkitchen/casmi26-p14-frozen-channel",
+  "version": 2,
+  "file": "submission.csv",
+  "submitted_utc": "2026-11-08T01:52:30.115436+00:00",
+  "status": "submitted; score pending",
+  "smoke_csv_sha256": "7d50cf0b2bef13ca5e854d05101b644dc0bc7626e35af28b512a65d43ea0337a"
+}

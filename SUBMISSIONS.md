@@ -115,3 +115,17 @@ First of two newly approved submissions accepted. Marker`F07-P13-20261107`.
 One slot remains reserved for a qualified F07R1 trained candidate. No second
 submission is currently queued. This trial does not establish an improvement;
 P01 remains the verified0.480 baseline until a new score actually arrives.
+
+## Second approved trained trial — submitted 8 November UTC
+
+| Date (UTC) | Slot | Kernel | Change and execution evidence | Ref | Public LB |
+|---|---|---|---|---|---|
+| 2026-11-08 01:52 | P14 | casmi26-p14-frozen-channel v2 | P01 plus fixed50% F07R1 seed202611071 final-list channel; unchanged P01 outsider scorer and exact unsupported fallback. Development-selected fusion; reserved conditional robustness MRR .637481→.742594. COMPLETE real12 GPU smoke,400valid, zero input errors/metric duplicates; exact independent fusion; stable peak ties and local/Kaggle parity0.000489 verified. | 58111204 | **Pending** |
+
+Both new user-approved scoring slots are now accepted: P13 ref58105681 and
+P14 v2 ref58111204. P14 v1 was never submitted: its platform-dependent cutoff
+selection was diagnosed and fixed before spending the remaining slot. Marker
+`F07-P14-20261107`; accepted at2026-11-08T01:52:30UTC (7 November20:52 Eastern).
+No further scoring submission is queued. Best verified public score remains
+P01 **0.480** while these evaluations are pending. Conditional retrieval MRR
+is not a leaderboard score.

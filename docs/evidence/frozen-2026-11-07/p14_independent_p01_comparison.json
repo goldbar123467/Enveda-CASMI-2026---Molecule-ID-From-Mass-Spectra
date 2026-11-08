@@ -1,0 +1,7 @@
+{
+  "p01_primary_max_abs_error": 0.0,
+  "unchanged_p01_outsider_max_abs_error": 0.0,
+  "local_vs_kaggle_frozen_score_max_abs_error": 0.0004887580871582031,
+  "changed_rows_vs_p01": 11,
+  "scope": "Real12 visible smoke only; no hidden-score claim"
+}

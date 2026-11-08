@@ -1,0 +1,114 @@
+{
+  "run_id": "F07R1",
+  "selected_seed": 202611071,
+  "fusion_weight": 0.5,
+  "files": {
+    "head.pt": "81d117d0e81698ae46a4f3b0077c329c8710aae555bdba6331955c4fbe896350",
+    "frozen_model.py": "e5cc4ab14581f588664d8fadab973dcfa86d21d52bf4ffb4ecce8d2b35a3a12d",
+    "dreams.ts": "35403da79f1410bcbe6bd7aa2aeed00d7844fe64c82d444327349099d4ae53d4",
+    "molformer.ts": "10dadd143be58100cc660a06f057a395961564f68094bcc5839dcca09795c07d",
+    "tokenizer.json": "3df1f2219653c44fac9fa03b7f788b372eb2544ecc176737bb9aca8411b471a5",
+    "molecules.parquet": "99cc41ce5f15ff8d0e083695e45dfcf1c93ef45e7a53b84199de47c6285a6b14",
+    "molecule_embeddings.npy": "af6260fec851af4462026dc81b4eb4980f8213cd6bfd9514c442d8683b261120",
+    "export_receipt.json": "8b67164ca6f39dccfccbe7b51b7ce2bc0e8e3451e9c6b93e0a5b1acba8d72c92",
+    "DREAMS-LICENSE.txt": "1380205f67b1b029a3ba7cf17088f87cea5f8eaf7ad33aea112222ddfc115643",
+    "MOLFORMER-MODEL-CARD.md": "4e679b138ae5c29c17de907d3e3a03050b3eb2a82462917ad80fb6a5ffe63736",
+    "MOLFORMER-LICENSE.txt": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+  },
+  "source_encoders": {
+    "dreams_record": 10997887,
+    "dreams_mirror_revision": "c81a62766b10dd1d39fcda3edec5ef88623e5f6b",
+    "dreams_code_revision": "dbec3a0b514a99e5056cfccde4559fda8cfe8129",
+    "molecule_model": "ibm-research/MoLFormer-XL-both-10pct",
+    "molecule_revision": "7b12d946c181a37f6012b9dc3b002275de070314",
+    "files": [
+      {
+        "file": "dreams\\embedding_model.ckpt",
+        "url": "https://huggingface.co/roman-bushuiev/DreaMS/resolve/c81a62766b10dd1d39fcda3edec5ef88623e5f6b/embedding_model.ckpt?download=true",
+        "bytes": 1241290418,
+        "sha256": "630ba2e5fd0d2ac288fe32772ed73f9bc7d0f4c45759490cc856a96087dd12f4",
+        "md5": "4f6913c242b219b75e667dd1ed5add59"
+      },
+      {
+        "file": "dreams\\ssl_model.ckpt",
+        "url": "https://huggingface.co/roman-bushuiev/DreaMS/resolve/c81a62766b10dd1d39fcda3edec5ef88623e5f6b/ssl_model.ckpt?download=true",
+        "bytes": 1392710212,
+        "sha256": "4b73da583a4b4e4abef4bb3ab496dc12f716ed484ea0e4066ad45d6952856fef",
+        "md5": "4deee91dd4486c2b6cbcde1f200b8f50"
+      },
+      {
+        "file": "molformer\\README.md",
+        "url": "https://huggingface.co/ibm-research/MoLFormer-XL-both-10pct/resolve/7b12d946c181a37f6012b9dc3b002275de070314/README.md",
+        "bytes": 6165,
+        "sha256": "4e679b138ae5c29c17de907d3e3a03050b3eb2a82462917ad80fb6a5ffe63736",
+        "md5": null
+      },
+      {
+        "file": "molformer\\config.json",
+        "url": "https://huggingface.co/ibm-research/MoLFormer-XL-both-10pct/resolve/7b12d946c181a37f6012b9dc3b002275de070314/config.json",
+        "bytes": 1015,
+        "sha256": "3ef9eaac8c7ca6282fd6256ed038d151bd4ff42a4ff855367e0d7197bbc1c284",
+        "md5": null
+      },
+      {
+        "file": "molformer\\configuration_molformer.py",
+        "url": "https://huggingface.co/ibm-research/MoLFormer-XL-both-10pct/resolve/7b12d946c181a37f6012b9dc3b002275de070314/configuration_molformer.py",
+        "bytes": 7601,
+        "sha256": "d48f6c133b27c3d6d9922acc554c2203aedf1a56d2061bd7aae72c11b7ec7aa5",
+        "md5": null
+      },
+      {
+        "file": "molformer\\convert_molformer_original_checkpoint_to_pytorch.py",
+        "url": "https://huggingface.co/ibm-research/MoLFormer-XL-both-10pct/resolve/7b12d946c181a37f6012b9dc3b002275de070314/convert_molformer_original_checkpoint_to_pytorch.py",
+        "bytes": 3545,
+        "sha256": "4ba7b844fe5430bfe8dcd12617156254746f0fded36b350166b544b17b178170",
+        "md5": "c04f6d7f8f0256fa7ffb3bca6e1fd921"
+      },
+      {
+        "file": "molformer\\model.safetensors",
+        "url": "https://huggingface.co/ibm-research/MoLFormer-XL-both-10pct/resolve/7b12d946c181a37f6012b9dc3b002275de070314/model.safetensors",
+        "bytes": 187248784,
+        "sha256": "0795977fe7192c4acdaf052f0e8464af57bc4bb59211271c5e61aaba2637b9c6",
+        "md5": null
+      },
+      {
+        "file": "molformer\\modeling_molformer.py",
+        "url": "https://huggingface.co/ibm-research/MoLFormer-XL-both-10pct/resolve/7b12d946c181a37f6012b9dc3b002275de070314/modeling_molformer.py",
+        "bytes": 39292,
+        "sha256": "a3f6273bb44709e566ee02987c50372db727de21799c3d297f64b2437f9e32a8",
+        "md5": null
+      },
+      {
+        "file": "molformer\\tokenization_molformer.py",
+        "url": "https://huggingface.co/ibm-research/MoLFormer-XL-both-10pct/resolve/7b12d946c181a37f6012b9dc3b002275de070314/tokenization_molformer.py",
+        "bytes": 9480,
+        "sha256": "a816f7b6e540f27544e7aa924104d6fc0d5cedcc62117ec9d31d35d0cefbd2e2",
+        "md5": "644b865497d378447177097140063e21"
+      },
+      {
+        "file": "molformer\\tokenization_molformer_fast.py",
+        "url": "https://huggingface.co/ibm-research/MoLFormer-XL-both-10pct/resolve/7b12d946c181a37f6012b9dc3b002275de070314/tokenization_molformer_fast.py",
+        "bytes": 6503,
+        "sha256": "1921cf245ceb613a19e9a30ba4aa33e02b328ac6fdbbf63080b775bd8b4c8bdb",
+        "md5": "6072fb213adb113679fc20df2400aa7c"
+      },
+      {
+        "file": "molformer\\tokenizer.json",
+        "url": "https://huggingface.co/ibm-research/MoLFormer-XL-both-10pct/resolve/7b12d946c181a37f6012b9dc3b002275de070314/tokenizer.json",
+        "bytes": 54010,
+        "sha256": "3df1f2219653c44fac9fa03b7f788b372eb2544ecc176737bb9aca8411b471a5",
+        "md5": null
+      },
+      {
+        "file": "molformer\\tokenizer_config.json",
+        "url": "https://huggingface.co/ibm-research/MoLFormer-XL-both-10pct/resolve/7b12d946c181a37f6012b9dc3b002275de070314/tokenizer_config.json",
+        "bytes": 1294,
+        "sha256": "17e4fb4c6f77f2d9c482cf54fce528d97635e6bb9d0e2ab8b9638cc8a52e6fae",
+        "md5": null
+      }
+    ]
+  },
+  "preprocessing": "R1 positive single charge; precursor/fragment<=1000; top100+precursor1.1; float16 embeddings",
+  "scope": "Complement P01 final-list neural score only; unsupported input keeps P01",
+  "qualification": "Development-only selection plus positive reserved conditional-ranking confirmation; no end-to-end recall claim"
+}

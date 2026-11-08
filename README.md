@@ -5,11 +5,14 @@ Private workspace for the Kaggle code competition
 Training and labelled scorer evaluation can run on the local RTX 2070 with `.venv-gpu`.
 The full candidate-generation pipeline and competition submissions run on Kaggle.
 
-Active run (7 November): **F07R1** is preparing frozen DreaMS/MoLFormer features
-on the RTX 2070, then trains two projection heads with a shared 24-hour budget
-and a 30-minute recovery supervisor. **P13** passed its real Kaggle smoke and was submitted as ref58105681;
-its score is pending. It tests consistent public/private outsider blending. Two new scoring submissions are
-authorized: this public trial and a validated trained candidate.
+Latest results (7 November): **F07R1 finished at18:22 Eastern**, both50,000-step
+heads complete, zero restarts. Reserved standalone retrieval MRR was0.6431/0.6656.
+Development-selected complementary fusion improved fresh reserved conditional
+ranking MRR0.6375→0.7423; this is not end-to-end or Kaggle MRR.
+**Both approved trials are submitted:** P13 ref58105681 and **P14 v2 ref58111204**.
+Scores are pending. P14 passed the full real Kaggle smoke and independent
+fusion/fallback/model-pin/dedup/portability checks after fixing NumPy cutoff ties.
+See [P14's protocol and evidence](docs/P14-FROZEN-SUBMISSION-2026-11-07.md).
 
 Best verified public MRR remains **0.480 (P01)**. P12 ref58071964 finished with
 an unhandled hidden-rerun error and **no score**, despite passing its visible

@@ -1,3 +1,18 @@
+# Completed F07R1 and two accepted trials — 7 November
+
+F07R1 completed100,000 head steps, zero restarts. The selected seed1/50% P01
+fusion improves reserved conditional MRR .637481→.742594 after deterministic
+cutoff-tie serving correction. This is not candidate recall or end-to-end MRR.
+P14 v2 passed its full real Kaggle smoke, exact fusion and unchanged P01 baseline/
+outsider checks,400-row official-identity dedup, unsupported fallback and local/
+Kaggle portability audit. Submitted v2/ref58111204 at2026-11-08 01:52UTC.
+P14 v1 was not submitted: NumPy1/2 unstable cutoff ties were diagnosed first.
+P13 ref58105681 remains the independent outsider-blend trial. Both scores are
+pending, with P01 **0.480** retained as champion. The two approved slots are used;
+no extra scoring or training is queued. See`docs/P14-FROZEN-SUBMISSION-2026-11-07.md`.
+
+---
+
 # Active F07R1 / public trial — 7 November
 
 F07R1 uses official frozen DreaMS/MoLFormer features with learned heads, fresh

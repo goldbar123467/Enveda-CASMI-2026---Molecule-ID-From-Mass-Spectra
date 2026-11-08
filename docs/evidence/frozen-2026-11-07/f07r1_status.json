@@ -1,14 +1,12 @@
 {
-  "state": "training",
+  "state": "complete",
   "kind": "frozen_retrieval",
-  "stage": "encoding spectrum_embeddings",
+  "stage": "complete",
   "pid": 23544,
-  "updated_utc": "2026-11-07T22:09:31.019042+00:00",
+  "updated_utc": "2026-11-07T23:22:08.085592+00:00",
   "deadline_utc": "2026-11-08T21:42:42.646107+00:00",
   "resources": {
     "gpu_peak_reserved_gib": 3.22265625,
-    "free_ram_gib": 15.734245300292969
-  },
-  "stage_completed": 34560,
-  "stage_total": 654526
+    "free_ram_gib": 15.88107681274414
+  }
 }

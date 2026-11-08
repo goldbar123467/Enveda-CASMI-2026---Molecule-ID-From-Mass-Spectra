@@ -172,3 +172,14 @@ pilot. Full spectrum encoding then started; the remaining654,526 feature rows
 are being cached before both50,000-step targets finish. Early throughput suggests
 roughly18:30–19:00 Eastern for training, subject to real full-training timing.
 Validation, packaging, Kaggle smoke and scoring take additional time.
+
+## Completed run and P14 continuation
+
+F07R1 finished at23:22:08UTC on7 November (18:22 Eastern):100,000 optimizer
+steps across both heads, zero restarts, peak3.223GiB reserved. Reserved standalone
+retrieval MRR was0.643146/0.665608. The subsequent development-only fusion
+selection chose seed202611071 at50% with P01, improving fresh reserved conditional
+ranking MRR0.637481→0.742269. These are different evaluations from Kaggle MRR.
+[P14's protocol](P14-FROZEN-SUBMISSION-2026-11-07.md) records the caveats,
+encoder export parity, private package, local smoke and required real Kaggle smoke.
+No more training is running. P13's submitted score remains pending.

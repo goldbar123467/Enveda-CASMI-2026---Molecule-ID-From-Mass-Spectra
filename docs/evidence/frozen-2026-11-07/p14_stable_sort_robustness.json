@@ -1,0 +1,33 @@
+{
+  "changed_views": 109,
+  "evaluated_views": 1776,
+  "head": 202611071,
+  "weight": 0.5,
+  "reselected": false,
+  "development": {
+    "n": 256,
+    "baseline_mrr25": 0.6277181173777691,
+    "candidate_mrr25": 0.759604474010644,
+    "delta": 0.13188635663287496,
+    "ci95": [
+      0.09317034562238166,
+      0.1708085992065222
+    ],
+    "improved": 98,
+    "harmed": 21
+  },
+  "confirmation": {
+    "n": 256,
+    "baseline_mrr25": 0.6374811616357232,
+    "candidate_mrr25": 0.7425941601653313,
+    "delta": 0.10511299852960806,
+    "ci95": [
+      0.07092889648908667,
+      0.14101333331189117
+    ],
+    "improved": 92,
+    "harmed": 22
+  },
+  "limitation": "Robustness check of a fixed blend after platform-dependent cutoff ties; reused reserved diagnostic, not a new untouched test",
+  "positive_confirmation": true
+}

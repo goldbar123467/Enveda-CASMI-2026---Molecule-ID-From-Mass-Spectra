@@ -1,0 +1,10 @@
+{
+  "versions": [
+    "1.26.4",
+    "2.0.2"
+  ],
+  "supported_spectra": 28,
+  "max_abs_error": 0,
+  "selected_peaks_identical": true,
+  "original_cause": "Unstable quicksort tie order at the100-peak cutoff; four spectra in three queries differed across NumPy1/2"
+}

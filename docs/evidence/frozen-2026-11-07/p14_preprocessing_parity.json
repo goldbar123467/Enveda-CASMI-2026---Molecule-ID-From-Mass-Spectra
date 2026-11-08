@@ -1,0 +1,7 @@
+{
+  "raw_spectra_checked": 64,
+  "preprocessing_max_abs_error": 0.0,
+  "tokenizer_molecules_checked": 64,
+  "token_ids_and_masks_identical": true,
+  "source": "Independent raw competition rows vs saved immutable R1 preprocessing and HF tokenizer vs Rust runtime"
+}
