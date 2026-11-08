@@ -10,6 +10,8 @@ from datetime import datetime,timezone,timedelta
 
 ROOT=Path(__file__).resolve().parents[1];CLI=ROOT/'.venv/Scripts/python.exe';GPU=ROOT/'.venv-gpu/Scripts/python.exe'
 COMP='enveda-CASMI26-molecule-id-mass-spectra';KERNEL='clarkkitchen/casmi26-p15-compatible-c08'
+VALIDATION_OUTPUTS=r'^(c08_validation_(p01\.csv|p01_metrics\.csv|final_evidence\.parquet|queries\.parquet|report\.json)|neural_candidate_features\.parquet|outsider_neural_features\.parquet)$'
+SMOKE_OUTPUTS=r'^(p15_qualification_receipt\.json|c08_model_audit\.json|c08_p01_submission\.csv|c08_candidate_scores\.parquet(\.json)?|submission\.csv(\.c08\.json)?|effective_query_spectra\.parquet|neural_(public|ours|candidate_features)\.parquet)$'
 
 
 class Paused(Exception):pass
@@ -103,7 +105,7 @@ def main():
         validation=ROOT/'outputs/forks/c08-external-validation'
         if not (validation/'c08_validation_report.json').exists():
             command('fetch_validation',[ROOT/'scripts/fetch_output.py','c08-novel-external-validation',validation,
-                r'(c08_validation_|neural_candidate_features\.parquet$|outsider_neural_features\.parquet$)'])
+                VALIDATION_OUTPUTS])
         bundle=ROOT/'outputs/publish/c08-models-20261108'
         if not (bundle/'c08-manifest.json').exists():command('package_models',[ROOT/'scripts/package_compatible_models.py'],GPU)
         register('C08Q','local-2070','diag','outputs/local/long-compatible-20261108/campaign/select_candidate.log',
@@ -129,7 +131,7 @@ def main():
         folder=ROOT/'outputs/forks/p15-compatible-c08'
         if not (folder/'p15_qualification_receipt.json').exists():
             command('fetch_smoke',[ROOT/'scripts/fetch_output.py','p15-compatible-c08',folder,
-                r'(p15_qualification_receipt\.json$|c08_|submission\.csv|effective_query_spectra\.parquet$|neural_public\.parquet$|neural_ours\.parquet$|neural_candidate_features\.parquet$)'])
+                SMOKE_OUTPUTS])
         if not (folder/'independent_c08_smoke_audit.json').exists():command('audit_smoke',[ROOT/'scripts/audit_compatible_smoke.py',folder],GPU)
         command('submit_once',[ROOT/'scripts/submit_compatible_once.py','--version',str(version)],seconds=1800)
         receipt=read(ROOT/'docs/evidence/compatible-2026-11-08/p15_submission.json');assert receipt and receipt['reference']>0
