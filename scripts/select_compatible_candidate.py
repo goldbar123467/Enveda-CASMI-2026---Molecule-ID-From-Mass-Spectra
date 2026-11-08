@@ -24,6 +24,8 @@ def main():
     campaign=json.loads((ROOT/'configs/compatible-campaign-20261108.json').read_text());proposal=campaign['candidate']
     report=json.loads((args.validation/'c08_validation_report.json').read_text());assert report['queries']==128 and report['truth_absent_mrr']==0 and not report['truth_injection']
     contract=ROOT/'outputs/publish/c08-validation-20261108/validation-contract.json';assert digest(contract)==report['validation_contract_sha256']
+    for name,expected in json.loads(contract.read_text())['files'].items():
+        assert digest(contract.parent/name)==expected,'Validation input bytes changed: '+name
     if frozen:
         assert frozen['manifest_sha256']==digest(args.bundle/'c08-manifest.json') and frozen['validation_report_sha256']==digest(args.validation/'c08_validation_report.json')
     baseline=pd.read_csv(args.validation/'c08_validation_p01.csv',dtype=str,keep_default_na=False)
