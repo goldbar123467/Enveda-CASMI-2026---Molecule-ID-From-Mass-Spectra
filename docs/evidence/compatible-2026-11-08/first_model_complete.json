@@ -1,0 +1,17 @@
+{
+  "steps": 40000,
+  "attempts": 40015,
+  "amp_skips": 15,
+  "fold": 0,
+  "arm": "legacy16-default",
+  "smoke": false,
+  "checkpoint_sha256": "c46d17b09456b76ebf073e61b074b4cabd5c74556ec6d3a0ebf724f1f0324cbb",
+  "training_identities": 216270,
+  "heldout_in_training": 0,
+  "gpu_peak_reserved_gib": 1.986328125,
+  "completed_utc": "2026-11-08T23:42:17.683745+00:00",
+  "validation": "pending actual-pipeline evaluation",
+  "independent_cpu_load": true,
+  "finite_weights": true,
+  "architecture_verified": true
+}
