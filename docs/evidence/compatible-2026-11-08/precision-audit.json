@@ -1,0 +1,18 @@
+{
+  "spectra": 8192,
+  "peaks": 505060,
+  "normalized_mz_and_loss_fp16_round_trip_error_Th": {
+    "mz": {
+      "median": 0.024557113647460938,
+      "p95": 0.09885430335998535,
+      "maximum": 0.7410049438476562
+    },
+    "neutral_loss": {
+      "median": 0.028714537620544434,
+      "p95": 0.10851025581359863,
+      "maximum": 0.48661231994628906
+    }
+  },
+  "precise_peaks_sha256": "dfe3ec5aa339afff54c67249b2dc2832b8cd62b6baa28f23399eb9a2503c8473",
+  "interpretation": "Measured representation rounding only; no evidence that FP32 storage improves ranking. AMP remains FP16 in both arms."
+}

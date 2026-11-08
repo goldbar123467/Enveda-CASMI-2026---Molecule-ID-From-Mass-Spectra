@@ -1,0 +1,7 @@
+{
+  "raw_rows": 2539608,
+  "unmapped_raw_rows": 71962,
+  "selected_rows": 1504015,
+  "identities": 271118,
+  "limitation": "Catalogue mapping uses existing canonical InChIKey14; unmatched raw records are excluded, never guessed"
+}

@@ -1,5 +1,25 @@
 # Enveda CASMI 2026 — working rules
 
+## Latest resumption — 2026-11-08
+
+User requested a fresh public-notebook strategy scan and preparation of a long
+2070 run. This supersedes the older no-training-queued scope for **preparation
+and short pilots**. C08 is prepared at `outputs/local/long-compatible-20261108`;
+the full run/supervisor/24h clock have not started. Its isolated C08S pilot tests
+all8 recipes/folds and actual checkpoint recovery. Follow
+`docs/COMPATIBLE-LONG-RUN-2026-11-08.md` and its final readiness receipt. Do not
+retrain F07 or rewrite its scientific sources/checkpoints.
+
+Latest actual scores: P13 ref58105681 **0.480**, P14 v2 ref58111204 **0.458**,
+both COMPLETE/no reported error. P01/P13 remain best0.480. Conditional F07 gains
+did not transfer. Both previously approved scoring slots are spent; no new
+submission is authorized or queued. Training completion is not qualification.
+Public catalogue247 entries/20 selected sources, no downloaded code executed.
+The prior request to save code/results to GitHub remains authorization to sync
+this preparation; model/data/runtime/credential files remain excluded.
+
+The dated sections below are historical and do not override this scope.
+
 ## Active resumption — 2026-11-07
 
 Current checkpoint —7Nov20:52 Eastern: training is COMPLETE (both50k-step heads,

@@ -1,0 +1,16 @@
+{
+  "catalogue_identities": 273833,
+  "usable_views": 1504015,
+  "eligible_identities": 270127,
+  "excluded_shared_input_identities": 999,
+  "zero_usable_view_identities": 2715,
+  "fold_counts": {
+    "0": 53857,
+    "1": 53952,
+    "2": 53922,
+    "3": 54065,
+    "4": 54331
+  },
+  "split_group_sha256": "06a2626d571272a4780ea3965624377e5f785dd5c23131d4527ce89e38f9698e",
+  "scope": "Existing identity/acquisition folds; not a new untouched validation set"
+}

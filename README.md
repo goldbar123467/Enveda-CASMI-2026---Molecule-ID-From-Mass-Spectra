@@ -5,16 +5,21 @@ Private workspace for the Kaggle code competition
 Training and labelled scorer evaluation can run on the local RTX 2070 with `.venv-gpu`.
 The full candidate-generation pipeline and competition submissions run on Kaggle.
 
-Latest results (7 November): **F07R1 finished at18:22 Eastern**, both50,000-step
-heads complete, zero restarts. Reserved standalone retrieval MRR was0.6431/0.6656.
-Development-selected complementary fusion improved fresh reserved conditional
-ranking MRR0.6375→0.7423; this is not end-to-end or Kaggle MRR.
-**Both approved trials are submitted:** P13 ref58105681 and **P14 v2 ref58111204**.
-Scores are pending. P14 passed the full real Kaggle smoke and independent
-fusion/fallback/model-pin/dedup/portability checks after fixing NumPy cutoff ties.
-See [P14's protocol and evidence](docs/P14-FROZEN-SUBMISSION-2026-11-07.md).
+Latest results (8 November): **P13 scored0.480; P14 v2 scored0.458**. Both
+completed without reported errors. P14's positive conditional retrieval result
+failed to transfer to the leaderboard; P01/P13 retain the0.480 best. Both approved
+scoring slots are used. See [the submission log](SUBMISSIONS.md).
 
-Best verified public MRR remains **0.480 (P01)**. P12 ref58071964 finished with
+New public scan:247 catalogue entries,20 selected source reviews. The prepared
+**C08** run compares four matched320-wide compatible-scorer recipes on two folds:
+FP16/FP32 peak storage × default/stronger hard negatives. Batch384 leaves ample
+2070 headroom. Full training has not started; the separate short pilot tests
+data loading, numerics and checkpoint recovery. Estimated full runtime12–15h,
+24h cap. Read [the plan, findings and evidence](docs/COMPATIBLE-LONG-RUN-2026-11-08.md).
+Use `.\start-compatible-training.cmd --check` to check readiness, then
+`.\start-compatible-training.cmd` to launch training with its30-minute supervisor.
+
+Best verified public MRR remains **0.480 (P01/P13)**. P12 ref58071964 finished with
 an unhandled hidden-rerun error and **no score**, despite passing its visible
 smoke. L06 local retrieval MRR was0.6806 control /0.6463 external; these are not
 Kaggle scores. See [the new protocol](docs/FROZEN-TRAINING-2026-11-07.md),
@@ -41,7 +46,7 @@ for options and future runs. Python standard library only; no installs needed.
 - `docs/archive-2026-10-08/` — superseded Phase-1 documents, kept for history only.
 
 The current instruction is to submit only after evidence of improvement over the best
-submitted method (public MRR@25 **0.480**, checked 2026-11-06). It supersedes the older
+submitted method (public MRR@25 **0.480**, checked 2026-11-08). It supersedes the older
 daily submission quota policy. Local retrieval/panel MRR and Kaggle public MRR are
 different evaluations; their absolute values must not be compared.
 

@@ -43,6 +43,14 @@ python scripts/training_monitor.py --terminal
 
 ## Other runs and future checkouts
 
+C08 compatible-scorer runs are supported. The dashboard shows four recipes × two
+folds, successful optimizer steps, data preparation, and `prepared` versus
+`validation_pending` states. A prepared run has no moving ETA and has not
+started full training. It reads the same small JSON receipts, never model/cache
+files. Launch its independent recovery supervisor with
+`.\start-compatible-training.cmd`; `--check` validates readiness without launch.
+Use `--run outputs/local/long-compatible-20261108` to select it explicitly.
+
 F07 frozen-feature runs are also supported. The monitor shows encoder stage
 counts separately from the two seeds' optimizer steps. It reads
 `models/seed-N/{history,complete}.json`, the frozen trainer status and latest

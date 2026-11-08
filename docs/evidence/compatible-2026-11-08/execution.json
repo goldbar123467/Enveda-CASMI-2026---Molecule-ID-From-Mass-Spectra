@@ -1,0 +1,327 @@
+{
+  "checked_utc": "2026-11-08T22:11:34.753507+00:00",
+  "state": "prepared",
+  "full_training_started": false,
+  "full_supervisor_running": false,
+  "automatic_submission": false,
+  "production_models": 8,
+  "production_updates": 320000,
+  "pilot_models": 8,
+  "pilot_successful_updates": 1600,
+  "pilot_amp_skips": 0,
+  "checkpoint_restart": {
+    "stopped_at_successful_update": 100,
+    "resumed_to": 200,
+    "history_steps": [
+      100,
+      200
+    ],
+    "note": "Actual process exit75, then fresh-process restore of model/optimizer/scaler/RNG; no initial100 updates repeated in count"
+  },
+  "real_loader_spectra_per_second": {
+    "legacy16-default/fold-0": 3147.363892791479,
+    "precise32-default/fold-0": 3272.7567647301685,
+    "legacy16-hard/fold-0": 2755.429696206986,
+    "precise32-hard/fold-0": 2767.29288259544,
+    "legacy16-default/fold-1": 3238.799973492675,
+    "precise32-default/fold-1": 3286.0116703891567,
+    "legacy16-hard/fold-1": 2762.4029491560564,
+    "precise32-hard/fold-1": 2755.8881434062428
+  },
+  "peak_reserved_vram_gib": 2.412109375,
+  "estimated_optimizer_hours": 11.458144072210416,
+  "planning_eta_hours": [
+    12,
+    15
+  ],
+  "maximum_wall_hours": 24,
+  "limits": "Short pilot; not a model-quality experiment. Actual full run and pipeline validation have not run.",
+  "sources": {
+    "scripts/compatible_long_run.py": "998a6593a5428c9f4337d8724494391712912d5c781982cc5ae543b752f8e714",
+    "scripts/compatible_training.py": "d848f175547615b76675ec8fad95e34dc2898dc77a04b93844f56d7048d39eef",
+    "scripts/precision_cache.py": "752719d376ab67f0ff542407aa0422719d3eaf60eaccd4e8f919a3974c3cf06a",
+    "outputs/local/kit/features.py": "a97ad9b3ab3711517864d56e497e1672cb29bb05683c72b52db9f9b0a17b1455",
+    "outputs/local/kit/model.py": "2547418857386d1c2513fd1ab6c70961e6a96e73d9d495bbfe3052197e69dc39"
+  },
+  "smoke_results": {
+    "models": [
+      {
+        "steps": 200,
+        "attempts": 200,
+        "amp_skips": 0,
+        "fold": 0,
+        "arm": "legacy16-default",
+        "smoke": true,
+        "checkpoint_sha256": "f2a02dc4b63397a1287d7c8e56e2b3aae8421cbecc7f32a1172bcff6b644b787",
+        "training_identities": 216270,
+        "heldout_in_training": 0,
+        "gpu_peak_reserved_gib": 2.025390625,
+        "completed_utc": "2026-11-08T22:02:15.522110+00:00",
+        "validation": "pending actual-pipeline evaluation"
+      },
+      {
+        "steps": 200,
+        "attempts": 200,
+        "amp_skips": 0,
+        "fold": 0,
+        "arm": "precise32-default",
+        "smoke": true,
+        "checkpoint_sha256": "1e12149f529e457dd22c3d3298a9abbcafdc52be83fb91461ef8da0df5419425",
+        "training_identities": 216270,
+        "heldout_in_training": 0,
+        "gpu_peak_reserved_gib": 1.986328125,
+        "completed_utc": "2026-11-08T22:02:39.715896+00:00",
+        "validation": "pending actual-pipeline evaluation"
+      },
+      {
+        "steps": 200,
+        "attempts": 200,
+        "amp_skips": 0,
+        "fold": 0,
+        "arm": "legacy16-hard",
+        "smoke": true,
+        "checkpoint_sha256": "3780d573d0b11b087967598a0f441064bf5571688e92860ea589f6b53512dd0f",
+        "training_identities": 216270,
+        "heldout_in_training": 0,
+        "gpu_peak_reserved_gib": 2.40625,
+        "completed_utc": "2026-11-08T22:03:08.317516+00:00",
+        "validation": "pending actual-pipeline evaluation"
+      },
+      {
+        "steps": 200,
+        "attempts": 200,
+        "amp_skips": 0,
+        "fold": 0,
+        "arm": "precise32-hard",
+        "smoke": true,
+        "checkpoint_sha256": "7bb1ed90a5adbb7bda6cf3c909c050a3ca11295c4668029ca5a965e97d3f6ad7",
+        "training_identities": 216270,
+        "heldout_in_training": 0,
+        "gpu_peak_reserved_gib": 2.40625,
+        "completed_utc": "2026-11-08T22:03:36.811895+00:00",
+        "validation": "pending actual-pipeline evaluation"
+      },
+      {
+        "steps": 200,
+        "attempts": 200,
+        "amp_skips": 0,
+        "fold": 1,
+        "arm": "legacy16-default",
+        "smoke": true,
+        "checkpoint_sha256": "b9bcfad80ecfd79a60cb81ae6213bf30dcacc1c6b1ac288656516c244d03640a",
+        "training_identities": 216175,
+        "heldout_in_training": 0,
+        "gpu_peak_reserved_gib": 1.955078125,
+        "completed_utc": "2026-11-08T22:04:01.271354+00:00",
+        "validation": "pending actual-pipeline evaluation"
+      },
+      {
+        "steps": 200,
+        "attempts": 200,
+        "amp_skips": 0,
+        "fold": 1,
+        "arm": "precise32-default",
+        "smoke": true,
+        "checkpoint_sha256": "53bf3de05b7e20eb551ea18157d52f6ada5d4bf554a129ae108e0a752505d616",
+        "training_identities": 216175,
+        "heldout_in_training": 0,
+        "gpu_peak_reserved_gib": 1.947265625,
+        "completed_utc": "2026-11-08T22:04:25.363055+00:00",
+        "validation": "pending actual-pipeline evaluation"
+      },
+      {
+        "steps": 200,
+        "attempts": 200,
+        "amp_skips": 0,
+        "fold": 1,
+        "arm": "legacy16-hard",
+        "smoke": true,
+        "checkpoint_sha256": "d3ab988f512f6f34ac7405a66648bad61433987fb22bd3e7a65b523524c93331",
+        "training_identities": 216175,
+        "heldout_in_training": 0,
+        "gpu_peak_reserved_gib": 2.39453125,
+        "completed_utc": "2026-11-08T22:04:53.904256+00:00",
+        "validation": "pending actual-pipeline evaluation"
+      },
+      {
+        "steps": 200,
+        "attempts": 200,
+        "amp_skips": 0,
+        "fold": 1,
+        "arm": "precise32-hard",
+        "smoke": true,
+        "checkpoint_sha256": "f695a08901a050816cc8bce77b41c37933c8529acfb731e2031d511e29442bda",
+        "training_identities": 216175,
+        "heldout_in_training": 0,
+        "gpu_peak_reserved_gib": 2.412109375,
+        "completed_utc": "2026-11-08T22:05:22.501890+00:00",
+        "validation": "pending actual-pipeline evaluation"
+      }
+    ],
+    "completed_utc": "2026-11-08T22:05:22.564946+00:00",
+    "quality_gate_passed": false,
+    "note": "Training only; no automatic selection, refit or submission. Failed P14 must be a negative control."
+  },
+  "history": {
+    "legacy16-default/fold-0": [
+      {
+        "step": 100,
+        "loss": 5.797512145042419,
+        "seconds": 12.19772399996873,
+        "updates": 100,
+        "spectra_per_second": 3148.128290171055,
+        "micro_batch": 384,
+        "amp_skips": 0
+      },
+      {
+        "step": 200,
+        "loss": 5.251366662979126,
+        "seconds": 12.203648900031112,
+        "updates": 100,
+        "spectra_per_second": 3146.599866528617,
+        "micro_batch": 384,
+        "amp_skips": 0
+      }
+    ],
+    "precise32-default/fold-0": [
+      {
+        "step": 100,
+        "loss": 5.797387251853943,
+        "seconds": 11.735530499950983,
+        "updates": 100,
+        "spectra_per_second": 3272.114541405724,
+        "micro_batch": 384,
+        "amp_skips": 0
+      },
+      {
+        "step": 200,
+        "loss": 5.251384282112122,
+        "seconds": 11.730924700037576,
+        "updates": 100,
+        "spectra_per_second": 3273.399240204568,
+        "micro_batch": 384,
+        "amp_skips": 0
+      }
+    ],
+    "legacy16-hard/fold-0": [
+      {
+        "step": 100,
+        "loss": 5.925182318687439,
+        "seconds": 13.93206509994343,
+        "updates": 100,
+        "spectra_per_second": 2756.231737688042,
+        "micro_batch": 384,
+        "amp_skips": 0
+      },
+      {
+        "step": 200,
+        "loss": 5.41316545009613,
+        "seconds": 13.940175700001419,
+        "updates": 100,
+        "spectra_per_second": 2754.628121365507,
+        "micro_batch": 384,
+        "amp_skips": 0
+      }
+    ],
+    "precise32-hard/fold-0": [
+      {
+        "step": 100,
+        "loss": 5.9250549840927125,
+        "seconds": 13.901963499956764,
+        "updates": 100,
+        "spectra_per_second": 2762.19974251259,
+        "micro_batch": 384,
+        "amp_skips": 0
+      },
+      {
+        "step": 200,
+        "loss": 5.413235282897949,
+        "seconds": 13.850790999946184,
+        "updates": 100,
+        "spectra_per_second": 2772.4048395610907,
+        "micro_batch": 384,
+        "amp_skips": 0
+      }
+    ],
+    "legacy16-default/fold-1": [
+      {
+        "step": 100,
+        "loss": 5.766881151199341,
+        "seconds": 11.82540810003411,
+        "updates": 100,
+        "spectra_per_second": 3247.2452261405874,
+        "micro_batch": 384,
+        "amp_skips": 0
+      },
+      {
+        "step": 200,
+        "loss": 5.218778214454651,
+        "seconds": 11.88707820000127,
+        "updates": 100,
+        "spectra_per_second": 3230.39853477164,
+        "micro_batch": 384,
+        "amp_skips": 0
+      }
+    ],
+    "precise32-default/fold-1": [
+      {
+        "step": 100,
+        "loss": 5.767056798934936,
+        "seconds": 11.644126300001517,
+        "updates": 100,
+        "spectra_per_second": 3297.8000247210475,
+        "micro_batch": 384,
+        "amp_skips": 0
+      },
+      {
+        "step": 200,
+        "loss": 5.219445705413818,
+        "seconds": 11.727671399945393,
+        "updates": 100,
+        "spectra_per_second": 3274.307293447768,
+        "micro_batch": 384,
+        "amp_skips": 0
+      }
+    ],
+    "legacy16-hard/fold-1": [
+      {
+        "step": 100,
+        "loss": 5.90188771724701,
+        "seconds": 13.861805399996229,
+        "updates": 100,
+        "spectra_per_second": 2770.2019247803355,
+        "micro_batch": 384,
+        "amp_skips": 0
+      },
+      {
+        "step": 200,
+        "loss": 5.387293248176575,
+        "seconds": 13.94007629994303,
+        "updates": 100,
+        "spectra_per_second": 2754.647763309368,
+        "micro_batch": 384,
+        "amp_skips": 0
+      }
+    ],
+    "precise32-hard/fold-1": [
+      {
+        "step": 100,
+        "loss": 5.9020958471298215,
+        "seconds": 13.829160699970089,
+        "updates": 100,
+        "spectra_per_second": 2776.7411799678525,
+        "micro_batch": 384,
+        "amp_skips": 0
+      },
+      {
+        "step": 200,
+        "loss": 5.387620024681091,
+        "seconds": 14.038443500059657,
+        "updates": 100,
+        "spectra_per_second": 2735.3459804740332,
+        "micro_batch": 384,
+        "amp_skips": 0
+      }
+    ]
+  }
+}

@@ -6,6 +6,17 @@ over those works. Retain their original notices and observe the license of each
 source before reuse. Training data, pretrained weights, caches and downloaded
 research notebooks are excluded from Git.
 
+C08 (8 November) adapts the credited Saner architecture/features/objective and
+Deotte common-fold scaffolding with our own precision/negative-recipe factorial,
+AMP accumulation, cache and recovery code. Architecture/negative settings are
+informed by [bgunshui's V7 documentation](https://www.kaggle.com/datasets/bgunshui/casmi26-scorer-v7-model),
+with a controlled-negative comparison also motivated by
+[cheek2005's trainer](https://www.kaggle.com/code/cheek2005/casmi26-scorer-train-hn).
+Only configuration facts/compact provenance receipts are retained; no V7 weights
+or new external labels are adopted. Public strategy reports also credit
+[prvsiyan](https://www.kaggle.com/code/prvsiyan/analog-propagation-casmi-2026-baseline)
+and the sources linked in `docs/evidence/scan-2026-11-08/source-index.json`.
+
 F07 (7 November) uses the frozen-feature alignment design from
 [MSAlign](https://github.com/KrzakalaPaul/MSAlign-NeurIPS2026), official
 [DreaMS](https://github.com/pluskal-lab/DreaMS) (MIT) and

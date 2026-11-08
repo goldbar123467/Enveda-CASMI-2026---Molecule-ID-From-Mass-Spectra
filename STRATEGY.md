@@ -1,4 +1,26 @@
-# Completed F07R1 and two accepted trials — 7 November
+# New public scan and prepared C08 — 8 November
+
+Actual scores: P13 **0.480**, P14 v2 **0.458**. P14 completed without reported
+error; the large conditional retrieval gain was a misleading promotion proxy.
+Retain P01/P13 at0.480. The two authorized scoring slots are spent.
+
+Reviewed20 selected sources from247 public catalogue entries. V7 documents a
+compatible320-wide scorer and48-negative/pool512 recipe, but its0.6672 is a
+truth-included random-holdout diagnostic, not a leaderboard score. Two
+0.485/0.486-titled notebooks have identical code and an unavailable private-model
+fallback; their titles are not reproducible evidence. Prvsiyan's lighter/heavier
+pair differs only in extra-seed count and supports an isolated ablation.
+
+C08 prepares fresh competition-only models: four precision/negative recipes,
+two common identity/acquisition folds, batch384,40k successful updates each.
+Actual data-loading/restart pilot is separate; the full run has not started.
+Use [the protocol](docs/COMPATIBLE-LONG-RUN-2026-11-08.md). Real pipeline candidate
+lists, absent-truth zeros, source-shift audits and failed-P14 negative control
+are required before any promotion. No automatic submission or full-data refit.
+
+---
+
+# Historical: completed F07R1 and two accepted trials — 7 November
 
 F07R1 completed100,000 head steps, zero restarts. The selected seed1/50% P01
 fusion improves reserved conditional MRR .637481→.742594 after deterministic

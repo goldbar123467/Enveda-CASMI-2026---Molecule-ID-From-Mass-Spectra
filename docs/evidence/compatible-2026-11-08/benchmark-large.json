@@ -1,0 +1,100 @@
+{
+  "checked_utc": "2026-11-08T21:44:28.928856+00:00",
+  "gpu": "NVIDIA GeForce RTX 2070",
+  "torch": "2.11.0+cu128",
+  "architecture": {
+    "seed": 20261023,
+    "fp_bits": 2048,
+    "max_peaks": 96,
+    "min_peaks": 3,
+    "width": 320,
+    "heads": 8,
+    "layers": 3,
+    "embedding": 320,
+    "dropout": 0.1,
+    "temperature": 0.1,
+    "aux_weight": 0.5,
+    "fp_score_weight": 2.0,
+    "batch_size": 96,
+    "hard_negatives": 16,
+    "negative_pool": 128,
+    "epochs": 16,
+    "steps_per_epoch": 500,
+    "patience": 4,
+    "lr": 0.0002,
+    "weight_decay": 0.01,
+    "val_fraction": 0.1,
+    "val_candidates": 256,
+    "max_validation_molecules": 1000,
+    "holdout_hours": 3.0,
+    "refit_hours": 3.0,
+    "refit_full": true,
+    "require_gpu": true,
+    "output": "/kaggle/working/casmi_spectrum_model_v1",
+    "work": "/kaggle/working/casmi_training_cache_v1",
+    "train_path": "/kaggle/input/competitions/enveda-CASMI26-molecule-id-mass-spectra/train.parquet",
+    "external_paths": []
+  },
+  "real_spectra": 96,
+  "results": [
+    {
+      "hard_negatives": 48,
+      "micro_batch": 96,
+      "effective_batch": 96,
+      "seconds_per_optimizer_step": 0.035316091671120375,
+      "spectra_per_second": 2718.3075889029847,
+      "gpu_peak_allocated_gib": 0.5812678337097168,
+      "gpu_peak_reserved_gib": 0.634765625,
+      "amp_skipped_steps": 0
+    },
+    {
+      "hard_negatives": 48,
+      "micro_batch": 192,
+      "effective_batch": 192,
+      "seconds_per_optimizer_step": 0.05925974166408802,
+      "spectra_per_second": 3239.973624730698,
+      "gpu_peak_allocated_gib": 1.068375587463379,
+      "gpu_peak_reserved_gib": 1.181640625,
+      "amp_skipped_steps": 0
+    },
+    {
+      "hard_negatives": 48,
+      "micro_batch": 384,
+      "effective_batch": 384,
+      "seconds_per_optimizer_step": 0.10909210833294007,
+      "spectra_per_second": 3519.9613048825113,
+      "gpu_peak_allocated_gib": 2.02755069732666,
+      "gpu_peak_reserved_gib": 2.23828125,
+      "amp_skipped_steps": 0
+    },
+    {
+      "hard_negatives": 48,
+      "micro_batch": 768,
+      "effective_batch": 768,
+      "seconds_per_optimizer_step": 0.21178599166645048,
+      "spectra_per_second": 3626.3021645433064,
+      "gpu_peak_allocated_gib": 3.965036392211914,
+      "gpu_peak_reserved_gib": 4.400390625,
+      "amp_skipped_steps": 0
+    }
+  ],
+  "recommendations": {
+    "48": {
+      "hard_negatives": 48,
+      "micro_batch": 768,
+      "effective_batch": 768,
+      "seconds_per_optimizer_step": 0.21178599166645048,
+      "spectra_per_second": 3626.3021645433064,
+      "gpu_peak_allocated_gib": 3.965036392211914,
+      "gpu_peak_reserved_gib": 4.400390625,
+      "amp_skipped_steps": 0
+    }
+  },
+  "source_sha256": {
+    "scripts/compatible_training.py": "56304270e5ef16776b4e76a7a6023fb90f7f3579aa8e787f6fd10e3e7e21f976",
+    "scripts/benchmark_compatible_2070.py": "60513da3c5f9913aeeb8315105e8559a460d2e6b344b22587092d7ea37f554e1",
+    "outputs/local/kit/model.py": "2547418857386d1c2513fd1ab6c70961e6a96e73d9d495bbfe3052197e69dc39",
+    "outputs/local/kit/features.py": "a97ad9b3ab3711517864d56e497e1672cb29bb05683c72b52db9f9b0a17b1455"
+  },
+  "limitation": "Training throughput/resource benchmark with real spectra and randomized candidate identities; not a quality experiment"
+}

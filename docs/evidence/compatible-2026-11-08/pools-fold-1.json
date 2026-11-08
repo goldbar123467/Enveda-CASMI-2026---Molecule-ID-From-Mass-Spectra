@@ -1,0 +1,22 @@
+{
+  "contract": {
+    "fold": 1,
+    "count": 512,
+    "allowed_sha256": "d396b462e09361618f78aaf6bc19fbef04f700d49a147fdccd11e80900d9e0c2",
+    "groups_sha256": "06a2626d571272a4780ea3965624377e5f785dd5c23131d4527ce89e38f9698e",
+    "builder_sha256": "998a6593a5428c9f4337d8724494391712912d5c781982cc5ae543b752f8e714"
+  },
+  "sha256": "c1ee3f01791f8a6c1828c0b9b5c5d9d3609accb3ca96a2c1ee9ef9aebc9b02d9",
+  "training_identities": 216175,
+  "revalidated_all_entries_after_source_change": true,
+  "prior_contract": {
+    "fold": 1,
+    "count": 512,
+    "allowed_sha256": "d396b462e09361618f78aaf6bc19fbef04f700d49a147fdccd11e80900d9e0c2",
+    "groups_sha256": "06a2626d571272a4780ea3965624377e5f785dd5c23131d4527ce89e38f9698e",
+    "builder_sha256": "bed6c29a1d1576b6ebe46a7c7dba62744b4a4421ecb02c9e97bb633d15c633b4"
+  },
+  "heldout_negative_identities": 0,
+  "shared_input_alias_negatives": 0,
+  "completed_utc": "2026-11-08T22:00:26.428536+00:00"
+}

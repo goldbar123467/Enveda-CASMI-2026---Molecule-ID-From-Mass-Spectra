@@ -1,0 +1,30 @@
+{
+  "source": "https://www.kaggle.com/datasets/bgunshui/casmi26-scorer-v7-model",
+  "files": {
+    "config_used.json": {
+      "bytes": 705,
+      "sha256": "b25dbdaf2143aaea779878754fbd21f400ac2980f6c5d604bdf2fcc237c66abf"
+    },
+    "data_audit.json": {
+      "bytes": 1205,
+      "sha256": "07e392f6a3675782dadd40106e6463e321420dc2f1330d1ac279d6508b002dbb"
+    },
+    "features.py": {
+      "bytes": 2289,
+      "sha256": "d230b7dc98043e851497c352e0fef056aa6e3e7d33f4899b41e4032e5d493582"
+    },
+    "model.py": {
+      "bytes": 1577,
+      "sha256": "2547418857386d1c2513fd1ab6c70961e6a96e73d9d495bbfe3052197e69dc39"
+    },
+    "README.md": {
+      "bytes": 1324,
+      "sha256": "6cabeb863e54393d01dfecd3a625b2dd0181bdafc78d50be9b1cb27348b573a3"
+    },
+    "training_result.json": {
+      "bytes": 389,
+      "sha256": "2513219f40dd130fc1907468997127fa2539fc35c9daa8e2d607d318d01dcaf2"
+    }
+  },
+  "weights_downloaded_or_used": false
+}

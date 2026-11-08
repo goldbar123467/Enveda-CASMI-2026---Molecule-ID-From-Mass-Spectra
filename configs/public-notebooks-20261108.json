@@ -1,0 +1,22 @@
+[
+  "prvsiyan/analog-propagation-casmi-2026-baseline",
+  "zz3t3rn41/casmi26-peaks-to-structures-v2",
+  "ozertuu/0-485-sota-casmi26-from-peaks-to-structures",
+  "duongynhi/enveda-casmi26-gold-apex",
+  "alexchilton/casmi26-lb-0-481-gold-apex-v22-mass-prior",
+  "heliosli/casmi26-0-482",
+  "heliosli/happy-to-make-the-dataset-public-if-it-helps",
+  "cheek2005/casmi26-scorer-train-hn",
+  "sardorishiguro/casmi26-v1130-scorer-train-ours",
+  "sardorishiguro/casmi26-scorer-train-seed-20261108",
+  "adityaraj0612/casmi26-exp298-enveda180",
+  "adityaraj0612/casmi26-exp296-provenance-reranker",
+  "flexonafft/casmi26-closing-the-evidence-gap",
+  "easonyanyan/casmi26-v33-calibrated-dual-neural-ensemble",
+  "ozertuu/casmi26-apex-gold-486",
+  "roshanrobinc/casmi26-sovereign-zenith-v34",
+  "theomainetucker/casmi-2026-flagship-hybrid-sota",
+  "romanrozen/0-482-casmi-from-peaks-to-structures",
+  "prvsiyan/fable-of-the-lighter-hand",
+  "prvsiyan/the-weight-of-an-exact-mass"
+]

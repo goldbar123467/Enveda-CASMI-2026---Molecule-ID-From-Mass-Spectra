@@ -1,0 +1,22 @@
+{
+  "data_sha256": {
+    "outputs\\local\\precision-cache-20261108\\peaks.npy": "dfe3ec5aa339afff54c67249b2dc2832b8cd62b6baa28f23399eb9a2503c8473",
+    "outputs\\local\\precision-cache-20261108\\metadata.npy": "fc50613e204b4713952e1e1777bf676b717e57138592caeefc0c5c89b119829c",
+    "outputs\\local\\precision-cache-20261108\\adduct.npy": "63a547f866495fc01f1835bd36948621471a5c93a2e13def972f74c2129390bd",
+    "outputs\\local\\precision-cache-20261108\\lengths.npy": "f668bd41d94e2756ecc469587d1746bf7b298b5cc8925e186ed5a07ea2695867",
+    "outputs\\local\\precision-cache-20261108\\pools-fold-0.npy": "9fd70c6b999c43545eef101967c63cf8584908101695d8932596ff3d2a42c104",
+    "outputs\\local\\precision-cache-20261108\\pools-fold-1.npy": "c1ee3f01791f8a6c1828c0b9b5c5d9d3609accb3ca96a2c1ee9ef9aebc9b02d9",
+    "outputs\\local\\precision-cache-20261108\\valid.npy": "fa6b0b0ac64c65444854b2a7c94cd1f7514b119899598f678ace1df037308a82",
+    "outputs\\local\\precision-cache-20261108\\selected.parquet": "56c6f2ff7ca32c2371d3d210eeade796adaa671f145b99324361a199f957ac8b",
+    "outputs\\local\\long-20261106\\spectrum_groups.npz": "06a2626d571272a4780ea3965624377e5f785dd5c23131d4527ce89e38f9698e",
+    "outputs\\local\\n0\\cache\\fingerprints.npy": "cdd019dc6377afbdd1d295489856413de8bc2828420912f038dbc5a2fb687ce8",
+    "outputs\\local\\n0\\cache\\molecules.parquet": "a158239c869f4565971d93d37cae0c88c52677e6622807392222118516c71e09"
+  },
+  "scientific_source_sha256": {
+    "scripts/compatible_long_run.py": "998a6593a5428c9f4337d8724494391712912d5c781982cc5ae543b752f8e714",
+    "scripts/compatible_training.py": "d848f175547615b76675ec8fad95e34dc2898dc77a04b93844f56d7048d39eef",
+    "scripts/precision_cache.py": "752719d376ab67f0ff542407aa0422719d3eaf60eaccd4e8f919a3974c3cf06a",
+    "outputs/local/kit/features.py": "a97ad9b3ab3711517864d56e497e1672cb29bb05683c72b52db9f9b0a17b1455",
+    "outputs/local/kit/model.py": "2547418857386d1c2513fd1ab6c70961e6a96e73d9d495bbfe3052197e69dc39"
+  }
+}

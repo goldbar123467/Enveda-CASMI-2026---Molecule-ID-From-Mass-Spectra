@@ -1,0 +1,170 @@
+{
+  "checked_utc": "2026-11-08T21:40:55.842899+00:00",
+  "gpu": "NVIDIA GeForce RTX 2070",
+  "torch": "2.11.0+cu128",
+  "architecture": {
+    "seed": 20261023,
+    "fp_bits": 2048,
+    "max_peaks": 96,
+    "min_peaks": 3,
+    "width": 320,
+    "heads": 8,
+    "layers": 3,
+    "embedding": 320,
+    "dropout": 0.1,
+    "temperature": 0.1,
+    "aux_weight": 0.5,
+    "fp_score_weight": 2.0,
+    "batch_size": 96,
+    "hard_negatives": 16,
+    "negative_pool": 128,
+    "epochs": 16,
+    "steps_per_epoch": 500,
+    "patience": 4,
+    "lr": 0.0002,
+    "weight_decay": 0.01,
+    "val_fraction": 0.1,
+    "val_candidates": 256,
+    "max_validation_molecules": 1000,
+    "holdout_hours": 3.0,
+    "refit_hours": 3.0,
+    "refit_full": true,
+    "require_gpu": true,
+    "output": "/kaggle/working/casmi_spectrum_model_v1",
+    "work": "/kaggle/working/casmi_training_cache_v1",
+    "train_path": "/kaggle/input/competitions/enveda-CASMI26-molecule-id-mass-spectra/train.parquet",
+    "external_paths": []
+  },
+  "real_spectra": 96,
+  "results": [
+    {
+      "hard_negatives": 16,
+      "micro_batch": 16,
+      "effective_batch": 96,
+      "seconds_per_optimizer_step": 0.11777720833197236,
+      "spectra_per_second": 815.0982805553507,
+      "gpu_peak_allocated_gib": 0.20648765563964844,
+      "gpu_peak_reserved_gib": 0.236328125,
+      "amp_skipped_steps": 0
+    },
+    {
+      "hard_negatives": 16,
+      "micro_batch": 24,
+      "effective_batch": 96,
+      "seconds_per_optimizer_step": 0.08055068333245193,
+      "spectra_per_second": 1191.7962210672385,
+      "gpu_peak_allocated_gib": 0.23439502716064453,
+      "gpu_peak_reserved_gib": 0.259765625,
+      "amp_skipped_steps": 0
+    },
+    {
+      "hard_negatives": 16,
+      "micro_batch": 32,
+      "effective_batch": 96,
+      "seconds_per_optimizer_step": 0.05722187500214204,
+      "spectra_per_second": 1677.6800829474103,
+      "gpu_peak_allocated_gib": 0.2731466293334961,
+      "gpu_peak_reserved_gib": 0.30078125,
+      "amp_skipped_steps": 0
+    },
+    {
+      "hard_negatives": 16,
+      "micro_batch": 48,
+      "effective_batch": 96,
+      "seconds_per_optimizer_step": 0.043364449995957934,
+      "spectra_per_second": 2213.7949405318946,
+      "gpu_peak_allocated_gib": 0.3483147621154785,
+      "gpu_peak_reserved_gib": 0.380859375,
+      "amp_skipped_steps": 0
+    },
+    {
+      "hard_negatives": 16,
+      "micro_batch": 96,
+      "effective_batch": 96,
+      "seconds_per_optimizer_step": 0.03406044999913623,
+      "spectra_per_second": 2818.518252179127,
+      "gpu_peak_allocated_gib": 0.5405597686767578,
+      "gpu_peak_reserved_gib": 0.59765625,
+      "amp_skipped_steps": 0
+    },
+    {
+      "hard_negatives": 48,
+      "micro_batch": 16,
+      "effective_batch": 96,
+      "seconds_per_optimizer_step": 0.11501324167087053,
+      "spectra_per_second": 834.6864987487261,
+      "gpu_peak_allocated_gib": 0.23162841796875,
+      "gpu_peak_reserved_gib": 0.265625,
+      "amp_skipped_steps": 0
+    },
+    {
+      "hard_negatives": 48,
+      "micro_batch": 24,
+      "effective_batch": 96,
+      "seconds_per_optimizer_step": 0.07746842500637285,
+      "spectra_per_second": 1239.214557312901,
+      "gpu_peak_allocated_gib": 0.2669186592102051,
+      "gpu_peak_reserved_gib": 0.30078125,
+      "amp_skipped_steps": 0
+    },
+    {
+      "hard_negatives": 48,
+      "micro_batch": 32,
+      "effective_batch": 96,
+      "seconds_per_optimizer_step": 0.056414483328505106,
+      "spectra_per_second": 1701.6906711878567,
+      "gpu_peak_allocated_gib": 0.30686235427856445,
+      "gpu_peak_reserved_gib": 0.341796875,
+      "amp_skipped_steps": 0
+    },
+    {
+      "hard_negatives": 48,
+      "micro_batch": 48,
+      "effective_batch": 96,
+      "seconds_per_optimizer_step": 0.04437954166981702,
+      "spectra_per_second": 2163.1588878100238,
+      "gpu_peak_allocated_gib": 0.3854227066040039,
+      "gpu_peak_reserved_gib": 0.40625,
+      "amp_skipped_steps": 0
+    },
+    {
+      "hard_negatives": 48,
+      "micro_batch": 96,
+      "effective_batch": 96,
+      "seconds_per_optimizer_step": 0.03407514167095845,
+      "spectra_per_second": 2817.303033601731,
+      "gpu_peak_allocated_gib": 0.5819315910339355,
+      "gpu_peak_reserved_gib": 0.623046875,
+      "amp_skipped_steps": 0
+    }
+  ],
+  "recommendations": {
+    "16": {
+      "hard_negatives": 16,
+      "micro_batch": 96,
+      "effective_batch": 96,
+      "seconds_per_optimizer_step": 0.03406044999913623,
+      "spectra_per_second": 2818.518252179127,
+      "gpu_peak_allocated_gib": 0.5405597686767578,
+      "gpu_peak_reserved_gib": 0.59765625,
+      "amp_skipped_steps": 0
+    },
+    "48": {
+      "hard_negatives": 48,
+      "micro_batch": 96,
+      "effective_batch": 96,
+      "seconds_per_optimizer_step": 0.03407514167095845,
+      "spectra_per_second": 2817.303033601731,
+      "gpu_peak_allocated_gib": 0.5819315910339355,
+      "gpu_peak_reserved_gib": 0.623046875,
+      "amp_skipped_steps": 0
+    }
+  },
+  "source_sha256": {
+    "scripts/compatible_training.py": "56304270e5ef16776b4e76a7a6023fb90f7f3579aa8e787f6fd10e3e7e21f976",
+    "scripts/benchmark_compatible_2070.py": "e9b0aff726fabdea192d7eb244725ccdc979e9f65049feb6a05a2ca8f2932d5f",
+    "outputs/local/kit/model.py": "2547418857386d1c2513fd1ab6c70961e6a96e73d9d495bbfe3052197e69dc39",
+    "outputs/local/kit/features.py": "a97ad9b3ab3711517864d56e497e1672cb29bb05683c72b52db9f9b0a17b1455"
+  },
+  "limitation": "Training throughput/resource benchmark with real spectra and randomized candidate identities; not a quality experiment"
+}

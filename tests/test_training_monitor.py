@@ -93,6 +93,24 @@ class MonitorTests(unittest.TestCase):
         (smoke / 'manifest.json').write_text('{"smoke":true}', encoding='utf-8')
         self.assertEqual(monitor.discover_run(self.root), self.run)
 
+    def test_compatible_prepared_has_no_running_eta_or_dead_process_error(self):
+        self.write('manifest.json',dict(kind='compatible_scorer',spec=dict(run_id='C08',folds=[0,1],
+                   arms=[dict(name=n) for n in ['legacy16-default','precise32-default','legacy16-hard','precise32-hard']],
+                   training=dict(steps=40000,batch_size=384))))
+        self.write('status.json',dict(state='prepared',stage='Ready; full training has not started',pid=42,updated_utc=self.now.isoformat()))
+        data=self.snapshot(alive=lambda _pid:False)
+        self.assertEqual(data['state'],'prepared');self.assertEqual(data['progress']['total_epochs'],320000)
+        self.assertEqual(data['progress']['completed_epochs'],0);self.assertIsNone(data['progress']['eta_utc'])
+        self.assertIn('full training has not started',monitor.terminal_view(data))
+
+    def test_compatible_trained_is_still_validation_pending(self):
+        self.write('manifest.json',dict(kind='compatible_scorer',spec=dict(run_id='C08',folds=[0],arms=[dict(name='precise32-hard')],training=dict(steps=40000,batch_size=384))))
+        self.write('models/precise32-hard/fold-0/complete.json',dict(steps=40000))
+        self.write('status.json',dict(state='validation_pending',updated_utc=self.now.isoformat()))
+        data=self.snapshot(alive=lambda _pid:False)
+        self.assertEqual(data['state'],'validation_pending');self.assertEqual(data['progress']['percent'],100)
+        self.assertIsNone(data['progress']['eta_utc']);self.assertIsNone(data['models'][0]['metrics'])
+
     def test_frozen_preparation_is_not_counted_as_optimizer_work(self):
         self.write('manifest.json', dict(kind='frozen_retrieval', spec=dict(run_id='F07', seeds=[11, 12], training=dict(steps=50000))))
         self.write('status.json', dict(state='training', stage='encoding molecule_embeddings', pid=42,

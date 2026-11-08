@@ -20,7 +20,7 @@ function refreshTimes() {
   const age = current.updated_utc ? (Date.now() - Date.parse(current.updated_utc)) / 1000 : null;
   set('heartbeat', age === null ? '—' : `${duration(age)} ago`);
   const eta = current.progress.eta_utc;
-  set('remaining', eta ? `${duration((Date.parse(eta) - Date.now()) / 1000)} remaining` : current.state === 'complete' ? 'Training finished' : 'ETA unavailable');
+  set('remaining', eta ? `${duration((Date.parse(eta) - Date.now()) / 1000)} remaining` : ['complete','validation_pending'].includes(current.state) ? 'Training finished' : 'ETA unavailable');
   const watchdog = current.watchdog;
   const next = watchdog.next_check_utc;
   const terminal = ['complete', 'paused', 'budget_reached', 'needs_attention', 'attention_missing_status'].includes(watchdog.action);
@@ -36,15 +36,15 @@ function refreshTimes() {
 function render(data) {
   current = data;
   const p = data.progress, a = data.active, gpu = data.gpu || {}, ram = data.memory || {};
-  const frozen = data.kind === 'frozen_retrieval', unit = p.unit || 'epochs';
+  const frozen = data.kind === 'frozen_retrieval', compatible = data.kind === 'compatible_scorer', staged = frozen || compatible, unit = p.unit || 'epochs';
   const runLive = ['training', 'finalizing'].includes(data.state);
   set('run-id', data.run_id);
   set('run-description', data.description || `${p.total_models} models · ${a.epochs} epochs each · paired control / external data`);
   set('pace-unit', `s / ${unit === 'steps' ? 'step' : 'epoch'}`);
   set('chart-description', `Training loss by ${unit === 'steps' ? 'step' : 'epoch'}`);
-  set('queue-description', frozen ? 'Two seeds · learned heads on frozen encoders' : 'Paired control and external-data models · shared folds');
+  set('queue-description', compatible ? 'Four matched recipes · two common identity/acquisition folds' : frozen ? 'Two seeds · learned heads on frozen encoders' : 'Paired control and external-data models · shared folds');
   set('model-index-heading', frozen ? 'SEED' : 'FOLD');
-  const labels = {training: 'Training active', finalizing: 'Finalizing OOF', complete: 'Training complete', waiting: 'Waiting for run', stale: 'Heartbeat stale', stopped: 'Trainer stopped', error: 'Training error', paused: 'Project paused'};
+  const labels = {prepared: 'Prepared · ready to start', preparing: 'Preparing data', validation_pending: 'Trained · validation pending', budget_or_resource_stop: 'Stopped at resource limit', training: 'Training active', finalizing: 'Finalizing OOF', complete: 'Training complete', waiting: 'Waiting for run', stale: 'Heartbeat stale', stopped: 'Trainer stopped', error: 'Training error', paused: 'Project paused'};
   set('run-state', labels[data.state] || title(data.state));
   $('run-state').className = 'status-pill' + (['error', 'stopped'].includes(data.state) ? ' error-state' : ['stale', 'paused'].includes(data.state) ? ' warning-state' : '');
   set('overall', num(p.percent));
@@ -52,12 +52,12 @@ function render(data) {
   set('epoch-total', `${p.completed_epochs.toLocaleString()} / ${p.total_epochs.toLocaleString()} ${unit}`);
   set('model-counter', `${p.completed_models} / ${p.total_models} models complete`);
   set('queue-count', `${p.completed_models} / ${p.total_models}`);
-  set('active-model', data.state === 'complete' ? 'All training models complete' : frozen ? data.stage.label : a.family ? `${title(a.family)} · fold ${a.fold}` : 'Waiting for first epoch');
-  set('active-epoch', frozen && data.stage.total ? `${data.stage.completed.toLocaleString()} / ${data.stage.total.toLocaleString()}` : a.epoch && data.state !== 'complete' ? `${title(unit === 'steps' ? 'step' : 'epoch')} ${a.epoch} / ${a.epochs}` : '');
+  set('active-model', data.state === 'complete' ? 'All training models complete' : staged && !a.family ? data.stage.label : a.family ? `${title(a.family)} · fold ${a.fold}` : 'Waiting for first epoch');
+  set('active-epoch', staged && data.stage.total ? `${data.stage.completed.toLocaleString()} / ${data.stage.total.toLocaleString()}` : a.epoch && data.state !== 'complete' ? `${title(unit === 'steps' ? 'step' : 'epoch')} ${a.epoch} / ${a.epochs}` : '');
   const eta = p.eta_utc ? new Date(p.eta_utc) : null;
   set('eta', eta ? clock(p.eta_utc) : data.state === 'complete' ? 'Finished' : '—');
-  set('eta-date', eta ? eta.toLocaleDateString([], {weekday: 'short', month: 'short', day: 'numeric', timeZoneName: undefined}) + ' · your local time' : data.state === 'complete' ? 'Ready for validation' : frozen ? `Budget ends ${new Date(data.stage.deadline_utc).toLocaleString()}` : 'Awaiting a healthy training heartbeat');
-  set('pace', num(p.seconds_per_epoch, frozen ? 3 : 1));
+  set('eta-date', eta ? eta.toLocaleDateString([], {weekday: 'short', month: 'short', day: 'numeric', timeZoneName: undefined}) + ' · your local time' : ['complete','validation_pending'].includes(data.state) ? 'Actual-pipeline validation required' : staged && data.stage.deadline_utc ? `Budget ends ${new Date(data.stage.deadline_utc).toLocaleString()}` : data.state === 'prepared' ? 'Full training has not started' : 'Awaiting a healthy training heartbeat');
+  set('pace', num(p.seconds_per_epoch, staged ? 3 : 1));
   set('loss', num(data.resources.loss, 4));
   $('segments').replaceChildren(...data.models.map(model => {
     const segment = document.createElement('div'), fill = document.createElement('div');
@@ -113,7 +113,8 @@ function render(data) {
   set('error-output', data.errors.join('\n'));
   $('error-details').hidden = !data.errors.length;
   let notice = '';
-  if (data.state === 'complete') notice = 'Training is complete. Review the validation results and qualify the production notebook before submission.';
+  if (['complete','validation_pending'].includes(data.state)) notice = 'Training is complete. Review actual-pipeline validation and qualify the production notebook before submission.';
+  else if (data.state === 'prepared') notice = 'The long run is prepared. Full training and the recovery supervisor have not started.';
   else if (['stale', 'stopped', 'error', 'paused'].includes(data.state)) notice = `${labels[data.state]}. ${data.failure?.error || 'Check the watchdog status and recent logs below.'}`;
   else if (offline || watchdog.overdue) notice = 'The training supervisor needs attention. See the watchdog panel below.';
   $('notice').hidden = !notice;
@@ -136,7 +137,7 @@ function drawChart() {
   if (!series.length) {
     canvas.setAttribute('aria-label', 'Training loss: awaiting optimizer records');
     ctx.fillStyle = '#94a088'; ctx.textAlign = 'center'; ctx.fillText('Waiting for training records', width / 2, height / 2);
-    set('chart-label', current.kind === 'frozen_retrieval' ? 'Encoder preparation precedes head training' : 'Waiting for epoch records'); return;
+    set('chart-label', current.kind === 'frozen_retrieval' ? 'Encoder preparation precedes head training' : current.progress.unit === 'steps' ? 'Waiting for optimizer records' : 'Waiting for epoch records'); return;
   }
   let low = Math.min(...series.map(point => point.loss)), high = Math.max(...series.map(point => point.loss));
   const pad = Math.max((high - low) * .1, .05); low -= pad; high += pad;

@@ -1,0 +1,48 @@
+{
+  "run_id": "C08",
+  "kind": "compatible_scorer",
+  "output": "outputs/local/long-compatible-20261108",
+  "raw_training": "outputs/competition-raw/train.parquet",
+  "base_cache": "outputs/local/n0/cache",
+  "split_groups": "outputs/local/long-20261106/spectrum_groups.npz",
+  "cache": "outputs/local/precision-cache-20261108",
+  "views_per_identity": 8,
+  "folds": [0, 1],
+  "maximum_hours": 24,
+  "minimum_free_ram_gib": 4,
+  "gpu_memory_fraction": 0.7,
+  "micro_batch_options": [384, 192, 96],
+  "training": {
+    "width": 320,
+    "heads": 8,
+    "layers": 3,
+    "embedding": 320,
+    "fp_bits": 2048,
+    "max_peaks": 96,
+    "min_peaks": 3,
+    "dropout": 0.1,
+    "temperature": 0.1,
+    "fp_score_weight": 2.0,
+    "aux_weight": 0.5,
+    "lr": 0.0002,
+    "weight_decay": 0.01,
+    "batch_size": 384,
+    "steps": 40000,
+    "warmup_steps": 1000,
+    "checkpoint_interval": 1000,
+    "seed": 202611080
+  },
+  "arms": [
+    {"name": "legacy16-default", "cache_precision": "float16", "hard_negatives": 16, "negative_pool": 128},
+    {"name": "precise32-default", "cache_precision": "float32", "hard_negatives": 16, "negative_pool": 128},
+    {"name": "legacy16-hard", "cache_precision": "float16", "hard_negatives": 48, "negative_pool": 512},
+    {"name": "precise32-hard", "cache_precision": "float32", "hard_negatives": 48, "negative_pool": 512}
+  ],
+  "quality_gate": {
+    "automatic_submission": false,
+    "conditional_retrieval_is_not_promotion": true,
+    "required": ["real_pipeline_candidate_lists", "truth_absent_counts_as_zero", "identity_and_acquisition_audit", "development_only_model_and_weight_selection", "reserved_end_to_end_paired_gain", "P01_beats_failed_P14_control", "full_real_Kaggle_smoke", "local_Kaggle_preprocessing_parity"],
+    "initial_new_model_weights": [0.0, 0.05, 0.1, 0.2],
+    "protect_rank_one": true
+  }
+}
