@@ -1,0 +1,14 @@
+{
+  "action": "healthy",
+  "pid": 4952,
+  "trainer_pids": [
+    22760
+  ],
+  "checked_utc": "2026-11-08T22:53:41.451385+00:00",
+  "next_check_utc": "2026-11-08T23:23:41.451385+00:00",
+  "deadline_utc": "2026-11-09T22:23:38.548960+00:00",
+  "restarts": 0,
+  "micro_index": 0,
+  "micro_batch": 384,
+  "last_error": null
+}

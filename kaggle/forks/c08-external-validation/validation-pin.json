@@ -1,0 +1,10 @@
+{
+  "parent_p01_sha256": "6a3d037dbc40f9c6d73fcbb8c7a5d607ad044f67af3315950a240db26a0c25da",
+  "validation_contract_sha256": "6c417fc041959085454b9442a5e5db361a59226d6e5218af0d72dc54ecacc4b2",
+  "frozen_sha256": "bfbb5be303296a0b994f9d2914fe7a67cd8084c7285f2d6668f8159e21d80800",
+  "scoring_submission": false,
+  "source_adaptations": [
+    "fixed_external_test_path",
+    "external_input_preflight"
+  ]
+}

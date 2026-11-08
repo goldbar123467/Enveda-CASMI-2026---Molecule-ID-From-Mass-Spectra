@@ -1,0 +1,22 @@
+{
+  "arm": "precise32-hard",
+  "models": 2,
+  "folds": [
+    0,
+    1
+  ],
+  "cache_precision": "float32",
+  "smoke": true,
+  "steps": 200,
+  "manifest_sha256": "503cea92204c5ecea83da4ddb5a1b834ff705a743a84f08763a158754a2b3812",
+  "scored_molecules": 12,
+  "unsupported_molecules": [],
+  "unprocessed_molecules": 388,
+  "input_errors": 0,
+  "peak_selection": "stable_intensity_then_mz",
+  "spectrum_aggregation": "all usable spectra, equal average",
+  "model_aggregation": "mean of per-query standardized raw scores",
+  "numpy_version": "2.0.2",
+  "torch_version": "2.11.0+cu128",
+  "independent_twofit_error": 0.0
+}

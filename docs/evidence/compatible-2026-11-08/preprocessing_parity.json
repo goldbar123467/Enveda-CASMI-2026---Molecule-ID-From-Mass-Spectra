@@ -1,0 +1,42 @@
+{
+  "precise32": {
+    "exact": false,
+    "different_values": 2824,
+    "maximum_absolute_difference": 5.960464477539063e-08,
+    "channel_maximum_absolute_difference": [
+      0.0,
+      0.0,
+      5.960464477539063e-08,
+      0.0
+    ]
+  },
+  "legacy16": {
+    "exact": true,
+    "different_values": 0,
+    "maximum_absolute_difference": 0.0,
+    "channel_maximum_absolute_difference": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "metadata": {
+    "exact": true,
+    "different_values": 0,
+    "maximum_absolute_difference": 0.0,
+    "channel_maximum_absolute_difference": null
+  },
+  "lengths": {
+    "exact": true,
+    "different_values": 0,
+    "maximum_absolute_difference": 0.0,
+    "channel_maximum_absolute_difference": null
+  },
+  "adduct": {
+    "exact": true,
+    "different_values": 0,
+    "maximum_absolute_difference": 0.0,
+    "channel_maximum_absolute_difference": null
+  }
+}

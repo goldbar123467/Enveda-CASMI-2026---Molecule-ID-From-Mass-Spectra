@@ -9,3 +9,15 @@ scripts/compatible_training.py text eol=lf
 scripts/precision_cache.py text eol=lf
 scripts/supervise_compatible_training.py text eol=lf
 scripts/benchmark_compatible_2070.py text eol=lf
+# Preserve C08 serving/campaign source bytes across Windows checkouts.
+scripts/compatible_inference.py text eol=lf
+scripts/compatible_tail.py text eol=lf
+scripts/finish_compatible_campaign.py text eol=lf
+scripts/submit_compatible_once.py text eol=lf
+scripts/audit_compatible_smoke.py text eol=lf
+scripts/package_compatible_models.py text eol=lf
+scripts/select_compatible_candidate.py text eol=lf
+scripts/track_compatible_campaign.py text eol=lf
+scripts/prepare_compatible_validation.py text eol=lf
+scripts/build_compatible_validation.py text eol=lf
+scripts/build_compatible_submission.py text eol=lf

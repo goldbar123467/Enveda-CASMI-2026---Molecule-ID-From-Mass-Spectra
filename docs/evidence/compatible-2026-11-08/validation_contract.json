@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "queries": 128,
+  "spectra": 356,
+  "development": 64,
+  "confirmation": 64,
+  "eligible_novel_external_identities": 996,
+  "exclusion": "Absent from C08 catalogue, raw competition InChIKey14 and full275810 production spectral SIDs key/rawkey/inchikey14",
+  "production_train_structs_sha256": "f20aa1cac23af42e430a6633707fda34e48dea97114bdc3e443897f692df3656",
+  "external_manifest_sha256": "d74c54caca67159027827f897d5a0086ba596558d8268c0fdfa4630ca2783ea2",
+  "query_labels_visible_to_pipeline": false,
+  "truth_injection": false,
+  "truth_absent_mrr": 0,
+  "caveat": "Public pretrained foundation models and unrelated historical ranker training may have broader exposure; not a claim of universal pretraining exclusion",
+  "files": {
+    "validation-queries.parquet": "c1f37ef0940a8a69bcfc7553c2291ad7f6ad7beb17b32e8fd049e88e51012ff4",
+    "labels.csv": "5c2b3b269bef779d6364dcebd0edf900f7663cfa13ba18c6cb382c8c2020e820",
+    "provenance.csv": "8e27054a955ba5dcf21ac6813a6b5edfc06e7c2decd3b37657a767ee79e7fbc7",
+    "validation-sample.csv": "869910953f958a0b5f1680733e59e54c90cf622be6b02a0653fa1521bd6a1f16"
+  }
+}

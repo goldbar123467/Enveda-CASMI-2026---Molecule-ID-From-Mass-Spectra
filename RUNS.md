@@ -1,20 +1,22 @@
 # Runs
 
-Updated 2026-11-08 22:11 UTC by `scripts/update_runs.py` (hourly). Generated from `runs.csv` — edit that file, not this one.
+Updated 2026-11-08 23:10 UTC by `scripts/update_runs.py` (hourly). Generated from `runs.csv` — edit that file, not this one.
 
-- Kaggle quota: GPU 1.1 h used of 30 h · TPU 0.0 h of 20 h · resets 2026-11-14 00:00 UTC
+- Kaggle quota: GPU 1.6 h used of 30 h · TPU 0.0 h of 20 h · resets 2026-11-14 00:00 UTC
 - Submissions today (UTC): 1 of 5 — see `SUBMISSIONS.md`
 
 ## Active
 
 | id | platform | kind | ref | started (UTC) | status | purpose | progress |
 |---|---|---|---|---|---|---|---|
-| — | | | | | | | |
+| C08 | local-2070 | train | outputs/local/long-compatible-20261108/train-0.log | 2026-11-08 22:23 | **running** | C08 controlled320 scorer: precision x hard-negative recipe,2 common identity/acquisition folds,24h cap; no automatic submission | 0/1 done |
+| C08V | kaggle-gpu | diag | c08-novel-external-validation v1 | 2026-11-08 22:38 | **running** | P01 full candidate pipeline on128 fixed novel external identities,64 development/64 reserved; truth absent=0, no query labels in features; private validation only |  |
 
 ## Finished (newest first)
 
 | id | platform | kind | ref | started (UTC) | ended (UTC) | status | purpose | result |
 |---|---|---|---|---|---|---|---|---|
+| C08SI | local-2070 | diag | outputs/local/c08-serving-fixture.log | 2026-11-08 22:44 | 2026-11-08 22:45 | complete | C08 two-fold serving fixture on real12 cached P01 query inputs for both precision recipes; protected rank1 and candidate-set invariants; explicit200-step test models only | Both200-update fixture arms scored12 real molecules with0 errors;388 unprocessed passthroughs,0 rank1/candidate-set changes. This is serving execution only, not model quality or production qualification. Float64 standardization tested subsequently. |
 | B08 | local-2070 | prep | outputs/local/compatible-20261108-benchmark.log | 2026-11-08 21:40 | 2026-11-08 22:11 | complete | RTX2070 real-shape AMP/fusedAdamW benchmark: wide320 scorer, logical batch96, microbatch16/24/32/48/96 and16/48 hard negatives; select safe launch plan, not quality training | Shape-only wide320 AMP benchmark: batch96/micro96 about2817 spectra/sec for48 hard negatives,0.623GiB peak reserved; smaller microbatches slower. Not model quality. |
 | B08L | local-2070 | prep | outputs/local/compatible-20261108-large-benchmark.log | 2026-11-08 21:44 | 2026-11-08 22:11 | complete | Measure larger wide320 logical batches96/192/384/768 under70% VRAM cap; choose throughput with desktop headroom, no model quality claims | Shape-only H48 benchmark: batch384 3519.96 spectra/sec,2.238GiB peak reserved; batch768 3626.30/s,4.400GiB. Chose384 for headroom; excludes full per-step data loading/weighted objective. |
 | C08P | local-2070 | prep | outputs/local/compatible-20261108-prepare.log | 2026-11-08 21:55 | 2026-11-08 22:11 | complete | Build isolated FP32 acquisition cache and leakage-audited training negative pools for controlled compatible-scorer long run; preparation only, not full training | Prepared1,504,015 usable FP32 views;270,127 eligible identities;999 shared-input aliases excluded,64 fingerprint parity checks exact.2 training-only negative pools; all pool entries regenerated and byte-verified after non-pool source edits. Full training not started. |

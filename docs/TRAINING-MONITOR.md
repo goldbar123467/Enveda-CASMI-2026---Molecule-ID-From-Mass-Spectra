@@ -50,6 +50,9 @@ started full training. It reads the same small JSON receipts, never model/cache
 files. Launch its independent recovery supervisor with
 `.\start-compatible-training.cmd`; `--check` validates readiness without launch.
 Use `--run outputs/local/long-compatible-20261108` to select it explicitly.
+Its terminal/browser views also report the hourly tracker and completion runner.
+Queued C08 recipes use their measured pilot pace for ETA; active/completed fits
+use recent real training timings, so slower hard-negative recipes are included.
 
 F07 frozen-feature runs are also supported. The monitor shows encoder stage
 counts separately from the two seeds' optimizer steps. It reads

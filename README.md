@@ -13,11 +13,15 @@ scoring slots are used. See [the submission log](SUBMISSIONS.md).
 New public scan:247 catalogue entries,20 selected source reviews. The prepared
 **C08** run compares four matched320-wide compatible-scorer recipes on two folds:
 FP16/FP32 peak storage × default/stronger hard negatives. Batch384 leaves ample
-2070 headroom. Full training has not started; the separate short pilot tests
-data loading, numerics and checkpoint recovery. Estimated full runtime12–15h,
-24h cap. Read [the plan, findings and evidence](docs/COMPATIBLE-LONG-RUN-2026-11-08.md).
-Use `.\start-compatible-training.cmd --check` to check readiness, then
-`.\start-compatible-training.cmd` to launch training with its30-minute supervisor.
+2070 headroom. **Full training started8November17:23 Eastern**, with the30-minute
+recovery supervisor and hourly tracker running. The user authorized one
+submission after completion and mandatory checks. The completion runner waits
+for all8 fits and the novel external full-pipeline panel, selects on development
+only, packages the models, runs a real Kaggle smoke and independent audits, then
+submits once. Estimated training12–15h,24h cap; validation/scoring take additional
+time. Read [the live protocol](docs/C08-CAMPAIGN-2026-11-08.md).
+Use `.venv\Scripts\python.exe scripts/finish_compatible_campaign.py --check`
+to inspect readiness; use the monitor below to watch the existing run.
 
 Best verified public MRR remains **0.480 (P01/P13)**. P12 ref58071964 finished with
 an unhandled hidden-rerun error and **no score**, despite passing its visible

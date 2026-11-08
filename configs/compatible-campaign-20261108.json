@@ -1,0 +1,29 @@
+{
+  "run_id": "C08",
+  "training_plan": "configs/compatible-training-20261108.json",
+  "training_output": "outputs/local/long-compatible-20261108",
+  "tracking_interval_seconds": 3600,
+  "validation_kernel": "clarkkitchen/casmi26-c08-novel-external-validation",
+  "validation_version": 1,
+  "candidate": {
+    "selection": "development-only on128 fixed novel external full-pipeline lists;64 reserved for reporting, never weight reselection",
+    "arms": ["legacy16-default", "precise32-default", "legacy16-hard", "precise32-hard"],
+    "weights": [0.05, 0.1, 0.2],
+    "tie_break": "smaller weight then listed arm order",
+    "integration": "tail-only RRF on complete P01 answers; keep rank1 and candidate set exact",
+    "offset": 3.0,
+    "models": "same-arm fold0/fold1 standardized-score mean",
+    "hidden_improvement_unproven": true,
+    "trial_override": "One explicit user-requested trial; statistical promotion is separate from execution qualification"
+  },
+  "authorization": {
+    "request": "Start it now and track it with a runner every hour then submit when finished",
+    "maximum_scoring_submissions": 1,
+    "marker": "C08-P15-20261108",
+    "candidate_slot": "p15-compatible-c08",
+    "requires_completed_training": true,
+    "requires_real_Kaggle_smoke": true,
+    "requires_artifact_and_numeric_audit": true,
+    "retain_baseline_public_score": 0.480
+  }
+}

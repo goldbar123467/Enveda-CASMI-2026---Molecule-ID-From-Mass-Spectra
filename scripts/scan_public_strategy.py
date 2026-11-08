@@ -31,7 +31,7 @@ def main():
         api=KaggleApi();api.authenticate();catalogue={}
         for sort in ['dateRun','scoreDescending','voteCount']:
             rows=api.kernels_list(page=1,page_size=100,competition=COMP,sort_by=sort)
-            rows=[r.to_json() for r in rows];save(args.out/f'{sort}.json',rows)
+            rows=[r.to_json() for r in rows];rows=[json.loads(r) if isinstance(r,str) else r for r in rows];save(args.out/f'{sort}.json',rows)
             catalogue.update({r['ref']:r for r in rows if r.get('ref')})
         save(args.out/'union.json',dict(checked_utc=datetime.now(timezone.utc).isoformat(),kernels=list(catalogue.values())))
         for ref in refs:

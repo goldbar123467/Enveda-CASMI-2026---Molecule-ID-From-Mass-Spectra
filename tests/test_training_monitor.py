@@ -111,6 +111,14 @@ class MonitorTests(unittest.TestCase):
         self.assertEqual(data['state'],'validation_pending');self.assertEqual(data['progress']['percent'],100)
         self.assertIsNone(data['progress']['eta_utc']);self.assertIsNone(data['models'][0]['metrics'])
 
+    def test_compatible_eta_accounts_for_slower_queued_recipe(self):
+        self.write('manifest.json',dict(kind='compatible_scorer',spec=dict(run_id='C08',folds=[0],arms=[dict(name='fast'),dict(name='slow')],training=dict(steps=100,batch_size=384))))
+        self.write('timing-prior.json',dict(per_model_seconds_per_step={'fast-0':.1,'slow-0':.4}))
+        self.write('models/fast/fold-0/history.json',[dict(step=50,updates=50,seconds=5,loss=2)])
+        self.write('status.json',dict(state='training',arm='fast',fold=0,step=50,pid=42,updated_utc=self.now.isoformat()))
+        data=self.snapshot();eta=monitor.parse_time(data['progress']['eta_utc'])
+        self.assertEqual((eta-self.now).total_seconds(),45)
+
     def test_frozen_preparation_is_not_counted_as_optimizer_work(self):
         self.write('manifest.json', dict(kind='frozen_retrieval', spec=dict(run_id='F07', seeds=[11, 12], training=dict(steps=50000))))
         self.write('status.json', dict(state='training', stage='encoding molecule_embeddings', pid=42,

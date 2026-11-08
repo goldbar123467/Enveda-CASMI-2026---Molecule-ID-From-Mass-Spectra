@@ -10,6 +10,13 @@ sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
 
 @unittest.skipUnless(torch is not None and torch.cuda.is_available(),'CUDA objective test')
 class CompatibleObjectiveTests(unittest.TestCase):
+    def test_serving_standardization_uses_double_precision(self):
+        import numpy as np
+        from compatible_inference import normalize
+        values=np.array([100.01,100.02,100.08,100.03],np.float32)
+        expected=(values.astype(np.float64)-values.astype(np.float64).mean())/values.astype(np.float64).std()
+        np.testing.assert_array_equal(normalize(values),expected)
+
     def test_microbatches_keep_all_logical_candidates_and_duplicate_mask(self):
         from compatible_training import accumulated_step
         class Tiny(torch.nn.Module):

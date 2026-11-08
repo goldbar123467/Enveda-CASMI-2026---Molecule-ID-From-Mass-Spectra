@@ -1,5 +1,11 @@
 # Public scan and prepared C08 experiment — 8 November 2026
 
+Execution update: the user subsequently requested **start now, hourly tracking,
+then submission**. C08 started17:23 Eastern. See
+[the active campaign](C08-CAMPAIGN-2026-11-08.md); preparation-only statements
+below describe the earlier planning checkpoint. One later single-trial
+authorization is separate from the unchanged scientific training plan.
+
 P13 returned **0.480** and P14 v2 returned **0.458**, both COMPLETE without a
 reported execution error. P01/P13 retain the best public score,0.480. P14's
 reserved *conditional* retrieval gain did not predict the leaderboard result.

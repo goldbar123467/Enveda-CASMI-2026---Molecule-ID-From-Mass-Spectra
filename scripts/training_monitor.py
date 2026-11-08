@@ -316,7 +316,7 @@ def build_frozen_snapshot(run, manifest, *, now, alive, root):
 def build_compatible_snapshot(run, manifest, *, now, alive, root):
     """C08 factorial steps, including preparation and validation-pending states."""
     spec=manifest['spec'];target=spec['training']['steps'];status=read_json(run/'status.json',{})
-    models=[];timings=[]
+    models=[];timings=[];prior=read_json(run/'timing-prior.json',{}).get('per_model_seconds_per_step',{})
     for fold in spec['folds']:
         for arm in spec['arms']:
             name=arm['name'];folder=run/'models'/name/f'fold-{fold}'
@@ -324,9 +324,11 @@ def build_compatible_snapshot(run, manifest, *, now, alive, root):
             active=status.get('arm')==name and status.get('fold')==fold and status.get('state')=='training'
             step=max([int(r['step']) for r in history]+[int(receipt.get('steps',0)),int(status.get('step',0)) if active else 0])
             timings += [r['seconds']/r['updates'] for r in history[-10:] if r.get('updates',0)>0 and finite_number(r.get('seconds'))]
+            measured=[r['seconds']/r['updates'] for r in history[-10:] if r.get('updates',0)>0 and finite_number(r.get('seconds'))]
+            model_pace=statistics.median(measured) if measured else prior.get(f'{name}-{fold}')
             series=[dict(epoch=r['step'],loss=r['loss']) for r in history if finite_number(r.get('loss'))]
             models.append(dict(id=f'{name}-{fold}',family=name,label=f'{name} / fold {fold}',fold=fold,epoch=min(step,target),epochs=target,
-                               complete=bool(receipt),active=active,loss=series[-1]['loss'] if series else None,metrics=None,series=series))
+                               complete=bool(receipt),active=active,loss=series[-1]['loss'] if series else None,metrics=None,series=series,seconds_per_step=model_pace))
     total=target*len(models);completed=sum(m['epoch'] for m in models);state=status.get('state','waiting')
     heartbeat_age=age_seconds(status.get('updated_utc'),now);trainer_alive=alive(status.get('pid'))
     if state in ('preparing','training'):
@@ -339,8 +341,11 @@ def build_compatible_snapshot(run, manifest, *, now, alive, root):
     watchdog['check_age_seconds']=age_seconds(watchdog.get('checked_utc'),now);next_check=parse_time(watchdog.get('next_check_utc'))
     watchdog['overdue']=bool(next_check and now>next_check+timedelta(minutes=2) and watchdog.get('action')=='healthy')
     pace=statistics.median(timings[-20:]) if timings else None
-    eta=(now+timedelta(seconds=(total-completed)*pace)).isoformat() if pace and state=='training' else None
+    remaining=sum((target-m['epoch'])*m['seconds_per_step'] for m in models) if all(finite_number(m['seconds_per_step']) for m in models) else None
+    eta=(now+timedelta(seconds=remaining)).isoformat() if remaining is not None and state=='training' else None
     logs=sorted(run.glob('train-*.log'),key=lambda p:p.stat().st_mtime);log=logs[-1] if logs else run/'train-0.log'
+    hourly=read_json(run/'hourly/status.json',{});hourly['alive']=alive(hourly.get('runner_pid'))
+    campaign=read_json(run/'campaign/status.json',{});campaign['alive']=alive(campaign.get('pid'))
     return dict(kind='compatible_scorer',run_id=spec['run_id'],run_path=str(run),state=state,sampled_utc=now.isoformat(),
         started_utc=read_json(run/'launch.json',{}).get('started_utc'),updated_utc=status.get('updated_utc'),heartbeat_age_seconds=heartbeat_age,
         trainer_pid=status.get('pid'),trainer_alive=trainer_alive,
@@ -349,7 +354,7 @@ def build_compatible_snapshot(run, manifest, *, now, alive, root):
                       percent=100*completed/total if total else 0,seconds_per_epoch=pace,eta_utc=eta),
         stage=dict(label=status.get('stage','Waiting'),completed=status.get('stage_completed'),total=status.get('stage_total'),deadline_utc=status.get('deadline_utc')),
         active=dict(family=status.get('arm'),fold=status.get('fold'),epoch=status.get('step'),epochs=target),
-        resources=status.get('resources',{}),models=models,watchdog=watchdog,failure=failure if state=='error' else None,
+        resources=status.get('resources',{}),models=models,watchdog=watchdog,hourly=hourly,campaign=campaign,failure=failure if state=='error' else None,
         log=tail(log),errors=tail(log.with_suffix('.err'),6),confirmation=None,
         limitation='Training loss is not a competition score. Actual candidate-pipeline validation is required before promotion.',
         monitor_mode='Read only. The independent supervisor audits every30 minutes when started.')
@@ -430,6 +435,10 @@ def terminal_view(data):
                  f"Heartbeat: {int(age) if age is not None else '--'}s | GPU: {display_number(gpu.get('utilization'), 0)}% | Free RAM: {display_number(data.get('memory', {}).get('free_gib'))} GiB"]
         lines += [f"{m['label']}: {m['epoch']:,}/{m['epochs']:,} steps | {'complete' if m['complete'] else 'active' if m['active'] else 'queued'} | loss {display_number(m['loss'], 4)}" for m in data['models']]
         lines += [f"Watchdog: {watchdog.get('action', '--')} | restarts {watchdog.get('restarts', '--')} | next {local_time(watchdog.get('next_check_utc'))}", data['limitation']]
+        if data.get('kind')=='compatible_scorer':
+            hourly=data.get('hourly',{});campaign=data.get('campaign',{})
+            lines += [f"Hourly runner: {'online' if hourly.get('alive') else 'offline'} | next {local_time(hourly.get('next_report_utc'))}",
+                      f"Completion runner: {campaign.get('stage','not configured')} | one submission approved"]
         return '\n'.join(lines)
     lines = [f"ENVEDA  /  TRAINING MONITOR                             {data['run_id']}",
              f"{data['state'].upper()} | heartbeat {int(age) if age is not None else '--'}s ago | PID {data['trainer_pid'] or '--'}",

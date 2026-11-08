@@ -117,6 +117,10 @@ function render(data) {
   else if (data.state === 'prepared') notice = 'The long run is prepared. Full training and the recovery supervisor have not started.';
   else if (['stale', 'stopped', 'error', 'paused'].includes(data.state)) notice = `${labels[data.state]}. ${data.failure?.error || 'Check the watchdog status and recent logs below.'}`;
   else if (offline || watchdog.overdue) notice = 'The training supervisor needs attention. See the watchdog panel below.';
+  if (compatible && data.campaign?.stage === 'needs_attention') notice = `The completion runner needs attention: ${data.campaign.error || 'Check its log.'}`;
+  else if (compatible && data.campaign?.stage === 'submitted') notice = `Submitted approved candidate · reference ${data.campaign.reference} · score pending.`;
+  else if (compatible && !notice && data.hourly?.alive && data.campaign?.alive) notice = `Hourly tracking active · next report ${clock(data.hourly.next_report_utc)}. Validation and one approved submission follow training.`;
+  else if (compatible && data.state === 'validation_pending' && data.campaign?.alive) notice = `Training complete · completion runner: ${title(data.campaign.stage)}.`;
   $('notice').hidden = !notice;
   set('notice', notice);
   set('last-updated', `Updated ${new Date(data.sampled_utc).toLocaleTimeString()} · refresh 5s`);

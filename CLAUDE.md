@@ -2,6 +2,19 @@
 
 ## Latest resumption — 2026-11-08
 
+Latest user override: **"Start it now and track it with a runner every hour then
+submit when finished"**. Launch C08 now, keep its bounded30-minute recovery
+supervisor plus hourly read-only runner, and carry through validation/packaging/
+real Kaggle smoke to **one** trained-model scoring submission. No further approval
+is needed for that single trial, including if scientific improvement remains
+unproven (as with the prior explicit trial override); preserve the0.480 baseline
+and report the evidence honestly. Execution/artifact/numeric/smoke checks remain
+mandatory. Campaign authorization: `configs/compatible-campaign-20261108.json`.
+Do not edit the pinned scientific trainer/config while it runs. Continue in this
+task through submission/score rather than creating a job-tracking app automation.
+
+The following preparation-only status predates that latest authorization.
+
 User requested a fresh public-notebook strategy scan and preparation of a long
 2070 run. This supersedes the older no-training-queued scope for **preparation
 and short pilots**. C08 is prepared at `outputs/local/long-compatible-20261108`;
