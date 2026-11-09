@@ -66,7 +66,7 @@ def local_status(row):
     if not log.is_file():
         return row["status"], ""
     text = log.read_text(encoding="utf-8", errors="replace")
-    done = len(re.findall(r"\] (?:DONE|DIAG written)|^DONE C09 (?:DEVELOPMENT FREEZE|FROZEN CONFIRMATION|PILOT|DISJOINT VALIDATION PREPARATION)|^DONE FOLLOWUP DEVELOPMENT FREEZE", text, re.MULTILINE))
+    done = len(re.findall(r"\] (?:DONE|DIAG written)|^DONE C09 (?:DEVELOPMENT FREEZE|FROZEN CONFIRMATION|EXTERNAL DEVELOPMENT|PILOT|DISJOINT VALIDATION PREPARATION)|^DONE FOLLOWUP DEVELOPMENT FREEZE", text, re.MULTILINE))
     expect = int(row["expect"] or 0)
     note = f"{done}/{expect} done" if expect else f"{done} done"
     if "Traceback" in text:

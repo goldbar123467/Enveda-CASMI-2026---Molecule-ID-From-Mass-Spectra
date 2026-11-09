@@ -11,6 +11,24 @@ through269, so verify actual rank, not score alone. No paid compute or
 unqualified submission is authorized by the rank target. Continue useful work
 between hourly wake-ups; schedule expiration is not goal achievement.
 
+Current candidate C09E/P16: fixed measured-reference overlay on unchanged P01,
+official identity dedup, source/data hashes, fail-closed scoring filename.
+Old30 development MRR.737222→.911111 (7 improved,0 harmed,2 missing truths
+recovered);0 detected input aliases and0 cosine>=.999 matches. No threshold
+search. These are used external-source development records, not hidden proof.
+Implementation froze22:28UTC while new80 was still RUNNING/unread. Private P16
+v1 smoke is RUNNING; never rebuild its notebook or edit pinned overlay code
+while active. `finish_c09_external.py` collects the smoke, independently audits
+peak assignment/merge/identity/fallback/local-cloud parity, then evaluates the
+frozen rule on80 once original confirmation finishes. It cannot submit. Inspect
+both finishers/processes before new overlapping work. C09E source/provenance
+limitations and exact state are in the current campaign notes. No new leaderboard
+submission has been sent. Latest22:34 rank909/5036, cutoff251 at.482.
+
+Read-only tracker PID is recorded in `campaign-tracker.json`; its new deadline
+is10November22:08:41UTC and per-thread system-sleep inhibition is confirmed true.
+It keeps hourly rank/health evidence without changing display timeout/locking.
+
 Latest user request: **update and retry Kaggle cloud T4s**. At21:32UTC the
 C09C2 private dual-T4 v2 retry is RUNNING; C09RP completed real finite CUDA
 work on both14.562GiB T4s. Main startup loaded officialRDKit2026.03.3. Full

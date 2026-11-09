@@ -1,0 +1,18 @@
+{
+  "campaign": "C09E",
+  "hypothesis": "Measured external reference spectra may recover candidate coverage/rank1 that additional tail training did not improve",
+  "source_idea": "https://www.kaggle.com/code/alexchilton/casmi26-lb-0-484-peaks-to-structures-extlib",
+  "source_snapshot_sha256": "5ca30854be8f92e84a1510996ba71504537b849d3e7e2e77fd7c50ae2c1bf69c",
+  "reference_dataset": "takumuhata/casmi26-extlib",
+  "declared_dataset_license": "CC0-1.0; merged GNPS/MassBank/MoNA upstream record provenance is not present in the served metadata and remains a limitation",
+  "source_B_massbank": "Not adopted in this experiment; mixed record licenses require separate handling",
+  "implementation": "Independent local implementation of public fixed-threshold spectral matching; official RDKit2026.03.3 identity deduplication added. This is not an exact reproduction of the full public notebook.",
+  "thresholds": {"sqrt_cosine": 0.80, "minimum_matched_peaks": 4, "fragment_tolerance_da": 0.015, "precursor_ppm": 10, "precursor_absolute_da": 0.002, "protect_pipeline_library_at": 0.90},
+  "selection": "No threshold or recipe search. Constants fixed from source before new80 confirmation metrics are read. Previously used30 development queries provide a rejection/diagnostic check only.",
+  "overlap_audit": "Compute both public-like all-reference matches and an acquisition-input-excluded view that removes reference rows matching any query's rounded full-peak or FP16top96 signature, without query structure labels. Never select between them on confirmation.",
+  "production_candidate": "P01 plus all-reference fixed-threshold promotions, with official metric identity deduplication; preserve original list on unavailable/protected/error paths",
+  "confirmation": "If development does not reject the approach, report full80 and predeclared raw-reference-clean cohort separately, P14/P15 negatives and uncertainty; no reserved coefficient selection",
+  "scientific_limitations": "External-source panel and incomplete reference record attribution limit leakage and hidden-score conclusions. Report same-input matches separately from novel acquisition evidence.",
+  "automatic_submission": false,
+  "paid_compute_allowed": false
+}

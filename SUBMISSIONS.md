@@ -10,6 +10,11 @@ Never resubmit P15. Cloud C09 validation retries are private diagnostic runs,
 not leaderboard submissions. Further submissions require scientific qualification
 and the complete real Kaggle smoke/independent audits.
 
+P16 (`casmi26-p16-external-reference-c09` v1) is currently a private real12/400
+Kaggle smoke for the fixed C09E measured-reference overlay. It has NOT been
+submitted to the leaderboard. New80 confirmation and independent execution/
+identity/fallback/local-cloud parity qualification remain pending.
+
 P15 was accepted at12:01UTC after its real Kaggle smoke and independent audits,
 spending C08's single-trial authorization. C09 is separately authorized.
 **P13=0.480; P14 v2=0.458**, both COMPLETE without reported errors. Best remains

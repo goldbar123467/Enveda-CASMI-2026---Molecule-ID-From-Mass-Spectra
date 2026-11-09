@@ -5,6 +5,24 @@ wake-ups in this chat. Live22:08UTC rank907/5034 at0.480; nominal silver rank251
 at0.482, but0.482 ties extend to269.0.483 currently clears the boundary.
 Preserve all C09 qualification and one-pending rules.
 
+New C09E lead: one fixed external-reference matching rule on unchanged P01,
+inspired by alexchilton's public external-library approach. Its author's live
+team is0.484; that corroborates the family, not this exact source version.
+Our independent implementation uses only Takumu Hata's public CC0-declared
+200724-reference library, adds official identity dedup and fail-closed execution,
+and does not adopt the additional mixed-license MassBank dataset or LOTUS branch.
+All seven development promotions have matching adducts; candidate similarities
+range.8247–.9894, none>=.999. No rounded/full/FP16 input aliases were detected.
+On the previously used30 development queries, fixed thresholds improve MRR
+.737222→.911111, paired delta.173889,95% interval[.066667,.297222],7 improved/
+0 harmed, truth coverage28→30. Both declared reference views give the same result.
+This is promising direct-library development evidence, not a hidden gain claim;
+record-level acquisition/source attribution is unavailable in served metadata.
+Policy froze22:17UTC and implementation22:28UTC before new80 metrics were read.
+P16 private realKaggle smoke is RUNNING; original80 confirmation and independent
+execution/identity/fallback/local-cloud parity audits remain required. No new
+submission has been sent. The hourly worker remains active for24 occurrences.
+
 P15 returned COMPLETE public **0.479**, no error, verified21:06UTC. P01/P13
 remain champion0.480. The small old external improvement did not transfer;
 preserve P15 as another negative control. No submission is pending or queued.

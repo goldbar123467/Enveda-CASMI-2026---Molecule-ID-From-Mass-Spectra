@@ -1,0 +1,82 @@
+{
+  "campaign": "C09E",
+  "completed_utc": "2026-11-09T22:21:07.027839+00:00",
+  "policy_sha256": "ea662270a895dc902cc9dd242afd7cd7f63e4a42ce3468474c6bff73d984043c",
+  "policy_freeze_sha256": "7be76a91de8bda35735a1d2c70f7ca1a8e049fe0fe15e8dac6b7fad5daa20f38",
+  "queries_sha256": "ac3417f12b486ec627e08a36dc1d68acdd43bcd175c6028128976dad4dbfc6cc",
+  "reference_sha256": {
+    "ext_meta.parquet": "9b0c2d675612580a4aedbdd3c8891d046fdf864b0805aaef852acc6653f7d37f",
+    "ext_mz.npy": "a14f750d46bfca4176110d1a83cc3562944a3ca1e3f1344c94141f6d8d85fad5",
+    "ext_in.npy": "e47b359f27d0aacda22f7ef47f8f60f7912136027d70d2bc915890a8d51be841"
+  },
+  "source_sha256": {
+    "external_reference_overlay.py": "826a689fdcecc05436cd201219ac066ef2ebf557df22200ac807c6bb6c0681e5",
+    "run_c09_external_development.py": "0359a26edfa99dbfce95104c7bafeb69cb49f3d0b50b117132e302bb10654d0b",
+    "c09_spectrum_audit.py": "a4c42efdb41983406d71458eeb093af462bd1432ec774c6628d91861f1a042ac"
+  },
+  "search": {
+    "queries": 30,
+    "spectra": 113,
+    "reference_rows": 200724,
+    "precursor_candidate_rows": 353,
+    "query_reference_comparisons": 424,
+    "query_input_alias_reference_rows": 0,
+    "query_labels_used": false,
+    "limitation": "Rounded full peaks and FP16top96 signatures only; not universal acquisition/provenance exclusion"
+  },
+  "development": {
+    "all_reference": {
+      "paired": {
+        "n": 30,
+        "baseline_mrr25": 0.7372222222222222,
+        "candidate_mrr25": 0.9111111111111111,
+        "delta": 0.1738888888888889,
+        "ci95": [
+          0.06666666666666667,
+          0.2972222222222223
+        ],
+        "improved": 7,
+        "harmed": 0
+      },
+      "baseline_truths": 28,
+      "candidate_truths": 30,
+      "actions": {
+        "same_identity_as_current_leader": 17,
+        "no_qualifying_match": 6,
+        "promoted_existing_identity": 5,
+        "inserted_external_identity": 2
+      },
+      "best_hits_matching_input_aliases": 0
+    },
+    "input_alias_excluded": {
+      "paired": {
+        "n": 30,
+        "baseline_mrr25": 0.7372222222222222,
+        "candidate_mrr25": 0.9111111111111111,
+        "delta": 0.1738888888888889,
+        "ci95": [
+          0.06666666666666667,
+          0.2972222222222223
+        ],
+        "improved": 7,
+        "harmed": 0
+      },
+      "baseline_truths": 28,
+      "candidate_truths": 30,
+      "actions": {
+        "same_identity_as_current_leader": 17,
+        "no_qualifying_match": 6,
+        "promoted_existing_identity": 5,
+        "inserted_external_identity": 2
+      },
+      "best_hits_matching_input_aliases": 0
+    }
+  },
+  "official_rdkit": "2026.03.3",
+  "development_queries": 30,
+  "confirmation_metrics_used": false,
+  "threshold_search": false,
+  "development_rejects": false,
+  "automatic_submission": false,
+  "limitation": "All development queries are previously used external-source records; signature exclusion is not full identity/library-provenance exclusion. Do not infer hidden improvement."
+}

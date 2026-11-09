@@ -1,0 +1,47 @@
+[
+  {
+    "datasetId": 13217547,
+    "datasetSlug": "casmi26-c09-followup-models-20261109",
+    "ownerUser": "clarkkitchen",
+    "title": "CASMI26 C09 followup models 20261109",
+    "isPrivate": true,
+    "licenses": [
+      {
+        "name": "Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)"
+      }
+    ]
+  },
+  {
+    "datasetId": 13006941,
+    "datasetSlug": "casmi26-lotus-candidates",
+    "ownerUser": "qwertykeypadapple",
+    "title": "LOTUS Natural Product Candidates for CASMI 2026",
+    "licenses": [
+      {
+        "name": "CC0-1.0"
+      }
+    ]
+  },
+  {
+    "datasetId": 12067949,
+    "datasetSlug": "casmi-2026-spectral-library-massbankharmonized",
+    "ownerUser": "samartalwar",
+    "title": "CASMI 2026 Spectral Library (MassBank,harmonized)",
+    "licenses": [
+      {
+        "name": "CC-BY-NC-SA-4.0"
+      }
+    ]
+  },
+  {
+    "datasetId": 12267306,
+    "datasetSlug": "casmi26-extlib",
+    "ownerUser": "takumuhata",
+    "title": "casmi26-extlib",
+    "licenses": [
+      {
+        "name": "CC0-1.0"
+      }
+    ]
+  }
+]

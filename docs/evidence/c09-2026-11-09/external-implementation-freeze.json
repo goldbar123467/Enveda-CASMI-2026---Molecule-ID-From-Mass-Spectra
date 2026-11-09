@@ -1,0 +1,23 @@
+{
+  "frozen_utc": "2026-11-09T22:28:14.740745+00:00",
+  "cloud_status": "RUNNING",
+  "new80_metrics_read": false,
+  "policy_sha256": "ea662270a895dc902cc9dd242afd7cd7f63e4a42ce3468474c6bff73d984043c",
+  "source_files": {
+    "external_reference_overlay.py": "826a689fdcecc05436cd201219ac066ef2ebf557df22200ac807c6bb6c0681e5",
+    "run_c09_external_development.py": "0359a26edfa99dbfce95104c7bafeb69cb49f3d0b50b117132e302bb10654d0b",
+    "evaluate_c09_external_confirmation.py": "eaf9652f87c9b32dea5fdfaf9bd694ec466da11f4eeaa4907be733d03742b954",
+    "apply_external_reference.py": "a65d0b63ba20b64f8efc49424a2513cc26f492b4148dc66d68bcc0a5ce62beca",
+    "c09_spectrum_audit.py": "a4c42efdb41983406d71458eeb093af462bd1432ec774c6628d91861f1a042ac"
+  },
+  "reference_files": {
+    "ext_meta.parquet": "9b0c2d675612580a4aedbdd3c8891d046fdf864b0805aaef852acc6653f7d37f",
+    "ext_mz.npy": "a14f750d46bfca4176110d1a83cc3562944a3ca1e3f1344c94141f6d8d85fad5",
+    "ext_in.npy": "e47b359f27d0aacda22f7ef47f8f60f7912136027d70d2bc915890a8d51be841"
+  },
+  "development_evidence_sha256": "ed753564e541a95a38e89ec39f7a1be481e5f55f5d58c888bb0f8d18d1117483",
+  "notebook_sha256": "4bba11eb043130beee25de7f083d0a820c4611e311f3caf4fa097a4c684765d4",
+  "production_view": "all_reference",
+  "sensitivity_view": "input_alias_excluded; never selected on confirmation",
+  "automatic_submission": false
+}

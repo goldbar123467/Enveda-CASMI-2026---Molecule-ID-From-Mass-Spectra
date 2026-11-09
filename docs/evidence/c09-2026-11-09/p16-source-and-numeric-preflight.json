@@ -1,0 +1,12 @@
+{
+  "checked_utc": "2026-11-09T22:45:42.448363+00:00",
+  "kernel": "clarkkitchen/casmi26-p16-external-reference-c09",
+  "remote_current_version": 1,
+  "remote_scientific_source_sha256": "da3cb43016bbac529d6968189ebf66de699f1eb349c6b79f5a988792e8837fab",
+  "matches_sealed_local_source": true,
+  "independent_peak_assignment_cases": 300,
+  "maximum_score_difference": 0.0,
+  "match_count_mismatches": 0,
+  "scoring_submission": false,
+  "limitation": "Notebook still running; this verifies saved source/version, not completed execution or scientific qualification"
+}
