@@ -1,0 +1,34 @@
+{
+  "completed_utc": "2026-11-09T23:45:20.669582+00:00",
+  "dataset": "samartalwar/casmi-2026-spectral-library-massbankharmonized",
+  "source_url": "https://www.kaggle.com/datasets/samartalwar/casmi-2026-spectral-library-massbankharmonized",
+  "dataset_declared_license": "CC-BY-NC-SA-4.0",
+  "source_sha256": "6ebb46b32ddd344d988c3bdb90e7160d4ce46e6d0b900a1217607aa2234c9477",
+  "current_reference_metadata_sha256": "9b0c2d675612580a4aedbdd3c8891d046fdf864b0805aaef852acc6653f7d37f",
+  "records": 139744,
+  "record_license_counts": {
+    "CC BY": 49317,
+    "CC BY-NC-SA": 32754,
+    "CC BY-SA": 21630,
+    "dl-de/by-2-0": 20658,
+    "CC BY-NC": 8434,
+    "CC0": 6951
+  },
+  "selected_definition": "Literal CC0 record license, positive MS2, >=4 peaks, finite positive precursor and valid raw connectivity key",
+  "selected_records": 4905,
+  "selected_connectivity_keys": 515,
+  "selected_institutions": {
+    "HBM4EU": 2139,
+    "UFZ": 1579,
+    "NaToxAq": 1161,
+    "Literature_Specs": 14,
+    "LCSB": 12
+  },
+  "absent_from_current_reference_records": 4258,
+  "absent_from_current_reference_connectivity_keys": 471,
+  "query_labels_used": false,
+  "candidate_policy_changed": false,
+  "reference_data_adopted": false,
+  "reporter_sha256": "9e92eebe92661452862c51b773f073be5986624b17ed35cd05dbbfe4afaea1c4",
+  "limitation": "Raw connectivity-key coverage only; not official tautomer identity, spectral novelty, validation gain or clearance of the derivative compilation license. No new data is attached to P16."
+}
