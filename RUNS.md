@@ -1,6 +1,6 @@
 # Runs
 
-Updated 2026-11-09 09:54 UTC by `scripts/update_runs.py` (hourly). Generated from `runs.csv` — edit that file, not this one.
+Updated 2026-11-09 09:56 UTC by `scripts/update_runs.py` (hourly). Generated from `runs.csv` — edit that file, not this one.
 
 - Kaggle quota: GPU 4.3 h used of 30 h · TPU 0.0 h of 20 h · resets 2026-11-14 00:00 UTC
 - Submissions today (UTC): 0 of 5 — see `SUBMISSIONS.md`
@@ -9,14 +9,14 @@ Updated 2026-11-09 09:54 UTC by `scripts/update_runs.py` (hourly). Generated fro
 
 | id | platform | kind | ref | started (UTC) | status | purpose | progress |
 |---|---|---|---|---|---|---|---|
-| C08Q | local-2070 | diag | outputs/local/long-compatible-20261108/campaign/select_candidate.log | 2026-11-09 09:45 | **running** | Development-only C08 arm/weight choice on128 fixed novel full-pipeline queries;64 reserved reported once; explicit trial, no statistical promotion claim |  |
 | P15 | kaggle-gpu | commit | p15-compatible-c08 v1 | 2026-11-09 09:54 | **queued** | One authorized C08 trial; required real12 P01+tail GPU smoke, checksum/arithmetic/identity/portability audits before submission |  |
 
 ## Finished (newest first)
 
 | id | platform | kind | ref | started (UTC) | ended (UTC) | status | purpose | result |
 |---|---|---|---|---|---|---|---|---|
-| C08 | local-2070 | train | outputs/local/long-compatible-20261108/train-0.log | 2026-11-08 22:23 | 2026-11-09 09:45 | complete | C08 controlled320 scorer: precision x hard-negative recipe,2 common identity/acquisition folds,24h cap; no automatic submission | 8 models;320000 successful updates; actual-pipeline validation pending; no submission |
+| C08Q | local-2070 | diag | outputs/local/long-compatible-20261108/campaign/select_candidate.log | 2026-11-09 09:45 | 2026-11-09 09:53 | complete | Development-only C08 arm/weight choice on128 fixed novel full-pipeline queries;64 reserved reported once; explicit trial, no statistical promotion claim | 128 actual-P01 candidate lists,64 development/64 reserved; selected legacy16-hard two-fold mean /0.20 tail RRF. Dev MRR .3703125 to .3747396; reserved .3617255 to .3619792, delta .0002537 CI[-.0022017,.0028206].64 absent truths=0;rank1/set changes0. No reliable gain or statistical promotion established. |
+| C08 | local-2070 | train | outputs/local/long-compatible-20261108/train-0.log | 2026-11-08 22:23 | 2026-11-09 09:45 | complete | C08 controlled320 scorer: precision x hard-negative recipe,2 common identity/acquisition folds,24h cap; no automatic submission | 8 models x40000 successful updates=320000;11h22m elapsed;0 restarts;peak reserved2.40625GiB. All checkpoints checksum/finite verified. Actual-pipeline validation and one separately authorized submission handled by C08 completion runner. |
 | C08V | kaggle-gpu | diag | c08-novel-external-validation v1 | 2026-11-08 22:38 | 2026-11-09 01:57 | complete | P01 full candidate pipeline on128 fixed novel external identities,64 development/64 reserved; truth absent=0, no query labels in features; private validation only | COMPLETE full P01 pipeline on128 novel external identities/356 spectra,64 development/64 reserved. Truth appears33/64 and31/64 final lists; MRR .3703125/.3617255 with all64 absent truths retained as zero. Independent metric-key replay exact;0 identity duplicates, no labels in queries. This is external validation, not a Kaggle score. |
 | C08SI | local-2070 | diag | outputs/local/c08-serving-fixture.log | 2026-11-08 22:44 | 2026-11-08 22:45 | complete | C08 two-fold serving fixture on real12 cached P01 query inputs for both precision recipes; protected rank1 and candidate-set invariants; explicit200-step test models only | Both200-update fixture arms scored12 real molecules with0 errors;388 unprocessed passthroughs,0 rank1/candidate-set changes. This is serving execution only, not model quality or production qualification. Float64 standardization tested subsequently. |
 | B08 | local-2070 | prep | outputs/local/compatible-20261108-benchmark.log | 2026-11-08 21:40 | 2026-11-08 22:11 | complete | RTX2070 real-shape AMP/fusedAdamW benchmark: wide320 scorer, logical batch96, microbatch16/24/32/48/96 and16/48 hard negatives; select safe launch plan, not quality training | Shape-only wide320 AMP benchmark: batch96/micro96 about2817 spectra/sec for48 hard negatives,0.623GiB peak reserved; smaller microbatches slower. Not model quality. |
