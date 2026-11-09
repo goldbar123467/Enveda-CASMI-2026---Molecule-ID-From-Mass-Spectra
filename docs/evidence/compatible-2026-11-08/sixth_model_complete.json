@@ -1,0 +1,14 @@
+{
+  "steps": 40000,
+  "attempts": 40014,
+  "amp_skips": 14,
+  "fold": 1,
+  "arm": "precise32-default",
+  "smoke": false,
+  "checkpoint_sha256": "d750522caf4eb98b21b69732a6b83dfc28a0a66a7c54c4f9c4de3495a795e56f",
+  "training_identities": 216175,
+  "heldout_in_training": 0,
+  "gpu_peak_reserved_gib": 1.978515625,
+  "completed_utc": "2026-11-09T06:40:44.543630+00:00",
+  "validation": "pending actual-pipeline evaluation"
+}
