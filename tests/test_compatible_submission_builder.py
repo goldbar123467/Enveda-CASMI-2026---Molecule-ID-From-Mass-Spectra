@@ -23,7 +23,8 @@ class CompatibleSubmissionBuilderTests(unittest.TestCase):
             with patch.object(builder,'ROOT',root),contextlib.redirect_stdout(io.StringIO()):builder.main()
             folder=root/'kaggle/forks/p15-compatible-c08';notebook=json.loads((folder/'notebook.ipynb').read_text(encoding='utf-8'))
             original=json.loads((parent/'notebook.ipynb').read_text(encoding='utf-8'))
-            self.assertEqual(len(notebook['cells']),len(original['cells'])+1)
+            self.assertEqual(len(notebook['cells']),len(original['cells'])+2)
+            self.assertTrue(''.join(notebook['cells'][0]['source']).startswith('# P15:'))
             for cell in notebook['cells']:
                 if cell['cell_type']=='code':compile(''.join(cell['source']),'generated','exec')
             tail=''.join(notebook['cells'][-1]['source'])

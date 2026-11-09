@@ -92,6 +92,13 @@ print('P15 QUALIFIED',json.dumps(_receipt),flush=True)
             source=''.join(cell['source']);compile(source,'p15','exec');cell['source']=guarded_source(source,f'p15_{i}').splitlines(keepends=True)
             cell['outputs']=[];cell['execution_count']=None
         cell['id']=hashlib.sha256((str(i)+''.join(cell['source'])).encode()).hexdigest()[:12]
+    nb['cells'].insert(0,dict(cell_type='markdown',id='p15-header',metadata={},source=[
+        '# P15: P01 with the C08 learned tail\n',
+        f"Two40000-update320-wide fits, arm {winner['arm']}, tail-RRF weight {winner['weight']}.\n",
+        'The complete P01 first choice and candidate membership are protected. No model-weight averaging.\n',
+        'Development-only choice on64 novel external full-pipeline queries;64 reserved queries are reported separately.\n',
+        'One user-requested experiment; hidden-score improvement and statistical promotion remain unproven.\n',
+        'Saner architecture/features, Deotte common-fold workflow and V7 recipe inspiration; upstream credits below are retained.\n']))
     nb['nbformat_minor']=5
     out=ROOT/'kaggle/forks/p15-compatible-c08';out.mkdir(parents=True,exist_ok=True)
     (out/'notebook.ipynb').write_text(json.dumps(nb,ensure_ascii=False,indent=1),encoding='utf-8')
