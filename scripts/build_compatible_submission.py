@@ -24,6 +24,9 @@ def main():
     return str(_dst)'''
     replace_function(nb,'_swap_to_ours',swap)
     preflight='''
+# A bundle-layout fallback must never silently swap the champion's public model.
+for _public_name,_public_pin in MODEL_PINS.items():
+    assert hashlib.sha256((Path(BUNDLE)/_public_name).read_bytes()).hexdigest()==_public_pin,_public_name
 _c08_hits=list(Path('/kaggle/input').rglob('c08-manifest.json'))
 assert len(_c08_hits)==1 and hashlib.sha256(_c08_hits[0].read_bytes()).hexdigest()==MODEL_PIN
 C08_BUNDLE=_c08_hits[0].parent
