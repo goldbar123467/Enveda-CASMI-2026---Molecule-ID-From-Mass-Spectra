@@ -1,0 +1,64 @@
+{
+  "checked_utc": "2026-11-09T00:26:26.862788+00:00",
+  "runner_pid": 21556,
+  "run_id": "C08",
+  "training_state": "training",
+  "trainer_alive": true,
+  "progress": {
+    "unit": "steps",
+    "completed_epochs": 62600,
+    "total_epochs": 320000,
+    "completed_models": 1,
+    "total_models": 8,
+    "percent": 19.5625,
+    "seconds_per_epoch": 0.11708778449974488,
+    "eta_utc": "2026-11-09T09:48:11.164665+00:00"
+  },
+  "active": {
+    "family": "precise32-default",
+    "fold": 0,
+    "epoch": 22600,
+    "epochs": 40000
+  },
+  "watchdog": {
+    "action": "healthy",
+    "pid": 4952,
+    "trainer_pids": [
+      22760
+    ],
+    "checked_utc": "2026-11-09T00:23:44.310545+00:00",
+    "next_check_utc": "2026-11-09T00:53:44.310545+00:00",
+    "deadline_utc": "2026-11-09T22:23:38.548960+00:00",
+    "restarts": 0,
+    "micro_index": 0,
+    "micro_batch": 384,
+    "last_error": null,
+    "alive": true,
+    "check_age_seconds": 162.552243,
+    "overdue": false
+  },
+  "resources": {
+    "gpu_peak_reserved_gib": 1.947265625,
+    "loss": 2.00332980632782,
+    "micro_batch": 384,
+    "spectra_per_second": 3293.138208828505,
+    "amp_skips": 7,
+    "free_ram_gib": 13.55752944946289
+  },
+  "memory": {
+    "total_gib": 31.93582534790039,
+    "free_gib": 13.464431762695312
+  },
+  "gpu": {
+    "available": true,
+    "name": "NVIDIA GeForce RTX 2070",
+    "utilization": 89.0,
+    "used_mib": 2984.0,
+    "total_mib": 8192.0,
+    "temperature": 70.0,
+    "power_w": 167.51
+  },
+  "next_report_utc": "2026-11-09T01:26:26.862788+00:00",
+  "submission_status": "Not submitted; training/validation/real Kaggle smoke required",
+  "approved_scoring_submissions": 1
+}
