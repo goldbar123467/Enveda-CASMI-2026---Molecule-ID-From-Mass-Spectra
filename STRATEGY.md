@@ -1,4 +1,22 @@
-# New public scan and prepared C08 — 8 November
+# C08 training completed — 9 November
+
+The later user instruction authorized starting C08, hourly tracking and one
+scoring submission after execution checks. All8 fits completed at09:45UTC /
+04:45 Eastern:320,000 successful updates,11h22m elapsed, zero restarts, maximum
+reserved Torch VRAM2.40625GiB. Every checkpoint passed checksum/finite-weight
+verification. No training source/config or original deadline was changed.
+
+The fixed128-query full-P01 external validation finished. Baseline development /
+reserved MRR is0.3703125 /0.3617255; final candidate recall is33/64 and31/64.
+All64 absent truths retainMRR zero. This is external validation, not a Kaggle
+score. C08 arm/weight selection, required real Kaggle smoke and one submission
+are being completed under the explicit trial override. Statistical promotion
+remains unproven; P01/P13 at0.480 remain the champion. See
+[the campaign](docs/C08-CAMPAIGN-2026-11-08.md).
+
+---
+
+# Historical preparation checkpoint — 8 November
 
 Actual scores: P13 **0.480**, P14 v2 **0.458**. P14 completed without reported
 error; the large conditional retrieval gain was a misleading promotion proxy.

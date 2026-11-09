@@ -1,0 +1,207 @@
+{
+  "kind": "compatible_scorer",
+  "run_id": "C08",
+  "smoke": false,
+  "steps": 40000,
+  "architecture": {
+    "width": 320,
+    "heads": 8,
+    "layers": 3,
+    "embedding": 320,
+    "fp_bits": 2048,
+    "max_peaks": 96,
+    "min_peaks": 3,
+    "temperature": 0.1,
+    "fp_score_weight": 2.0
+  },
+  "models": [
+    {
+      "file": "legacy16-default-fold0.pt",
+      "arm": "legacy16-default",
+      "fold": 0,
+      "cache_precision": "float16",
+      "steps": 40000,
+      "training_identities": 216270,
+      "checkpoint_sha256": "c46d17b09456b76ebf073e61b074b4cabd5c74556ec6d3a0ebf724f1f0324cbb"
+    },
+    {
+      "file": "precise32-default-fold0.pt",
+      "arm": "precise32-default",
+      "fold": 0,
+      "cache_precision": "float32",
+      "steps": 40000,
+      "training_identities": 216270,
+      "checkpoint_sha256": "a2122d27bdfd3feec7fed0c21c59b639bc43774002f68724b89960e32263546f"
+    },
+    {
+      "file": "legacy16-hard-fold0.pt",
+      "arm": "legacy16-hard",
+      "fold": 0,
+      "cache_precision": "float16",
+      "steps": 40000,
+      "training_identities": 216270,
+      "checkpoint_sha256": "5f794e6ee6b043d04c7fb2e861358d05afea7456e070c090a3be189bf69eafd2"
+    },
+    {
+      "file": "precise32-hard-fold0.pt",
+      "arm": "precise32-hard",
+      "fold": 0,
+      "cache_precision": "float32",
+      "steps": 40000,
+      "training_identities": 216270,
+      "checkpoint_sha256": "e44750965feeb70b8de9f1021507ce96954ec0442baf15c00a97c2693e73565f"
+    },
+    {
+      "file": "legacy16-default-fold1.pt",
+      "arm": "legacy16-default",
+      "fold": 1,
+      "cache_precision": "float16",
+      "steps": 40000,
+      "training_identities": 216175,
+      "checkpoint_sha256": "17103a844f00b27bdef04b76382e50835083e0e46594e2d27d9236c2eacbf2d2"
+    },
+    {
+      "file": "precise32-default-fold1.pt",
+      "arm": "precise32-default",
+      "fold": 1,
+      "cache_precision": "float32",
+      "steps": 40000,
+      "training_identities": 216175,
+      "checkpoint_sha256": "d750522caf4eb98b21b69732a6b83dfc28a0a66a7c54c4f9c4de3495a795e56f"
+    },
+    {
+      "file": "legacy16-hard-fold1.pt",
+      "arm": "legacy16-hard",
+      "fold": 1,
+      "cache_precision": "float16",
+      "steps": 40000,
+      "training_identities": 216175,
+      "checkpoint_sha256": "c8f91847b79cc9e042add949b2de5289de98174a82a3ce41ed5043be7574882f"
+    },
+    {
+      "file": "precise32-hard-fold1.pt",
+      "arm": "precise32-hard",
+      "fold": 1,
+      "cache_precision": "float32",
+      "steps": 40000,
+      "training_identities": 216175,
+      "checkpoint_sha256": "16f9aeaa6ed1fd9eb57363d8c7abaee83589d4dd8481a249b088f2a58739e0f4"
+    }
+  ],
+  "files": {
+    "model.py": "2547418857386d1c2513fd1ab6c70961e6a96e73d9d495bbfe3052197e69dc39",
+    "features.py": "a97ad9b3ab3711517864d56e497e1672cb29bb05683c72b52db9f9b0a17b1455",
+    "compatible_inference.py": "bd19325814e066615ace15a765c84c74ccedbb867e609b8d95ed4dbcdf092832",
+    "compatible_tail.py": "b5677d884008f0fd16a66ca045eb5c5c61420e895c66612d3fefdef166f58378",
+    "fingerprint-cache-smiles.parquet": "f01df6a8cac1aaf8e9ef803cb4a01eebb9dba49089ba5cc7bcbe264b07a8e99a",
+    "fingerprint-cache.npy": "9c49b4ccbd9bad1738f4cd29a760f7f7a6284427eb97d2dfe6bc52a9a227fdda",
+    "legacy16-default-fold0.pt": "c46d17b09456b76ebf073e61b074b4cabd5c74556ec6d3a0ebf724f1f0324cbb",
+    "precise32-default-fold0.pt": "a2122d27bdfd3feec7fed0c21c59b639bc43774002f68724b89960e32263546f",
+    "legacy16-hard-fold0.pt": "5f794e6ee6b043d04c7fb2e861358d05afea7456e070c090a3be189bf69eafd2",
+    "precise32-hard-fold0.pt": "e44750965feeb70b8de9f1021507ce96954ec0442baf15c00a97c2693e73565f",
+    "legacy16-default-fold1.pt": "17103a844f00b27bdef04b76382e50835083e0e46594e2d27d9236c2eacbf2d2",
+    "precise32-default-fold1.pt": "d750522caf4eb98b21b69732a6b83dfc28a0a66a7c54c4f9c4de3495a795e56f",
+    "legacy16-hard-fold1.pt": "c8f91847b79cc9e042add949b2de5289de98174a82a3ce41ed5043be7574882f",
+    "precise32-hard-fold1.pt": "16f9aeaa6ed1fd9eb57363d8c7abaee83589d4dd8481a249b088f2a58739e0f4"
+  },
+  "training_plan": {
+    "run_id": "C08",
+    "kind": "compatible_scorer",
+    "output": "outputs/local/long-compatible-20261108",
+    "raw_training": "outputs/competition-raw/train.parquet",
+    "base_cache": "outputs/local/n0/cache",
+    "split_groups": "outputs/local/long-20261106/spectrum_groups.npz",
+    "cache": "outputs/local/precision-cache-20261108",
+    "views_per_identity": 8,
+    "folds": [
+      0,
+      1
+    ],
+    "maximum_hours": 24,
+    "minimum_free_ram_gib": 4,
+    "gpu_memory_fraction": 0.7,
+    "micro_batch_options": [
+      384,
+      192,
+      96
+    ],
+    "training": {
+      "width": 320,
+      "heads": 8,
+      "layers": 3,
+      "embedding": 320,
+      "fp_bits": 2048,
+      "max_peaks": 96,
+      "min_peaks": 3,
+      "dropout": 0.1,
+      "temperature": 0.1,
+      "fp_score_weight": 2.0,
+      "aux_weight": 0.5,
+      "lr": 0.0002,
+      "weight_decay": 0.01,
+      "batch_size": 384,
+      "steps": 40000,
+      "warmup_steps": 1000,
+      "checkpoint_interval": 1000,
+      "seed": 202611080
+    },
+    "arms": [
+      {
+        "name": "legacy16-default",
+        "cache_precision": "float16",
+        "hard_negatives": 16,
+        "negative_pool": 128
+      },
+      {
+        "name": "precise32-default",
+        "cache_precision": "float32",
+        "hard_negatives": 16,
+        "negative_pool": 128
+      },
+      {
+        "name": "legacy16-hard",
+        "cache_precision": "float16",
+        "hard_negatives": 48,
+        "negative_pool": 512
+      },
+      {
+        "name": "precise32-hard",
+        "cache_precision": "float32",
+        "hard_negatives": 48,
+        "negative_pool": 512
+      }
+    ],
+    "quality_gate": {
+      "automatic_submission": false,
+      "conditional_retrieval_is_not_promotion": true,
+      "required": [
+        "real_pipeline_candidate_lists",
+        "truth_absent_counts_as_zero",
+        "identity_and_acquisition_audit",
+        "development_only_model_and_weight_selection",
+        "reserved_end_to_end_paired_gain",
+        "P01_beats_failed_P14_control",
+        "full_real_Kaggle_smoke",
+        "local_Kaggle_preprocessing_parity"
+      ],
+      "initial_new_model_weights": [
+        0.0,
+        0.05,
+        0.1,
+        0.2
+      ],
+      "protect_rank_one": true
+    }
+  },
+  "training_source_sha256": {
+    "scripts/compatible_long_run.py": "998a6593a5428c9f4337d8724494391712912d5c781982cc5ae543b752f8e714",
+    "scripts/compatible_training.py": "d848f175547615b76675ec8fad95e34dc2898dc77a04b93844f56d7048d39eef",
+    "scripts/precision_cache.py": "752719d376ab67f0ff542407aa0422719d3eaf60eaccd4e8f919a3974c3cf06a",
+    "outputs/local/kit/features.py": "a97ad9b3ab3711517864d56e497e1672cb29bb05683c72b52db9f9b0a17b1455",
+    "outputs/local/kit/model.py": "2547418857386d1c2513fd1ab6c70961e6a96e73d9d495bbfe3052197e69dc39"
+  },
+  "original_fingerprint_cache_sha256": "cdd019dc6377afbdd1d295489856413de8bc2828420912f038dbc5a2fb687ce8",
+  "fingerprint_compression": "np.packbits big, every bit round-trip verified",
+  "integration": "C08 tail-only RRF after complete P01; rank1/candidate set protected",
+  "hidden_score_unmeasured": true
+}
