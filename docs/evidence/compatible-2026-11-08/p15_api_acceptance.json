@@ -1,0 +1,11 @@
+{
+  "checked_utc": "2026-11-09T12:03:27.453368+00:00",
+  "marker": "C08-P15-20261108",
+  "matching_submissions": 1,
+  "reference": 58163163,
+  "status": "PENDING",
+  "public_score": "",
+  "submitted_utc": "2026-11-09 12:01:21.600000",
+  "kernel": "clarkkitchen/casmi26-p15-compatible-c08",
+  "version": 1
+}

@@ -1,0 +1,9 @@
+{
+  "marker": "C08-P15-20261108",
+  "reference": 58163163,
+  "kernel": "clarkkitchen/casmi26-p15-compatible-c08",
+  "version": 1,
+  "submitted_utc": "2026-11-09T12:01:22.086236+00:00",
+  "status": "submitted; score pending",
+  "csv_sha256": "5a5f70488848f4df3bae527fba7c83f582df50dfd1f5210a49cb4a9f3ed6a139"
+}

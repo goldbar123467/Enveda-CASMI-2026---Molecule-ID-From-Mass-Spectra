@@ -1,4 +1,11 @@
-# C08 training completed — 9 November
+# C08 completed and P15 accepted — 9 November
+
+P15 v1/ref58163163 was accepted at12:01UTC /07:01 Eastern after the real12 Kaggle
+smoke and independent audit:400 valid rows, zero input errors/official identity
+duplicates, exact rank1/candidate-set protection, two-fit error0, unchanged P01
+primary-score error4.44e-16 and local/Kaggle raw-score difference2.86e-6 maximum.
+The API confirms exactly one marker and PENDING/no score. The C08 authorization
+is exhausted; no extra trial or training is queued. Runners exited normally.
 
 The later user instruction authorized starting C08, hourly tracking and one
 scoring submission after execution checks. All8 fits completed at09:45UTC /
@@ -12,8 +19,8 @@ All64 absent truths retainMRR zero. This is external validation, not a Kaggle
 score. Development selected legacy16-hard /0.20 tail RRF; reserved MRR was
 0.3617255→0.3619792, delta+0.0002537 with95% interval[-0.0022017,0.0028206].
 This small panel does not demonstrate a reliable gain. The decision is frozen.
-P15 v1 is queued for its required real12 Kaggle smoke; the independent audit
-and one submission follow under the explicit trial override. Statistical promotion
+P15 v1 passed its required real12 Kaggle smoke and was submitted under the
+explicit trial override. Statistical promotion
 remains unproven; P01/P13 at0.480 remain the champion. See
 [the campaign](docs/C08-CAMPAIGN-2026-11-08.md).
 

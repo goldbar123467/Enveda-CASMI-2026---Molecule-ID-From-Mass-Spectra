@@ -2,10 +2,13 @@
 
 Public LB = MRR@25 on ~125 public molecules (one rank-2→1 flip ≈ 0.004). Scoring reruns take hours.
 
-Latest check8 November21:27UTC: **P13=0.480; P14 v2=0.458**, both COMPLETE
-without reported errors. Best remains0.480 (P01/P13). Both authorized trials are
-used; no new scoring submission is queued. P14's conditional validation gain
-failed to transfer. Receipts: `docs/evidence/frozen-2026-11-07/`.
+Latest check9 November12:03UTC: **P15 v1/ref58163163 is PENDING**, accepted at
+12:01UTC after its real Kaggle smoke and independent audits. This spends the
+one newly authorized C08 trial; no extra scoring or training is queued.
+**P13=0.480; P14 v2=0.458**, both COMPLETE without reported errors. Best remains
+0.480 (P01/P13). P14's conditional validation gain failed to transfer. P15's
+reserved external-panel change is too small/noisy to establish improvement.
+Receipts: `docs/evidence/compatible-2026-11-08/`.
 
 | Date (UTC) | Slot | Kernel | Change vs parent | Ref | Public LB |
 |---|---|---|---|---|---|
@@ -133,3 +136,18 @@ No further scoring submission is queued. Best verified public score remains
 P01/P13 **0.480**. P14 returned0.458, below baseline despite its local gain.
 Conditional retrieval MRR is not a leaderboard score. Actual pipeline validation
 must explain this negative control before another learned channel is promoted.
+
+## C08 authorized trial — submitted 9 November UTC
+
+| Date (UTC) | Slot | Kernel | Change and execution evidence | Ref | Public LB |
+|---|---|---|---|---|---|
+| 2026-11-09 12:01 | P15 | casmi26-p15-compatible-c08 v1 | Complete P01 plus0.20 tail-RRF from two independently trained320-wide legacy16-hard fits,40000 updates each. Rank1 and candidate set protected. Development-only selection; reserved external MRR .3617255→.3619792, interval includes zero. Real12 Kaggle GPU smoke,400 valid rows; zero input errors/metric duplicates. Independent two-fit error0, unchanged P01 primary error4.44e-16, local/Kaggle maximum raw-score difference2.86e-6. | 58163163 | **Pending** |
+
+Accepted at2026-11-09T12:01:22UTC /07:01 Eastern, unique marker
+`C08-P15-20261108`. The API independently confirms exactly one accepted marker,
+PENDING with an empty score. All8 C08 fits completed320000 successful updates
+in11h22m with zero restarts. Only the development-selected same-arm pair is used
+by P15. The explicit single-trial authorization is exhausted; no extra candidate
+or training is queued. P01/P13 at0.480 remain the champion while scoring runs.
+No statistical promotion is claimed. Full evidence is in
+`docs/evidence/compatible-2026-11-08/`.

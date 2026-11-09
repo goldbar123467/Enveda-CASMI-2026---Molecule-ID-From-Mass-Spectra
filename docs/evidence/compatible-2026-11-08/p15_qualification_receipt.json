@@ -1,0 +1,56 @@
+{
+  "arm": "legacy16-hard",
+  "models": 2,
+  "folds": [
+    0,
+    1
+  ],
+  "cache_precision": "float16",
+  "smoke": false,
+  "steps": 40000,
+  "manifest_sha256": "c73d2383b7494fdbaedb9e437f8f389dbe175418bf13e5260a2f277ada49b602",
+  "baseline_content_sha256": "5cb2f1ad75c64791fa63cbfabb7e70e29948e05d8cc3987de79d7e137cdc20b9",
+  "queries_sha256": "5464f6862f8931423bffcb705333cd9af9f713852a6c8c6d1b129bd2132862fb",
+  "scored_molecules": 12,
+  "unsupported_molecules": [],
+  "unprocessed_molecules": 388,
+  "input_errors": 0,
+  "peak_selection": "stable_intensity_then_mz",
+  "spectrum_aggregation": "all usable spectra, equal average",
+  "model_aggregation": "mean of per-query standardized raw scores",
+  "numpy_version": "2.0.2",
+  "torch_version": "2.10.0+cu128",
+  "weight": 0.2,
+  "offset": 3.0,
+  "rank_one_changes": 0,
+  "candidate_set_changes": 0,
+  "changed_rows": 12,
+  "passthrough_molecules": 388,
+  "csv_sha256": "5a5f70488848f4df3bae527fba7c83f582df50dfd1f5210a49cb4a9f3ed6a139",
+  "model": {
+    "manifest_sha256": "c73d2383b7494fdbaedb9e437f8f389dbe175418bf13e5260a2f277ada49b602",
+    "selection_sha256": "135095241dc2df151c2a12a6fd146d775b2fabdeb84dadde82e49fcfb65adc50",
+    "arm": "legacy16-hard",
+    "weight": 0.2,
+    "models": 2,
+    "folds": [
+      0,
+      1
+    ],
+    "steps": 40000,
+    "smoke": false,
+    "integration": "tail-only RRF after complete P01",
+    "baseline_v80_sha256": "c08d2101154d057890de088be63834eb622468892a3b842512fdc5a65e02ff46"
+  },
+  "twofit_standardization_error": 0.0,
+  "pipeline": {
+    "source_sha256": "ca3c3f382eca90ac7ba2e0bbb76753f4a1d92b8c630a726ac28610727a8da6ab",
+    "mode": "submission",
+    "source_adaptations": [],
+    "candidate_promotion_fix": true,
+    "is_full_run": false,
+    "processed_molecules": 12
+  },
+  "merge_status": "applied",
+  "is_hidden_rerun": false
+}

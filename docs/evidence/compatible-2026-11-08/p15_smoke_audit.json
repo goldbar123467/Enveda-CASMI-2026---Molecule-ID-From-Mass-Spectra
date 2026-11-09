@@ -1,0 +1,36 @@
+{
+  "valid_rows": 400,
+  "real_molecules": 12,
+  "input_errors": 0,
+  "official_identity_duplicates": 0,
+  "rank_one_changes": 0,
+  "candidate_set_changes": 0,
+  "changed_rows": 12,
+  "independent_twofit_standardization_error": 0.0,
+  "independent_tail_arithmetic": true,
+  "unchanged_p01_primary_score_error": 4.440892098500626e-16,
+  "local_Kaggle_score_max_abs_difference": {
+    "c08_raw_fold0": 1.430511474609375e-06,
+    "c08_raw_fold1": 2.86102294921875e-06,
+    "c08_score": 9.65103229555453e-07
+  },
+  "model": {
+    "manifest_sha256": "c73d2383b7494fdbaedb9e437f8f389dbe175418bf13e5260a2f277ada49b602",
+    "selection_sha256": "135095241dc2df151c2a12a6fd146d775b2fabdeb84dadde82e49fcfb65adc50",
+    "arm": "legacy16-hard",
+    "weight": 0.2,
+    "models": 2,
+    "folds": [
+      0,
+      1
+    ],
+    "steps": 40000,
+    "smoke": false,
+    "integration": "tail-only RRF after complete P01",
+    "baseline_v80_sha256": "c08d2101154d057890de088be63834eb622468892a3b842512fdc5a65e02ff46"
+  },
+  "csv_sha256": "5a5f70488848f4df3bae527fba7c83f582df50dfd1f5210a49cb4a9f3ed6a139",
+  "smoke_only": true,
+  "statistical_promotion": false,
+  "explicit_user_trial": true
+}

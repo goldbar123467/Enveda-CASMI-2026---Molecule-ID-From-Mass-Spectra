@@ -1,5 +1,21 @@
 # Enveda CASMI 2026 — working rules
 
+## Current handoff — C08 complete/P15 accepted, 2026-11-09
+
+C08 completed all8 x40000 fits at09:45UTC with320000 successful updates and
+zero restarts. Development-only selection froze legacy16-hard /0.20 tail RRF;
+reserved external delta+0.0002537 has95% interval[-0.0022017,0.0028206], so no
+reliable improvement/statistical promotion is established. P15 v1 passed the
+real12 Kaggle smoke and independent execution/artifact/arithmetic/identity/
+local-Kaggle audit, then was accepted at12:01UTC, ref58163163, unique marker
+`C08-P15-20261108`. The API confirms exactly one match, PENDING/no score.
+The one new authorization is exhausted; do not re-submit or start another fit.
+Training supervisor, hourly tracker and completion runner exited normally.
+Keep P01/P13 at0.480 as champion while scoring runs. Read-only score updates are
+allowed; source/results/GitHub sync remains authorized. See
+`docs/C08-CAMPAIGN-2026-11-08.md` and its receipts. The startup instructions below
+are historical and must not trigger a duplicate campaign.
+
 ## Latest resumption — 2026-11-08
 
 Latest user override: **"Start it now and track it with a runner every hour then
