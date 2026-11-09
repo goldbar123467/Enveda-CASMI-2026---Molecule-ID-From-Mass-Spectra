@@ -1,0 +1,47 @@
+{
+  "run_id": "C09H",
+  "kind": "compatible_scorer",
+  "output": "outputs/local/c09-mined-20261109",
+  "parent_output": "outputs/local/long-compatible-20261108",
+  "parent_arm": "legacy16-hard",
+  "raw_training": "outputs/competition-raw/train.parquet",
+  "base_cache": "outputs/local/n0/cache",
+  "split_groups": "outputs/local/long-20261106/spectrum_groups.npz",
+  "cache": "outputs/local/precision-cache-20261108",
+  "views_per_identity": 8,
+  "folds": [
+    0,
+    1
+  ],
+  "arms": [
+    {
+      "name": "mined128-served",
+      "cache_precision": "float16",
+      "hard_negatives": 48,
+      "negative_pool": 512
+    }
+  ],
+  "maximum_hours": 6,
+  "minimum_free_ram_gib": 4,
+  "gpu_memory_fraction": 0.7,
+  "training": {
+    "steps": 20000,
+    "lr": 2e-05,
+    "warmup_steps": 100,
+    "checkpoint_interval": 100,
+    "batch_size": 384,
+    "hard_negatives": 48,
+    "negative_pool": 512,
+    "seed": 202611090
+  },
+  "objective": "Same C09T served-score CE/BCE; online48-hard-of128 instead of uniform48-of512. First5000-update cycle matches C09T schedule; later cycles explore dose with predeclared checkpoints.",
+  "automatic_submission": false,
+  "cycle_steps": 5000,
+  "mining": {
+    "sampled_negatives": 128,
+    "selected_negatives": 48,
+    "scoring": "Current eval-mode cosine+fingerprint served score; stable ties; no gradient or RNG draws",
+    "masks": "All logical-batch positives and equal positive Morgan fingerprints; masked slots remain masked if fewer than48 valid negatives"
+  },
+  "selection": "Development only; freeze model milestone/weight before viewing any new confirmation comparison. No automatic submission."
+}

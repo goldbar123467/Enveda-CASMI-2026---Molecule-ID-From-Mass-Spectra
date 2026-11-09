@@ -2,7 +2,7 @@
 
 Public LB = MRR@25 on ~125 public molecules (one rank-2→1 flip ≈ 0.004). Scoring reruns take hours.
 
-C09 fresh authorization,9November14:45UTC: P15/ref58163163 still **PENDING**.
+C09 latest check,9November16:50UTC: P15/ref58163163 still **PENDING**.
 ONE pending leaderboard submission globally is the current limit. No C09
 submission has been sent; fresh ledger `.local/c09-submission-ledger.json`.
 C08's single-trial authorization stays exhausted and P15 is not resubmitted.

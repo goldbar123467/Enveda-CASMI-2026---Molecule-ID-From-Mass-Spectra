@@ -1,0 +1,161 @@
+{
+  "campaign": "C09",
+  "winner": {
+    "weight": 0.2,
+    "offset": 3.0,
+    "rank_one_changes": 0,
+    "candidate_set_changes": 0,
+    "changed_rows": 29,
+    "scored_molecules": 30,
+    "passthrough_molecules": 0,
+    "mrr25": 0.74,
+    "paired": {
+      "n": 30,
+      "baseline_mrr25": 0.7372222222222222,
+      "candidate_mrr25": 0.74,
+      "delta": 0.002777777777777777,
+      "ci95": [
+        0.0,
+        0.008333333333333331
+      ],
+      "improved": 1,
+      "harmed": 0
+    },
+    "arm": "served-score"
+  },
+  "trials": [
+    {
+      "weight": 0.0,
+      "offset": 3.0,
+      "rank_one_changes": 0,
+      "candidate_set_changes": 0,
+      "changed_rows": 0,
+      "scored_molecules": 30,
+      "passthrough_molecules": 0,
+      "mrr25": 0.7372222222222222,
+      "paired": {
+        "n": 30,
+        "baseline_mrr25": 0.7372222222222222,
+        "candidate_mrr25": 0.7372222222222222,
+        "delta": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "improved": 0,
+        "harmed": 0
+      }
+    },
+    {
+      "weight": 0.05,
+      "offset": 3.0,
+      "rank_one_changes": 0,
+      "candidate_set_changes": 0,
+      "changed_rows": 28,
+      "scored_molecules": 30,
+      "passthrough_molecules": 0,
+      "mrr25": 0.7372222222222222,
+      "paired": {
+        "n": 30,
+        "baseline_mrr25": 0.7372222222222222,
+        "candidate_mrr25": 0.7372222222222222,
+        "delta": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "improved": 0,
+        "harmed": 0
+      }
+    },
+    {
+      "weight": 0.1,
+      "offset": 3.0,
+      "rank_one_changes": 0,
+      "candidate_set_changes": 0,
+      "changed_rows": 29,
+      "scored_molecules": 30,
+      "passthrough_molecules": 0,
+      "mrr25": 0.7372222222222222,
+      "paired": {
+        "n": 30,
+        "baseline_mrr25": 0.7372222222222222,
+        "candidate_mrr25": 0.7372222222222222,
+        "delta": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "improved": 0,
+        "harmed": 0
+      }
+    },
+    {
+      "weight": 0.2,
+      "offset": 3.0,
+      "rank_one_changes": 0,
+      "candidate_set_changes": 0,
+      "changed_rows": 29,
+      "scored_molecules": 30,
+      "passthrough_molecules": 0,
+      "mrr25": 0.74,
+      "paired": {
+        "n": 30,
+        "baseline_mrr25": 0.7372222222222222,
+        "candidate_mrr25": 0.74,
+        "delta": 0.002777777777777777,
+        "ci95": [
+          0.0,
+          0.008333333333333331
+        ],
+        "improved": 1,
+        "harmed": 0
+      }
+    }
+  ],
+  "development_ids": [
+    "C08V_01a4ed956b73f8ac",
+    "C08V_044b35832eaa0b37",
+    "C08V_06842627b9ad4aba",
+    "C08V_0baacfdd991f062c",
+    "C08V_0fda5a7a0365579d",
+    "C08V_1017a06a1797b662",
+    "C08V_14382d781b434608",
+    "C08V_1694ee3c394aabb8",
+    "C08V_1ba438d05f0eb686",
+    "C08V_20f70c28b30d1e7d",
+    "C08V_229f200a3a7de386",
+    "C08V_2d67853e254b0c4d",
+    "C08V_2e56171e8253e7c1",
+    "C08V_3122acddc157c7a4",
+    "C08V_34be3eff6ab9f64c",
+    "C08V_3a2c68d099054cff",
+    "C08V_4057f2f8f410c92f",
+    "C08V_4220ad6936269dd5",
+    "C08V_451165c72f6a2b1c",
+    "C08V_47632606b4a378d5",
+    "C08V_48e3ae22830a5ae7",
+    "C08V_4ba87ef140eb383b",
+    "C08V_4c4135a5df9bdf1b",
+    "C08V_4e3b1916c8fbdd18",
+    "C08V_52d4348efb54c541",
+    "C08V_566292accf20c1e6",
+    "C08V_5a52aeda22403662",
+    "C08V_5b7ea5e249a03cbd",
+    "C08V_5ddc50003016f4af",
+    "C08V_5fff66f1d8e920a3"
+  ],
+  "development_queries": 30,
+  "selection": "Previously used C08 development only, exclude all cached base-connected input groups; zero-weight tie retains champion",
+  "manifest_sha256": "b9fd6fd3cfc2ad590402c3fdb30a534ed06c88a170ddfc90b101987aa6fff7e4",
+  "new80_confirmation_used": false,
+  "old_confirmation_used": false,
+  "official_identity_source_sha256": {
+    "neural_candidate_features.parquet": "20630d46692b09204ad48c3fc898bade67a160611e8408daf25e590748469300",
+    "outsider_neural_features.parquet": "ada2acc95dff3a248b7ddafd2c69eb2efedde4991a6010c361ead914cdf5c3e8"
+  },
+  "score_receipt_sha256": "3a61696ae8cc478656fbd5fb9805d4090cb353eb13df983df71ef103bd450768",
+  "qualify_for_confirmation": true,
+  "promotion": false,
+  "causal_limitation": "Additional updates and objective change are not separated; no hidden improvement claim"
+}

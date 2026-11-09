@@ -1,0 +1,39 @@
+{
+  "run_id": "C09CT",
+  "kind": "compatible_scorer",
+  "output": "outputs/local/c09-control-20261109",
+  "parent_output": "outputs/local/long-compatible-20261108",
+  "parent_arm": "legacy16-hard",
+  "raw_training": "outputs/competition-raw/train.parquet",
+  "base_cache": "outputs/local/n0/cache",
+  "split_groups": "outputs/local/long-20261106/spectrum_groups.npz",
+  "cache": "outputs/local/precision-cache-20261108",
+  "views_per_identity": 8,
+  "folds": [
+    0,
+    1
+  ],
+  "arms": [
+    {
+      "name": "cosine-control",
+      "cache_precision": "float16",
+      "hard_negatives": 48,
+      "negative_pool": 512
+    }
+  ],
+  "maximum_hours": 3,
+  "minimum_free_ram_gib": 4,
+  "gpu_memory_fraction": 0.7,
+  "training": {
+    "steps": 5000,
+    "lr": 2e-05,
+    "warmup_steps": 100,
+    "checkpoint_interval": 100,
+    "batch_size": 384,
+    "hard_negatives": 48,
+    "negative_pool": 512,
+    "seed": 202611090
+  },
+  "objective": "Matched C09T control: cosine-only candidate CE plus unchanged auxiliary BCE; identical two C08 parents, seed/data/RNG,5000-update schedule and microbatch192",
+  "automatic_submission": false
+}

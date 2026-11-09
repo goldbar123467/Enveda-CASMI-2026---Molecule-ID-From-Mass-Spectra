@@ -2,6 +2,20 @@
 
 ## Current authorization — C09, 2026-11-09
 
+Latest user override at approximately16:38UTC: **run more2070 training** while
+Kaggle has a user-reported notebook-start/connectivity incident. C09T is already
+complete:2 folds x5000 additional updates, zero restarts/AMP skips; matched old
+development MRR ties C08 at.740000. Do not relaunch it. C09CT now trains the
+missing matched cosine-only control in `outputs/local/c09-control-20261109`.
+`scripts/run_2070_followup_queue.py` waits for that existing trainer to finish,
+then pilots/resumes C09H online-hard-negative training before its longer run.
+Only one local GPU workload at a time; never launch either trainer manually
+while the supervisor/queue is alive. C09H:2 folds x20000 updates,48 hardest of128,
+four5000-update schedule cycles/milestones,6h cap. Pilot failure stops the queue.
+Dashboard http://127.0.0.1:8766 follows its active-run pointer. No submission is
+authorized without the unchanged campaign execution/scientific qualification
+and global one-pending gate. P15 was still PENDING/no score at16:34UTC.
+
 The user's attached handoff explicitly resumes a **fresh improvement campaign**
 using the local2070 and free Kaggle concurrently. Training/recovery/private model
 uploads/qualified sequential submissions/GitHub pushes are authorized. Historical

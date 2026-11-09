@@ -1,0 +1,84 @@
+{
+  "checked_utc": "2026-11-09T16:50:48.775557+00:00",
+  "cloud": {
+    "clarkkitchen/casmi26-c09-coverage-controls": {
+      "status": "CANCEL_REQUESTED"
+    },
+    "clarkkitchen/casmi26-c09-clean-validation": {
+      "status": "QUEUED"
+    },
+    "clarkkitchen/casmi26-c09-spectrum-audit": {
+      "status": "QUEUED"
+    }
+  },
+  "pending": [
+    {
+      "reference": "58163163",
+      "status": "PENDING",
+      "public_score": null,
+      "error": "",
+      "success": false,
+      "description": "C08-P15-20261108: C08 selected two-fit320 scorer, conservative tail-only RRF after complete P01. Rank1/candidate set exact. Real12 Kaggle smoke, arithmetic/identity/artifact/local-Kaggle parity audited. Explicit trial; hidden improvement unproven."
+    }
+  ],
+  "latest_submissions": [
+    {
+      "reference": "58163163",
+      "status": "PENDING",
+      "public_score": null,
+      "error": "",
+      "success": false,
+      "description": "C08-P15-20261108: C08 selected two-fit320 scorer, conservative tail-only RRF after complete P01. Rank1/candidate set exact. Real12 Kaggle smoke, arithmetic/identity/artifact/local-Kaggle parity audited. Explicit trial; hidden improvement unproven."
+    },
+    {
+      "reference": "58111204",
+      "status": "COMPLETE",
+      "public_score": 0.458,
+      "error": "",
+      "success": true,
+      "description": "F07-P14-20261107: P01 plus development-selected F07R1 frozen DreaMS/MoLFormer50% final-list channel. Reserved conditional MRR .6375 to .7423; real12 Kaggle smoke/400valid, model pins, fusion, unsupported fallback and metric dedup audited. Hidden gain unproven."
+    },
+    {
+      "reference": "58105681",
+      "status": "COMPLETE",
+      "public_score": 0.48,
+      "error": "",
+      "success": true,
+      "description": "F07-P13-20261107: P01 unchanged original/v80 primary; public50/v80-50 outsider blend. Real12 GPU smoke/400valid; exact P01 primary, independent outsider fusion and metric dedup verified. Hidden gain unproven."
+    },
+    {
+      "reference": "58071964",
+      "status": "COMPLETE",
+      "public_score": null,
+      "error": "Your notebook hit an unhandled error while rerunning your code. Note that the hidden dataset can be larger/smaller/different than the public dataset",
+      "success": false,
+      "description": "L06-P12-20261106: user-requested trial; original50 + long-control-fivefold50, 128 epochs each. Real GPU smoke12/400 valid; five pinned models, exact mean/blend and metric dedup verified. Hidden benefit unproven."
+    },
+    {
+      "reference": "58036642",
+      "status": "COMPLETE",
+      "public_score": 0.468,
+      "error": "",
+      "success": true,
+      "description": "EOD11-20261105: public50 + NPcurriculum50 (128+32 epochs). Two excluded-parent validations improve native retrieval and final panel; full GPU smoke12 real/400 valid, exact blend and pinned weights. User-requested EOD best candidate; 2 daily slots reserved."
+    },
+    {
+      "reference": "58032626",
+      "status": "COMPLETE",
+      "public_score": 0.479,
+      "error": "",
+      "success": true,
+      "description": "p02: original Saner scorer control plus fixed documentation prior and metric identity dedup; panel and three NP tail checks improve; real smoke zero errors, original scores match exactly"
+    },
+    {
+      "reference": "58032057",
+      "status": "COMPLETE",
+      "public_score": 0.48,
+      "error": "",
+      "success": true,
+      "description": "p01: public480 reproduction; public+v80 z-score ensemble, documentation prior, metric-key dedup; exact raw local panel .912842 to .918796; real smoke audited"
+    }
+  ],
+  "maximum_pending": 1,
+  "submission_limit_respected": true
+}

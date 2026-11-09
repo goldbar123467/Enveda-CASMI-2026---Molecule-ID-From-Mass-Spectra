@@ -362,14 +362,22 @@ def build_compatible_snapshot(run, manifest, *, now, alive, root):
 
 
 class Monitor:
-    def __init__(self, run):
+    def __init__(self, run, follow_file=None):
         self.run = run
+        self.follow_file = follow_file
         self.lock = threading.Lock()
         self.cached, self.gpu = None, {}
         self.updated, self.gpu_updated = -math.inf, -math.inf
 
     def snapshot(self):
         with self.lock:
+            if self.follow_file:
+                selected=read_json(self.follow_file,{})
+                value=selected.get('run')
+                if isinstance(value,str):
+                    candidate=(ROOT/value).resolve()
+                    if candidate.is_relative_to((ROOT/'outputs/local').resolve()) and (candidate/'manifest.json').exists() and candidate!=self.run:
+                        self.run=candidate;self.cached=None;self.updated=-math.inf
             clock = time.monotonic()
             if self.cached is None or clock - self.updated >= 3:
                 snapshot = build_snapshot(self.run)
@@ -490,6 +498,7 @@ def enable_ansi():
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--run', type=Path, help='Run folder; defaults to newest non-smoke long run')
+    parser.add_argument('--follow-file', type=Path, help='Optional local JSON pointer to the active run in a sequential training queue')
     modes = parser.add_mutually_exclusive_group()
     modes.add_argument('--web', action='store_true', help='Serve browser dashboard on localhost')
     modes.add_argument('--terminal', action='store_true', help='Live terminal view (Python default)')
@@ -504,7 +513,7 @@ def main():
     if not math.isfinite(args.interval) or args.interval < 2:
         parser.error('--interval must be at least 2 seconds')
     run = (ROOT / args.run).resolve() if args.run else discover_run()
-    monitor = Monitor(run)
+    monitor = Monitor(run, follow_file=(ROOT/args.follow_file).resolve() if args.follow_file else None)
     try:
         if args.web:
             url = f'http://127.0.0.1:{args.port}'

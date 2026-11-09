@@ -1,0 +1,50 @@
+{
+  "campaign": "C09",
+  "kernel": "clarkkitchen/casmi26-c09-coverage-controls",
+  "version": 1,
+  "session_id": 367379371,
+  "session_evidence": "Observed own notebook Edit link /edit/run/367379371 in signed-in UI",
+  "reason": "Old128 panel has67 base-connected acquisition groups; prioritize disjoint80 confirmation and raw-spectrum audit, avoid duplicate P14 full pipeline on a compromised panel",
+  "checked_utc": "2026-11-09T15:26:59.336303+00:00",
+  "metadata": {
+    "id": 143675264,
+    "ref": "clarkkitchen/casmi26-c09-coverage-controls",
+    "title": "casmi26 c09 coverage controls",
+    "author": "Clark Kitchen",
+    "slug": "casmi26-c09-coverage-controls",
+    "lastRunTime": "2026-11-06T15:26:59.590Z",
+    "language": "python",
+    "kernelType": "notebook",
+    "isPrivate": true,
+    "enableGpu": true,
+    "enableInternet": false,
+    "categoryIds": [
+      "gpu",
+      "chemistry"
+    ],
+    "datasetDataSources": [
+      "sanpier/casmi-spectrum-model-v1",
+      "clarkkitchen/casmi26-c08-validation-20261108",
+      "clarkkitchen/casmi26-c08-models-20261108",
+      "clarkkitchen/casmi26-frozen-p14-20261107",
+      "dmitriigluzdov/casmi26-fold-safe-fpnet",
+      "dmitriigluzdov/casmi26-natural-product-knowledge-table",
+      "dmitriigluzdov/casmi26-natural-product-panel-benchmark",
+      "dmitriigluzdov/casmi26-pubchem-popularity-prior",
+      "dmitriigluzdov/casmi26-attributed-v4g-reproduction-assets",
+      "sanpier/catalogue-experiment-saner",
+      "metric/rdkit-2026-3-3-wheel"
+    ],
+    "kernelDataSources": [
+      "alexchilton/casmi26-scorer-train-v80",
+      "clarkkitchen/casmi26-c08-novel-external-validation"
+    ],
+    "competitionDataSources": [
+      "enveda-CASMI26-molecule-id-mass-spectra"
+    ],
+    "enableTpu": false,
+    "currentVersionNumber": 1,
+    "dockerImage": "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461",
+    "machineShape": "NvidiaTeslaT4"
+  }
+}

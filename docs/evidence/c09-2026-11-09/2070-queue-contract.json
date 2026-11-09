@@ -1,0 +1,17 @@
+{
+  "source_sha256": {
+    "scripts/c09_train.py": "53ce7d40188ad83ae0fee1f5c68387b0e39b399c41feadbc74f0cdb1ed9a6d62",
+    "scripts/c09_control_train.py": "02e61480a0ac09e9dfe01aa3020dc8baa29e9dad1d8ef3094ec5895229960362",
+    "scripts/c09_hard_train.py": "5b5785c383530b692b2a2df84a0ed80ba181021f06bb7f1f0c25d9a30ff88bbb",
+    "scripts/online_hard_negatives.py": "2570ad1acdf5e4c72e21e27b53214c43ee9d51e9ef31af6cc6b779e9c81db35b",
+    "scripts/build_c09_cosine_control.py": "c8db406e7bf4db63e49fce8584941402c139115852541df51259947ff00d5bbb",
+    "scripts/build_c09_hard_mining.py": "f48d84377e5d86816d65617429d448f807f5bdb69f4ff0212299a8446417cd7a",
+    "scripts/supervise_local_continuation.py": "2fd01682c637b3dc542ed3dafb677b568ef7b8c10815c735a280a7f5d55c9427",
+    "configs/c09-control-20261109.json": "50f7c421d5022439c314d475e3c6fbe82a7a79a55420201f59f6f570d8f2b8fd",
+    "configs/c09-mined-20261109.json": "b1b9ba0857d9058000d54d633684b7dfdac8e26272d3739c92b56834443660e3"
+  },
+  "created_utc": "2026-11-09T16:48:33.770036+00:00",
+  "authorization": "User9Nov requested more2070 training and prefers useful queued GPU work",
+  "maximum_local_gpu_workloads": 1,
+  "automatic_submission": false
+}

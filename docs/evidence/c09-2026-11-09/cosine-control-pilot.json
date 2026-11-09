@@ -1,0 +1,15 @@
+{
+  "updated_utc": "2026-11-09T16:42:05.692649+00:00",
+  "pid": 26800,
+  "deadline_utc": "2026-11-09T19:41:01.905331+00:00",
+  "state": "pilot_checkpoint",
+  "stage": "C09 pilot checkpoint ready",
+  "arm": "cosine-control",
+  "fold": 0,
+  "step": 250,
+  "resources": {
+    "gpu_peak_reserved_gib": 1.451171875,
+    "amp_skips": 0,
+    "free_ram_gib": 15.49478530883789
+  }
+}

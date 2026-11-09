@@ -1,0 +1,27 @@
+{
+  "kind": "same_development_parent_control",
+  "queries": 30,
+  "p01_mrr25": 0.7372222222222222,
+  "c08_parent_mrr25": 0.74,
+  "c09_mrr25": 0.74,
+  "c09_vs_parent": {
+    "n": 30,
+    "baseline_mrr25": 0.74,
+    "candidate_mrr25": 0.74,
+    "delta": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "improved": 0,
+    "harmed": 0
+  },
+  "parent_weight": 0.2,
+  "c09_weight": 0.2,
+  "list_changes": 19,
+  "rank_one_changes": 0,
+  "candidate_set_changes": 0,
+  "new80_confirmation_used": false,
+  "selection_changed": false,
+  "limitation": "Previously used development rows only. A tie does not establish continuation benefit. No fresh confirmation or hidden-score claim."
+}

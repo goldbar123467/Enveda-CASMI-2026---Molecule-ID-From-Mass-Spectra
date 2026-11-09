@@ -4,6 +4,7 @@ from pathlib import Path
 from datetime import datetime,timezone,timedelta
 from training_monitor import build_snapshot,system_memory
 from c09_submission_guard import normalize
+from finish_compatible_campaign import status_name
 
 ROOT=Path(__file__).resolve().parents[1]
 def stamp():return datetime.now(timezone.utc).isoformat()
@@ -40,7 +41,7 @@ def main():
                 try:
                     submissions=[normalize(s) for s in api.competition_submissions('enveda-CASMI26-molecule-id-mass-spectra')]
                     status=api.kernels_status('clarkkitchen/casmi26-c09-coverage-controls')
-                    status=json.loads(status.to_json()) if hasattr(status,'to_json') else status
+                    status=dict(status=status_name(status))
                     remote=dict(checked_utc=stamp(),submissions=submissions[:7],cloud=status)
                     write(out/'remote-status.json',remote)
                 except Exception as exc:remote=dict(checked_utc=stamp(),error=type(exc).__name__)

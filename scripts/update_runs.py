@@ -50,7 +50,7 @@ def local_status(row):
             kind = json.loads(manifest.read_text()).get('kind')
         except (OSError, ValueError):
             kind = None
-        if kind in ('frozen_retrieval','compatible_scorer'):
+        if kind == 'frozen_retrieval' or (kind == 'compatible_scorer' and row.get('kind') == 'train'):
             from training_monitor import build_snapshot
             snapshot = build_snapshot(log.parent)
             stage = snapshot['stage']
@@ -66,7 +66,7 @@ def local_status(row):
     if not log.is_file():
         return row["status"], ""
     text = log.read_text(encoding="utf-8", errors="replace")
-    done = len(re.findall(r"\] (?:DONE|DIAG written)", text))
+    done = len(re.findall(r"\] (?:DONE|DIAG written)|^DONE C09 (?:DEVELOPMENT FREEZE|PILOT|DISJOINT VALIDATION PREPARATION)", text, re.MULTILINE))
     expect = int(row["expect"] or 0)
     note = f"{done}/{expect} done" if expect else f"{done} done"
     if "Traceback" in text:
@@ -105,7 +105,7 @@ def refresh(rows):
         if r["platform"].startswith("kaggle"):
             s = kaggle_status(r["ref"])
             if s:
-                r["status"] = {"cancel_acknowledged": "cancelled", "cancel_requested": "cancelled"}.get(s, s)
+                r["status"] = {"cancel_acknowledged": "cancelled"}.get(s, s)
         elif r["platform"].startswith("local"):
             r["status"], note = local_status(r)
             if note and r["status"] not in FINAL:

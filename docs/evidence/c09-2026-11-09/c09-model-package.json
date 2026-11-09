@@ -1,0 +1,8 @@
+{
+  "completed_models": 2,
+  "additional_updates": 10000,
+  "all_finite": true,
+  "manifest_sha256": "b9fd6fd3cfc2ad590402c3fdb30a534ed06c88a170ddfc90b101987aa6fff7e4",
+  "serving_derivation": "One explicit expected-step/run-id guard change to pinned C08 complete-list scorer",
+  "source_sha256": "b6159ab8ce52bb9eb8af84ed22557c7934b628cf50b0c9bc0d24f34455eb6034"
+}

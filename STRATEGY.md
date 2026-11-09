@@ -1,5 +1,29 @@
 # C09 authorized and started — 9 November
 
+Latest update9Nov: C09T finished at15:12:53UTC,2 folds x5000 additional updates,
+zero restarts/AMP skips, peak reserved1.418GiB. All weights are finite, pinned
+and privately uploaded. On30 previously used development queries excluding
+base-connected input groups, tail weight.20 gives.737222→.740000, one improved,
+zero harmed, delta CI[0,.008333]. The existing C08 parent also gives.740000 on
+those same rows; additional training has not demonstrated a benefit. Selection
+is frozen before the new80-query confirmation and is not promotion.
+
+The user subsequently requested more2070 work. C09CT supplies the missing
+matched cosine-only continuation control: same two C08 parents/folds/seed/data/
+5000-update schedule/microbatch192 as C09T, changing only candidate CE. C09H is
+queued behind it and must pass a real200+50 checkpoint-recovery pilot. It mines
+48 hard candidates from128 sampled training-only negatives, excludes positive/
+identical-fingerprint negatives, and saves5000/10000/15000/20000-update models
+per fold. First-cycle schedule matches C09T; later cycles explore dose. No new
+external data or automatic submission. The sequential queue keeps exactly one
+local GPU training process active; full-pipeline validation remains necessary.
+
+Kaggle clean validation and CPU peak-overlap audit were still queued at16:34UTC;
+P15 remained pending. The user supplied a Kaggle warning about notebooks failing
+to start/stay connected. This is a platform blocker, not evidence that a trainer
+must be repeated. Obsolete old-panel C09V cancellation is requested, not yet
+acknowledged; do not mark that run as successfully completed/cancelled yet.
+
 Fresh authorization supersedes C08 exhaustion for a new local/free-Kaggle
 improvement campaign. One pending leaderboard submission globally; P15 remains
 PENDING at14:45UTC, so no new candidate can be submitted. Champion remains
