@@ -1,7 +1,12 @@
 """P15: complete pinned P01 followed by the selected two-fit C08 tail adjustment."""
-import hashlib,json
+import hashlib,json,re
 from pathlib import Path
 from build_general_anchor import ROOT,replace_function,guarded_source
+
+
+def substitute(source,**values):
+    pattern=r'\b('+'|'.join(re.escape(key) for key in values)+r')\b'
+    return re.sub(pattern,lambda match:repr(values[match.group(0)]),source)
 
 
 def main():
@@ -40,7 +45,8 @@ assert C08_SELECTION['winner']['arm']==ARM and C08_SELECTION['winner']['weight']
 (ROOT/'c08_model_audit.json').write_text(json.dumps(dict(manifest_sha256=MODEL_PIN,selection_sha256=SELECTION_PIN,
     arm=ARM,weight=WEIGHT,models=2,folds=[0,1],steps=40000,smoke=False,
     integration='tail-only RRF after complete P01',baseline_v80_sha256='c08d2101154d057890de088be63834eb622468892a3b842512fdc5a65e02ff46'),indent=2))
-'''.replace('MODEL_PIN',repr(pin)).replace('SELECTION_PIN',repr(selection_pin)).replace('ARM',repr(winner['arm'])).replace('WEIGHT',repr(winner['weight']))
+'''
+    preflight=substitute(preflight,MODEL_PIN=pin,SELECTION_PIN=selection_pin,ARM=winner['arm'],WEIGHT=winner['weight'])
     count=0
     for cell in nb['cells']:
         if cell['cell_type']!='code':continue
@@ -78,7 +84,8 @@ _receipt.update(model=json.loads((ROOT/'c08_model_audit.json').read_text()),twof
     pipeline=json.loads((ROOT/'execution_receipt.json').read_text()),merge_status=MERGE_REPORT['status'],is_hidden_rerun=IS_RERUN)
 (ROOT/'p15_qualification_receipt.json').write_text(json.dumps(_receipt,indent=2))
 print('P15 QUALIFIED',json.dumps(_receipt),flush=True)
-'''.replace('MODEL_PIN',repr(pin)).replace('ARM',repr(winner['arm'])).replace('WEIGHT',repr(winner['weight']))
+'''
+    tail=substitute(tail,MODEL_PIN=pin,ARM=winner['arm'],WEIGHT=winner['weight'])
     nb['cells'].append(dict(cell_type='code',execution_count=None,metadata={},outputs=[],source=tail.splitlines(keepends=True)))
     for i,cell in enumerate(nb['cells']):
         if cell['cell_type']=='code':

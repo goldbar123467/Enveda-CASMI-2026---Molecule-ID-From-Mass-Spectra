@@ -7,6 +7,10 @@ import build_compatible_submission as builder
 
 
 class CompatibleSubmissionBuilderTests(unittest.TestCase):
+    def test_placeholder_substitution_preserves_public_model_pin_name(self):
+        value=builder.substitute('MODEL_PINS.items(); digest==MODEL_PIN; weight=WEIGHT',MODEL_PIN='digest',WEIGHT=.1)
+        self.assertEqual(value,"MODEL_PINS.items(); digest=='digest'; weight=0.1")
+
     def test_complete_p01_is_retained_and_guarded_tail_is_last(self):
         real=Path(__file__).resolve().parents[1]
         with tempfile.TemporaryDirectory() as temp:
