@@ -1,0 +1,7 @@
+{
+  "prepared_utc": "2026-11-09T23:36:46.838320+00:00",
+  "reporter_sha256": "9e7acbe8c54678a7661f6df246ea5807b07945b363b685d1bb359dd80ff592f8",
+  "original_confirmation_exists": false,
+  "external_confirmation_exists": false,
+  "purpose": "Describe every source in full and raw-overlap-clean cohorts, including absent-truth zero rows and all fixed model/reference comparisons; no recipe selection or threshold changes"
+}

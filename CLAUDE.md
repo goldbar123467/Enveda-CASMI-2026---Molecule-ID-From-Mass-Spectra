@@ -30,6 +30,13 @@ both finishers/processes before new overlapping work. C09E source/provenance
 limitations and exact state are in the current campaign notes. No new leaderboard
 submission has been sent. Latest22:34 rank909/5036, cutoff251 at.482.
 
+Before reviewing C09E qualification, run
+`.venv-gpu/Scripts/python.exe scripts/report_c09_confirmation_sources.py` after both confirmation reports
+exist. This pre-result reporting plan retains every query/absent-truth zero and
+compares every fixed model/reference view by source in full80 and raw-clean60;
+it cannot select a source-specific recipe or submit. Its preparation receipt
+records that both confirmation reports were absent at23:36UTC.
+
 Read-only tracker PID is recorded in `campaign-tracker.json`; its new deadline
 is10November22:08:41UTC and per-thread system-sleep inhibition is confirmed true.
 It keeps hourly rank/health evidence without changing display timeout/locking.

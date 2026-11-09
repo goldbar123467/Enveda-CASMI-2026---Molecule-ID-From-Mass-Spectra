@@ -66,4 +66,5 @@ scripts/c09_leaderboard.py text eol=lf
 scripts/prepare_external_smoke_fixtures.py text eol=lf
 scripts/reference_smoke_fixtures.py text eol=lf
 scripts/reference_model_audit.py text eol=lf
+scripts/report_c09_confirmation_sources.py text eol=lf
 docs/evidence/c09-2026-11-09/finisher-v1-source.txt text eol=lf
