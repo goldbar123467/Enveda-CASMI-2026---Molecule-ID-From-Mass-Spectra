@@ -1,0 +1,130 @@
+{
+  "checked_utc": "2026-11-09T14:49:26.031046+00:00",
+  "catalogue_entries": 244,
+  "source_count": 5,
+  "sources": [
+    {
+      "ref": "alexchilton/casmi26-lb-0-484-peaks-to-structures-extlib",
+      "url": "https://www.kaggle.com/code/alexchilton/casmi26-lb-0-484-peaks-to-structures-extlib",
+      "code_file": "casmi26-lb-0-484-peaks-to-structures-extlib.ipynb",
+      "sha256": "5ca30854be8f92e84a1510996ba71504537b849d3e7e2e77fd7c50ae2c1bf69c",
+      "source_sha256": "6d458a8dc469a28ba427f2411685b3bcefcf10eccf65e4b0befa1e4678d399f0",
+      "bytes": 810963,
+      "datasets": [
+        "samartalwar/casmi-2026-spectral-library-massbankharmonized",
+        "sanpier/casmi-spectrum-model-v1",
+        "dmitriigluzdov/casmi26-fold-safe-fpnet",
+        "dmitriigluzdov/casmi26-natural-product-knowledge-table",
+        "dmitriigluzdov/casmi26-natural-product-panel-benchmark",
+        "dmitriigluzdov/casmi26-pubchem-popularity-prior",
+        "dmitriigluzdov/casmi26-attributed-v4g-reproduction-assets",
+        "takumuhata/casmi26-extlib",
+        "sanpier/catalogue-experiment-saner",
+        "qwertykeypadapple/casmi26-lotus-candidates",
+        "metric/rdkit-2026-3-3-wheel"
+      ],
+      "kernels": [],
+      "docker": "gcr.io/kaggle-private-byod/python@sha256:9a6bcfda6d03b2cd9aa347ee8c1bae62043328ed0f4afe9bda014e4f8bbf9435",
+      "verified_public_score": null
+    },
+    {
+      "ref": "youyouwou/casmi26-v160tau80",
+      "url": "https://www.kaggle.com/code/youyouwou/casmi26-v160tau80",
+      "code_file": "casmi26-v160tau80.ipynb",
+      "sha256": "bdcb69103f34935e1f9dad5196bc97d959ca50e900cd1208defdd5d8af3dd43f",
+      "source_sha256": "308f14a517358adb30b1154a816de4426028b9b927f11025e81502bef463e04e",
+      "bytes": 687659,
+      "datasets": [
+        "samartalwar/casmi-2026-spectral-library-massbankharmonized",
+        "sanpier/casmi-spectrum-model-v1",
+        "dmitriigluzdov/casmi26-fold-safe-fpnet",
+        "dmitriigluzdov/casmi26-natural-product-knowledge-table",
+        "dmitriigluzdov/casmi26-natural-product-panel-benchmark",
+        "dmitriigluzdov/casmi26-pubchem-popularity-prior",
+        "dmitriigluzdov/casmi26-attributed-v4g-reproduction-assets",
+        "takumuhata/casmi26-extlib",
+        "sanpier/catalogue-experiment-saner",
+        "metric/rdkit-2026-3-3-wheel"
+      ],
+      "kernels": [],
+      "docker": "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461",
+      "verified_public_score": null
+    },
+    {
+      "ref": "guhongbin/casmi26-v589-alex0484-extlib",
+      "url": "https://www.kaggle.com/code/guhongbin/casmi26-v589-alex0484-extlib",
+      "code_file": "casmi26-v589-alex0484-extlib.ipynb",
+      "sha256": "5ca30854be8f92e84a1510996ba71504537b849d3e7e2e77fd7c50ae2c1bf69c",
+      "source_sha256": "6d458a8dc469a28ba427f2411685b3bcefcf10eccf65e4b0befa1e4678d399f0",
+      "bytes": 810963,
+      "datasets": [
+        "samartalwar/casmi-2026-spectral-library-massbankharmonized",
+        "sanpier/casmi-spectrum-model-v1",
+        "dmitriigluzdov/casmi26-fold-safe-fpnet",
+        "dmitriigluzdov/casmi26-natural-product-knowledge-table",
+        "dmitriigluzdov/casmi26-natural-product-panel-benchmark",
+        "dmitriigluzdov/casmi26-pubchem-popularity-prior",
+        "dmitriigluzdov/casmi26-attributed-v4g-reproduction-assets",
+        "takumuhata/casmi26-extlib",
+        "sanpier/catalogue-experiment-saner",
+        "metric/rdkit-2026-3-3-wheel"
+      ],
+      "kernels": [
+        "popwenman/casmi26-scorer-train-v80"
+      ],
+      "docker": "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461",
+      "verified_public_score": null
+    },
+    {
+      "ref": "adityaraj0612/casmi26-exp301-waterloss-adducts",
+      "url": "https://www.kaggle.com/code/adityaraj0612/casmi26-exp301-waterloss-adducts",
+      "code_file": "casmi26-exp301-waterloss-adducts.ipynb",
+      "sha256": "67870dc0d5c6114a2c3807342a8bbec26c9d339f174024356df81acfad0af2a0",
+      "source_sha256": "88b2fb4caa95a8d8009f4371ec211f64d4bc8b559377ea645c5e9a351a564460",
+      "bytes": 698067,
+      "datasets": [
+        "",
+        "sanpier/casmi-spectrum-model-v1",
+        "deadsignalslab/casmi26-chebi-lmsd-regenerated",
+        "dmitriigluzdov/casmi26-fold-safe-fpnet",
+        "senanuretin/casmi26-gnps-cc0-expanded",
+        "dmitriigluzdov/casmi26-natural-product-knowledge-table",
+        "dmitriigluzdov/casmi26-natural-product-panel-benchmark",
+        "dmitriigluzdov/casmi26-pubchem-popularity-prior",
+        "dmitriigluzdov/casmi26-attributed-v4g-reproduction-assets",
+        "sanpier/catalogue-experiment-saner",
+        "faresboudelaa/foodb-food-database",
+        "metric/rdkit-2026-3-3-wheel"
+      ],
+      "kernels": [],
+      "docker": "gcr.io/kaggle-private-byod/python@sha256:de153e6d303881930c51286216393d56f56b26458d0661350305a1e8144eea01",
+      "verified_public_score": null
+    },
+    {
+      "ref": "liuzewen123/casmi26-0482-v2weights",
+      "url": "https://www.kaggle.com/code/liuzewen123/casmi26-0482-v2weights",
+      "code_file": "casmi26-0482-v2weights.ipynb",
+      "sha256": "77e197e8801a45869f72f32a6d6e6cf9c864700633934071cb4f80c3f01c07d8",
+      "source_sha256": "16d5f49e9bb718b2234d497537fb52b0f0346fdc95b4684635b15810c47dc91a",
+      "bytes": 801131,
+      "datasets": [
+        "sanpier/casmi-spectrum-model-v1",
+        "dmitriigluzdov/casmi26-fold-safe-fpnet",
+        "dmitriigluzdov/casmi26-natural-product-knowledge-table",
+        "dmitriigluzdov/casmi26-natural-product-panel-benchmark",
+        "dmitriigluzdov/casmi26-pubchem-popularity-prior",
+        "dmitriigluzdov/casmi26-attributed-v4g-reproduction-assets",
+        "sanpier/catalogue-experiment-saner",
+        "qwertykeypadapple/casmi26-lotus-candidates",
+        "metric/rdkit-2026-3-3-wheel"
+      ],
+      "kernels": [
+        "popwenman/casmi26-scorer-train-v80"
+      ],
+      "docker": "gcr.io/kaggle-private-byod/python@sha256:de153e6d303881930c51286216393d56f56b26458d0661350305a1e8144eea01",
+      "verified_public_score": null
+    }
+  ],
+  "unavailable": [],
+  "limitation": "Three first-page sorts,100 each; not an exhaustive catalogue. Selected available sources read as text. No downloaded notebook code executed. Titles and sort order do not verify scores."
+}

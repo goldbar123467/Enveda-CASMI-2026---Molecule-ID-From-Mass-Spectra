@@ -50,7 +50,7 @@ def local_status(row):
             kind = json.loads(manifest.read_text()).get('kind')
         except (OSError, ValueError):
             kind = None
-        if kind == 'frozen_retrieval':
+        if kind in ('frozen_retrieval','compatible_scorer'):
             from training_monitor import build_snapshot
             snapshot = build_snapshot(log.parent)
             stage = snapshot['stage']
@@ -61,7 +61,7 @@ def local_status(row):
             note += f"; head steps {progress['completed_epochs']:,}/{progress['total_epochs']:,}"
             if snapshot['watchdog'].get('action') == 'needs_attention':
                 return 'error', note + '; supervisor needs attention'
-            return {'training': 'running', 'complete': 'complete', 'error': 'recovering',
+            return {'training': 'running', 'validation_pending': 'complete', 'pilot_checkpoint': 'complete', 'complete': 'complete', 'error': 'recovering',
                     'stopped': 'stalled', 'stale': 'stalled'}.get(snapshot['state'], snapshot['state']), note
     if not log.is_file():
         return row["status"], ""

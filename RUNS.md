@@ -1,6 +1,6 @@
 # Runs
 
-Updated 2026-11-09 12:03 UTC by `scripts/update_runs.py` (hourly). Generated from `runs.csv` — edit that file, not this one.
+Updated 2026-11-09 14:58 UTC by `scripts/update_runs.py` (hourly). Generated from `runs.csv` — edit that file, not this one.
 
 - Kaggle quota: GPU 4.7 h used of 30 h · TPU 0.0 h of 20 h · resets 2026-11-14 00:00 UTC
 - Submissions today (UTC): 1 of 5 — see `SUBMISSIONS.md`
@@ -9,12 +9,16 @@ Updated 2026-11-09 12:03 UTC by `scripts/update_runs.py` (hourly). Generated fro
 
 | id | platform | kind | ref | started (UTC) | status | purpose | progress |
 |---|---|---|---|---|---|---|---|
-| — | | | | | | | |
+| C09V | kaggle-gpu | diag | c09-coverage-controls v1 | 2026-11-09 14:44 | **queued** | C09 dual-device diagnostic: exact P14 full128 external pipeline negative control onGPU0; existing C08 expanded candidate coverage/scoring onGPU1; no scoring submission |  |
+| C09T | local-2070 | train | outputs/local/c09-20261109/train-0.log | 2026-11-09 14:47 | **running** | C09 existing C08 legacy16-hard continuation, served-score objective,2 common folds x5000 updates including250 pilot; remaining9750 updates; mixed precision and bounded checkpoint recovery | C09 served-score continuation; head steps 4,450/10,000 |
+| C09C | kaggle-gpu | diag | c09-clean-validation v1 | 2026-11-09 14:57 | **queued** | C09 acquisition-disjoint80-query confirmation: exactP01 full pipeline, unchanged downstream replay parity, failedP14 full downstream negative control;no model or weight selection,no scoring submission |  |
 
 ## Finished (newest first)
 
 | id | platform | kind | ref | started (UTC) | ended (UTC) | status | purpose | result |
 |---|---|---|---|---|---|---|---|---|
+| C09A | local-2070 | prep | outputs/local/c09-20261109/panel-prepare.log | 2026-11-09 14:53 | 2026-11-09 14:58 | complete | Prepare confirmation-only external panel: all eligible novel identities excluding previousC08 keys, whole training-connected acquisition groups and within-panel cross-label groups;2 threads,no score-based filtering | 80 identities/302 spectra;0 priorC08 identity overlap,0 base-connected cached acquisition-group overlap,0 within-panel cross-label groups;confirmation-only80,development0. Contract d7ec2771...e5ff723;private dataset created. |
+| C09P | local-2070 | diag | outputs/local/c09-20261109/pilot.log | 2026-11-09 14:41 | 2026-11-09 14:47 | complete | C09 served-score loss continuation pilot; existing C08 fold0 checkpoint, same identity/acquisition split,200 updates then atomic checkpoint recovery; no submission | 250 successful updates including fresh-process200-to250 checkpoint recovery;0 AMP skips;peak reserved1.418GiB;about6.1-6.5updates/s;last50 mean loss1.98375. Execution/learning pilot only;no quality or promotion claim. |
 | P15 | kaggle-gpu | commit | p15-compatible-c08 v1 | 2026-11-09 09:54 | 2026-11-09 12:01 | complete | One authorized C08 trial; required real12 P01+tail GPU smoke, checksum/arithmetic/identity/portability audits before submission | COMPLETE real12/400valid;0 input errors/metric duplicates;rank1 and candidate sets exact;two-fit error0;P01 primary error4.44e-16;local/Kaggle max raw-score difference2.86e-6. Submitted v1/ref58163163 at12:01UTC9Nov;PENDING/no score. One C08 authorization used;no more queued. |
 | C08Q | local-2070 | diag | outputs/local/long-compatible-20261108/campaign/select_candidate.log | 2026-11-09 09:45 | 2026-11-09 09:53 | complete | Development-only C08 arm/weight choice on128 fixed novel full-pipeline queries;64 reserved reported once; explicit trial, no statistical promotion claim | 128 actual-P01 candidate lists,64 development/64 reserved; selected legacy16-hard two-fold mean /0.20 tail RRF. Dev MRR .3703125 to .3747396; reserved .3617255 to .3619792, delta .0002537 CI[-.0022017,.0028206].64 absent truths=0;rank1/set changes0. No reliable gain or statistical promotion established. |
 | C08 | local-2070 | train | outputs/local/long-compatible-20261108/train-0.log | 2026-11-08 22:23 | 2026-11-09 09:45 | complete | C08 controlled320 scorer: precision x hard-negative recipe,2 common identity/acquisition folds,24h cap; no automatic submission | 8 models x40000 successful updates=320000;11h22m elapsed;0 restarts;peak reserved2.40625GiB. All checkpoints checksum/finite verified. Actual-pipeline validation and one separately authorized submission handled by C08 completion runner. |

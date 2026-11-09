@@ -34,12 +34,22 @@ def main():
             rows=[r.to_json() for r in rows];rows=[json.loads(r) if isinstance(r,str) else r for r in rows];save(args.out/f'{sort}.json',rows)
             catalogue.update({r['ref']:r for r in rows if r.get('ref')})
         save(args.out/'union.json',dict(checked_utc=datetime.now(timezone.utc).isoformat(),kernels=list(catalogue.values())))
+        failures=[]
         for ref in refs:
             folder=args.out/'notebooks'/ref.replace('/','__');folder.mkdir(parents=True,exist_ok=True)
-            api.kernels_pull(ref,str(folder),metadata=True,quiet=True)
+            try:api.kernels_pull(ref,str(folder),metadata=True,quiet=True)
+            except Exception as exc:
+                # Keep missing/private/deleted sources explicit, without hiding
+                # the rest of the catalogue or running downloaded code.
+                failures.append(dict(ref=ref,error=type(exc).__name__,status=getattr(getattr(exc,'response',None),'status_code',None)))
+        save(args.out/'unavailable.json',failures)
     catalogue=json.loads((args.out/'union.json').read_text());sources=[]
+    unavailable={r['ref'] for r in json.loads((args.out/'unavailable.json').read_text())} if (args.out/'unavailable.json').exists() else set()
     for ref in refs:
-        folder=args.out/'notebooks'/ref.replace('/','__');metadata=json.loads((folder/'kernel-metadata.json').read_text())
+        if ref in unavailable:continue
+        folder=args.out/'notebooks'/ref.replace('/','__')
+        if not (folder/'kernel-metadata.json').exists():continue
+        metadata=json.loads((folder/'kernel-metadata.json').read_text())
         file=folder/metadata['code_file']
         if file.suffix=='.ipynb':
             notebook=json.loads(file.read_text(encoding='utf-8'));cells=notebook['cells']
@@ -51,7 +61,8 @@ def main():
             source_sha256=digest(folder/'source.py'),bytes=file.stat().st_size,datasets=metadata.get('dataset_sources',[]),
             kernels=metadata.get('kernel_sources',[]),docker=metadata.get('docker_image'),verified_public_score=None))
     index=dict(checked_utc=catalogue['checked_utc'],catalogue_entries=len(catalogue['kernels']),source_count=len(sources),sources=sources,
-               limitation='Three first-page sorts,100 each; not an exhaustive catalogue.20 selected sources read as text. No downloaded notebook code executed. Titles and sort order do not verify scores.')
+               unavailable=json.loads((args.out/'unavailable.json').read_text()) if (args.out/'unavailable.json').exists() else [],
+               limitation='Three first-page sorts,100 each; not an exhaustive catalogue. Selected available sources read as text. No downloaded notebook code executed. Titles and sort order do not verify scores.')
     save(args.evidence/'source-index.json',index)
     save(args.evidence/'catalogue.json',dict(checked_utc=catalogue['checked_utc'],kernels=catalogue['kernels']))
     print(json.dumps(dict(catalogue_entries=index['catalogue_entries'],source_count=len(sources),evidence=str(args.evidence))))

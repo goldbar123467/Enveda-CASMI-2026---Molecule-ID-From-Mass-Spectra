@@ -1,4 +1,38 @@
+# C09 authorized and started — 9 November
+
+Fresh authorization supersedes C08 exhaustion for a new local/free-Kaggle
+improvement campaign. One pending leaderboard submission globally; P15 remains
+PENDING at14:45UTC, so no new candidate can be submitted. Champion remains
+P01/P13 at0.480. See [C09](docs/C09-CAMPAIGN-2026-11-09.md).
+
+C09P completed250 real continuation updates, including a fresh-process resume
+from200 to250: zero AMP skips, peak reserved1.418GiB, about6.1–6.5 updates/sec,
+last50 mean loss1.98375. This is execution/learning evidence only. C09T now
+continues the two existing C08 legacy16-hard folds to5000 additional updates
+each, changing only the candidate loss to use the cosine-plus-fingerprint score
+actually served. No equivalent C08 fits are repeated; parent weights/cache/split
+and source pins are retained. C09V is queued for the exact P14 full-pipeline
+negative control and expanded-candidate coverage diagnostic on separate devices.
+
+The current public scan finds243 distinct listings,18 available selected source
+snapshots and two404s. The new peaks-v2 text changes several knobs together,
+including external-library/LOTUS/mass rules; neither its title nor its narrative
+verifies a result. Current rules allow accessible external data, but today's
+PubChem redistribution and MassSpecGym/MIST provenance discussions are unanswered
+participant questions, not host approval. C09 training uses no new external data.
+
+---
+
 # C08 completed and P15 accepted — 9 November
+
+**C09 audit correction:** the old128-query panel has zero identity-key overlap
+but67 queries belong to cached spectrum-input groups connected to competition
+training (all64 GNPS plus3 MassBank). The C08 trainer itself excluded these
+alias groups; production retrieval/base-catalogue overlap remains a serious
+validation limitation. MassBank/GNPS MRR differs.675118/.056920. C09 prepared a
+separate80-identity/302-spectrum confirmation-only panel excluding old keys and
+all base-connected acquisition groups. Do not use either finding to reselect
+C08's already frozen arm/weight or to claim a new untouched status for its panel.
 
 P15 v1/ref58163163 was accepted at12:01UTC /07:01 Eastern after the real12 Kaggle
 smoke and independent audit:400 valid rows, zero input errors/official identity

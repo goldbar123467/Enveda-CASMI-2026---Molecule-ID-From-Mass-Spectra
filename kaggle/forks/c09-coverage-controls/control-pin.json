@@ -1,0 +1,8 @@
+{
+  "campaign": "C09",
+  "scoring_submission": false,
+  "parent_sha256": "7d570cdb658c1b2782ca1a1f55e004f33e9c0e9012f11bb63941b304bbdc73b9",
+  "p14_manifest_sha256": "22c5300c20a942fdd346aa26ca5f57237664e6a251e4c48ba18daaace16eac19",
+  "notebook_sha256": "e95e4c106eabcc6ecebfc220472799aed17b2e0c50de593415ba6aaa13d26062",
+  "device_contract": "GPU0 exact P14 full pipeline; GPU1 C08 expanded actual pools; serial fallback on one GPU"
+}

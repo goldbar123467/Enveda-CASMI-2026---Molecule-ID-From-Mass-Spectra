@@ -1,0 +1,11 @@
+{
+  "campaign": "C09",
+  "scoring_submission": false,
+  "confirmation_only": true,
+  "queries": 80,
+  "validation_contract_sha256": "d7ec2771628e84428d496309966ee765bcb93f02397debb4318eb1517e5ff723",
+  "notebook_sha256": "b0c17c3c88e559e2f369a91e5ef273508343a8c0b4a4236d167608d868ac87fb",
+  "p14_manifest_sha256": "22c5300c20a942fdd346aa26ca5f57237664e6a251e4c48ba18daaace16eac19",
+  "baseline_replay_required": true,
+  "changed_cells": "Input paths/preflight only, then exact P14 neural channel and full downstream replay"
+}

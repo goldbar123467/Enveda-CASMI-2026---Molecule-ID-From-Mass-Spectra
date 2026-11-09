@@ -1,5 +1,23 @@
 # Enveda CASMI 2026 — working rules
 
+## Current authorization — C09, 2026-11-09
+
+The user's attached handoff explicitly resumes a **fresh improvement campaign**
+using the local2070 and free Kaggle concurrently. Training/recovery/private model
+uploads/qualified sequential submissions/GitHub pushes are authorized. Historical
+C08/F07 exhausted-authorization and pause instructions below do not limit C09.
+Exactly **ONE pending leaderboard submission globally** is allowed, including
+P15/ref58163163, still pending at14:45UTC. Never automatically resubmit P15.
+Use `configs/c09-campaign-20261109.json`, `.local/c09-submission-ledger.json`,
+`docs/C09-CAMPAIGN-2026-11-09.md`; inspect processes before any restart.
+C09T continues existing C08 fits with a new served-score objective; C09V is a
+separate private P14 full-pipeline negative control and candidate-coverage audit.
+The existing128-query panel is already used, not an untouched new holdout.
+Keep P01/P13 at0.480 champion until an actual better nonempty score returns.
+Use `scripts/c09_submission_guard.py` for fail-closed account status, not the old
+two-pending submitters. No paid/rented compute. All original resource floors,
+real smoke, source/artifact/numeric/identity/fallback/parity requirements remain.
+
 ## Current handoff — C08 complete/P15 accepted, 2026-11-09
 
 C08 completed all8 x40000 fits at09:45UTC with320000 successful updates and

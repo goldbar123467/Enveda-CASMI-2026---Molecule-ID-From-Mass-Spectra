@@ -1,0 +1,35 @@
+{
+  "run_id": "C09",
+  "authorized_utc": "2026-11-09T14:35:00Z",
+  "authorization": "User handoff explicitly authorizes a fresh free local/Kaggle improvement campaign, training, recovery, private uploads, qualified sequential submissions and GitHub pushes.",
+  "maximum_pending_submissions": 1,
+  "inherited_pending_reference": "58163163",
+  "ledger": ".local/c09-submission-ledger.json",
+  "retain_champion": {"slots": ["P01", "P13"], "public_score": 0.480},
+  "local_lane": {
+    "hypothesis": "Continue existing C08 folds with a loss matching served cosine-plus-fingerprint scores; do not repeat completed C08 fits.",
+    "base_arm": "legacy16-hard",
+    "folds": [0, 1],
+    "pilot_updates_per_fold": 200,
+    "planned_updates_per_fold": 5000,
+    "cpu_threads": 2,
+    "minimum_free_ram_gib": 4,
+    "gpu_memory_fraction": 0.7,
+    "output": "outputs/local/c09-20261109"
+  },
+  "cloud_lane": {
+    "purpose": "Reproduce failed P14 on actual complete external-pipeline lists and audit truth coverage at candidate-generation, reranking and final-list stages; reuse C08 outputs/models.",
+    "device_allocation": "GPU0 P14 exact negative control; GPU1 C08 expanded-list scoring/coverage diagnostic when two devices are allocated",
+    "kernel": "clarkkitchen/casmi26-c09-coverage-controls",
+    "scoring_submission": false
+  },
+  "validation": {
+    "existing_128_panel": "Previously used diagnostic/development evidence; never a fresh untouched holdout",
+    "selection": "Development only; freeze before reserved evaluation",
+    "absent_truth_mrr": 0,
+    "negative_control": "P14 v2, public0.458",
+    "qualification": ["actual_complete_pipeline_lists", "candidate_coverage", "identity_acquisition_overlap_audit", "uncertainty_and_regressions", "real_complete_Kaggle_smoke", "hashes_arithmetic_identity_fallback_parity"]
+  },
+  "paid_compute_allowed": false,
+  "submission_policy": "Wait for actual nonempty score or terminal error of every existing pending entry; qualification is mandatory; never automatically resubmit P15."
+}

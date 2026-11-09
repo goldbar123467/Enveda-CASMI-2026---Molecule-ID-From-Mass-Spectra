@@ -323,8 +323,9 @@ def build_compatible_snapshot(run, manifest, *, now, alive, root):
             history=read_json(folder/'history.json',[]);receipt=read_json(folder/'complete.json',{})
             active=status.get('arm')==name and status.get('fold')==fold and status.get('state')=='training'
             step=max([int(r['step']) for r in history]+[int(receipt.get('steps',0)),int(status.get('step',0)) if active else 0])
-            timings += [r['seconds']/r['updates'] for r in history[-10:] if r.get('updates',0)>0 and finite_number(r.get('seconds'))]
-            measured=[r['seconds']/r['updates'] for r in history[-10:] if r.get('updates',0)>0 and finite_number(r.get('seconds'))]
+            measured=[r['seconds']/r['updates'] if r.get('updates',0)>0 and finite_number(r.get('seconds')) else 1/r['updates_per_second']
+                      for r in history[-10:] if (r.get('updates',0)>0 and finite_number(r.get('seconds'))) or (finite_number(r.get('updates_per_second')) and r['updates_per_second']>0)]
+            timings += measured
             model_pace=statistics.median(measured) if measured else prior.get(f'{name}-{fold}')
             series=[dict(epoch=r['step'],loss=r['loss']) for r in history if finite_number(r.get('loss'))]
             models.append(dict(id=f'{name}-{fold}',family=name,label=f'{name} / fold {fold}',fold=fold,epoch=min(step,target),epochs=target,
@@ -349,7 +350,7 @@ def build_compatible_snapshot(run, manifest, *, now, alive, root):
     return dict(kind='compatible_scorer',run_id=spec['run_id'],run_path=str(run),state=state,sampled_utc=now.isoformat(),
         started_utc=read_json(run/'launch.json',{}).get('started_utc'),updated_utc=status.get('updated_utc'),heartbeat_age_seconds=heartbeat_age,
         trainer_pid=status.get('pid'),trainer_alive=trainer_alive,
-        description=f"{len(models)} models / 4 matched recipes / 2 common folds / logical batch {spec['training']['batch_size']}",
+        description=f"{len(models)} models / {len(spec['arms'])} recipes / {len(spec['folds'])} common folds / logical batch {spec['training']['batch_size']}",
         progress=dict(unit='steps',completed_epochs=completed,total_epochs=total,completed_models=sum(m['complete'] for m in models),total_models=len(models),
                       percent=100*completed/total if total else 0,seconds_per_epoch=pace,eta_utc=eta),
         stage=dict(label=status.get('stage','Waiting'),completed=status.get('stage_completed'),total=status.get('stage_total'),deadline_utc=status.get('deadline_utc')),

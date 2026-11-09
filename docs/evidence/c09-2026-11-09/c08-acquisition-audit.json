@@ -1,0 +1,29 @@
+{
+  "queries": 128,
+  "identity_overlap_with_base": 0,
+  "cached_model_input_group_overlap_with_base": 67,
+  "library_similarity_at_least_999": 64,
+  "high_library_truths_present": 10,
+  "query_instruments": {
+    "LC-ESI-QFT": 226,
+    "Orbitrap": 128,
+    "GC-APCI-QTOF": 2
+  },
+  "by_source": {
+    "1": {
+      "queries": 64,
+      "truths_present": 55,
+      "mrr25": 0.6751183712121213,
+      "group_overlaps": 3
+    },
+    "2": {
+      "queries": 64,
+      "truths_present": 9,
+      "mrr25": 0.056919642857142856,
+      "group_overlaps": 64
+    }
+  },
+  "group_artifact_sha256": "06a2626d571272a4780ea3965624377e5f785dd5c23131d4527ce89e38f9698e",
+  "scope": "C08 panel already used; no model/weight selection. Cached input groups audit quantized96-peak model inputs including metadata, not every reference-library preprocessing representation.",
+  "limitation": "High library similarity is a warning requiring reference-spectrum audit, not by itself proof of an identical query or label leakage. Public encoders/rankers have not universally excluded this panel."
+}
