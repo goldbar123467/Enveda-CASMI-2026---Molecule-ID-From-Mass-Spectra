@@ -1,8 +1,8 @@
 # Runs
 
-Updated 2026-11-09 01:01 UTC by `scripts/update_runs.py` (hourly). Generated from `runs.csv` — edit that file, not this one.
+Updated 2026-11-09 02:08 UTC by `scripts/update_runs.py` (hourly). Generated from `runs.csv` — edit that file, not this one.
 
-- Kaggle quota: GPU 3.5 h used of 30 h · TPU 0.0 h of 20 h · resets 2026-11-14 00:00 UTC
+- Kaggle quota: GPU 4.3 h used of 30 h · TPU 0.0 h of 20 h · resets 2026-11-14 00:00 UTC
 - Submissions today (UTC): 0 of 5 — see `SUBMISSIONS.md`
 
 ## Active
@@ -10,12 +10,12 @@ Updated 2026-11-09 01:01 UTC by `scripts/update_runs.py` (hourly). Generated fro
 | id | platform | kind | ref | started (UTC) | status | purpose | progress |
 |---|---|---|---|---|---|---|---|
 | C08 | local-2070 | train | outputs/local/long-compatible-20261108/train-0.log | 2026-11-08 22:23 | **running** | C08 controlled320 scorer: precision x hard-negative recipe,2 common identity/acquisition folds,24h cap; no automatic submission | 0/1 done |
-| C08V | kaggle-gpu | diag | c08-novel-external-validation v1 | 2026-11-08 22:38 | **running** | P01 full candidate pipeline on128 fixed novel external identities,64 development/64 reserved; truth absent=0, no query labels in features; private validation only |  |
 
 ## Finished (newest first)
 
 | id | platform | kind | ref | started (UTC) | ended (UTC) | status | purpose | result |
 |---|---|---|---|---|---|---|---|---|
+| C08V | kaggle-gpu | diag | c08-novel-external-validation v1 | 2026-11-08 22:38 | 2026-11-09 01:57 | complete | P01 full candidate pipeline on128 fixed novel external identities,64 development/64 reserved; truth absent=0, no query labels in features; private validation only | COMPLETE full P01 pipeline on128 novel external identities/356 spectra,64 development/64 reserved. Truth appears33/64 and31/64 final lists; MRR .3703125/.3617255 with all64 absent truths retained as zero. Independent metric-key replay exact;0 identity duplicates, no labels in queries. This is external validation, not a Kaggle score. |
 | C08SI | local-2070 | diag | outputs/local/c08-serving-fixture.log | 2026-11-08 22:44 | 2026-11-08 22:45 | complete | C08 two-fold serving fixture on real12 cached P01 query inputs for both precision recipes; protected rank1 and candidate-set invariants; explicit200-step test models only | Both200-update fixture arms scored12 real molecules with0 errors;388 unprocessed passthroughs,0 rank1/candidate-set changes. This is serving execution only, not model quality or production qualification. Float64 standardization tested subsequently. |
 | B08 | local-2070 | prep | outputs/local/compatible-20261108-benchmark.log | 2026-11-08 21:40 | 2026-11-08 22:11 | complete | RTX2070 real-shape AMP/fusedAdamW benchmark: wide320 scorer, logical batch96, microbatch16/24/32/48/96 and16/48 hard negatives; select safe launch plan, not quality training | Shape-only wide320 AMP benchmark: batch96/micro96 about2817 spectra/sec for48 hard negatives,0.623GiB peak reserved; smaller microbatches slower. Not model quality. |
 | B08L | local-2070 | prep | outputs/local/compatible-20261108-large-benchmark.log | 2026-11-08 21:44 | 2026-11-08 22:11 | complete | Measure larger wide320 logical batches96/192/384/768 under70% VRAM cap; choose throughput with desktop headroom, no model quality claims | Shape-only H48 benchmark: batch384 3519.96 spectra/sec,2.238GiB peak reserved; batch768 3626.30/s,4.400GiB. Chose384 for headroom; excludes full per-step data loading/weighted objective. |

@@ -1,0 +1,28 @@
+{
+  "queries": 128,
+  "spectra": 356,
+  "truth_absent_queries": 64,
+  "metric_key_cache_coverage": 1.0,
+  "official_identity_duplicates": 0,
+  "cohorts": {
+    "confirmation": {
+      "queries": 64,
+      "mrr25": 0.36172551406926406,
+      "candidate_recall25": 0.484375,
+      "top1": 0.296875
+    },
+    "development": {
+      "queries": 64,
+      "mrr25": 0.3703125,
+      "candidate_recall25": 0.515625,
+      "top1": 0.28125
+    }
+  },
+  "input_labels_in_queries": false,
+  "independent_mrr_max_error": 0.0,
+  "files_sha256": {
+    "c08_validation_p01.csv": "e95d64a5afee2ddc562d83e320363d403b54f3ad1e44189ac79425ae7c14339f",
+    "c08_validation_queries.parquet": "0fc8640ec69aa304bed3cd43201a21bfb0933c5564f1a35ab7f871e48984df49",
+    "c08_validation_report.json": "330917d044344796ad9569ee6076067dd3e30aa32c747591b347c6862a655ecc"
+  }
+}

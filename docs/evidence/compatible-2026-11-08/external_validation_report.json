@@ -1,0 +1,26 @@
+{
+  "kind": "full_pipeline_external_validation",
+  "queries": 128,
+  "labels_in_pipeline": false,
+  "truth_injection": false,
+  "truth_absent_mrr": 0,
+  "validation_contract_sha256": "6c417fc041959085454b9442a5e5db361a59226d6e5218af0d72dc54ecacc4b2",
+  "cohorts": {
+    "confirmation": {
+      "queries": 64,
+      "candidate_recall25": 0.484375,
+      "mrr25": 0.36172551406926406
+    },
+    "development": {
+      "queries": 64,
+      "candidate_recall25": 0.515625,
+      "mrr25": 0.3703125
+    }
+  },
+  "production_train_structs_sha256": "f20aa1cac23af42e430a6633707fda34e48dea97114bdc3e443897f692df3656",
+  "adaptations": [
+    "fixed_external_test_path",
+    "external_input_preflight"
+  ],
+  "limitation": "Novel external identities and source shift; no hidden competition-score guarantee. Broader public foundation/ranker pretraining exposure is not excluded."
+}
