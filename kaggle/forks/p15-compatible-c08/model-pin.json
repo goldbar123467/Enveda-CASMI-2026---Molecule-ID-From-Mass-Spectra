@@ -1,0 +1,11 @@
+{
+  "manifest_sha256": "c73d2383b7494fdbaedb9e437f8f389dbe175418bf13e5260a2f277ada49b602",
+  "selection_sha256": "135095241dc2df151c2a12a6fd146d775b2fabdeb84dadde82e49fcfb65adc50",
+  "arm": "legacy16-hard",
+  "weight": 0.2,
+  "models": 2,
+  "steps": 40000,
+  "rank_one_protected": true,
+  "candidate_set_protected": true,
+  "scoring_submission": false
+}

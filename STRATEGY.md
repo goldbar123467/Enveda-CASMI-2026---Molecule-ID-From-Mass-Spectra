@@ -9,8 +9,11 @@ verification. No training source/config or original deadline was changed.
 The fixed128-query full-P01 external validation finished. Baseline development /
 reserved MRR is0.3703125 /0.3617255; final candidate recall is33/64 and31/64.
 All64 absent truths retainMRR zero. This is external validation, not a Kaggle
-score. C08 arm/weight selection, required real Kaggle smoke and one submission
-are being completed under the explicit trial override. Statistical promotion
+score. Development selected legacy16-hard /0.20 tail RRF; reserved MRR was
+0.3617255→0.3619792, delta+0.0002537 with95% interval[-0.0022017,0.0028206].
+This small panel does not demonstrate a reliable gain. The decision is frozen.
+P15 v1 is queued for its required real12 Kaggle smoke; the independent audit
+and one submission follow under the explicit trial override. Statistical promotion
 remains unproven; P01/P13 at0.480 remain the champion. See
 [the campaign](docs/C08-CAMPAIGN-2026-11-08.md).
 

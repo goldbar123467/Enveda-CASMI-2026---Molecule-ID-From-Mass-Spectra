@@ -1,6 +1,6 @@
 # Runs
 
-Updated 2026-11-09 09:45 UTC by `scripts/update_runs.py` (hourly). Generated from `runs.csv` — edit that file, not this one.
+Updated 2026-11-09 09:54 UTC by `scripts/update_runs.py` (hourly). Generated from `runs.csv` — edit that file, not this one.
 
 - Kaggle quota: GPU 4.3 h used of 30 h · TPU 0.0 h of 20 h · resets 2026-11-14 00:00 UTC
 - Submissions today (UTC): 0 of 5 — see `SUBMISSIONS.md`
@@ -10,6 +10,7 @@ Updated 2026-11-09 09:45 UTC by `scripts/update_runs.py` (hourly). Generated fro
 | id | platform | kind | ref | started (UTC) | status | purpose | progress |
 |---|---|---|---|---|---|---|---|
 | C08Q | local-2070 | diag | outputs/local/long-compatible-20261108/campaign/select_candidate.log | 2026-11-09 09:45 | **running** | Development-only C08 arm/weight choice on128 fixed novel full-pipeline queries;64 reserved reported once; explicit trial, no statistical promotion claim |  |
+| P15 | kaggle-gpu | commit | p15-compatible-c08 v1 | 2026-11-09 09:54 | **queued** | One authorized C08 trial; required real12 P01+tail GPU smoke, checksum/arithmetic/identity/portability audits before submission |  |
 
 ## Finished (newest first)
 

@@ -1,0 +1,48 @@
+{
+  "winner": {
+    "arm": "legacy16-hard",
+    "development_mrr25": 0.37473958333333335,
+    "development_baseline_mrr25": 0.3703125,
+    "weight": 0.2,
+    "offset": 3.0,
+    "rank_one_changes": 0,
+    "candidate_set_changes": 0,
+    "changed_rows": 126,
+    "scored_molecules": 128,
+    "passthrough_molecules": 0
+  },
+  "development": {
+    "n": 64,
+    "baseline_mrr25": 0.3703125,
+    "candidate_mrr25": 0.37473958333333335,
+    "delta": 0.004427083333333333,
+    "ci95": [
+      0.0,
+      0.010937500000000001
+    ],
+    "improved": 3,
+    "harmed": 0
+  },
+  "confirmation": {
+    "n": 64,
+    "baseline_mrr25": 0.36172551406926406,
+    "candidate_mrr25": 0.3619791666666667,
+    "delta": 0.0002536525974025979,
+    "ci95": [
+      -0.002201704545454545,
+      0.002820616883116884
+    ],
+    "improved": 2,
+    "harmed": 1
+  },
+  "baseline_candidate_recall25": 0.5,
+  "truth_absent_queries": 64,
+  "queries": 128,
+  "missing_metric_keys_recomputed": 0,
+  "rank_one_changes": 0,
+  "candidate_set_changes": 0,
+  "failed_P14_full_pipeline_negative_control": "Not reproduced on this external panel; no statistical promotion claim",
+  "all_promotion_requirements_passed": false,
+  "explicit_user_trial": true,
+  "hidden_gain_unproven": true
+}
