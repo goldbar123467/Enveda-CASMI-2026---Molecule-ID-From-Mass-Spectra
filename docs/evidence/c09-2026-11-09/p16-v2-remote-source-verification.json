@@ -1,0 +1,8 @@
+{
+  "version": 2,
+  "is_private": true,
+  "enable_internet": false,
+  "remote_scientific_sha256": "77f92e46e9b2951136fb5012a474e2c1dd35da0448004eafcd82ff99a4ff1b28",
+  "local_scientific_sha256": "77f92e46e9b2951136fb5012a474e2c1dd35da0448004eafcd82ff99a4ff1b28",
+  "exact_match": true
+}

@@ -1,0 +1,43 @@
+{
+  "kind": "P01_plus_fixed_external_reference",
+  "policy_sha256": "ea662270a895dc902cc9dd242afd7cd7f63e4a42ce3468474c6bff73d984043c",
+  "contract_sha256": "4ba9c6a7ca614a4e6bb77e5b697f1c0de8ee106c84ad1fe4b327fd8d4cbcd39d",
+  "reference_files": {
+    "ext_meta.parquet": "9b0c2d675612580a4aedbdd3c8891d046fdf864b0805aaef852acc6653f7d37f",
+    "ext_mz.npy": "a14f750d46bfca4176110d1a83cc3562944a3ca1e3f1344c94141f6d8d85fad5",
+    "ext_in.npy": "e47b359f27d0aacda22f7ef47f8f60f7912136027d70d2bc915890a8d51be841"
+  },
+  "source_files": {
+    "apply_external_reference.py": "a65d0b63ba20b64f8efc49424a2513cc26f492b4148dc66d68bcc0a5ce62beca",
+    "external_reference_overlay.py": "826a689fdcecc05436cd201219ac066ef2ebf557df22200ac807c6bb6c0681e5",
+    "c09_spectrum_audit.py": "a4c42efdb41983406d71458eeb093af462bd1432ec774c6628d91861f1a042ac",
+    "reference_smoke_fixtures.py": "1cedf812a0fb55f22dc0e922664ab5d1bbe90bcf995f7c4f5bd7c847862bd017",
+    "reference_model_audit.py": "32f0c2eafa298be9095c86b2c20073f0e552ad3cabf7652b8d0dcc06dae4d5a8",
+    "c09e_features.py": "a97ad9b3ab3711517864d56e497e1672cb29bb05683c72b52db9f9b0a17b1455"
+  },
+  "baseline_sha256": "5cb2f1ad75c64791fa63cbfabb7e70e29948e05d8cc3987de79d7e137cdc20b9",
+  "query_sha256": "5464f6862f8931423bffcb705333cd9af9f713852a6c8c6d1b129bd2132862fb",
+  "csv_sha256": "c80509482095c4bb55e1cac39201b408dc01b8906dfb752d57d4d54195055448",
+  "official_rdkit": "2026.03.3",
+  "valid_rows": 400,
+  "search": {
+    "queries": 12,
+    "spectra": 41,
+    "reference_rows": 200724,
+    "precursor_candidate_rows": 326,
+    "query_reference_comparisons": 677,
+    "query_input_alias_reference_rows": 0,
+    "query_labels_used": false,
+    "limitation": "Rounded full peaks and FP16top96 signatures only; not universal acquisition/provenance exclusion"
+  },
+  "actions": {
+    "no_qualifying_match": 388,
+    "protected_pipeline_library": 12
+  },
+  "changed_rows": 0,
+  "invalid_external_structures": 0,
+  "official_identity_duplicates": 0,
+  "required_stage_completed": true,
+  "development_evidence_sha256": "ed753564e541a95a38e89ec39f7a1be481e5f55f5d58c888bb0f8d18d1117483",
+  "scoring_submission": false
+}

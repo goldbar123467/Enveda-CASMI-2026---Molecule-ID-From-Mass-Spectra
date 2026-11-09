@@ -10,10 +10,14 @@ Never resubmit P15. Cloud C09 validation retries are private diagnostic runs,
 not leaderboard submissions. Further submissions require scientific qualification
 and the complete real Kaggle smoke/independent audits.
 
-P16 (`casmi26-p16-external-reference-c09` v1) is currently a private real12/400
-Kaggle smoke for the fixed C09E measured-reference overlay. It has NOT been
-submitted to the leaderboard. New80 confirmation and independent execution/
-identity/fallback/local-cloud parity qualification remain pending.
+P16 (`casmi26-p16-external-reference-c09` v2) completed its private real12/400
+Kaggle smoke and independent execution/identity/fallback/local-cloud audit.
+V1 failed after P01 on a checkpoint-audit bundle alias; no leaderboard trial was
+spent. V2 preserves the production rule/models/references, explicitly audits
+both checkpoints and exercises7 promotions/2 insertions on30 isolated real
+development fixtures. The preview12 are protected pipeline-library matches.
+It has NOT been submitted to the leaderboard. New80 scientific confirmation
+remains pending; execution qualification alone cannot authorize submission.
 
 P15 was accepted at12:01UTC after its real Kaggle smoke and independent audits,
 spending C08's single-trial authorization. C09 is separately authorized.

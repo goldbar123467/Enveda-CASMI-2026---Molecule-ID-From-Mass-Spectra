@@ -1,0 +1,27 @@
+{
+  "kind": "real_input_changed_path_smoke_fixtures",
+  "queries": 30,
+  "spectra": 113,
+  "query_truth_labels_included": false,
+  "source": "Previously used30 development queries and actual complete P01 predictions",
+  "files": {
+    "c09e_fixture_baseline.csv": "4e1078e2bb728f33a3cf90c70fc226308d944f71141b7ef70f5ecbbc8b40ede5",
+    "c09e_fixture_expected.csv": "3a6111921f4d44dc80f8a9ce433879fdbf1a3488617f068a2273c43084898258",
+    "c09e_fixture_expected_actions.csv": "31179476ad04d87a575862de5b40148b5fa4afe339f704849581857eb6a39257",
+    "c09e_fixture_expected_matches.parquet": "0947e2aa281b547c88715424461f46dadf024552d75089b70b1df686fd0db616",
+    "c09e_fixture_identities.parquet": "05c483713d71245d91ceb5d8d9a6c9a6b69e33485e6b4679eaca9818b8abda1c",
+    "c09e_fixture_library.csv": "991a9c4cd6de9a8e60842d17f684c717d520945e0112a40948d96b0dbf8999bf",
+    "c09e_fixture_queries.parquet": "ac3417f12b486ec627e08a36dc1d68acdd43bcd175c6028128976dad4dbfc6cc"
+  },
+  "reference_files": {
+    "ext_meta.parquet": "9b0c2d675612580a4aedbdd3c8891d046fdf864b0805aaef852acc6653f7d37f",
+    "ext_mz.npy": "a14f750d46bfca4176110d1a83cc3562944a3ca1e3f1344c94141f6d8d85fad5",
+    "ext_in.npy": "e47b359f27d0aacda22f7ef47f8f60f7912136027d70d2bc915890a8d51be841"
+  },
+  "expected_changed_rows": 7,
+  "expected_inserted_identities": 2,
+  "expected_promoted_existing_identities": 5,
+  "policy_sha256": "ea662270a895dc902cc9dd242afd7cd7f63e4a42ce3468474c6bff73d984043c",
+  "development_evidence_sha256": "ed753564e541a95a38e89ec39f7a1be481e5f55f5d58c888bb0f8d18d1117483",
+  "purpose": "Regression/execution path coverage only; no new coefficient choice or scientific evaluation"
+}

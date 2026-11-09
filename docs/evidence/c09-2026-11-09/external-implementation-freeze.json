@@ -16,8 +16,17 @@
     "ext_in.npy": "e47b359f27d0aacda22f7ef47f8f60f7912136027d70d2bc915890a8d51be841"
   },
   "development_evidence_sha256": "ed753564e541a95a38e89ec39f7a1be481e5f55f5d58c888bb0f8d18d1117483",
-  "notebook_sha256": "4bba11eb043130beee25de7f083d0a820c4611e311f3caf4fa097a4c684765d4",
+  "notebook_sha256": "d6b9c9625ad8fb7d503341c6fd702bd909101d719ca55e400145fb96f2b2af6a",
   "production_view": "all_reference",
   "sensitivity_view": "input_alias_excluded; never selected on confirmation",
-  "automatic_submission": false
+  "automatic_submission": false,
+  "smoke_recovery": {
+    "recorded_utc": "2026-11-09T23:00:02.392919+00:00",
+    "failed_v1_notebook_sha256": "4bba11eb043130beee25de7f083d0a820c4611e311f3caf4fa097a4c684765d4",
+    "v2_notebook_sha256": "d6b9c9625ad8fb7d503341c6fd702bd909101d719ca55e400145fb96f2b2af6a",
+    "original_production_source_files_unchanged": true,
+    "policy_reference_models_unchanged": true,
+    "changes": "Verify explicit PUB_BUNDLE and OURS_BUNDLE; add isolated real30-input changed-path smoke fixtures; no threshold/model/query selection change",
+    "fixture_contract_sha256": "828a4003299ffb475ef0d40c668afa4e87edddc83a37a8d835b5ddc21b4c9b61"
+  }
 }

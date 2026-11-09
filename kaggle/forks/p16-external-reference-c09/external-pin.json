@@ -1,6 +1,6 @@
 {
   "campaign": "C09E",
-  "notebook_sha256": "4bba11eb043130beee25de7f083d0a820c4611e311f3caf4fa097a4c684765d4",
+  "notebook_sha256": "d6b9c9625ad8fb7d503341c6fd702bd909101d719ca55e400145fb96f2b2af6a",
   "parent_P01_sha256": "6a3d037dbc40f9c6d73fcbb8c7a5d607ad044f67af3315950a240db26a0c25da",
   "policy_sha256": "ea662270a895dc902cc9dd242afd7cd7f63e4a42ce3468474c6bff73d984043c",
   "reference_files": {
@@ -12,9 +12,12 @@
     "apply_external_reference.py": "a65d0b63ba20b64f8efc49424a2513cc26f492b4148dc66d68bcc0a5ce62beca",
     "external_reference_overlay.py": "826a689fdcecc05436cd201219ac066ef2ebf557df22200ac807c6bb6c0681e5",
     "c09_spectrum_audit.py": "a4c42efdb41983406d71458eeb093af462bd1432ec774c6628d91861f1a042ac",
+    "reference_smoke_fixtures.py": "1cedf812a0fb55f22dc0e922664ab5d1bbe90bcf995f7c4f5bd7c847862bd017",
+    "reference_model_audit.py": "32f0c2eafa298be9095c86b2c20073f0e552ad3cabf7652b8d0dcc06dae4d5a8",
     "c09e_features.py": "a97ad9b3ab3711517864d56e497e1672cb29bb05683c72b52db9f9b0a17b1455"
   },
   "development_evidence_sha256": "ed753564e541a95a38e89ec39f7a1be481e5f55f5d58c888bb0f8d18d1117483",
+  "fixture_contract_sha256": "828a4003299ffb475ef0d40c668afa4e87edddc83a37a8d835b5ddc21b4c9b61",
   "automatic_submission": false,
   "scoring_submission": false,
   "mandatory_real_smoke": true,

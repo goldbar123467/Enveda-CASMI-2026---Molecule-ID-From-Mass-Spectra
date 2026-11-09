@@ -1,0 +1,29 @@
+{
+  "real_queries": 30,
+  "changed_rows": 7,
+  "inserted_identities": 2,
+  "promoted_existing_identities": 5,
+  "fixture_contract_sha256": "828a4003299ffb475ef0d40c668afa4e87edddc83a37a8d835b5ddc21b4c9b61",
+  "query_truth_labels_used": false,
+  "scoring_csv_modified": false,
+  "exact_expected_lists": true,
+  "local_cloud_peak_score_max_abs_difference": 0.0,
+  "official_identity_duplicates": 0,
+  "invalid_structure_fallback_passed": true,
+  "actions": {
+    "same_identity_as_current_leader": 17,
+    "no_qualifying_match": 6,
+    "promoted_existing_identity": 5,
+    "inserted_external_identity": 2
+  },
+  "search": {
+    "queries": 30,
+    "spectra": 113,
+    "reference_rows": 200724,
+    "precursor_candidate_rows": 353,
+    "query_reference_comparisons": 424,
+    "query_input_alias_reference_rows": 0,
+    "query_labels_used": false,
+    "limitation": "Rounded full peaks and FP16top96 signatures only; not universal acquisition/provenance exclusion"
+  }
+}

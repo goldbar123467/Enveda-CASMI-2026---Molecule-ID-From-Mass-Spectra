@@ -63,4 +63,7 @@ scripts/audit_external_reference_smoke.py text eol=lf
 scripts/finish_c09_external.py text eol=lf
 scripts/submit_c09_external_once.py text eol=lf
 scripts/c09_leaderboard.py text eol=lf
+scripts/prepare_external_smoke_fixtures.py text eol=lf
+scripts/reference_smoke_fixtures.py text eol=lf
+scripts/reference_model_audit.py text eol=lf
 docs/evidence/c09-2026-11-09/finisher-v1-source.txt text eol=lf

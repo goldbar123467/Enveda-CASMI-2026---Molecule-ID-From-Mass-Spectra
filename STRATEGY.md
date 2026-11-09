@@ -19,8 +19,16 @@ On the previously used30 development queries, fixed thresholds improve MRR
 This is promising direct-library development evidence, not a hidden gain claim;
 record-level acquisition/source attribution is unavailable in served metadata.
 Policy froze22:17UTC and implementation22:28UTC before new80 metrics were read.
-P16 private realKaggle smoke is RUNNING; original80 confirmation and independent
-execution/identity/fallback/local-cloud parity audits remain required. No new
+P16 v2 private realKaggle smoke is COMPLETE and independently audited. V1 failed
+on a public-checkpoint bundle alias assertion after P01; recovery changes only
+the explicit model audit and isolated smoke-fixture coverage. The production
+rule/models/references remain fixed. All400 rows are valid and both P01 models
+support12 real preview queries. Those12 library-protected queries pass through;
+30 separate real development fixtures exercise7 promotions/2 insertions with
+independent score parity1.11e-16 andzero metric duplicates. Input precision in
+the independent audit follows the serving parser's float32 values. Original80
+confirmation remains required and is RUNNING at23:25UTC, after metric-identity
+fusion completed127.7 minutes into the run. No new
 submission has been sent. The hourly worker remains active for24 occurrences.
 
 P15 returned COMPLETE public **0.479**, no error, verified21:06UTC. P01/P13

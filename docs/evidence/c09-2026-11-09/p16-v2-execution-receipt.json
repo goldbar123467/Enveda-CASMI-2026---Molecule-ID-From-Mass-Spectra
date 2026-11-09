@@ -1,0 +1,104 @@
+{
+  "kind": "P01_plus_fixed_external_reference",
+  "policy_sha256": "ea662270a895dc902cc9dd242afd7cd7f63e4a42ce3468474c6bff73d984043c",
+  "contract_sha256": "354db801fe158aeb1783e2b09eb53cfacd167b973212ae2c86a85407560c4f6c",
+  "reference_files": {
+    "ext_meta.parquet": "9b0c2d675612580a4aedbdd3c8891d046fdf864b0805aaef852acc6653f7d37f",
+    "ext_mz.npy": "a14f750d46bfca4176110d1a83cc3562944a3ca1e3f1344c94141f6d8d85fad5",
+    "ext_in.npy": "e47b359f27d0aacda22f7ef47f8f60f7912136027d70d2bc915890a8d51be841"
+  },
+  "source_files": {
+    "apply_external_reference.py": "a65d0b63ba20b64f8efc49424a2513cc26f492b4148dc66d68bcc0a5ce62beca",
+    "external_reference_overlay.py": "826a689fdcecc05436cd201219ac066ef2ebf557df22200ac807c6bb6c0681e5",
+    "c09_spectrum_audit.py": "a4c42efdb41983406d71458eeb093af462bd1432ec774c6628d91861f1a042ac",
+    "reference_smoke_fixtures.py": "1cedf812a0fb55f22dc0e922664ab5d1bbe90bcf995f7c4f5bd7c847862bd017",
+    "reference_model_audit.py": "32f0c2eafa298be9095c86b2c20073f0e552ad3cabf7652b8d0dcc06dae4d5a8",
+    "c09e_features.py": "a97ad9b3ab3711517864d56e497e1672cb29bb05683c72b52db9f9b0a17b1455"
+  },
+  "baseline_sha256": "5cb2f1ad75c64791fa63cbfabb7e70e29948e05d8cc3987de79d7e137cdc20b9",
+  "query_sha256": "5464f6862f8931423bffcb705333cd9af9f713852a6c8c6d1b129bd2132862fb",
+  "csv_sha256": "5cb2f1ad75c64791fa63cbfabb7e70e29948e05d8cc3987de79d7e137cdc20b9",
+  "official_rdkit": "2026.03.3",
+  "valid_rows": 400,
+  "search": {
+    "queries": 12,
+    "spectra": 41,
+    "reference_rows": 200724,
+    "precursor_candidate_rows": 326,
+    "query_reference_comparisons": 677,
+    "query_input_alias_reference_rows": 0,
+    "query_labels_used": false,
+    "limitation": "Rounded full peaks and FP16top96 signatures only; not universal acquisition/provenance exclusion"
+  },
+  "actions": {
+    "no_qualifying_match": 388,
+    "protected_pipeline_library": 12
+  },
+  "changed_rows": 0,
+  "invalid_external_structures": 0,
+  "official_identity_duplicates": 0,
+  "required_stage_completed": true,
+  "development_evidence_sha256": "ed753564e541a95a38e89ec39f7a1be481e5f55f5d58c888bb0f8d18d1117483",
+  "scoring_submission": false,
+  "pipeline": {
+    "source_sha256": "ca3c3f382eca90ac7ba2e0bbb76753f4a1d92b8c630a726ac28610727a8da6ab",
+    "mode": "submission",
+    "source_adaptations": [],
+    "candidate_promotion_fix": true,
+    "is_full_run": false,
+    "processed_molecules": 12
+  },
+  "merge_status": "applied",
+  "is_hidden_rerun": false,
+  "devices": [
+    {
+      "index": 0,
+      "name": "Tesla T4",
+      "vram_gib": 14.56219482421875
+    },
+    {
+      "index": 1,
+      "name": "Tesla T4",
+      "vram_gib": 14.56219482421875
+    }
+  ],
+  "baseline_model_source_audit": {
+    "public_files": {
+      "features.py": "a97ad9b3ab3711517864d56e497e1672cb29bb05683c72b52db9f9b0a17b1455",
+      "model.py": "2547418857386d1c2513fd1ab6c70961e6a96e73d9d495bbfe3052197e69dc39",
+      "config.json": "563fb2a2a81ca48ea094f9ab78c157a48a6e9a5503e85e6ce8f0fb3615c1cc03",
+      "final_model.pt": "44436b2daec64373e66f9120dd2389c24fc83dd9430ebeeac18e3cb49dcb9642"
+    },
+    "second_checkpoint_sha256": "c08d2101154d057890de088be63834eb622468892a3b842512fdc5a65e02ff46",
+    "second_shares_public_architecture_features_config": true
+  },
+  "changed_path_fixture": {
+    "real_queries": 30,
+    "changed_rows": 7,
+    "inserted_identities": 2,
+    "promoted_existing_identities": 5,
+    "fixture_contract_sha256": "828a4003299ffb475ef0d40c668afa4e87edddc83a37a8d835b5ddc21b4c9b61",
+    "query_truth_labels_used": false,
+    "scoring_csv_modified": false,
+    "exact_expected_lists": true,
+    "local_cloud_peak_score_max_abs_difference": 1.1102230246251565e-16,
+    "official_identity_duplicates": 0,
+    "invalid_structure_fallback_passed": true,
+    "actions": {
+      "same_identity_as_current_leader": 17,
+      "no_qualifying_match": 6,
+      "promoted_existing_identity": 5,
+      "inserted_external_identity": 2
+    },
+    "search": {
+      "queries": 30,
+      "spectra": 113,
+      "reference_rows": 200724,
+      "precursor_candidate_rows": 353,
+      "query_reference_comparisons": 424,
+      "query_input_alias_reference_rows": 0,
+      "query_labels_used": false,
+      "limitation": "Rounded full peaks and FP16top96 signatures only; not universal acquisition/provenance exclusion"
+    }
+  }
+}

@@ -33,8 +33,11 @@ def verify_review(qualification, audit, confirmation, pin):
     assert qualification['decision'] == 'qualified_sequential_trial'
     assert qualification['marker'] == MARKER and qualification['maximum_pending'] == 1
     assert qualification['champion_retained'] == .480
-    assert audit['execution_qualified'] and audit['changed_path_exercised'] and audit['changed_rows'] > 0
+    assert audit['execution_qualified'] and audit['changed_path_exercised']
+    assert audit['fixture_real_queries'] == 30 and audit['fixture_changed_rows'] == 7 and audit['fixture_inserted_identities'] == 2
+    assert audit['fixture_local_cloud_peak_score_max_abs_difference'] < 1e-12 and audit['invalid_structure_fallback_passed']
     assert audit['valid_rows'] == 400 and audit['real_queries'] == 12 and audit['official_identity_duplicates'] == 0
+    assert audit['real_queries_supported_by_both_P01_models'] == 12
     assert audit['exact_independent_merge'] and audit['independent_one_to_one_peak_assignment']
     assert audit['local_cloud_peak_score_max_abs_difference'] < 1e-12 and audit['unchanged_P01_primary_error'] < 1e-6
     assert audit['source_files'] == pin['source_files'] and audit['reference_files'] == pin['reference_files']
@@ -54,10 +57,12 @@ def verify_review(qualification, audit, confirmation, pin):
 
 
 def main():
+    global SMOKE
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--version', type=int, required=True)
     parser.add_argument('--dry-run', action='store_true')
     args = parser.parse_args()
+    SMOKE = ROOT / f'outputs/forks/p16-external-reference-c09-v{args.version}'
     assert not (ROOT / '.local/compute-paused.json').exists(), 'Project paused'
     import msvcrt
     lock = (ROOT / '.local/c09-submission.lock').open('a+b'); lock.write(b'0'); lock.flush(); lock.seek(0)
@@ -66,17 +71,19 @@ def main():
     qualification = json.loads(qpath.read_text())
     for name, expected in qualification['artifact_sha256'].items():
         assert sha(ROOT / name) == expected, name
-    required = ['outputs/forks/p16-external-reference-c09-v1/independent_external_smoke_audit.json',
+    required = [f'outputs/forks/p16-external-reference-c09-v{args.version}/independent_external_smoke_audit.json',
                 'outputs/local/c09-external-reference-20261109/confirmation.json',
                 'outputs/local/c09-external-reference-20261109/development.json',
                 'outputs/local/c09-external-reference-20261109/implementation-freeze.json',
                 'outputs/local/c09-followup-evaluation-20261109/confirmation.json',
-                'kaggle/forks/p16-external-reference-c09/notebook.ipynb']
+                'kaggle/forks/p16-external-reference-c09/notebook.ipynb',
+                'scripts/audit_external_reference_smoke.py', 'scripts/submit_c09_external_once.py']
     assert set(required) <= set(qualification['artifact_sha256']), 'Review omitted required evidence'
     pin = json.loads((ROOT / 'kaggle/forks/p16-external-reference-c09/external-pin.json').read_text())
     audit = json.loads((SMOKE / 'independent_external_smoke_audit.json').read_text())
     confirmation = json.loads((OUT / 'confirmation.json').read_text())
     verify_review(qualification, audit, confirmation, pin)
+    assert audit['independent_audit_source_sha256'] == sha(ROOT / 'scripts/audit_external_reference_smoke.py')
     assert sha(SMOKE / 'submission.csv') == audit['csv_sha256']
     notebook_path = ROOT / 'kaggle/forks/p16-external-reference-c09/notebook.ipynb'
     assert sha(notebook_path) == pin['notebook_sha256']

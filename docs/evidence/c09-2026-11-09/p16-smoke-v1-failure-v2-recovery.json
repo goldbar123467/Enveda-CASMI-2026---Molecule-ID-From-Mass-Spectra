@@ -1,0 +1,21 @@
+{
+  "recorded_utc": "2026-11-09T23:13:08.820208+00:00",
+  "failed_version": 1,
+  "error": "AssertionError: final_model.pt; public model pin was checked against mutable BUNDLE after it pointed to the second scorer",
+  "failed_runtime_seconds": 1247.7,
+  "p01_completed_before_failure": true,
+  "leaderboard_submitted": false,
+  "recovery_version": 2,
+  "notebook_sha256": "d6b9c9625ad8fb7d503341c6fd702bd909101d719ca55e400145fb96f2b2af6a",
+  "production_policy_sha256": "ea662270a895dc902cc9dd242afd7cd7f63e4a42ce3468474c6bff73d984043c",
+  "unchanged_production_rule_models_and_reference_data": true,
+  "extra_smoke_inputs": "30 previously used real development queries/113 spectra, predicted baseline lists and algorithmic identities; no query truth labels; isolated from scoring CSV",
+  "local_fixture_changed_rows": 7,
+  "local_fixture_inserted_identities": 2,
+  "independent_real_fixture_score_error": 0.0,
+  "local_preview_valid_rows": 400,
+  "local_preview_queries": 12,
+  "local_preview_protected_queries": 12,
+  "local_preview_unsupported_passthrough_rows": 388,
+  "serving_input_precision": "float32 parser values, then float64 spectral matching; independent audit corrected to match input representation, production rule unchanged"
+}

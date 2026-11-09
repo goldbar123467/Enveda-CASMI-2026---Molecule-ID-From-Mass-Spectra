@@ -21,7 +21,8 @@
     "dmitriigluzdov/casmi26-attributed-v4g-reproduction-assets",
     "sanpier/catalogue-experiment-saner",
     "metric/rdkit-2026-3-3-wheel",
-    "takumuhata/casmi26-extlib"
+    "takumuhata/casmi26-extlib",
+    "clarkkitchen/casmi26-c09e-smoke-fixtures-20261109"
   ],
   "kernel_sources": [
     "alexchilton/casmi26-scorer-train-v80"
