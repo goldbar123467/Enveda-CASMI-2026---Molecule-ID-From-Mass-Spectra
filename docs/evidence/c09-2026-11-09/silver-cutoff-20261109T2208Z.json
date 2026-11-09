@@ -1,0 +1,26 @@
+{
+  "teams": 5034,
+  "nominal_silver_top_percent": 5,
+  "nominal_silver_cutoff_rank": 251,
+  "cutoff_row": {
+    "Rank": "251",
+    "TeamId": "16897465",
+    "TeamName": "Yusuraume",
+    "LastSubmissionDate": "2026-11-09 05:13:37",
+    "Score": "0.482",
+    "SubmissionCount": "88",
+    "TeamMemberUserNames": "sugitatomohiko"
+  },
+  "ours": [
+    {
+      "Rank": "907",
+      "TeamId": "16893680",
+      "TeamName": "Clark Kitchen",
+      "LastSubmissionDate": "2026-11-09 12:01:21",
+      "Score": "0.480",
+      "SubmissionCount": "32",
+      "TeamMemberUserNames": "clarkkitchen"
+    }
+  ],
+  "score_0480_teams": 322
+}

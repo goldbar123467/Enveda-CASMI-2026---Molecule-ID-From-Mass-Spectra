@@ -1,0 +1,1632 @@
+{
+  "checked_utc": "2026-11-09T22:10:52.683071+00:00",
+  "kernels": [
+    {
+      "ref": "ozertuu/0-485-sota-casmi26-from-peaks-to-structures",
+      "title": "\ud83c\udfc6 [0.485+ SOTA] CASMI26: From Peaks to Structures",
+      "author": "Ertu\u011frul \u00d6zer",
+      "lastRunTime": "2026-11-09T21:57:21.067Z",
+      "totalVotes": 41
+    },
+    {
+      "ref": "johnnykhan1/enveda-the-0481-wall",
+      "title": "enveda-the-0481-wall",
+      "author": "John K",
+      "lastRunTime": "2026-11-09T21:29:14.253Z"
+    },
+    {
+      "ref": "gedouluhui/casmi26-0486-fork-h1",
+      "title": "casmi26-0486-fork-h1",
+      "author": "gedouluhui",
+      "lastRunTime": "2026-11-09T21:05:57.180Z"
+    },
+    {
+      "ref": "evgendvorkin/spectra-to-structures-deep-eda-molecular-clues",
+      "title": "\ud83e\uddecSpectra to Structures Deep EDA & Molecular Clues",
+      "author": "\u0414\u0432\u043e\u0440\u043a\u0438\u043d \u0415\u0432\u0433\u0435\u043d\u0438\u0439 \u0412\u043b\u0430\u0434\u0438\u043c\u0438\u0440\u043e\u0432\u0438\u0447",
+      "lastRunTime": "2026-11-09T20:39:13.867Z",
+      "totalVotes": 1
+    },
+    {
+      "ref": "pablodiegoo/enveda-casmi26-starter-notebook",
+      "title": "Enveda CASMI26 Starter Notebook",
+      "author": "Pablo Diego Pereira",
+      "lastRunTime": "2026-11-09T20:15:55.207Z",
+      "totalVotes": 14
+    },
+    {
+      "ref": "zz3t3rn41/casmi26-peaks-to-structures-v2",
+      "title": "casmi26-peaks-to-structures-v2",
+      "author": "zz3t3rn41",
+      "lastRunTime": "2026-11-09T19:25:36.317Z",
+      "totalVotes": 97
+    },
+    {
+      "ref": "hananfish/casmi26-0486-repro-h1",
+      "title": "casmi26 0486 repro h1",
+      "author": "HananFish",
+      "lastRunTime": "2026-11-09T19:23:50.627Z"
+    },
+    {
+      "ref": "easonyanyan/casmi26-v51-alex0484-extlib-fork",
+      "title": "CASMI26 V51 alex0484 extlib fork",
+      "author": "easonyanyan",
+      "lastRunTime": "2026-11-09T17:18:36.370Z"
+    },
+    {
+      "ref": "mohitnehete2005/casmi26-apex-500-sota-dual-neural-dual-mode",
+      "title": "CASMI26 Apex 500 SOTA Dual Neural Dual Mode",
+      "author": "JuniorParadox",
+      "lastRunTime": "2026-11-09T14:44:19.893Z"
+    },
+    {
+      "ref": "adityaraj0612/casmi26-exp302-exact-spectrum-lookup",
+      "title": "casmi26 exp302 exact spectrum lookup",
+      "author": "ADITYA RAJ",
+      "lastRunTime": "2026-11-09T14:30:32.097Z"
+    },
+    {
+      "ref": "rogersjohnson/casmi26-zz3v2-1109",
+      "title": "casmi26 zz3v2 1109",
+      "author": "Rogers Johnson",
+      "lastRunTime": "2026-11-09T11:08:35.240Z",
+      "totalVotes": 7
+    },
+    {
+      "ref": "rogersjohnson/casmi26-alex0484-extlib",
+      "title": "casmi26 alex0484 extlib",
+      "author": "Rogers Johnson",
+      "lastRunTime": "2026-11-09T11:08:28.040Z"
+    },
+    {
+      "ref": "rajrajak99/casmi26-apex-v2210-extlib-sota-485",
+      "title": "CASMI26 Apex v2210 ExtLib SOTA 485",
+      "author": "Raja Rajak",
+      "lastRunTime": "2026-11-09T10:12:50.070Z"
+    },
+    {
+      "ref": "rajrajak99/casmi26-apex-v2215-extlib-sota-485",
+      "title": "CASMI26 Apex v2215 ExtLib SOTA 485",
+      "author": "Raja Rajak",
+      "lastRunTime": "2026-11-09T09:25:56.380Z",
+      "totalVotes": 1
+    },
+    {
+      "ref": "rajrajak99/casmi26-apex-v2240-deep-extlib-v5-487",
+      "title": "CASMI26 Apex v2240 Deep ExtLib v5 487",
+      "author": "Raja Rajak",
+      "lastRunTime": "2026-11-09T09:16:49.353Z",
+      "totalVotes": 1
+    },
+    {
+      "ref": "rajrajak99/casmi26-apex-v2230-extlib-calibrated-485",
+      "title": "CASMI26 Apex v2230 ExtLib Calibrated 485",
+      "author": "Raja Rajak",
+      "lastRunTime": "2026-11-09T09:14:59.610Z",
+      "totalVotes": 1
+    },
+    {
+      "ref": "rajrajak99/casmi26-apex-v2220-sovereign-zenith-486",
+      "title": "CASMI26 Apex v2220 Sovereign Zenith 486",
+      "author": "Raja Rajak",
+      "lastRunTime": "2026-11-09T09:13:23.660Z",
+      "totalVotes": 1
+    },
+    {
+      "ref": "rajrajak99/casmi26-apex-v2200-extlib-sota-484",
+      "title": "CASMI26 Apex v2200 ExtLib SOTA 484",
+      "author": "Raja Rajak",
+      "lastRunTime": "2026-11-09T09:02:09.600Z",
+      "totalVotes": 1
+    },
+    {
+      "ref": "kevindesuwa/notebook7fcee8f338",
+      "title": "notebook7fcee8f338",
+      "author": "kevin",
+      "lastRunTime": "2026-11-09T08:28:57.713Z"
+    },
+    {
+      "ref": "takumuhata/casmi26-codex-sp479mid08",
+      "title": "casmi26-codex-sp479mid08",
+      "author": "Takumu Hata",
+      "lastRunTime": "2026-11-09T07:47:47.187Z",
+      "totalVotes": 1
+    },
+    {
+      "ref": "adityaraj0612/casmi26-exp301-waterloss-adducts",
+      "title": "casmi26 exp301 waterloss adducts",
+      "author": "ADITYA RAJ",
+      "lastRunTime": "2026-11-09T06:51:16.183Z"
+    },
+    {
+      "ref": "youyouwou/casmi26-v160tau80",
+      "title": "casmi26-v160tau80",
+      "author": "youyouwou",
+      "lastRunTime": "2026-11-09T06:50:06.627Z",
+      "totalVotes": 16
+    },
+    {
+      "ref": "adityaraj0612/casmi26-exp300-audit-fix",
+      "title": "casmi26 exp300 audit fix",
+      "author": "ADITYA RAJ",
+      "lastRunTime": "2026-11-09T06:04:52.627Z"
+    },
+    {
+      "ref": "guhongbin/casmi26-v589-alex0484-extlib",
+      "title": "casmi26 v589 alex0484 extlib",
+      "author": "Hongbin Gu",
+      "lastRunTime": "2026-11-09T05:44:59.400Z",
+      "totalVotes": 57
+    },
+    {
+      "ref": "matterhorn3838/evenda-casmi-2026-nextgen",
+      "title": "Evenda CASMI 2026 NextGen",
+      "author": "Matterhorn3838",
+      "lastRunTime": "2026-11-09T05:39:49.023Z",
+      "totalVotes": 9
+    },
+    {
+      "ref": "youyouwou/casmi26-v131diag400",
+      "title": "casmi26-v131diag400",
+      "author": "youyouwou",
+      "lastRunTime": "2026-11-09T05:26:21.197Z",
+      "totalVotes": 3
+    },
+    {
+      "ref": "alexchilton/casmi26-lb-0-484-peaks-to-structures-extlib",
+      "title": "CASMI26 LB 0.484 | Peaks to Structures + ExtLib",
+      "author": "alex chilton",
+      "lastRunTime": "2026-11-09T04:47:02.097Z",
+      "totalVotes": 202
+    },
+    {
+      "ref": "youyouwou/casmi26-v159extlib479",
+      "title": "casmi26-v159extlib479",
+      "author": "youyouwou",
+      "lastRunTime": "2026-11-09T04:07:19.000Z"
+    },
+    {
+      "ref": "liuzewen123/casmi26-0482-v2weights",
+      "title": "casmi26-0482-v2weights",
+      "author": "liuzewen123",
+      "lastRunTime": "2026-11-09T02:50:40.747Z"
+    },
+    {
+      "ref": "heliosli/casmi26-0-486",
+      "title": "casmi26-0.486",
+      "author": "Heliosli",
+      "lastRunTime": "2026-11-09T02:31:45.367Z",
+      "totalVotes": 99
+    },
+    {
+      "ref": "takumuhata/casmi26-codex-sp479mid05",
+      "title": "casmi26-codex-sp479mid05",
+      "author": "Takumu Hata",
+      "lastRunTime": "2026-11-09T02:17:55.367Z"
+    },
+    {
+      "ref": "duongynhi/enveda-casmi26-gold-apex",
+      "title": "Enveda CASMI26 Gold Apex",
+      "author": "Duong Y Nhi",
+      "lastRunTime": "2026-11-09T01:32:28.263Z",
+      "totalVotes": 30
+    },
+    {
+      "ref": "youyouwou/casmi26-v154electrflat",
+      "title": "casmi26-v154electrflat",
+      "author": "youyouwou",
+      "lastRunTime": "2026-11-09T00:46:13.913Z"
+    },
+    {
+      "ref": "guhongbin/casmi26-v587-prvmass",
+      "title": "casmi26 v587 prvmass",
+      "author": "Hongbin Gu",
+      "lastRunTime": "2026-11-09T00:45:47.900Z"
+    },
+    {
+      "ref": "guhongbin/casmi26-v586-eason50rr",
+      "title": "casmi26 v586 eason50rr",
+      "author": "Hongbin Gu",
+      "lastRunTime": "2026-11-09T00:43:23.297Z"
+    },
+    {
+      "ref": "youyouwou/casmi26-v153electr",
+      "title": "casmi26-v153electr",
+      "author": "youyouwou",
+      "lastRunTime": "2026-11-09T00:22:40.987Z"
+    },
+    {
+      "ref": "youyouwou/casmi26-v152massmode",
+      "title": "casmi26-v152massmode",
+      "author": "youyouwou",
+      "lastRunTime": "2026-11-09T00:15:08.370Z"
+    },
+    {
+      "ref": "chyibo/enveda-casmi-0486-fork",
+      "title": "Enveda CASMI 0486 Fork",
+      "author": "chen yibo",
+      "lastRunTime": "2026-11-08T23:40:58.807Z",
+      "totalVotes": 2
+    },
+    {
+      "ref": "chyibo/enveda-casmi-0485-fork",
+      "title": "Enveda CASMI 0485 Fork",
+      "author": "chen yibo",
+      "lastRunTime": "2026-11-08T23:35:38.513Z"
+    },
+    {
+      "ref": "rushikeshpundkar/notebook9ef1cf0c62",
+      "title": "notebook9ef1cf0c62",
+      "author": "Rushikesh Pundkar",
+      "lastRunTime": "2026-11-08T23:28:19.893Z"
+    },
+    {
+      "ref": "takumuhata/casmi26-codex-sp479sp10",
+      "title": "casmi26-codex-sp479sp10",
+      "author": "Takumu Hata",
+      "lastRunTime": "2026-11-08T21:10:59.607Z"
+    },
+    {
+      "ref": "ozertuu/casmi26-apex-gold-486",
+      "title": "casmi26-apex-gold-486",
+      "author": "Ertu\u011frul \u00d6zer",
+      "lastRunTime": "2026-11-08T21:03:06.963Z"
+    },
+    {
+      "ref": "roshanrobinc/casmi26-sovereignzenith-v32-apex-0-486-sota",
+      "title": "CASMI26 SovereignZenith V32 Apex 0.486+ SOTA",
+      "author": "roshan robin",
+      "lastRunTime": "2026-11-08T19:53:53.253Z",
+      "totalVotes": 3
+    },
+    {
+      "ref": "theomainetucker/casmi-2026-flagship-hybrid-sota",
+      "title": "CASMI 2026 Flagship Hybrid SOTA",
+      "author": "Theo Maine-Tucker",
+      "lastRunTime": "2026-11-08T19:41:43.883Z"
+    },
+    {
+      "ref": "adityaraj0612/casmi26-exp298-enveda180",
+      "title": "casmi26 exp298 enveda180",
+      "author": "ADITYA RAJ",
+      "lastRunTime": "2026-11-08T19:40:04.237Z"
+    },
+    {
+      "ref": "ndaedzomukhuba/enveda-apex-0500",
+      "title": "enveda-apex-0500",
+      "author": "NDAEDZO MUKHUBA",
+      "lastRunTime": "2026-11-08T18:04:58.260Z"
+    },
+    {
+      "ref": "adityaraj0612/casmi26-exp297-extlib-recall",
+      "title": "casmi26 exp297 extlib recall",
+      "author": "ADITYA RAJ",
+      "lastRunTime": "2026-11-08T17:34:51.507Z"
+    },
+    {
+      "ref": "adityaraj0612/casmi26-exp296-provenance-reranker",
+      "title": "casmi26 exp296 provenance reranker",
+      "author": "ADITYA RAJ",
+      "lastRunTime": "2026-11-08T17:00:49.587Z"
+    },
+    {
+      "ref": "lucifer19/ionwraith-v11-evidence-guided-molecule-id",
+      "title": "\ud83d\udc08\u200d\u2b1b\ud83e\uddea IONWRAITH v11 | Evidence-Guided Molecule ID",
+      "author": "Agent Trainer",
+      "lastRunTime": "2026-11-08T16:25:30.783Z",
+      "totalVotes": 8
+    },
+    {
+      "ref": "takumuhata/casmi26-codex-sp479np10",
+      "title": "casmi26-codex-sp479np10",
+      "author": "Takumu Hata",
+      "lastRunTime": "2026-11-08T16:03:30.970Z"
+    },
+    {
+      "ref": "adityaraj0612/casmi26-exp295-fragment-rank1-challenger",
+      "title": "casmi26 exp295 fragment rank1 challenger",
+      "author": "ADITYA RAJ",
+      "lastRunTime": "2026-11-08T16:00:27.850Z"
+    },
+    {
+      "ref": "stardjyeah/casmi26-v10-pubchem-standalone",
+      "title": "casmi26 v10 pubchem standalone",
+      "author": "Yinghui Jiang",
+      "lastRunTime": "2026-11-08T15:59:22.250Z"
+    },
+    {
+      "ref": "stardjyeah/casmi26-pool-probe",
+      "title": "casmi26 pool probe",
+      "author": "Yinghui Jiang",
+      "lastRunTime": "2026-11-08T15:56:27.770Z"
+    },
+    {
+      "ref": "takumuhata/casmi26-codex-sp482gold",
+      "title": "casmi26-codex-sp482gold",
+      "author": "Takumu Hata",
+      "lastRunTime": "2026-11-08T15:24:01.950Z",
+      "totalVotes": 1
+    },
+    {
+      "ref": "adityaraj0612/casmi26-exp294-conservative-rank1-unlock",
+      "title": "casmi26 exp294 conservative rank1 unlock",
+      "author": "ADITYA RAJ",
+      "lastRunTime": "2026-11-08T15:15:11.003Z"
+    },
+    {
+      "ref": "adityaraj0612/casmi26-exp293-foodb-mass-fallback",
+      "title": "casmi26 exp293 foodb mass fallback",
+      "author": "ADITYA RAJ",
+      "lastRunTime": "2026-11-08T14:33:09.013Z"
+    },
+    {
+      "ref": "adityaraj0612/casmi26-exp292-foodb-mass-alias",
+      "title": "casmi26 exp292 foodb mass alias",
+      "author": "ADITYA RAJ",
+      "lastRunTime": "2026-11-08T14:04:33.550Z"
+    },
+    {
+      "ref": "adityaraj0612/casmi26-exp291-foodb-column-fix",
+      "title": "casmi26 exp291 foodb column fix",
+      "author": "ADITYA RAJ",
+      "lastRunTime": "2026-11-08T13:16:00.070Z"
+    },
+    {
+      "ref": "anatoliyf/casmi26-closing-the-evidence-gap",
+      "title": "CASMI26: Closing the Evidence Gap",
+      "author": "AnatoliyF",
+      "lastRunTime": "2026-11-08T13:11:29.413Z"
+    },
+    {
+      "ref": "adityaraj0612/casmi26-exp290-conservative-recovery",
+      "title": "casmi26 exp290 conservative recovery",
+      "author": "ADITYA RAJ",
+      "lastRunTime": "2026-11-08T12:43:16.903Z"
+    },
+    {
+      "ref": "cheek2005/casmi26-scorer-train-hn",
+      "title": "CASMI26 scorer train hn",
+      "author": "cheek2005",
+      "lastRunTime": "2026-11-08T12:28:14.627Z"
+    },
+    {
+      "ref": "youyouwou/casmi26-v149rrfreeall",
+      "title": "casmi26-v149rrfreeall",
+      "author": "youyouwou",
+      "lastRunTime": "2026-11-08T12:28:14.053Z"
+    },
+    {
+      "ref": "mohitnehete2005/casmi26-apex-dual-neural-extlib-rank1-sota",
+      "title": "CASMI26 Apex | Dual Neural + ExtLib Rank1 SOTA",
+      "author": "JuniorParadox",
+      "lastRunTime": "2026-11-08T12:13:08.493Z"
+    },
+    {
+      "ref": "liuzewen123/casmi26-0500-quad-v1",
+      "title": "casmi26-0500-quad-v1",
+      "author": "liuzewen123",
+      "lastRunTime": "2026-11-08T11:51:03.533Z"
+    },
+    {
+      "ref": "mohitnehete2005/casmi26-lb-0-482-gold-apex-v22-mass-prior",
+      "title": "CASMI26 LB 0.482 | Gold Apex V22 Mass Prior",
+      "author": "JuniorParadox",
+      "lastRunTime": "2026-11-08T11:41:46.137Z"
+    },
+    {
+      "ref": "youyouwou/casmi26-v145lotus479",
+      "title": "casmi26-v145lotus479",
+      "author": "youyouwou",
+      "lastRunTime": "2026-11-08T10:54:30.177Z"
+    },
+    {
+      "ref": "youyouwou/casmi26-v144rralpha3",
+      "title": "casmi26-v144rralpha3",
+      "author": "youyouwou",
+      "lastRunTime": "2026-11-08T09:49:41.953Z",
+      "totalVotes": 2
+    },
+    {
+      "ref": "zkheart/casmi26-full-pipeline-v1",
+      "title": "CASMI26 Full Pipeline V1",
+      "author": "zkheart",
+      "lastRunTime": "2026-11-08T09:36:06.583Z"
+    },
+    {
+      "ref": "chuanyuchangbio/casmi26-public-0482-20261108",
+      "title": "CASMI26 Public 0482 20261108",
+      "author": "chuanyu chang bio",
+      "lastRunTime": "2026-11-08T09:17:08.820Z",
+      "totalVotes": 2
+    },
+    {
+      "ref": "chuanyuchangbio/casmi26-public-0481-20261108",
+      "title": "CASMI26 Public 0481 20261108",
+      "author": "chuanyu chang bio",
+      "lastRunTime": "2026-11-08T09:01:21.493Z",
+      "totalVotes": 2
+    },
+    {
+      "ref": "youyouwou/casmi26-v142rr0482",
+      "title": "casmi26-v142rr0482",
+      "author": "youyouwou",
+      "lastRunTime": "2026-11-08T08:51:29.707Z",
+      "totalVotes": 2
+    },
+    {
+      "ref": "stardjyeah/casmi26-v9-pubchem",
+      "title": "casmi26 v9 pubchem",
+      "author": "Yinghui Jiang",
+      "lastRunTime": "2026-11-08T08:21:23.443Z",
+      "totalVotes": 3
+    },
+    {
+      "ref": "stardjyeah/casmi26-e3-gated",
+      "title": "casmi26 e3 gated",
+      "author": "Yinghui Jiang",
+      "lastRunTime": "2026-11-08T07:11:12.810Z",
+      "totalVotes": 3
+    },
+    {
+      "ref": "stardjyeah/casmi26-v9-pubchem-pool",
+      "title": "casmi26 v9 pubchem pool",
+      "author": "Yinghui Jiang",
+      "lastRunTime": "2026-11-08T06:47:00.870Z",
+      "totalVotes": 1
+    },
+    {
+      "ref": "stardjyeah/casmi26-e3-gated-extlib",
+      "title": "casmi26 e3 gated extlib",
+      "author": "Yinghui Jiang",
+      "lastRunTime": "2026-11-08T06:39:42.533Z",
+      "totalVotes": 1
+    },
+    {
+      "ref": "liuzewen123/casmi26-0481-repro-v1",
+      "title": "casmi26-0481-repro-v1",
+      "author": "liuzewen123",
+      "lastRunTime": "2026-11-08T06:05:14.900Z",
+      "totalVotes": 5
+    },
+    {
+      "ref": "rogersjohnson/casmi26-zz3v2-fork",
+      "title": "casmi26 zz3v2 fork",
+      "author": "Rogers Johnson",
+      "lastRunTime": "2026-11-08T05:39:57.907Z"
+    },
+    {
+      "ref": "rogersjohnson/casmi26-2scorer-arm",
+      "title": "casmi26 2scorer arm",
+      "author": "Rogers Johnson",
+      "lastRunTime": "2026-11-08T05:39:50.557Z"
+    },
+    {
+      "ref": "guhongbin/casmi26-v585-duongnhiapex",
+      "title": "casmi26 v585 duongnhiapex",
+      "author": "Hongbin Gu",
+      "lastRunTime": "2026-11-08T05:36:41.530Z"
+    },
+    {
+      "ref": "guhongbin/casmi26-v584-v32clone",
+      "title": "casmi26 v584 v32clone",
+      "author": "Hongbin Gu",
+      "lastRunTime": "2026-11-08T05:36:30.410Z"
+    },
+    {
+      "ref": "shikhageekachad/casmi26-keep-public-gold-apex-v22",
+      "title": "CASMI26 keep public Gold Apex V22",
+      "author": "Ace",
+      "lastRunTime": "2026-11-08T00:49:09.100Z"
+    },
+    {
+      "ref": "guhongbin/casmi26-v581-eason44",
+      "title": "casmi26 v581 eason44",
+      "author": "Hongbin Gu",
+      "lastRunTime": "2026-11-08T00:48:13.063Z",
+      "totalVotes": 7
+    },
+    {
+      "ref": "guhongbin/casmi26-v582b-massdose20",
+      "title": "casmi26 v582b massdose20",
+      "author": "Hongbin Gu",
+      "lastRunTime": "2026-11-08T00:48:04.937Z"
+    },
+    {
+      "ref": "guhongbin/casmi26-v582a-massdose05",
+      "title": "casmi26 v582a massdose05",
+      "author": "Hongbin Gu",
+      "lastRunTime": "2026-11-08T00:43:12.570Z"
+    },
+    {
+      "ref": "easonyanyan/casmi26-v50-multice-rank1-rescue",
+      "title": "CASMI26 V50 MultiCE Rank1 Rescue",
+      "author": "easonyanyan",
+      "lastRunTime": "2026-11-08T00:33:16.433Z"
+    },
+    {
+      "ref": "prvsiyan/analog-propagation-casmi-2026-baseline",
+      "title": "Analog Propagation - CASMI 2026 baseline",
+      "author": "prvsiyan",
+      "lastRunTime": "2026-11-07T23:34:20.223Z",
+      "totalVotes": 171
+    },
+    {
+      "ref": "prvsiyan/the-company-a-molecule-keeps",
+      "title": "The Company a Molecule Keeps",
+      "author": "prvsiyan",
+      "lastRunTime": "2026-11-07T22:32:00.000Z",
+      "totalVotes": 1
+    },
+    {
+      "ref": "adityaraj0612/casmi26-exp289-public-scoring-kernel",
+      "title": "CASMI26 Exp289 public scoring kernel",
+      "author": "ADITYA RAJ",
+      "lastRunTime": "2026-11-07T22:30:21.577Z"
+    },
+    {
+      "ref": "denpugovkin/casmi26-all-ion-mass-consistency-py312",
+      "title": "CASMI26: All-Ion Mass Consistency (Py312)",
+      "author": "Den Pugovkin",
+      "lastRunTime": "2026-11-07T21:34:09.393Z",
+      "totalVotes": 1
+    },
+    {
+      "ref": "prvsiyan/the-weight-of-an-exact-mass",
+      "title": "The Weight of an Exact Mass",
+      "author": "prvsiyan",
+      "lastRunTime": "2026-11-07T20:51:51.843Z"
+    },
+    {
+      "ref": "prvsiyan/fable-of-the-lighter-hand",
+      "title": "Fable of the Lighter Hand",
+      "author": "prvsiyan",
+      "lastRunTime": "2026-11-07T20:51:33.367Z",
+      "totalVotes": 2
+    },
+    {
+      "ref": "gedouluhui/casmi26-481-massprior-apex-fork",
+      "title": "casmi26 481 massprior apex fork",
+      "author": "gedouluhui",
+      "lastRunTime": "2026-11-07T18:56:39.170Z"
+    },
+    {
+      "ref": "easonyanyan/casmi26-v47-extlib-rank1-rescue",
+      "title": "CASMI26 V47 ExtLib Rank1 Rescue",
+      "author": "easonyanyan",
+      "lastRunTime": "2026-11-07T17:11:22.420Z"
+    },
+    {
+      "ref": "asilbekasqarov/casmi26-v1230-biosynthetic-sota-apex",
+      "title": "CASMI26 v1230 Biosynthetic SOTA Apex",
+      "author": "Asilbek Asqarov",
+      "lastRunTime": "2026-11-07T16:15:02.633Z"
+    },
+    {
+      "ref": "zakhraluna/casmi26-v1240-validation-oracle-apex",
+      "title": "CASMI26 v1240 Validation Oracle Apex",
+      "author": "ZakhraLuna",
+      "lastRunTime": "2026-11-07T16:04:09.207Z"
+    },
+    {
+      "ref": "azizbekalimov/casmi26-v1220-tri-modal-sota-apex",
+      "title": "CASMI26 v1220 Tri-Modal SOTA Apex",
+      "author": "Azizbek Alimov",
+      "lastRunTime": "2026-11-07T15:52:30.177Z"
+    },
+    {
+      "ref": "anatoliyf/casmi-26-from-spectra-to-structures",
+      "title": "CASMI 26: From Spectra to Structures",
+      "author": "AnatoliyF",
+      "lastRunTime": "2026-11-07T15:41:07.850Z"
+    },
+    {
+      "ref": "zakhraluna/casmi26-v1140-consensus-apex",
+      "title": "CASMI26 v1140 Consensus Apex",
+      "author": "ZakhraLuna",
+      "lastRunTime": "2026-11-07T14:59:25.810Z",
+      "totalVotes": 1
+    },
+    {
+      "ref": "sardorishiguro/casmi26-v1210-meta-ensemble",
+      "title": "CASMI26 v1210 Meta Ensemble",
+      "author": "Sardor Muxiddinov",
+      "lastRunTime": "2026-11-07T14:33:02.143Z",
+      "totalVotes": 1
+    },
+    {
+      "ref": "kozykappa/gold-apex-v22-mass-prior-domain-evidence-layer",
+      "title": "Gold Apex V22 + Mass Prior + Domain-Evidence Layer",
+      "author": "Kozykorpesh",
+      "lastRunTime": "2026-11-07T14:10:58.443Z",
+      "totalVotes": 63
+    },
+    {
+      "ref": "heliosli/casmi26-0-488",
+      "title": "casmi26-0.488",
+      "author": "Heliosli",
+      "lastRunTime": "2026-11-03T21:48:25.650Z",
+      "totalVotes": 5
+    },
+    {
+      "ref": "romanrozen/0-482-casmi-from-peaks-to-structures",
+      "title": "[0.482] CASMI: From Peaks to Structures",
+      "author": "Roman Rozen",
+      "lastRunTime": "2026-11-05T17:06:30.517Z",
+      "totalVotes": 103
+    },
+    {
+      "ref": "popwenman/casmi26-0482-gold-apex-v22",
+      "title": "CASMI26 0482 Gold Apex V22",
+      "author": "popwenman",
+      "lastRunTime": "2026-11-06T08:34:00.797Z",
+      "totalVotes": 8
+    },
+    {
+      "ref": "popwenman/casmi26-v32-sovereign-gold-apex",
+      "title": "CASMI26 V32 Sovereign Gold Apex",
+      "author": "popwenman",
+      "lastRunTime": "2026-11-07T06:18:38.677Z",
+      "totalVotes": 3
+    },
+    {
+      "ref": "easonyanyan/casmi26-v44-dual-sota-exact-mass-apex",
+      "title": "CASMI26 V44 Dual SOTA Exact Mass Apex",
+      "author": "easonyanyan",
+      "lastRunTime": "2026-11-06T16:44:59.103Z",
+      "totalVotes": 2
+    },
+    {
+      "ref": "hoowoo/casmi26-gold-apex-mass-prior-repro",
+      "title": "casmi26 gold apex mass prior repro",
+      "author": "Cavarad\u00d8ssi",
+      "lastRunTime": "2026-11-07T02:39:58.670Z",
+      "totalVotes": 4
+    },
+    {
+      "ref": "guhongbin/casmi26-v579b-alex0481-massprior",
+      "title": "casmi26 v579b alex0481 massprior",
+      "author": "Hongbin Gu",
+      "lastRunTime": "2026-11-07T05:53:00.027Z",
+      "totalVotes": 2
+    },
+    {
+      "ref": "zelza0/casmi-481-p5-more-isomer-swaps",
+      "title": "casmi-481-p5-more-isomer-swaps",
+      "author": "Zelzy",
+      "lastRunTime": "2026-11-07T09:26:32.430Z"
+    },
+    {
+      "ref": "chyibo/enveda-casmi-0481-fork",
+      "title": "Enveda CASMI 0481 Fork",
+      "author": "chen yibo",
+      "lastRunTime": "2026-11-07T14:07:26.150Z",
+      "totalVotes": 1
+    },
+    {
+      "ref": "heliosli/happy-to-make-the-dataset-public-if-it-helps",
+      "title": "Happy to make the dataset public if it helps!\u2b50\u2b50\u2b50",
+      "author": "Heliosli",
+      "lastRunTime": "2026-10-31T14:29:02.387Z",
+      "totalVotes": 115
+    },
+    {
+      "ref": "bgunshui/casmi26-480-neural-ensemble",
+      "title": "CASMI26 480 neural ensemble",
+      "author": "bgunshui",
+      "lastRunTime": "2026-11-02T00:01:50.567Z",
+      "totalVotes": 44
+    },
+    {
+      "ref": "easonyanyan/casmi26-v30-neural-ensemble-480",
+      "title": "CASMI26 V30 Neural Ensemble 480",
+      "author": "easonyanyan",
+      "lastRunTime": "2026-11-02T03:56:08.357Z",
+      "totalVotes": 4
+    },
+    {
+      "ref": "guhongbin/casmi26-v561-nensemble480-clone",
+      "title": "casmi26 v561 nensemble480 clone",
+      "author": "Hongbin Gu",
+      "lastRunTime": "2026-11-02T05:40:14.057Z",
+      "totalVotes": 5
+    },
+    {
+      "ref": "gloriachen0816/casmi26-0480-neural-ensemble-fork",
+      "title": "casmi26 0480 neural ensemble fork",
+      "author": "Siyuan Chen",
+      "lastRunTime": "2026-11-02T06:19:13.070Z",
+      "totalVotes": 5
+    },
+    {
+      "ref": "ndaedzomukhuba/enveda-0480-ensemble",
+      "title": "enveda-0480-ensemble",
+      "author": "NDAEDZO MUKHUBA",
+      "lastRunTime": "2026-11-02T08:11:08.863Z",
+      "totalVotes": 17
+    },
+    {
+      "ref": "gloriachen0816/casmi26-0480-neural-ensemble-draw2",
+      "title": "CASMI26 0480 Neural Ensemble Draw2",
+      "author": "Siyuan Chen",
+      "lastRunTime": "2026-11-02T11:33:38.030Z",
+      "totalVotes": 2
+    },
+    {
+      "ref": "yw8837/0-480-lb-casmi-2026-neural-ensemble-baseline",
+      "title": "[0.480 LB] CASMI 2026: Neural Ensemble Baseline",
+      "author": "yw8837",
+      "lastRunTime": "2026-11-02T19:06:54.357Z",
+      "totalVotes": 3
+    },
+    {
+      "ref": "takumuhata/casmi26-codex-sp480ensemblepub",
+      "title": "casmi26-codex-sp480ensemblepub",
+      "author": "Takumu Hata",
+      "lastRunTime": "2026-11-02T19:24:50.157Z",
+      "totalVotes": 3
+    },
+    {
+      "ref": "easonyanyan/casmi26-v33-calibrated-dual-neural-ensemble",
+      "title": "CASMI26 V33 Calibrated Dual Neural Ensemble",
+      "author": "easonyanyan",
+      "lastRunTime": "2026-11-02T20:29:23.077Z",
+      "totalVotes": 2
+    },
+    {
+      "ref": "guhongbin/casmi26-v565-nens-scoreonly",
+      "title": "casmi26 v565 nens scoreonly",
+      "author": "Hongbin Gu",
+      "lastRunTime": "2026-11-03T00:39:25.547Z",
+      "totalVotes": 1
+    },
+    {
+      "ref": "guhongbin/casmi26-v566-v33-clone",
+      "title": "casmi26 v566 v33 clone",
+      "author": "Hongbin Gu",
+      "lastRunTime": "2026-11-03T05:35:37.600Z",
+      "totalVotes": 2
+    },
+    {
+      "ref": "d1m4official/enveda-0480-ensemble-hardened",
+      "title": "enveda-0480-ensemble-hardened",
+      "author": "d1m4_official",
+      "lastRunTime": "2026-11-03T06:27:54.477Z",
+      "totalVotes": 18
+    },
+    {
+      "ref": "ayodejiibrahimlateef/casmi26-n480-control-parentfix-v3",
+      "title": "CASMI26 N480 Control Parentfix V3",
+      "author": "Ayodeji",
+      "lastRunTime": "2026-11-03T07:20:22.467Z",
+      "totalVotes": 1
+    },
+    {
+      "ref": "zjukop1/casmi26-0-480-fork-verify-rebase-base",
+      "title": "CASMI26 0.480 fork verify (rebase base)",
+      "author": "zjukop1",
+      "lastRunTime": "2026-11-03T10:54:35.077Z",
+      "totalVotes": 1
+    },
+    {
+      "ref": "easonyanyan/casmi26-v36-dual-ensemble-lib-leader-gate",
+      "title": "CASMI26 V36 Dual Ensemble Lib Leader Gate",
+      "author": "easonyanyan",
+      "lastRunTime": "2026-11-03T12:13:30.337Z",
+      "totalVotes": 1
+    },
+    {
+      "ref": "guhongbin/casmi26-v568-wtop000",
+      "title": "casmi26 v568 wtop000",
+      "author": "Hongbin Gu",
+      "lastRunTime": "2026-11-04T00:45:03.387Z",
+      "totalVotes": 1
+    },
+    {
+      "ref": "guhongbin/casmi26-v569-libgate080",
+      "title": "casmi26 v569 libgate080",
+      "author": "Hongbin Gu",
+      "lastRunTime": "2026-11-04T00:45:12.907Z",
+      "totalVotes": 1
+    },
+    {
+      "ref": "guhongbin/casmi26-v570-wmid080",
+      "title": "casmi26 v570 wmid080",
+      "author": "Hongbin Gu",
+      "lastRunTime": "2026-11-04T01:09:15.063Z",
+      "totalVotes": 1
+    },
+    {
+      "ref": "guhongbin/casmi26-v571-outsiders25",
+      "title": "casmi26 v571 outsiders25",
+      "author": "Hongbin Gu",
+      "lastRunTime": "2026-11-04T01:09:24.323Z",
+      "totalVotes": 1
+    },
+    {
+      "ref": "yunlong/casmi26-v26-public-dual-neural",
+      "title": "casmi26 v26 public dual neural",
+      "author": "Yunlong",
+      "lastRunTime": "2026-11-04T01:53:32.200Z"
+    },
+    {
+      "ref": "easonyanyan/casmi26-v41-dual-sota-lotus-tail-backfill",
+      "title": "CASMI26 V41 Dual SOTA LOTUS Tail Backfill",
+      "author": "easonyanyan",
+      "lastRunTime": "2026-11-04T15:12:26.977Z"
+    },
+    {
+      "ref": "chyibo/enveda-casmi-0480-fork",
+      "title": "Enveda CASMI 0480 Fork",
+      "author": "chen yibo",
+      "lastRunTime": "2026-11-05T00:51:55.167Z",
+      "totalVotes": 2
+    },
+    {
+      "ref": "popwenman/casmi26-480-neural-ensemble",
+      "title": "CASMI26 480 Neural Ensemble",
+      "author": "popwenman",
+      "lastRunTime": "2026-11-05T19:32:40.240Z"
+    },
+    {
+      "ref": "zelza0/casmi-481-p4-hedge-no-np",
+      "title": "casmi-481-p4-hedge-no-np",
+      "author": "Zelzy",
+      "lastRunTime": "2026-11-07T09:00:12.283Z"
+    },
+    {
+      "ref": "zakhraluna/casmi26-v1150-apex-grand-master",
+      "title": "CASMI26 v1150 Apex Grand Master",
+      "author": "ZakhraLuna",
+      "lastRunTime": "2026-11-07T11:07:50.550Z"
+    },
+    {
+      "ref": "flexonafft/casmi26-closing-the-evidence-gap",
+      "title": "CASMI26: Closing the Evidence Gap",
+      "author": "Igor Zharov",
+      "lastRunTime": "2026-11-01T16:24:33.410Z",
+      "totalVotes": 139
+    },
+    {
+      "ref": "youyouwou/casmi26-v94gl5",
+      "title": "casmi26-v94gl5",
+      "author": "youyouwou",
+      "lastRunTime": "2026-11-01T10:21:43.747Z"
+    },
+    {
+      "ref": "youyouwou/casmi26-v95gl10",
+      "title": "casmi26-v95gl10",
+      "author": "youyouwou",
+      "lastRunTime": "2026-11-01T05:58:01.827Z",
+      "totalVotes": 1
+    },
+    {
+      "ref": "baidalinadilzhan/casmi26-midx-exact-dedup-fill-0-479",
+      "title": "casmi26 midx exact dedup fill [0.479]",
+      "author": "Baidalin Adilzhan [dsmlkz]",
+      "lastRunTime": "2026-10-30T18:37:30.747Z",
+      "totalVotes": 78
+    },
+    {
+      "ref": "jianyicai/casmi26-apex-v122-pub479-repro-gpu",
+      "title": "casmi26 apex v122 pub479 repro gpu",
+      "author": "Gronk",
+      "lastRunTime": "2026-10-31T07:12:46.603Z",
+      "totalVotes": 17
+    },
+    {
+      "ref": "ayodejiibrahimlateef/casmi26-midx-moderate-tail-v1",
+      "title": "CASMI26 MIDX Moderate Tail V1",
+      "author": "Ayodeji",
+      "lastRunTime": "2026-10-31T11:20:59.870Z",
+      "totalVotes": 2
+    },
+    {
+      "ref": "ayodejiibrahimlateef/casmi26-midx-elite-borda20-r2-v1",
+      "title": "CASMI26 MIDX Elite Borda20 R2 V1",
+      "author": "Ayodeji",
+      "lastRunTime": "2026-10-31T11:28:23.683Z",
+      "totalVotes": 2
+    },
+    {
+      "ref": "youyouwou/casmi26-v132negproxy",
+      "title": "casmi26-v132negproxy",
+      "author": "youyouwou",
+      "lastRunTime": "2026-11-02T07:50:43.713Z",
+      "totalVotes": 1
+    },
+    {
+      "ref": "youyouwou/casmi26-v138off10",
+      "title": "casmi26-v138off10",
+      "author": "youyouwou",
+      "lastRunTime": "2026-11-07T09:27:10.047Z",
+      "totalVotes": 3
+    },
+    {
+      "ref": "hailonglv/casmi26-v479-midx-dedup-fill",
+      "title": "casmi26 v479 midx dedup fill",
+      "author": "dan mx",
+      "lastRunTime": "2026-10-31T14:36:10.783Z",
+      "totalVotes": 1
+    },
+    {
+      "ref": "d1m4official/casmi26-midx-0479-base",
+      "title": "CASMI26 midx 0479 base",
+      "author": "d1m4_official",
+      "lastRunTime": "2026-10-31T19:34:47.200Z",
+      "totalVotes": 6
+    },
+    {
+      "ref": "takumuhata/casmi26-codex-sp477midx",
+      "title": "casmi26-codex-sp477midx",
+      "author": "Takumu Hata",
+      "lastRunTime": "2026-10-31T22:02:00.767Z"
+    },
+    {
+      "ref": "yunlong/casmi26-v24-public-midx-rebase",
+      "title": "casmi26 v24 public midx rebase",
+      "author": "Yunlong",
+      "lastRunTime": "2026-11-01T05:11:46.163Z",
+      "totalVotes": 3
+    },
+    {
+      "ref": "guhongbin/casmi26-v556-midx479-clone",
+      "title": "casmi26 v556 midx479 clone",
+      "author": "Hongbin Gu",
+      "lastRunTime": "2026-11-01T05:37:13.057Z",
+      "totalVotes": 1
+    },
+    {
+      "ref": "jianyicai/casmi26-apex-v125-np-prior-gpu",
+      "title": "casmi26 apex v125 np prior gpu",
+      "author": "Gronk",
+      "lastRunTime": "2026-11-01T05:40:45.630Z",
+      "totalVotes": 17
+    },
+    {
+      "ref": "guhongbin/casmi26-v558-midx-nofill",
+      "title": "casmi26 v558 midx nofill",
+      "author": "Hongbin Gu",
+      "lastRunTime": "2026-11-01T08:02:20.613Z"
+    },
+    {
+      "ref": "andrewoscar/casmi26-borrow479",
+      "title": "casmi26 borrow479",
+      "author": "Andrew Oscar",
+      "lastRunTime": "2026-11-01T10:21:15.327Z"
+    },
+    {
+      "ref": "chyibo/enveda-casmi-0479-fork",
+      "title": "Enveda CASMI 0479 Fork",
+      "author": "chen yibo",
+      "lastRunTime": "2026-11-01T13:03:23.550Z"
+    },
+    {
+      "ref": "jianyicai/casmi26-apex-v130-np04-gate82-gpu",
+      "title": "casmi26 apex v130 np04 gate82 gpu",
+      "author": "Gronk",
+      "lastRunTime": "2026-11-01T17:05:54.267Z"
+    },
+    {
+      "ref": "jianyicai/casmi26-apex-v131-np06-spec08-gate82-gpu",
+      "title": "casmi26 apex v131 np06 spec08 gate82 gpu",
+      "author": "Gronk",
+      "lastRunTime": "2026-11-01T17:06:14.763Z",
+      "totalVotes": 1
+    },
+    {
+      "ref": "guhongbin/casmi26-v560-midx-nopin",
+      "title": "casmi26 v560 midx nopin",
+      "author": "Hongbin Gu",
+      "lastRunTime": "2026-11-02T00:43:49.917Z"
+    },
+    {
+      "ref": "yunlong/casmi26-v25-c3-conditional",
+      "title": "casmi26 v25 C3 conditional",
+      "author": "Yunlong",
+      "lastRunTime": "2026-11-02T10:52:07.200Z"
+    },
+    {
+      "ref": "takumuhata/casmi26-codex-sp479midgate80",
+      "title": "casmi26-codex-sp479midgate80",
+      "author": "Takumu Hata",
+      "lastRunTime": "2026-11-02T14:07:54.567Z"
+    },
+    {
+      "ref": "youyouwou/casmi26-fg-zzg",
+      "title": "casmi26 fg zzg",
+      "author": "youyouwou",
+      "lastRunTime": "2026-11-04T05:31:13.930Z"
+    },
+    {
+      "ref": "ozertuu/casmi26-0-500-sota-starter-notebook",
+      "title": "CASMI26 +0.500 SOTA \u00b7 Starter Notebook",
+      "author": "Ertu\u011frul \u00d6zer",
+      "lastRunTime": "2026-11-04T19:19:49.287Z",
+      "totalVotes": 1
+    },
+    {
+      "ref": "guhongbin/casmi26-v573-msigate",
+      "title": "casmi26 v573 msigate",
+      "author": "Hongbin Gu",
+      "lastRunTime": "2026-11-05T00:50:55.917Z"
+    },
+    {
+      "ref": "guhongbin/casmi26-v574-nppromo",
+      "title": "casmi26 v574 nppromo",
+      "author": "Hongbin Gu",
+      "lastRunTime": "2026-11-05T00:51:12.010Z"
+    },
+    {
+      "ref": "guhongbin/casmi26-v576-symoutsider",
+      "title": "casmi26 v576 symoutsider",
+      "author": "Hongbin Gu",
+      "lastRunTime": "2026-11-05T01:15:14.937Z"
+    },
+    {
+      "ref": "guhongbin/casmi26-v577-msi-np-combo",
+      "title": "casmi26 v577 msi np combo",
+      "author": "Hongbin Gu",
+      "lastRunTime": "2026-11-05T05:39:46.917Z"
+    },
+    {
+      "ref": "inversion/casmi-denovo-tutorial-notebook",
+      "title": "CASMI denovo tutorial notebook",
+      "author": "inversion",
+      "lastRunTime": "2026-09-14T18:13:29.970Z",
+      "totalVotes": 472
+    },
+    {
+      "ref": "haideptry/enveda-casmi-2026-fast-spectral-cosine-baseline",
+      "title": "Enveda CASMI 2026 - Fast Spectral Cosine Baseline",
+      "author": "haideptry",
+      "lastRunTime": "2026-09-17T02:16:42.693Z",
+      "totalVotes": 286
+    },
+    {
+      "ref": "evgendvorkin/enveda-casmi-2026",
+      "title": "Enveda CASMI 2026",
+      "author": "\u0414\u0432\u043e\u0440\u043a\u0438\u043d \u0415\u0432\u0433\u0435\u043d\u0438\u0439 \u0412\u043b\u0430\u0434\u0438\u043c\u0438\u0440\u043e\u0432\u0438\u0447",
+      "lastRunTime": "2026-10-23T14:02:57.717Z",
+      "totalVotes": 210
+    },
+    {
+      "ref": "dmitriigluzdov/casmi-26-the-data-behind-spectra-to-structures",
+      "title": "CASMI 26: The Data Behind Spectra to Structures",
+      "author": "Dmitrii Gluzdov",
+      "lastRunTime": "2026-10-28T06:23:11.877Z",
+      "totalVotes": 204
+    },
+    {
+      "ref": "dmitriigluzdov/casmi-26-from-spectra-to-structures",
+      "title": "CASMI 26: From Spectra to Structures",
+      "author": "Dmitrii Gluzdov",
+      "lastRunTime": "2026-10-21T14:37:15.207Z",
+      "totalVotes": 175
+    },
+    {
+      "ref": "flexonafft/casmi26-public-baseline-adaptation-experiments",
+      "title": "CASMI26: Public Baseline Adaptation & Experiments",
+      "author": "Igor Zharov",
+      "lastRunTime": "2026-10-12T13:56:21.393Z",
+      "totalVotes": 145
+    },
+    {
+      "ref": "canqiang/casmi26-e006-window-40-ice-fallback-true",
+      "title": "CASMI26 E006 Window 40 ICE Fallback True",
+      "author": "Xander",
+      "lastRunTime": "2026-10-10T06:52:19.067Z",
+      "totalVotes": 125
+    },
+    {
+      "ref": "romantamrazov/casmi-2026-spectral-parallax",
+      "title": "CASMI 2026 | Spectral Parallax",
+      "author": "Roman Tamrazov",
+      "lastRunTime": "2026-10-31T09:02:06.970Z",
+      "totalVotes": 117
+    },
+    {
+      "ref": "bobthebot369/enveda-casmi-2026-v18-sovereign-zenith",
+      "title": "Enveda CASMI 2026 V18 Sovereign Zenith",
+      "author": "BobtheBot369",
+      "lastRunTime": "2026-10-05T22:49:47.723Z",
+      "totalVotes": 107
+    },
+    {
+      "ref": "kunaldesale2408/enveda-casmi-2026-mid",
+      "title": "Enveda CASMI 2026 - MID",
+      "author": "Kunal Desale",
+      "lastRunTime": "2026-11-04T10:57:55.877Z",
+      "totalVotes": 101
+    },
+    {
+      "ref": "wangpenghua/casmi26-v29-fusion-pop-glmh",
+      "title": "casmi26 v29 fusion pop glmh",
+      "author": "wang penghua",
+      "lastRunTime": "2026-10-02T16:25:08.273Z",
+      "totalVotes": 93
+    },
+    {
+      "ref": "busyaprime/lb-0-477-two-0-472-fixes-merged-the-right-way",
+      "title": "LB 0.477 \u00b7 Two 0.472 Fixes, Merged the Right Way",
+      "author": "Akmal Xodarev (Busya PRIME)",
+      "lastRunTime": "2026-10-29T06:05:32.040Z",
+      "totalVotes": 91
+    },
+    {
+      "ref": "rajrajak99/casmi26-apex-v180-sovereign-titan",
+      "title": "CASMI26 Apex v180 Sovereign Titan",
+      "author": "Raja Rajak",
+      "lastRunTime": "2026-10-07T13:48:50.093Z",
+      "totalVotes": 86
+    },
+    {
+      "ref": "beraterolelk/0-336-sota-enveda-casmi26-analog-ranker",
+      "title": "\u26a1 [0.336+ SOTA] Enveda CASMI26 Analog Ranker",
+      "author": "Berat Erol \u00c7EL\u0130K",
+      "lastRunTime": "2026-10-18T15:01:21.827Z",
+      "totalVotes": 83
+    },
+    {
+      "ref": "sanpier/pubchem-neural025-lb-0-466",
+      "title": "PubChem + Neural025 \u2014 LB 0.466 \ud83d\udd25 ",
+      "author": "Saner Turhaner",
+      "lastRunTime": "2026-10-24T23:25:46.543Z",
+      "totalVotes": 81
+    },
+    {
+      "ref": "imranarif536/casmi26-v44-pairtail-locked-top1",
+      "title": "CASMI26 V44 PairTail Locked Top1",
+      "author": "Imran Arif",
+      "lastRunTime": "2026-10-03T15:11:53.870Z",
+      "totalVotes": 81
+    },
+    {
+      "ref": "guhongbin/casmi26-v465-v15-pop015",
+      "title": "casmi26 v465 v15 pop015",
+      "author": "Hongbin Gu",
+      "lastRunTime": "2026-10-18T17:41:15.890Z",
+      "totalVotes": 80
+    },
+    {
+      "ref": "saddamaditya/forensics-lab-the-apex-dossier-lb-0-442-sota",
+      "title": "Forensics Lab: The Apex Dossier (LB 0.442+ SOTA)",
+      "author": "Maman Salto",
+      "lastRunTime": "2026-10-16T02:30:38.753Z",
+      "totalVotes": 73
+    },
+    {
+      "ref": "ahmedberatozer/casmi26-v7c-e006-fraggap",
+      "title": "casmi26-v7c-e006-fraggap",
+      "author": "Ahmed Berat \u00d6zer",
+      "lastRunTime": "2026-10-12T18:10:26.027Z",
+      "totalVotes": 69
+    },
+    {
+      "ref": "seyitkaangunes/casmi26-e006-pubchem-promo-rel-150-lb-0-446",
+      "title": "CASMI26 | E006 + PubChem Promo rel>150 | LB 0.446",
+      "author": "Seyit kaan Gunes",
+      "lastRunTime": "2026-10-15T10:51:08.030Z",
+      "totalVotes": 63
+    },
+    {
+      "ref": "saddamaditya/casmi26-dual-band-massbank-iceberg-sota",
+      "title": "CASMI26 Dual-Band MassBank + ICEBERG SOTA",
+      "author": "Maman Salto",
+      "lastRunTime": "2026-10-14T08:21:40.800Z",
+      "totalVotes": 62
+    },
+    {
+      "ref": "samanyu1808/casmi26-iceberg-where-glacier-is-blind-lb-0-438",
+      "title": "CASMI26 | ICEBERG where GLACIER is blind[LB 0.438]",
+      "author": "samanyu1808",
+      "lastRunTime": "2026-10-09T14:42:46.047Z",
+      "totalVotes": 59
+    },
+    {
+      "ref": "huseyinemreaksoy/casmi26-v4n-fusion-pubchem-on-public-0-421",
+      "title": "CASMI26 | v4n Fusion + PubChem on public 0.421",
+      "author": "Huseyin Emre Aksoy",
+      "lastRunTime": "2026-10-05T22:51:48.957Z",
+      "totalVotes": 56
+    },
+    {
+      "ref": "seyitkaangunes/casmi26-v4n-engine-fusion-union-lb-0-399",
+      "title": "CASMI26 | v4n + Engine Fusion + Union [LB 0.399]",
+      "author": "Seyit kaan Gunes",
+      "lastRunTime": "2026-09-30T15:57:47.970Z",
+      "totalVotes": 56
+    },
+    {
+      "ref": "josefreitasalvesneto/casmi-2026-a-complete-statistical-tour",
+      "title": "CASMI 2026: A Complete Statistical Tour",
+      "author": "Jos\u00e9 Freitas",
+      "lastRunTime": "2026-09-15T00:34:24.167Z",
+      "totalVotes": 51
+    },
+    {
+      "ref": "easonyanyan/casmi26-v22-rel150-e2r2-clean",
+      "title": "CASMI26 V22 Rel150 E2R2 Clean",
+      "author": "easonyanyan",
+      "lastRunTime": "2026-10-15T23:09:34.853Z",
+      "totalVotes": 50
+    },
+    {
+      "ref": "obstacledeveloper/casmi26-v1-1-metric-audit-and-safe-tail",
+      "title": "CASMI26 V1.1 Metric Audit and Safe Tail",
+      "author": "OBSTACLE DEVELOPER",
+      "lastRunTime": "2026-10-08T12:00:11.900Z",
+      "totalVotes": 48
+    },
+    {
+      "ref": "ahmedberatozer/casmi26-v2-baseline",
+      "title": "casmi26 v2 : Baseline ",
+      "author": "Ahmed Berat \u00d6zer",
+      "lastRunTime": "2026-09-21T16:33:52.040Z",
+      "totalVotes": 46
+    },
+    {
+      "ref": "ahmedberatozer/casmi26-v14-pubchemlite",
+      "title": "casmi26-v14-pubchemlite",
+      "author": "Ahmed Berat \u00d6zer",
+      "lastRunTime": "2026-10-18T08:10:16.147Z",
+      "totalVotes": 42
+    },
+    {
+      "ref": "denpugovkin/casmi-2026-protected-tail-explained-peaks",
+      "title": "CASMI 2026 | Protected Tail, Explained Peaks",
+      "author": "Den Pugovkin",
+      "lastRunTime": "2026-10-31T09:33:20.587Z",
+      "totalVotes": 42
+    },
+    {
+      "ref": "haideptry/0-350-casmi-2026-v32-ensemble",
+      "title": "0.350+ CASMI 2026 v32 Ensemble",
+      "author": "haideptry",
+      "lastRunTime": "2026-10-09T08:12:48.577Z",
+      "totalVotes": 42
+    },
+    {
+      "ref": "llccqq624/casmi26-next-direct-w088",
+      "title": "CASMI26 Next Direct W088",
+      "author": "Jiachen Li",
+      "lastRunTime": "2026-09-20T06:31:13.507Z",
+      "totalVotes": 40
+    },
+    {
+      "ref": "seyitkaangunes/casmi26-e006-n1a-cc-by-chebi-lb-0-452",
+      "title": "CASMI26 | E006 + N1A + CC BY ChEBI | LB 0.452",
+      "author": "Seyit kaan Gunes",
+      "lastRunTime": "2026-10-17T16:34:33.653Z",
+      "totalVotes": 38
+    },
+    {
+      "ref": "mononom/casmi26-explained-for-humans",
+      "title": "CASMI26 Explained For HUMANS",
+      "author": "Mansur Nurmukhambetov",
+      "lastRunTime": "2026-10-29T19:33:40.903Z",
+      "totalVotes": 37
+    },
+    {
+      "ref": "guhongbin/casmi26-v459-e006-defaultimg",
+      "title": "casmi26 v459 e006 defaultimg",
+      "author": "Hongbin Gu",
+      "lastRunTime": "2026-10-17T21:32:38.957Z",
+      "totalVotes": 37
+    },
+    {
+      "ref": "ektarr/baseline-enveda-casmi-2026",
+      "title": "Baseline | Enveda CASMI 2026",
+      "author": "Maxim",
+      "lastRunTime": "2026-09-15T03:18:31.620Z",
+      "totalVotes": 36
+    },
+    {
+      "ref": "gengsr/casmi26-fusion-glacier-mh-lb-0-413",
+      "title": "CASMI26 Fusion GLACIER MH LB 0.413",
+      "author": "Gengsr",
+      "lastRunTime": "2026-10-03T15:04:00.963Z",
+      "totalVotes": 33
+    },
+    {
+      "ref": "bobthebot369/enveda-casmi-2026-v10-apex-fusion-sota",
+      "title": "Enveda CASMI 2026 V10 Apex Fusion SOTA",
+      "author": "BobtheBot369",
+      "lastRunTime": "2026-09-30T12:55:54.577Z",
+      "totalVotes": 33
+    },
+    {
+      "ref": "megayak/casmi26-two-rankers-one-engine",
+      "title": "CASMI26 Two Rankers One Engine",
+      "author": "\uc778\uacf5\uc800\ub2a5\uc5f0\uad6c\uc18c( Artificial Idiocy Lab )",
+      "lastRunTime": "2026-09-17T05:40:53.557Z",
+      "totalVotes": 33
+    },
+    {
+      "ref": "octaviograu/enveda-molecule-evidence-ranking",
+      "title": "Enveda - Molecule Evidence Ranking",
+      "author": "Octavi Grau",
+      "lastRunTime": "2026-09-15T13:31:42.117Z",
+      "totalVotes": 32
+    },
+    {
+      "ref": "matterhorn3838/evenda-casmi-inferencesupernext",
+      "title": "Evenda CASMI InferenceSuperNext",
+      "author": "Matterhorn3838",
+      "lastRunTime": "2026-10-10T04:01:34.480Z",
+      "totalVotes": 30
+    },
+    {
+      "ref": "ahmedberatozer/casmi26-v3-inference",
+      "title": "casmi26-v3-inference",
+      "author": "Ahmed Berat \u00d6zer",
+      "lastRunTime": "2026-09-23T16:33:47.323Z",
+      "totalVotes": 30
+    },
+    {
+      "ref": "amanatar/casmi26-v18",
+      "title": "casmi26 v18 ",
+      "author": "Aman Atar",
+      "lastRunTime": "2026-10-11T18:51:27.570Z",
+      "totalVotes": 29
+    },
+    {
+      "ref": "ahmedberatozer/casmi26-v4l-inference",
+      "title": "casmi26-v4l-inference",
+      "author": "Ahmed Berat \u00d6zer",
+      "lastRunTime": "2026-09-29T10:10:29.530Z",
+      "totalVotes": 29
+    },
+    {
+      "ref": "mohammadhmozafary/casmi-2026-domain-knowledge-for-non-chemists",
+      "title": "CASMI 2026- Domain Knowledge for Non-Chemists \u2697\ufe0f",
+      "author": "Mohammad Hosein Mozafary",
+      "lastRunTime": "2026-10-18T09:53:07.363Z",
+      "totalVotes": 28
+    },
+    {
+      "ref": "jek1wantaufik/mass-spectra-structure-retrieval",
+      "title": "Mass Spectra Structure Retrieval",
+      "author": "Jeki Wan Taufik",
+      "lastRunTime": "2026-09-21T06:56:41.607Z",
+      "totalVotes": 28
+    },
+    {
+      "ref": "huseyinemreaksoy/casmi26-sub-v4b-0-409-on-the-public",
+      "title": "casmi26-sub-v4b 0.409 on the public",
+      "author": "Huseyin Emre Aksoy",
+      "lastRunTime": "2026-10-02T10:53:41.840Z",
+      "totalVotes": 27
+    },
+    {
+      "ref": "starkhushi/casmi-2026-eda-library-search",
+      "title": "CASMI 2026 EDA + Library Search",
+      "author": "starkhushi",
+      "lastRunTime": "2026-09-15T07:16:24.677Z",
+      "totalVotes": 27
+    },
+    {
+      "ref": "nursrijan/casmi26-e007-window-80-ice-fallback-sota",
+      "title": "CASMI26 E007 Window 80 ICE Fallback SOTA",
+      "author": "Nur Srijan",
+      "lastRunTime": "2026-10-11T16:47:59.327Z",
+      "totalVotes": 26
+    },
+    {
+      "ref": "antriksharya/casmi26-e006-e2rank2",
+      "title": "casmi26-e006-e2rank2",
+      "author": "Antriksh Arya",
+      "lastRunTime": "2026-10-13T10:24:43.663Z",
+      "totalVotes": 25
+    },
+    {
+      "ref": "nursrijan/casmi26-metric-fusion-consensus-backfill",
+      "title": "CASMI26: Metric Fusion Consensus Backfill",
+      "author": "Nur Srijan",
+      "lastRunTime": "2026-10-10T07:04:21.387Z",
+      "totalVotes": 25
+    },
+    {
+      "ref": "ahmedberatozer/casmi26-v4m-inference",
+      "title": "casmi26-v4m-inference",
+      "author": "Ahmed Berat \u00d6zer",
+      "lastRunTime": "2026-09-29T10:11:19.237Z",
+      "totalVotes": 25
+    },
+    {
+      "ref": "ahmedberatozer/casmi26-v4g-inference",
+      "title": "casmi26-v4g-inference_",
+      "author": "Ahmed Berat \u00d6zer",
+      "lastRunTime": "2026-09-28T07:55:41.387Z",
+      "totalVotes": 24
+    },
+    {
+      "ref": "avikdas567/physics-informed-spectral-transformer-retrieval",
+      "title": "Physics-Informed Spectral Transformer & Retrieval",
+      "author": "Avik Das",
+      "lastRunTime": "2026-09-16T08:30:19.993Z",
+      "totalVotes": 24
+    },
+    {
+      "ref": "guhongbin/casmi26-v498-pc465",
+      "title": "casmi26 v498 pc465",
+      "author": "Hongbin Gu",
+      "lastRunTime": "2026-10-24T04:36:47.277Z",
+      "totalVotes": 23
+    },
+    {
+      "ref": "nursrijan/enveda-casmi-2026-w-sovereign-zenith",
+      "title": "Enveda CASMI 2026 w/ Sovereign Zenith",
+      "author": "Nur Srijan",
+      "lastRunTime": "2026-10-06T15:01:36.353Z",
+      "totalVotes": 23
+    },
+    {
+      "ref": "ahmedberatozer/casmi26-v4n-inference",
+      "title": "casmi26-v4n-inference",
+      "author": "Ahmed Berat \u00d6zer",
+      "lastRunTime": "2026-09-30T06:04:59.590Z",
+      "totalVotes": 23
+    },
+    {
+      "ref": "gwey1025/casmi26-lb-0-466",
+      "title": "casmi26\ud83e\udd70\ud83e\udd70\ud83e\udd70-LB-0.466~",
+      "author": "wenyuan Guo",
+      "lastRunTime": "2026-10-24T18:52:35.213Z",
+      "totalVotes": 21
+    },
+    {
+      "ref": "ahmedberatozer/casmi26-v4f-inference",
+      "title": "casmi26-v4f-inference",
+      "author": "Ahmed Berat \u00d6zer",
+      "lastRunTime": "2026-09-26T12:23:24.703Z",
+      "totalVotes": 20
+    },
+    {
+      "ref": "nursrijan/casmi26-w-e006-window-40-ice-fallback",
+      "title": "CASMI26 w/ E006 Window 40 ICE Fallback",
+      "author": "Nur Srijan",
+      "lastRunTime": "2026-10-11T17:37:02.803Z",
+      "totalVotes": 19
+    },
+    {
+      "ref": "ahmedberatozer/casmi26-v4h-inference",
+      "title": "casmi26-v4h-inference",
+      "author": "Ahmed Berat \u00d6zer",
+      "lastRunTime": "2026-09-29T05:37:30.830Z",
+      "totalVotes": 19
+    },
+    {
+      "ref": "antriksharya/casmi26-lb-0-443-v7c-engine-2-rank-2-insert",
+      "title": "CASMI26 | LB 0.443 | v7c + engine-2 rank-2 insert ",
+      "author": "Antriksh Arya",
+      "lastRunTime": "2026-10-13T16:45:47.557Z",
+      "totalVotes": 18
+    },
+    {
+      "ref": "seyitkaangunes/casmi26-e5c-union-gl-a06",
+      "title": "casmi26 e5c union gl a06",
+      "author": "Seyit kaan Gunes",
+      "lastRunTime": "2026-09-29T21:30:55.000Z",
+      "totalVotes": 17
+    },
+    {
+      "ref": "rkuo2000/enveda-casmi-2026",
+      "title": "Enveda CASMI 2026",
+      "author": "Richard Kuo",
+      "lastRunTime": "2026-09-16T23:53:05.873Z",
+      "totalVotes": 17
+    },
+    {
+      "ref": "nursrijan/forensics-lab-dual-shield-two-ranker-sota",
+      "title": "Forensics Lab - Dual-Shield Two-Ranker SOTA",
+      "author": "Nur Srijan",
+      "lastRunTime": "2026-10-09T11:37:34.803Z",
+      "totalVotes": 16
+    },
+    {
+      "ref": "raunakdey07/casmi-26-two-ranker-adduct-shifted-engine",
+      "title": "CASMI'26: Two-Ranker Adduct-Shifted Engine",
+      "author": "Raunak Dey",
+      "lastRunTime": "2026-09-26T18:22:43.043Z",
+      "totalVotes": 16
+    },
+    {
+      "ref": "guhongbin/casmi26-v461-e006-ccby-glob",
+      "title": "casmi26 v461 e006 ccby glob",
+      "author": "Hongbin Gu",
+      "lastRunTime": "2026-10-17T21:57:27.227Z",
+      "totalVotes": 15
+    },
+    {
+      "ref": "nursrijan/casmi26-the-apex-dossier-tuned-promo-rel150-e2r2",
+      "title": "CASMI26 The Apex Dossier \u2014 Tuned Promo Rel150 E2R2",
+      "author": "Nur Srijan",
+      "lastRunTime": "2026-10-16T10:52:03.923Z",
+      "totalVotes": 15
+    },
+    {
+      "ref": "llccqq624/casmi26-20260919-two-ranker-w80",
+      "title": "CASMI26 20260919 Two Ranker W80",
+      "author": "Jiachen Li",
+      "lastRunTime": "2026-09-19T13:42:11.313Z",
+      "totalVotes": 13
+    },
+    {
+      "ref": "soukeaizenz/chimera-theirfp-ranker-casmi26",
+      "title": "Chimera TheirFP Ranker Casmi26",
+      "author": "S\u014dsuke Aizen",
+      "lastRunTime": "2026-09-17T07:34:42.343Z",
+      "totalVotes": 13
+    },
+    {
+      "ref": "sharif485/casmi-interactive-data-explorer",
+      "title": "CASMI Interactive Data Explorer",
+      "author": "zyvren",
+      "lastRunTime": "2026-09-15T18:46:24.900Z",
+      "totalVotes": 13
+    },
+    {
+      "ref": "nursrijan/casm26-e006-with-metfrag-lite-re-rank",
+      "title": "CASM26 | E006 with MetFrag-lite re-rank",
+      "author": "Nur Srijan",
+      "lastRunTime": "2026-10-14T06:33:02.203Z",
+      "totalVotes": 12
+    },
+    {
+      "ref": "yuki16/enveda2026-spectral-library-cosine-search-baseline",
+      "title": "Enveda2026_Spectral_Library_Cosine_Search_Baseline",
+      "author": "yuki16",
+      "lastRunTime": "2026-09-15T01:24:14.623Z",
+      "totalVotes": 11
+    },
+    {
+      "ref": "kitopl/casmi-2026-data-pitfalls-that-break-your-cv",
+      "title": "CASMI 2026: Data Pitfalls That Break Your CV",
+      "author": "kito_pl",
+      "lastRunTime": "2026-09-21T00:10:13.677Z",
+      "totalVotes": 10
+    },
+    {
+      "ref": "kitopl/casmi-2026-data-pitfalls-jp",
+      "title": "CASMI 2026: Data Pitfalls JP \u2014 \u691c\u8a3c\u3092\u58ca\u3059\u30c7\u30fc\u30bf\u306e\u843d\u3068\u3057\u7a74",
+      "author": "kito_pl",
+      "lastRunTime": "2026-09-21T00:10:15.867Z",
+      "totalVotes": 10
+    },
+    {
+      "ref": "starkhushi/casmi-2026-modeling-retrieval",
+      "title": "CASMI 2026 Modeling Retrieval",
+      "author": "starkhushi",
+      "lastRunTime": "2026-09-16T05:44:48.477Z",
+      "totalVotes": 10
+    },
+    {
+      "ref": "saddamaditya/dual-gate-evidence-margin-pubchemlite-cc0",
+      "title": "Dual-Gate Evidence Margin & PubChemLite CC0",
+      "author": "Maman Salto",
+      "lastRunTime": "2026-10-20T06:43:04.060Z",
+      "totalVotes": 9
+    },
+    {
+      "ref": "ghazarosbarseghyan91/enveda-casmi-2026-v19-clean-fusion",
+      "title": "Enveda CASMI 2026 V19 Clean Fusion",
+      "author": "Ghazaros Barseghyan",
+      "lastRunTime": "2026-10-07T10:03:24.713Z",
+      "totalVotes": 9
+    },
+    {
+      "ref": "lehau007/casmi26-sota-v26-golden-apex-0413",
+      "title": "CASMI26 SOTA V26 Golden Apex 0413",
+      "author": "lehau007",
+      "lastRunTime": "2026-10-04T08:26:49.727Z",
+      "totalVotes": 9
+    },
+    {
+      "ref": "hengck23/dreams-structure-from-spectrum-retrival-demo",
+      "title": "DreaMS : structure from spectrum retrival demo",
+      "author": "hengck23",
+      "lastRunTime": "2026-10-01T09:32:55.107Z",
+      "totalVotes": 9
+    }
+  ]
+}

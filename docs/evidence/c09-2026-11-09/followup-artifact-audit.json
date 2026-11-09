@@ -1,0 +1,148 @@
+{
+  "models": 14,
+  "groups": 7,
+  "all_finite": true,
+  "checkpoint_audits": [
+    {
+      "group": "p15-parent",
+      "fold": 0,
+      "cumulative_steps": 40000,
+      "additional_steps": 0,
+      "checkpoint_sha256": "5f794e6ee6b043d04c7fb2e861358d05afea7456e070c090a3be189bf69eafd2",
+      "all_finite": true,
+      "completed_fit_amp_skips": 15,
+      "completed_fit_attempts": 40015
+    },
+    {
+      "group": "p15-parent",
+      "fold": 1,
+      "cumulative_steps": 40000,
+      "additional_steps": 0,
+      "checkpoint_sha256": "c8f91847b79cc9e042add949b2de5289de98174a82a3ce41ed5043be7574882f",
+      "all_finite": true,
+      "completed_fit_amp_skips": 15,
+      "completed_fit_attempts": 40015
+    },
+    {
+      "group": "c09-served",
+      "fold": 0,
+      "cumulative_steps": 45000,
+      "additional_steps": 5000,
+      "checkpoint_sha256": "f4b20bfeb6793e8006c53bf4a7628ff82c091127fc9a97e432aa82dbd607f2a1",
+      "all_finite": true,
+      "completed_fit_amp_skips": 0,
+      "completed_fit_attempts": 5000
+    },
+    {
+      "group": "c09-served",
+      "fold": 1,
+      "cumulative_steps": 45000,
+      "additional_steps": 5000,
+      "checkpoint_sha256": "1904b7f0faeac6f8125d37faed45bea069c10f9827e70f8203b51e378213f6e5",
+      "all_finite": true,
+      "completed_fit_amp_skips": 0,
+      "completed_fit_attempts": 5000
+    },
+    {
+      "group": "cosine-control",
+      "fold": 0,
+      "cumulative_steps": 45000,
+      "additional_steps": 5000,
+      "checkpoint_sha256": "6f272426ead34a89f00b2289642ef5e1296496c98cd93baace3c50875a795fb0",
+      "all_finite": true,
+      "completed_fit_amp_skips": 0,
+      "completed_fit_attempts": 5000
+    },
+    {
+      "group": "cosine-control",
+      "fold": 1,
+      "cumulative_steps": 45000,
+      "additional_steps": 5000,
+      "checkpoint_sha256": "f46510b89a82719bc7e54c11eba09b9152eeae6eecfab90b0c9d5c8de10d203b",
+      "all_finite": true,
+      "completed_fit_amp_skips": 0,
+      "completed_fit_attempts": 5000
+    },
+    {
+      "group": "mined-5000",
+      "fold": 0,
+      "cumulative_steps": 45000,
+      "additional_steps": 5000,
+      "checkpoint_sha256": "d039c794bce4d61934b494ebd07665d17588c34c3e70b20587aa57832870c9ba",
+      "all_finite": true,
+      "completed_fit_amp_skips": 5,
+      "completed_fit_attempts": 20005
+    },
+    {
+      "group": "mined-5000",
+      "fold": 1,
+      "cumulative_steps": 45000,
+      "additional_steps": 5000,
+      "checkpoint_sha256": "38d5eff6bc993d420aa06c36ff9ab5bad19c7d2a0c19a792759c3ba08cff6ad8",
+      "all_finite": true,
+      "completed_fit_amp_skips": 5,
+      "completed_fit_attempts": 20005
+    },
+    {
+      "group": "mined-10000",
+      "fold": 0,
+      "cumulative_steps": 50000,
+      "additional_steps": 10000,
+      "checkpoint_sha256": "a70d5a841f2d4151e2ec46584e327f34be72daf72941d27eac8401ddaf067889",
+      "all_finite": true,
+      "completed_fit_amp_skips": 5,
+      "completed_fit_attempts": 20005
+    },
+    {
+      "group": "mined-10000",
+      "fold": 1,
+      "cumulative_steps": 50000,
+      "additional_steps": 10000,
+      "checkpoint_sha256": "93157276ab4b1cdf5dd871e0eb5ffed567008de8de4350bded8d8e4e51633f82",
+      "all_finite": true,
+      "completed_fit_amp_skips": 5,
+      "completed_fit_attempts": 20005
+    },
+    {
+      "group": "mined-15000",
+      "fold": 0,
+      "cumulative_steps": 55000,
+      "additional_steps": 15000,
+      "checkpoint_sha256": "b5c8c0e52f35e6e0b4b180d98c6ca4123d366de1bc63f89ed436a3752d2b9186",
+      "all_finite": true,
+      "completed_fit_amp_skips": 5,
+      "completed_fit_attempts": 20005
+    },
+    {
+      "group": "mined-15000",
+      "fold": 1,
+      "cumulative_steps": 55000,
+      "additional_steps": 15000,
+      "checkpoint_sha256": "d3ad365f7833c8ecc3366e18e61f0b67f4f809ba49759091e905c954aaf982d8",
+      "all_finite": true,
+      "completed_fit_amp_skips": 5,
+      "completed_fit_attempts": 20005
+    },
+    {
+      "group": "mined-20000",
+      "fold": 0,
+      "cumulative_steps": 60000,
+      "additional_steps": 20000,
+      "checkpoint_sha256": "1fc391d1e8f2f953c47f6909ad940361a4a452fb777aadcc4a13d658034cb542",
+      "all_finite": true,
+      "completed_fit_amp_skips": 5,
+      "completed_fit_attempts": 20005
+    },
+    {
+      "group": "mined-20000",
+      "fold": 1,
+      "cumulative_steps": 60000,
+      "additional_steps": 20000,
+      "checkpoint_sha256": "05a480def2bb75aee3d8ac75d1b13cd88d03195861832de994d9a284c263a8f0",
+      "all_finite": true,
+      "completed_fit_amp_skips": 5,
+      "completed_fit_attempts": 20005
+    }
+  ],
+  "note": "Mining fits completed full20000 successful updates per fold;5 AMP-skipped attempts per fold are retained, not counted as updates"
+}

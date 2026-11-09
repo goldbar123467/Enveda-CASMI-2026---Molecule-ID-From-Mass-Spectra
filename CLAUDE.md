@@ -2,26 +2,45 @@
 
 ## Current authorization — C09, 2026-11-09
 
-Latest user override at approximately16:38UTC: **run more2070 training** while
-Kaggle has a user-reported notebook-start/connectivity incident. C09T is already
-complete:2 folds x5000 additional updates, zero restarts/AMP skips; matched old
-development MRR ties C08 at.740000. Do not relaunch it. C09CT now trains the
-missing matched cosine-only control in `outputs/local/c09-control-20261109`.
-`scripts/run_2070_followup_queue.py` waits for that existing trainer to finish,
-then pilots/resumes C09H online-hard-negative training before its longer run.
-Only one local GPU workload at a time; never launch either trainer manually
-while the supervisor/queue is alive. C09H:2 folds x20000 updates,48 hardest of128,
-four5000-update schedule cycles/milestones,6h cap. Pilot failure stops the queue.
-Dashboard http://127.0.0.1:8766 follows its active-run pointer. No submission is
-authorized without the unchanged campaign execution/scientific qualification
-and global one-pending gate. P15 was still PENDING/no score at16:34UTC.
+Latest user override at22:07UTC: continue UI/work until verified silver; run an
+hourly worker for24 hours. Active Codex goal and heartbeat
+`casmi-silver-campaign-hourly-for-24-hours` target this chat. Read
+`configs/c09-silver-worker-20261109.json` and current C09 notes before acting.
+Live rank907/5034, score0.480; nominal silver cutoff251 at0.482 with ties
+through269, so verify actual rank, not score alone. No paid compute or
+unqualified submission is authorized by the rank target. Continue useful work
+between hourly wake-ups; schedule expiration is not goal achievement.
+
+Latest user request: **update and retry Kaggle cloud T4s**. At21:32UTC the
+C09C2 private dual-T4 v2 retry is RUNNING; C09RP completed real finite CUDA
+work on both14.562GiB T4s. Main startup loaded officialRDKit2026.03.3. Full
+P01/P14 results and GPU1 real-encoder receipt remain pending; allocation/liveness
+do not prove pipeline completion. Do not duplicate/rebuild the active notebook.
+
+Local C09T, C09CT and C09H all finished normally:10000+10000+40000 successful
+new updates, zero restarts. C09H had10 AMP-skipped attempts, not counted as
+updates; peak reserved1.5625GiB. Queue and trainers exited; never relaunch them.
+Development-only comparison of14 model files/seven groups ties all new variants
+with the P15 parent atMRR.740000. Predeclared tie rule freezes cosine-control
+at0.20; there is no demonstrated additional training gain or submission qualification.
+New80 confirmation results were not used in selection. Freeze receipt21:32UTC,
+while the T4 run was RUNNING: `outputs/local/c09-followup-evaluation-20261109/`.
+
+`scripts/finish_c09_confirmation.py` owns the bounded wait/download/frozen local
+inference, with no submission or reselection. Inspect its process and status
+before starting overlapping local GPU work. Read-only campaign/hourly tracking
+continues; dashboard http://127.0.0.1:8766 shows the completed training queue.
+C09S3 CPU audit completed:20/80 queries match raw spectrum signatures despite
+cached-group exclusions. Full80 remains primary; predeclared label-blind
+no-raw-overlap cohort is secondary. Do not call this universally leakage-free.
 
 The user's attached handoff explicitly resumes a **fresh improvement campaign**
 using the local2070 and free Kaggle concurrently. Training/recovery/private model
 uploads/qualified sequential submissions/GitHub pushes are authorized. Historical
 C08/F07 exhausted-authorization and pause instructions below do not limit C09.
-Exactly **ONE pending leaderboard submission globally** is allowed, including
-P15/ref58163163, still pending at14:45UTC. Never automatically resubmit P15.
+Exactly **ONE pending leaderboard submission globally** is allowed. At21:06UTC
+P15/ref58163163 is COMPLETE0.479/no error, below champion0.480; no pending
+submissions remain. Never automatically resubmit P15 or spend an unqualified slot.
 Use `configs/c09-campaign-20261109.json`, `.local/c09-submission-ledger.json`,
 `docs/C09-CAMPAIGN-2026-11-09.md`; inspect processes before any restart.
 C09T continues existing C08 fits with a new served-score objective; C09V is a

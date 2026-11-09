@@ -1,0 +1,25 @@
+{
+  "campaign": "C09",
+  "authorized_utc": "2026-11-09T22:07:47Z",
+  "goal": "Verified silver-qualifying live leaderboard rank; provisional position is not a final competition medal",
+  "hourly_worker": "casmi-silver-campaign-hourly-for-24-hours",
+  "schedule": "24 hourly wake-ups in this chat, starting one hour after creation at approximately22:08UTC9November",
+  "current_snapshot": {
+    "checked_utc": "2026-11-09T22:08:44Z",
+    "teams": 5034,
+    "team_id": 16893680,
+    "team_name": "Clark Kitchen",
+    "rank": 907,
+    "score": 0.480,
+    "nominal_silver_cutoff_rank": 251,
+    "cutoff_score": 0.482,
+    "ties": "0.482 spans ranks218-269; matching cutoff score alone does not establish silver.0.483 currently spans ranks137-217. Recheck actual rank after every scored improvement."
+  },
+  "worker_behavior": "Inspect ownership/status/checkpoints, recover failures, advance justified training/research/validation/smoke/submission and wait for actual score; do not merely poll or repeat completed fits",
+  "maximum_pending_submissions": 1,
+  "qualification": "Unchanged C09 scientific and realKaggle execution/independent-audit requirements",
+  "paid_compute_allowed": false,
+  "model_datasets_private": true,
+  "goal_complete_only_after_live_rank_verification": true,
+  "at_24h_if_unmet": "Report measured progress and leave goal incomplete; expiration of the hourly schedule is not achievement"
+}

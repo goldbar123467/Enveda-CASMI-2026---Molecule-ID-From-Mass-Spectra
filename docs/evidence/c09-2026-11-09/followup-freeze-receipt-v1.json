@@ -1,0 +1,19 @@
+{
+  "frozen_utc": "2026-11-09T21:32:02.751051+00:00",
+  "selection_finished_utc": "2026-11-09T21:25:07.319816+00:00",
+  "cloud_status_at_freeze": "RUNNING",
+  "cloud_ref": "clarkkitchen/casmi26-c09-clean-validation v2",
+  "cloud_confirmation_report_downloaded": false,
+  "files": {
+    "scripts/finish_c09_confirmation.py": "e510fd654b159ef1da5d3ac57060cb003040bc6b4f08625788a8ada5e4fe6355",
+    "scripts/followup_models.py": "efe821f214f1cb20efdfcc38387a43c3d06bb6bbf8cad3051d4abcfedd5685a3",
+    "scripts/select_c09_followups.py": "91888500dd13dbb06c1b38132d8a56864145e1856f738129ab51acca9b153c55",
+    "scripts/compatible_tail.py": "b5677d884008f0fd16a66ca045eb5c5c61420e895c66612d3fefdef166f58378",
+    "scripts/tail_fusion.py": "b1fd92ee93412454c80942c70fd3bc72f89f07a673ff1a319d7e821be368a5d4",
+    "configs/c09-followup-confirmation-20261109.json": "1ef282c87fc747a760a9bb3aba5f74642ae9436d354f2ada6ea5419bb781e5b9",
+    "outputs/local/c09-followup-evaluation-20261109/selection.json": "8c014f12d21ed88d82deb7fc03a3a795940a30db4c8c2b0ef4e6f320fb6c999f",
+    "outputs/publish/c09-followup-models-20261109/followup-manifest.json": "a9ea0fb37734f4b574edbf99917bb8b49029ad6d2522b7af8af6b4581bfc0525"
+  },
+  "fresh80_metrics_used_for_selection": false,
+  "automatic_submission": false
+}

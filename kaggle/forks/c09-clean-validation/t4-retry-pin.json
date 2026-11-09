@@ -1,0 +1,10 @@
+{
+  "campaign": "C09",
+  "retry_of": "cancelled v1; no outputs/GPU quota consumed",
+  "parent_v1_sha256": "b0c17c3c88e559e2f369a91e5ef273508343a8c0b4a4236d167608d868ac87fb",
+  "notebook_sha256": "b1c0a41a5994dceff1f972ba482599de060df9b1bcd51e4eedeeda2ba1aa1985",
+  "gpu0": "Unchanged full P01 clean80 validation",
+  "gpu1": "Pinned P14 real encoder preflight and negative-control inference",
+  "changes": "Device allocation/recovery only; no model, query, coefficient or metric change",
+  "scoring_submission": false
+}

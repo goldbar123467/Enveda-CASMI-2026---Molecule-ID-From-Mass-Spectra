@@ -1,0 +1,15 @@
+{
+  "campaign": "C09",
+  "development": "Exactly the previously used30 acquisition-clean C08 development queries; no old confirmation or new80 metrics in recipe selection",
+  "candidate_order": ["cosine-control", "mined-5000", "mined-10000", "mined-15000", "mined-20000"],
+  "weights": [0.0, 0.05, 0.1, 0.2],
+  "tie_break": "Highest development MRR, then smaller weight, then listed group order",
+  "references": {"P01": "unchanged complete pipeline", "P15": "parent C08 legacy16-hard two-fit tail at0.20; actual public0.479", "C09T": "served-score two-fit tail at0.20", "P14": "exact full downstream frozen-head negative control; actual public0.458"},
+  "confirmation": "Full80-query complete P01 lists, retaining absent truths as zero; evaluate the frozen development winner only, no reserved reselection",
+  "secondary_cohort": "Also report a query-label-blind cohort excluding any molecule flagged by either raw-spectrum overlap signature; keep full80 results primary and report excluded count/source composition",
+  "uncertainty": "Paired bootstrap10000 resamples, same molecule rows and fixed RNG seed as existing paired_summary",
+  "promotion": "Execution success is separate from model quality. Require actual full-pipeline results, negative-control assessment, honest uncertainty/regression report and full realKaggle smoke/identity/arithmetic/fallback/parity audit before considering a new submission",
+  "automatic_submission": false,
+  "never_resubmit_P15": true,
+  "maximum_pending_leaderboard_submissions": 1
+}

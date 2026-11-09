@@ -9,7 +9,7 @@ def main():
     out=ROOT/'kaggle/forks/c09-spectrum-audit';out.mkdir(parents=True,exist_ok=True)
     source=(ROOT/'scripts/c09_spectrum_audit.py').read_text(encoding='utf-8')
     features=(ROOT/'outputs/local/kit/features.py').read_text(encoding='utf-8')
-    preamble="from pathlib import Path\nPath('/kaggle/working/features.py').write_text("+repr(features)+",encoding='utf-8')\n"
+    preamble="from pathlib import Path\nimport sys\nsys.path.insert(0,'/kaggle/working')\nPath('/kaggle/working/features.py').write_text("+repr(features)+",encoding='utf-8')\n"
     code=preamble+source;compile(code,'c09_spectrum_audit','exec')
     (out/'audit.py').write_text(code,encoding='utf-8')
     meta=dict(id='clarkkitchen/casmi26-c09-spectrum-audit',title='casmi26 c09 spectrum audit',code_file='audit.py',language='python',kernel_type='script',

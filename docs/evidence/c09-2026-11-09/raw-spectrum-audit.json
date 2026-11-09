@@ -1,0 +1,24 @@
+{
+  "kind": "raw_competition_peak_overlap_audit",
+  "queries": 80,
+  "query_spectra": 302,
+  "raw_reference_rows": 2539608,
+  "precursor_window": "20ppm +0.003Da; peak signatures ignore CE/adduct/instrument metadata",
+  "candidate_rows": 21232,
+  "checked_rows": 21232,
+  "overlap_queries_by_signature": {
+    "full_peaks_1mDa_intensity1e-4": 10,
+    "model_top96_fp16_ignore_metadata": 20
+  },
+  "any_reference_overlap_queries": 20,
+  "match_records": 106,
+  "query_identity_labels_used": false,
+  "within_query_panel_cross_identity_peak_aliases": [
+    0,
+    0
+  ],
+  "validation_contract_sha256": "d7ec2771628e84428d496309966ee765bcb93f02397debb4318eb1517e5ff723",
+  "query_sha256": "1dd6455b731e21656bdcf9e7bbb23dc320b7151612427e03b3c09c455e0a31f6",
+  "raw_reference_sha256": "9423f90ec08b941a9646b535bf0606183e86ff0c5a297978f5a70693d41bcd98",
+  "limitation": "Bounded precursor window; rounded/full-peak and quantized model-input matches are conservative warnings, not proof of label leakage. Does not exhaustively test arbitrary tolerance/cross-instrument near-duplicates."
+}

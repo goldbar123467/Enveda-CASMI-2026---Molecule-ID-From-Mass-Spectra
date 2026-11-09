@@ -1,33 +1,27 @@
 {
-  "checked_utc": "2026-11-09T16:50:48.775557+00:00",
+  "checked_utc": "2026-11-09T22:13:27.465125+00:00",
   "cloud": {
     "clarkkitchen/casmi26-c09-coverage-controls": {
       "status": "CANCEL_REQUESTED"
     },
     "clarkkitchen/casmi26-c09-clean-validation": {
-      "status": "QUEUED"
+      "status": "RUNNING"
     },
     "clarkkitchen/casmi26-c09-spectrum-audit": {
-      "status": "QUEUED"
+      "status": "COMPLETE"
+    },
+    "clarkkitchen/casmi26-c09-t4-recovery-probe": {
+      "status": "COMPLETE"
     }
   },
-  "pending": [
-    {
-      "reference": "58163163",
-      "status": "PENDING",
-      "public_score": null,
-      "error": "",
-      "success": false,
-      "description": "C08-P15-20261108: C08 selected two-fit320 scorer, conservative tail-only RRF after complete P01. Rank1/candidate set exact. Real12 Kaggle smoke, arithmetic/identity/artifact/local-Kaggle parity audited. Explicit trial; hidden improvement unproven."
-    }
-  ],
+  "pending": [],
   "latest_submissions": [
     {
       "reference": "58163163",
-      "status": "PENDING",
-      "public_score": null,
+      "status": "COMPLETE",
+      "public_score": 0.479,
       "error": "",
-      "success": false,
+      "success": true,
       "description": "C08-P15-20261108: C08 selected two-fit320 scorer, conservative tail-only RRF after complete P01. Rank1/candidate set exact. Real12 Kaggle smoke, arithmetic/identity/artifact/local-Kaggle parity audited. Explicit trial; hidden improvement unproven."
     },
     {

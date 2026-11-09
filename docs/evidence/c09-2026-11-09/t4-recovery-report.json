@@ -1,0 +1,38 @@
+{
+  "devices": [
+    {
+      "index": 0,
+      "name": "Tesla T4",
+      "vram_gib": 14.56219482421875
+    },
+    {
+      "index": 1,
+      "name": "Tesla T4",
+      "vram_gib": 14.56219482421875
+    }
+  ],
+  "workers": [
+    {
+      "logical_device": 0,
+      "name": "Tesla T4",
+      "torch_version": "2.11.0+cu130",
+      "cuda_version": "13.0",
+      "vram_gib": 14.56219482421875,
+      "peak_reserved_gib": 0.0234375,
+      "finite": true,
+      "seconds": 0.6678654549999976
+    },
+    {
+      "logical_device": 0,
+      "name": "Tesla T4",
+      "torch_version": "2.11.0+cu130",
+      "cuda_version": "13.0",
+      "vram_gib": 14.56219482421875,
+      "peak_reserved_gib": 0.0234375,
+      "finite": true,
+      "seconds": 0.6032754240000031
+    }
+  ],
+  "finite": true,
+  "scoring_submission": false
+}

@@ -1,0 +1,190 @@
+"""Wait for the existing T4 retry, then evaluate frozen recipes once; never submit."""
+import os
+os.environ.setdefault('OMP_NUM_THREADS', '2')
+os.environ.setdefault('MKL_NUM_THREADS', '2')
+import argparse
+import json
+import subprocess
+import sys
+import time
+from datetime import datetime, timezone, timedelta
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+OUT = ROOT / 'outputs/local/c09-followup-evaluation-20261109'
+CLOUD = ROOT / 'outputs/forks/c09-clean-validation-v2'
+AUDIT = ROOT / 'outputs/forks/c09-spectrum-audit-v3'
+CLI = ROOT / '.venv/Scripts/python.exe'
+GPU = ROOT / '.venv-gpu/Scripts/python.exe'
+REF = 'clarkkitchen/casmi26-c09-clean-validation'
+
+
+def stamp():
+    return datetime.now(timezone.utc).isoformat()
+
+
+def metric_vector(frame, labels, identities):
+    """Keep every molecule, including absent truths; reject identity duplicates."""
+    import numpy as np
+    assert frame.molecule_id.tolist() == labels.index.tolist()
+    result = []
+    for row in frame.itertuples(index=False):
+        keys = [identities[s] for s in row.smiles.split(';')]
+        assert 1 <= len(keys) <= 25 and len(keys) == len(set(keys))
+        truth = labels.loc[row.molecule_id, 'key']
+        result.append(1 / (keys.index(truth) + 1) if truth in keys else 0.)
+    return np.asarray(result)
+
+
+def evaluate():
+    import hashlib
+    import numpy as np
+    import pandas as pd
+    import torch
+    from followup_models import PACKAGE, REFERENCES, score_group
+    from precision_cache import sha, write
+    from compatible_tail import apply
+    from tail_fusion import paired_summary
+    from training_monitor import system_memory
+
+    assert not (OUT / 'confirmation.json').exists(), 'Confirmation already sealed'
+    freeze = json.loads((OUT / 'freeze-receipt.json').read_text())
+    assert freeze['cloud_status_at_freeze'] == 'RUNNING'
+    for name, pin in freeze['files'].items():
+        assert sha(ROOT / name) == pin, name
+    selection = json.loads((OUT / 'selection.json').read_text())
+    winner = selection['winner']
+    cloud_report = json.loads((CLOUD / 'c09_clean_report.json').read_text())
+    contract_path = ROOT / 'outputs/publish/c09-validation-20261109/validation-contract.json'
+    contract = json.loads(contract_path.read_text())
+    assert cloud_report['validation_contract_sha256'] == sha(contract_path)
+    assert cloud_report['baseline_replay_exact'] and cloud_report['queries'] == 80
+    assert not cloud_report['model_selection'] and not cloud_report['truth_injection']
+    devices = json.loads((CLOUD / 'c09_t4_allocation.json').read_text())['devices']
+    assert len(devices) == 2 and all('T4' in d['name'] for d in devices)
+    preflight = json.loads((CLOUD / 'c09_gpu1_preflight.json').read_text())
+    assert preflight['dreams_finite'] and preflight['molformer_finite']
+    assert preflight['physical_device_requested'] == '1'
+    assert (CLOUD / 'c09_clean_p14.log').stat().st_size > 0
+
+    labels_path = contract_path.parent / 'labels.csv'
+    assert sha(labels_path) == contract['files']['labels.csv']
+    labels = pd.read_csv(labels_path, dtype=str).set_index('molecule_id')
+    assert len(labels) == 80 and labels.partition.eq('confirmation').all()
+    frames = {name: pd.read_csv(CLOUD / file, dtype=str, keep_default_na=False)
+              for name, file in [('P01', 'c09_clean_p01.csv'), ('P14', 'c09_clean_p14.csv')]}
+    identities = {}
+    for name in ['c09_clean_neural_p01.parquet', 'outsider_neural_features.parquet']:
+        frame = pd.read_parquet(CLOUD / name, columns=['smiles', 'metric_key']).dropna()
+        for smiles, key in zip(frame.smiles.astype(str), frame.metric_key.astype(str)):
+            assert smiles not in identities or identities[smiles] == key
+            identities[smiles] = key
+    values = {name: metric_vector(frame, labels, identities) for name, frame in frames.items()}
+    exported = pd.read_csv(CLOUD / 'c09_clean_predictions.csv').set_index('molecule_id').loc[labels.index]
+    for name, column in [('P01', 'p01_mrr25'), ('P14', 'p14_mrr25')]:
+        assert np.allclose(values[name], exported[column], atol=1e-14, rtol=0)
+    assert abs(values['P01'].mean() - cloud_report['baseline_mrr25']) < 1e-14
+    assert abs(values['P14'].mean() - cloud_report['p14_mrr25']) < 1e-14
+
+    audit = json.loads((AUDIT / 'c09_spectrum_audit.json').read_text())
+    assert audit['validation_contract_sha256'] == sha(contract_path)
+    assert audit['queries'] == 80 and not audit['query_identity_labels_used']
+    overlaps = set(pd.read_csv(AUDIT / 'c09_spectrum_matches.csv').molecule_id.astype(str))
+    assert overlaps <= set(labels.index) and len(overlaps) == audit['any_reference_overlap_queries']
+    clean = ~labels.index.isin(overlaps)
+    assert clean.sum() > 0
+    torch.set_num_threads(2)
+    torch.cuda.set_per_process_memory_fraction(.7)
+    shared = {}
+    queries = CLOUD / 'c09_clean_queries.parquet'
+    assert set(pd.read_parquet(queries, columns=['molecule_id']).molecule_id.astype(str)) == set(labels.index)
+    receipts = {}
+    for name in list(dict.fromkeys(REFERENCES + [winner['group']])):
+        assert system_memory().get('free_gib', 0) >= 4, 'Free RAM below floor'
+        scores, receipt = score_group(name, frames['P01'], queries,
+                                     OUT / ('confirmation-' + name + '.parquet'), shared, OUT / 'bundles')
+        assert receipt['input_errors'] == 0 and receipt['scored_molecules'] == 80
+        weight = winner['weight'] if name == winner['group'] else .2
+        candidate, changes = apply(frames['P01'], scores, weight)
+        assert changes['rank_one_changes'] == 0 and changes['candidate_set_changes'] == 0
+        frames[name] = candidate
+        values[name] = metric_vector(candidate, labels, identities)
+        assert np.array_equal(values[name] > 0, values['P01'] > 0)
+        receipts[name] = dict(receipt, changes=changes, selected_weight=weight)
+        print('C09 FROZEN CONFIRMATION SCORED', name, flush=True)
+    cohorts = {}
+    for cohort, mask in [('full80', np.ones(80, dtype=bool)), ('no_raw_signature_overlap', clean)]:
+        cohorts[cohort] = dict(queries=int(mask.sum()), excluded=int((~mask).sum()),
+            sources=labels.loc[mask, 'source'].value_counts().to_dict(),
+            p01_truths=int((values['P01'][mask] > 0).sum()),
+            comparisons={name: paired_summary(values['P01'][mask], value[mask])
+                         for name, value in values.items() if name != 'P01'},
+            winner_vs_parent=paired_summary(values['p15-parent'][mask], values[winner['group']][mask]))
+    report = dict(campaign='C09',completed_utc=stamp(),winner=winner,cohorts=cohorts,
+        development_selection_sha256=sha(OUT / 'selection.json'), freeze_receipt_sha256=sha(OUT / 'freeze-receipt.json'),
+        cloud_report_sha256=sha(CLOUD / 'c09_clean_report.json'), raw_audit_sha256=sha(AUDIT / 'c09_spectrum_audit.json'),
+        input_sha256={p.name: sha(p) for p in CLOUD.iterdir() if p.is_file()}, score_receipts=receipts,
+        detects_known_P14_regression=bool((values['P14'] - values['P01']).mean() < 0),
+        detects_known_P15_regression=bool((values['p15-parent'] - values['P01']).mean() < 0),
+        truth_absent_mrr=0, reserved_recipe_reselection=False, broader_pretraining_exposure_excluded=False,
+        automatic_submission=False, production_smoke_and_independent_parity_audit='Still required before any submission')
+    predictions = pd.DataFrame(dict(molecule_id=labels.index, raw_overlap=labels.index.isin(overlaps), **values))
+    predictions.to_csv(OUT / 'confirmation-predictions.csv', index=False)
+    write(OUT / 'confirmation.json', report)
+    print('DONE C09 FROZEN CONFIRMATION', json.dumps(report), flush=True)
+
+
+def wait_and_finish():
+    import msvcrt
+    sys.path.insert(0, str(ROOT / 'scripts'))
+    from precision_cache import write, sha
+    from finish_compatible_campaign import status_name
+    from kaggle.api.kaggle_api_extended import KaggleApi
+    lock = (OUT / 'confirmation-finisher.lock').open('a+b')
+    lock.write(b'0'); lock.flush(); lock.seek(0)
+    msvcrt.locking(lock.fileno(), msvcrt.LK_NBLCK, 1)
+    assert (OUT / 'freeze-receipt.json').exists()
+    freeze = json.loads((OUT / 'freeze-receipt.json').read_text())
+    for name, pin in freeze['files'].items():
+        assert sha(ROOT / name) == pin, name
+    api = KaggleApi(); api.authenticate()
+    deadline = datetime.now(timezone.utc) + timedelta(hours=9)
+    while datetime.now(timezone.utc) < deadline:
+        if (ROOT / '.local/compute-paused.json').exists():
+            raise RuntimeError('Local compute pause requested; cloud retry retained')
+        state = status_name(api.kernels_status(REF))
+        write(OUT / 'confirmation-status.json', dict(checked_utc=stamp(), pid=os.getpid(), cloud=state,
+                                                   deadline_utc=deadline.isoformat(), automatic_submission=False))
+        if state == 'COMPLETE':
+            break
+        if state in ['ERROR', 'CANCELLED', 'CANCEL_ACKNOWLEDGED']:
+            raise RuntimeError('Cloud retry ended: ' + state)
+        time.sleep(60)
+    else:
+        raise TimeoutError('Existing T4 retry did not complete within bounded wait')
+    # Fetch only completed artifacts; never evaluate partial/fallback outputs.
+    pattern = r'(c09_clean_(report\.json|p01\.csv|p14\.csv|predictions\.csv|queries\.parquet|neural_p01\.parquet|p14\.log)|outsider_neural_features\.parquet|c09_t4_allocation\.json|c09_gpu1_preflight\.(json|log))$'
+    subprocess.run([str(CLI), 'scripts/fetch_output.py', 'c09-clean-validation', str(CLOUD), pattern], cwd=ROOT, check=True, timeout=1800)
+    # One local GPU owner. Do not race any new supervised training workload.
+    process = subprocess.run(['powershell', '-NoProfile', '-Command',
+        "Get-CimInstance Win32_Process | Where-Object { $_.Name -match 'python' -and $_.CommandLine -match 'scripts[/\\\\](c09_(train|control_train|hard_train)|select_c09_followups)' } | Select-Object -ExpandProperty ProcessId"],
+        capture_output=True, text=True, check=True)
+    assert not process.stdout.strip(), 'Another local GPU workload is active'
+    subprocess.run([str(GPU), '-u', str(Path(__file__).resolve()), '--evaluate'], cwd=ROOT, check=True, timeout=3600)
+    write(OUT / 'confirmation-status.json', dict(checked_utc=stamp(), pid=os.getpid(), cloud=state,
+                                               state='complete', automatic_submission=False))
+
+
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--evaluate', action='store_true')
+    args = parser.parse_args()
+    if args.evaluate:
+        evaluate()
+    else:
+        try:
+            wait_and_finish()
+        except Exception as exc:
+            OUT.mkdir(parents=True, exist_ok=True)
+            (OUT / 'confirmation-attention.json').write_text(json.dumps(dict(checked_utc=stamp(), error=repr(exc)), indent=2))
+            raise

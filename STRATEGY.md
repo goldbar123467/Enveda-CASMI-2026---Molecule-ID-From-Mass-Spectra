@@ -1,49 +1,53 @@
-# C09 authorized and started — 9 November
+# C09 results and recovered T4 validation — 9 November
 
-Latest update9Nov: C09T finished at15:12:53UTC,2 folds x5000 additional updates,
-zero restarts/AMP skips, peak reserved1.418GiB. All weights are finite, pinned
-and privately uploaded. On30 previously used development queries excluding
-base-connected input groups, tail weight.20 gives.737222→.740000, one improved,
-zero harmed, delta CI[0,.008333]. The existing C08 parent also gives.740000 on
-those same rows; additional training has not demonstrated a benefit. Selection
-is frozen before the new80-query confirmation and is not promotion.
+Active user goal: verified silver leaderboard position, with24 hourly worker
+wake-ups in this chat. Live22:08UTC rank907/5034 at0.480; nominal silver rank251
+at0.482, but0.482 ties extend to269.0.483 currently clears the boundary.
+Preserve all C09 qualification and one-pending rules.
 
-The user subsequently requested more2070 work. C09CT supplies the missing
-matched cosine-only continuation control: same two C08 parents/folds/seed/data/
-5000-update schedule/microbatch192 as C09T, changing only candidate CE. C09H is
-queued behind it and must pass a real200+50 checkpoint-recovery pilot. It mines
-48 hard candidates from128 sampled training-only negatives, excludes positive/
-identical-fingerprint negatives, and saves5000/10000/15000/20000-update models
-per fold. First-cycle schedule matches C09T; later cycles explore dose. No new
-external data or automatic submission. The sequential queue keeps exactly one
-local GPU training process active; full-pipeline validation remains necessary.
+P15 returned COMPLETE public **0.479**, no error, verified21:06UTC. P01/P13
+remain champion0.480. The small old external improvement did not transfer;
+preserve P15 as another negative control. No submission is pending or queued.
 
-Kaggle clean validation and CPU peak-overlap audit were still queued at16:34UTC;
-P15 remained pending. The user supplied a Kaggle warning about notebooks failing
-to start/stay connected. This is a platform blocker, not evidence that a trainer
-must be repeated. Obsolete old-panel C09V cancellation is requested, not yet
-acknowledged; do not mark that run as successfully completed/cancelled yet.
+All local follow-ups completed: C09T10000 served-score continuation updates,
+C09CT10000 matched cosine-only updates and C09H40000 online-hard updates.
+Zero restarts; mining had10 skipped AMP attempts across40010 attempts. Two
+mining fits produced eight milestone files, not eight independent fits. Peak
+reserved1.5625GiB. Completed trainers/queue must not be relaunched.
 
-Fresh authorization supersedes C08 exhaustion for a new local/free-Kaggle
-improvement campaign. One pending leaderboard submission globally; P15 remains
-PENDING at14:45UTC, so no new candidate can be submitted. Champion remains
-P01/P13 at0.480. See [C09](docs/C09-CAMPAIGN-2026-11-09.md).
+Fourteen finite model files/seven serving groups were hash/parent/source audited.
+On the same30 previously used acquisition-clean DEVELOPMENT queries, every new
+control/mined dose and P15/C09T reference ties atMRR.740000 with tail0.20 versus
+P01.737222. The predeclared tie rule selects cosine-control0.20, frozen21:32UTC
+while new80 cloud confirmation is RUNNING. Additional training has not shown a
+benefit over P15. No new80 or old confirmation metrics selected this recipe.
 
-C09P completed250 real continuation updates, including a fresh-process resume
-from200 to250: zero AMP skips, peak reserved1.418GiB, about6.1–6.5 updates/sec,
-last50 mean loss1.98375. This is execution/learning evidence only. C09T now
-continues the two existing C08 legacy16-hard folds to5000 additional updates
-each, changing only the candidate loss to use the cosine-plus-fingerprint score
-actually served. No equivalent C08 fits are repeated; parent weights/cache/split
-and source pins are retained. C09V is queued for the exact P14 full-pipeline
-negative control and expanded-candidate coverage diagnostic on separate devices.
+The user requested a cloudT4 retry. A private liveness probe COMPLETE on two
+TeslaT4s with finite CUDA work; the full80-query P01/P14 retry C09C2 v2 is RUNNING
+at21:32UTC. It has allocated bothT4s and loaded officialRDKit2026.03.3; full
+pipeline and GPU1 encoder results remain pending. Original v1 jobs were
+CANCEL_ACKNOWLEDGED after Kaggle's notebook-start incident. The obsolete C09V
+old-panel job remains CANCEL_REQUESTED, not acknowledged.
 
-The current public scan finds243 distinct listings,18 available selected source
-snapshots and two404s. The new peaks-v2 text changes several knobs together,
-including external-library/LOTUS/mass rules; neither its title nor its narrative
-verifies a result. Current rules allow accessible external data, but today's
-PubChem redistribution and MassSpecGym/MIST provenance discussions are unanswered
-participant questions, not host approval. C09 training uses no new external data.
+CPU raw-spectrum audit C09S3 completed after fixing a generated-helper import
+path failure in v2.20/80 query identities match raw competition spectrum
+signatures (10 rounded-full-peak,20 top96FP16 matches;106 records). This is a
+bounded precursor-window warning, not proof of training label leakage. The
+new panel's cached acquisition-group exclusions were insufficient to exclude
+all raw peaks. Keep full80 primary; additionally report the previously declared
+label-blind60-query no-raw-overlap cohort. Assess the known P14/P15 regressions
+and missing-truth zeros before trusting predictive validation. Do not reselect
+models or coefficients on either confirmation cohort.
+
+The bounded completion runner waits for actual COMPLETE, then checks exact
+baseline replay, devices, GPU1 encoder output, official identity mapping, and
+frozen model score receipts. It cannot submit. Production smoke, independent
+ensemble/identity/fallback/local-Kaggle parity audits remain mandatory before
+any qualified sequential submission. No paid/rented compute.
+
+See [C09 campaign](docs/C09-CAMPAIGN-2026-11-09.md) and compact evidence. The
+public243-entry scan and provenance review remain recorded there; C09 training
+introduced no new external data.
 
 ---
 

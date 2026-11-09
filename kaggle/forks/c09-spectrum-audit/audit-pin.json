@@ -1,7 +1,7 @@
 {
   "scoring_submission": false,
   "device": "CPU only",
-  "source_sha256": "b1bd7e30b6ce12c8b80021a25d2673868468e430a53a243a1b852a91d61a49ab",
+  "source_sha256": "da54fbcd4166f782673705bf4ebc80bede641b0b550107d9753f288d98362f9e",
   "features_sha256": "a97ad9b3ab3711517864d56e497e1672cb29bb05683c72b52db9f9b0a17b1455",
   "query_labels_used": false,
   "source": "scripts/c09_spectrum_audit.py"

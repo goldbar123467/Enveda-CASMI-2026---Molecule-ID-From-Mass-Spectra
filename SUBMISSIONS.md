@@ -2,14 +2,16 @@
 
 Public LB = MRR@25 on ~125 public molecules (one rank-2→1 flip ≈ 0.004). Scoring reruns take hours.
 
-C09 latest check,9November16:50UTC: P15/ref58163163 still **PENDING**.
-ONE pending leaderboard submission globally is the current limit. No C09
-submission has been sent; fresh ledger `.local/c09-submission-ledger.json`.
-C08's single-trial authorization stays exhausted and P15 is not resubmitted.
+C09 latest actual check,9November21:06UTC: **P15 v1/ref58163163 COMPLETE0.479**,
+no reported error. It regresses0.001 against P01/P13. No leaderboard submission
+is pending and no C09 submission has been sent. The limit remains ONE pending
+globally; `.local/c09-submission-ledger.json` has no C09 intents/submissions.
+Never resubmit P15. Cloud C09 validation retries are private diagnostic runs,
+not leaderboard submissions. Further submissions require scientific qualification
+and the complete real Kaggle smoke/independent audits.
 
-Latest check9 November12:03UTC: **P15 v1/ref58163163 is PENDING**, accepted at
-12:01UTC after its real Kaggle smoke and independent audits. This spends the
-one newly authorized C08 trial; no extra scoring or training is queued.
+P15 was accepted at12:01UTC after its real Kaggle smoke and independent audits,
+spending C08's single-trial authorization. C09 is separately authorized.
 **P13=0.480; P14 v2=0.458**, both COMPLETE without reported errors. Best remains
 0.480 (P01/P13). P14's conditional validation gain failed to transfer. P15's
 reserved external-panel change is too small/noisy to establish improvement.
@@ -146,7 +148,7 @@ must explain this negative control before another learned channel is promoted.
 
 | Date (UTC) | Slot | Kernel | Change and execution evidence | Ref | Public LB |
 |---|---|---|---|---|---|
-| 2026-11-09 12:01 | P15 | casmi26-p15-compatible-c08 v1 | Complete P01 plus0.20 tail-RRF from two independently trained320-wide legacy16-hard fits,40000 updates each. Rank1 and candidate set protected. Development-only selection; reserved external MRR .3617255→.3619792, interval includes zero. Real12 Kaggle GPU smoke,400 valid rows; zero input errors/metric duplicates. Independent two-fit error0, unchanged P01 primary error4.44e-16, local/Kaggle maximum raw-score difference2.86e-6. | 58163163 | **Pending** |
+| 2026-11-09 12:01 | P15 | casmi26-p15-compatible-c08 v1 | Complete P01 plus0.20 tail-RRF from two independently trained320-wide legacy16-hard fits,40000 updates each. Rank1 and candidate set protected. Development-only selection; reserved external MRR .3617255→.3619792, interval includes zero. Real12 Kaggle GPU smoke,400 valid rows; zero input errors/metric duplicates. Independent two-fit error0, unchanged P01 primary error4.44e-16, local/Kaggle maximum raw-score difference2.86e-6. | 58163163 | **0.479** (COMPLETE; verified21:06UTC) |
 
 Accepted at2026-11-09T12:01:22UTC /07:01 Eastern, unique marker
 `C08-P15-20261108`. The API independently confirms exactly one accepted marker,
