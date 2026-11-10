@@ -1,8 +1,8 @@
 # Runs
 
-Updated 2026-11-10 03:00 UTC by `scripts/update_runs.py` (hourly). Generated from `runs.csv` — edit that file, not this one.
+Updated 2026-11-10 03:21 UTC by `scripts/update_runs.py` (hourly). Generated from `runs.csv` — edit that file, not this one.
 
-- Kaggle quota: GPU 9.9 h used of 30 h · TPU 0.0 h of 20 h · resets 2026-11-14 00:00 UTC
+- Kaggle quota: GPU 10.3 h used of 30 h · TPU 0.0 h of 20 h · resets 2026-11-14 00:00 UTC
 - Submissions today (UTC): 1 of 5 — see `SUBMISSIONS.md`
 
 ## Active
@@ -19,6 +19,9 @@ Updated 2026-11-10 03:00 UTC by `scripts/update_runs.py` (hourly). Generated fro
 
 | id | platform | kind | ref | started (UTC) | ended (UTC) | status | purpose | result |
 |---|---|---|---|---|---|---|---|---|
+| C10PRIMARY2 | local-cpu | diag | outputs/research/c10-massbank-current-primary-20261110/audit.log | 2026-11-10 03:17 | 2026-11-10 03:18 | complete | Trace all31030 supplemental spectra to official2026.11 commit72980b3;resolveMUI/newauthors and optionalkeyabsence using originalstructures;no query labels/metrics/pool change | 31030/31030 original2026.11 records verified:allpeaks,structures,authors,licenses,adducts/precursors match;0issues,91optionaldeclaredkeysabsent but computedrawkeys match. AllMarch differences resolved;26149CC BY/4881CC0. No querymetrics/poolchange;not blanket rights clearance. |
+| C10PRIMARY | local-cpu | diag | outputs/research/c10-massbank-primary-20261110/audit.log | 2026-11-10 03:10 | 2026-11-10 03:12 | complete | Independently trace all31030 frozen supplemental records to checksum-verified officialMassBank2026.03; licenses/authors/identity/adduct/precursor/peak integrity, no labels/metrics | OfficialMarch archive checksumverified;29787exact/29934found of31030.1096MUI absentMarch;91optionaldeclaredkeyabsence/56authorupdates needNovreleasecomparison. No license/precursor/adduct/peak mismatch in29934found. No pool/policy/metric change. |
+| C10CONFPROTO | local-cpu | research | outputs/local/c10-candidates-20261110/confirmation-protocol.json | 2026-11-10 03:07 | 2026-11-10 03:07 | complete | Prospective reserved120 confirmation evaluator/source/statisticalgate protocol before development or reserved metrics;never submits | 5gate tests pass:requirepositive95%CI incrementalvsbothP01/P16 andnonnegativealiassensitivity;rejectpartial/nonfinitepanel. Preparedonly,no reservedlabels/metricsread. |
 | C10SEARCH | local-cpu | diag | outputs/local/c10-candidates-20261110/search.log | 2026-11-10 02:56 | 2026-11-10 02:56 | complete | Four predeclared label-blind reference/adduct searches on160fresh queries;globalalias sensitivity and exactP16-parent parity | All160 label-blind queries searched;3030precursor refs/3275comparisons;0boundedinputaliases. ParentP16 exactparity passed forbothviews. Fourvariants stored;no labels/metrics/recipe selection/submission. |
 | C10REF | local-cpu | diag | outputs/local/c10-reference-pool-20261110/preparation.log | 2026-11-10 02:47 | 2026-11-10 02:48 | complete | Prepare attributed positiveMS2 CC0/CC BY MassBank extension with structure/adduct/mass/source checks before any newdev metrics;P16 source unchanged | Prepared31030 attributed literalCC0/CC BY positiveMS2 references;4572 keys/3966 absentparent,expanded231754rows. Internalstructure/adduct/mass/peak checks;allattribution retained. Coverage only,no query labels/metrics/P16change/upload/submission. |
 | C10PREP | local-cpu | diag | outputs/local/c10-casmi2022-20261110/preparation.log | 2026-11-10 01:59 | 2026-11-10 01:59 | complete | Prospective CASMI2022 scan assignment and identity/raw-signature exclusion before deterministic40dev/up-to120confirmation split;labels stay local,no model metric or scoring submission | 160positive CASMI2022 identities/160scans;40dev120reserved;raw3033286496bytes/2539608spectra audited,90709candidate rows checked,0reference/cross-label signature overlaps. Training/oldpanel keys excluded;strict RT/mass maxTIC,no unmatched fallback. Labels local only;no MRR computed. |

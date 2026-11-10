@@ -1,0 +1,12 @@
+{
+  "checked_utc": "2026-11-10T03:19:08Z",
+  "source_api": "https://api.github.com/repos/MassBank/MassBank-data/releases/latest",
+  "tag": "2026.11",
+  "published_utc": "2026-11-09T12:18:27Z",
+  "release_url": "https://github.com/MassBank/MassBank-data/releases/tag/2026.11",
+  "source_ref_api": "https://api.github.com/repos/MassBank/MassBank-data/git/ref/tags/2026.11",
+  "pinned_commit": "72980b3af504cfd1e89ac54d7698d3da45d85a58",
+  "record_format_url": "https://github.com/MassBank/MassBank-web/blob/dev/Documentation/MassBankRecordFormat.md",
+  "record_format_interpretation": "AUTHORS and LICENSE are mandatory; PUBLICATION, COPYRIGHT and CH$LINK identifiers are optional. Missing optional declared keys are explicitly counted and original SMILES/InChI keys are checked.",
+  "no_query_labels_or_metrics": true
+}

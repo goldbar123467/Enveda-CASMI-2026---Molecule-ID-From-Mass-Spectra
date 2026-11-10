@@ -24,11 +24,21 @@ then uses the2070 for one label-blind P15 control andONLY40dev selection/freeze.
 No120reserved metrics or automatic submission. Do not duplicate/restart live
 workers without inspecting handles/logs. Read current C10 notes and protocols.
 
+Prospective reserved evaluator/protocol is prepared and5gate tests pass.
+`confirm_c10_candidate.py --evaluate` is authorized once ONLY after a new
+development winner is frozen; ifP16 wins/ties, leave120reserved unused. No
+reserved metrics have been read. Full original-source audit also completed:
+all31030 supplemental records match officialMassBank2026.11 commit72980b3,
+including peaks/structures/license/authors/precursors/adducts.0unresolvedissues;
+91missingoptionaldeclaredkeys resolve through originalSMILES/InChI. Parent
+Takumu provenance and mirrorcompilation terms remain explicit; no blanket
+rights/gain claim or newdatasetdeployment. See currentC10 notes/evidence.
+
 Latest user override at22:07UTC: continue UI/work until verified silver; run an
 hourly worker for24 hours. Active Codex goal and heartbeat
 `casmi-silver-campaign-hourly-for-24-hours` target this chat. Read
 `configs/c09-silver-worker-20261109.json` and current C09 notes before acting.
-Latest02:19UTC10November rank923/5045, score0.480; nominal silver cutoff252
+Latest03:19UTC10November rank926/5047, score0.480; nominal silver cutoff252
 at0.483. Matching a tied cutoff score is insufficient; verify actual rank.
 No paid compute or
 unqualified submission is authorized by the rank target. Continue useful work

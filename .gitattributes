@@ -78,4 +78,7 @@ scripts/prepare_c10_reference_pool.py text eol=lf
 scripts/c10_reference_search.py text eol=lf
 scripts/develop_c10_candidates.py text eol=lf
 scripts/finish_c10_development.py text eol=lf
+scripts/confirm_c10_candidate.py text eol=lf
+scripts/audit_c10_primary_references.py text eol=lf
+scripts/audit_c10_current_primary.py text eol=lf
 docs/evidence/c09-2026-11-09/finisher-v1-source.txt text eol=lf

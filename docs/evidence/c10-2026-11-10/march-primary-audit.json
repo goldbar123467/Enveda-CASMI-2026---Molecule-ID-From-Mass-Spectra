@@ -1,0 +1,32 @@
+{
+  "completed_utc": "2026-11-10T03:12:45.231926+00:00",
+  "protocol_sha256": "c0f9ec747a901630e11ba0458cd51e1ad23ddaa230a7bda019d3ffd5902c5a76",
+  "source_doi": "10.5281/zenodo.19073053",
+  "official_release": "2026.03",
+  "archive_sha256": "496fd822e22bc4104726cd1199dad41b580b695d91658899e1f01afb5d6a00f9",
+  "archive_md5": "51904e29ee8717756153a8d31726789d",
+  "counts": {
+    "selected_records": 31030,
+    "found": 29934,
+    "exact_checked_records": 29787,
+    "mismatch_structure_key": 91,
+    "missing_or_ambiguous_primary_record": 1096,
+    "mismatch_authors": 56
+  },
+  "original_record_licenses": {
+    "CC BY": 25053,
+    "CC0": 4881
+  },
+  "exact_all_records": false,
+  "optional_mirror_fields_missing": {
+    "publication": 23160,
+    "copyright": 6414
+  },
+  "issue_rows": 1243,
+  "issue_csv_sha256": "b2341168993ac883d7dd511dbc62f96bdcf99f1398a8fd0df5dd9cc50ead6649",
+  "query_labels_used": false,
+  "prediction_metrics_read": false,
+  "reference_pool_changed": false,
+  "source_review_complete": false,
+  "limitation": "Record-level provenance/integrity comparison, not blanket legal clearance. Parent Takumu library attribution remains incomplete; mirror compilation terms remain retained. Primary mismatches require review before any expanded-reference deployment."
+}

@@ -1,0 +1,29 @@
+{
+  "prepared_utc": "2026-11-10T03:06:14.586403+00:00",
+  "source_sha256": {
+    "confirm_c10_candidate.py": "aed063816513fcf842bc5b967e128f905bc914b181d642ff44707a316e2c3f4c",
+    "develop_c10_candidates.py": "528ac68719e532d8712527a0ac8237c1eb431523fe6e8803e39f9994e169ce86",
+    "c10_reference_search.py": "ea421f25de91065df728579fd72f2684370a54f8936968ea4797539c9a7e4c5c",
+    "external_reference_overlay.py": "826a689fdcecc05436cd201219ac066ef2ebf557df22200ac807c6bb6c0681e5",
+    "finish_c09_confirmation.py": "d74e3258498cbaf496f91ae3398f54c4131ee25569b269e18e318ed5c9d615af",
+    "tail_fusion.py": "b1fd92ee93412454c80942c70fd3bc72f89f07a673ff1a319d7e821be368a5d4"
+  },
+  "config_sha256": "f12cc763713812bb7f78a7009de2568adb6d978494fec2bcb5014bb1b05946a5",
+  "policy_sha256": "ea662270a895dc902cc9dd242afd7cd7f63e4a42ce3468474c6bff73d984043c",
+  "development_protocol_sha256": "167177db52de5b2e773a3fd28fc91cc562d747a892e6d472046a84969caccffd",
+  "reference_manifest_sha256": "cf0bd9ffaa8d87b6ca8e96c4bc85d823a04e0ce6a419513105d791891b205b62",
+  "local_labels_sha256": "f1d3b96f002827d2c9ddd1e61f0fe4e97551a27859da8c74d248588893515c6a",
+  "partitions_sha256": "5fa93a056ee27fd90ec6dc69b3c4d9b7580411fd5c46caab44ad9b1e55538c75",
+  "validation_contract_sha256": "2d75016513dca38ef4d4bb5f3a011c429f7f81173310e746d2e2359cfa26b463",
+  "selection": "Use only already-frozen new winner; do not evaluate unselected variants or reselect",
+  "gate": "Reserved120 positive paired95% lower bound versus both P01/P16; alias-excluded delta/lower bound >=0 versus both",
+  "controls": "Report P14/P15 deltas and whether known public regressions are reproduced, even if they contradict the panel",
+  "missing_truth_mrr": 0,
+  "bootstrap_draws": 10000,
+  "bootstrap_seed": 20261105,
+  "development_metrics_read": false,
+  "reserved_labels_read": false,
+  "reserved_metrics_computed": false,
+  "automatic_submission": false,
+  "full_submission_qualification": "Still requires source/provenance review, real Kaggle changed-path smoke and independent execution/parity audit"
+}

@@ -1,0 +1,12 @@
+{
+  "prepared_utc": "2026-11-10T03:10:59.000540+00:00",
+  "source": "https://zenodo.org/api/records/19073053",
+  "official_release": "2026.03",
+  "expected_md5": "51904e29ee8717756153a8d31726789d",
+  "expected_bytes": 239602156,
+  "auditor_sha256": "6546665745b8b1ffd69bd53fd1ee7f9cb4b5bf6f2c4346b1c626587a595fea61",
+  "supplemental_meta_sha256": "4cc6b451f9880154afd5ce865b83f36c5539953df92e8ad0765fca6b40ac2488",
+  "query_labels_used": false,
+  "prediction_metrics_read": false,
+  "reference_pool_changed": false
+}

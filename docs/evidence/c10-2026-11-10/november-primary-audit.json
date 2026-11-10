@@ -1,0 +1,27 @@
+{
+  "completed_utc": "2026-11-10T03:18:15.090068+00:00",
+  "official_tag": "2026.11",
+  "official_commit": "72980b3af504cfd1e89ac54d7698d3da45d85a58",
+  "archive_sha256": "84a8edf35f8df0341151da1dec69359f4a4939038d05816628da974169d1aa84",
+  "archive_bytes": 256756987,
+  "protocol_sha256": "f50ad07983d05777b6afe7b5e8ff912a2d52cfaacaf90ff5d9cb41169908d6c9",
+  "counts": {
+    "selected_records": 31030,
+    "found": 31030,
+    "verified_records": 31030,
+    "optional_declared_key_absent": 91
+  },
+  "original_licenses": {
+    "CC BY": 26149,
+    "CC0": 4881
+  },
+  "all_records_verified": true,
+  "issue_rows": 0,
+  "issue_csv_sha256": "42456d372f4b24450fb99a8d17ab887c2dbdc4c19cd07078be64ddcf1668b65e",
+  "original_attribution_sha256": "1eeda9f397d763e9cd51732521ce93918d987938e8543e8425baea46bfb6b2f6",
+  "query_labels_used": false,
+  "prediction_metrics_read": false,
+  "reference_pool_changed": false,
+  "source_review_complete": false,
+  "limitation": "Original-record data/attribution verification only; not blanket legal clearance or exclusion of historical pretraining. Parent Takumu record provenance is still incomplete; mirror compilation notice is retained. No automatic candidate adoption/submission."
+}

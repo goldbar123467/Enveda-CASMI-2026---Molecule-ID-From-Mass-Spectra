@@ -1,0 +1,18 @@
+{
+  "prepared_utc": "2026-11-10T03:17:20.697113+00:00",
+  "official_tag": "2026.11",
+  "official_commit": "72980b3af504cfd1e89ac54d7698d3da45d85a58",
+  "url": "https://codeload.github.com/MassBank/MassBank-data/zip/72980b3af504cfd1e89ac54d7698d3da45d85a58",
+  "published_utc": "2026-11-09T12:18:27Z",
+  "auditor_sha256": "d15ac55d85d0bd4ba918a2fe0b2d9f006c40c33f085f5a5bf9ef48430904fbd7",
+  "first_audit_sha256": "eef3389b7a46a29eae45a68b6ce3fa612643479b6c64e3f96f71c5bc0b8d7dc4",
+  "supplemental_sha256": {
+    "ext_meta.parquet": "4cc6b451f9880154afd5ce865b83f36c5539953df92e8ad0765fca6b40ac2488",
+    "ext_mz.npy": "7b6518b34cc82e1858634eb3c8a9a5afa65e512299a376435118cb4d4105d559",
+    "ext_in.npy": "3a3bd5f9ed998ec453aaba0584288cff8bd0de7a31e3dccb1908a66dceff5c76"
+  },
+  "identity_check": "RDKit raw key from official SMILES/InChI; any nonempty official declared key must agree. Missing optional declared keys are counted explicitly.",
+  "query_labels_used": false,
+  "prediction_metrics_read": false,
+  "reference_pool_changed": false
+}
