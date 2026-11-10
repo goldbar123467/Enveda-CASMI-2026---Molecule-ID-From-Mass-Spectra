@@ -1,8 +1,8 @@
 # C09 results and P16 scoring trial — 9–10 November
 
 Active user goal: verified silver leaderboard position, with24 hourly worker
-wake-ups in this chat. Latest01:28UTC10November rank918/5043 at0.480; nominal
-silver rank252 at0.482. Verify actual rank after scoring, not a tied score alone.
+wake-ups in this chat. Latest02:19UTC10November rank923/5045 at0.480; nominal
+silver rank252 at0.483. Verify actual rank after scoring, not a tied score alone.
 Preserve all C09 qualification and one-pending rules.
 
 The user approved one additional trial at10November01:37UTC; it remains
@@ -11,6 +11,15 @@ on160 fresh CASMI2022 queries,40 development/120 reserved, after identity and
 bounded raw-spectrum exclusions. Labels stay local and the notebook computes
 no label metrics. See `docs/C10-CASMI2022-2026-11-10.md`; select/freeze using
 only40dev before reading120reserved. This private run is not another submission.
+
+Prospective C10 reference preparation/search isCOMPLETE before label metrics:
+31,030 attributed literalCC0/CC BY supplemental spectra,3,966 added connectivity
+keys,zero bounded input aliases on160 queries,exact parentP16 match parity.
+Four fixed parent/expanded/adduct recipes use unchanged thresholds; P16 wins
+ties. These are coverage/execution checks, not measured model gains. A bounded
+worker waits for existing cloud collection, then runs one useful2070 P15 control,
+selects/freezes usingONLY40dev, and stops before120reserved metrics/submission.
+Mixed compilation terms/attribution remain explicit; no new reference deployment.
 
 New C09E lead: one fixed external-reference matching rule on unchanged P01,
 inspired by alexchilton's public external-library approach. Its author's team

@@ -1,0 +1,14 @@
+{
+  "prepared_utc": "2026-11-10T02:47:43.437382+00:00",
+  "candidate_config_sha256": "f12cc763713812bb7f78a7009de2568adb6d978494fec2bcb5014bb1b05946a5",
+  "preparer_sha256": "7c15d9d65272d4dd9290033cb9e7d83baf3db001735b36cfdb3e5b971d320a36",
+  "source_sha256": "6ebb46b32ddd344d988c3bdb90e7160d4ce46e6d0b900a1217607aa2234c9477",
+  "parent_reference_sha256": {
+    "ext_meta.parquet": "9b0c2d675612580a4aedbdd3c8891d046fdf864b0805aaef852acc6653f7d37f",
+    "ext_mz.npy": "a14f750d46bfca4176110d1a83cc3562944a3ca1e3f1344c94141f6d8d85fad5",
+    "ext_in.npy": "e47b359f27d0aacda22f7ef47f8f60f7912136027d70d2bc915890a8d51be841"
+  },
+  "query_labels_used": false,
+  "development_metrics_read": false,
+  "compilation_license": "CC-BY-NC-SA-4.0; record license/attribution retained individually; not a CC0-only compilation"
+}

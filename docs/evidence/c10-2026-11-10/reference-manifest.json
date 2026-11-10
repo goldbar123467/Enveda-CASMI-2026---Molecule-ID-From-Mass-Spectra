@@ -1,0 +1,43 @@
+{
+  "completed_utc": "2026-11-10T02:48:03.337337+00:00",
+  "parent_records": 200724,
+  "supplemental_records": 31030,
+  "expanded_records": 231754,
+  "filters": {
+    "input_filtered_records": 38916,
+    "too_few_peaks": 5225,
+    "mass_inconsistent": 26,
+    "invalid_precursor": 1703,
+    "unsupported_adduct": 932
+  },
+  "supplemental_licenses": {
+    "CC BY": 26149,
+    "CC0": 4881
+  },
+  "supplemental_adducts": {
+    "[M+H]+": 30444,
+    "[M+Na]+": 353,
+    "[M+NH4]+": 207,
+    "[M+H-H2O]+": 13,
+    "[M+K]+": 7,
+    "[M+2H]2+": 6
+  },
+  "supplemental_connectivity_keys": 4572,
+  "added_connectivity_keys": 3966,
+  "query_labels_used": false,
+  "prediction_metrics_read": false,
+  "p16_deployment_changed": false,
+  "candidate_config_sha256": "f12cc763713812bb7f78a7009de2568adb6d978494fec2bcb5014bb1b05946a5",
+  "protocol_sha256": "d118dcc008c81ee8c8bcc2eb39dd3b5d58c00f510f46d31ff00edead2ccfa71d",
+  "expanded_sha256": {
+    "ext_meta.parquet": "413c85c35e7045bb4de7008e15e44788f5738a052d42a48169d9bb59697e717f",
+    "ext_mz.npy": "409043d2c769a811c1ab39909509d98d3f607856b5b4b66feccee92487f89240",
+    "ext_in.npy": "0aff1fe386d380b8deacb488ceb4ca249e1e7ebdb99e3118c32d42b3c4b6b6fa"
+  },
+  "original_parent_reference_sha256": {
+    "ext_meta.parquet": "9b0c2d675612580a4aedbdd3c8891d046fdf864b0805aaef852acc6653f7d37f",
+    "ext_mz.npy": "a14f750d46bfca4176110d1a83cc3562944a3ca1e3f1344c94141f6d8d85fad5",
+    "ext_in.npy": "e47b359f27d0aacda22f7ef47f8f60f7912136027d70d2bc915890a8d51be841"
+  },
+  "limitation": "License labels and contributor attribution retained, not a blanket rights/provenance guarantee. Parent reference metadata lacks record-level attribution. Coverage counts are not validation gains."
+}

@@ -1,0 +1,24 @@
+{
+  "prepared_utc": "2026-11-10T02:56:56.184612+00:00",
+  "source_sha256": {
+    "c10_reference_search.py": "ea421f25de91065df728579fd72f2684370a54f8936968ea4797539c9a7e4c5c",
+    "develop_c10_candidates.py": "aa3a77ba3175bdc9ec8580043591f46e4c42fe39ecbde1efc4504435f406806d",
+    "finish_c10_development.py": "cdd8d6210aacc072ba9cfbcb35df5990db0c6583178798fb16b85134ffcb0bd6",
+    "external_reference_overlay.py": "826a689fdcecc05436cd201219ac066ef2ebf557df22200ac807c6bb6c0681e5",
+    "c09_spectrum_audit.py": "a4c42efdb41983406d71458eeb093af462bd1432ec774c6628d91861f1a042ac",
+    "build_external_cache.py": "06df7efc6ffe96e8a765955d57fed14ee0e677bd8d67405c9472dcbd5ca39796",
+    "followup_models.py": "efe821f214f1cb20efdfcc38387a43c3d06bb6bbf8cad3051d4abcfedd5685a3",
+    "compatible_tail.py": "b5677d884008f0fd16a66ca045eb5c5c61420e895c66612d3fefdef166f58378",
+    "tail_fusion.py": "b1fd92ee93412454c80942c70fd3bc72f89f07a673ff1a319d7e821be368a5d4",
+    "finish_c09_confirmation.py": "d74e3258498cbaf496f91ae3398f54c4131ee25569b269e18e318ed5c9d615af"
+  },
+  "config_sha256": "f12cc763713812bb7f78a7009de2568adb6d978494fec2bcb5014bb1b05946a5",
+  "policy_sha256": "ea662270a895dc902cc9dd242afd7cd7f63e4a42ce3468474c6bff73d984043c",
+  "p15_manifest_sha256": "a9ea0fb37734f4b574edbf99917bb8b49029ad6d2522b7af8af6b4581bfc0525",
+  "local_labels_sha256": "f1d3b96f002827d2c9ddd1e61f0fe4e97551a27859da8c74d248588893515c6a",
+  "validation_contract_sha256": "2d75016513dca38ef4d4bb5f3a011c429f7f81173310e746d2e2359cfa26b463",
+  "reference_manifest_sha256": "cf0bd9ffaa8d87b6ca8e96c4bc85d823a04e0ce6a419513105d791891b205b62",
+  "selection": "Only40 development labels; predeclared four fixed candidates. P16 wins ties. Stop after freeze; no120 reserved metrics or submission.",
+  "reserved_metrics_computed": false,
+  "automatic_submission": false
+}

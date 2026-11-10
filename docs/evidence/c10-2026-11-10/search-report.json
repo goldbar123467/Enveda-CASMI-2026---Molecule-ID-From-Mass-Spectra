@@ -1,0 +1,26 @@
+{
+  "queries": 160,
+  "spectra": 160,
+  "reference_rows": 231754,
+  "precursor_candidate_rows": 3030,
+  "query_reference_comparisons": 3275,
+  "query_input_alias_reference_rows": 0,
+  "query_labels_used": false,
+  "limitation": "Bounded full-round/FP16top96 input aliases only; no universal historical-pretraining exclusion",
+  "completed_utc": "2026-11-10T02:56:59.865907+00:00",
+  "parent_exact_parity": true,
+  "parent_search": {
+    "queries": 160,
+    "spectra": 160,
+    "reference_rows": 200724,
+    "precursor_candidate_rows": 2580,
+    "query_reference_comparisons": 2793,
+    "query_input_alias_reference_rows": 0,
+    "query_labels_used": false,
+    "limitation": "Rounded full peaks and FP16top96 signatures only; not universal acquisition/provenance exclusion"
+  },
+  "freeze_sha256": "4db2afd54e7930007617f01025f118946f3f6e2872142aa8e0268e5d310d121a",
+  "matches_sha256": "573effe14b698dc612c28bea96c36dff4ee773b2eee6d9093d67355b5fe757e6",
+  "metrics_computed": false,
+  "recipe_selection": false
+}

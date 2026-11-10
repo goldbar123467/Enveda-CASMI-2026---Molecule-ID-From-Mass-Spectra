@@ -1,0 +1,16 @@
+{
+  "prepared_utc": "2026-11-10T02:56:58.199211+00:00",
+  "config_sha256": "f12cc763713812bb7f78a7009de2568adb6d978494fec2bcb5014bb1b05946a5",
+  "policy_sha256": "ea662270a895dc902cc9dd242afd7cd7f63e4a42ce3468474c6bff73d984043c",
+  "query_sha256": "bf87d0947cb55c58c35c5d50d7a9a331095872f3503bf256ca264f6fb8901765",
+  "reference_manifest_sha256": "cf0bd9ffaa8d87b6ca8e96c4bc85d823a04e0ce6a419513105d791891b205b62",
+  "source_sha256": {
+    "c10_reference_search.py": "ea421f25de91065df728579fd72f2684370a54f8936968ea4797539c9a7e4c5c",
+    "external_reference_overlay.py": "826a689fdcecc05436cd201219ac066ef2ebf557df22200ac807c6bb6c0681e5",
+    "c09_spectrum_audit.py": "a4c42efdb41983406d71458eeb093af462bd1432ec774c6628d91861f1a042ac",
+    "build_external_cache.py": "06df7efc6ffe96e8a765955d57fed14ee0e677bd8d67405c9472dcbd5ca39796"
+  },
+  "feature_sha256": "a97ad9b3ab3711517864d56e497e1672cb29bb05683c72b52db9f9b0a17b1455",
+  "labels_read": false,
+  "metrics_read": false
+}

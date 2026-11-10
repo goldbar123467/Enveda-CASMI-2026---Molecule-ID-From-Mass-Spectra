@@ -1,0 +1,19 @@
+{
+  "campaign": "C10",
+  "development_only": "Only the40 prospective CASMI2022 development identities; never use the120 reserved metrics for recipe selection",
+  "candidates_in_tie_order": [
+    {"name": "P16", "reference_pool": "parent", "adduct_rule": "any_positive"},
+    {"name": "P16-adduct", "reference_pool": "parent", "adduct_rule": "same_normalized"},
+    {"name": "expanded", "reference_pool": "expanded", "adduct_rule": "any_positive"},
+    {"name": "expanded-adduct", "reference_pool": "expanded", "adduct_rule": "same_normalized"}
+  ],
+  "thresholds": "Exact existing P16 thresholds; no threshold or coefficient search",
+  "reference_ingestion": "Literal CC0 or CC BY MassBank records only; positiveMS2, >=4 valid peaks, structure-key agreement, recognized positive adduct, <=25ppm internal precursor/mass error, no forbidden-source names; preserve all attribution and the parent compilation license",
+  "selection": "Highest development MRR, ties use the listed order. If P16 wins or ties best, no new candidate is selected for submission",
+  "confirmation": "Freeze winner/source before any reserved metric. Keep absent truths zero. Require positive95% lower-bound incremental gain versus both complete P01 and P16 on120 reserved queries; nonnegative alias-excluded sensitivity; assess P14/P15 controls honestly",
+  "execution": "New serving changes still require real Kaggle smoke and independent hash, identity, fallback, peak/merge and local-cloud parity audits",
+  "maximum_pending": 1,
+  "additional_approval": "One further trial reserved after P16 resolves; only consume on actual accepted submission",
+  "paid_compute": false,
+  "automatic_submission": false
+}

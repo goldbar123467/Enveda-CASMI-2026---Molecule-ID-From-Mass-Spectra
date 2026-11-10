@@ -14,12 +14,22 @@ No C10 labels are mounted, no metrics computed. Choose/freeze using ONLY40dev
 before reading120reserved metrics. C10 is not a leaderboard submission and has
 not consumed the extra approval. Never launch a duplicate to the shorter slug.
 
+C10 reference preparation and label-blind search areCOMPLETE:31,030 attributed
+CC0/CC BY supplemental spectra/3,966 added connectivity keys; four fixed
+parent/expanded and any-positive/same-normalized-adduct recipes are predeclared.
+All160 searched,zero bounded input aliases,exact originalP16 parent parity.
+Coverage is not a validation gain. Development worker launcher22268/worker16844
+waits for existing collector5044/13360; it retains12:16:54UTC original deadline,
+then uses the2070 for one label-blind P15 control andONLY40dev selection/freeze.
+No120reserved metrics or automatic submission. Do not duplicate/restart live
+workers without inspecting handles/logs. Read current C10 notes and protocols.
+
 Latest user override at22:07UTC: continue UI/work until verified silver; run an
 hourly worker for24 hours. Active Codex goal and heartbeat
 `casmi-silver-campaign-hourly-for-24-hours` target this chat. Read
 `configs/c09-silver-worker-20261109.json` and current C09 notes before acting.
-Latest01:28UTC10November rank918/5043, score0.480; nominal silver cutoff252
-at0.482. Matching a tied cutoff score is insufficient; verify actual rank.
+Latest02:19UTC10November rank923/5045, score0.480; nominal silver cutoff252
+at0.483. Matching a tied cutoff score is insufficient; verify actual rank.
 No paid compute or
 unqualified submission is authorized by the rank target. Continue useful work
 between hourly wake-ups; schedule expiration is not goal achievement.

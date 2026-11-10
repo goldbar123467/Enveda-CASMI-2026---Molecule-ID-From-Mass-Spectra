@@ -1,0 +1,20 @@
+{
+  "checked_utc": "2026-11-10T03:00:13.465012+00:00",
+  "source": "Native Chrome accessibility log observation",
+  "url": "https://www.kaggle.com/code/clarkkitchen/casmi26-c10-unlabelled-casmi2022-validation/log",
+  "state": "Running",
+  "displayed_runtime_seconds": 2515.9,
+  "devices": [
+    {
+      "index": 0,
+      "name": "Tesla T4",
+      "vram_gib": 14.56219482421875
+    },
+    {
+      "index": 1,
+      "name": "Tesla T4",
+      "vram_gib": 14.56219482421875
+    }
+  ],
+  "claim": "Actual allocation and running state only; no completed inference/quality claim"
+}

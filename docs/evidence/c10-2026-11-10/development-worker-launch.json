@@ -1,0 +1,14 @@
+{
+  "checked_utc": "2026-11-10T03:00:13.456249+00:00",
+  "launcher_pid": 22268,
+  "worker_pid": 16844,
+  "collector_launcher_pid": 5044,
+  "collector_worker_pid": 13360,
+  "state": "Waiting for existing C10 RUNNING inference",
+  "deadline_utc": "2026-11-10T12:16:54.603708+00:00",
+  "label_metrics_computed": false,
+  "local_gpu_action_after_collection": "One useful P15 negative-control inference, then40dev-only selection/freeze",
+  "reserved_metrics_computed": false,
+  "automatic_submission": false,
+  "protocol_sha256": "167177db52de5b2e773a3fd28fc91cc562d747a892e6d472046a84969caccffd"
+}
