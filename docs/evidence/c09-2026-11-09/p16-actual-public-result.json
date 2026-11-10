@@ -1,0 +1,15 @@
+{
+  "checked_utc": "2026-11-10T06:29:28.449803+00:00",
+  "submission": {
+    "reference": "58181280",
+    "status": "COMPLETE",
+    "public_score": 0.48,
+    "error": "",
+    "success": true,
+    "description": "C09-P16-EXTREF-20261109: Complete pinned P01 plus fixed measured-reference spectral promotions; official identity dedup. Real12/400 Kaggle smoke, independent peak/merge/fallback/local-cloud parity, frozen development and complete80 confirmation reviewed. External-source/provenance limitations retained; hidden gain unproven."
+  },
+  "pending_count": 0,
+  "champion_retained": 0.48,
+  "additional_approved_trial_consumed": false,
+  "interpretation": "P16 matches reported champion0.480; no measured public gain, silver goal not achieved. Do not resubmit."
+}

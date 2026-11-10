@@ -1,0 +1,39 @@
+{
+  "prepared_utc": "2026-11-10T06:06:41.036931+00:00",
+  "evaluation_plan_sha256": "ab59bc39763953c3a8ddb081b3bb498304d241546cdce4ebc26ceeab3ccb15b3",
+  "source_sha256": {
+    "develop_c14_ce.py": "b93ca32bbaeced6d246663257869c2c340d96d87360d9814739dc8c059740844",
+    "c14_models.py": "444ad95a85828f2962af070abe37e6ab52a5c5558cac5995d2ac8c7efa5e0f4f",
+    "compatible_inference.py": "bd19325814e066615ace15a765c84c74ccedbb867e609b8d95ed4dbcdf092832",
+    "compatible_tail.py": "b5677d884008f0fd16a66ca045eb5c5c61420e895c66612d3fefdef166f58378",
+    "followup_models.py": "efe821f214f1cb20efdfcc38387a43c3d06bb6bbf8cad3051d4abcfedd5685a3",
+    "finish_c09_confirmation.py": "d74e3258498cbaf496f91ae3398f54c4131ee25569b269e18e318ed5c9d615af",
+    "tail_fusion.py": "b1fd92ee93412454c80942c70fd3bc72f89f07a673ff1a319d7e821be368a5d4"
+  },
+  "training_contract_sha256": "2d76f4b4cc68e9a56fff941b166e3494626a4cfec8de47bb7d42d5317b4d4b40",
+  "matched_control_manifest_sha256": "a9ea0fb37734f4b574edbf99917bb8b49029ad6d2522b7af8af6b4581bfc0525",
+  "used_labels_sha256": "f1d3b96f002827d2c9ddd1e61f0fe4e97551a27859da8c74d248588893515c6a",
+  "parent_sha256": "e56ec5755beb254a99ca8c385dbeee3217f77e3db4d6e308663353c08766a8e9",
+  "queries_sha256": "c0f90ca5174c0f637fbc5c082afa9462fb4d310adf2548550ee086a0bf3f4f5d",
+  "baseline_sha256": "27730ce2e2d3a3b51529216d29319cf857bf69bb01449b37a30795b51badf7ff",
+  "p14_sha256": "6c15e28b294c88a7ef2b0fe6f1337c56e91515578f29fed15e3efdd6481a674f",
+  "p15_sha256": "905fd37787bcf531210fcd18e88f41df474d159ec2817f479961884f89fb5ed9",
+  "prior_protocol_sha256": "4338e4623096ea1c94630616f933dcc853b9e4fbfeed98400ed44e8fe3f03828",
+  "amendment": "Before C14 development metrics: reuse exact source-pinned C12 feature/identity cache to avoid duplicate canonicalization; recipe/models/scoring arithmetic unchanged.",
+  "cached_features_sha256": {
+    "preparation.json": "d92484d8d884bd223c06d5cc267d4c4f69cbb199a5e1884995e0c92ac6175125",
+    "fingerprint-smiles.parquet": "9d65c4f7645ca91b3e83cd37df83db023ea75f335f0dced900daf15012d45975",
+    "fingerprints.npy": "71c5771c2aa3178fb994b448cb36a640af005f65768437fabbc94e5bba533489"
+  },
+  "cache_source_contract_sha256": "e4f9208dbd1decfede25290f3ed47e1bcd4e347c77e396982ab25a8be70a8be5",
+  "original_cache_common_rows_exact": 1319,
+  "queries": 160,
+  "all_development_previously_used": true,
+  "only_final_5000_update_checkpoints": true,
+  "weight": 0.2,
+  "offset": 3.0,
+  "rank1_and_candidate_set_exact": true,
+  "selection": "Positive95% lowerbound vs completeP01/P16 and nonnegative mean vs matchedC09control; one fixed recipe/no coefficient search.",
+  "fresh_C13_prediction_metrics_read": false,
+  "automatic_submission": false
+}

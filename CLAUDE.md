@@ -1,6 +1,38 @@
 # Enveda CASMI 2026 — working rules
 
-## Current authorization — C09, 2026-11-09
+## Current measured state — 10 November,06:50UTC
+
+P16/ref58181280 is COMPLETE0.480/noerror (API06:29),matching the reported
+champion;no measured publicgain. Globalpublicpending0,extraapprovedtrial1
+unconsumed,ledgerreconciled. NeverresubmitP16. Latestactualrank944/5052 at
+06:49UTC;nominalsilver252/0.483,goalUNMET. PreserveP01/P13/P16 source/weights.
+
+C14 andC15 bothcompleted10000successfulupdates/2folds each,0AMPskips/
+0restarts,peak1.4121GiB. Bothfixedtailrecipesfailused160development. C15delta
+-.000385264 vsP01/P16 CI[-.00232284,.00167152],11improved/17harmed;
+vsmatchedC09+.000478943 butCIcrosses0. C14delta-.00138476. Same100/160truths,
+rank1/candidate sets exact. Trainers/evaluators exited;neverrefitcompletedjobs.
+Finalmodels remainlocal/private;freshC13predictionmetrics stillUNREAD.
+
+C13privatev1 ERROR06:27:Engine2covered98/120 because22negativeformatealiases
+wereabsentfromPVlookupvocabulary. Real2T4hardware/GPU1preflighthealthy.
+V2accepted06:47,nowRUNNING withonlyequivalentformatespelling/whitespace
+normalization inPVneutral-mass andFPadductlookup. Same120/inputs/weights;
+strictcoverageguard/allotherfrozencellsunchanged. Canonicaltableand98old
+querymassesexact;all120nowfinite. Threealias tests pass. No freshlabels/metrics
+usedfordebugging. Notebookcbd4503e...,remote scientific17891a07...,private/
+internetoff/image37c64/source/versionverified. Collector27800/9740tracks
+exactv2 to16:47UTC;readcollector-v2-status.json. V1collector hasexited;never
+restartv1or duplicatev2. Actualv2allocation/coverage needexecutionreceipts.
+
+Next serving hypothesis may test the completed learnedmodels against earlier
+deepercandidatepools forcoverage,witha newprospectivedevelopmentprotocol.
+No newrecipe isqualified. Preservefresh120 untilanewwinner/source/modelfreeze;
+retainrealKaggle smoke/independentaudits andoneglobalpendingrule beforetrial.
+Read C13/C14/C15notes andactualprocess/status beforeacting. Older checkpoints
+below arehistorical;this measuredstate supersedes their running/pending claims.
+
+## Authorization and earlier checkpoints — C09, 2026-11-09
 
 Latest explicit user approval at10November01:37UTC: **another submission**.
 One additional trial is reserved/unconsumed in the C09 ledger. P16/ref58181280
@@ -60,15 +92,30 @@ UNREAD;keys were usedonly for training-exclusion/sourcepanel construction.
 Do not duplicate the private kernel or run a failedC13 confirmation. Read
 docs/C13-C14-2026-11-10.md and actualprocess/status receipts before recovery.
 
-C14CE nowtrains on2070: knownCE masked50%,same C08parents/data/seed/cosineBCE/
+C14CE completed06:08UTC:10000successfulupdates across2folds,0AMPskips,
+no restarts,peak1.4121GiB. KnownCE masked50%,same C08parents/data/seed/cosineBCE/
 5000successful-updatesperfold schedule as completedC09cosinecontrol. Audit
 shows90.308%trainingCEknown versusallvalidationCEunknown. Separate checkpointed
 CE RNG preserves other drawstreams;3tests pass. ZeroC10/freshC13keyoverlap with
-theentirebasecatalogue. Launcher22772/worker19468,deadline08:43:31UTC;at05:44
-fold0step300,0skips,6.77updates/s,peak1.4121GiB/freeRAM15.36GiB. Verify actual
-handle;do not duplicate/restartcompletedfits. No checkpoint/weightsearch;
-configs/c14-evaluation-20261110.json predeclares0.20tailRRF selection onused160
-beforeanyfresh120metrics. Quality gain unproven;oneglobalpendingP16 remains.
+theentirebasecatalogue. ActualCUDAcheckpoint RNG restoration isbit-exact.
+Both trainers andC14evaluator exited;do not restartcompletedfits. Final artifact
+audit passes/localpackage only,notuploaded. Development06:09 rejectsC14:
+delta-0.00138476 vscompleteP01/P16 CI[-.00466296,.00150427],14improved/16harmed;
+vsmatchedC09control-0.000520553 CIcrosses0. Same100/160truths,rank1/candidate
+sets exact. Fresh120metrics remainunread;no newtrial. Evaluatorv2 onlyreuses
+pinnedC12features (1319commonoldcache rows bit-exact),beforemetrics;v1 archived.
+
+CurrentC15NP source-balanced2070 training starts06:21UTC,launcher25528/
+worker26336,deadline09:21:11UTC. ExactLOTUS raw-key matches mark10578/270127
+eligibleidentities (3.916%;conservative sourceflag,not exhaustive NPclass).
+Each fold has8462/8461matched trainingidentities. C15samples192members+
+192others perbatch;allsameC08parents/data/negativepools/seed/objective/schedule
+asC09control,withseparatecheckpointedsource RNG. No CE masking/newidentities.
+Three sampler tests pass. At06:22fold0step400,0skips,6.81updates/s,peak1.4121GiB/
+freeRAM15.54GiB. Verifylivecommand/handle;no duplicatelaunch. Final-only .20RRF
+development protocol froze06:22,onlyused160;positiveCI vsP01/P16 andnonnegative
+pointvsmatchedcontrol requiredbeforefresh120. No modelgain/publictrialclaim.
+Read docs/C15-NP-2026-11-10.md. C13privatecollector stayslive;freshlabels staylocal.
 
 Historical C10 reference evaluator/protocol was prepared and5gate tests pass;
 do not execute it because P16 won/tied reference development. The shared120

@@ -1,0 +1,22 @@
+{
+  "prepared_utc": "2026-11-10T06:07:49.288008+00:00",
+  "evaluation_plan_sha256": "ab59bc39763953c3a8ddb081b3bb498304d241546cdce4ebc26ceeab3ccb15b3",
+  "gate_source_sha256": "15ac23f3c2852fe6be550e761539e8a786edfcea9265381a3f4e2ac08c6cc92f",
+  "validation_contract_sha256": "8ef3d0600cf0dc1ca2e8f2edbe664adffc84e80e75a9e972ea50f5fdaf9554c7",
+  "local_confirmation_labels_sha256": "c74a4d91eb1c9fd65855e2804036ab80238732e01e07c1da4ed9229ae152376d",
+  "input_audit_sha256": "e3a9a98d0a55e45c398aa12cea6b18b9c286173c138c9f7fa16281814b50487f",
+  "queries": 120,
+  "fixed_modes": {
+    "positive": 60,
+    "negative": 60
+  },
+  "bootstrap_draws": 10000,
+  "bootstrap_seed": 20261105,
+  "main_gate": "Positive paired95% lowerbound versus both complete P01/P16; keep all missing-truth zeros.",
+  "sensitivity": "Alias-excluded full delta/lowerbound nonnegative; both polarity means nonnegative against P01/P16 for both predeclared reference views.",
+  "negative_controls": "Report P14/P15/matchedC09 signs and uncertainty without filtering or reselection.",
+  "prerequisite": "New C14 development winner/source/model freeze plus complete label-blind full-pipeline inference; all prediction inputs sealed before reading120metrics.",
+  "fresh_prediction_metrics_read": false,
+  "automatic_submission": false,
+  "full_submission_qualification": "Independent realKaggle changed-path source/model/identity/fallback/preprocessing/fusion audits and actual P16 resolution still required."
+}

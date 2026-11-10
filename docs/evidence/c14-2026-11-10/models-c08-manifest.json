@@ -1,0 +1,53 @@
+{
+  "kind": "compatible_scorer",
+  "run_id": "C14CE",
+  "steps": 45000,
+  "smoke": false,
+  "architecture": {
+    "width": 320,
+    "heads": 8,
+    "layers": 3,
+    "embedding": 320,
+    "fp_bits": 2048,
+    "max_peaks": 96,
+    "min_peaks": 3,
+    "temperature": 0.1,
+    "fp_score_weight": 2.0
+  },
+  "models": [
+    {
+      "file": "ce-mask-fold0.pt",
+      "fold": 0,
+      "arm": "ce-mask",
+      "steps": 45000,
+      "cache_precision": "float16",
+      "checkpoint_sha256": "fed6a89e79801e773d8600f0a4436e17ec8c853c6f03c99a3dec8c0fa2cfd91b"
+    },
+    {
+      "file": "ce-mask-fold1.pt",
+      "fold": 1,
+      "arm": "ce-mask",
+      "steps": 45000,
+      "cache_precision": "float16",
+      "checkpoint_sha256": "098428bf06f5ace408de665e86175da56db5c370ca111825cebb0618842316b0"
+    }
+  ],
+  "files": {
+    "model.py": "2547418857386d1c2513fd1ab6c70961e6a96e73d9d495bbfe3052197e69dc39",
+    "features.py": "a97ad9b3ab3711517864d56e497e1672cb29bb05683c72b52db9f9b0a17b1455",
+    "fingerprint-cache.npy": "9c49b4ccbd9bad1738f4cd29a760f7f7a6284427eb97d2dfe6bc52a9a227fdda",
+    "fingerprint-cache-smiles.parquet": "f01df6a8cac1aaf8e9ef803cb4a01eebb9dba49089ba5cc7bcbe264b07a8e99a",
+    "compatible_tail.py": "b5677d884008f0fd16a66ca045eb5c5c61420e895c66612d3fefdef166f58378",
+    "inference.py": "9e16fd61d7cdc6e6c5b65203421e8731c3abfe56f256558f0e73a273a3657273",
+    "ce-mask-fold0.pt": "fed6a89e79801e773d8600f0a4436e17ec8c853c6f03c99a3dec8c0fa2cfd91b",
+    "ce-mask-fold1.pt": "098428bf06f5ace408de665e86175da56db5c370ca111825cebb0618842316b0"
+  },
+  "training_contract_sha256": "2d76f4b4cc68e9a56fff941b166e3494626a4cfec8de47bb7d42d5317b4d4b40",
+  "evaluation_plan_sha256": "ab59bc39763953c3a8ddb081b3bb498304d241546cdce4ebc26ceeab3ccb15b3",
+  "packager_sha256": "444ad95a85828f2962af070abe37e6ab52a5c5558cac5995d2ac8c7efa5e0f4f",
+  "parent_manifest_sha256": "c73d2383b7494fdbaedb9e437f8f389dbe175418bf13e5260a2f277ada49b602",
+  "matched_control_audit_sha256": "d178146ed4bc55dbc2a3cffeba6909656f0be14f40c30df2d946937aedf0b0a2",
+  "automatic_submission": false,
+  "selection": "Final5000updates/fold only; no intermediate checkpoint or coefficient search",
+  "attribution": "Compatible architecture/features from credited Saner/P01 kit; local C08 parents. Original source/model terms retained."
+}

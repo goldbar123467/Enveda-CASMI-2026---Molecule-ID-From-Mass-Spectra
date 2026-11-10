@@ -1,0 +1,53 @@
+{
+  "kind": "compatible_scorer",
+  "run_id": "C15NP",
+  "steps": 45000,
+  "smoke": false,
+  "architecture": {
+    "width": 320,
+    "heads": 8,
+    "layers": 3,
+    "embedding": 320,
+    "fp_bits": 2048,
+    "max_peaks": 96,
+    "min_peaks": 3,
+    "temperature": 0.1,
+    "fp_score_weight": 2.0
+  },
+  "models": [
+    {
+      "file": "np-balanced-fold0.pt",
+      "fold": 0,
+      "arm": "np-balanced",
+      "steps": 45000,
+      "cache_precision": "float16",
+      "checkpoint_sha256": "3761913418722514df32e2ba863346c1f256712e854160e2af51ced6c0ada604"
+    },
+    {
+      "file": "np-balanced-fold1.pt",
+      "fold": 1,
+      "arm": "np-balanced",
+      "steps": 45000,
+      "cache_precision": "float16",
+      "checkpoint_sha256": "5942264b4995622f423259083c170c53e194d26ed3403df5da02510d38848dbe"
+    }
+  ],
+  "files": {
+    "model.py": "2547418857386d1c2513fd1ab6c70961e6a96e73d9d495bbfe3052197e69dc39",
+    "features.py": "a97ad9b3ab3711517864d56e497e1672cb29bb05683c72b52db9f9b0a17b1455",
+    "fingerprint-cache.npy": "9c49b4ccbd9bad1738f4cd29a760f7f7a6284427eb97d2dfe6bc52a9a227fdda",
+    "fingerprint-cache-smiles.parquet": "f01df6a8cac1aaf8e9ef803cb4a01eebb9dba49089ba5cc7bcbe264b07a8e99a",
+    "compatible_tail.py": "b5677d884008f0fd16a66ca045eb5c5c61420e895c66612d3fefdef166f58378",
+    "inference.py": "fda8b99501d0b3e8e02f0b8fd9b738eaf1322e5be31ba5f4ab95721347cb6a79",
+    "np-balanced-fold0.pt": "3761913418722514df32e2ba863346c1f256712e854160e2af51ced6c0ada604",
+    "np-balanced-fold1.pt": "5942264b4995622f423259083c170c53e194d26ed3403df5da02510d38848dbe"
+  },
+  "training_contract_sha256": "336bb042e66266ffedb918d78ca802f0daf1a809f2ad052fd7e9773de033f3f8",
+  "evaluation_plan_sha256": "dbffd9e1c9ccaa2d91dbdbdc47370562e307940d7ddf59697e4a49826595f24e",
+  "packager_sha256": "0d675a1d31184ba43ecf6cd14de0730b8816cf81f5f3cb2e90f22e306f0ac89c",
+  "parent_manifest_sha256": "c73d2383b7494fdbaedb9e437f8f389dbe175418bf13e5260a2f277ada49b602",
+  "matched_control_audit_sha256": "654fca2c34266a8020b7d975d6ab085b9af7ceec5868408e30c1aa7bc8909a64",
+  "automatic_submission": false,
+  "selection": "Final5000updates/fold only; no intermediate checkpoint or coefficient search",
+  "attribution": "Compatible architecture/features from credited Saner/P01 kit; local C08 parents. Original source/model terms retained."
+}

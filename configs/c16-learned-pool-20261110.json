@@ -1,0 +1,19 @@
+{
+  "campaign": "C16",
+  "hypothesis": "The completed compatible scorers may recover structures discarded before the final25; test broader coverage with no additional training",
+  "development": "All160already-used C10/C12 identities only; fresh C13mixed120 prediction metrics remainunread",
+  "parent": "CompleteP01 plus fixedP16 measured-reference overlay",
+  "pool": "Exact previously prepared C12all deeperpool,officialdedup,parentfirst,cap128; no new structures injected from labels",
+  "model_groups_in_tie_order": ["cosine-control", "C15NP"],
+  "models": "Only completed final45000-step two-fold fits in each group; no checkpoint selection or weight averaging",
+  "rule": "Insert at most1outsider at rank2 only when both same-group folds strictly rank that same outsider first in the jointpool;retainrank1/exactparentprefix,dropoldtailonly",
+  "minimum_raw_top_margin": 0.0001,
+  "protect_library_at": 0.90,
+  "selection": "Among groups with positive95%lowerbound versus completeP01/P16 and at least1absenttruthrecovered,choose greatest developmentMRR;tie prefers listed older control. No coefficient or threshold search.",
+  "fresh_confirmation": "Only selected recipe after model/source/output freeze;fresh120 once with positive95%lowerbound vsP01/P16,nonnegative polarity means andinput-alias sensitivity;full denominator/zeros and negative controls retained",
+  "execution": "C13formatecompatibility fix must be retained in production;full realKaggle changed-path smoke/independent source/model/identity/fallback/rawscore/merge audit before any publictrial",
+  "maximum_pending_public_submissions": 1,
+  "automatic_submission": false,
+  "paid_compute": false,
+  "implementation_status": "Prospective hypothesis only;implementation,scoring,selection andqualification remain to be done"
+}

@@ -1,0 +1,80 @@
+{
+  "frozen_utc": "2026-11-10T06:49:34.365382+00:00",
+  "protocol_sha256": "32f44fae584b267a64913a61d2f70d033322d81c6e81a1287666b3ac8929a13a",
+  "C15_manifest_sha256": "ecf9c437a484114bc09891fcc16534b8b1559cd8b0e019db000b0248fe6ac55c",
+  "matched_manifest_sha256": "be6527550a26d0c331d3ddcac5132163f4cbab5eed0fc2d605ac35714788f191",
+  "scores_sha256": {
+    "C15": "44663185224807b207dc80095abba576f37660edc2dc5df7438360d60c3059b2",
+    "matched_C09": "c4b1c30de5510fdd327a0067621c88bff6cd39ecb666ac53f4801a890e135b63"
+  },
+  "receipts": {
+    "C15": {
+      "arm": "np-balanced",
+      "models": 2,
+      "folds": [
+        0,
+        1
+      ],
+      "cache_precision": "float16",
+      "smoke": false,
+      "steps": 45000,
+      "manifest_sha256": "ecf9c437a484114bc09891fcc16534b8b1559cd8b0e019db000b0248fe6ac55c",
+      "baseline_content_sha256": "27730ce2e2d3a3b51529216d29319cf857bf69bb01449b37a30795b51badf7ff",
+      "queries_sha256": "c0f90ca5174c0f637fbc5c082afa9462fb4d310adf2548550ee086a0bf3f4f5d",
+      "scored_molecules": 160,
+      "unsupported_molecules": [],
+      "unprocessed_molecules": 0,
+      "input_errors": 0,
+      "peak_selection": "stable_intensity_then_mz",
+      "spectrum_aggregation": "all usable spectra, equal average",
+      "model_aggregation": "mean of per-query standardized raw scores",
+      "numpy_version": "2.0.2",
+      "torch_version": "2.11.0+cu128"
+    },
+    "matched_C09": {
+      "arm": "cosine-control",
+      "models": 2,
+      "folds": [
+        0,
+        1
+      ],
+      "cache_precision": "float16",
+      "smoke": false,
+      "steps": 45000,
+      "manifest_sha256": "be6527550a26d0c331d3ddcac5132163f4cbab5eed0fc2d605ac35714788f191",
+      "baseline_content_sha256": "27730ce2e2d3a3b51529216d29319cf857bf69bb01449b37a30795b51badf7ff",
+      "queries_sha256": "c0f90ca5174c0f637fbc5c082afa9462fb4d310adf2548550ee086a0bf3f4f5d",
+      "scored_molecules": 160,
+      "unsupported_molecules": [],
+      "unprocessed_molecules": 0,
+      "input_errors": 0,
+      "peak_selection": "stable_intensity_then_mz",
+      "spectrum_aggregation": "all usable spectra, equal average",
+      "model_aggregation": "mean of per-query standardized raw scores",
+      "numpy_version": "2.0.2",
+      "torch_version": "2.11.0+cu128"
+    }
+  },
+  "changes": {
+    "C15": {
+      "weight": 0.2,
+      "offset": 3.0,
+      "rank_one_changes": 0,
+      "candidate_set_changes": 0,
+      "changed_rows": 159,
+      "scored_molecules": 160,
+      "passthrough_molecules": 0
+    },
+    "matched_C09": {
+      "weight": 0.2,
+      "offset": 3.0,
+      "rank_one_changes": 0,
+      "candidate_set_changes": 0,
+      "changed_rows": 159,
+      "scored_molecules": 160,
+      "passthrough_molecules": 0
+    }
+  },
+  "fresh_C13_prediction_metrics_read": false,
+  "automatic_submission": false
+}

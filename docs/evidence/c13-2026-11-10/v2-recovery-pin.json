@@ -1,0 +1,30 @@
+{
+  "notebook_sha256": "cbd4503ef7dc1ba089d33d3f3d8a45615db406b236c1b3b135005a47f7d8088f",
+  "builder_sha256": "f2afb9ed63a2cac831b4c040166000e3dda5d423d20b61018918855e39acff8b",
+  "normalizer_sha256": "a4af7d3c68ed120e168b68fbed7478ebaefccf48e98c9ce309843de84481b5c1",
+  "original_notebook_sha256": "270a4b1d262cce1b3fe41696c2805b32729d07732adf7db30bb79d7889d7ecfa",
+  "source_adaptation": "PV neutral-mass and FP-encoder lookup accepts equivalent formate spelling and boundary whitespace; no unknown-adduct default.",
+  "unchanged_canonical_mass_lookups": 29,
+  "old_finite_query_mass": 98,
+  "new_finite_query_mass": 120,
+  "old98_query_neutral_masses_exact": true,
+  "changed_query_adduct_encodings": 22,
+  "all120_queries_retained": true,
+  "query_data_and_contract_unchanged": true,
+  "coverage_guard_unchanged": true,
+  "other_frozen_cells_exact": true,
+  "ranking_weights_models_simulators_unchanged": true,
+  "fresh_query_labels_or_metrics_read": false,
+  "private": true,
+  "scoring_submission": false,
+  "engine_files_before": {
+    "pv.py": "ac2e7c527f327cfe2acdef6c1a6128a0a360f1f91d5e3e0c8ade338a4a9078f6",
+    "pv_fp.py": "86a760b10a75f3b527a75fca8533e030783c3fd542daaca4711e051734914bcd",
+    "casmi_engine.py": "e461349b37f5097fa2c2e52cedc0716e6fa26567513bab0bb3841cc37e1d5b4f"
+  },
+  "engine_files_after": {
+    "pv.py": "a1f1c4ad24f49759a18159e1ab310af0a5e119d2fc8150425df04287cc403e5c",
+    "pv_fp.py": "0524e1fdead93ffd2f83d0d2eb4b789dec960b46ef52d5e855df657011747eba",
+    "casmi_engine.py": "e461349b37f5097fa2c2e52cedc0716e6fa26567513bab0bb3841cc37e1d5b4f"
+  }
+}

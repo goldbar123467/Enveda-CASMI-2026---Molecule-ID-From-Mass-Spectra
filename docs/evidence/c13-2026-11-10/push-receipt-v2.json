@@ -1,0 +1,14 @@
+{
+  "checked_utc": "2026-11-10T06:47:04.320672+00:00",
+  "kernel": "clarkkitchen/casmi26-c13-fresh-mixed-casmi2022-validation",
+  "version": 2,
+  "status": "QUEUED",
+  "is_private": true,
+  "internet": false,
+  "docker_image": "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461",
+  "remote_scientific_sha256": "17891a078cebe17f23fe5ade31e29d0e34519d1bf04d9294abb7a8f723a716f8",
+  "notebook_sha256": "cbd4503ef7dc1ba089d33d3f3d8a45615db406b236c1b3b135005a47f7d8088f",
+  "scoring_submission": false,
+  "query_labels_mounted": false,
+  "recovery": "Same120/rawinputs/modelweights;equivalentformateadductlookupfix. Bothfullcoverageandallotherguardspreserved."
+}

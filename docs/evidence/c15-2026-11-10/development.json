@@ -1,0 +1,123 @@
+{
+  "completed_utc": "2026-11-10T06:49:34.474700+00:00",
+  "queries": 160,
+  "candidate": "P16_plus_C15NP_tail020",
+  "comparisons": {
+    "P01": {
+      "n": 160,
+      "baseline_mrr25": 0.27874430083805085,
+      "candidate_mrr25": 0.2783590367965368,
+      "delta": -0.00038526404151404195,
+      "ci95": [
+        -0.0023228433892496392,
+        0.0016715242223054707
+      ],
+      "improved": 11,
+      "harmed": 17
+    },
+    "P16": {
+      "n": 160,
+      "baseline_mrr25": 0.27874430083805085,
+      "candidate_mrr25": 0.2783590367965368,
+      "delta": -0.00038526404151404195,
+      "ci95": [
+        -0.0023228433892496392,
+        0.0016715242223054707
+      ],
+      "improved": 11,
+      "harmed": 17
+    },
+    "matched_C09": {
+      "n": 160,
+      "baseline_mrr25": 0.27788009349396736,
+      "candidate_mrr25": 0.2783590367965368,
+      "delta": 0.000478943302569463,
+      "ci95": [
+        -0.0012943525658369417,
+        0.0024805441390072756
+      ],
+      "improved": 12,
+      "harmed": 9
+    }
+  },
+  "controls": {
+    "P14": {
+      "n": 160,
+      "baseline_mrr25": 0.27874430083805085,
+      "candidate_mrr25": 0.2812322217256428,
+      "delta": 0.00248792088759194,
+      "ci95": [
+        -0.0049185683194729254,
+        0.01039204388447809
+      ],
+      "improved": 27,
+      "harmed": 17
+    },
+    "P15": {
+      "n": 160,
+      "baseline_mrr25": 0.27874430083805085,
+      "candidate_mrr25": 0.27771823023467757,
+      "delta": -0.0010260706033732349,
+      "ci95": [
+        -0.003464726088513095,
+        0.0013434949872861055
+      ],
+      "improved": 13,
+      "harmed": 20
+    },
+    "matched_C09": {
+      "n": 160,
+      "baseline_mrr25": 0.27874430083805085,
+      "candidate_mrr25": 0.27788009349396736,
+      "delta": -0.0008642073440835049,
+      "ci95": [
+        -0.003358954291886518,
+        0.0015829145409544
+      ],
+      "improved": 14,
+      "harmed": 20
+    }
+  },
+  "changes": {
+    "C15": {
+      "weight": 0.2,
+      "offset": 3.0,
+      "rank_one_changes": 0,
+      "candidate_set_changes": 0,
+      "changed_rows": 159,
+      "scored_molecules": 160,
+      "passthrough_molecules": 0
+    },
+    "matched_C09": {
+      "weight": 0.2,
+      "offset": 3.0,
+      "rank_one_changes": 0,
+      "candidate_set_changes": 0,
+      "changed_rows": 159,
+      "scored_molecules": 160,
+      "passthrough_molecules": 0
+    }
+  },
+  "new_candidate_selected": false,
+  "truth_coverage": {
+    "P16": 100,
+    "C15": 100,
+    "matched_C09": 100,
+    "P01": 100,
+    "P14": 100,
+    "P15": 100
+  },
+  "truth_absent_mrr": 0,
+  "detects_known_public_regression": {
+    "P14": false,
+    "P15": true
+  },
+  "negative_control_interpretation": "Wrong-sign controls are retained. Positive-only used CASMI2022/unknownCE shift limits hidden-score calibration. Model folds are not independent validation units.",
+  "protocol_sha256": "32f44fae584b267a64913a61d2f70d033322d81c6e81a1287666b3ac8929a13a",
+  "input_freeze_sha256": "cb4fd51f8a56d3c0206661cea951d74e5c762351cb17d90c5f42fa38e5fc7f41",
+  "all_development_previously_used": true,
+  "fresh_C13_prediction_metrics_read": false,
+  "automatic_submission": false,
+  "submission_qualified": false,
+  "next_action": "Only if selected, freeze prospective fresh120 evaluation. Otherwise reject the fixed recipe and preserve fresh120. No automatic public trial."
+}

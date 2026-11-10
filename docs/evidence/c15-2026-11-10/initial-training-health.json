@@ -1,0 +1,22 @@
+{
+  "updated_utc": "2026-11-10T06:29:01.969981+00:00",
+  "pid": 26336,
+  "deadline_utc": "2026-11-10T09:21:11.761409+00:00",
+  "state": "training",
+  "stage": "C15 source-balanced continuation",
+  "arm": "np-balanced",
+  "fold": 0,
+  "step": 3150,
+  "loss": 2.109806300401688,
+  "domain_sampling_counts": {
+    "member_queries": 604800,
+    "other_queries": 604800
+  },
+  "resources": {
+    "gpu_peak_reserved_gib": 1.412109375,
+    "micro_batch": 192,
+    "amp_skips": 0,
+    "updates_per_second": 6.697083031908026,
+    "free_ram_gib": 14.323169708251953
+  }
+}

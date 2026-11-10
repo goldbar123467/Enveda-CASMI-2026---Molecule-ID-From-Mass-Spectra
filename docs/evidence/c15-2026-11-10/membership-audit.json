@@ -1,0 +1,24 @@
+{
+  "checked_utc": "2026-11-10T06:15:16.159390+00:00",
+  "source": "Audited LOTUS source records,originalCC-BY4.0",
+  "catalogue_sha256": "7684b51f72a2d4c073a8d2435fff14cce0a0e7364ac7904101b8f93990f0ac2f",
+  "base_sha256": "a158239c869f4565971d93d37cae0c88c52677e6622807392222118516c71e09",
+  "base_identities": 273833,
+  "exact_NP_members": 10685,
+  "eligible": 270127,
+  "eligible_NP": 10578,
+  "fraction_eligible_NP": 0.03915935837587505,
+  "folds": {
+    "0": {
+      "training_identities": 216270,
+      "NP_identities": 8462
+    },
+    "1": {
+      "training_identities": 216175,
+      "NP_identities": 8461
+    }
+  },
+  "membership": "Exact raw LOTUS key to existing canonical training-key match only; conservative source-membership flag,not exhaustive NP classification or noveltrainingdata",
+  "query_labels_or_metrics_read": false,
+  "training_started": false
+}

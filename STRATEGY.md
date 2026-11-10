@@ -1,5 +1,38 @@
 # C09 results and P16 scoring trial — 9–10 November
 
+## Current measured state — 10 November,06:50UTC
+
+P16/ref58181280 is COMPLETE0.480/noerror (API06:29),matching the reported
+champion;no measured publicgain. Globalpublicpending0,extraapprovedtrial1
+unconsumed,ledgerreconciled. NeverresubmitP16. Latestactualrank944/5052 at
+06:49UTC;nominalsilver252/0.483,goalUNMET. PreserveP01/P13/P16 source/weights.
+
+C14 andC15 bothcompleted10000successfulupdates/2folds each,0AMPskips/
+0restarts,peak1.4121GiB. Bothfixedtailrecipesfailused160development. C15delta
+-.000385264 vsP01/P16 CI[-.00232284,.00167152],11improved/17harmed;
+vsmatchedC09+.000478943 butCIcrosses0. C14delta-.00138476. Same100/160truths,
+rank1/candidate sets exact. Trainers/evaluators exited;neverrefitcompletedjobs.
+Finalmodels remainlocal/private;freshC13predictionmetrics stillUNREAD.
+
+C13privatev1 ERROR06:27:Engine2covered98/120 because22negativeformatealiases
+wereabsentfromPVlookupvocabulary. Real2T4hardware/GPU1preflighthealthy.
+V2accepted06:47,nowRUNNING withonlyequivalentformatespelling/whitespace
+normalization inPVneutral-mass andFPadductlookup. Same120/inputs/weights;
+strictcoverageguard/allotherfrozencellsunchanged. Canonicaltableand98old
+querymassesexact;all120nowfinite. Threealias tests pass. No freshlabels/metrics
+usedfordebugging. Notebookcbd4503e...,remote scientific17891a07...,private/
+internetoff/image37c64/source/versionverified. Collector27800/9740tracks
+exactv2 to16:47UTC;readcollector-v2-status.json. V1collector hasexited;never
+restartv1or duplicatev2. Actualv2allocation/coverage needexecutionreceipts.
+
+Next serving hypothesis may test the completed learnedmodels against earlier
+deepercandidatepools forcoverage,witha newprospectivedevelopmentprotocol.
+No newrecipe isqualified. Preservefresh120 untilanewwinner/source/modelfreeze;
+retainrealKaggle smoke/independentaudits andoneglobalpendingrule beforetrial.
+Read C13/C14/C15notes andactualprocess/status beforeacting. Older checkpoints
+below arehistorical;this measuredstate supersedes their running/pending claims.
+
+
 Active user goal: verified silver leaderboard position, with24 hourly worker
 wake-ups in this chat. Latest05:23UTC10November rank934/5048 at0.480; nominal
 silver rank252 at0.483. Verify actual rank after scoring, not a tied score alone.
@@ -73,6 +106,22 @@ At05:44 step300fold0,0skips,6.77updates/s,peak1.4121GiB/freeRAM15.36GiB;
 trainer22772/19468deadline08:43UTC. Evaluateonlyfinalfits usingpredeclared.20
 tailRRF onused160;positiveCI vsP01/P16 andnonnegativepointvsmatchedcontrol
 beforefresh120confirmation. No qualityclaim/newpublicsubmission. See C13/C14notes.
+
+C14 completed06:08UTC,10000newsuccessfulupdates/0skips/0restarts. Final model
+audit passes;localonly. Development06:09 REJECTS it:delta-.00138476 vsP01/P16,
+CI[-.00466296,.00150427],14improved/16harmed;vsmatchedcontrol-.000520553.
+Exactrank1/candidate sets and100/160truths retained. Fresh120metrics preserved.
+No C14smoke/upload/publictrial or repeatingcompletedfits. CUDA RNGresumeaudit
+isbit-exact;before-metricsv2 feature-cache reuse matches1319original rows.
+
+C15NP nowtests a different source-sampling change:exactauditedLOTUSmatches
+mark10578/270127eligibletrainingidentities (3.916%;conservativeflag). Sample
+halfmatched/halfothers,without CE masking,withsameC08parents/data/objective/
+seed/5000updatesperfold/micro192 andnewcheckpointedsource RNG. Three tests
+pass;trainer25528/26336 starts06:21deadline09:21UTC;at06:22step400/0skips/
+6.81updatessec/1.4121GiB. Final-only .20tailRRF selection onused160 isfrozen
+beforeanyfresh120metrics. Newdata/NPexhaustiveness/quality gains are notclaimed.
+See C15notes andsealedprotocol;onependingP16 andoneunconsumedextraapproval.
 
 Public refresh C11PUB:247catalogue entries/five sources,fourunchanged. New
 peaks-v2 dual-polarity massguard/threshold edits are untested here and exact

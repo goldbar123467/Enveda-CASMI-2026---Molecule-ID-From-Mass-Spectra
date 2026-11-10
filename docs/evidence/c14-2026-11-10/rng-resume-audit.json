@@ -1,0 +1,21 @@
+{
+  "checked_utc": "2026-11-10T06:00:05.316901+00:00",
+  "auditor_sha256": "6be4e1924896f1b1eac6b6f9e3170121917c605b5268fd31e79f6a68b5195a59",
+  "checkpoint_snapshot_sha256": "04b232f728e3b848a91c53b57b60c83a7a1765964e53fd8088fb9ee45510c249",
+  "checkpoint_path": "outputs\\local\\c14-ce-mask-20261110\\models\\ce-mask\\fold-1\\resume.pt",
+  "successful_update": 1600,
+  "observed_augmentation_counts": {
+    "eligible": 522172,
+    "masked": 260506,
+    "unknown_before": 92228
+  },
+  "device": "NVIDIA GeForce RTX 2070",
+  "restored_CUDA_masks_bit_exact": true,
+  "default_CUDA_rng_unchanged": true,
+  "input_metadata_unchanged": true,
+  "unaffected_fields_exact": true,
+  "trainer_checkpoint_not_modified": true,
+  "synthetic_queries": 384,
+  "prediction_metrics_read": false,
+  "training_restarted": false
+}

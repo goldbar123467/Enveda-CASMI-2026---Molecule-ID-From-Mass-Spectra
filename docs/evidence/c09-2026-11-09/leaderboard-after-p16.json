@@ -1,0 +1,26 @@
+{
+  "teams": 5052,
+  "team": {
+    "Rank": "944",
+    "TeamId": "16893680",
+    "TeamName": "Clark Kitchen",
+    "LastSubmissionDate": "2026-11-10 01:22:14",
+    "Score": "0.480",
+    "SubmissionCount": "33",
+    "TeamMemberUserNames": "clarkkitchen"
+  },
+  "nominal_silver_cutoff_rank": 252,
+  "cutoff_score": 0.483,
+  "own_score_rank_interval": [
+    700,
+    1004
+  ],
+  "provisional_silver_qualifying_position": false,
+  "final_competition_medal": false,
+  "leaderboard_url": "https://www.kaggle.com/competitions/enveda-CASMI26-molecule-id-mass-spectra/leaderboard",
+  "medal_rule_url": "https://www.kaggle.com/progression/competitions",
+  "limitation": "Provisional live ranking; use actual rank, not a rounded score or a promised final medal",
+  "checked_utc": "2026-11-10T06:49:36.343461+00:00",
+  "source_csv": "enveda-CASMI26-molecule-id-mass-spectra-publicleaderboard-2026-11-10T06:49:36.csv",
+  "source_archive_sha256": "17d73d19e51a1751d3ff589a16ae84ae5c074c80c610c3ff8842a2bcd2c572d0"
+}
