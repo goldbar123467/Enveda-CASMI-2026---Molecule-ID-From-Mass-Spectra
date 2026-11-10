@@ -1,0 +1,24 @@
+{
+  "original_pool_size": 1137233,
+  "added_structures": 25,
+  "queries": [
+    {
+      "molecule_id": "C20Q_3f38081e510120c5bad2",
+      "target": 1642.7223151216479,
+      "original_candidates": 0,
+      "proposed": 25,
+      "invalid": 0,
+      "mass_rejected": 0,
+      "already_known": 0,
+      "added": 25,
+      "recovered_candidates": 25
+    }
+  ],
+  "source": "Existing Engine1 BASE top60 generated proposals; no query structure labels",
+  "original_engine2_pool_and_ranker_rules_retained": true,
+  "only_empty_pool_queries": true,
+  "original_30ppm_fallback_window_retained": true,
+  "query_rows_dropped": 0,
+  "placeholders_added": 0,
+  "prediction_label_metrics_read": false
+}

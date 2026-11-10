@@ -1,0 +1,20 @@
+{
+  "completed_utc": "2026-11-10T10:33:31.492085+00:00",
+  "recovered_queries": 1,
+  "real_generated_proposals": 25,
+  "original_pool_structures": 1137233,
+  "real_fingerprints_and_both_rankers_executed": true,
+  "GPU": "NVIDIA GeForce RTX 2070",
+  "torch": "2.11.0+cu128",
+  "rdkit": "2025.03.6",
+  "sklearn": "1.6.1",
+  "numba": "0.61.2",
+  "pool_audit_sha256": "5b99400d1344d7b826a312ba518f13b71db6fa3c895e641100f96fd97d77c012",
+  "recovered_lists_sha256": "c252652e519691eb6c7eec840e383e5ea0038f3ed02c4c8f748f7625158d08fb",
+  "contract_sha256": "11c0b1f8e30e4afe7bd4d96e285a80b4e24da132cabcb94dbb15626056b6e231",
+  "limitation": "Local diagnostic uses Torch2.11 and sklearn1.6.1; exact cloud output parity and complete80-pipeline receipt are still required. This is not a qualified full-P01 validation.",
+  "labels_read": false,
+  "quality_metrics_computed": false,
+  "C13_confirmation_metrics_read": false,
+  "submission_qualified": false
+}

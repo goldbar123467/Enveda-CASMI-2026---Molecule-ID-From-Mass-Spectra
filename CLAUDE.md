@@ -1,6 +1,6 @@
 # Enveda CASMI 2026 — working rules
 
-## Current measured state — 10 November,10:29UTC
+## Current measured state — 10 November,10:38UTC
 
 Silver goal UNMET. P16/ref58181280 COMPLETE0.480/noerror; no reported public gain.
 Board10:22UTC:rank960/5062, nominal silver253 at0.484.
@@ -44,18 +44,17 @@ ef1445ff61d59fe61a5531d35d9b797700909a4e4d141cf3c3a3ed7dc3e062f7.
 Worker6784 waits actual C21 terminal+exit, then scores/evaluates/selects once;
 deadline21:00UTC. Read outputs/local/c24-evaluation-20261110/worker-status.json.
 
-Local C20 Engine2 recovery diagnostic ACTIVE:supervisor22468,redirector
-child11168; exact actual process via CIM. Real full2.54M library,
-original COCONUT/BIO/PubChemLite/train pool, real25generated candidates and
-original FPmodels/rankers; only filesystem ROOTS adapted. Asset16/16 cached.
-Isolated engine-site usesRDK2025.03.6/Torch2.11/sklearn1.6.1; complete cloud
-parity remains mandatory, never substitute this one-query diagnostic for full80.
-Two preparatory attempts archived: v1 control-tree correction before rankers;
-v2 duplicate Windows/slash source-pin record correctly rejected before loading.
-Current canonical contract11c0b1f8...; original12:23:37UTC deadline retained.
-TwoCPU threads/4GiB floor/70%VRAM; inspect local-engine-status/log/err in
-outputs/research/c20-engine-recovery-20261110. No new C24 fit or labels/metrics.
-Do not duplicate while live. Watchdog kills its exact child tree on failure.
+Local C20 Engine2 recovery diagnostic COMPLETE10:33:31; actual worker and
+supervisor exited. Rebuilt exact1137233structure pool from2539608spectra,
+verified originally0near-mass candidates, added25real valid generated proposals
+(0invalid/massrejected/placeholders), executed both FPmodels on2070 and all
+4+8 original ranker fits, produced25real ranked candidates. No labels/metrics.
+Audit docs/evidence/c20-2026-11-10/local-engine-audit.json. Isolated RDK2025.03.6/
+Torch2.11/sklearn1.6.1; full cloud80 receipts and output parity remain required.
+Never repeat this completed diagnostic. Two preparatory attempts are preserved:
+v1 corrected Windows child-tree cleanup; v2 strictcheck rejected duplicate
+path keys before loading. No C24 fit repeated. Actual science/source/model
+pins are intact; deployed C20notebook bytes now preserved exactly in Git.
 
 NEXT: collect and verify C20v2 recovered80/old79parity. Let existing C21 and
 C24 workers evaluate ALL six fixed groups. Among passing choose greatest full

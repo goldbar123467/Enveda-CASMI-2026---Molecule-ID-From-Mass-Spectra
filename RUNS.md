@@ -1,8 +1,8 @@
 # Runs
 
-Updated 2026-11-10 10:30 UTC by `scripts/update_runs.py` (hourly). Generated from `runs.csv` — edit that file, not this one.
+Updated 2026-11-10 10:37 UTC by `scripts/update_runs.py` (hourly). Generated from `runs.csv` — edit that file, not this one.
 
-- Kaggle quota: GPU 13.8 h used of 30 h · TPU 0.0 h of 20 h · resets 2026-11-14 00:00 UTC
+- Kaggle quota: GPU 13.9 h used of 30 h · TPU 0.0 h of 20 h · resets 2026-11-14 00:00 UTC
 - Submissions today (UTC): 1 of 5 — see `SUBMISSIONS.md`
 
 ## Active
@@ -14,12 +14,12 @@ Updated 2026-11-10 10:30 UTC by `scripts/update_runs.py` (hourly). Generated fro
 | C20COL2 | local-cpu | diag | outputs/local/c20-negative-development-20261110/collector-v2.log | 2026-11-10 09:36 | **running** | Bounded exactC20v2 collector plus actual recovered80/unchangedold79 verification | Worker 19008 live; RUNNING |
 | C21W2 | local-cpu | diag | outputs/local/c21-negative-tail-20261110/worker-v2.log | 2026-11-10 09:39 | **running** | Wait actual C20v2 handle, then cachedfull240prep/five-model inference/evaluation; no freshC13metrics | Worker 7712 live; waiting-C20 |
 | C24EW | local-2070 | eval | outputs/local/c24-evaluation-20261110/worker.log | 2026-11-10 10:13 | **running** | Bounded C24full240 inference/evaluation/global selection after actual C21 terminal and exit | Worker 6784 live; waiting-C21 |
-| C20LOCAL | local-2070 | diag | outputs/research/c20-engine-recovery-20261110/local-engine.log | 2026-11-10 10:26 | **running** | Real one-query empty-pool recovery using original full library/pool/FPmodels/rankers on2070; no fresh metrics | Worker 22468 live; running |
 
 ## Finished (newest first)
 
 | id | platform | kind | ref | started (UTC) | ended (UTC) | status | purpose | result |
 |---|---|---|---|---|---|---|---|---|
+| C20LOCAL | local-2070 | diag | outputs/research/c20-engine-recovery-20261110/local-engine.log | 2026-11-10 10:26 | 2026-11-10 10:33 | complete | Real one-query empty-pool recovery using original full library/pool/FPmodels/rankers on2070; no fresh metrics | PASS:2539608-spectrum library/original1137233structure pool exact;0original30ppm candidates,25real proposals added/0invalid/0placeholders. Actual2FPmodels on2070 plus4+8GBMs produced25ranked candidates; no labels/qualitymetrics. Isolated Torch2.11/sklearn1.6.1; full80 cloud receipts/parity still required. |
 | C20L2 | local-2070 | diag | outputs/research/c20-engine-recovery-20261110/local-engine-attention-child-v2.json | 2026-11-10 10:24 | 2026-11-10 10:25 | error | Fail-closed local diagnostic source-contract check | Duplicate Windows/slash script entries held different source hashes; strictcheck stopped before library/model loading. Canonical contract path keys corrected, same algorithm/deadline, no labels/metrics. |
 | C20L1 | local-2070 | diag | outputs/research/c20-engine-recovery-20261110/local-engine-v1-stop.json | 2026-11-10 10:23 | 2026-11-10 10:24 | killed | Initial local diagnostic input preparation; operator control-only correction | Entire known tree terminated during library/pool preparation to fix watchdog redirector-child cleanup; no ranker/model fit complete, no labels/metrics. Original deadline retained. |
 | C20ASSET | local-cpu | prep | outputs/research/c20-engine-recovery-20261110/asset-worker.log | 2026-11-10 10:19 | 2026-11-10 10:20 | complete | Cache original Engine2 candidate/FPmodel/ranker assets for local contingency | 16/16 exact-sized files hashed; isolated dependencies, original terms/attribution retained; no query labels/inference/metrics in preparer. |
