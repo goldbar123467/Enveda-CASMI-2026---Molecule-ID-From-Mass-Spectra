@@ -1,8 +1,8 @@
 # Runs
 
-Updated 2026-11-10 10:55 UTC by `scripts/update_runs.py` (hourly). Generated from `runs.csv` — edit that file, not this one.
+Updated 2026-11-10 11:14 UTC by `scripts/update_runs.py` (hourly). Generated from `runs.csv` — edit that file, not this one.
 
-- Kaggle quota: GPU 14.2 h used of 30 h · TPU 0.0 h of 20 h · resets 2026-11-14 00:00 UTC
+- Kaggle quota: GPU 14.5 h used of 30 h · TPU 0.0 h of 20 h · resets 2026-11-14 00:00 UTC
 - Submissions today (UTC): 1 of 5 — see `SUBMISSIONS.md`
 
 ## Active
@@ -20,6 +20,8 @@ Updated 2026-11-10 10:55 UTC by `scripts/update_runs.py` (hourly). Generated fro
 
 | id | platform | kind | ref | started (UTC) | ended (UTC) | status | purpose | result |
 |---|---|---|---|---|---|---|---|---|
+| C26SEAL | local-cpu | research | outputs/local/c26-deployment-audit-20261110/deployment-source-freeze.json | 2026-11-10 11:09 | 2026-11-10 11:09 | complete | Seal generic deployment source and six unchanged model registries before reserved metrics | Seal68b09816... binds adapter/tail/all6models/C21-C25 science plusP16/C20baseline sources. No added group or search; match only eventual global winner. Actual selected-model Kaggle smoke/audits remain pending. |
+| C26AUDIT | local-2070 | diag | outputs/local/c26-deployment-audit-20261110/audit.json | 2026-11-10 11:07 | 2026-11-10 11:07 | complete | Frozen negative-only deployment parity on120real unlabelled inputs plus4explicit fallback fixtures | PASS:real120 outputs equal existing fixed C08 negative-tail composition; rawfold/standardized parity0;60positive and4fallback rows exact,0rank1/set changes. No labels/qualitymetrics/selected-group changes. |
 | C25CTRL | local-2070 | eval | outputs/local/c25-reserved-negative-20261110/control-receipt.json | 2026-11-10 10:49 | 2026-11-10 10:49 | complete | Fixed original C08/P15 control predictions on reserved120 without labels/metrics | Both folds/all120supported,0errors/fallbacks;rank1/sets exact;118rows reordered byfixed0.20tail. Source/model/input/output pins frozen; performance remains UNREAD. |
 | C25PREP | local-cpu | prep | outputs/local/c25-reserved-negative-20261110/preparation.json | 2026-11-10 10:43 | 2026-11-10 10:45 | complete | Label-blind full120 fixed P16 parents/reference/official feature preparation before selected-recipe confirmation | 120retained/60perpolarity;both parentviews exactP01/0promotions/0aliases.2843structures/252exactcache reuses;2916cloud officialidentity rows exact. P14supports59 plus61exactfallbacks. No labels/metrics/selection. |
 | C20LOCAL | local-2070 | diag | outputs/research/c20-engine-recovery-20261110/local-engine.log | 2026-11-10 10:26 | 2026-11-10 10:33 | complete | Real one-query empty-pool recovery using original full library/pool/FPmodels/rankers on2070; no fresh metrics | PASS:2539608-spectrum library/original1137233structure pool exact;0original30ppm candidates,25real proposals added/0invalid/0placeholders. Actual2FPmodels on2070 plus4+8GBMs produced25ranked candidates; no labels/qualitymetrics. Isolated Torch2.11/sklearn1.6.1; full80 cloud receipts/parity still required. |

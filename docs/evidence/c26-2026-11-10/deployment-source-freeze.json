@@ -1,0 +1,119 @@
+{
+  "frozen_utc": "2026-11-10T11:09:18.928139+00:00",
+  "source_sha256": {
+    "negative_deployment.py": "ade504808046b980ef5915b0f6da3d40d2470fa162474dbac3c875473d8d901e",
+    "negative_tail.py": "9733a0c91a5186cc749a3b969711578cdc7d5616e3252f9f8917c249e893318e",
+    "compatible_tail.py": "b5677d884008f0fd16a66ca045eb5c5c61420e895c66612d3fefdef166f58378",
+    "seal_negative_deployment.py": "982ffafac51aafd7dda69d021b317c3deafaf5a08d0aa1366db2fda2b07bc17e"
+  },
+  "models": {
+    "C08-parent": {
+      "bundle": "outputs\\local\\c21-negative-tail-20261110\\bundles\\p15-parent",
+      "arm": "legacy16-hard",
+      "manifest_sha256": "86c977781695e5bfa8d5dc389c696f190359d9ca46b62fa5d087a4c6feee3909",
+      "files_sha256": {
+        "model.py": "2547418857386d1c2513fd1ab6c70961e6a96e73d9d495bbfe3052197e69dc39",
+        "features.py": "a97ad9b3ab3711517864d56e497e1672cb29bb05683c72b52db9f9b0a17b1455",
+        "fingerprint-cache.npy": "9c49b4ccbd9bad1738f4cd29a760f7f7a6284427eb97d2dfe6bc52a9a227fdda",
+        "fingerprint-cache-smiles.parquet": "f01df6a8cac1aaf8e9ef803cb4a01eebb9dba49089ba5cc7bcbe264b07a8e99a",
+        "compatible_tail.py": "b5677d884008f0fd16a66ca045eb5c5c61420e895c66612d3fefdef166f58378",
+        "inference.py": "0ee8db3110e96334ebe5c13a5aa6e209923c2c2dc659ccc669e66856acfa1bd2",
+        "p15-parent-fold0.pt": "5f794e6ee6b043d04c7fb2e861358d05afea7456e070c090a3be189bf69eafd2",
+        "p15-parent-fold1.pt": "c8f91847b79cc9e042add949b2de5289de98174a82a3ce41ed5043be7574882f"
+      }
+    },
+    "C09-control": {
+      "bundle": "outputs\\local\\c21-negative-tail-20261110\\bundles\\cosine-control",
+      "arm": "cosine-control",
+      "manifest_sha256": "be6527550a26d0c331d3ddcac5132163f4cbab5eed0fc2d605ac35714788f191",
+      "files_sha256": {
+        "model.py": "2547418857386d1c2513fd1ab6c70961e6a96e73d9d495bbfe3052197e69dc39",
+        "features.py": "a97ad9b3ab3711517864d56e497e1672cb29bb05683c72b52db9f9b0a17b1455",
+        "fingerprint-cache.npy": "9c49b4ccbd9bad1738f4cd29a760f7f7a6284427eb97d2dfe6bc52a9a227fdda",
+        "fingerprint-cache-smiles.parquet": "f01df6a8cac1aaf8e9ef803cb4a01eebb9dba49089ba5cc7bcbe264b07a8e99a",
+        "compatible_tail.py": "b5677d884008f0fd16a66ca045eb5c5c61420e895c66612d3fefdef166f58378",
+        "inference.py": "0ee8db3110e96334ebe5c13a5aa6e209923c2c2dc659ccc669e66856acfa1bd2",
+        "cosine-control-fold0.pt": "6f272426ead34a89f00b2289642ef5e1296496c98cd93baace3c50875a795fb0",
+        "cosine-control-fold1.pt": "f46510b89a82719bc7e54c11eba09b9152eeae6eecfab90b0c9d5c8de10d203b"
+      }
+    },
+    "C14-CE": {
+      "bundle": "outputs\\publish\\c14-ce-models-20261110",
+      "arm": "ce-mask",
+      "manifest_sha256": "b758d9a123305e01f8f51d9b90f04dc82f8a1b1e50d6c996d4c5fa614b1f7d53",
+      "files_sha256": {
+        "model.py": "2547418857386d1c2513fd1ab6c70961e6a96e73d9d495bbfe3052197e69dc39",
+        "features.py": "a97ad9b3ab3711517864d56e497e1672cb29bb05683c72b52db9f9b0a17b1455",
+        "fingerprint-cache.npy": "9c49b4ccbd9bad1738f4cd29a760f7f7a6284427eb97d2dfe6bc52a9a227fdda",
+        "fingerprint-cache-smiles.parquet": "f01df6a8cac1aaf8e9ef803cb4a01eebb9dba49089ba5cc7bcbe264b07a8e99a",
+        "compatible_tail.py": "b5677d884008f0fd16a66ca045eb5c5c61420e895c66612d3fefdef166f58378",
+        "inference.py": "9e16fd61d7cdc6e6c5b65203421e8731c3abfe56f256558f0e73a273a3657273",
+        "ce-mask-fold0.pt": "fed6a89e79801e773d8600f0a4436e17ec8c853c6f03c99a3dec8c0fa2cfd91b",
+        "ce-mask-fold1.pt": "098428bf06f5ace408de665e86175da56db5c370ca111825cebb0618842316b0"
+      }
+    },
+    "C15-NP": {
+      "bundle": "outputs\\publish\\c15-np-models-20261110",
+      "arm": "np-balanced",
+      "manifest_sha256": "ecf9c437a484114bc09891fcc16534b8b1559cd8b0e019db000b0248fe6ac55c",
+      "files_sha256": {
+        "model.py": "2547418857386d1c2513fd1ab6c70961e6a96e73d9d495bbfe3052197e69dc39",
+        "features.py": "a97ad9b3ab3711517864d56e497e1672cb29bb05683c72b52db9f9b0a17b1455",
+        "fingerprint-cache.npy": "9c49b4ccbd9bad1738f4cd29a760f7f7a6284427eb97d2dfe6bc52a9a227fdda",
+        "fingerprint-cache-smiles.parquet": "f01df6a8cac1aaf8e9ef803cb4a01eebb9dba49089ba5cc7bcbe264b07a8e99a",
+        "compatible_tail.py": "b5677d884008f0fd16a66ca045eb5c5c61420e895c66612d3fefdef166f58378",
+        "inference.py": "fda8b99501d0b3e8e02f0b8fd9b738eaf1322e5be31ba5f4ab95721347cb6a79",
+        "np-balanced-fold0.pt": "3761913418722514df32e2ba863346c1f256712e854160e2af51ced6c0ada604",
+        "np-balanced-fold1.pt": "5942264b4995622f423259083c170c53e194d26ed3403df5da02510d38848dbe"
+      }
+    },
+    "C18-peak-drop": {
+      "bundle": "outputs\\publish\\c18-peak-models-20261110",
+      "arm": "peak-drop",
+      "manifest_sha256": "c47ae5767606d387bbbbbb1317451a29d286160bb4eb2a1a6afdcba6c57ba799",
+      "files_sha256": {
+        "model.py": "2547418857386d1c2513fd1ab6c70961e6a96e73d9d495bbfe3052197e69dc39",
+        "features.py": "a97ad9b3ab3711517864d56e497e1672cb29bb05683c72b52db9f9b0a17b1455",
+        "fingerprint-cache.npy": "9c49b4ccbd9bad1738f4cd29a760f7f7a6284427eb97d2dfe6bc52a9a227fdda",
+        "fingerprint-cache-smiles.parquet": "f01df6a8cac1aaf8e9ef803cb4a01eebb9dba49089ba5cc7bcbe264b07a8e99a",
+        "compatible_tail.py": "b5677d884008f0fd16a66ca045eb5c5c61420e895c66612d3fefdef166f58378",
+        "inference.py": "c1ddf144a153b4cd1980b3723a016592066086262bc466de22cc1f7df6af8ae9",
+        "peak-drop-fold0.pt": "839d163c523d685ac4a28fa2d892a5f753d0f75f751d77cee6ce5b083963edab",
+        "peak-drop-fold1.pt": "3b48750d0b61205a69c6365d9e8a83824e1af5dcae5aec80f7dc04bf846e7d9f"
+      }
+    },
+    "C24-polarity-loss": {
+      "bundle": "outputs\\publish\\c24-polarity-models-20261110",
+      "arm": "polarity-loss",
+      "manifest_sha256": "91ca80c0b855efcca0f8c1bd7f8f7ee3446783b8f5be4a4fad5b3807326617f3",
+      "files_sha256": {
+        "model.py": "2547418857386d1c2513fd1ab6c70961e6a96e73d9d495bbfe3052197e69dc39",
+        "features.py": "a97ad9b3ab3711517864d56e497e1672cb29bb05683c72b52db9f9b0a17b1455",
+        "fingerprint-cache.npy": "9c49b4ccbd9bad1738f4cd29a760f7f7a6284427eb97d2dfe6bc52a9a227fdda",
+        "fingerprint-cache-smiles.parquet": "f01df6a8cac1aaf8e9ef803cb4a01eebb9dba49089ba5cc7bcbe264b07a8e99a",
+        "compatible_tail.py": "b5677d884008f0fd16a66ca045eb5c5c61420e895c66612d3fefdef166f58378",
+        "inference.py": "3d30146f788017bbb0d4941275e2d05489a2f8ff279ba9dbdf3a93bfbc690c6b",
+        "polarity-loss-fold0.pt": "ea5985c0bfe56d5eed04f6fb7ddf0bf001878d220250d7c7595f0ec4af1557c2",
+        "polarity-loss-fold1.pt": "67da13afbb791fc559ab0b1eac046bef2511a2957c5055778e4be4ef926de6ce"
+      }
+    }
+  },
+  "weight": 0.2,
+  "offset": 3.0,
+  "C21_protocol_sha256": "22a70523fb23883f99e92076adf0549ded0131096adc9ee0c1a041da470c9ee7",
+  "C24_protocol_sha256": "ef1445ff61d59fe61a5531d35d9b797700909a4e4d141cf3c3a3ed7dc3e062f7",
+  "C25_source_sha256": "f4197395ca900566324199aaf674af23cbbf76896945fcf47ac2e2c4a049f480",
+  "C25_config_sha256": "eb754172d99198d02efb0388c17b5ed25285226f8b4b4db3583696e0312321c1",
+  "C25_control_source_freeze_sha256": "21b8daf91e096649b5c3fdc44c7a52b1852c10e481325754265fca9558d187c3",
+  "original_P16_source_sha256": "d6b9c9625ad8fb7d503341c6fd702bd909101d719ca55e400145fb96f2b2af6a",
+  "C20_recovery_notebook_sha256": "23d06ba65b7c9a22156f72868ea4a790c8f3ba168ae7134dbbce62692145f33a",
+  "parity_audit_sha256": "38ee058dcb656eead88017eed4b15b32a4599850323fb489ac307a0ff5236fc5",
+  "C13_confirmation_metrics_read": false,
+  "selected_group": null,
+  "selection": "Only the global six-group winner frozen by C25 may bind one of these unchanged manifests. This seal adds no group, weight or model choice.",
+  "integration": "Exactly the existing model score and negative_tail.merge at0.20/offset3. Homogeneous known-positive rows and explicit mixed/unknown/absent or unsupported-negative rows retain the exact P16 parent.",
+  "qualification": "Actual Kaggle changed-path smoke and independent selected-model/output/fallback/source/identity audits still required; no release or public submission is authorized by this generic seal alone.",
+  "automatic_upload": false,
+  "automatic_submission": false,
+  "submission_qualified": false
+}

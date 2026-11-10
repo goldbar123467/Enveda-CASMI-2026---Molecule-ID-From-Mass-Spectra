@@ -1,6 +1,6 @@
 # C09 results and P16 scoring trial — 9–10 November
 
-## Current measured state — 10 November,10:54UTC
+## Current measured state — 10 November,11:14UTC
 
 Silver goal UNMET. P16/ref58181280 COMPLETE0.480/noerror; no reported public gain.
 Board10:22UTC:rank960/5062, nominal silver253 at0.484.
@@ -83,6 +83,21 @@ submission/upload automated. Read scripts/confirm_c25_negative.py and
 outputs/local/c25-reserved-negative-20261110/worker-status.json. C13metrics
 remain UNREAD now; no consumption marker exists. Private model uploads/real
 Kaggle changed-path smoke/independent audits still required after a passing gate.
+
+C26 deployment adapter locally AUDITED and SEALED before reserved metrics.
+Source negative_deployment.py uses exactly the frozen model.score and negative_
+tail.merge at0.20/offset3 for homogeneous negative IDs. Known positives and
+explicit mixed/unknown/absent/unsupported-negative cases retain exact P16 parent.
+Actual2070 fixture:120real unlabelled C13inputs plus4synthetic fallback cases;
+all120 outputs exactly match existing C08-control negative-only composition,
+all60positive and4fallback rows exact, rawfold/normalized score maxdifference0.
+Separate positive-only60 pass-through loads0models and preservesallrows exactly.
+Generic deployment seal68b09816... frozen11:09 binds source, all6 fixed model
+manifests, C21/C24protocols and C25source/control. It adds no candidate or search.
+Use only the globally selected matching manifest; no source/weight changes after
+reserved metrics. Actual selected-model Kaggle changed-path smoke, local/cloud
+parity and independent audits remain REQUIRED. No model upload, kernel push or
+public trial was performed. See docs/C26-2026-11-10.md. C25 workers untouched.
 
 Native24-hour hourly heartbeat ACTIVE (view verified10:26); tracker296 to22:08UTC.
 Superseded C09coverage remains CANCEL_REQUESTED/old panel discarded. Worker

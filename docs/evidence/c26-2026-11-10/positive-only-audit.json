@@ -1,0 +1,12 @@
+{
+  "checked_utc": "2026-11-10T11:11:35.337089+00:00",
+  "queries": 60,
+  "no_eligible_negative_queries": true,
+  "all_parent_rows_exact": true,
+  "neural_models_loaded": 0,
+  "source_sha256": "ade504808046b980ef5915b0f6da3d40d2470fa162474dbac3c875473d8d901e",
+  "model_manifest_sha256": "86c977781695e5bfa8d5dc389c696f190359d9ca46b62fa5d087a4c6feee3909",
+  "C13_confirmation_metrics_read": false,
+  "labels_read": false,
+  "quality_metrics_computed": false
+}

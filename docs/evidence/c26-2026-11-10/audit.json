@@ -1,0 +1,80 @@
+{
+  "completed_utc": "2026-11-10T11:07:06.774655+00:00",
+  "real_queries": 120,
+  "synthetic_fallback_cases": 4,
+  "fixed_original_C08_control_only": true,
+  "all120_outputs_equal_existing_negative_tail_composition": true,
+  "all60_positive_rows_exact_parent": true,
+  "all4_fallback_rows_exact_parent": true,
+  "known_negative_supported": 60,
+  "raw_and_normalized_score_max_abs_error": {
+    "c08_raw_fold0": 0.0,
+    "c08_raw_fold1": 0.0,
+    "c08_score": 0.0
+  },
+  "deployment_receipt": {
+    "kind": "P16_plus_frozen_negative_tail",
+    "weight": 0.2,
+    "offset": 3.0,
+    "valid_rows": 124,
+    "source_query_ids": 123,
+    "eligible_negative_queries": 61,
+    "mode_counts": {
+      "negative": 61,
+      "positive": 60,
+      "absent": 1,
+      "unknown": 1,
+      "mixed": 1
+    },
+    "neural_scored_molecules": 60,
+    "unsupported_negative_molecules": [
+      "C26_fixture_short"
+    ],
+    "protected_parent_rows": 64,
+    "positive_parent_rows_exact": 60,
+    "mixed_unknown_absent_parent_rows_exact": 3,
+    "changed_rows": 58,
+    "rank_one_changes": 0,
+    "candidate_set_changes": 0,
+    "mean_of_fold_standardizations_max_abs_error": 0.0,
+    "arm": "legacy16-hard",
+    "model_manifest_sha256": "86c977781695e5bfa8d5dc389c696f190359d9ca46b62fa5d087a4c6feee3909",
+    "scores_sha256": "01b5cfe3e4fbc08c225398a3f6f04b26201a3cd6cbc40d44dd166d96fd8e8982",
+    "inference": {
+      "arm": "legacy16-hard",
+      "models": 2,
+      "folds": [
+        0,
+        1
+      ],
+      "cache_precision": "float16",
+      "smoke": false,
+      "steps": 40000,
+      "manifest_sha256": "86c977781695e5bfa8d5dc389c696f190359d9ca46b62fa5d087a4c6feee3909",
+      "baseline_content_sha256": "35601db6d730ef9e163397c2c5408eb49d57b4ead497be08de8426eae799cda0",
+      "queries_sha256": null,
+      "scored_molecules": 60,
+      "unsupported_molecules": [
+        "C26_fixture_short"
+      ],
+      "unprocessed_molecules": 0,
+      "input_errors": 0,
+      "peak_selection": "stable_intensity_then_mz",
+      "spectrum_aggregation": "all usable spectra, equal average",
+      "model_aggregation": "mean of per-query standardized raw scores",
+      "numpy_version": "2.0.2",
+      "torch_version": "2.11.0+cu128"
+    },
+    "source_sha256": "ade504808046b980ef5915b0f6da3d40d2470fa162474dbac3c875473d8d901e",
+    "device": "NVIDIA GeForce RTX 2070",
+    "quality_gate_claimed": false,
+    "automatic_submission": false
+  },
+  "source_freeze_sha256": "3118abe56bf0ff3984398fa23adddcd11a20c0a37ea2da103abf0f1414c1f63b",
+  "fixture_csv_sha256": "f3f1cdb5192b1e94319e1cda44271855adf14edd728295e2467d60ab793490cb",
+  "C13_confirmation_metrics_read": false,
+  "labels_read": false,
+  "quality_metrics_computed": false,
+  "selected_group_changed": false,
+  "submission_qualified": false
+}

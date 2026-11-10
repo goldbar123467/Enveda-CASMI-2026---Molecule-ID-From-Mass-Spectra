@@ -1,0 +1,17 @@
+{
+  "frozen_utc": "2026-11-10T11:07:04.285358+00:00",
+  "source_sha256": {
+    "negative_deployment.py": "ade504808046b980ef5915b0f6da3d40d2470fa162474dbac3c875473d8d901e",
+    "audit_negative_deployment.py": "1b3240f443158e4a9828111f1394a2eb0cfc4259cc0446be45394ffe33decbbf",
+    "negative_tail.py": "9733a0c91a5186cc749a3b969711578cdc7d5616e3252f9f8917c249e893318e",
+    "compatible_tail.py": "b5677d884008f0fd16a66ca045eb5c5c61420e895c66612d3fefdef166f58378"
+  },
+  "input_preparation_sha256": "b52bf9cf0c851e0c871d137a888acd1afca6a1c9a379ee7d09b6e8f0936784a9",
+  "P15_scores_sha256": "0573dce0b85f52b9dcb95bb049ca6c6106a026cbf0c30765ef36696ac1c69eb9",
+  "model_manifest_sha256": "86c977781695e5bfa8d5dc389c696f190359d9ca46b62fa5d087a4c6feee3909",
+  "real_queries": 120,
+  "synthetic_fallback_cases": 4,
+  "labels_read": false,
+  "quality_metrics_computed": false,
+  "model_selected": false
+}
