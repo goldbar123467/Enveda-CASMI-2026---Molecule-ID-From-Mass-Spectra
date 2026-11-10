@@ -12,22 +12,25 @@ this bounded task; do not treat the older stop paragraph as a current blocker.
 Do not select on reserved labels or call weak development changes proven gains.
 
 
-Current bounded task: P18/C22 ACCEPTED19:19UTC, ref58212322, exact v1 and
-submission.csv. Actual result PENDING; never resubmit. P19/C18 is the one remaining
-approved entry, fixed before either result. It is HELD by P19-release-hold.json
-until a demonstrated preflight cleanup gap is closed. First source/qualification
-and submission remain immutable. The retained scoring body/model weights/recipe
-are unchanged; guarded C18 export v1 is RUNNING, with synthetic real-Kaggle failure
-probe required. Local probe proved old preflight could leave default baseline;
-whole-stage wrapper deletes it while preserving protected parent. Do not claim
-this occurred in the pending hidden run. See C34 docs/evidence.
-Current observer actual19988/launcher22028 uses monitor_reviewed_past_trials.py;
-it polls P18, requires first successful actualscore, and blocks automatic P19
-while release-hold exists. Any first error stops for review. The future remaining
-entry MUST use submit_guarded_past_trial.py with new guarded qualification;
-superseded export submitters must not be used. Do not remove hold before complete
-real guarded smoke/audit/source binding. Max2accepted total/1pending globally.
-No training, reserved metrics, third entry or hourly campaign. Silver goal paused.
+Current bounded task: P18/C22 was accepted at 19:19 UTC, ref58212322,
+exact v1 and submission.csv. Its actual result remains PENDING; never resubmit.
+P19/C18 is the one remaining approved entry, fixed before either result.
+Guarded C18 export v1 is COMPLETE and independently audited at 21:58 UTC.
+The raw scoring body, parent/export cells, model weights, recipe and normal
+predictions remain exact. The real Kaggle synthetic preflight-failure probe
+confirms whole-stage cleanup deletes default submission.csv while preserving
+the diagnostic parent. This is not evidence of a failure in pending P18.
+First source, qualification and submission remain immutable.
+
+The guarded qualification is sealed (SHA256 ddeb2321eae1ace3c15d5a2a105e643256bfcd79b8e018dd17ff3de689a9cb38).
+Release P19-release-hold.json only after this checkpoint is pushed. Current
+observer actual19988/launcher22028 uses monitor_reviewed_past_trials.py;
+it requires the first successful actual score before sending P19 and stops
+for review on a first error. The remaining entry MUST use
+submit_guarded_past_trial.py and submission-qualification-guarded.json;
+superseded export submitters must not be used. At most two accepted entries
+in total and one pending globally. No new training, reserved metrics, third
+entry or hourly campaign. The silver goal and hourly automation stay paused.
 
 ## USER STOPPED CAMPAIGN — 10 November,14:59 UTC
 

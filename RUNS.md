@@ -1,8 +1,8 @@
 # Runs
 
-Updated 2026-11-10 21:41 UTC by `scripts/update_runs.py` (hourly). Generated from `runs.csv` — edit that file, not this one.
+Updated 2026-11-10 22:00 UTC by `scripts/update_runs.py` (hourly). Generated from `runs.csv` — edit that file, not this one.
 
-- Kaggle quota: GPU 19.9 h used of 30 h · TPU 0.0 h of 20 h · resets 2026-11-14 00:00 UTC
+- Kaggle quota: GPU 20.1 h used of 30 h · TPU 0.0 h of 20 h · resets 2026-11-14 00:00 UTC
 - Submissions today (UTC): 2 of 5 — see `SUBMISSIONS.md`
 
 ## Active
@@ -12,12 +12,13 @@ Updated 2026-11-10 21:41 UTC by `scripts/update_runs.py` (hourly). Generated fro
 | C09V | kaggle-gpu | diag | c09-coverage-controls v1 | 2026-11-09 14:44 | **cancel_requested** | C09 dual-device diagnostic: exact P14 full128 external pipeline negative control onGPU0; existing C08 expanded candidate coverage/scoring onGPU1; no scoring submission | Old128 panel superseded after67 base-connected acquisition groups found; cancellation requested, not acknowledged. No allocation/training/validation result; no GPU quota added at16:34UTC. |
 | C34P18 | kaggle-submission | eval | 58212322 | 2026-11-10 19:19 | **pending** | Explicit past-work P18 scoring trial; retained fitted two-model0.20 tail, complete P16 parent | Submission 58212322: PENDING; public score None |
 | C34MON | local-cpu | diag | outputs/local/two-past-trials-20261110/guarded-observer.log | 2026-11-10 19:21 | **running** | Bounded two-trial actual-score reconciliation; after first result submit exactly one fixed C18 trial, then stop after both results | Worker 19988 live; waiting_actual_scores |
-| C34GUARD | kaggle-2xt4 | diag | p19-c18-guarded-export v1 | 2026-11-10 21:33 | **running** | Same C18 model recipe with whole-stage failure cleanup; real synthetic preflight-failure branch plus actual GPU pipeline | No model or recipe change. One public entry remains authorized; held until guard audit. P18 scoring unaffected. |
 
 ## Finished (newest first)
 
 | id | platform | kind | ref | started (UTC) | ended (UTC) | status | purpose | result |
 |---|---|---|---|---|---|---|---|---|
+| C34GA19 | local-2070 | diag | outputs/local/two-past-trials-20261110/guarded-audit.log | 2026-11-10 21:57 | 2026-11-10 22:00 | complete | Independent retained C18 guard-only export audit: actual cloud failure cleanup, source/body parity and model/fusion/identity/fallback/local-cloud checks | Real Kaggle cleanup probe passed; normal C18 CSV exact previous9fa2e556; raw body/parent/export cells exact. 400valid/12changed/388fallback/0identityduplicates; independent meanZ/RRF exact; local/cloud final lists exact, maxraw1.43e-6. Guarded qualification sealed. |
+| C34GUARD | kaggle-2xt4 | diag | p19-c18-guarded-export v1 | 2026-11-10 21:33 | 2026-11-10 21:57 | complete | Same C18 model recipe with whole-stage failure cleanup; real synthetic preflight-failure branch plus actual GPU pipeline | Actual private Kaggle v1 COMPLETE; fetching guarded scoring output and synthetic preflight cleanup probe. Independent audit next; no second acceptance. |
 | C34EA18 | local-2070 | diag | outputs/local/two-past-trials-20261110/P18-export-audit.log | 2026-11-10 19:16 | 2026-11-10 19:17 | complete | Audit P18 defaultfilename alias and exact full joint-prefix model/identity/arithmetic/fallback/local-cloud rerun | Exact defaultfilename alias/400valid/12realchanged/388fallback/0identityduplicates; bothfoldpair arithmetic and local/cloud final lists exact. C22 maxraw1.90735e-6; no labels/training. |
 | C34EX18 | kaggle-2xt4 | diag | p18-c22-past-trained-trial v1 | 2026-11-10 18:47 | 2026-11-10 19:15 | complete | P18 mandatory submission.csv export smoke; entire qualified joint scientific prefix exact | Private v1 COMPLETE; defaultsubmission.csv and exact export receipt retained. Same qualified joint scientific prefix; independent export audit next; no trial accepted. |
 | C34EA19 | local-2070 | diag | outputs/local/two-past-trials-20261110/P19-export-audit.log | 2026-11-10 19:13 | 2026-11-10 19:13 | complete | Audit P19 defaultfilename alias and exact full joint-prefix model/identity/arithmetic/fallback/local-cloud rerun | Exact defaultfilename alias/400valid/12realchanged/388fallback/0identityduplicates; bothfoldpair arithmetic and local/cloud final lists exact. C18 maxraw1.43e-6; no labels/training. |

@@ -1,0 +1,16 @@
+{
+  "results": {
+    "original": {
+      "default_file_left": true,
+      "protected_parent_retained": true
+    },
+    "guarded": {
+      "default_file_left": false,
+      "protected_parent_retained": true
+    }
+  },
+  "actual_scoring_file_unchanged": true,
+  "synthetic_only": true,
+  "quality_labels_used": false,
+  "training_performed": false
+}

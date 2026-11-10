@@ -1,0 +1,23 @@
+{
+  "checked_utc": "2026-11-10T22:00:07.709400+00:00",
+  "kernel": "clarkkitchen/casmi26-p19-c18-guarded-export",
+  "version": 1,
+  "actual_remote_status": "COMPLETE",
+  "remote_private": true,
+  "remote_internet": false,
+  "remote_scientific_sha256": "4d1254b9eec0700874481cd04c59f500415056432bf511495eed06b7becaac42",
+  "qualification_sha256": "ddeb2321eae1ace3c15d5a2a105e643256bfcd79b8e018dd17ff3de689a9cb38",
+  "audit_sha256": "0f1c52e2bb8390d4e5d71ba6d430fb175ec3bd58bd4677b6ea0f6e0fa30781af",
+  "normal_csv_sha256": "9fa2e5566f2ba1a5ad76150bb53b10cec77c6c1e2b75868b6138e268be6f1883",
+  "whole_stage_cleanup_probe_passed": true,
+  "normal_output_exact_previous_export": true,
+  "first_submission_reference": 58212322,
+  "first_observed_status": "PENDING",
+  "release_gate": "Qualified; hold may be removed after this checkpoint is pushed",
+  "maximum_new_entries": 2,
+  "accepted_entries": 1,
+  "maximum_pending": 1,
+  "training_performed": false,
+  "reserved_labels_read": false,
+  "hourly_campaign_resumed": false
+}

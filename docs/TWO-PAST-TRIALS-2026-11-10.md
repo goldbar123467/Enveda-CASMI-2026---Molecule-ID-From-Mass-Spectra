@@ -132,3 +132,24 @@ actual19988/launcher22028 now polls P18 and retains the P19 release gate. It use
 only the future guarded submitter for the one remaining entry after qualification.
 Source/model/smoke artifacts of the original first qualification remain exact.
 No new training, reserved-label read, second acceptance or third trial occurred.
+
+The guarded C18 private run is COMPLETE by 21:57 UTC. Its independent audit
+finished at 21:58 UTC: the raw scoring body and parent/export cells are exact,
+the normal CSV remains byte-identical to the previous C18 export (9fa2e556...),
+and all 400 rows pass identity/rank-one/membership checks. The 12 real-query rows
+change and 388 unsupported rows remain exact parent fallback. Independent meanZ
+and RRF errors are zero; local/cloud final lists are exact, with maximum raw
+score difference 1.43e-6. The synthetic real-Kaggle probe reproduces the original
+preflight file leak and confirms the whole-stage guard deletes it. The real
+scoring CSV is unchanged by both synthetic probes.
+
+The separate guarded qualification is sealed as
+ddeb2321eae1ace3c15d5a2a105e643256bfcd79b8e018dd17ff3de689a9cb38.
+It binds the reviewed observer, guarded submitter, exact source/model files and
+actual smoke/audit artifacts. A fresh remote check confirms COMPLETE private,
+offline v1 and the frozen scientific source. Compact evidence is retained in
+docs/evidence/c34-two-trials-20261110. After this checkpoint is pushed, the
+release hold may be removed; the observer still requires P18's successful
+actual score and zero global pending before sending the one remaining C18
+entry. A first error instead stops for inspection. P18 remains PENDING; exactly
+one entry has been accepted. No additional training or reserved metrics were used.

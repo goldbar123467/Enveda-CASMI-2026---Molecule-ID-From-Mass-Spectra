@@ -2,14 +2,18 @@
 
 Public LB = MRR@25 on ~125 public molecules (one rank-2→1 flip ≈ 0.004). Scoring reruns take hours.
 
-C09 P16v2 accepted10November01:22UTC, **ref58181280**, marker
-`C09-P16-EXTREF-20261109`. Actual public score is pending; authenticated API
-reportsPENDING and native UI showsNotebook Running. This is the ONLY pending
-submission globally. Do not resubmit or send another trial until its actual
-score resolves. P01/P13 remain champion0.480. P15/ref58163163 is COMPLETE0.479,
-no reported error; never resubmit P15. Durable intent was resolved to58181280.
-The10November01:37UTC approval for one further trial is reserved/unconsumed.
-C10's running private inference is validation only, not a leaderboard submission.
+Current bounded task: P18/C22, **ref58212322**, was accepted on 10 November at
+19:19 UTC and remains PENDING. This is the only pending submission globally.
+Do not resubmit it. P19/C18 is the one remaining approved entry and must wait
+for the first actual result. Its guarded export completed the real Kaggle GPU
+run and independent audit at 21:58 UTC; normal predictions are byte-identical,
+and its synthetic failure probe confirms cleanup of the default scoring file.
+The qualification and release gate bind that exact source and completed audit.
+
+P16/ref58181280 is COMPLETE at **0.480**, tying P01/P13. P15/ref58163163 is
+COMPLETE at 0.479 without a reported error. The previous unused single-trial
+approval is superseded by the current request for two total new entries. The
+hourly campaign and silver goal remain paused; no new training is authorized.
 
 | Date (UTC) | Slot | Kernel | Change | Ref | Public LB |
 |---|---|---|---|---|---|
@@ -192,6 +196,10 @@ include zero. The0.480 champion is retained.
 |2026-11-10 19:19|P18|casmi26-p18-c22-past-trained-trial v1|Complete pinned P16 plus final55000 C22 two-fold all-mode0.20 tail RRF; exact rank1/membership|58212322|**Pending**|
 
 P19/C18 is the remaining approved entry and must wait for P18's actual result.
+Its guarded source is `casmi26-p19-c18-guarded-export` v1, qualified at 21:58 UTC.
+The raw scoring body, parent, model weights and normal output remain exact;
+the whole-stage cleanup wrapper closes a demonstrated preflight error path.
+This does not establish that the pending P18 run encountered that failure.
 Only one pending is allowed globally; exactly two new accepted entries total.
 The previous unused single-trial approval is superseded, not a third slot.
 Kaggle requires the scoring file to be named submission.csv. Two earlier custom-
