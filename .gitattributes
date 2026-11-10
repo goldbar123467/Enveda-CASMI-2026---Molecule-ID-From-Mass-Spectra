@@ -159,6 +159,10 @@ scripts/run_c25_confirmation_worker.py text eol=lf
 scripts/negative_deployment.py text eol=lf
 scripts/audit_negative_deployment.py text eol=lf
 scripts/seal_negative_deployment.py text eol=lf
+scripts/multiview_training.py text eol=lf
+scripts/c28_multiview_train.py text eol=lf
+configs/c28-multiview-20261110.json text eol=lf
+configs/c28-evaluation-20261110.json text eol=lf
 configs/c25-reserved-negative-20261110.json text eol=lf
 # Preserve the exact bytes of the already-pushed, SHA-pinned C20 recovery.
 kaggle/forks/c20-generated-recovery/* -text whitespace=trailing-space,space-before-tab,cr-at-eol
@@ -176,3 +180,32 @@ configs/c19-adaptive-insertion-20261110.json text eol=lf
 docs/evidence/c17-2026-11-10/feature-builder-v1-source.txt text eol=lf
 docs/evidence/c14-2026-11-10/evaluator-v1-source.txt text eol=lf
 docs/evidence/c09-2026-11-09/finisher-v1-source.txt text eol=lf
+
+scripts/c28_models.py text eol=lf
+scripts/develop_c28_multiview.py text eol=lf
+scripts/run_c28_development_worker.py text eol=lf
+tests/test_multiview_training.py text eol=lf
+
+configs/c29-public-replay-20261110.json text eol=lf
+configs/c30-global-selection-20261110.json text eol=lf
+scripts/c29_reference_audit.py text eol=lf
+scripts/build_c29_public_validation.py text eol=lf
+tests/test_c29_reference_audit.py text eol=lf
+kaggle/forks/c29-public-replay/notebook.ipynb text eol=lf
+kaggle/forks/c29-public-replay/kernel-metadata.json text eol=lf
+kaggle/forks/c29-public-replay/validation-pin.json text eol=lf
+
+scripts/collect_c29_inference.py text eol=lf
+scripts/develop_c29_public.py text eol=lf
+scripts/select_c30_global.py text eol=lf
+
+scripts/run_c29_development_worker.py text eol=lf
+
+# Preserve exact bytes of frozen C29 source receipts and new experiment evidence.
+kaggle/forks/c29-public-replay/* -text whitespace=trailing-space,space-before-tab,cr-at-eol
+docs/evidence/c21-c24-20261110/* -text whitespace=trailing-space,space-before-tab,cr-at-eol
+docs/evidence/c24-20261110-final/* -text whitespace=trailing-space,space-before-tab,cr-at-eol
+docs/evidence/c25-20261110-final/* -text whitespace=trailing-space,space-before-tab,cr-at-eol
+docs/evidence/c27-research-20261110/* -text whitespace=trailing-space,space-before-tab,cr-at-eol
+docs/evidence/c28-20261110/* -text whitespace=trailing-space,space-before-tab,cr-at-eol
+docs/evidence/c29-c30-20261110/* -text whitespace=trailing-space,space-before-tab,cr-at-eol

@@ -1,0 +1,12 @@
+{
+  "checked_utc": "2026-11-10T11:46:29.633811+00:00",
+  "queries": 32,
+  "primary_tensors_fp_negatives_masks_exact_legacy": true,
+  "primary_NumPy_rng_exact": true,
+  "default_CUDA_rng_after_sampler_exact": true,
+  "extra_views_same_identity_and_polarity": true,
+  "merged_queries": 14,
+  "helper_sha256": "c3026f965175c0eaa991a597915ed6c2d6e81601aa1daed176691a4b0c066c44",
+  "qualification": "Sampler-only audit. Extra encoder/dropout calls intentionally change later default Torch RNG consumption during actual training; no full-training-RNG parity claim.",
+  "labels_read": false
+}

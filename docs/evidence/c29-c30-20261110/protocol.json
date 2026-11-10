@@ -1,0 +1,20 @@
+{
+  "frozen_utc": "2026-11-10T12:13:41.623843+00:00",
+  "files_sha256": {
+    "configs/c28-evaluation-20261110.json": "cb853930d4a4da1f0179147974c62985ab88fcba57fc20cfca9e75e19b540889",
+    "configs/c29-public-replay-20261110.json": "2aadb125175dac61ad7380e143a342071e0ceacf542ff72b05bf68bab77e7f00",
+    "configs/c30-global-selection-20261110.json": "cebcc13fcc2a10003865a922b0f4f599ac1ba7245b68e451a0a283a06319e619",
+    "outputs/local/c28-evaluation-20261110/development-protocol.json": "d33332bc6259b48839365fd744ee51dc5daebfa8c30b6034ff3772440419889c",
+    "outputs/local/c28-multiview-20261110/source-contract.json": "6db083a4716e3ae132201abb7922adb99918d25a12f77a577ecf87be1ee6b39e",
+    "kaggle/forks/c29-public-replay/validation-pin.json": "466717716e306125e12ee78d8deadb3daa5ea7a009f72d0abd5126ee6e2a5923",
+    "kaggle/forks/c29-public-replay/notebook.ipynb": "02304e42bc27cbbad98b2995333ccf6d16e1599838d1de3eef13c964d85db428",
+    "outputs/local/c29-public-replay-20261110/source-audit.json": "2466500072e875b4807d7e7401d729cac707121eb8131476bdffd0348a0da072",
+    "outputs/local/c21-negative-tail-20261110/parent.csv": "76f63eb680300424b4c90a33c7cc8c98a2f345c7b734587fdc4ac57dc81792c4"
+  },
+  "C28_development_metrics_read": false,
+  "C29_development_metrics_read": false,
+  "C13_confirmation_metrics_read": false,
+  "wait_both_cycles": true,
+  "automatic_confirmation": false,
+  "automatic_submission": false
+}

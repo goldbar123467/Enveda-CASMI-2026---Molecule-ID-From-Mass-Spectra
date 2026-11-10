@@ -1,0 +1,61 @@
+{
+  "spec": {
+    "run_id": "C28MV",
+    "kind": "compatible_scorer",
+    "output": "outputs/local/c28-multiview-20261110",
+    "parent_output": "outputs/local/long-compatible-20261108",
+    "parent_arm": "legacy16-hard",
+    "raw_training": "outputs/competition-raw/train.parquet",
+    "base_cache": "outputs/local/n0/cache",
+    "split_groups": "outputs/local/long-20261106/spectrum_groups.npz",
+    "cache": "outputs/local/precision-cache-20261108",
+    "views_per_identity": 8,
+    "folds": [
+      0,
+      1
+    ],
+    "arms": [
+      {
+        "name": "multi-view",
+        "cache_precision": "float16",
+        "hard_negatives": 48,
+        "negative_pool": 512
+      }
+    ],
+    "maximum_hours": 3,
+    "minimum_free_ram_gib": 4,
+    "gpu_memory_fraction": 0.7,
+    "training": {
+      "steps": 5000,
+      "lr": 2e-05,
+      "warmup_steps": 100,
+      "checkpoint_interval": 100,
+      "batch_size": 384,
+      "hard_negatives": 48,
+      "negative_pool": 512,
+      "seed": 202611090
+    },
+    "objective": "One additional5000-update cycle per immutable C08parent. With fixedprobability0.5, add a distinct same-identity/same-polarity acquisition and average spectrum embedding and FP logits before the unchanged cosine CE+BCE, exactly as serving averages views. First acquisition and hard-negative NumPy sampling unchanged; extra view/jitter RNG checkpointed separately. Extra model forward changes default dropout RNG consumption; no exact global-Torch-RNG control claim.",
+    "automatic_submission": false,
+    "multi_view": {
+      "probability": 0.5,
+      "maximum_views": 2,
+      "same_identity": true,
+      "same_polarity": true,
+      "embedding_mean_not_renormalized": true
+    },
+    "evaluation": "Only final45000 cumulative twofold models. One fixed all-mode0.20tail after complete P01/P16 on the full already-used240; all absent truths zero, rank1/candidate identities exact. Positive paired95%lower vsboth parents, nonnegative polarity means and matched-control mean. Freeze new source/model/recipe before once-only reservedC13mixed120; realKaggle smoke/independent audits before any trial."
+  },
+  "source_sha256": {
+    "scripts/compatible_long_run.py": "998a6593a5428c9f4337d8724494391712912d5c781982cc5ae543b752f8e714",
+    "scripts/compatible_training.py": "d848f175547615b76675ec8fad95e34dc2898dc77a04b93844f56d7048d39eef",
+    "scripts/precision_cache.py": "752719d376ab67f0ff542407aa0422719d3eaf60eaccd4e8f919a3974c3cf06a",
+    "outputs/local/kit/features.py": "a97ad9b3ab3711517864d56e497e1672cb29bb05683c72b52db9f9b0a17b1455",
+    "outputs/local/kit/model.py": "2547418857386d1c2513fd1ab6c70961e6a96e73d9d495bbfe3052197e69dc39",
+    "scripts/c09_control_train.py": "02e61480a0ac09e9dfe01aa3020dc8baa29e9dad1d8ef3094ec5895229960362",
+    "scripts/c28_multiview_train.py": "4925ab215a57919715e2574e3b883bd76c445fda8297abab8ee7335605add350",
+    "scripts/multiview_training.py": "c3026f965175c0eaa991a597915ed6c2d6e81601aa1daed176691a4b0c066c44",
+    "configs/c28-multiview-20261110.json": "cfd979656820539ad54f1c95ce198f889668b3eac27ef375a1c68fa05a4b6ce9",
+    "configs/c28-evaluation-20261110.json": "cb853930d4a4da1f0179147974c62985ab88fcba57fc20cfca9e75e19b540889"
+  }
+}

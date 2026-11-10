@@ -1,111 +1,74 @@
 # Enveda CASMI 2026 — working rules
 
-## Current measured state — 10 November,11:14UTC
+## Current measured state — 10 November,12:25 UTC
 
-Silver goal UNMET. P16/ref58181280 COMPLETE0.480/noerror; no reported public gain.
-Board10:22UTC:rank960/5062, nominal silver253 at0.484.
-Account10:28UTC:zero pending public submissions. One extra user-approved trial
-remains unconsumed. Never resubmit P16 or infer silver from a rounded score.
+Silver goal UNMET. P16/ref58181280 COMPLETE0.480/noerror. Latest board12:22UTC:
+rank972/5066; nominal silver253 at0.485. Last tracker account check12:19UTC:zero pending.
+One extra user-approved trial remains unconsumed. Never resubmit P16.
 
-C13v2 full120 collected08:05:Engine2nonempty120,both neuralmodels support120,
-exactP01replay,real2T4/metricRDKit2026.03.3. P14supports59/61explicit exact
-fallbacks. Fresh balanced120 label metrics remain UNREAD. Do not restart C13.
+C20v2 COMPLETE on actual two Tesla T4s, collected11:23UTC. All80 fullP01replay;
+original79 Engine2 lists exact; the missing high-mass query has25 real generated
+candidates,0placeholders/dropped queries. Both neuralmodels supportall80. P14
+is exactP01fallback for all80. Cloud80 remains authoritative: local one-query
+recovery had the same25identity keys but different order/representatives.
+Do not repeat the completed cloud/local recovery or restart exited collectors.
 
-C22 completed09:13:20000new successful updates,6AMPskips,final55000cumulative.
-Fixed used160 gate FAILED:delta+.000917923 CI[-.001186285,.003078057],17up/13down.
-No freshmetrics/trial. Do not refit C14-C24 completed fits or add C22 to C21.
+C21/C24 six-group cycle CLOSED11:25UTC, ALL REJECTED. Full240P01=P16 MRR
+0.28374784097,150truths. Every fixed negative-only0.20 recipe had a95%CI
+crossing0: C08+.000555895,C09+.000366418,C14+.000267968,C15+.000265715,
+C18+.000364026,C24+.000313789. No subgroup/model re-selection in this cycle.
+P14 control aggregate+.001658614 is WRONG SIGN vs public0.458,negative noop;
+P15 aggregate-.000128152 has correct direction but CI crosses0. Keep limitations.
+Workers7712/6784 and C25worker7592 EXITED terminal; C25selectednull and preserved
+fresh120. C13 evaluation-consumption marker remains ABSENT, labelscores UNREAD.
+C25/C26 sealed negative-only deployment registry is now historical; no selected
+model, upload or submission resulted. Never revive these closed workers.
 
-C20v1 ERROR09:01:Engine2covers79/80. One1641.715[M-H]- query has no fixed-pool
-candidates while Engine1 generated25near-mass proposals. Strictguard stopped
-before completeP01. Partial80-row CSV is NOT fullP01; no dropping/resampling.
-C20v2 accepted09:33/private/offline/image37c64/source verified09:36. It moved
-from QUEUED to RUNNING by10:24:56UTC; latest10:29UTC=RUNNING.
-Same80/strict48guard/originalfusion. Only43prefix fingerprints/ranks real BASE
-proposals for initially empty Engine2pools; this DECLARED universe extension
-must retain original79 lists exactly. NeuralFP onGPU1, fingerprints/rankersCPU.
-Actual recovered80/old79parity receipts still required. Collector19008 until
-19:36UTC. Never duplicate/requeue while live; original v1 remains preserved.
+C28MV is a separate prospective one-model/all-mode0.20tail cycle. Original C08
+40000-update parents receive5000updates/fold, samepolarity distinct acquisition
+added with probability0.5; average z/rawFPlogits before unchanged cosineCE/BCE.
+Separate view/jitter RNGs; no embedding renormalization. Extra dropout forwards
+mean full Torch training RNG parity is NOT claimed. No validation training data.
+Pilot100 completed11:48:23,finite/0AMPskips; full continuation resumed11:49:29
+with exact optimizer/scaler/RNG/warmup and original14:47:59UTCdeadline. Actual
+trainer25924 completed12:23:55 and exited; never refit completed folds.
+Only final45000 cumulative twofold checkpoints qualify for fixed used240 gate:
+positive95%lower vsboth parents, nonnegative bothpolarities and matchedC09mean,
+rank1/sets exact/allabsenttruthzero. See docs/C28-2026-11-10.md. Frozen training
+and evaluation configs MUST remain unchanged. If it passes, freeze new all-mode
+source/model/recipe before once-only C13full120/alias/polarity gates, realKaggle
+changed-path smoke and independent audits before the approved trial.
 
-C21 full240 evaluator frozenSHA22a70523...:five fixed groups,negative-only0.20
-RRF/offset3,positive strings/rank1/identities exact,allabsenttruthzeros. Current
-worker7712 waits C20v2 then prepares/scores/evaluates once, deadline20:06UTC.
-No freshmetrics/submit automated; any C21 selection MUST WAIT for C24.
+C27 public-source refresh read text only:240catalogue entries/33new or updated,
+5initial notebooks plus2followups. Helios0.488 has6unavailable private inputs;
+Ozertuu0.500 has2. New Alex0.487 has all public dependencies and image37c64,
+claims ref58185447/0.487; this is not yet account-reproduced. No downloaded code
+executed, no public research candidate added to C28. Source pins are evidence.
 
-C24 COMPLETE10:07:40:two5000additional-update fits/10000successful,oneAMPskip
-(fold0),no restarts,final50000cumulative. Same C18parent optimizer/scaler/RNG,
-query/views/negatives/peakdrop; only per-query CE/BCE polarity weights change.
-Package outputs/publish/c24-polarity-models-20261110 audited finite and source-
-pinned,manifest91ca80c0...; private local only. Five-query serving audit passed:
-CPU/CUDA raw max2.862e-6, normalized9.531e-6; independent arithmetic raw1.908e-6,
-normalized5.132e-6. Fixtures include partial-v1 negative lists for arithmetic,
-NOT full-pipeline qualification or quality metrics. Ten focused tests pass.
-Full240/global six-group evaluator IMPLEMENTED and frozen10:13,protocolSHA
-ef1445ff61d59fe61a5531d35d9b797700909a4e4d141cf3c3a3ed7dc3e062f7.
-Worker6784 waits actual C21 terminal+exit, then scores/evaluates/selects once;
-deadline21:00UTC. Read outputs/local/c24-evaluation-20261110/worker-status.json.
+C28 final twofold training COMPLETE12:23:55:10000successfuladditionalupdates,
+0AMPskips/restarts,final45000cumulative,1.8145GiBpeak. Fixedfull240 evaluation
+COMPLETE12:24:13 REJECTS it:delta-.000207697CI[-.002140737,.001767892],22up28down;
+positive mean-.000822472/negative+.001021853. MatchedC09 delta+.000002024 with
+CIcrossing0; no supportedmodelgain. Rank1/candidate sets exact,150truths retained.
+Package auditedfinite/private-local only. C28trainer/evaluationworkers exited.
+Do not refit or rescue/reselect this recipe; C30now awaits existing C29 only.
 
-Local C20 Engine2 recovery diagnostic COMPLETE10:33:31; actual worker and
-supervisor exited. Rebuilt exact1137233structure pool from2539608spectra,
-verified originally0near-mass candidates, added25real valid generated proposals
-(0invalid/massrejected/placeholders), executed both FPmodels on2070 and all
-4+8 original ranker fits, produced25real ranked candidates. No labels/metrics.
-Audit docs/evidence/c20-2026-11-10/local-engine-audit.json. Isolated RDK2025.03.6/
-Torch2.11/sklearn1.6.1; full cloud80 receipts and output parity remain required.
-Never repeat this completed diagnostic. Two preparatory attempts are preserved:
-v1 corrected Windows child-tree cleanup; v2 strictcheck rejected duplicate
-path keys before loading. No C24 fit repeated. Actual science/source/model
-pins are intact; deployed C20notebook bytes now preserved exactly in Git.
+C29 private full240 public-recipe replay v1 is RUNNING at the EXACT RETURNED
+handle clarkkitchen/casmi26-c29-fixed-public-replay-development. Do not duplicate
+its shorter requested slug. Remote private/offline/image37c64 and scientificSHA
+0ca0c305... verified. Query-only private datasetv1 READY; no labels/reservedC13.
+One fixed MASS/0.12priors/dual-reference0.80 recipe plus mandatory alias-excluded
+view; officialidentitydedup/compatibility changes declared. Collector8600 and
+developmentworker25024 bounded to22:08:41UTC. See docs/C29-C30-2026-11-10.md.
+C30 OUTER POLICY FROZEN BEFORE BOTH C28/C29metrics: WAIT BOTH separate cycles.
+Only their fixed passing recipes are eligible; greatest full240MRR/tiesC28.
+Never send C28 directly to reserved confirmation while C29 remains unresolved.
+C30 selector does not confirm or submit. New all-mode source/model/recipe freeze,
+once-onlyC13full120/alias/polarity gate, realKaggle smoke and audits still required.
 
-NEXT: collect and verify C20v2 recovered80/old79parity. Let existing C21 and
-C24 workers evaluate ALL six fixed groups. Among passing choose greatest full
-MRR/tiesolderC21 within1e-12; require positive paired95%lower vsboth fullparents,
-no truthlost,nonnegative polarity means. P14negative noop/wrong-sign controls
-must be disclosed. Freeze ONE global winner before once-only fresh C13mixed120
-alias/polarity gates, then actual Kaggle changed-path smoke and independent
-source/model/identity/fallback/fusion audits before the approved trial.
-
-C25 reserved-confirmation pipeline IMPLEMENTED before any fresh metric read.
-Label-blind full120 preparation completed10:45:01:all original query fields exact,
-full Engine2coverage120/P01replay, 60perpolarity, same fixed P16reference200724rows.
-Both reference views have0promotions/0inputaliases; P16parents equal P01 exactly.
-2843 candidate identities match2916cloud rows exactly;252 oldfeature rows reused.
-P14 supports59/61exactP01fallbacks, all60negative unsupported/noop disclosed.
-Original P15control all120 scored on2070,0errors/fallbacks,rank1+sets exact; its
-scores remain UNREAD. All preparation/control artifacts are source/byte-pinned.
-C25 worker7592 waits actual C24 selector terminal+exit, deadline21:40UTC. If no
-global winner it exits keeping C13metricsunread. Otherwise freezes selected
-model/source/recipe, scores negative60 in both reference views with positive60
-exactpassthrough, freezes all120predictions, and applies unchanged C14gate once.
-A durable C13 evaluation-consumption marker is written BEFORE label parsing;
-any failure after it requires recovery of the SAME recipe, never reselection.
-Five gate tests and actual unavailable-winner/evaluation guards pass. No public
-submission/upload automated. Read scripts/confirm_c25_negative.py and
-outputs/local/c25-reserved-negative-20261110/worker-status.json. C13metrics
-remain UNREAD now; no consumption marker exists. Private model uploads/real
-Kaggle changed-path smoke/independent audits still required after a passing gate.
-
-C26 deployment adapter locally AUDITED and SEALED before reserved metrics.
-Source negative_deployment.py uses exactly the frozen model.score and negative_
-tail.merge at0.20/offset3 for homogeneous negative IDs. Known positives and
-explicit mixed/unknown/absent/unsupported-negative cases retain exact P16 parent.
-Actual2070 fixture:120real unlabelled C13inputs plus4synthetic fallback cases;
-all120 outputs exactly match existing C08-control negative-only composition,
-all60positive and4fallback rows exact, rawfold/normalized score maxdifference0.
-Separate positive-only60 pass-through loads0models and preservesallrows exactly.
-Generic deployment seal68b09816... frozen11:09 binds source, all6 fixed model
-manifests, C21/C24protocols and C25source/control. It adds no candidate or search.
-Use only the globally selected matching manifest; no source/weight changes after
-reserved metrics. Actual selected-model Kaggle changed-path smoke, local/cloud
-parity and independent audits remain REQUIRED. No model upload, kernel push or
-public trial was performed. See docs/C26-2026-11-10.md. C25 workers untouched.
-
-Native24-hour hourly heartbeat ACTIVE (view verified10:26); tracker296 to22:08UTC.
-Superseded C09coverage remains CANCEL_REQUESTED/old panel discarded. Worker
-health updater now uses structured receipts+actual process handles, so waiting
-workers cannot be called stalled merely because their stdout stays quiet.
-Read docs/C21-C24-2026-11-10.md. Older checkpoints below are historical;
-this current state supersedes them.
-
+Native24-hour hourly heartbeat ACTIVE(last inspected12:22), bounded read-only
+tracker296 continues to22:08UTC. C09oldcoverage remains CANCEL_REQUESTED and
+superseded. No paid compute. Historical checkpoints below are superseded.
 
 ## Authorization and earlier checkpoints — C09, 2026-11-09
 

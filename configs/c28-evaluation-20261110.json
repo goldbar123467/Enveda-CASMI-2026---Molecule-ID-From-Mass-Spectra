@@ -1,0 +1,14 @@
+{
+  "campaign": "C28MV",
+  "candidate": "Single final5000-additional-update/fold same-polarity two-view model,45000cumulative",
+  "weight": 0.2,
+  "offset": 3.0,
+  "queries": 240,
+  "serving": "Fixed all-mode0.20tail after complete P01/P16. Rank1 and candidate identities exact; no weight/checkpoint/subgroup search.",
+  "gate": "Full240 paired95%lowerbounds strictly positive vsboth complete parents; both polarity means nonnegative; nonnegative mean vsC09cosine continuation control; all absent truths zero.",
+  "controls": "Report P14/P15 and C08parent/C09control, including wrong signs and P14negative noop. C20recovered full80 baseline remains authoritative.",
+  "scope": "Prior C21/C24 six-group cycle is CLOSED and all six were rejected. This is one new fixed model/recipe after observing those development failures, without changing old protocols. Public-source research/coverage diagnosis add no candidate to this C28 cycle.",
+  "confirmation": "Only if development passes, freeze new source/model/recipe before the still-unconsumed C13mixed120 once. Existing full120/alias/polarity gate and actual Kaggle changed-path smoke/independent audits apply.",
+  "automatic_submission": false,
+  "paid_compute": false
+}

@@ -1,0 +1,39 @@
+{
+  "frozen_utc": "2026-11-10T11:25:20.101190+00:00",
+  "selected_group": null,
+  "new_candidate_selected": false,
+  "development_sha256": "458807baec96531230115078c4badb4dae18000e530843b863d077d7ba760e13",
+  "protocol_sha256": "22a70523fb23883f99e92076adf0549ded0131096adc9ee0c1a041da470c9ee7",
+  "config_sha256": "6caecee1aa245fec485970d35174ed3121e2f84b926f818b93bc52d14a9a9d44",
+  "source_model_pins": {
+    "C08-parent": {
+      "bundle": "outputs\\local\\c21-negative-tail-20261110\\bundles\\p15-parent",
+      "arm": "legacy16-hard",
+      "manifest_sha256": "86c977781695e5bfa8d5dc389c696f190359d9ca46b62fa5d087a4c6feee3909"
+    },
+    "C09-control": {
+      "bundle": "outputs\\local\\c21-negative-tail-20261110\\bundles\\cosine-control",
+      "arm": "cosine-control",
+      "manifest_sha256": "be6527550a26d0c331d3ddcac5132163f4cbab5eed0fc2d605ac35714788f191"
+    },
+    "C14-CE": {
+      "bundle": "outputs\\publish\\c14-ce-models-20261110",
+      "arm": "ce-mask",
+      "manifest_sha256": "b758d9a123305e01f8f51d9b90f04dc82f8a1b1e50d6c996d4c5fa614b1f7d53"
+    },
+    "C15-NP": {
+      "bundle": "outputs\\publish\\c15-np-models-20261110",
+      "arm": "np-balanced",
+      "manifest_sha256": "ecf9c437a484114bc09891fcc16534b8b1559cd8b0e019db000b0248fe6ac55c"
+    },
+    "C18-peak-drop": {
+      "bundle": "outputs\\publish\\c18-peak-models-20261110",
+      "arm": "peak-drop",
+      "manifest_sha256": "c47ae5767606d387bbbbbb1317451a29d286160bb4eb2a1a6afdcba6c57ba799"
+    }
+  },
+  "C13_confirmation_metrics_read": false,
+  "automatic_submission": false,
+  "submission_qualified": false,
+  "next_action": "Reject all fixed groups; preserve fresh120 and extra public approval."
+}

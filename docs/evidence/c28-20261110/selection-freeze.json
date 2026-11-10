@@ -1,0 +1,13 @@
+{
+  "frozen_utc": "2026-11-10T12:24:13.930010+00:00",
+  "new_candidate_selected": false,
+  "candidate": null,
+  "development_sha256": "3d30e9ed4fed6d2c4b225ed5226c7b1da6af6c842f242535f39918cdbb8602fa",
+  "protocol_sha256": "d33332bc6259b48839365fd744ee51dc5daebfa8c30b6034ff3772440419889c",
+  "model_manifest_sha256": "84a214341ea17bee768e2dfa60b82dc8069bd4dd656bf35a93970a10dbb02cf5",
+  "evaluation_plan_sha256": "cb853930d4a4da1f0179147974c62985ab88fcba57fc20cfca9e75e19b540889",
+  "fresh_C13_prediction_metrics_read": false,
+  "automatic_submission": false,
+  "submission_qualified": false,
+  "next_action": "Reject fixed recipe; preserve reserved120 and approved public trial."
+}

@@ -1,0 +1,53 @@
+{
+  "checked_utc": "2026-11-10T12:06:39.785756+00:00",
+  "source_csv": "enveda-CASMI26-molecule-id-mass-spectra-publicleaderboard-2026-11-10T11:22:25.csv",
+  "source_zip_sha256": "94be68211fdd56c51c2ee7bff82fb715be57fec8bf997e388a354f0bf8a24d3b",
+  "rows": [
+    {
+      "Rank": "52",
+      "TeamId": "16894549",
+      "TeamName": "Hongbin Gu",
+      "LastSubmissionDate": "2026-11-10 05:54:16",
+      "Score": "0.487",
+      "SubmissionCount": "144",
+      "TeamMemberUserNames": "guhongbin"
+    },
+    {
+      "Rank": "56",
+      "TeamId": "16923355",
+      "TeamName": "Rogers Johnson",
+      "LastSubmissionDate": "2026-11-09 11:12:38",
+      "Score": "0.487",
+      "SubmissionCount": "57",
+      "TeamMemberUserNames": "rogersjohnson"
+    },
+    {
+      "Rank": "178",
+      "TeamId": "16898268",
+      "TeamName": "alex chilton",
+      "LastSubmissionDate": "2026-11-10 04:01:05",
+      "Score": "0.487",
+      "SubmissionCount": "160",
+      "TeamMemberUserNames": "alexchilton"
+    },
+    {
+      "Rank": "241",
+      "TeamId": "17042773",
+      "TeamName": "youyouwou",
+      "LastSubmissionDate": "2026-11-10 05:11:28",
+      "Score": "0.485",
+      "SubmissionCount": "103",
+      "TeamMemberUserNames": "youyouwou"
+    },
+    {
+      "Rank": "968",
+      "TeamId": "16893680",
+      "TeamName": "Clark Kitchen",
+      "LastSubmissionDate": "2026-11-10 01:22:14",
+      "Score": "0.480",
+      "SubmissionCount": "33",
+      "TeamMemberUserNames": "clarkkitchen"
+    }
+  ],
+  "limitation": "Actual account best score/rank in snapshot; not proof that a specific notebook version produced it."
+}

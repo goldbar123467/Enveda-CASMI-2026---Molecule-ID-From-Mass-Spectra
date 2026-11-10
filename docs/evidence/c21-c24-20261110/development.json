@@ -1,0 +1,610 @@
+{
+  "completed_utc": "2026-11-10T11:25:20.101190+00:00",
+  "queries": 240,
+  "positive": 160,
+  "negative": 80,
+  "groups": {
+    "C08-parent": {
+      "comparisons": {
+        "P01": {
+          "n": 240,
+          "baseline_mrr25": 0.28374784096858907,
+          "candidate_mrr25": 0.2843037364655643,
+          "delta": 0.0005558954969752182,
+          "ci95": [
+            -0.0004054533196851312,
+            0.0016863327373413466
+          ],
+          "improved": 9,
+          "harmed": 8
+        },
+        "P16": {
+          "n": 240,
+          "baseline_mrr25": 0.28374784096858907,
+          "candidate_mrr25": 0.2843037364655643,
+          "delta": 0.0005558954969752182,
+          "ci95": [
+            -0.0004054533196851312,
+            0.0016863327373413466
+          ],
+          "improved": 9,
+          "harmed": 8
+        }
+      },
+      "polarity": {
+        "positive": {
+          "P01": {
+            "n": 160,
+            "baseline_mrr25": 0.27874430083805085,
+            "candidate_mrr25": 0.27874430083805085,
+            "delta": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "improved": 0,
+            "harmed": 0
+          },
+          "P16": {
+            "n": 160,
+            "baseline_mrr25": 0.27874430083805085,
+            "candidate_mrr25": 0.27874430083805085,
+            "delta": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "improved": 0,
+            "harmed": 0
+          }
+        },
+        "negative": {
+          "P01": {
+            "n": 80,
+            "baseline_mrr25": 0.29375492122966546,
+            "candidate_mrr25": 0.29542260772059115,
+            "delta": 0.0016676864909256546,
+            "ci95": [
+              -0.0011525955044482537,
+              0.00504997190363386
+            ],
+            "improved": 9,
+            "harmed": 8
+          },
+          "P16": {
+            "n": 80,
+            "baseline_mrr25": 0.29375492122966546,
+            "candidate_mrr25": 0.29542260772059115,
+            "delta": 0.0016676864909256546,
+            "ci95": [
+              -0.0011525955044482537,
+              0.00504997190363386
+            ],
+            "improved": 9,
+            "harmed": 8
+          }
+        }
+      },
+      "truths_lost": {
+        "P01": 0,
+        "P16": 0
+      },
+      "truths_present": 150,
+      "actions": {
+        "weight": 0.2,
+        "offset": 3.0,
+        "rank_one_changes": 0,
+        "candidate_set_changes": 0,
+        "changed_rows": 79,
+        "scored_molecules": 80,
+        "passthrough_molecules": 0,
+        "total_queries": 240,
+        "negative_queries": 80,
+        "positive_exact_passthrough": 160
+      },
+      "supported_development": false
+    },
+    "C09-control": {
+      "comparisons": {
+        "P01": {
+          "n": 240,
+          "baseline_mrr25": 0.28374784096858907,
+          "candidate_mrr25": 0.28411425848138816,
+          "delta": 0.0003664175127990916,
+          "ci95": [
+            -0.0007045786247242326,
+            0.0015546420415204257
+          ],
+          "improved": 8,
+          "harmed": 9
+        },
+        "P16": {
+          "n": 240,
+          "baseline_mrr25": 0.28374784096858907,
+          "candidate_mrr25": 0.28411425848138816,
+          "delta": 0.0003664175127990916,
+          "ci95": [
+            -0.0007045786247242326,
+            0.0015546420415204257
+          ],
+          "improved": 8,
+          "harmed": 9
+        }
+      },
+      "polarity": {
+        "positive": {
+          "P01": {
+            "n": 160,
+            "baseline_mrr25": 0.27874430083805085,
+            "candidate_mrr25": 0.27874430083805085,
+            "delta": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "improved": 0,
+            "harmed": 0
+          },
+          "P16": {
+            "n": 160,
+            "baseline_mrr25": 0.27874430083805085,
+            "candidate_mrr25": 0.27874430083805085,
+            "delta": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "improved": 0,
+            "harmed": 0
+          }
+        },
+        "negative": {
+          "P01": {
+            "n": 80,
+            "baseline_mrr25": 0.29375492122966546,
+            "candidate_mrr25": 0.2948541737680627,
+            "delta": 0.001099252538397275,
+            "ci95": [
+              -0.002134847658200502,
+              0.004629338293715228
+            ],
+            "improved": 8,
+            "harmed": 9
+          },
+          "P16": {
+            "n": 80,
+            "baseline_mrr25": 0.29375492122966546,
+            "candidate_mrr25": 0.2948541737680627,
+            "delta": 0.001099252538397275,
+            "ci95": [
+              -0.002134847658200502,
+              0.004629338293715228
+            ],
+            "improved": 8,
+            "harmed": 9
+          }
+        }
+      },
+      "truths_lost": {
+        "P01": 0,
+        "P16": 0
+      },
+      "truths_present": 150,
+      "actions": {
+        "weight": 0.2,
+        "offset": 3.0,
+        "rank_one_changes": 0,
+        "candidate_set_changes": 0,
+        "changed_rows": 79,
+        "scored_molecules": 80,
+        "passthrough_molecules": 0,
+        "total_queries": 240,
+        "negative_queries": 80,
+        "positive_exact_passthrough": 160
+      },
+      "supported_development": false
+    },
+    "C14-CE": {
+      "comparisons": {
+        "P01": {
+          "n": 240,
+          "baseline_mrr25": 0.28374784096858907,
+          "candidate_mrr25": 0.2840158086819902,
+          "delta": 0.00026796771340114976,
+          "ci95": [
+            -0.0008225865046975733,
+            0.0014578892360577727
+          ],
+          "improved": 9,
+          "harmed": 9
+        },
+        "P16": {
+          "n": 240,
+          "baseline_mrr25": 0.28374784096858907,
+          "candidate_mrr25": 0.2840158086819902,
+          "delta": 0.00026796771340114976,
+          "ci95": [
+            -0.0008225865046975733,
+            0.0014578892360577727
+          ],
+          "improved": 9,
+          "harmed": 9
+        }
+      },
+      "polarity": {
+        "positive": {
+          "P01": {
+            "n": 160,
+            "baseline_mrr25": 0.27874430083805085,
+            "candidate_mrr25": 0.27874430083805085,
+            "delta": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "improved": 0,
+            "harmed": 0
+          },
+          "P16": {
+            "n": 160,
+            "baseline_mrr25": 0.27874430083805085,
+            "candidate_mrr25": 0.27874430083805085,
+            "delta": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "improved": 0,
+            "harmed": 0
+          }
+        },
+        "negative": {
+          "P01": {
+            "n": 80,
+            "baseline_mrr25": 0.29375492122966546,
+            "candidate_mrr25": 0.2945588243698689,
+            "delta": 0.0008039031402034492,
+            "ci95": [
+              -0.002445786027268226,
+              0.00434547055273158
+            ],
+            "improved": 9,
+            "harmed": 9
+          },
+          "P16": {
+            "n": 80,
+            "baseline_mrr25": 0.29375492122966546,
+            "candidate_mrr25": 0.2945588243698689,
+            "delta": 0.0008039031402034492,
+            "ci95": [
+              -0.002445786027268226,
+              0.00434547055273158
+            ],
+            "improved": 9,
+            "harmed": 9
+          }
+        }
+      },
+      "truths_lost": {
+        "P01": 0,
+        "P16": 0
+      },
+      "truths_present": 150,
+      "actions": {
+        "weight": 0.2,
+        "offset": 3.0,
+        "rank_one_changes": 0,
+        "candidate_set_changes": 0,
+        "changed_rows": 79,
+        "scored_molecules": 80,
+        "passthrough_molecules": 0,
+        "total_queries": 240,
+        "negative_queries": 80,
+        "positive_exact_passthrough": 160
+      },
+      "supported_development": false
+    },
+    "C15-NP": {
+      "comparisons": {
+        "P01": {
+          "n": 240,
+          "baseline_mrr25": 0.28374784096858907,
+          "candidate_mrr25": 0.28401355637275266,
+          "delta": 0.0002657154041635464,
+          "ci95": [
+            -0.0005286399301879179,
+            0.001096137953964966
+          ],
+          "improved": 9,
+          "harmed": 5
+        },
+        "P16": {
+          "n": 240,
+          "baseline_mrr25": 0.28374784096858907,
+          "candidate_mrr25": 0.28401355637275266,
+          "delta": 0.0002657154041635464,
+          "ci95": [
+            -0.0005286399301879179,
+            0.001096137953964966
+          ],
+          "improved": 9,
+          "harmed": 5
+        }
+      },
+      "polarity": {
+        "positive": {
+          "P01": {
+            "n": 160,
+            "baseline_mrr25": 0.27874430083805085,
+            "candidate_mrr25": 0.27874430083805085,
+            "delta": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "improved": 0,
+            "harmed": 0
+          },
+          "P16": {
+            "n": 160,
+            "baseline_mrr25": 0.27874430083805085,
+            "candidate_mrr25": 0.27874430083805085,
+            "delta": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "improved": 0,
+            "harmed": 0
+          }
+        },
+        "negative": {
+          "P01": {
+            "n": 80,
+            "baseline_mrr25": 0.29375492122966546,
+            "candidate_mrr25": 0.2945520674421561,
+            "delta": 0.0007971462124906393,
+            "ci95": [
+              -0.0016240877057561462,
+              0.0032589617815212807
+            ],
+            "improved": 9,
+            "harmed": 5
+          },
+          "P16": {
+            "n": 80,
+            "baseline_mrr25": 0.29375492122966546,
+            "candidate_mrr25": 0.2945520674421561,
+            "delta": 0.0007971462124906393,
+            "ci95": [
+              -0.0016240877057561462,
+              0.0032589617815212807
+            ],
+            "improved": 9,
+            "harmed": 5
+          }
+        }
+      },
+      "truths_lost": {
+        "P01": 0,
+        "P16": 0
+      },
+      "truths_present": 150,
+      "actions": {
+        "weight": 0.2,
+        "offset": 3.0,
+        "rank_one_changes": 0,
+        "candidate_set_changes": 0,
+        "changed_rows": 79,
+        "scored_molecules": 80,
+        "passthrough_molecules": 0,
+        "total_queries": 240,
+        "negative_queries": 80,
+        "positive_exact_passthrough": 160
+      },
+      "supported_development": false
+    },
+    "C18-peak-drop": {
+      "comparisons": {
+        "P01": {
+          "n": 240,
+          "baseline_mrr25": 0.28374784096858907,
+          "candidate_mrr25": 0.2841118665082481,
+          "delta": 0.00036402553965903645,
+          "ci95": [
+            -0.0005681679594556923,
+            0.0014557437974344052
+          ],
+          "improved": 9,
+          "harmed": 9
+        },
+        "P16": {
+          "n": 240,
+          "baseline_mrr25": 0.28374784096858907,
+          "candidate_mrr25": 0.2841118665082481,
+          "delta": 0.00036402553965903645,
+          "ci95": [
+            -0.0005681679594556923,
+            0.0014557437974344052
+          ],
+          "improved": 9,
+          "harmed": 9
+        }
+      },
+      "polarity": {
+        "positive": {
+          "P01": {
+            "n": 160,
+            "baseline_mrr25": 0.27874430083805085,
+            "candidate_mrr25": 0.27874430083805085,
+            "delta": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "improved": 0,
+            "harmed": 0
+          },
+          "P16": {
+            "n": 160,
+            "baseline_mrr25": 0.27874430083805085,
+            "candidate_mrr25": 0.27874430083805085,
+            "delta": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "improved": 0,
+            "harmed": 0
+          }
+        },
+        "negative": {
+          "P01": {
+            "n": 80,
+            "baseline_mrr25": 0.29375492122966546,
+            "candidate_mrr25": 0.29484699784864254,
+            "delta": 0.0010920766189771094,
+            "ci95": [
+              -0.001688781326772961,
+              0.004353420773205253
+            ],
+            "improved": 9,
+            "harmed": 9
+          },
+          "P16": {
+            "n": 80,
+            "baseline_mrr25": 0.29375492122966546,
+            "candidate_mrr25": 0.29484699784864254,
+            "delta": 0.0010920766189771094,
+            "ci95": [
+              -0.001688781326772961,
+              0.004353420773205253
+            ],
+            "improved": 9,
+            "harmed": 9
+          }
+        }
+      },
+      "truths_lost": {
+        "P01": 0,
+        "P16": 0
+      },
+      "truths_present": 150,
+      "actions": {
+        "weight": 0.2,
+        "offset": 3.0,
+        "rank_one_changes": 0,
+        "candidate_set_changes": 0,
+        "changed_rows": 78,
+        "scored_molecules": 80,
+        "passthrough_molecules": 0,
+        "total_queries": 240,
+        "negative_queries": 80,
+        "positive_exact_passthrough": 160
+      },
+      "supported_development": false
+    }
+  },
+  "selected_group": null,
+  "new_candidate_selected": false,
+  "controls": {
+    "P14": {
+      "aggregate": {
+        "n": 240,
+        "baseline_mrr25": 0.28374784096858907,
+        "candidate_mrr25": 0.2854064548936503,
+        "delta": 0.0016586139250612934,
+        "ci95": [
+          -0.0034058645271638687,
+          0.007054386074451864
+        ],
+        "improved": 27,
+        "harmed": 17
+      },
+      "polarity": {
+        "positive": {
+          "n": 160,
+          "baseline_mrr25": 0.27874430083805085,
+          "candidate_mrr25": 0.2812322217256428,
+          "delta": 0.00248792088759194,
+          "ci95": [
+            -0.0049185683194729254,
+            0.01039204388447809
+          ],
+          "improved": 27,
+          "harmed": 17
+        },
+        "negative": {
+          "n": 80,
+          "baseline_mrr25": 0.29375492122966546,
+          "candidate_mrr25": 0.29375492122966546,
+          "delta": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "improved": 0,
+          "harmed": 0
+        }
+      }
+    },
+    "P15": {
+      "aggregate": {
+        "n": 240,
+        "baseline_mrr25": 0.28374784096858907,
+        "candidate_mrr25": 0.2836196893966488,
+        "delta": -0.00012815157194027177,
+        "ci95": [
+          -0.0020051606775290986,
+          0.001787208919856945
+        ],
+        "improved": 22,
+        "harmed": 28
+      },
+      "polarity": {
+        "positive": {
+          "n": 160,
+          "baseline_mrr25": 0.27874430083805085,
+          "candidate_mrr25": 0.27771823023467757,
+          "delta": -0.0010260706033732349,
+          "ci95": [
+            -0.003464726088513095,
+            0.0013434949872861055
+          ],
+          "improved": 13,
+          "harmed": 20
+        },
+        "negative": {
+          "n": 80,
+          "baseline_mrr25": 0.29375492122966546,
+          "candidate_mrr25": 0.29542260772059115,
+          "delta": 0.0016676864909256546,
+          "ci95": [
+            -0.0011525955044482537,
+            0.00504997190363386
+          ],
+          "improved": 9,
+          "harmed": 8
+        }
+      }
+    }
+  },
+  "baseline_MRR": {
+    "P01": 0.28374784096858907,
+    "P16": 0.28374784096858907
+  },
+  "baseline_truths": {
+    "P01": 150,
+    "P16": 150
+  },
+  "truth_absent_mrr": 0,
+  "positive_parent_preserved_exact": true,
+  "P14_negative_noop_disclosed": true,
+  "limitation": "C20 baseline includes documented real generated-candidate recovery for one originally empty Engine2 pool. Development screening over five fixed models, previously used160 plus new80negative development data. Wrong-sign controls/source shift and historical pretraining remain limitations; no hidden-score proof.",
+  "protocol_sha256": "22a70523fb23883f99e92076adf0549ded0131096adc9ee0c1a041da470c9ee7",
+  "input_freeze_sha256": "09d7bc2346caa98d6f54ffce5a2604b95a970700c5ca2fa2352badb704801f74",
+  "C20_development_metrics_read": true,
+  "C13_confirmation_metrics_read": false,
+  "automatic_submission": false,
+  "submission_qualified": false
+}

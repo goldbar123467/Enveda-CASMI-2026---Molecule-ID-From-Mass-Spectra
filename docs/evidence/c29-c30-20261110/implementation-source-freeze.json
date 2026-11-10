@@ -1,0 +1,14 @@
+{
+  "frozen_utc": "2026-11-10T12:21:08.164132+00:00",
+  "files_sha256": {
+    "scripts/develop_c29_public.py": "7ae507abc3df2c4d7c181d9600ca05b413dd9379e45cfa29e4acdcc0c0b7389a",
+    "scripts/select_c30_global.py": "7b9e7ce1622b68c75009669b924af2e33f39a06793684083f19568db1bd9a016",
+    "outputs/local/c29-public-replay-20261110/development-protocol.json": "c6c007355ec8dd6753131da6014ceaac62c898910f62959f17dbff5524405aa1",
+    "scripts/collect_c29_inference.py": "d8e67db02cacf3a2c5b6a1f3a47e4ea99176aa172a05c2549224150b5a0da583",
+    "scripts/run_c29_development_worker.py": "5069e7ccda9641f42e6d2049552f671676ebdef22a4f76b6c42dac68cc658ded",
+    "outputs/local/c30-global-selection-20261110/protocol.json": "d31481c3cbb97d50c4d3e85f5af471a128aee908e61b1cb78c9b27d3e350304f"
+  },
+  "C28_development_metrics_read": false,
+  "C29_development_metrics_read": false,
+  "C13_confirmation_metrics_read": false
+}

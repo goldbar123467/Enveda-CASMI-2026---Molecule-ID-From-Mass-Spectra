@@ -1,0 +1,14 @@
+{
+  "campaign": "C29",
+  "public_source": "alexchilton/casmi26-lb-0-487-peaks-to-structures-scorer",
+  "public_notebook_sha256": "380e2c820c2a47cfad268b75cdd0dfc564350b599b9b052a1915d292987113c5",
+  "template_notebook_sha256": "23d06ba65b7c9a22156f72868ea4a790c8f3ba168ae7134dbbce62692145f33a",
+  "queries": 240,
+  "recipe": "One fixed public MASS/POP0.12/SPEC0.12/NP0.12 recipe, public+v80 scorer0.5each, dual external-library TAU0.80/K4/protect0.90. No LOTUS dataset. Official metric identity dedup after overlay, backfill from pre-overlay parent only.",
+  "adaptations": "Use completed C20 input/formate/generated-empty-pool compatibility, fixed query240 and explicit pinned v80. Actual full P01/control run precedes public changed post-stages. External overlay reads the effective validation queries. Required stages must succeed. Additional bounded raw-input-alias-excluded reference view is diagnostic and a required sensitivity gate, never selected between views.",
+  "source_B": "MassBank harmonized139744 records; preserve compilation CC-BY-NC-SA-4.0 and original record notices/attribution. Drop every is_casmi_subset row. No raw reference redistribution to GitHub. This is separate from P16's CC0-only sourceA experiment.",
+  "development_gate": "Against both complete P01/P16: all240 paired95% lowerbounds strictly positive, no individual truth lost, both polarity mean deltas nonnegative. Input-alias-excluded full240 mean and95%lowerbounds must be nonnegative against both parents. All absent truths zero. Report P14/P15 controls with known wrong signs/noops. Parent replay must equal the existing authoritative full240 before metrics.",
+  "confirmation": "After BOTH C28 and C29 development cycles terminate, freeze at most one global winner before once-only C13mixed120, with full120/alias/polarity gates, real Kaggle changed-path smoke and independent source/model/arithmetic/identity/fallback audits. No title or author score qualifies a trial.",
+  "automatic_submission": false,
+  "paid_compute": false
+}

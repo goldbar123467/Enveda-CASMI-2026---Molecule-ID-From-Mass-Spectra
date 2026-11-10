@@ -1,0 +1,18 @@
+{
+  "checked_utc": "2026-11-10T11:49:16.673144+00:00",
+  "successful_updates": 100,
+  "attempts": 100,
+  "amp_skips": 0,
+  "model_finite": true,
+  "source_contract_exact": true,
+  "checkpoint_sha256": "e020023ee4d5eac59dd34970e22fbeace4fd16a57721fa349e624bdec5aa0054",
+  "view_sampling_counts": {
+    "primary_queries": 38400,
+    "two_view_queries": 17906,
+    "single_view_queries": 20494
+  },
+  "optimizer_scaler_primary_and_extra_view_rngs_checkpointed": true,
+  "continuation": "Resume exact prefix to5000successful updates/fold; do not restart or reset warmup",
+  "C13_confirmation_metrics_read": false,
+  "automatic_submission": false
+}

@@ -1,0 +1,52 @@
+{
+  "kind": "compatible_scorer",
+  "run_id": "C28MV",
+  "steps": 45000,
+  "smoke": false,
+  "architecture": {
+    "width": 320,
+    "heads": 8,
+    "layers": 3,
+    "embedding": 320,
+    "fp_bits": 2048,
+    "max_peaks": 96,
+    "min_peaks": 3,
+    "temperature": 0.1,
+    "fp_score_weight": 2.0
+  },
+  "models": [
+    {
+      "file": "multi-view-fold0.pt",
+      "fold": 0,
+      "arm": "multi-view",
+      "steps": 45000,
+      "cache_precision": "float16",
+      "checkpoint_sha256": "3bab7ad04e871a134490344bcca3e5c7d6becb5b467f2d24167185bb775820b3"
+    },
+    {
+      "file": "multi-view-fold1.pt",
+      "fold": 1,
+      "arm": "multi-view",
+      "steps": 45000,
+      "cache_precision": "float16",
+      "checkpoint_sha256": "5fdde2a6fb48850231e4190d97295f703226b3daea3ea656655a6dc8999eee95"
+    }
+  ],
+  "files": {
+    "model.py": "2547418857386d1c2513fd1ab6c70961e6a96e73d9d495bbfe3052197e69dc39",
+    "features.py": "a97ad9b3ab3711517864d56e497e1672cb29bb05683c72b52db9f9b0a17b1455",
+    "fingerprint-cache.npy": "9c49b4ccbd9bad1738f4cd29a760f7f7a6284427eb97d2dfe6bc52a9a227fdda",
+    "fingerprint-cache-smiles.parquet": "f01df6a8cac1aaf8e9ef803cb4a01eebb9dba49089ba5cc7bcbe264b07a8e99a",
+    "compatible_tail.py": "b5677d884008f0fd16a66ca045eb5c5c61420e895c66612d3fefdef166f58378",
+    "inference.py": "233d95d2516c859846a1490aea2b5d6ae15b1df755b959184cdc0f98986263cf",
+    "multi-view-fold0.pt": "3bab7ad04e871a134490344bcca3e5c7d6becb5b467f2d24167185bb775820b3",
+    "multi-view-fold1.pt": "5fdde2a6fb48850231e4190d97295f703226b3daea3ea656655a6dc8999eee95"
+  },
+  "training_contract_sha256": "6db083a4716e3ae132201abb7922adb99918d25a12f77a577ecf87be1ee6b39e",
+  "evaluation_plan_sha256": "cb853930d4a4da1f0179147974c62985ab88fcba57fc20cfca9e75e19b540889",
+  "packager_sha256": "a5782a0075830d6107efb8fafe9854cd3b484e7275a5dadcad091afe342f911b",
+  "parent_manifest_sha256": "c73d2383b7494fdbaedb9e437f8f389dbe175418bf13e5260a2f277ada49b602",
+  "automatic_submission": false,
+  "selection": "Final5000additional updates/fold only; one fixed all-mode0.20tail recipe.",
+  "attribution": "Credited Saner/P01 compatible model/features; original local C08 parents. Original terms retained."
+}

@@ -1,0 +1,15 @@
+{
+  "checked_utc": "2026-11-10T12:30:17.999361+00:00",
+  "kernel": "popwenman/casmi26-scorer-train-v80",
+  "selected_output_sha256": {
+    "casmi_spectrum_model_ours_v80\\final_model.pt": "c08d2101154d057890de088be63834eb622468892a3b842512fdc5a65e02ff46",
+    "kit_staged\\final_model.pt": "44436b2daec64373e66f9120dd2389c24fc83dd9430ebeeac18e3cb49dcb9642",
+    "casmi_spectrum_model_ours_v80\\config_used.json": "b7781dc1087d6ac441dfc6ee9f0f169a0b238e4776bef01bb581d3789941af2d"
+  },
+  "public_weight_bytes_equal_existing_P01": true,
+  "v80_weight_bytes_equal_explicit_C29_pin": true,
+  "implication": "Public source and existing C29 use the exact same public/v80 weight pair; no additional checkpoint candidate or change is introduced.",
+  "code_executed": false,
+  "labels_used": false,
+  "verified_score_for_this_account": false
+}

@@ -1,0 +1,34 @@
+{
+  "frozen_utc": "2026-11-10T12:20:17.540004+00:00",
+  "input_sha256": {
+    "configs\\c29-public-replay-20261110.json": "2aadb125175dac61ad7380e143a342071e0ceacf542ff72b05bf68bab77e7f00",
+    "configs\\c30-global-selection-20261110.json": "cebcc13fcc2a10003865a922b0f4f599ac1ba7245b68e451a0a283a06319e619",
+    "outputs\\local\\c30-global-selection-20261110\\protocol.json": "d31481c3cbb97d50c4d3e85f5af471a128aee908e61b1cb78c9b27d3e350304f",
+    "kaggle\\forks\\c29-public-replay\\validation-pin.json": "466717716e306125e12ee78d8deadb3daa5ea7a009f72d0abd5126ee6e2a5923",
+    "kaggle\\forks\\c29-public-replay\\notebook.ipynb": "02304e42bc27cbbad98b2995333ccf6d16e1599838d1de3eef13c964d85db428",
+    "outputs\\local\\c29-public-replay-20261110\\source-audit.json": "2466500072e875b4807d7e7401d729cac707121eb8131476bdffd0348a0da072",
+    "outputs\\local\\c29-public-replay-20261110\\push-receipt.json": "dbaae2befa6aeff9e08050df8e6fe5e217bbfec6eb6866ffcec9d1c797163d33",
+    "outputs\\local\\c21-negative-tail-20261110\\parent.csv": "76f63eb680300424b4c90a33c7cc8c98a2f345c7b734587fdc4ac57dc81792c4",
+    "outputs\\local\\c21-negative-tail-20261110\\P01.csv": "76f63eb680300424b4c90a33c7cc8c98a2f345c7b734587fdc4ac57dc81792c4",
+    "outputs\\local\\c21-negative-tail-20261110\\P14.csv": "edcb3811fe78fe4353891090214f241f103fc07ac621c12d0332c01fedc79063",
+    "outputs\\local\\c21-negative-tail-20261110\\P15.csv": "694e9105546860f42bf92423612737c9633355c3dec97abbaa2fcf2ee7d144c8",
+    "outputs\\local\\c21-negative-tail-20261110\\queries.parquet": "ef072e28bc637ae3b36cceabbb72f2a431b4125a4f8349a534a60bf01891cc86",
+    "outputs\\local\\c21-negative-tail-20261110\\fingerprint-smiles.parquet": "3c6031cab7803deb24c15e8e5c5c9b2aa4077e8c829d1561be0ba433f4a87e9d",
+    "outputs\\local\\c21-negative-tail-20261110\\preparation.json": "89c8b0e19256fb8f5f222aefe8cd1c23e4f4b5037cda85268301d2f76b047d21",
+    "outputs\\local\\c10-casmi2022-20261110\\labels.csv": "f1d3b96f002827d2c9ddd1e61f0fe4e97551a27859da8c74d248588893515c6a",
+    "outputs\\local\\c20-negative-development-20261110\\labels.csv": "4d0f0803904dcf592fa9bda6786db72b40d9e27790ce0f891bb9ed700f82e1a3"
+  },
+  "source_sha256": {
+    "develop_c29_public.py": "7ae507abc3df2c4d7c181d9600ca05b413dd9379e45cfa29e4acdcc0c0b7389a",
+    "finish_c09_confirmation.py": "d74e3258498cbaf496f91ae3398f54c4131ee25569b269e18e318ed5c9d615af",
+    "tail_fusion.py": "b1fd92ee93412454c80942c70fd3bc72f89f07a673ff1a319d7e821be368a5d4",
+    "select_c30_global.py": "7b9e7ce1622b68c75009669b924af2e33f39a06793684083f19568db1bd9a016"
+  },
+  "recipe": "One fixed C29all-reference output with mandatory alias-excluded sensitivity.",
+  "queries": 240,
+  "all_development_previously_used": true,
+  "truth_absent_mrr": 0,
+  "C29_prediction_metrics_read": false,
+  "C13_confirmation_metrics_read": false,
+  "automatic_submission": false
+}

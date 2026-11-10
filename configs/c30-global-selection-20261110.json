@@ -1,0 +1,10 @@
+{
+  "campaign": "C30",
+  "purpose": "Prospective outer selection before new C28/C29 performance metrics; immutable inner protocols remain separate.",
+  "cycles_in_tie_order": ["C28MV", "C29"],
+  "rule": "Wait both cycles terminal. Only each cycle's prospectively passing fixed recipe is eligible. Choose greatest full240 MRR; ties within1e-12 retain older C28. Freeze one global model/source/recipe before reserved120. No new model, threshold, checkpoint or subgroup may be added to this policy after its metrics.",
+  "closed_prior_cycle": "C21/C24 allsix rejected. C22 excluded. No retrospective replacement or reopening.",
+  "reserved_C13_metrics_read": false,
+  "automatic_confirmation": false,
+  "automatic_submission": false
+}

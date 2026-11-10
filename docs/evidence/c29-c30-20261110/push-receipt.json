@@ -1,0 +1,16 @@
+{
+  "accepted_utc": "2026-11-10T12:16:53.053936+00:00",
+  "version": 1,
+  "requested_kernel": "clarkkitchen/casmi26-c29-public-replay-development",
+  "kernel": "clarkkitchen/casmi26-c29-fixed-public-replay-development",
+  "title_resolved_slug_differs": true,
+  "action": "Use exact returned handle; never push a duplicate to the requested shorter slug.",
+  "scoring_submission": false,
+  "checked_utc": "2026-11-10T12:17:07.898462+00:00",
+  "private": true,
+  "internet": false,
+  "docker_image": "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461",
+  "remote_scientific_sha256": "0ca0c305b6533dcf5e2010933580a384c7867ce876a2a1de898c1bcdf99e5d10",
+  "local_scientific_sha256": "0ca0c305b6533dcf5e2010933580a384c7867ce876a2a1de898c1bcdf99e5d10",
+  "state": "RUNNING"
+}

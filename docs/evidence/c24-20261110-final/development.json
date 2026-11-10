@@ -1,0 +1,109 @@
+{
+  "completed_utc": "2026-11-10T11:25:32.742395+00:00",
+  "queries": 240,
+  "positive": 160,
+  "negative": 80,
+  "comparisons": {
+    "P01": {
+      "n": 240,
+      "baseline_mrr25": 0.28374784096858907,
+      "candidate_mrr25": 0.28406162963999654,
+      "delta": 0.0003137886714074624,
+      "ci95": [
+        -0.0007211335387944793,
+        0.0015017014647121308
+      ],
+      "improved": 9,
+      "harmed": 12
+    },
+    "P16": {
+      "n": 240,
+      "baseline_mrr25": 0.28374784096858907,
+      "candidate_mrr25": 0.28406162963999654,
+      "delta": 0.0003137886714074624,
+      "ci95": [
+        -0.0007211335387944793,
+        0.0015017014647121308
+      ],
+      "improved": 9,
+      "harmed": 12
+    }
+  },
+  "polarity": {
+    "positive": {
+      "P01": {
+        "n": 160,
+        "baseline_mrr25": 0.27874430083805085,
+        "candidate_mrr25": 0.27874430083805085,
+        "delta": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "improved": 0,
+        "harmed": 0
+      },
+      "P16": {
+        "n": 160,
+        "baseline_mrr25": 0.27874430083805085,
+        "candidate_mrr25": 0.27874430083805085,
+        "delta": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "improved": 0,
+        "harmed": 0
+      }
+    },
+    "negative": {
+      "P01": {
+        "n": 80,
+        "baseline_mrr25": 0.29375492122966546,
+        "candidate_mrr25": 0.29469628724388786,
+        "delta": 0.0009413660142223873,
+        "ci95": [
+          -0.002138829331129565,
+          0.004416109749028882
+        ],
+        "improved": 9,
+        "harmed": 12
+      },
+      "P16": {
+        "n": 80,
+        "baseline_mrr25": 0.29375492122966546,
+        "candidate_mrr25": 0.29469628724388786,
+        "delta": 0.0009413660142223873,
+        "ci95": [
+          -0.002138829331129565,
+          0.004416109749028882
+        ],
+        "improved": 9,
+        "harmed": 12
+      }
+    }
+  },
+  "truths_lost": {
+    "P01": 0,
+    "P16": 0
+  },
+  "truths_present": 150,
+  "actions": {
+    "weight": 0.2,
+    "offset": 3.0,
+    "rank_one_changes": 0,
+    "candidate_set_changes": 0,
+    "changed_rows": 79,
+    "scored_molecules": 80,
+    "passthrough_molecules": 0,
+    "total_queries": 240,
+    "negative_queries": 80,
+    "positive_exact_passthrough": 160
+  },
+  "supported_development": false,
+  "protocol_sha256": "ef1445ff61d59fe61a5531d35d9b797700909a4e4d141cf3c3a3ed7dc3e062f7",
+  "input_freeze_sha256": "2f51ce747bfc1c573552fd51fdce04bb7e0636dafde7352c89a0d191902bad9c",
+  "C13_confirmation_metrics_read": false,
+  "automatic_submission": false,
+  "submission_qualified": false
+}

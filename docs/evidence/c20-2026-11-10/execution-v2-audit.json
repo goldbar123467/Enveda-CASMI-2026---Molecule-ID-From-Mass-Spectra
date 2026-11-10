@@ -1,0 +1,59 @@
+{
+  "checked_utc": "2026-11-10T11:26:47.999289+00:00",
+  "queries": 80,
+  "full_P01_replay_exact": true,
+  "old79_Engine2_lists_exact": true,
+  "Engine2_final_nonempty": 80,
+  "no_query_dropped_or_placeholder": true,
+  "guard_retained": true,
+  "models": {
+    "neural_public.parquet": {
+      "queries": 80,
+      "supported": 80,
+      "rows": 1956
+    },
+    "neural_ours.parquet": {
+      "queries": 80,
+      "supported": 80,
+      "rows": 1956
+    }
+  },
+  "P14_exact_P01_fallback_all80": true,
+  "actual_devices": [
+    {
+      "index": 0,
+      "name": "Tesla T4",
+      "vram_gib": 14.56219482421875
+    },
+    {
+      "index": 1,
+      "name": "Tesla T4",
+      "vram_gib": 14.56219482421875
+    }
+  ],
+  "local_recovery_comparison": {
+    "C20Q_3f38081e510120c5bad2": {
+      "same_candidate_keys": true,
+      "exact_order_and_representatives": false,
+      "candidates": 25
+    }
+  },
+  "local_runtime_difference": "Local Torch2.11/sklearn1.6.1; cloud baseline remains authoritative.",
+  "artifact_sha256": {
+    "c20_report.json": "00c0a67cd43e016be5236870c3f20f1743d6bc07923c8d59e1c324f9dc99bb5d",
+    "execution_receipt.json": "eb730c072d59fde38e3967380837dfd70e5705cc93a03427f7e63ace9f857884",
+    "c20_p01.csv": "59ecba0ba8accfc4df45334390c45811630975b3ca7a849eeda7baa1d49cbf19",
+    "c20_p14.csv": "59ecba0ba8accfc4df45334390c45811630975b3ca7a849eeda7baa1d49cbf19",
+    "c20_queries.parquet": "47642d55d6840cba030633c901318a060fae378250287cf636d1140ae8ada133",
+    "c20_neural_p01.parquet": "01cfe127019a1c957fca041f34894b77ee6e0637a9649fa8669ec4fa0bb67d1e",
+    "eng_lists.json": "312193e4830acfb800f79ad3db23c9ed74fa717adf4f712ef7eb8648f4a66294",
+    "c20_engine2_recovery.json": "0c0622389bb469aae50c76a7905320af4bca6f5e5056e21b1967e2ed0733a0e5",
+    "c20_engine2_pool_audit.json": "2dd8b78805f68eb981a125e7fe31ce2696fb5795265eed7f3aa34d419fce32cc",
+    "c20_engine2_recovered_lists.json": "59cb03b14d2ae06ce8ce200379614e296b4690c020316c866516175f92a91895",
+    "c20_t4_allocation.json": "2424b71eb8adfbf0b3fdf637d5b06eecc9ec98ad04a5301b35676e59ce32f144",
+    "c20_gpu1_preflight.json": "6a7dcb9435cb54de2f523b68a4819b8956769adb80cc64a960242a4379456a6d"
+  },
+  "label_metrics_read_by_this_audit": false,
+  "C13_confirmation_metrics_read": false,
+  "automatic_submission": false
+}
