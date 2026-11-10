@@ -13,7 +13,7 @@ C10's running private inference is validation only, not a leaderboard submission
 
 | Date (UTC) | Slot | Kernel | Change | Ref | Public LB |
 |---|---|---|---|---|---|
-| 2026-11-10 01:22 | P16 | casmi26-p16-external-reference-c09 v2 | Unchanged pinned P01 plus fixed measured-reference promotions; no newly trained model | 58181280 | **Pending** |
+| 2026-11-10 01:22 | P16 | casmi26-p16-external-reference-c09 v2 | Unchanged pinned P01 plus fixed measured-reference promotions; no newly trained model | 58181280 | **0.480** (COMPLETE) |
 
 P16 (`casmi26-p16-external-reference-c09` v2) completed its private real12/400
 Kaggle smoke and independent execution/identity/fallback/local-cloud audit.

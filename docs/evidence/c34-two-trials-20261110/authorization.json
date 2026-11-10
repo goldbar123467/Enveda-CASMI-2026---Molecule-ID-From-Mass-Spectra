@@ -1,0 +1,12 @@
+{
+  "authorized_utc": "2026-11-10T17:47:01.364056+00:00",
+  "user_instruction": "Use 2 submissions with past work from the past runs submit the two best submissions for scoring",
+  "maximum_new_submissions": 2,
+  "maximum_pending": 1,
+  "scope": "Choose and execute exactly two existing-work scoring trials after execution qualification; no new training or hourly campaign.",
+  "hourly_automation_remains_paused": true,
+  "champion_retained": 0.48,
+  "reserved_labels_for_selection": false,
+  "supersedes_prior_unused_single_trial_approval": true,
+  "total_new_trials_under_current_request": 2
+}

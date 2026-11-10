@@ -1,0 +1,135 @@
+{
+  "kind": "Two_explicit_past_fitted_trials",
+  "models": {
+    "P18": {
+      "dataset": "clarkkitchen/casmi26-c22-peak-models-20261110",
+      "manifest_sha256": "d34719302b08256122e45e0f83b6e25bff472eff3ed4638789fd45280b53a456",
+      "arm": "peak-drop-dose",
+      "steps": 55000,
+      "output": "p18_c22_submission.csv",
+      "files_sha256": {
+        "model.py": "2547418857386d1c2513fd1ab6c70961e6a96e73d9d495bbfe3052197e69dc39",
+        "features.py": "a97ad9b3ab3711517864d56e497e1672cb29bb05683c72b52db9f9b0a17b1455",
+        "fingerprint-cache.npy": "9c49b4ccbd9bad1738f4cd29a760f7f7a6284427eb97d2dfe6bc52a9a227fdda",
+        "fingerprint-cache-smiles.parquet": "f01df6a8cac1aaf8e9ef803cb4a01eebb9dba49089ba5cc7bcbe264b07a8e99a",
+        "compatible_tail.py": "b5677d884008f0fd16a66ca045eb5c5c61420e895c66612d3fefdef166f58378",
+        "inference.py": "8cc4131dd65b4e02a76304bd942f03dc7aad9f17efb5a09b11baf061d0e56f9a",
+        "peak-drop-dose-fold0.pt": "a817fd6fdf50ed72f3ff78aed5b7ac9cf6597d0b16ca184edb97759bf58d9a5a",
+        "peak-drop-dose-fold1.pt": "56d1f696d102116b4d841b0cd157f6ddcd437b3c45458ea150ae5bacc1f273e3"
+      },
+      "local_bundle": "outputs\\publish\\c22-peak-models-20261110"
+    },
+    "P19": {
+      "dataset": "clarkkitchen/casmi26-c18-peak-models-20261110",
+      "manifest_sha256": "c47ae5767606d387bbbbbb1317451a29d286160bb4eb2a1a6afdcba6c57ba799",
+      "arm": "peak-drop",
+      "steps": 45000,
+      "output": "p19_c18_submission.csv",
+      "files_sha256": {
+        "model.py": "2547418857386d1c2513fd1ab6c70961e6a96e73d9d495bbfe3052197e69dc39",
+        "features.py": "a97ad9b3ab3711517864d56e497e1672cb29bb05683c72b52db9f9b0a17b1455",
+        "fingerprint-cache.npy": "9c49b4ccbd9bad1738f4cd29a760f7f7a6284427eb97d2dfe6bc52a9a227fdda",
+        "fingerprint-cache-smiles.parquet": "f01df6a8cac1aaf8e9ef803cb4a01eebb9dba49089ba5cc7bcbe264b07a8e99a",
+        "compatible_tail.py": "b5677d884008f0fd16a66ca045eb5c5c61420e895c66612d3fefdef166f58378",
+        "inference.py": "c1ddf144a153b4cd1980b3723a016592066086262bc466de22cc1f7df6af8ae9",
+        "peak-drop-fold0.pt": "839d163c523d685ac4a28fa2d892a5f753d0f75f751d77cee6ce5b083963edab",
+        "peak-drop-fold1.pt": "3b48750d0b61205a69c6365d9e8a83824e1af5dcae5aec80f7dc04bf846e7d9f"
+      },
+      "local_bundle": "outputs\\publish\\c18-peak-models-20261110"
+    }
+  },
+  "recipes": {
+    "P18": {
+      "arm": "peak-drop-dose",
+      "models": 2,
+      "folds": [
+        0,
+        1
+      ],
+      "cache_precision": "float16",
+      "smoke": false,
+      "steps": 55000,
+      "manifest_sha256": "d34719302b08256122e45e0f83b6e25bff472eff3ed4638789fd45280b53a456",
+      "baseline_content_sha256": "5cb2f1ad75c64791fa63cbfabb7e70e29948e05d8cc3987de79d7e137cdc20b9",
+      "queries_sha256": "5464f6862f8931423bffcb705333cd9af9f713852a6c8c6d1b129bd2132862fb",
+      "scored_molecules": 12,
+      "unsupported_molecules": [],
+      "unprocessed_molecules": 388,
+      "input_errors": 0,
+      "peak_selection": "stable_intensity_then_mz",
+      "spectrum_aggregation": "all usable spectra, equal average",
+      "model_aggregation": "mean of per-query standardized raw scores",
+      "numpy_version": "2.0.2",
+      "torch_version": "2.10.0+cu128",
+      "weight": 0.2,
+      "offset": 3.0,
+      "rank_one_changes": 0,
+      "candidate_set_changes": 0,
+      "changed_rows": 12,
+      "passthrough_molecules": 388,
+      "csv_sha256": "b84df048e46657d17e172be3c95a4fcea86ffd4636268e6ace07a651e1aea913",
+      "allocated_gpu": 0,
+      "output": "p18_c22_submission.csv"
+    },
+    "P19": {
+      "arm": "peak-drop",
+      "models": 2,
+      "folds": [
+        0,
+        1
+      ],
+      "cache_precision": "float16",
+      "smoke": false,
+      "steps": 45000,
+      "manifest_sha256": "c47ae5767606d387bbbbbb1317451a29d286160bb4eb2a1a6afdcba6c57ba799",
+      "baseline_content_sha256": "5cb2f1ad75c64791fa63cbfabb7e70e29948e05d8cc3987de79d7e137cdc20b9",
+      "queries_sha256": "5464f6862f8931423bffcb705333cd9af9f713852a6c8c6d1b129bd2132862fb",
+      "scored_molecules": 12,
+      "unsupported_molecules": [],
+      "unprocessed_molecules": 388,
+      "input_errors": 0,
+      "peak_selection": "stable_intensity_then_mz",
+      "spectrum_aggregation": "all usable spectra, equal average",
+      "model_aggregation": "mean of per-query standardized raw scores",
+      "numpy_version": "2.0.2",
+      "torch_version": "2.10.0+cu128",
+      "weight": 0.2,
+      "offset": 3.0,
+      "rank_one_changes": 0,
+      "candidate_set_changes": 0,
+      "changed_rows": 12,
+      "passthrough_molecules": 388,
+      "csv_sha256": "9fa2e5566f2ba1a5ad76150bb53b10cec77c6c1e2b75868b6138e268be6f1883",
+      "allocated_gpu": 1,
+      "output": "p19_c18_submission.csv"
+    }
+  },
+  "devices": [
+    {
+      "index": 0,
+      "name": "Tesla T4"
+    },
+    {
+      "index": 1,
+      "name": "Tesla T4"
+    }
+  ],
+  "parent_csv_sha256": "5cb2f1ad75c64791fa63cbfabb7e70e29948e05d8cc3987de79d7e137cdc20b9",
+  "parent_notebook_sha256": "d6b9c9625ad8fb7d503341c6fd702bd909101d719ca55e400145fb96f2b2af6a",
+  "selection_sha256": "3bc3cb1d6d38ced4a55825b67af81dfd74f2269cc7a3f6f292a4ccd4a83e1903",
+  "valid_rows": 400,
+  "pipeline": {
+    "source_sha256": "ca3c3f382eca90ac7ba2e0bbb76753f4a1d92b8c630a726ac28610727a8da6ab",
+    "mode": "submission",
+    "source_adaptations": [],
+    "candidate_promotion_fix": true,
+    "is_full_run": false,
+    "processed_molecules": 12
+  },
+  "is_hidden_rerun": false,
+  "weight": 0.2,
+  "offset": 3.0,
+  "reserved_labels_mounted": false,
+  "training_performed": false,
+  "statistical_promotion": false
+}

@@ -51,3 +51,19 @@ submissions. Submit C22 first, await its actual score/error, then submit C18.
 Maximum one pending globally; maximum two new accepted entries under this request.
 No new campaign or third trial is authorized. Restore the compute pause after
 these two trials reach actual terminal results.
+
+Real Kaggle smoke v1 is COMPLETE by18:38 UTC, with both actualTeslaT4 devices
+used for their distinct retained fits. The independent audit finished18:39 UTC:
+both outputs have400 valid rows,12 changed real-query rows,388 exact parent
+fallback rows and zero official identity duplicates. Rank1 and candidate membership
+are exact. Independently derived meanZ and RRF error is0; unchanged P01 primary
+error4.44e-16. Local/cloud final lists match exactly; maximum raw-score difference
+is1.90735e-6. The two smoke files differ on7 rows. Seven submission-guard/tail tests
+pass. No reserved labels or new training were used.
+
+The immutable qualification binds source, notebook, checkpoints, manifests,
+selection, real smoke outputs and independent audit. P18's dry-run rechecked actual
+COMPLETE remote v1, privacy/offline/source hashes, account history and quota: zero
+pending, ready, no submission sent by that dry-run. The prior unused single-trial
+approval is superseded by this request for TWO total new entries; it is not a
+third trial. The native hourly automation remains PAUSED.

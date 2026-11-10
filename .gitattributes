@@ -237,3 +237,5 @@ scripts/submit_two_past_trials.py text eol=lf
 scripts/monitor_two_past_trials.py text eol=lf
 kaggle/forks/p18-p19-past-trained-trials/* -text whitespace=trailing-space,space-before-tab,cr-at-eol
 docs/evidence/c34-two-trials-20261110/* -text whitespace=trailing-space,space-before-tab,cr-at-eol
+
+scripts/qualify_two_past_trials.py text eol=lf
