@@ -12,8 +12,10 @@ bounded raw-spectrum overlap. Query-only private inference v1 isCOMPLETE at
 privacy and image pin are verified. Read `docs/C10-CASMI2022-2026-11-10.md`.
 No C10 labels were mounted inKaggle. Local40dev evaluation isCOMPLETE:
 all four reference recipes tieP01 atMRR0.2722727273,20/40truths. Fixedtie rule
-retainsP16;no newcandidate/no confirmation/no additionaltrial. The120reserved
-predictionmetrics remainunread. C10 is not a leaderboard submission and has
+retainsP16;no newreference candidate/no reference confirmation/no additionaltrial.
+The shared120 were subsequently evaluated once for frozenC12 at05:23UTC and
+are now CONSUMED; never call them fresh/unread or use them for reselection.
+C10 is not a leaderboard submission and has
 not consumed the extra approval. Never launch a duplicate to the shorter slug.
 
 C10 reference preparation and label-blind search areCOMPLETE:31,030 attributed
@@ -33,17 +35,45 @@ officialidentity;useofficialdedup. C12 now freezes one deeper-pool recipe using
 the unchanged P01 public/v80 pair. On40dev, MRR0.2722727273→0.2735802720,
 delta+0.0013075,95%CI[-0.0004891,0.0044118],1improved/1harmed,truths20→21.
 Selected prospectively by positive-point/new-truth rule;NOT submission-qualified.
-Confirmation protocol froze05:08UTC before120metrics. All160 label-blind pool
-preparation is running from05:15UTC, launcher24880/worker7724. Verify its actual
-handle;do not duplicate. Then score --scope all,require exact40dev output parity,
-and run confirm_c12_pool.py --evaluate ONCE. Reject if either incremental95%
-lowerbound versus completeP01/P16 is nonpositive. No reserved reselection.
+Confirmation protocol froze05:08UTC before120metrics. All160 preparation and
+2070scoring completed05:23UTC,14184candidates,0errors,rawparitymax2.87e-6.
+Exact40dev output parity passed before the once-only120 evaluation05:23UTC.
+C12 is REJECTED:delta-0.0000232001,CI[-0.00160504,0.00171527],2improved/
+8harmed,truths80→80 (2recovered/2lost). No newtrial or changed-pathsmoke
+is justified. All C12 workers exited. Do not rerun confirmation/reselect on120.
 See docs/C12-DEEP-CANDIDATES-2026-11-10.md and sealed local receipts.
 
-Prospective reserved evaluator/protocol is prepared and5gate tests pass.
-`confirm_c10_candidate.py --evaluate` is authorized once ONLY after a new
-development winner is frozen; ifP16 wins/ties, leave120reserved unused. No
-reserved metrics have been read. Full original-source audit also completed:
+Current05:44UTC: C13LOTUS source audit traces149983/149983 structures to
+checksum-verified originalZenodo19360665; originalCC-BY4.0 conflicts mirrorCC0
+claim,so preserve attribution.950retrieved rawkeys differfromofficialidentity.
+LOTUS adds0oracletruths beyond earlierdeep pools on160used queries. One fixed
+joint-top public/v80 agreement recipe also FAILSdevelopment:delta-0.0001199614,
+0improved/3harmed,8insertions,0newtruths. No C13candidate/newtrial selected.
+
+Fresh C13confirmation120 (60positive/60negative) is prepared with strict scan,
+priorpanel/training identity and bounded raw-spectrum exclusions;0detected
+aliases. Query-onlydataset isREADY/private. Actual kernel
+clarkkitchen/casmi26-c13-fresh-mixed-casmi2022-validation v1 isRUNNING;remote
+source/privacy/internet/imagepins verified. Collector2748/4928 islive to15:35:59UTC,
+downloadsonly/neverlabels/metrics/submission. Fresh120predictionmetrics remain
+UNREAD;keys were usedonly for training-exclusion/sourcepanel construction.
+Do not duplicate the private kernel or run a failedC13 confirmation. Read
+docs/C13-C14-2026-11-10.md and actualprocess/status receipts before recovery.
+
+C14CE nowtrains on2070: knownCE masked50%,same C08parents/data/seed/cosineBCE/
+5000successful-updatesperfold schedule as completedC09cosinecontrol. Audit
+shows90.308%trainingCEknown versusallvalidationCEunknown. Separate checkpointed
+CE RNG preserves other drawstreams;3tests pass. ZeroC10/freshC13keyoverlap with
+theentirebasecatalogue. Launcher22772/worker19468,deadline08:43:31UTC;at05:44
+fold0step300,0skips,6.77updates/s,peak1.4121GiB/freeRAM15.36GiB. Verify actual
+handle;do not duplicate/restartcompletedfits. No checkpoint/weightsearch;
+configs/c14-evaluation-20261110.json predeclares0.20tailRRF selection onused160
+beforeanyfresh120metrics. Quality gain unproven;oneglobalpendingP16 remains.
+
+Historical C10 reference evaluator/protocol was prepared and5gate tests pass;
+do not execute it because P16 won/tied reference development. The shared120
+were consumed byC12; a futureC13 needs fresh confirmation identities. Full
+original-source audit also completed:
 all31030 supplemental records match officialMassBank2026.11 commit72980b3,
 including peaks/structures/license/authors/precursors/adducts.0unresolvedissues;
 91missingoptionaldeclaredkeys resolve through originalSMILES/InChI. Parent
@@ -70,7 +100,7 @@ Latest user override at22:07UTC: continue UI/work until verified silver; run an
 hourly worker for24 hours. Active Codex goal and heartbeat
 `casmi-silver-campaign-hourly-for-24-hours` target this chat. Read
 `configs/c09-silver-worker-20261109.json` and current C09 notes before acting.
-Latest04:19UTC10November rank929/5047, score0.480; nominal silver cutoff252
+Latest05:23UTC10November rank934/5048, score0.480; nominal silver cutoff252
 at0.483. Matching a tied cutoff score is insufficient; verify actual rank.
 No paid compute or
 unqualified submission is authorized by the rank target. Continue useful work

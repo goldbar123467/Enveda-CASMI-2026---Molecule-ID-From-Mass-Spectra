@@ -1,6 +1,6 @@
 # C12 deeper candidate pools — 10 November 2026
 
-P16/ref58181280 remains the only pending public submission at05:16UTC. The
+P16/ref58181280 remains the only pending public submission at05:23UTC. The
 additional user-approved trial remains unconsumed. C12 reuses existing private
 full-pipeline query artifacts and unchanged champion weights; it is not another
 training fit. Preserve P16 and the0.480 champion.
@@ -47,12 +47,11 @@ development selection rule. Its interval crosses zero: it does not qualify a
 submission. Selection and source pins froze at05:01UTC; confirmation protocol
 froze at05:08UTC before any reserved prediction metrics were read.
 
-All160 label-blind candidate preparations started05:15UTC (launcher24880,
-worker7724; inspect current processes before assuming they remain live). After
-completion, score the all scope once. Before reading the120 confirmation labels,
-the evaluator verifies all hashes, all160 score support/raw parity, and exact
-equality of the40 development output rows with the frozen development CSV.
-It then seals prediction inputs and opens only the120 reserved metrics.
+All160 label-blind preparation and2070 scoring completed05:23UTC:
+14184candidate rows/13673uniqueSMILES,zero invalid strings or input errors.
+Both models support160queries; raw local/cloud parity maxima2.38419e-6 and
+2.86102e-6. Before reading120 metrics, the evaluator verified source/data hashes,
+support/parity, and exact40dev output equality, then sealed prediction inputs.
 
 The fixed gate requires a positive paired95% lower bound versus both complete
 P01 and P16; input-alias-excluded sensitivity must be nonnegative. The two
@@ -61,11 +60,18 @@ aliases. All missing-truth zeros remain in the denominator. Report P14/P15
 negative controls regardless of their signs. P14's wrong development sign
 relative to its known public regression limits hidden-score calibration.
 
-If the gate fails, reject this frozen recipe. Do not reselect parameters on the
-120 and call them unseen afterward. If it passes, real Kaggle changed-path
-smoke and independent execution/identity/parity/fallback/source review are
-still required; public submission must also wait for actual P16 resolution.
-The evaluator never submits and always records full qualification as false.
+The once-only120 evaluation completed05:23:29UTC and **failed** every gate.
+Complete P01/P16 MRR0.2809014920→C12 0.2808782919,delta-0.0000232001,
+CI[-0.0016050362,0.0017152707],2improved/8harmed. Truths80→80,with2new
+truths and2lost. Alias sensitivity is identical. P14delta+0.0012751 again has
+the wrong sign; P15delta-0.00130585 has the known regression direction but its
+interval crosses0. These control limitations remain in the sealed report.
+
+C12 is rejected, not submitted. No changed-path smoke is warranted for this
+failed recipe. All C12 processes exited; do not restart completed work. The120
+metrics are consumed, cannot be reselected on or called fresh, and any next
+candidate requires independent confirmation data. The extra approval remains
+unconsumed. Latest05:23UTC actual rank934/5048,score0.480; cutoff252/0.483.
 
 Local artifact root: `outputs/local/c12-deep-candidates-20261110/`.
 Compact evidence is under `docs/evidence/c12-2026-11-10/`; raw labels,

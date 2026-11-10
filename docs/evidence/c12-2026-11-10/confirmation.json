@@ -1,0 +1,115 @@
+{
+  "completed_utc": "2026-11-10T05:23:29.622353+00:00",
+  "queries": 120,
+  "candidate": "P16_plus_deep_prefix",
+  "comparisons": {
+    "winner_vs_P01": {
+      "n": 120,
+      "baseline_mrr25": 0.280901492026492,
+      "candidate_mrr25": 0.28087829189731367,
+      "delta": -2.320012917839028e-05,
+      "ci95": [
+        -0.0016050361599953993,
+        0.0017152707271593137
+      ],
+      "improved": 2,
+      "harmed": 8
+    },
+    "winner_vs_P16": {
+      "n": 120,
+      "baseline_mrr25": 0.280901492026492,
+      "candidate_mrr25": 0.28087829189731367,
+      "delta": -2.320012917839028e-05,
+      "ci95": [
+        -0.0016050361599953993,
+        0.0017152707271593137
+      ],
+      "improved": 2,
+      "harmed": 8
+    },
+    "alias_excluded_winner_vs_P01": {
+      "n": 120,
+      "baseline_mrr25": 0.280901492026492,
+      "candidate_mrr25": 0.28087829189731367,
+      "delta": -2.320012917839028e-05,
+      "ci95": [
+        -0.0016050361599953993,
+        0.0017152707271593137
+      ],
+      "improved": 2,
+      "harmed": 8
+    },
+    "alias_excluded_winner_vs_P16": {
+      "n": 120,
+      "baseline_mrr25": 0.280901492026492,
+      "candidate_mrr25": 0.28087829189731367,
+      "delta": -2.320012917839028e-05,
+      "ci95": [
+        -0.0016050361599953993,
+        0.0017152707271593137
+      ],
+      "improved": 2,
+      "harmed": 8
+    }
+  },
+  "statistical_gate": {
+    "passed": false,
+    "failed_comparisons": [
+      "winner_vs_P01",
+      "winner_vs_P16",
+      "alias_excluded_winner_vs_P01",
+      "alias_excluded_winner_vs_P16"
+    ]
+  },
+  "controls": {
+    "P14": {
+      "n": 120,
+      "baseline_mrr25": 0.280901492026492,
+      "candidate_mrr25": 0.2821765880318512,
+      "delta": 0.0012750960053591629,
+      "ci95": [
+        -0.007449245625232467,
+        0.010587435450757817
+      ],
+      "improved": 23,
+      "harmed": 16
+    },
+    "P15": {
+      "n": 120,
+      "baseline_mrr25": 0.280901492026492,
+      "candidate_mrr25": 0.27959564314827473,
+      "delta": -0.001305848878217299,
+      "ci95": [
+        -0.004460808444114365,
+        0.0018517642749550627
+      ],
+      "improved": 13,
+      "harmed": 18
+    }
+  },
+  "detects_known_public_regression": {
+    "P14": false,
+    "P15": true
+  },
+  "negative_control_interpretation": "Control signs are reported without query filtering. Failure to reproduce a public regression limits hidden-score calibration even if incremental support passes.",
+  "truth_coverage": {
+    "P16": 80,
+    "C12": 80,
+    "P01": 80,
+    "P14": 80,
+    "P15": 80
+  },
+  "absent_truths_recovered": 2,
+  "truths_lost": 2,
+  "truth_absent_mrr": 0,
+  "reserved_recipe_reselection": false,
+  "source_alias_views_identical": true,
+  "full_scope_development_output_exact": true,
+  "selection_freeze_sha256": "4a58b25de4f1ce9515fa202f9e67a97703d551f33e2ceee691ea742cbfdaf38e",
+  "protocol_sha256": "15a67bd3c039cb2ff6196926e61eaaf95ce7dd41e3ce0dd09e6988e849088348",
+  "input_freeze_sha256": "adeb848c528c342f6c2fc6beac091ba0dcda4c758a0350efb40aa61b1b91a03d",
+  "automatic_submission": false,
+  "submission_qualified": false,
+  "next_action": "Proceed toward real Kaggle smoke/independent review only if the statistical gate passes. No public trial while P16 remains pending. Otherwise reject this frozen recipe.",
+  "limitation": "External positive-only CASMI2022/unknownCE shift, incomplete parent reference provenance and possible historical foundation exposure; statistical support is not a hidden-score guarantee."
+}

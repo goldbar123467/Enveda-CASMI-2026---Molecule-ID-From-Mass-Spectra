@@ -1,0 +1,45 @@
+{
+  "run_id": "C14CE",
+  "kind": "compatible_scorer",
+  "output": "outputs/local/c14-ce-mask-20261110",
+  "parent_output": "outputs/local/long-compatible-20261108",
+  "parent_arm": "legacy16-hard",
+  "raw_training": "outputs/competition-raw/train.parquet",
+  "base_cache": "outputs/local/n0/cache",
+  "split_groups": "outputs/local/long-20261106/spectrum_groups.npz",
+  "cache": "outputs/local/precision-cache-20261108",
+  "views_per_identity": 8,
+  "folds": [
+    0,
+    1
+  ],
+  "arms": [
+    {
+      "name": "ce-mask",
+      "cache_precision": "float16",
+      "hard_negatives": 48,
+      "negative_pool": 512
+    }
+  ],
+  "maximum_hours": 3,
+  "minimum_free_ram_gib": 4,
+  "gpu_memory_fraction": 0.7,
+  "training": {
+    "steps": 5000,
+    "lr": 2e-05,
+    "warmup_steps": 100,
+    "checkpoint_interval": 100,
+    "batch_size": 384,
+    "hard_negatives": 48,
+    "negative_pool": 512,
+    "seed": 202611090
+  },
+  "objective": "Matched C09CT cosine continuation with only known collision energy masked at50%; separate augmentation RNG preserves data/negative/global Torch draw streams. Exact same C08 parents,seed,schedule,batch,microbatch.",
+  "automatic_submission": false,
+  "augmentation": {
+    "mask_known_ce_probability": 0.5,
+    "rng_seed_offset": 140000,
+    "separate_checkpointed_rng": true
+  },
+  "evaluation": "Only used C10/C12 development160 for recipe selection; new C13 mixed120 confirmation stays unread until a positive-CI winner is frozen. Preserve champion; no automatic submission."
+}

@@ -1,7 +1,7 @@
 # C09 results and P16 scoring trial — 9–10 November
 
 Active user goal: verified silver leaderboard position, with24 hourly worker
-wake-ups in this chat. Latest04:19UTC10November rank929/5047 at0.480; nominal
+wake-ups in this chat. Latest05:23UTC10November rank934/5048 at0.480; nominal
 silver rank252 at0.483. Verify actual rank after scoring, not a tied score alone.
 Preserve all C09 qualification and one-pending rules.
 
@@ -11,8 +11,9 @@ on160 fresh CASMI2022 queries,40 development/120 reserved, after identity and
 bounded raw-spectrum exclusions. Labels stay local and the notebook computes
 no label metrics. See `docs/C10-CASMI2022-2026-11-10.md`; select/freeze using
 only40dev before reading120reserved. Local40dev nowtiesallfourreference
-recipes atMRR0.2722727273,20/40truths;P16winsfixedtie,no newcandidate/no120
-evaluation ortrial. P14delta+0.006126CIcrosses0/failsknownpublicregression;
+recipes atMRR0.2722727273,20/40truths;P16winsfixedtie,no newreference candidate
+ortrial. The shared120 were subsequently consumed once byC12 at05:23UTC.
+P14delta+0.006126CIcrosses0/failsknownpublicregression;
 P15delta-0.000187,0improved2harmed. Both localworkerscompleted/exited.
 
 Prospective C10 reference preparation/search isCOMPLETE before label metrics:
@@ -20,7 +21,8 @@ Prospective C10 reference preparation/search isCOMPLETE before label metrics:
 keys,zero bounded input aliases on160 queries,exact parentP16 match parity.
 Four fixed parent/expanded/adduct recipes use unchanged thresholds; P16 wins
 ties. The completed160-query inference/2070control and40dev evaluation found
-no newreference gain;the120reserved metrics remainunread.
+no newreference gain. The120 have now been consumed byC12; future recipes
+require a new confirmation panel and must not rebrand those metrics as unseen.
 Mixed compilation terms/attribution remain explicit; no new reference deployment.
 
 Independent original-source audit now verifies all31,030 supplemental records
@@ -28,7 +30,8 @@ against pinned officialMassBank2026.11: exact retained peaks and consistent
 structures/licenses/authors/adducts/precursors,zero unresolved issues. This
 resolves olderMarch-source omissions/metadata differences, not model quality.
 The prospective reserved120 evaluator is prepared/source-pinned before any
-development result, with five statistical gate tests; no reserved metrics read.
+development result, with five statistical gate tests; it was not executed for
+the neutral reference recipes. The laterC12 reserved evaluation is now complete.
 
 Training feasibility C11F distinguishes lookup coverage from fresh training:
 only58 supplemental rawkeys are absentrawtrain (57afterpanel exclusions,upper
@@ -45,9 +48,31 @@ unchanged P01pair/officialdedup covers3713dev candidates,40queries,zero errors;
 raw local/cloud scores agree within2.39e-6. One frozen .20RRF/max3insertion
 recipe gives delta+0.0013075,CI[-0.0004891,0.0044118],1improved/1harmed and
 truths20→21. Positive-point/new-truth selection permits the prospective120check,
-not a public trial. Confirmation protocol froze05:08UTC; all160 preparation is
-live. Require exact40dev output parity and positive120CI lowerbound against
-both completeP01/P16; no reserved reselection. See currentC12notes/evidence.
+not a public trial. Confirmation protocol froze05:08UTC. Full160 preparation/
+2070scoring completed05:23UTC (14184candidates,0errors); exact40dev output
+parity passed before120metrics. Confirmation REJECTS C12:delta-0.0000232001,
+CI[-0.00160504,0.00171527],2improved/8harmed,truths80→80 (2recovered/2lost).
+No smoke/publictrial;do not reselect on the consumed120. See C12notes/evidence.
+
+C13 source/used-development investigation is COMPLETE:149983LOTUS structures
+traceexactlytooriginalCC-BY4.0data,despitemirrorCC0claim;preserveattributionand
+officialdedup (950raw/metric-keydifferences inretrievedstructures). All160used
+oraclecoverage119/160witholddeeppools stays119afterLOTUS. Fixedboth-model-top
+outsiderrecipefails:delta-0.00011996,0improved/3harmed,0newtruths. No trial.
+
+Fresh120mixedCASMI2022 (60positive/60negative) haszero detected boundedraw
+overlap andno priorpanel/trainingidentityoverlap. Query-onlyprivateC13v1 is
+RUNNING withsource/privacy/imagepins verified;collector2748/4928 downloads
+predictions only. Fresh120metrics remainunread;do not evaluatefailedC13.
+
+C14CE starts05:43UTC:training90.308%CEknown versusallvalidationCEunknown
+motivates50%knownCE masking. ExactmatchedC09control parents/data/seed/objective/
+5000updatesperfold/micro192,supplementedonlybyseparatecheckpointedCE RNG.
+Threeaugmentationtests pass andobjectiveupdateAST/config/parentaudits match.
+At05:44 step300fold0,0skips,6.77updates/s,peak1.4121GiB/freeRAM15.36GiB;
+trainer22772/19468deadline08:43UTC. Evaluateonlyfinalfits usingpredeclared.20
+tailRRF onused160;positiveCI vsP01/P16 andnonnegativepointvsmatchedcontrol
+beforefresh120confirmation. No qualityclaim/newpublicsubmission. See C13/C14notes.
 
 Public refresh C11PUB:247catalogue entries/five sources,fourunchanged. New
 peaks-v2 dual-polarity massguard/threshold edits are untested here and exact

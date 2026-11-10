@@ -1,0 +1,22 @@
+{
+  "campaign": "C13",
+  "notebook_sha256": "270a4b1d262cce1b3fe41696c2805b32729d07732adf7db30bb79d7889d7ecfa",
+  "validation_contract_sha256": "8ef3d0600cf0dc1ca2e8f2edbe664adffc84e80e75a9e972ea50f5fdaf9554c7",
+  "builder_sha256": "7eae18f1049ccd2efccb028fed20ce34d4be81e18f14d2311c48b730a5b3da91",
+  "template_notebook_sha256": "98a304613ba2e38a9814465e8632ddfd7bca7cc2df4af63c98b0ca09e182ca48",
+  "changed_cells": [
+    0,
+    6,
+    27
+  ],
+  "unchanged_scientific_cells_source_exact": true,
+  "queries": 120,
+  "local_confirmation": 120,
+  "query_labels_mounted": false,
+  "metrics_computed": false,
+  "recipe_selection": false,
+  "private": true,
+  "internet": false,
+  "scoring_submission": false,
+  "limitation": "Unlabelled full-pipeline inference only; actual allocation/source/privacy must be checked after push. No inference result may be called validation gain before a frozen recipe and prospective local evaluation."
+}

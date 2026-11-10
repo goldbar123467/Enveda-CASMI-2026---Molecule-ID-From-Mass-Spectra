@@ -1,0 +1,19 @@
+{
+  "checked_utc": "2026-11-10T05:43:29.015739+00:00",
+  "scope": "All base catalogue identities, before narrower eligible fold filtering",
+  "panels": [
+    {
+      "panel": "outputs\\local\\c10-casmi2022-20261110\\labels.csv",
+      "identity_overlap_with_entire_base_catalogue": 0,
+      "labels_sha256": "f1d3b96f002827d2c9ddd1e61f0fe4e97551a27859da8c74d248588893515c6a"
+    },
+    {
+      "panel": "outputs\\local\\c13-confirmation-20261110\\labels.csv",
+      "identity_overlap_with_entire_base_catalogue": 0,
+      "labels_sha256": "c74a4d91eb1c9fd65855e2804036ab80238732e01e07c1da4ed9229ae152376d"
+    }
+  ],
+  "identity_keys_read_only_for_training_exclusion": true,
+  "prediction_metrics_read": false,
+  "future_C13_prediction_metrics_read": false
+}

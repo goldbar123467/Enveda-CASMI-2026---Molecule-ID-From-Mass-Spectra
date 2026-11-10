@@ -1,0 +1,87 @@
+{
+  "completed_utc": "2026-11-10T05:40:17.685694+00:00",
+  "queries": 160,
+  "candidate": "P16_plus_joint_top_LOTUS",
+  "all_development_previously_used": true,
+  "comparisons": {
+    "P01": {
+      "n": 160,
+      "baseline_mrr25": 0.27874430083805085,
+      "candidate_mrr25": 0.27862433947631315,
+      "delta": -0.0001199613617376776,
+      "ci95": [
+        -0.00032672827903091077,
+        0.0
+      ],
+      "improved": 0,
+      "harmed": 3
+    },
+    "P16": {
+      "n": 160,
+      "baseline_mrr25": 0.27874430083805085,
+      "candidate_mrr25": 0.27862433947631315,
+      "delta": -0.0001199613617376776,
+      "ci95": [
+        -0.00032672827903091077,
+        0.0
+      ],
+      "improved": 0,
+      "harmed": 3
+    }
+  },
+  "truth_coverage": {
+    "P16": 100,
+    "C13": 100,
+    "P01": 100,
+    "P14": 100,
+    "P15": 100
+  },
+  "absent_truths_recovered": 0,
+  "truths_lost": 0,
+  "actions": {
+    "model_disagreement": 117,
+    "top_is_parent": 33,
+    "joint_top_lotus_inserted": 8,
+    "protected_library": 2
+  },
+  "new_candidate_selected": false,
+  "controls": {
+    "P14": {
+      "n": 160,
+      "baseline_mrr25": 0.27874430083805085,
+      "candidate_mrr25": 0.2812322217256428,
+      "delta": 0.00248792088759194,
+      "ci95": [
+        -0.0049185683194729254,
+        0.01039204388447809
+      ],
+      "improved": 27,
+      "harmed": 17
+    },
+    "P15": {
+      "n": 160,
+      "baseline_mrr25": 0.27874430083805085,
+      "candidate_mrr25": 0.27771823023467757,
+      "delta": -0.0010260706033732349,
+      "ci95": [
+        -0.003464726088513095,
+        0.0013434949872861055
+      ],
+      "improved": 13,
+      "harmed": 20
+    }
+  },
+  "detects_known_public_regression": {
+    "P14": false,
+    "P15": true
+  },
+  "negative_control_interpretation": "P14/P15 signs are retained without filtering; failure to reproduce an actual regression limits source/CE-shift calibration. The modelpair shares its training family; agreement is not independent evidence.",
+  "config_sha256": "a66eae91325c9d26693b0115eb7a0b0fe1d2c9d34cff519d284aaee9bdcb2105",
+  "source_contract_sha256": "2798d34843b49c687c1d862162787df99c080f8ef9843fdc65202a304daf2af5",
+  "protocol_sha256": "3a56e42a7db67eb1342fd197e259571b685d775e7939628bb4594982bcf16a5d",
+  "truth_absent_mrr": 0,
+  "fresh_C13_prediction_metrics_read": false,
+  "automatic_submission": false,
+  "submission_qualified": false,
+  "limitation": "Development only. If selected, freeze and evaluate fresh120 once under a prospective protocol, then require real Kaggle changed-path smoke/independent source/identity/parity/fallback audits and actual P16 resolution."
+}

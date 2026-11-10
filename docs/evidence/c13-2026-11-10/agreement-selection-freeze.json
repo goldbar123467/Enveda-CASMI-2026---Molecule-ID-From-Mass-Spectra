@@ -1,0 +1,12 @@
+{
+  "frozen_utc": "2026-11-10T05:40:17.703451+00:00",
+  "selected_candidate": "P16",
+  "new_candidate_selected": false,
+  "evaluator_sha256": "09229a0cf021647dd5720a8c8fb6519ee04f1559f207c8ed356bdc9a585667ef",
+  "development_report_sha256": "1d2b8a0b5bf428ec8ca62605d7157adf50bdcc00c9f5b52b30214ac4be94448c",
+  "config_sha256": "a66eae91325c9d26693b0115eb7a0b0fe1d2c9d34cff519d284aaee9bdcb2105",
+  "source_contract_sha256": "2798d34843b49c687c1d862162787df99c080f8ef9843fdc65202a304daf2af5",
+  "fresh_C13_prediction_metrics_read": false,
+  "automatic_submission": false,
+  "next_action": "Prepare prospective fresh120 evaluation only if selected. Otherwise reject this recipe and preserve fresh120; never submit a development failure."
+}

@@ -1,0 +1,27 @@
+{
+  "checked_utc": "2026-11-10T05:46:57.483745+00:00",
+  "matched_config_fields": [
+    "parent_output",
+    "parent_arm",
+    "raw_training",
+    "base_cache",
+    "split_groups",
+    "cache",
+    "views_per_identity",
+    "folds",
+    "maximum_hours",
+    "minimum_free_ram_gib",
+    "gpu_memory_fraction",
+    "training"
+  ],
+  "identical_objective_update_AST": true,
+  "parent_sha256": {
+    "0": "5f794e6ee6b043d04c7fb2e861358d05afea7456e070c090a3be189bf69eafd2",
+    "1": "c8f91847b79cc9e042add949b2de5289de98174a82a3ce41ed5043be7574882f"
+  },
+  "sole_training_change": "KnownCEvalue+knownflag masked at50% using separate checkpointed RNG",
+  "control_model_group": "cosine-control",
+  "control_manifest_sha256": "a9ea0fb37734f4b574edbf99917bb8b49029ad6d2522b7af8af6b4581bfc0525",
+  "training_data_negative_global_RNG_streams": "Preserved by independent CE RNG; AMP skip differences, if any, must be disclosed",
+  "prediction_metrics_read": false
+}

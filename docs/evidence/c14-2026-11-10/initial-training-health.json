@@ -1,0 +1,23 @@
+{
+  "updated_utc": "2026-11-10T05:49:24.840677+00:00",
+  "pid": 19468,
+  "deadline_utc": "2026-11-10T08:43:31.792907+00:00",
+  "state": "training",
+  "stage": "C14 matched cosine continuation control",
+  "arm": "ce-mask",
+  "fold": 0,
+  "step": 2350,
+  "loss": 2.073901141881943,
+  "augmentation_counts": {
+    "eligible": 766568,
+    "masked": 382842,
+    "unknown_before": 135832
+  },
+  "resources": {
+    "gpu_peak_reserved_gib": 1.412109375,
+    "micro_batch": 192,
+    "amp_skips": 0,
+    "updates_per_second": 6.673715890321216,
+    "free_ram_gib": 14.030097961425781
+  }
+}

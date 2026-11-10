@@ -1,0 +1,20 @@
+{
+  "checked_utc": "2026-11-10T05:48:18.505553+00:00",
+  "query_sha256": "d27999b569708beea4116e78200e09b02071e456d66a7a2ba082900bd1a6cd78",
+  "prior_query_sha256": {
+    "outputs\\publish\\c08-validation-20261108\\validation-queries.parquet": "c1f37ef0940a8a69bcfc7553c2291ad7f6ad7beb17b32e8fd049e88e51012ff4",
+    "outputs\\publish\\c09-validation-20261109\\validation-queries.parquet": "1dd6455b731e21656bdcf9e7bbb23dc320b7151612427e03b3c09c455e0a31f6",
+    "outputs\\publish\\c10-casmi2022-20261110\\validation-queries.parquet": "bf87d0947cb55c58c35c5d50d7a9a331095872f3503bf256ca264f6fb8901765"
+  },
+  "cross_prior_panel_signature_aliases": 0,
+  "recognized_adducts_checked": 120,
+  "unrecognized_adducts": 0,
+  "precursor_source_mass_inconsistent": 0,
+  "maximum_mass_error_ppm": 6.339664336850778,
+  "prediction_files_read": false,
+  "performance_metrics_computed": false,
+  "truth_masses_read_only_for_source_integrity": true,
+  "panel_mutated": false,
+  "qualified_source_input_audit": true,
+  "limitation": "Bounded signatures/source metadata consistency, not universal acquisition or historical-pretraining exclusion."
+}

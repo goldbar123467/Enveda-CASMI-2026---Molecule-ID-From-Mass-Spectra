@@ -1,0 +1,50 @@
+{
+  "prepared_utc": "2026-11-10T05:29:44.892459+00:00",
+  "version": 1,
+  "queries": 120,
+  "spectra": 120,
+  "development": 0,
+  "confirmation": 120,
+  "modes": {
+    "positive": 60,
+    "negative": 60
+  },
+  "source_doi": "10.5281/zenodo.8371051",
+  "declared_license": "CC-BY-4.0",
+  "preparation_protocol_sha256": "baad58627fdbec0064fe2fc011c59e655ff7fdb29b965ac42cd7326b74022dc0",
+  "inventory_sha256": "86b36db99cf09a0acd9aab1f89c720d4b16f8eeb72261037a7b7f1ee959aeb9a",
+  "scan_audit_sha256": "371fb9b1de441f864786273a122c0cd854a30c36e5504b6893f7853a0997f659",
+  "raw_training_sha256": "9423f90ec08b941a9646b535bf0606183e86ff0c5a297978f5a70693d41bcd98",
+  "labels_sha256": "c74a4d91eb1c9fd65855e2804036ab80238732e01e07c1da4ed9229ae152376d",
+  "partitions_sha256": "4d2252c90b8677092402bdf7bc285ec040a6a7e22ff1c7d97ca55bf91ec1bfa6",
+  "parameters": {
+    "positive": 60,
+    "negative": 60,
+    "excluded_known_errors": [
+      81,
+      282,
+      432,
+      476
+    ],
+    "mass_assignment_da": 0.005,
+    "rt_assignment_minutes": 0.1,
+    "minimum_peaks": 3,
+    "selection": "Maximum finite positive TIC; deterministic RT/mass/name tie order; no unmatched fallback",
+    "draw_salt": "C13-CASMI2022-fresh-mixed-v1:",
+    "raw_signature_window": "20ppm +.003Da",
+    "collision_energy": "Unknown NaN; not imputed",
+    "stratification": "60positive/60negative after exclusions; fail if insufficient"
+  },
+  "source_structures_used_only_for_exclusions": true,
+  "prediction_metrics_computed": false,
+  "query_labels_visible_to_pipeline": false,
+  "truth_injection": false,
+  "truth_absent_mrr": 0,
+  "recipe_selected": false,
+  "automatic_submission": false,
+  "files": {
+    "validation-queries.parquet": "d27999b569708beea4116e78200e09b02071e456d66a7a2ba082900bd1a6cd78",
+    "validation-sample.csv": "cba99cb105ba784232fcad8d51ab0951c26c5aa52d8281ec38d2a6485a53d39b"
+  },
+  "limitation": "External CASMI2022,FT/HCD source metadata,unknownCE,one maximum-TIC MS2 per identity. Balanced strata are a new source mixture; no universal historical-pretraining exclusion or hidden-score calibration guarantee."
+}

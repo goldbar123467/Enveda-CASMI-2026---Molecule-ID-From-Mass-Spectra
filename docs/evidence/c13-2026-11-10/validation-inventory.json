@@ -1,0 +1,29 @@
+{
+  "completed_utc": "2026-11-10T05:25:10.156801+00:00",
+  "auditor_sha256": "69d5a72a201773a4972bde8482ebf16d3d2788e5cb76be2483aa2e4487663fcc",
+  "source_sha256": "febe375faf786ab65950c50ec8f0c4ee8ea9c8ce6ff10b4cd68f25fcd5ce1e31",
+  "raw_training_sha256": "9423f90ec08b941a9646b535bf0606183e86ff0c5a297978f5a70693d41bcd98",
+  "prior_label_sha256": {
+    "outputs\\publish\\c08-validation-20261108\\labels.csv": "5c2b3b269bef779d6364dcebd0edf900f7663cfa13ba18c6cb382c8c2020e820",
+    "outputs\\publish\\c09-validation-20261109\\labels.csv": "86f54a9ca39dbf6353eef237a35406f1f8203f0ea5f0bc71fd1f3f420b5c4d4e",
+    "outputs\\local\\c10-casmi2022-20261110\\labels.csv": "f1d3b96f002827d2c9ddd1e61f0fe4e97551a27859da8c74d248588893515c6a"
+  },
+  "counts": {
+    "source_rows": 500,
+    "known_error_or_previous_challenge": 164,
+    "raw_identity_excluded": 104
+  },
+  "unique_eligible_before_scan_and_raw_signature_audit": 231,
+  "mode_counts": {
+    "negative": 170,
+    "positive": 61
+  },
+  "prospective_design": "60positive/60negative confirmation identities, deterministic hash draw after strict scan/identity/raw-signature exclusions; fail if either stratum is too small.",
+  "minimum_counts_sufficient": true,
+  "inventory_sha256": "ecdb7ce02b39fb694f29d3b57e11d4474a8f62f56966e3e289385032c8a0ac15",
+  "identity_keys_used_only_for_exclusion": true,
+  "prediction_files_read": false,
+  "query_metrics_computed": false,
+  "qualified_panel": false,
+  "limitation": "Upper-bound metadata inventory only; scan quality, source assignment and spectrum overlap still require validation. C10/C12 reserved metrics have been consumed and cannot be reused as fresh confirmation."
+}

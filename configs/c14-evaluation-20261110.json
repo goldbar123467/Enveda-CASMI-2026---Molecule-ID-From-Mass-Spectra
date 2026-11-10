@@ -1,0 +1,16 @@
+{
+  "campaign": "C14CE",
+  "candidate": "Final5000-update CE-mask continuation from each of the two fixed C08 parents; no intermediate checkpoint selection",
+  "matched_control": "Existing C09 cosine-control, same parents/data/seed/objective/schedule/logicalbatch384/microbatch192; CE masking alone differs",
+  "inference": "Two-fold ensemble, mean of per-query standardized raw scores, exact existing compatible features and model architecture",
+  "parent": "Complete unchanged P01 plus fixed P16 measured-reference overlay",
+  "fusion": "Final25 candidates only, tail-only RRF with0.20weight and offset3; rank1 and candidate identities preserved exactly",
+  "development": "Already-used C10/C12 all160, one fixed recipe; never use fresh C13 prediction metrics for selection",
+  "selection": "Positive paired95% lowerbound versus both completeP01/P16, nonnegative mean versus matched C09 control; no parameter search",
+  "confirmation": "After selection freeze, fresh C13 mixed120 once: positive95% lowerbound versus completeP01/P16, nonnegative polarity means and alias sensitivity; disclose matchedcontrol/P14/P15 signs and uncertainty",
+  "truth_absent_mrr": 0,
+  "submission_requires": "Real Kaggle changed-path smoke and independent source/model/identity/fallback/rawscore/fusion audits; actual P16 result resolved; one global pending submission",
+  "champion_retained": 0.480,
+  "automatic_submission": false,
+  "paid_compute": false
+}

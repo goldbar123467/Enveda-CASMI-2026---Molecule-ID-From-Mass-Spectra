@@ -1,0 +1,19 @@
+{
+  "completed_utc": "2026-11-10T05:23:05.680943+00:00",
+  "scope": "all",
+  "queries": 160,
+  "candidates": 14184,
+  "unique_smiles": 13673,
+  "invalid_extra_strings": 0,
+  "source_contract_sha256": "e4f9208dbd1decfede25290f3ed47e1bcd4e347c77e396982ab25a8be70a8be5",
+  "files": {
+    "pool.parquet": "399e8a916f6853b2e3139837bcee7c213be56a9315041338258ee3259b0a8651",
+    "parent.csv": "e56ec5755beb254a99ca8c385dbeee3217f77e3db4d6e308663353c08766a8e9",
+    "queries.parquet": "5c6735cc6e16783a76861c2d1e391d842b1e5fd72104c45653c64f96455b8cf0",
+    "fingerprints.npy": "71c5771c2aa3178fb994b448cb36a640af005f65768437fabbc94e5bba533489",
+    "fingerprint-smiles.parquet": "9d65c4f7645ca91b3e83cd37df83db023ea75f335f0dced900daf15012d45975"
+  },
+  "query_labels_read": false,
+  "prediction_metrics_computed": false,
+  "automatic_submission": false
+}

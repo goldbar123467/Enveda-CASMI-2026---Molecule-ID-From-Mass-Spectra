@@ -1,0 +1,75 @@
+{
+  "completed_utc": "2026-11-10T05:33:55.971194+00:00",
+  "development_queries": 160,
+  "all_development_previously_used": true,
+  "coverage": {
+    "parent": {
+      "queries": 160,
+      "truth_present": 100,
+      "absent_parent_truths_recoverable": 0,
+      "median_candidates": 25.0,
+      "maximum_candidates": 25
+    },
+    "old_deep_pool": {
+      "queries": 160,
+      "truth_present": 119,
+      "absent_parent_truths_recoverable": 19,
+      "median_candidates": 96.0,
+      "maximum_candidates": 123
+    },
+    "lotus_all": {
+      "queries": 160,
+      "truth_present": 50,
+      "absent_parent_truths_recoverable": 11,
+      "median_candidates": 36.0,
+      "maximum_candidates": 451
+    },
+    "lotus_cap128": {
+      "queries": 160,
+      "truth_present": 46,
+      "absent_parent_truths_recoverable": 8,
+      "median_candidates": 36.0,
+      "maximum_candidates": 128
+    },
+    "parent_plus_lotus_all": {
+      "queries": 160,
+      "truth_present": 111,
+      "absent_parent_truths_recoverable": 11,
+      "median_candidates": 50.0,
+      "maximum_candidates": 459
+    },
+    "deep_plus_lotus_all": {
+      "queries": 160,
+      "truth_present": 119,
+      "absent_parent_truths_recoverable": 19,
+      "median_candidates": 107.5,
+      "maximum_candidates": 504
+    },
+    "parent_plus_lotus_cap128": {
+      "queries": 160,
+      "truth_present": 108,
+      "absent_parent_truths_recoverable": 8,
+      "median_candidates": 50.0,
+      "maximum_candidates": 151
+    },
+    "deep_plus_lotus_cap128": {
+      "queries": 160,
+      "truth_present": 119,
+      "absent_parent_truths_recoverable": 19,
+      "median_candidates": 107.5,
+      "maximum_candidates": 233
+    }
+  },
+  "retrieved_rows": 11118,
+  "unique_smiles": 9005,
+  "counts": {},
+  "official_key_differs_from_mirror_raw_key": 950,
+  "retrieval_freeze_sha256": "d6d91ecc04ca7b62d15097c136991d367dc136df5c28b8c778253395e9c371fd",
+  "original_license": "CC-BY-4.0",
+  "attribution_retained": true,
+  "fresh_C13_labels_read": false,
+  "model_scores_computed": false,
+  "recipe_selected": false,
+  "submission_qualified": false,
+  "limitation": "Oracle presence on already-used positive-only development, not attainable rank/MRR or independent confirmation. A new recipe must freeze before fresh C13 metrics."
+}

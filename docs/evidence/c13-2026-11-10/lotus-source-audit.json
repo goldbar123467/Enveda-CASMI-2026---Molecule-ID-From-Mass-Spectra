@@ -1,0 +1,41 @@
+{
+  "completed_utc": "2026-11-10T05:24:05.431884+00:00",
+  "mirror_rows": 149983,
+  "traced_mirror_rows": 149983,
+  "unresolved_mirror_rows": 0,
+  "unique_original_smiles": 154006,
+  "counts": {
+    "traceable_original_rows": 698595,
+    "original_rows": 709740
+  },
+  "protocol_sha256": "1b5d74340c6b96fcdc360ad4e17ef188bf8537b9234c192d902f21fc86147fda",
+  "attribution_sha256": "cd7416360ba72ab959774df25c24a6b153ee952d0f517d3d64479a6a9ae5b027",
+  "unresolved_sha256": "5865355d47a9b17b0dbb13f8d4cf3430530d488192cf078bd881d62020adf0f8",
+  "original_license": "CC-BY-4.0",
+  "mirror_declared_license": "CC0-1.0",
+  "license_claim_conflict": true,
+  "original_citation": [
+    {
+      "name": "Rutz, Adriano",
+      "affiliation": "Institute for Molecular Systems Biology",
+      "orcid": "0000-0003-0443-9902"
+    },
+    {
+      "name": "Bisson, Jonathan",
+      "affiliation": "Collaborative Drug Discovery (United States)",
+      "orcid": "0000-0003-1640-9989"
+    },
+    {
+      "name": "Allard, Pierre-Marie",
+      "affiliation": "University of Fribourg",
+      "orcid": "0000-0003-3389-2191"
+    }
+  ],
+  "identity_caveat": "Mirror raw connectivity keys do not implement official tautomer canonicalization; compute official metric identities before candidate deduplication.",
+  "query_data_read": false,
+  "query_labels_read": false,
+  "prediction_metrics_computed": false,
+  "candidate_recipe_selected": false,
+  "uploaded": false,
+  "limitation": "Exact traced structural provenance and original license metadata only. No chemical truth, training novelty, model gain or hidden-score claim. Unresolved structures are not silently adopted."
+}

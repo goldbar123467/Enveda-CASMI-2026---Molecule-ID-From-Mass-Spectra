@@ -1,0 +1,16 @@
+{
+  "frozen_utc": "2026-11-10T05:23:29.542836+00:00",
+  "protocol_sha256": "15a67bd3c039cb2ff6196926e61eaaf95ce7dd41e3ce0dd09e6988e849088348",
+  "exact_development_output_parity": true,
+  "source_alias_views_identical": true,
+  "reserved_prediction_metrics_read": false,
+  "input_sha256": {
+    "outputs/local/c12-deep-candidates-20261110/all/scores.parquet": "f2109e8baf1de8657dad3568df97e988bfc28d7601267c093e98ca19b48baae6",
+    "outputs/local/c12-deep-candidates-20261110/all/parent.csv": "e56ec5755beb254a99ca8c385dbeee3217f77e3db4d6e308663353c08766a8e9",
+    "outputs/local/c12-deep-candidates-20261110/all/scoring-receipt.json": "a07ff2da732b5f8f29ea461e5c1124279ee6542bec6aa076e1378ab0e94f3084",
+    "outputs/forks/c10-casmi2022-validation-v1/c10_p01.csv": "27730ce2e2d3a3b51529216d29319cf857bf69bb01449b37a30795b51badf7ff",
+    "outputs/forks/c10-casmi2022-validation-v1/c10_p14.csv": "6c15e28b294c88a7ef2b0fe6f1337c56e91515578f29fed15e3efdd6481a674f",
+    "outputs/local/c10-candidates-20261110/p15-control.csv": "905fd37787bcf531210fcd18e88f41df474d159ec2817f479961884f89fb5ed9",
+    "outputs/local/c10-candidates-20261110/matches.parquet": "573effe14b698dc612c28bea96c36dff4ee773b2eee6d9093d67355b5fe757e6"
+  }
+}

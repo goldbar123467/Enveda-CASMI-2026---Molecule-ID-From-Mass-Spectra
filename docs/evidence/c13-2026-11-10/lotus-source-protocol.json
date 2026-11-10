@@ -1,0 +1,12 @@
+{
+  "prepared_utc": "2026-11-10T05:21:49.135837+00:00",
+  "auditor_sha256": "4b6bddbea00951caa5936f709b6e28b569c18f5e7f99060f6c6bf8310921dcff",
+  "mirror_sha256": "7684b51f72a2d4c073a8d2435fff14cce0a0e7364ac7904101b8f93990f0ac2f",
+  "original_sha256": "09885dcfb3bc0e6d700fefcd5778e91446a1f9d5d2fbbcbf00eb5d2e83b68844",
+  "metadata_sha256": "7f65a03015d819617143c1e12523021ebb0d4c771f8f8c2c95a3bc2ba5842056",
+  "original_license": "CC-BY-4.0",
+  "mirror_declared_license": "CC0-1.0",
+  "query_data_read": false,
+  "prediction_metrics_computed": false,
+  "method": "Independent RDKit largest-fragment/uncharger/stereo removal; exact cleaned SMILES lookup, then raw key/formula/mass comparison. Untraced rows remain unresolved; do not guess."
+}

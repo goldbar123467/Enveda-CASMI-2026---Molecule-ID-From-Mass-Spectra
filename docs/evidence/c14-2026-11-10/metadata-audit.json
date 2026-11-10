@@ -1,0 +1,24 @@
+{
+  "checked_utc": "2026-11-10T05:41:14.571946+00:00",
+  "metadata_shape": [
+    1504015,
+    4
+  ],
+  "usable_views": 1504015,
+  "known_ce_fraction": 0.9030800889618787,
+  "unknown_ce_fraction": 0.0969199110381213,
+  "polarity": {
+    "-1.0": {
+      "views": 355604,
+      "known_ce_fraction": 0.9145931991766122
+    },
+    "1.0": {
+      "views": 1148411,
+      "known_ce_fraction": 0.8995150690824104
+    }
+  },
+  "metadata_sha256": "fc50613e204b4713952e1e1777bf676b717e57138592caeefc0c5c89b119829c",
+  "prediction_files_read": false,
+  "labels_read": false,
+  "training_launched": false
+}
