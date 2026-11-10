@@ -1,0 +1,21 @@
+{
+  "completed_utc": "2026-11-10T08:07:34.273908+00:00",
+  "counts": {
+    "no_matching_scan": 1
+  },
+  "scans_read": 33551,
+  "eligible_after_scan_and_raw_audit": {
+    "negative": 109
+  },
+  "raw_audit": {
+    "raw_rows": 2539608,
+    "candidate_rows": 49616,
+    "checked_rows": 49616,
+    "reference_overlap_queries": 0,
+    "cross_identity_query_aliases": 0,
+    "match_records": 0,
+    "labels_used": false,
+    "limitation": "Bounded rounded/full and FP16top96 signatures; not universal historical-pretraining or near-duplicate exclusion"
+  },
+  "prediction_metrics_read": false
+}

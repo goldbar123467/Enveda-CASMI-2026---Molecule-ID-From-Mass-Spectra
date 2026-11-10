@@ -1,0 +1,12 @@
+{
+  "started_utc": "2026-11-10T08:14:30.376442+00:00",
+  "kernel": "clarkkitchen/casmi26-c20-negative-casmi2022-development",
+  "notebook_sha256": "b46df73b9a897d0c68c04931afbfaa4ef44561aca66f0aaf8c8a828db4127871",
+  "metadata_sha256": "835aef55d44ed01f699bdb95c8d0de4f96594e459ea50a0c9b271b49742e2883",
+  "private": true,
+  "query_labels_mounted": false,
+  "development_only": true,
+  "confirmation": false,
+  "scoring_submission": false,
+  "automatic_submission": false
+}

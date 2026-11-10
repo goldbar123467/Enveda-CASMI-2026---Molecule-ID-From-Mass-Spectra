@@ -1,0 +1,14 @@
+{
+  "started_utc": "2026-11-10T08:11:26.144610+00:00",
+  "dataset": "clarkkitchen/casmi26-c20-negative-casmi2022-20261110",
+  "files_sha256": {
+    "dataset-metadata.json": "fa88fe4ac372093719d47e75b6832a52cb98d07ab1047b76e1f0ce5e4e2a7297",
+    "README.md": "da08b70ed05289a275fe91c06a03351d1afb341ac43e059ce25060628a069203",
+    "validation-contract.json": "7f9a0c51de6a7613cb4a708d39608ca9429af182e3f8ae7c18b271ecbd93f14e",
+    "validation-queries.parquet": "ac19fdc6ec2500237dff5d11758820d2926a0e359c99136d32907a51205d8afe",
+    "validation-sample.csv": "c199bfddc6895228f3b1a2c88e29fa778661c7666e29cfe86594254c4937195c"
+  },
+  "default_private": true,
+  "query_labels_mounted": false,
+  "public_submission": false
+}

@@ -1,0 +1,16 @@
+{
+  "campaign": "C21",
+  "hypothesis": "Use negative development data to test whether a negative-ion-only tail correction helps while preserving the complete positive-ion parent exactly",
+  "development": "All160 previously used positive C10/C12 plus the independent C20 development-only80 negatives; no C13 confirmation metrics",
+  "model_groups_in_tie_order": ["C08-parent", "C09-control", "C14-CE", "C15-NP", "C18-peak-drop"],
+  "models": "Only the already prescribed final two folds in each group; no checkpoint, coefficient or subgroup search and no additional fitting",
+  "parent": "Complete P01 plus unchanged frozen P16 measured-reference overlay; retain formate-compatible PV lookups used for negative input inference",
+  "fusion": "For negative-ion queries only, existing fixed0.20 tail RRF with offset3. Rank1 and all candidate identities remain exact. Positive-ion outputs remain byte-for-byte parent values.",
+  "weight": 0.2,
+  "offset": 3.0,
+  "selection": "Require positive paired95% lowerbound over all240 versus both completeP01/P16, no lost truth coverage, and nonnegative mean in both polarity strata versus both parents. Choose greatest aggregate MRR, ties prefer older model group. Include all absent truths and disclose every tested group.",
+  "controls": "Report complete P14 and P15 against P01, including wrong signs. P14 is unsupported on negative spectra and must equal P01 there; do not claim it provides a useful negative-polarity performance control.",
+  "fresh_confirmation": "Only a selected source/model/recipe-frozen winner may use the reserved C13 mixed120 once; positive paired95% lowerbounds versus completeP01/P16, nonnegative polarity means and alias sensitivity. Actual Kaggle changed-path smoke and independent audits remain mandatory before an approved public trial.",
+  "automatic_submission": false,
+  "paid_compute": false
+}

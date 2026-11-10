@@ -1,0 +1,53 @@
+{
+  "prepared_utc": "2026-11-10T08:07:34.288340+00:00",
+  "version": 1,
+  "queries": 80,
+  "spectra": 80,
+  "development": 80,
+  "confirmation": 0,
+  "modes": {
+    "positive": 0,
+    "negative": 80
+  },
+  "source_doi": "10.5281/zenodo.8371051",
+  "declared_license": "CC-BY-4.0",
+  "preparation_protocol_sha256": "16d86442ece33bf44eaad3e8e723b9a2bbcce864e5348b1bf37c757fd70fb9a8",
+  "inventory_sha256": "86b36db99cf09a0acd9aab1f89c720d4b16f8eeb72261037a7b7f1ee959aeb9a",
+  "scan_audit_sha256": "f9ff7835106205383e9a00f23b012827a60a78975c9f14caca7bb5c2d48c1ede",
+  "raw_training_sha256": "9423f90ec08b941a9646b535bf0606183e86ff0c5a297978f5a70693d41bcd98",
+  "labels_sha256": "4d0f0803904dcf592fa9bda6786db72b40d9e27790ce0f891bb9ed700f82e1a3",
+  "partitions_sha256": "e3fb6ff9a85e1e4f68309fa868d306369c994bb96723da10e781dce6845d813f",
+  "parameters": {
+    "positive": 0,
+    "negative": 80,
+    "excluded_known_errors": [
+      81,
+      282,
+      432,
+      476
+    ],
+    "mass_assignment_da": 0.005,
+    "rt_assignment_minutes": 0.1,
+    "minimum_peaks": 3,
+    "selection": "Maximum finite positive TIC; deterministic RT/mass/name tie order; no unmatched fallback",
+    "draw_salt": "C20-CASMI2022-unused-negative-dev-v1:",
+    "raw_signature_window": "20ppm +.003Da",
+    "collision_energy": "Unknown NaN; not imputed",
+    "stratification": "80negative development after all prior/reserved exclusions; fail if insufficient"
+  },
+  "source_structures_used_only_for_exclusions": true,
+  "prediction_metrics_computed": false,
+  "query_labels_visible_to_pipeline": false,
+  "truth_injection": false,
+  "truth_absent_mrr": 0,
+  "recipe_selected": false,
+  "automatic_submission": false,
+  "files": {
+    "validation-queries.parquet": "ac19fdc6ec2500237dff5d11758820d2926a0e359c99136d32907a51205d8afe",
+    "validation-sample.csv": "c199bfddc6895228f3b1a2c88e29fa778661c7666e29cfe86594254c4937195c"
+  },
+  "reserved_C13_keys_excluded": true,
+  "reserved_C13_metrics_read": false,
+  "prior_signature_audit_sha256": "be5fa1c0462785dfd7cab494e69c81aa90a1288dece67ba07ab3d2eafa6bf8f6",
+  "limitation": "Development-only negative CASMI2022,FT/HCD source metadata,unknownCE,one maximum-TIC MS2 per identity. No universal historical-pretraining exclusion or hidden-score calibration guarantee."
+}

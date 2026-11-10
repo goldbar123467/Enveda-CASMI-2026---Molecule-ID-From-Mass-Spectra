@@ -1,0 +1,58 @@
+{
+  "checked_utc": "2026-11-10T08:25:40.994425+00:00",
+  "kernel": "clarkkitchen/casmi26-c13-fresh-mixed-casmi2022-validation",
+  "version": 2,
+  "collected_utc": "2026-11-10T08:05:23.277940+00:00",
+  "queries": 120,
+  "all_input_ids_retained": true,
+  "engine2_covered_ids": 120,
+  "engine2_nonempty_lists": 120,
+  "baseline_replay_exact": true,
+  "baseline_sha256": "feb6ec4bed2052a924b0cc2df76af3b2785218a5044228a810e08dcc0fc78ce7",
+  "models": {
+    "neural_public.parquet": {
+      "rows": 2916,
+      "queries": 120,
+      "supported_queries": 120
+    },
+    "neural_ours.parquet": {
+      "rows": 2916,
+      "queries": 120,
+      "supported_queries": 120
+    }
+  },
+  "allocation": {
+    "devices": [
+      {
+        "index": 0,
+        "name": "Tesla T4",
+        "vram_gib": 14.56219482421875
+      },
+      {
+        "index": 1,
+        "name": "Tesla T4",
+        "vram_gib": 14.56219482421875
+      }
+    ],
+    "allocation": {
+      "GPU0": "complete P01 unlabelled120 pipeline",
+      "GPU1": "real P14 encoder preflight and complete final-list negative-control scoring"
+    }
+  },
+  "metric_rdkit": "2026.03.3",
+  "P14_supported": 59,
+  "P14_explicit_exact_baseline_fallback": 61,
+  "P14_input_errors": 0,
+  "artifact_sha256": {
+    "c13_report.json": "409763df7c41a04f571673d8f052aa460723a67fd55d148060dafbb82521ef06",
+    "execution_receipt.json": "252540a688b31c02d6652859b7b0dbc6be02921358c049990e775b8b3a0e4618",
+    "eng_lists.json": "b0dbf511dc8bd7987039c0c688716a787ffdfb87a4d5c1439230709b9d2e471c",
+    "pc_lists.json": "9a586bd2dc75ec85794656210270e01621ccf46711004165623ecdd142fbf0cf",
+    "c13_t4_allocation.json": "ed6aa4adf9c2deb857192b8ff9777da7a64401a80902b8c162250bfcb57edfb3",
+    "c13_gpu1_preflight.json": "6a7dcb9435cb54de2f523b68a4819b8956769adb80cc64a960242a4379456a6d"
+  },
+  "model_quality_gain_claimed": false,
+  "fresh_prediction_label_metrics_read": false,
+  "automatic_submission": false,
+  "next_action": "Fresh120 prediction files remain available for one newly frozen qualified recipe; no unselected development screen may consume their label metrics."
+}

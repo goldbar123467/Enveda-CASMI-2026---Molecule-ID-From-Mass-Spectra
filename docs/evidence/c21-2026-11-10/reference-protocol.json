@@ -1,0 +1,47 @@
+{
+  "prepared_utc": "2026-11-10T08:31:08.280578+00:00",
+  "config_sha256": "6caecee1aa245fec485970d35174ed3121e2f84b926f818b93bc52d14a9a9d44",
+  "preparer_sha256": "f24091420f468cfec64f03ef66aa3f5facdde03c2f92a2736ba657cd3df1c495",
+  "source_sha256": {
+    "external_reference_overlay.py": "826a689fdcecc05436cd201219ac066ef2ebf557df22200ac807c6bb6c0681e5",
+    "c09_spectrum_audit.py": "a4c42efdb41983406d71458eeb093af462bd1432ec774c6628d91861f1a042ac"
+  },
+  "feature_sha256": "a97ad9b3ab3711517864d56e497e1672cb29bb05683c72b52db9f9b0a17b1455",
+  "policy_sha256": "ea662270a895dc902cc9dd242afd7cd7f63e4a42ce3468474c6bff73d984043c",
+  "original_P16_execution_receipt_sha256": "2af8dd2d3f21eeda0db8d518a15c55920d81d2370f3b0c56df5d07087cec8251",
+  "reference_files_sha256": {
+    "ext_meta.parquet": "9b0c2d675612580a4aedbdd3c8891d046fdf864b0805aaef852acc6653f7d37f",
+    "ext_mz.npy": "a14f750d46bfca4176110d1a83cc3562944a3ca1e3f1344c94141f6d8d85fad5",
+    "ext_in.npy": "e47b359f27d0aacda22f7ef47f8f60f7912136027d70d2bc915890a8d51be841"
+  },
+  "query_sha256": "ac19fdc6ec2500237dff5d11758820d2926a0e359c99136d32907a51205d8afe",
+  "query_contract_sha256": "7f9a0c51de6a7613cb4a708d39608ca9429af182e3f8ae7c18b271ecbd93f14e",
+  "development_labels_sha256": "4d0f0803904dcf592fa9bda6786db72b40d9e27790ce0f891bb9ed700f82e1a3",
+  "positive_parent_sha256": "e56ec5755beb254a99ca8c385dbeee3217f77e3db4d6e308663353c08766a8e9",
+  "model_manifests": {
+    "C08-parent": {
+      "path": "outputs\\publish\\c08-models-20261108\\c08-manifest.json",
+      "sha256": "c73d2383b7494fdbaedb9e437f8f389dbe175418bf13e5260a2f277ada49b602"
+    },
+    "C09-control": {
+      "path": "outputs\\publish\\c09-followup-models-20261109\\followup-manifest.json",
+      "sha256": "a9ea0fb37734f4b574edbf99917bb8b49029ad6d2522b7af8af6b4581bfc0525"
+    },
+    "C14-CE": {
+      "path": "outputs\\publish\\c14-ce-models-20261110\\c08-manifest.json",
+      "sha256": "b758d9a123305e01f8f51d9b90f04dc82f8a1b1e50d6c996d4c5fa614b1f7d53"
+    },
+    "C15-NP": {
+      "path": "outputs\\publish\\c15-np-models-20261110\\c08-manifest.json",
+      "sha256": "ecf9c437a484114bc09891fcc16534b8b1559cd8b0e019db000b0248fe6ac55c"
+    },
+    "C18-peak-drop": {
+      "path": "outputs\\publish\\c18-peak-models-20261110\\c08-manifest.json",
+      "sha256": "c47ae5767606d387bbbbbb1317451a29d286160bb4eb2a1a6afdcba6c57ba799"
+    }
+  },
+  "labels_read": false,
+  "C20_prediction_metrics_read": false,
+  "C13_confirmation_metrics_read": false,
+  "automatic_submission": false
+}

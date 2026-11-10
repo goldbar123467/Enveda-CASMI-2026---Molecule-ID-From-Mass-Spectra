@@ -1,0 +1,18 @@
+{
+  "checked_utc": "2026-11-10T08:43:16.083083+00:00",
+  "queries": 80,
+  "feature_sha256": "a97ad9b3ab3711517864d56e497e1672cb29bb05683c72b52db9f9b0a17b1455",
+  "query_sha256": "ac19fdc6ec2500237dff5d11758820d2926a0e359c99136d32907a51205d8afe",
+  "all_adducts_known": true,
+  "adduct_code_counts": {
+    "2": 47,
+    "7": 25,
+    "6": 8
+  },
+  "unknown_collision_energy_flag_exact": true,
+  "negative_polarity_exact": true,
+  "no_neural_alias_patch_required": true,
+  "prediction_metrics_read": false,
+  "C13_confirmation_metrics_read": false,
+  "automatic_submission": false
+}

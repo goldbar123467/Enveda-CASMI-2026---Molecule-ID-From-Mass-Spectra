@@ -1,0 +1,14 @@
+{
+  "checked_utc": "2026-11-10T08:18:11.050460+00:00",
+  "kernel": "clarkkitchen/casmi26-c20-negative-casmi2022-development",
+  "version": 1,
+  "remote_scientific_sha256": "4913c66d7612ff35c37065a5fb485c5d9c130b4f9e74741db971368d0afc3632",
+  "notebook_sha256": "b46df73b9a897d0c68c04931afbfaa4ef44561aca66f0aaf8c8a828db4127871",
+  "private": true,
+  "internet": false,
+  "docker_image": "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461",
+  "status": "QUEUED",
+  "query_labels_mounted": false,
+  "development_only": true,
+  "scoring_submission": false
+}

@@ -1,0 +1,11 @@
+{
+  "frozen_utc": "2026-11-10T08:16:40.221856+00:00",
+  "candidate": "P16",
+  "new_candidate_selected": false,
+  "development_sha256": "f3b77045ad35c5e693e30daa8552209245c299ed24eff796ef1bbb353f6b3511",
+  "evaluation_plan_sha256": "f733ed3e8bf46cbd04efb18c719d795394532253211b31d6c9f9958fbd69ebaa",
+  "C18_manifest_sha256": "c47ae5767606d387bbbbbb1317451a29d286160bb4eb2a1a6afdcba6c57ba799",
+  "protocol_sha256": "14b141ee0ac7561cc4420f8583254828bab2e3263769bcbeabfe57f1cc752cca",
+  "fresh_C13_prediction_metrics_read": false,
+  "automatic_submission": false
+}

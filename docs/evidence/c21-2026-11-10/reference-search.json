@@ -1,0 +1,19 @@
+{
+  "queries": 80,
+  "spectra": 80,
+  "reference_rows": 200724,
+  "precursor_candidate_rows": 556,
+  "query_reference_comparisons": 30,
+  "query_input_alias_reference_rows": 0,
+  "query_labels_used": false,
+  "limitation": "Rounded full peaks and FP16top96 signatures only; not universal acquisition/provenance exclusion",
+  "completed_utc": "2026-11-10T08:31:08.574071+00:00",
+  "reference_protocol_sha256": "ad97126603d644abcd64cf56ddde68ff615f4fa4fbbda69ac58f9b29897afe26",
+  "matches_sha256": "8888c7faf1ad535bdf7a1debbf9a88ffac1abfe513a0ac225649adf7e47d996a",
+  "config_sha256": "6caecee1aa245fec485970d35174ed3121e2f84b926f818b93bc52d14a9a9d44",
+  "original_P16_reference_and_policy_exact": true,
+  "C20_prediction_metrics_read": false,
+  "C13_confirmation_metrics_read": false,
+  "ranking_recipe_selected": false,
+  "automatic_submission": false
+}

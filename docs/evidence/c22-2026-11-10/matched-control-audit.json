@@ -1,0 +1,29 @@
+{
+  "checked_utc": "2026-11-10T08:23:22.267474+00:00",
+  "matched_config_fields": [
+    "raw_training",
+    "base_cache",
+    "split_groups",
+    "cache",
+    "views_per_identity",
+    "folds",
+    "minimum_free_ram_gib",
+    "gpu_memory_fraction",
+    "augmentation"
+  ],
+  "identical_objective_update_AST": true,
+  "parent_sha256": {
+    "0": "839d163c523d685ac4a28fa2d892a5f753d0f75f751d77cee6ce5b083963edab",
+    "1": "3b48750d0b61205a69c6365d9e8a83824e1af5dcae5aec80f7dc04bf846e7d9f"
+  },
+  "parent_resume_sha256": {
+    "0": "9f6ab401156a6e4601d826e6934998e2bcbdc4fc07fa670bbd82a5b50c793d7c",
+    "1": "12330f58675b966073db338cd08d5dd0f4016387f6655ea753338928d8d4f07f"
+  },
+  "sole_training_change": "One prescribed extra10000-step cosine cycle; C18 optimizer/scaler/all RNG states restored; same peak augmentation",
+  "control_model_group": "Reference C09 cosine-control plus direct C18 parent; not a newly matched C09 fit",
+  "control_manifest_sha256": "a9ea0fb37734f4b574edbf99917bb8b49029ad6d2522b7af8af6b4581bfc0525",
+  "prediction_metrics_read": false,
+  "fresh_C13_prediction_metrics_read": false,
+  "automatic_submission": false
+}

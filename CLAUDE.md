@@ -1,44 +1,58 @@
 # Enveda CASMI 2026 — working rules
 
-## Current measured state — 10 November,07:56UTC
+## Current measured state — 10 November,08:43UTC
 
-P16/ref58181280 is COMPLETE at0.480 with no error; it produced no reported
-public gain. Global public pending0; the additional approved trial remains
-unconsumed. Never resubmit P16. Latest leaderboard snapshot07:20UTC:rank946
-of5053, nominal silver252 at0.484. The silver goal remains UNMET.
+P16/ref58181280 is COMPLETE0.480/noerror, no reported public gain. Global public
+pending0; one additional approved trial remains unconsumed. Never resubmit P16.
+Latest actual leaderboard08:21UTC:rank949/5056, nominal silver252 at0.484. Goal
+UNMET. Preserve the0.480 champion source/weights and all qualification gates.
 
-C14/C15 each completed10000 successful updates and failed their fixed used160
-development gates. C16 broader-pool inference completed all160/14184 rows
-without errors; both joint-fold agreement recipes failed, recovering0 truths.
-C17 completed five query-held-out calibration heads/2500 fixed updates and
-failed. C19 reused exact C17 OOF posteriors with adaptive insertion positions:
-delta+.002494124,95%CI[-.001018928,.007643764],3 recovered truths but8 harms.
-It also fails its predeclared gate. No final calibration head, fresh120 metrics
-or public submission is justified. Do not rerun or tune these completed fits.
+C13 formate-compatible privatev2 completed/collected08:05. Execution audit
+proves full120/Engine2nonempty120, exact P01 replay, both neural models support
+all120, real2T4/metricRDKit2026.03.3. P14 supports59 plus61exactP01fallbacks.
+Fresh balanced120 label metrics remain UNREAD. Collector9740 finished; never
+restart/duplicate C13v2 or resurrect failedv1. Full earlier candidate artifacts
+are in outputs/forks/c13-mixed-casmi2022-validation-v2.
 
-C18 is a new fixed peak-drop experiment, same two C08 parents/control objective,
-data/negatives/seed/schedule; only40% random peak removal with top3 protected.
-Separate checkpointed CUDA RNG, stable compaction/exact retained values; CPU
-and actual CUDA audits pass. Worker launcher9012/worker27332 owns trainer27532;
-read actual processes and outputs/local/c18-peak-drop-20261110/{status,
-worker-status}.json. At07:55 fold0 is1600/5000,0AMPskips,peak1.4121GiB. Worker
-runs both final5000-update fits then prepares/evaluates one fixed0.20tailRRF
-on used160. Deadline10:51UTC. Do not start a duplicate. No upload, fresh metrics
-or public submit is automated. Read docs/C16-C19-2026-11-10.md before acting.
+C18 completed10000updates/2folds08:16,0AMPskips/0restarts. Fixed0.20tail recipe
+FAILS the used160 P01/P16 gate:delta+.000676691,CI[-.001386304,.002816636],
+15improved/15harmed;vsC09control+.001540899 CI[.000329888,.003132033]. Same
+100truths/rank1/candidate identities. Both actual final RNG streams match control
+except separate augmentation RNG. No fresh120 metrics or trial used. C14-C19
+completed screens remain rejected; no completed fit may be repeated.
 
-C13 private formate-recovery v2 remains RUNNING at07:55. Same120 query inputs,
-labels/weights, strict coverage guard and all other frozen cells retained;
-only equivalent formate/whitespace PV lookup correction. Notebookcbd4503e...,
-remote scientific17891a07..., private/internet-off/image37c64/version verified.
-Collector launcher27800/worker9740 owns v2 until16:47UTC. Do not restart v1 or
-duplicate v2. Actual v2 allocation/full coverage need terminal execution receipts.
-Fresh balanced120 prediction metrics remain UNREAD. Only a newly selected,
-frozen recipe can consume them, followed by real Kaggle changed-path smoke,
-independent audits and the one-global-pending rule before the approved trial.
+C20 is a separate DEVELOPMENT-only80negative CASMI2022 panel, excludes all
+reservedC13/oldpanel/training identities; strict scan/raw/source audits pass.
+Private query-only datasetv1 READY. Kernel clarkkitchen/casmi26-c20-negative-
+casmi2022-development v1 RUNNING by08:26, private/offline/exact image37c64/source
+verified. Actual C20 hardware/fullcoverage need terminal receipts. P14 has no
+negative support and must be exact P01 fallback. Collector24980/28348 owns this
+same v1 to18:18UTC; read collector-v1-status.json and actual process/API state.
+Do not duplicate/requeue while live. It collects predictions/pools, never metrics.
 
-Preserve the0.480 champion source/weights. The native24-hour hourly heartbeat
-and bounded tracker remain active. Older checkpoints below are historical;
-this measured state supersedes their running/pending/next-experiment claims.
+C21 config prospectively fixes5groups and negative-only0.20tailRRF on full240
+(used160positive+C20dev80negative); positive strings/rank1/candidates exact.
+Original P16 reference search completed80, exact200724reference rows/policy,
+0query-input aliases. Full240 scorer/evaluator is NOT YET IMPLEMENTED/RUN;
+implement/freeze before C20development metrics once baseline collected. Require
+positive95%lowerbounds over both full parents, no coverage loss and nonnegative
+polarity means; disclose all groups and weak/wrong-sign controls. Read config
+and docs/C20-C22-2026-11-10.md; preserve freshC13mixed120 for frozen winner only.
+
+C22 new dose is RUNNING: one additional10000-step cycle/fold from completedC18,
+restoring model/optimizer/scaler/all RNG states. No old fit repeated; only final
+55000cumulative models. Worker13640/20596 owns trainer18968; read outputs/local/
+c22-peak-dose-20261110/{status,worker-status}.json and actual processes. At08:43
+fold0new7900/10000,2AMPskip(s),peak1.4512GiB; skipped attempts are not updates. Deadline11:23UTC. It automatically
+finishes both fits and one fixed used160 evaluation; require positive95%lower
+against P01/P16 and nonnegative mean versus directC18parent. C20negative80
+sensitivity required before fresh120. Actual selection/config uses C18parent;
+selection-rule-audit clarifies an inherited C09 description without changing
+source/rule. No upload/freshmetrics/public submission is automated.
+
+Native24-hour hourly heartbeat remains ACTIVE (nativeview/TOML08:33), tracker296
+live to22:08UTC. Old superseded C09 coverage still CANCEL_REQUESTED; do not use
+its discarded panel. Older checkpoints below are historical; this state wins.
 
 ## Authorization and earlier checkpoints — C09, 2026-11-09
 

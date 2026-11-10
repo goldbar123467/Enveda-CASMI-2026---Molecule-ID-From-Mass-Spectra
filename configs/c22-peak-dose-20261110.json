@@ -1,0 +1,49 @@
+{
+  "run_id": "C22PK",
+  "kind": "compatible_scorer",
+  "output": "outputs/local/c22-peak-dose-20261110",
+  "parent_output": "outputs/local/c18-peak-drop-20261110",
+  "parent_arm": "peak-drop",
+  "raw_training": "outputs/competition-raw/train.parquet",
+  "base_cache": "outputs/local/n0/cache",
+  "split_groups": "outputs/local/long-20261106/spectrum_groups.npz",
+  "cache": "outputs/local/precision-cache-20261108",
+  "views_per_identity": 8,
+  "folds": [
+    0,
+    1
+  ],
+  "arms": [
+    {
+      "name": "peak-drop-dose",
+      "cache_precision": "float16",
+      "hard_negatives": 48,
+      "negative_pool": 512
+    }
+  ],
+  "maximum_hours": 3,
+  "minimum_free_ram_gib": 4,
+  "gpu_memory_fraction": 0.7,
+  "training": {
+    "steps": 10000,
+    "lr": 2e-05,
+    "warmup_steps": 100,
+    "checkpoint_interval": 100,
+    "batch_size": 384,
+    "hard_negatives": 48,
+    "negative_pool": 512,
+    "seed": 202611090
+  },
+  "objective": "One prescribed additional10000-update cosine cycle from each completed C18 45000-update parent, retaining optimizer/scaler/acquisition/negative/default Torch/augmentation RNG states. Same40% peak dropout/top3 protection; no previous fit repeated.",
+  "automatic_submission": false,
+  "augmentation": {
+    "drop_probability": 0.4,
+    "protected_strongest_peaks": 3,
+    "rng_seed_offset": 180000,
+    "rationale": "Valid cached train median75 peaks versus used C10 median44 raw peaks. Fixed40% peak sparsification, no severity search; do not infer a hidden-score gain.",
+    "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12462763/",
+    "source_scope": "Prior work supports random peak masking as an augmentation;40% and top3 protection are our fixed experiment, not a copied validated recipe."
+  },
+  "evaluation": "Only final55000 cumulative checkpoints, fixed0.20 tailRRF on used160; positive paired95%lowerbounds over P01/P16 and nonnegative mean versus C18 parent. C20negative80 full-pipeline sensitivity required before fresh mixed120. No checkpoint/weight/dose search, public submit or paid compute.",
+  "dose_rationale": "C18 fixed development gain over C09 control+.001540899,95%CI[.000329888,.003132033], but failed versus P01. This is development evidence for a dose experiment, not a confirmation or hidden-score claim."
+}

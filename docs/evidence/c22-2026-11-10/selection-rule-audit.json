@@ -1,0 +1,13 @@
+{
+  "checked_utc": "2026-11-10T08:36:58.240521+00:00",
+  "evaluator_sha256": "5b7e78b7f26a13b13cbdb6a687a386fe450da1f021d12d8e496fc639cfbad037",
+  "evaluation_config_sha256": "75f02df62054674bad04daac1264c68fda5a3c6e54e715b951820aa0e8fbc1d5",
+  "actual_selection_predicate": "all((comparisons[n]['delta'] > 0 and comparisons[n]['ci95'][0] > 0 for n in ['P01', 'P16'])) and comparisons['C18-parent']['delta'] >= 0",
+  "rule_matches_config": true,
+  "recipe_changed": false,
+  "descriptive_note": "The inherited protocol-description sentence names matchedC09. The actual frozen predicate and C22 config require the direct C18 parent, as specified before training. This audit clarifies that wording before C22 metrics; source/recipe unchanged.",
+  "C22_prediction_metrics_read": false,
+  "C20_prediction_metrics_read": false,
+  "C13_confirmation_metrics_read": false,
+  "automatic_submission": false
+}

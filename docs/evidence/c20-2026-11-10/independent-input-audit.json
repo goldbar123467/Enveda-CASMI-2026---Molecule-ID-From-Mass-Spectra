@@ -1,0 +1,22 @@
+{
+  "checked_utc": "2026-11-10T08:09:10.146780+00:00",
+  "queries": 80,
+  "negative": 80,
+  "query_sha256": "ac19fdc6ec2500237dff5d11758820d2926a0e359c99136d32907a51205d8afe",
+  "labels_sha256": "4d0f0803904dcf592fa9bda6786db72b40d9e27790ce0f891bb9ed700f82e1a3",
+  "labels_mounted": false,
+  "reserved_C13_truth_identity_overlap": 0,
+  "base_training_identity_overlap": 0,
+  "recognized_PV_neutral_masses": 80,
+  "maximum_mass_error_ppm": 7.947493078736361,
+  "adduct_distribution": {
+    "[M-H]-": 47,
+    "[M+FA-H]-": 25,
+    "[M+Cl]-": 8
+  },
+  "truth_masses_read_only_for_source_integrity": true,
+  "prior_signature_audit_sha256": "be5fa1c0462785dfd7cab494e69c81aa90a1288dece67ba07ab3d2eafa6bf8f6",
+  "prediction_metrics_read": false,
+  "reserved_C13_prediction_metrics_read": false,
+  "automatic_submission": false
+}

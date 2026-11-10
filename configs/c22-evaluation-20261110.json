@@ -1,0 +1,16 @@
+{
+  "campaign": "C22PK",
+  "candidate": "Final10000 additional updates from each completed C18 parent; total55000, one prescribed dose, no checkpoint selection",
+  "matched_control": "Reference C09 control plus direct C18 parent predictions; this dose experiment resumes C18 optimizer/RNG, not a newly matched C09 fit",
+  "inference": "Two-fold ensemble, mean of per-query standardized raw scores, exact existing compatible features and model architecture",
+  "parent": "Complete unchanged P01 plus fixed P16 measured-reference overlay",
+  "fusion": "Final25 candidates only, tail-only RRF with0.20weight and offset3; rank1 and candidate identities preserved exactly",
+  "development": "Only used160 first; predeclare one extra10000-update dose before C20 negative metrics, no checkpoint/weight/dose search",
+  "selection": "Positive paired95% lowerbound versus both completeP01/P16, nonnegative mean versus direct C18 parent; require C20negative80 sensitivity before fresh120",
+  "confirmation": "After selection freeze, fresh C13 mixed120 once: positive95% lowerbound versus completeP01/P16, nonnegative polarity means and alias sensitivity; disclose matchedcontrol/P14/P15 signs and uncertainty",
+  "truth_absent_mrr": 0,
+  "submission_requires": "Real Kaggle changed-path smoke and independent source/model/identity/fallback/rawscore/fusion audits; actual P16 result resolved; one global pending submission",
+  "champion_retained": 0.48,
+  "automatic_submission": false,
+  "paid_compute": false
+}

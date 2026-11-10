@@ -1,0 +1,15 @@
+{
+  "started_utc": "2026-11-10T08:23:23.780107+00:00",
+  "pid": 20596,
+  "source_sha256": {
+    "scripts/run_c22_worker.py": "fb66a75222f937e203767beb359f6e7b42935390dcd5b41e3756c5f6dbf0593d",
+    "scripts/c22_peak_train.py": "f678801e13520f4c20ab34c9fdd84a5a5a47bc118479686eaf9ffe638f391cb8",
+    "scripts/peak_dropout.py": "3c3e0e1cce2148337b4b41db5a412ea5e26d42353233951befb8bc1fc7390172",
+    "scripts/develop_c22_peak.py": "5b7e78b7f26a13b13cbdb6a687a386fe450da1f021d12d8e496fc639cfbad037",
+    "scripts/c22_models.py": "3c0621c178a91554c642da21e466e055d8870f51dab942ff300f82023f40d79b",
+    "configs/c22-peak-dose-20261110.json": "897e115a1de2c324ccf04a38815d7a0c39d77580ff95545684c849402fb10d30",
+    "configs/c22-evaluation-20261110.json": "75f02df62054674bad04daac1264c68fda5a3c6e54e715b951820aa0e8fbc1d5"
+  },
+  "automatic_submission": false,
+  "fresh_C13_prediction_metrics_read": false
+}

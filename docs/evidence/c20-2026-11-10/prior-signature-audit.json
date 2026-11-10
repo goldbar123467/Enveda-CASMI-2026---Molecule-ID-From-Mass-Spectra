@@ -1,0 +1,13 @@
+{
+  "checked_utc": "2026-11-10T08:07:34.273908+00:00",
+  "prior_query_sha256": {
+    "outputs\\publish\\c08-validation-20261108\\validation-queries.parquet": "c1f37ef0940a8a69bcfc7553c2291ad7f6ad7beb17b32e8fd049e88e51012ff4",
+    "outputs\\publish\\c09-validation-20261109\\validation-queries.parquet": "1dd6455b731e21656bdcf9e7bbb23dc320b7151612427e03b3c09c455e0a31f6",
+    "outputs\\publish\\c10-casmi2022-20261110\\validation-queries.parquet": "bf87d0947cb55c58c35c5d50d7a9a331095872f3503bf256ca264f6fb8901765",
+    "outputs\\publish\\c13-mixed-casmi2022-20261110\\validation-queries.parquet": "d27999b569708beea4116e78200e09b02071e456d66a7a2ba082900bd1a6cd78"
+  },
+  "aliases": 0,
+  "match_records": 0,
+  "prediction_metrics_read": false,
+  "reserved_C13_metrics_read": false
+}

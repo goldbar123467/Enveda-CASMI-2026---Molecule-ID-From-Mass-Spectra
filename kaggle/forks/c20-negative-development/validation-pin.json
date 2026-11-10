@@ -1,0 +1,24 @@
+{
+  "campaign": "C20",
+  "notebook_sha256": "b46df73b9a897d0c68c04931afbfaa4ef44561aca66f0aaf8c8a828db4127871",
+  "builder_sha256": "361fca158e0c85f6f76cbe65aa2b30f07a2aa6139709fcca5723520092c23834",
+  "template_notebook_sha256": "cbd4503ef7dc1ba089d33d3f3d8a45615db406b236c1b3b135005a47f7d8088f",
+  "validation_contract_sha256": "7f9a0c51de6a7613cb4a708d39608ca9429af182e3f8ae7c18b271ecbd93f14e",
+  "changed_cells": [
+    0,
+    6,
+    27
+  ],
+  "queries": 80,
+  "development": 80,
+  "confirmation": 0,
+  "unchanged_scientific_payload_exact": true,
+  "formate_compatibility_retained": true,
+  "query_labels_mounted": false,
+  "metrics_computed": false,
+  "recipe_selection": false,
+  "private": true,
+  "internet": false,
+  "scoring_submission": false,
+  "limitation": "Private prediction-only source expansion for development; no performance or hidden-score claim. P14 is unsupported for negative spectra and must remain exact baseline fallback."
+}

@@ -1,0 +1,34 @@
+{
+  "prepared_utc": "2026-11-10T08:07:02.726653+00:00",
+  "parameters": {
+    "positive": 0,
+    "negative": 80,
+    "excluded_known_errors": [
+      81,
+      282,
+      432,
+      476
+    ],
+    "mass_assignment_da": 0.005,
+    "rt_assignment_minutes": 0.1,
+    "minimum_peaks": 3,
+    "selection": "Maximum finite positive TIC; deterministic RT/mass/name tie order; no unmatched fallback",
+    "draw_salt": "C20-CASMI2022-unused-negative-dev-v1:",
+    "raw_signature_window": "20ppm +.003Da",
+    "collision_energy": "Unknown NaN; not imputed",
+    "stratification": "80negative development after all prior/reserved exclusions; fail if insufficient"
+  },
+  "preparer_sha256": "c50210cfa22c18dd6cc8b7de376e63c6b2fac34c694b7536a05816e39462e21b",
+  "parser_sha256": "a8d3e288437d088e0816d70b2de51f00f939bc213ea14133ed689b3e2c943bfe",
+  "reserved_C13_labels_sha256": "c74a4d91eb1c9fd65855e2804036ab80238732e01e07c1da4ed9229ae152376d",
+  "reserved_C13_metrics_read": false,
+  "inventory_sha256": "86b36db99cf09a0acd9aab1f89c720d4b16f8eeb72261037a7b7f1ee959aeb9a",
+  "source_sha256": "febe375faf786ab65950c50ec8f0c4ee8ea9c8ce6ff10b4cd68f25fcd5ce1e31",
+  "feature_sha256": "a97ad9b3ab3711517864d56e497e1672cb29bb05683c72b52db9f9b0a17b1455",
+  "development_only": true,
+  "source_structures_used_only_for_exclusion": true,
+  "previous_C10_C12_panel_consumed": true,
+  "no_prediction_files_or_metrics_read": true,
+  "reserved_confirmation_used_for_selection": false,
+  "automatic_submission": false
+}
