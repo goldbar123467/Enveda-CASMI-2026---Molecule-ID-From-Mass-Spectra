@@ -41,12 +41,15 @@ Read-only tracker PID is recorded in `campaign-tracker.json`; its new deadline
 is10November22:08:41UTC and per-thread system-sleep inhibition is confirmed true.
 It keeps hourly rank/health evidence without changing display timeout/locking.
 
-Latest user request: **update and retry Kaggle cloud T4s**. At21:32UTC the
-C09C2 private dual-T4 v2 retry remains RUNNING at23:25UTC; native UI shows
-metric-identity fusion completed at127.7 minutes. C09RP completed real finite CUDA
-work on both14.562GiB T4s. Main startup loaded officialRDKit2026.03.3. Full
-P01/P14 results and GPU1 real-encoder receipt remain pending; allocation/liveness
-do not prove pipeline completion. Do not duplicate/rebuild the active notebook.
+Latest user request: **update and retry Kaggle cloud T4s**. The
+C09C2 private dual-T4 v2 retry is COMPLETE, verified10November01:03UTC. Full80
+P01 replay is exact:MRR.713859,71 truths. P14 is.717609,delta+.00375,
+CI[-.0071875,.0146875],7 improved/4 harmed, and does NOT reproduce its known
+public regression. This panel cannot be treated as a calibrated hidden-score
+predictor. GPU1 DreaMS/MolFormer preflight is finite on a realT4, Torch2.10.0+
+cu128/CUDA12.8,peak.4805GiB. Local frozen-parent/control scoring is now running
+under the original finisher; C09E confirmation follows. Inspect actual current
+reports/worker errors before any new overlapping work. Never rerun completed C09C2.
 
 Local C09T, C09CT and C09H all finished normally:10000+10000+40000 successful
 new updates, zero restarts. C09H had10 AMP-skipped attempts, not counted as

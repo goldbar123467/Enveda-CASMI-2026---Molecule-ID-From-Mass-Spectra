@@ -1,0 +1,24 @@
+{
+  "kind": "acquisition_disjoint_full_pipeline_confirmation",
+  "queries": 80,
+  "baseline_replay_exact": true,
+  "baseline_mrr25": 0.7138591269841269,
+  "p14_mrr25": 0.717609126984127,
+  "p14_delta": 0.00375,
+  "p14_ci95": [
+    -0.007187500000000001,
+    0.014687500000000001
+  ],
+  "p14_improved": 7,
+  "p14_harmed": 4,
+  "baseline_truths": 71,
+  "p14_truths": 71,
+  "detects_known_P14_regression": false,
+  "truth_absent_mrr": 0,
+  "truth_injection": false,
+  "model_selection": false,
+  "validation_contract_sha256": "d7ec2771628e84428d496309966ee765bcb93f02397debb4318eb1517e5ff723",
+  "known_public_baseline": 0.48,
+  "known_public_P14": 0.458,
+  "limitation": "Acquisition-disjoint from cached competition inputs and previousC08 keys;80 external-source queries, broader historical/foundation exposure not universally excluded; no hidden-score guarantee"
+}

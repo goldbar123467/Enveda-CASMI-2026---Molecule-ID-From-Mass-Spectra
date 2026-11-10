@@ -49,9 +49,12 @@ while new80 cloud confirmation is RUNNING. Additional training has not shown a
 benefit over P15. No new80 or old confirmation metrics selected this recipe.
 
 The user requested a cloudT4 retry. A private liveness probe COMPLETE on two
-TeslaT4s with finite CUDA work; the full80-query P01/P14 retry C09C2 v2 is RUNNING
-at21:32UTC. It has allocated bothT4s and loaded officialRDKit2026.03.3; full
-pipeline and GPU1 encoder results remain pending. Original v1 jobs were
+TeslaT4s with finite CUDA work; the full80-query P01/P14 retry C09C2 v2 is COMPLETE
+at10November01:03UTC. ExactP01 replay passes:MRR.713859/71truths. P14delta+.00375,
+CI[-.0071875,.0146875],does not detect its knownpublic regression. This panel is
+not calibrated to hidden gains. GPU1realDreaMS/MolFormer execution isfinite onT4,
+Torch2.10.0+cu128/CUDA12.8. Frozen local-model and C09E confirmation continue.
+Original v1 jobs were
 CANCEL_ACKNOWLEDGED after Kaggle's notebook-start incident. The obsolete C09V
 old-panel job remains CANCEL_REQUESTED, not acknowledged.
 

@@ -1,8 +1,8 @@
 # Runs
 
-Updated 2026-11-10 00:35 UTC by `scripts/update_runs.py` (hourly). Generated from `runs.csv` — edit that file, not this one.
+Updated 2026-11-10 01:06 UTC by `scripts/update_runs.py` (hourly). Generated from `runs.csv` — edit that file, not this one.
 
-- Kaggle quota: GPU 8.7 h used of 30 h · TPU 0.0 h of 20 h · resets 2026-11-14 00:00 UTC
+- Kaggle quota: GPU 9.2 h used of 30 h · TPU 0.0 h of 20 h · resets 2026-11-14 00:00 UTC
 - Submissions today (UTC): 0 of 5 — see `SUBMISSIONS.md`
 
 ## Active
@@ -10,7 +10,6 @@ Updated 2026-11-10 00:35 UTC by `scripts/update_runs.py` (hourly). Generated fro
 | id | platform | kind | ref | started (UTC) | status | purpose | progress |
 |---|---|---|---|---|---|---|---|
 | C09V | kaggle-gpu | diag | c09-coverage-controls v1 | 2026-11-09 14:44 | **cancel_requested** | C09 dual-device diagnostic: exact P14 full128 external pipeline negative control onGPU0; existing C08 expanded candidate coverage/scoring onGPU1; no scoring submission | Old128 panel superseded after67 base-connected acquisition groups found; cancellation requested, not acknowledged. No allocation/training/validation result; no GPU quota added at16:34UTC. |
-| C09C2 | kaggle-gpu | diag | c09-clean-validation v2 | 2026-11-09 21:14 | **running** | User-requested recovery retry after CANCEL_ACKNOWLEDGED/no outputs:GPU0 fullP01 clean80, GPU1 pinned realP14 encoder preflight and negative-control scores; unchanged models/data/metrics;no scoring submission | Actual dual-T4 allocation; live startup loaded officialRDKit2026.03.3 and entered completeP01 pipeline; full80/P14 outputs still pending. No leaderboard submission. |
 | C09FC | local-2070 | diag | outputs/local/c09-followup-evaluation-20261109/confirmation-finisher.log | 2026-11-09 21:32 | **running** | Bounded wait for existing T4v2 COMPLETE, download exact P01/P14 outputs then evaluate frozen development-selected control plus P15/C09T references;full80 and predeclared no-raw-overlap cohort;no reselection or submission | 0/1 done |
 | C09EF2 | local-cpu | diag | outputs/local/c09-external-reference-20261109/completion-v3.log | 2026-11-09 23:01 | **running** | Collect currentP16v2 only;independently audit real12/400 plusreal30 changed-path fixtures and model/source hashes;then frozen80 confirmation;no leaderboard submission | 0/1 done |
 
@@ -18,6 +17,7 @@ Updated 2026-11-10 00:35 UTC by `scripts/update_runs.py` (hourly). Generated fro
 
 | id | platform | kind | ref | started (UTC) | ended (UTC) | status | purpose | result |
 |---|---|---|---|---|---|---|---|---|
+| C09C2 | kaggle-gpu | diag | c09-clean-validation v2 | 2026-11-09 21:14 | 2026-11-10 01:03 | complete | User-requested recovery retry after CANCEL_ACKNOWLEDGED/no outputs:GPU0 fullP01 clean80, GPU1 pinned realP14 encoder preflight and negative-control scores; unchanged models/data/metrics;no scoring submission | COMPLETE full80 onactual2xT4;exactP01 replay;P01MRR0.713859/71truths,P14MRR0.717609,delta+0.00375 CI[-0.0071875,0.0146875],7improved4harmed. DoesNOT detect knownP14 publicregression. GPU1realDreaMS/MolFormer finite,Torch2.10cu128,peak0.4805GiB. Frozenlocalmodel andC09E confirmations continue;no submission. |
 | C09EM1 | local-cpu | diag | outputs/local/c09-massbank-extension-20261110/development.log | 2026-11-10 00:33 | 2026-11-10 00:33 | complete | Prospective old30 development test of fixed-rule additional record-CC0 positiveMS2 references; originalP16 unchanged, retain attribution/compilationterms, no query/threshold tuning or new80 metrics | 4905 references pass peaks/structure-key checks, but0precursor candidates/0comparisons on old30;MRR unchanged0.911111 vsP16,delta0/CI[0,0],0improved/0harmed,bothviews. Predeclared retention fails; no80metric use/adoption/upload/submission. |
 | C09RM | local-cpu | research | outputs/research/2026-11-09-silver/massbank-coverage-audit/coverage.json | 2026-11-09 23:45 | 2026-11-09 23:45 | complete | Backup MassBank record-license/raw-connectivity coverage inventory; no query labels or P16 policy/data change | 139744 records/6 record-license labels; literalCC0 positiveMS2 >=4peaks subset4905spectra/515rawkeys,471keys absent from currentextlib. CompilationCC-BY-NC-SA-4.0; not adopted, no validation/metric-novelty claim. |
 | C09ES2 | kaggle-gpu | diag | p16-external-reference-c09 v2 | 2026-11-09 23:00 | 2026-11-09 23:26 | complete | Recover realP16 smoke:explicit public/second model hash checks plus isolated real30 input fixtures exercising7promotions/2newcandidates;unchanged policy/models/data;no scoring submission | COMPLETE realT4x2;400valid/12real both-model supported,0metricduplicates;12protectedpreviewpass-through. Isolated30real fixtures:7promoted/2inserted;independent scoreerror1.11e-16,primaryerror4.44e-16;explicitcheckpoint/source/ref pins,invalidfallback andCSV isolation pass. Scientific80confirmation pending;not submitted. |
