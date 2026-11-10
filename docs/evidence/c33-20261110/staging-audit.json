@@ -1,0 +1,46 @@
+{
+  "prepared_utc": "2026-11-10T13:40:56.670020+00:00",
+  "notebook_sha256": "e4ec7f8a1d14af1779fc2f841a5df8067c277e13c06217f9d7efd37ede4b6e50",
+  "scientific_sha256": "72ee6088761f29739a8032cf24921920212edf1be9130c9d074b80aa3e76b602",
+  "builder_sha256": "327ab4dcc80b81df8e77c11c49bd2bb6520a0addff1c1bdcd0fa119be973c334",
+  "validation_template_sha256": "02304e42bc27cbbad98b2995333ccf6d16e1599838d1de3eef13c964d85db428",
+  "frozen_payload_changed_cells": [
+    26,
+    28
+  ],
+  "formate_and_empty_pool_recovery_exact": true,
+  "coverage_guard_exact": true,
+  "deployment_intake": {
+    "development240": {
+      "queries": 240,
+      "eligible": 240,
+      "reasons": {
+        "supported": 240
+      },
+      "labels_used": false
+    },
+    "reserved120": {
+      "queries": 120,
+      "eligible": 120,
+      "reasons": {
+        "supported": 120
+      },
+      "labels_used": false
+    }
+  },
+  "reference_sha256": {
+    "ext_meta.parquet": "9b0c2d675612580a4aedbdd3c8891d046fdf864b0805aaef852acc6653f7d37f",
+    "ext_mz.npy": "a14f750d46bfca4176110d1a83cc3562944a3ca1e3f1344c94141f6d8d85fad5",
+    "ext_in.npy": "e47b359f27d0aacda22f7ef47f8f60f7912136027d70d2bc915890a8d51be841",
+    "ext_mass.parquet": "e82a878f3e9f4d19067199d1376231b1663a83d08c512ba8e03d6ae88b7af12e",
+    "spectra.parquet": "6ebb46b32ddd344d988c3bdb90e7160d4ce46e6d0b900a1217607aa2234c9477"
+  },
+  "private": true,
+  "internet": false,
+  "production_source_sealed": false,
+  "independent_full_source_audit_pending": true,
+  "required_changed_path_fixture_pending": true,
+  "mandatory_actual_Kaggle_smoke": true,
+  "quality_metrics_read": false,
+  "automatic_submission": false
+}

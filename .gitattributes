@@ -218,3 +218,14 @@ docs/evidence/c31-20261110/* -text whitespace=trailing-space,space-before-tab,cr
 scripts/collect_c31_reserved.py text eol=lf
 
 scripts/confirm_c32_public.py text eol=lf
+
+scripts/public_deployment_support.py text eol=lf
+scripts/build_c33_public_production.py text eol=lf
+tests/test_public_deployment_support.py text eol=lf
+kaggle/forks/p17-public-mass-dualref/* -text whitespace=trailing-space,space-before-tab,cr-at-eol
+docs/evidence/c33-20261110/* -text whitespace=trailing-space,space-before-tab,cr-at-eol
+
+scripts/public_reference_fixture.py text eol=lf
+scripts/audit_c33_reference_local.py text eol=lf
+
+scripts/stop_after_current_runs.py text eol=lf

@@ -1,0 +1,31 @@
+{
+  "checked_utc": "2026-11-10T14:11:00.872464+00:00",
+  "queries": 120,
+  "unique_ids": 120,
+  "full_pipeline_processed": 120,
+  "original_P01_bytes_exact": true,
+  "P01_sha256": "feb6ec4bed2052a924b0cc2df76af3b2785218a5044228a810e08dcc0fc78ce7",
+  "engine2_ids": 120,
+  "models": {
+    "neural_public.parquet": {
+      "queries": 120,
+      "supported": 120
+    },
+    "neural_ours.parquet": {
+      "queries": 120,
+      "supported": 120
+    }
+  },
+  "reference_predictions_saved": {
+    "all_reference": true,
+    "input_alias_excluded": true
+  },
+  "raw_report_queries": 120,
+  "baseline_replay_exact": true,
+  "optional_recovery_receipt_present": false,
+  "collector_attention_preserved": true,
+  "diagnosis": "Collector required an empty-pool recovery receipt even when no recovery was needed; 25 completed-run artifacts were retained. No retry or repair was launched under the stop request.",
+  "confirmation_metrics_read": false,
+  "automatic_submission": false,
+  "user_stop_pending_other_run": true
+}

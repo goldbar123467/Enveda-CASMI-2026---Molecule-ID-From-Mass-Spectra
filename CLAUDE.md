@@ -1,5 +1,26 @@
 # Enveda CASMI 2026 — working rules
 
+## USER STOP REQUEST — 10 November, after the current full runs
+
+Latest user instruction: "after this next full run finishes stop". This supersedes
+continuing toward silver. No new training, cloud runs, submissions or reserved
+metric evaluation. Hourly native heartbeat is PAUSED. Project compute-paused
+marker is set with phase draining_existing_runs; existing C29/C31cloud jobs and
+collectors may finish only. Default is both current runs; optional first-finish
+clarification was offered. Do not infer a new approval from silence.
+C29waiting postprocessor25024 was stopped before development metrics/C30selection.
+C31completed14:03;25artifacts retained, originalP01bytesexact, bothmodels120supported.
+Collector24632 exited with optional-empty-pool-receipt attention; no rerun/repair.
+C29and collector8600 are still finishing. General tracker and hourly metadata updater are stopped. STOPWAIT controller watches exact
+C29/C31handles and collector exits, then sets stopped/tracker-stop flags. Once
+that condition is observed, call update_goal paused per user request and stop.
+Do not mark silver complete. Do not resume any campaign without explicit user
+instruction. P17/C33 is an UNSEALED LOCAL DRAFT, never pushed or qualified; its
+existing local fixture completed, but no further integration/seal/smoke is allowed.
+Read docs/C33-2026-11-10.md and .local/stop-after-current-runs.json before acting.
+The older measured-state sections below are historical and cannot authorize work
+past this stop boundary. Reserved120 remains unconsumed; extra publictrial unused.
+
 ## Current measured state — 10 November,12:49 UTC
 
 Silver goal UNMET. P16/ref58181280 COMPLETE0.480/noerror. Latest board12:22UTC:

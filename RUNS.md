@@ -1,8 +1,8 @@
 # Runs
 
-Updated 2026-11-10 12:54 UTC by `scripts/update_runs.py` (hourly). Generated from `runs.csv` — edit that file, not this one.
+Updated 2026-11-10 14:19 UTC by `scripts/update_runs.py` (hourly). Generated from `runs.csv` — edit that file, not this one.
 
-- Kaggle quota: GPU 15.5 h used of 30 h · TPU 0.0 h of 20 h · resets 2026-11-14 00:00 UTC
+- Kaggle quota: GPU 18.0 h used of 30 h · TPU 0.0 h of 20 h · resets 2026-11-14 00:00 UTC
 - Submissions today (UTC): 1 of 5 — see `SUBMISSIONS.md`
 
 ## Active
@@ -12,14 +12,15 @@ Updated 2026-11-10 12:54 UTC by `scripts/update_runs.py` (hourly). Generated fro
 | C09V | kaggle-gpu | diag | c09-coverage-controls v1 | 2026-11-09 14:44 | **cancel_requested** | C09 dual-device diagnostic: exact P14 full128 external pipeline negative control onGPU0; existing C08 expanded candidate coverage/scoring onGPU1; no scoring submission | Old128 panel superseded after67 base-connected acquisition groups found; cancellation requested, not acknowledged. No allocation/training/validation result; no GPU quota added at16:34UTC. |
 | C29V | kaggle-2xt4 | eval | c29-fixed-public-replay-development v1 | 2026-11-10 12:16 | **running** | Private full240 P01/control pipeline plus one fixed public MASS/dual-reference recipe; no labels or publictrial | Accepted v1 at actual title-resolved handle casmi26-c29-fixed-public-replay-development. Never duplicate shorter requested slug. Bothcycles must terminate before outer C30selection/freshC13. |
 | C29COL | local-cpu | diag | outputs/local/c29-public-replay-20261110/collector.log | 2026-11-10 12:21 | **running** | Bounded collection of exact returned C29v1 handle, source/real240 verification; no metrics | Worker 8600 live; RUNNING |
-| C29EW | local-cpu | eval | outputs/local/c29-public-replay-20261110/worker.log | 2026-11-10 12:21 | **running** | After exactcollector exit, frozen C29full240 metrics and C30outer selection after both cycles; no reservedmetrics/trial | Worker 25024 live; waiting exact C29collector terminal and exit |
-| C31V | kaggle-2xt4 | eval | c31-reserved-public-replay v1 | 2026-11-10 12:39 | **running** | Same frozen C29recipe/query120 predictions in parallel without label metrics; quarantined until C30selection | Private/offline/image37c64/remoteSCI verified; only contract and7counts differ from frozen C29. No new model/threshold, labels, confirmation metrics or publictrial. Do not duplicate. |
-| C31COL | local-cpu | diag | outputs/local/c31-reserved-public-20261110/collector.log | 2026-11-10 12:42 | **running** | Bounded C31 exact-source/real120/unchangedP01 collection without reserved label metrics | Worker 24632 live; RUNNING |
+| STOPWAIT | local-cpu | diag | outputs/local/stop-after-runs-20261110/controller.log | 2026-11-10 14:03 | **running** | Honor explicit stop-after-current-runs request; observe exact C29/C31 handles and let existing collectors finish | Worker 14252 live; draining |
 
 ## Finished (newest first)
 
 | id | platform | kind | ref | started (UTC) | ended (UTC) | status | purpose | result |
 |---|---|---|---|---|---|---|---|---|
+| C31V | kaggle-2xt4 | eval | c31-reserved-public-replay v1 | 2026-11-10 12:39 | 2026-11-10 14:03 | complete | Same frozen C29recipe/query120 predictions in parallel without label metrics; quarantined until C30selection | Private complete120;25artifacts saved. Bothmodels120supported/Engine2full120/originalP01bytesexact. No reservedqualitymetrics. Collector flagged missing optional recovery receipt; attention retained, no rerun under userstop. |
+| C31COL | local-cpu | diag | outputs/local/c31-reserved-public-20261110/collector.log | 2026-11-10 12:42 | 2026-11-10 14:03 | error | Bounded C31 exact-source/real120/unchangedP01 collection without reserved label metrics | 25completed-run artifacts retained. Completeness guard required recovery receipt absent for nonempty120 pool; read-only retentionaudit verifies full120 and exactP01. No repair or retry under userstop. |
+| C29EW | local-cpu | eval | outputs/local/c29-public-replay-20261110/worker.log | 2026-11-10 12:21 | 2026-11-10 13:57 | killed | After exactcollector exit, frozen C29full240 metrics and C30outer selection after both cycles; no reservedmetrics/trial | User requested stop after current full runs. Exact waiting worker25024 stopped; no C29development metrics, C30selection or reservedmetrics started. Cloud jobs/collectors allowed to finish. |
 | C28EW | local-2070 | eval | outputs/local/c28-evaluation-20261110/worker.log | 2026-11-10 12:02 | 2026-11-10 12:24 | complete | Bounded exact-trainer-exit then fixed C28all-mode240development, matchedcontrol and disclosed P14/P15 | Fixedfull240 rejected:delta-.000207697 CI[-.002140737,.001767892],22up28down. Positive-.000822472/negative+.001021853; matchedC09+.000002024 CIcross. Rank1/sets/150truths exact. Fresh120preserved; C30waitsC29. |
 | C28MV | local-2070 | train | outputs/local/c28-multiview-20261110/training.log | 2026-11-10 11:49 | 2026-11-10 12:23 | complete | Resume exact pilot to5000successfulupdates/fold, original C08parents, samepolarity multiview training | Two final5000additional-update folds complete/10000successful,0AMPskips/restarts,1.8145GiBpeak; final45000cum,finite/source/parent pins pass. Exact pilot resumed, no warmup reset. No refit. |
 | C28P | local-2070 | train | outputs/local/c28-multiview-20261110/pilot.log | 2026-11-10 11:47 | 2026-11-10 11:48 | complete | Checkpointed100-update prefix of frozen C28two-view schedule | 100successful/0AMPskips,finite weights,1.840GiBpeak;17906/38400two-viewqueries. Optimizer/scaler/RNG checkpoint resumed in C28MV, no warmup reset/refit. |

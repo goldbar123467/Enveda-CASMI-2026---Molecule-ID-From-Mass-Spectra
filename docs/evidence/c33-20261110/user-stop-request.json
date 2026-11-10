@@ -1,0 +1,20 @@
+{
+  "requested_utc": "2026-11-10T13:52:51.877060+00:00",
+  "request": "after this next full run finishes stop",
+  "scope": "both_current_kaggle_runs",
+  "scope_assumption": "Two full runs already in progress; optional clarification pending. Default is let both finish.",
+  "kernels": [
+    "clarkkitchen/casmi26-c29-fixed-public-replay-development",
+    "clarkkitchen/casmi26-c31-reserved-public-replay"
+  ],
+  "no_new_training": true,
+  "no_new_cloud_runs": true,
+  "no_new_submissions": true,
+  "no_reserved_metrics": true,
+  "hourly_automation_paused": true,
+  "stop_after_artifact_collection": true,
+  "goal_pause_after_condition": true,
+  "C29_waiting_postprocessor_stopped": true,
+  "native_hourly_status": "PAUSED",
+  "compute_admission_phase": "draining_existing_runs"
+}

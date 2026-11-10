@@ -1,0 +1,72 @@
+{
+  "kind": "C33_real_input_reference_fixture",
+  "real_queries": 30,
+  "synthetic_fallback_cases": 4,
+  "unsupported_parent_rows_exact": 4,
+  "fixture_contract_sha256": "828a4003299ffb475ef0d40c668afa4e87edddc83a37a8d835b5ddc21b4c9b61",
+  "overlay_source_sha256": "9dc77c02b487d4e74b4d829aa5a40abbb17f6e9d9adcce8a808967ee76a3495f",
+  "helper_sha256": "c67259350af10ae06ed9d595cade2342a002c7c0c1d35a6bd9027a933c09e5b1",
+  "views": {
+    "all_reference": {
+      "predictions_content_sha256": "f235d0b1555072a7389fc6b037b6d643b50efb1573d16e261781c37aa06a9209",
+      "changed_rows": 27,
+      "production_audit": {
+        "molecules": 34,
+        "hits": 30,
+        "promoted": 27,
+        "elapsed_s": 16.7,
+        "sourceA_valid_rows": 200724,
+        "sourceB_valid_rows": 124160,
+        "alias_audit": {
+          "reference_rows": 324884,
+          "precursor_candidate_rows": 1048,
+          "input_alias_rows": 1,
+          "excluded": false,
+          "retained_rows": 324884,
+          "labels_used": false,
+          "limitation": "Only precursor10ppm+.002Da candidate rows; rounded full peaks and FP16top96 signatures. No universal provenance or pretraining exclusion claim."
+        },
+        "sourceB_casmi_subset_dropped": true
+      },
+      "identity_report": {
+        "metric_identity_dedup_events": 502,
+        "invalid_structure_parent_fallback_ids": []
+      }
+    },
+    "input_alias_excluded": {
+      "predictions_content_sha256": "f235d0b1555072a7389fc6b037b6d643b50efb1573d16e261781c37aa06a9209",
+      "changed_rows": 27,
+      "production_audit": {
+        "molecules": 34,
+        "hits": 30,
+        "promoted": 27,
+        "elapsed_s": 15.5,
+        "sourceA_valid_rows": 200724,
+        "sourceB_valid_rows": 124160,
+        "alias_audit": {
+          "reference_rows": 324884,
+          "precursor_candidate_rows": 1048,
+          "input_alias_rows": 1,
+          "excluded": true,
+          "retained_rows": 324883,
+          "labels_used": false,
+          "limitation": "Only precursor10ppm+.002Da candidate rows; rounded full peaks and FP16top96 signatures. No universal provenance or pretraining exclusion claim."
+        },
+        "sourceB_casmi_subset_dropped": true
+      },
+      "identity_report": {
+        "metric_identity_dedup_events": 502,
+        "invalid_structure_parent_fallback_ids": []
+      }
+    }
+  },
+  "independent": {
+    "peak_pairs": 1985,
+    "peak_score_max_abs_difference": 0.0,
+    "reference_candidate_rows": 1152,
+    "sourceB_CASMI_subset_excluded": true,
+    "matching_implementation": "Vectorized distance matrix and lexsort/boolean masks; production uses searchsorted/pair tuples/sets."
+  },
+  "query_truth_labels_used": false,
+  "quality_metrics_computed": false
+}

@@ -34,6 +34,7 @@ WORKER_RECEIPTS = {
     'C29COL': ('outputs/local/c29-public-replay-20261110/collector-status.json', 'collected', 'outputs/local/c29-public-replay-20261110/collector-attention.json'),
     'C29EW': ('outputs/local/c29-public-replay-20261110/worker-status.json', 'complete', 'outputs/local/c29-public-replay-20261110/worker-attention.json'),
     'C31COL': ('outputs/local/c31-reserved-public-20261110/collector-status.json', 'collected', 'outputs/local/c31-reserved-public-20261110/collector-attention.json'),
+    'STOPWAIT': ('outputs/local/stop-after-runs-20261110/status.json', 'stopped', 'outputs/local/stop-after-runs-20261110/attention.json'),
     'C20LOCAL': ('outputs/research/c20-engine-recovery-20261110/local-engine-status.json', 'complete', 'outputs/research/c20-engine-recovery-20261110/local-engine-attention.json'),
 }
 
