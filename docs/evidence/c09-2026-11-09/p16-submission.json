@@ -1,0 +1,10 @@
+{
+  "marker": "C09-P16-EXTREF-20261109",
+  "reference": 58181280,
+  "kernel": "clarkkitchen/casmi26-p16-external-reference-c09",
+  "version": 2,
+  "submitted_utc": "2026-11-10T01:22:14.634250+00:00",
+  "status": "accepted; actual score pending",
+  "csv_sha256": "5cb2f1ad75c64791fa63cbfabb7e70e29948e05d8cc3987de79d7e137cdc20b9",
+  "qualification_sha256": "ce497907d1f2b2a60d496fe9737c68ae3aa2c0ff67741dea8fca923c36e1e0aa"
+}

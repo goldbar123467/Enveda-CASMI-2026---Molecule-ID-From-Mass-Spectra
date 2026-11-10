@@ -1,0 +1,456 @@
+{
+  "completed_utc": "2026-11-10T01:15:39.310195+00:00",
+  "cohorts": {
+    "full80": {
+      "all_sources": {
+        "queries": 80,
+        "baseline_truths": 71,
+        "candidate_truths": {
+          "C09::P14": 71,
+          "C09::p15-parent": 71,
+          "C09::c09-served": 71,
+          "C09::cosine-control": 71,
+          "C09E::all_reference": 77,
+          "C09E::input_alias_excluded": 77
+        },
+        "comparisons": {
+          "C09::P14": {
+            "n": 80,
+            "baseline_mrr25": 0.7138591269841269,
+            "candidate_mrr25": 0.7176091269841269,
+            "delta": 0.0037499999999999977,
+            "ci95": [
+              -0.007411458333333334,
+              0.015105654761904739
+            ],
+            "improved": 7,
+            "harmed": 4
+          },
+          "C09::p15-parent": {
+            "n": 80,
+            "baseline_mrr25": 0.7138591269841269,
+            "candidate_mrr25": 0.7159733893557422,
+            "delta": 0.0021142623716153123,
+            "ci95": [
+              -0.0003151260504201675,
+              0.005254172502334267
+            ],
+            "improved": 4,
+            "harmed": 2
+          },
+          "C09::c09-served": {
+            "n": 80,
+            "baseline_mrr25": 0.7138591269841269,
+            "candidate_mrr25": 0.7157501750700279,
+            "delta": 0.0018910480859010274,
+            "ci95": [
+              -0.0004726890756302512,
+              0.0049813258636788055
+            ],
+            "improved": 3,
+            "harmed": 2
+          },
+          "C09::cosine-control": {
+            "n": 80,
+            "baseline_mrr25": 0.7138591269841269,
+            "candidate_mrr25": 0.7157501750700279,
+            "delta": 0.0018910480859010274,
+            "ci95": [
+              -0.0004726890756302512,
+              0.0049813258636788055
+            ],
+            "improved": 3,
+            "harmed": 2
+          },
+          "C09E::all_reference": {
+            "n": 80,
+            "baseline_mrr25": 0.7138591269841269,
+            "candidate_mrr25": 0.8374454365079366,
+            "delta": 0.12358630952380953,
+            "ci95": [
+              0.05625,
+              0.1965029761904762
+            ],
+            "improved": 13,
+            "harmed": 3
+          },
+          "C09E::input_alias_excluded": {
+            "n": 80,
+            "baseline_mrr25": 0.7138591269841269,
+            "candidate_mrr25": 0.8374454365079366,
+            "delta": 0.12358630952380953,
+            "ci95": [
+              0.05625,
+              0.1965029761904762
+            ],
+            "improved": 13,
+            "harmed": 3
+          }
+        }
+      },
+      "1": {
+        "queries": 60,
+        "baseline_truths": 56,
+        "candidate_truths": {
+          "C09::P14": 56,
+          "C09::p15-parent": 56,
+          "C09::c09-served": 56,
+          "C09::cosine-control": 56,
+          "C09E::all_reference": 59,
+          "C09E::input_alias_excluded": 59
+        },
+        "comparisons": {
+          "C09::P14": {
+            "n": 60,
+            "baseline_mrr25": 0.8266865079365079,
+            "candidate_mrr25": 0.8208333333333333,
+            "delta": -0.005853174603174605,
+            "ci95": [
+              -0.016666666666666666,
+              0.003472222222222222
+            ],
+            "improved": 2,
+            "harmed": 3
+          },
+          "C09::p15-parent": {
+            "n": 60,
+            "baseline_mrr25": 0.8266865079365079,
+            "candidate_mrr25": 0.8262698412698413,
+            "delta": -0.0004166666666666666,
+            "ci95": [
+              -0.0012499999999999998,
+              0.0
+            ],
+            "improved": 0,
+            "harmed": 1
+          },
+          "C09::c09-served": {
+            "n": 60,
+            "baseline_mrr25": 0.8266865079365079,
+            "candidate_mrr25": 0.8262698412698413,
+            "delta": -0.0004166666666666666,
+            "ci95": [
+              -0.0012499999999999998,
+              0.0
+            ],
+            "improved": 0,
+            "harmed": 1
+          },
+          "C09::cosine-control": {
+            "n": 60,
+            "baseline_mrr25": 0.8266865079365079,
+            "candidate_mrr25": 0.8262698412698413,
+            "delta": -0.0004166666666666666,
+            "ci95": [
+              -0.0012499999999999998,
+              0.0
+            ],
+            "improved": 0,
+            "harmed": 1
+          },
+          "C09E::all_reference": {
+            "n": 60,
+            "baseline_mrr25": 0.8266865079365079,
+            "candidate_mrr25": 0.8905753968253969,
+            "delta": 0.06388888888888888,
+            "ci95": [
+              0.005555555555555554,
+              0.13333333333333333
+            ],
+            "improved": 6,
+            "harmed": 2
+          },
+          "C09E::input_alias_excluded": {
+            "n": 60,
+            "baseline_mrr25": 0.8266865079365079,
+            "candidate_mrr25": 0.8905753968253969,
+            "delta": 0.06388888888888888,
+            "ci95": [
+              0.005555555555555554,
+              0.13333333333333333
+            ],
+            "improved": 6,
+            "harmed": 2
+          }
+        }
+      },
+      "2": {
+        "queries": 20,
+        "baseline_truths": 15,
+        "candidate_truths": {
+          "C09::P14": 15,
+          "C09::p15-parent": 15,
+          "C09::c09-served": 15,
+          "C09::cosine-control": 15,
+          "C09E::all_reference": 18,
+          "C09E::input_alias_excluded": 18
+        },
+        "comparisons": {
+          "C09::P14": {
+            "n": 20,
+            "baseline_mrr25": 0.375376984126984,
+            "candidate_mrr25": 0.40793650793650793,
+            "delta": 0.0325595238095238,
+            "ci95": [
+              0.006666666666666664,
+              0.06513839285714257
+            ],
+            "improved": 5,
+            "harmed": 1
+          },
+          "C09::p15-parent": {
+            "n": 20,
+            "baseline_mrr25": 0.375376984126984,
+            "candidate_mrr25": 0.38508403361344534,
+            "delta": 0.009707049486461249,
+            "ci95": [
+              0.0005252100840336095,
+              0.021081144957983185
+            ],
+            "improved": 4,
+            "harmed": 1
+          },
+          "C09::c09-served": {
+            "n": 20,
+            "baseline_mrr25": 0.375376984126984,
+            "candidate_mrr25": 0.3841911764705882,
+            "delta": 0.008814192343604109,
+            "ci95": [
+              -0.000630252100840335,
+              0.02027911998132585
+            ],
+            "improved": 3,
+            "harmed": 1
+          },
+          "C09::cosine-control": {
+            "n": 20,
+            "baseline_mrr25": 0.375376984126984,
+            "candidate_mrr25": 0.3841911764705882,
+            "delta": 0.008814192343604109,
+            "ci95": [
+              -0.000630252100840335,
+              0.02027911998132585
+            ],
+            "improved": 3,
+            "harmed": 1
+          },
+          "C09E::all_reference": {
+            "n": 20,
+            "baseline_mrr25": 0.375376984126984,
+            "candidate_mrr25": 0.6780555555555556,
+            "delta": 0.30267857142857146,
+            "ci95": [
+              0.12916666666666668,
+              0.4970238095238095
+            ],
+            "improved": 7,
+            "harmed": 1
+          },
+          "C09E::input_alias_excluded": {
+            "n": 20,
+            "baseline_mrr25": 0.375376984126984,
+            "candidate_mrr25": 0.6780555555555556,
+            "delta": 0.30267857142857146,
+            "ci95": [
+              0.12916666666666668,
+              0.4970238095238095
+            ],
+            "improved": 7,
+            "harmed": 1
+          }
+        }
+      }
+    },
+    "no_raw_competition_signature_overlap": {
+      "all_sources": {
+        "queries": 60,
+        "baseline_truths": 56,
+        "candidate_truths": {
+          "C09::P14": 56,
+          "C09::p15-parent": 56,
+          "C09::c09-served": 56,
+          "C09::cosine-control": 56,
+          "C09E::all_reference": 59,
+          "C09E::input_alias_excluded": 59
+        },
+        "comparisons": {
+          "C09::P14": {
+            "n": 60,
+            "baseline_mrr25": 0.8266865079365079,
+            "candidate_mrr25": 0.8208333333333333,
+            "delta": -0.005853174603174605,
+            "ci95": [
+              -0.016666666666666666,
+              0.003472222222222222
+            ],
+            "improved": 2,
+            "harmed": 3
+          },
+          "C09::p15-parent": {
+            "n": 60,
+            "baseline_mrr25": 0.8266865079365079,
+            "candidate_mrr25": 0.8262698412698413,
+            "delta": -0.0004166666666666666,
+            "ci95": [
+              -0.0012499999999999998,
+              0.0
+            ],
+            "improved": 0,
+            "harmed": 1
+          },
+          "C09::c09-served": {
+            "n": 60,
+            "baseline_mrr25": 0.8266865079365079,
+            "candidate_mrr25": 0.8262698412698413,
+            "delta": -0.0004166666666666666,
+            "ci95": [
+              -0.0012499999999999998,
+              0.0
+            ],
+            "improved": 0,
+            "harmed": 1
+          },
+          "C09::cosine-control": {
+            "n": 60,
+            "baseline_mrr25": 0.8266865079365079,
+            "candidate_mrr25": 0.8262698412698413,
+            "delta": -0.0004166666666666666,
+            "ci95": [
+              -0.0012499999999999998,
+              0.0
+            ],
+            "improved": 0,
+            "harmed": 1
+          },
+          "C09E::all_reference": {
+            "n": 60,
+            "baseline_mrr25": 0.8266865079365079,
+            "candidate_mrr25": 0.8905753968253969,
+            "delta": 0.06388888888888888,
+            "ci95": [
+              0.005555555555555554,
+              0.13333333333333333
+            ],
+            "improved": 6,
+            "harmed": 2
+          },
+          "C09E::input_alias_excluded": {
+            "n": 60,
+            "baseline_mrr25": 0.8266865079365079,
+            "candidate_mrr25": 0.8905753968253969,
+            "delta": 0.06388888888888888,
+            "ci95": [
+              0.005555555555555554,
+              0.13333333333333333
+            ],
+            "improved": 6,
+            "harmed": 2
+          }
+        }
+      },
+      "1": {
+        "queries": 60,
+        "baseline_truths": 56,
+        "candidate_truths": {
+          "C09::P14": 56,
+          "C09::p15-parent": 56,
+          "C09::c09-served": 56,
+          "C09::cosine-control": 56,
+          "C09E::all_reference": 59,
+          "C09E::input_alias_excluded": 59
+        },
+        "comparisons": {
+          "C09::P14": {
+            "n": 60,
+            "baseline_mrr25": 0.8266865079365079,
+            "candidate_mrr25": 0.8208333333333333,
+            "delta": -0.005853174603174605,
+            "ci95": [
+              -0.016666666666666666,
+              0.003472222222222222
+            ],
+            "improved": 2,
+            "harmed": 3
+          },
+          "C09::p15-parent": {
+            "n": 60,
+            "baseline_mrr25": 0.8266865079365079,
+            "candidate_mrr25": 0.8262698412698413,
+            "delta": -0.0004166666666666666,
+            "ci95": [
+              -0.0012499999999999998,
+              0.0
+            ],
+            "improved": 0,
+            "harmed": 1
+          },
+          "C09::c09-served": {
+            "n": 60,
+            "baseline_mrr25": 0.8266865079365079,
+            "candidate_mrr25": 0.8262698412698413,
+            "delta": -0.0004166666666666666,
+            "ci95": [
+              -0.0012499999999999998,
+              0.0
+            ],
+            "improved": 0,
+            "harmed": 1
+          },
+          "C09::cosine-control": {
+            "n": 60,
+            "baseline_mrr25": 0.8266865079365079,
+            "candidate_mrr25": 0.8262698412698413,
+            "delta": -0.0004166666666666666,
+            "ci95": [
+              -0.0012499999999999998,
+              0.0
+            ],
+            "improved": 0,
+            "harmed": 1
+          },
+          "C09E::all_reference": {
+            "n": 60,
+            "baseline_mrr25": 0.8266865079365079,
+            "candidate_mrr25": 0.8905753968253969,
+            "delta": 0.06388888888888888,
+            "ci95": [
+              0.005555555555555554,
+              0.13333333333333333
+            ],
+            "improved": 6,
+            "harmed": 2
+          },
+          "C09E::input_alias_excluded": {
+            "n": 60,
+            "baseline_mrr25": 0.8266865079365079,
+            "candidate_mrr25": 0.8905753968253969,
+            "delta": 0.06388888888888888,
+            "ci95": [
+              0.005555555555555554,
+              0.13333333333333333
+            ],
+            "improved": 6,
+            "harmed": 2
+          }
+        }
+      },
+      "2": {
+        "queries": 0,
+        "comparisons": null
+      }
+    }
+  },
+  "input_sha256": {
+    "labels": "86f54a9ca39dbf6353eef237a35406f1f8203f0ea5f0bc71fd1f3f420b5c4d4e",
+    "raw_spectrum_matches": "cf6538232ce6f9250b4949b86ac7e25e87f9cd75f1e6b027bd71a28bdb05be03",
+    "original_report": "f26dada86ba99f81457bdf23b33bab1431437b428ac8f1aadf84289c5a3ab59f",
+    "original_predictions": "7d08d6d84942f110db1a5d5857a9c612124987e8d1fa49aecbfdba634e03916f",
+    "external_report": "0fc0d1395ce82a19372ee427e88241e7698b50e01c2295e9bcdbecfc3edd463f",
+    "external_predictions": "4b3f61861cf757fd0b0fe4452b02aaf2b9f0133a9c1ccf330f291d95d6418c52"
+  },
+  "reporter_sha256": "9e7acbe8c54678a7661f6df246ea5807b07945b363b685d1bb359dd80ff592f8",
+  "recipe_selection": false,
+  "automatic_submission": false,
+  "truth_absent_mrr": 0,
+  "limitation": "Descriptive source sensitivity of the fixed candidate, not an estimate of hidden source mix or universal pretraining/acquisition exclusion. No per-source policy is selected."
+}

@@ -1,0 +1,142 @@
+{
+  "campaign": "C09E",
+  "completed_utc": "2026-11-10T01:13:39.068197+00:00",
+  "policy_sha256": "ea662270a895dc902cc9dd242afd7cd7f63e4a42ce3468474c6bff73d984043c",
+  "implementation_freeze_sha256": "cf818c5c06f228b356c10347d2c3940e3f76e6a18e690be289dc564511a53f30",
+  "complete_baseline_report_sha256": "f36cb936c84172e9c07a8fa64359c468005cf2f0e3a02fa795bcabda25c89e3d",
+  "search": {
+    "queries": 80,
+    "spectra": 302,
+    "reference_rows": 200724,
+    "precursor_candidate_rows": 871,
+    "query_reference_comparisons": 1912,
+    "query_input_alias_reference_rows": 0,
+    "query_labels_used": false,
+    "limitation": "Rounded full peaks and FP16top96 signatures only; not universal acquisition/provenance exclusion"
+  },
+  "cohorts": {
+    "full80": {
+      "queries": 80,
+      "excluded": 0,
+      "sources": {
+        "1": 60,
+        "2": 20
+      },
+      "baseline_truths": 71,
+      "candidate_truths": {
+        "all_reference": 77,
+        "input_alias_excluded": 77
+      },
+      "comparisons": {
+        "P14": {
+          "n": 80,
+          "baseline_mrr25": 0.7138591269841269,
+          "candidate_mrr25": 0.7176091269841269,
+          "delta": 0.0037499999999999964,
+          "ci95": [
+            -0.007411458333333336,
+            0.015105654761904739
+          ],
+          "improved": 7,
+          "harmed": 4
+        },
+        "all_reference": {
+          "n": 80,
+          "baseline_mrr25": 0.7138591269841269,
+          "candidate_mrr25": 0.8374454365079366,
+          "delta": 0.12358630952380953,
+          "ci95": [
+            0.05625,
+            0.1965029761904762
+          ],
+          "improved": 13,
+          "harmed": 3
+        },
+        "input_alias_excluded": {
+          "n": 80,
+          "baseline_mrr25": 0.7138591269841269,
+          "candidate_mrr25": 0.8374454365079366,
+          "delta": 0.12358630952380953,
+          "ci95": [
+            0.05625,
+            0.1965029761904762
+          ],
+          "improved": 13,
+          "harmed": 3
+        }
+      }
+    },
+    "no_raw_competition_signature_overlap": {
+      "queries": 60,
+      "excluded": 20,
+      "sources": {
+        "1": 60
+      },
+      "baseline_truths": 56,
+      "candidate_truths": {
+        "all_reference": 59,
+        "input_alias_excluded": 59
+      },
+      "comparisons": {
+        "P14": {
+          "n": 60,
+          "baseline_mrr25": 0.8266865079365079,
+          "candidate_mrr25": 0.8208333333333333,
+          "delta": -0.005853174603174605,
+          "ci95": [
+            -0.016666666666666666,
+            0.003472222222222222
+          ],
+          "improved": 2,
+          "harmed": 3
+        },
+        "all_reference": {
+          "n": 60,
+          "baseline_mrr25": 0.8266865079365079,
+          "candidate_mrr25": 0.8905753968253969,
+          "delta": 0.06388888888888888,
+          "ci95": [
+            0.005555555555555554,
+            0.13333333333333333
+          ],
+          "improved": 6,
+          "harmed": 2
+        },
+        "input_alias_excluded": {
+          "n": 60,
+          "baseline_mrr25": 0.8266865079365079,
+          "candidate_mrr25": 0.8905753968253969,
+          "delta": 0.06388888888888888,
+          "ci95": [
+            0.005555555555555554,
+            0.13333333333333333
+          ],
+          "improved": 6,
+          "harmed": 2
+        }
+      }
+    }
+  },
+  "actions": {
+    "all_reference": {
+      "same_identity_as_current_leader": 31,
+      "no_qualifying_match": 30,
+      "promoted_existing_identity": 8,
+      "inserted_external_identity": 8,
+      "protected_pipeline_library": 3
+    },
+    "input_alias_excluded": {
+      "same_identity_as_current_leader": 31,
+      "no_qualifying_match": 30,
+      "promoted_existing_identity": 8,
+      "inserted_external_identity": 8,
+      "protected_pipeline_library": 3
+    }
+  },
+  "detects_known_P14_regression": false,
+  "truth_absent_mrr": 0,
+  "confirmation_recipe_selection": false,
+  "automatic_submission": false,
+  "broader_pretraining_exposure_excluded": false,
+  "limitation": "External-source confirmation, signature exclusions only; missing per-reference acquisition/provenance attribution prevents universal leakage exclusion. Assess controls and actual scored reproduction."
+}

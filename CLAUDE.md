@@ -6,8 +6,9 @@ Latest user override at22:07UTC: continue UI/work until verified silver; run an
 hourly worker for24 hours. Active Codex goal and heartbeat
 `casmi-silver-campaign-hourly-for-24-hours` target this chat. Read
 `configs/c09-silver-worker-20261109.json` and current C09 notes before acting.
-Live rank907/5034, score0.480; nominal silver cutoff251 at0.482 with ties
-through269, so verify actual rank, not score alone. No paid compute or
+Latest01:28UTC10November rank918/5043, score0.480; nominal silver cutoff252
+at0.482. Matching a tied cutoff score is insufficient; verify actual rank.
+No paid compute or
 unqualified submission is authorized by the rank target. Continue useful work
 between hourly wake-ups; schedule expiration is not goal achievement.
 
@@ -24,18 +25,24 @@ passes:400 valid rows,12 real queries supported by both models,zero metric
 duplicates;30 isolated real development fixtures exercise7 promotions/2 insertions.
 The preview12 are protected library matches, so the fixtures are necessary
 changed-path coverage and do not modify the scoring CSV. Frozen source/model/
-reference hashes and local/cloud scores pass. `finish_c09_external.py` next
-evaluates the frozen rule on80 once original confirmation finishes. It cannot submit. Inspect
-both finishers/processes before new overlapping work. C09E source/provenance
-limitations and exact state are in the current campaign notes. No new leaderboard
-submission has been sent. Latest22:34 rank909/5036, cutoff251 at.482.
+reference hashes and local/cloud scores pass. Both confirmation finishers are
+now COMPLETE. Fixed P16 improves full80 MRR.713859→.837445,delta.123586,
+CI[.05625,.196503],13 improved/3 harmed,truths71→77. Raw-clean60 is entirely
+MassBank:MRR.826687→.890575,delta.063889,CI[.005556,.133333],6 improved/2 harmed.
+All20 GNPS queries are raw-signature flagged; there is no clean GNPS evidence.
+Reference-input alias exclusion gives identical results with0 detected matches.
+Three harms include one NH4/H adduct mismatch; the fixed rule remains unchanged.
+The preplanned source reporter ran once and its report is sealed; do not rerun it.
 
-Before reviewing C09E qualification, run
-`.venv-gpu/Scripts/python.exe scripts/report_c09_confirmation_sources.py` after both confirmation reports
-exist. This pre-result reporting plan retains every query/absent-truth zero and
-compares every fixed model/reference view by source in full80 and raw-clean60;
-it cannot select a source-specific recipe or submit. Its preparation receipt
-records that both confirmation reports were absent at23:36UTC.
+P16v2 was submitted at10November01:22UTC,ref58181280,marker
+`C09-P16-EXTREF-20261109`. Authenticated API confirms PENDING and native UI
+shows Notebook Running. ExactlyONE pending submission; DO NOT resubmit or send
+another trial until its actual score resolves. Keep champion0.480. Hash-bound
+review: `outputs/local/c09-external-reference-20261109/submission-qualification.json`.
+All scientific/source/execution checks passed before submission, including remote
+version/code/privacy/internet checks and a pending0 dry-run. Actual hidden gain
+is unproven. The full80 panel fails to reproduce P14/P15 public regressions;
+source/provenance limitations and complete review are in current campaign notes.
 
 Read-only tracker PID is recorded in `campaign-tracker.json`; its new deadline
 is10November22:08:41UTC and per-thread system-sleep inhibition is confirmed true.
@@ -47,9 +54,8 @@ P01 replay is exact:MRR.713859,71 truths. P14 is.717609,delta+.00375,
 CI[-.0071875,.0146875],7 improved/4 harmed, and does NOT reproduce its known
 public regression. This panel cannot be treated as a calibrated hidden-score
 predictor. GPU1 DreaMS/MolFormer preflight is finite on a realT4, Torch2.10.0+
-cu128/CUDA12.8,peak.4805GiB. Local frozen-parent/control scoring is now running
-under the original finisher; C09E confirmation follows. Inspect actual current
-reports/worker errors before any new overlapping work. Never rerun completed C09C2.
+cu128/CUDA12.8,peak.4805GiB. Both local frozen-parent/control and C09E confirmation
+finished. Never rerun completed C09C2 or restart its completed finishers.
 
 Local C09T, C09CT and C09H all finished normally:10000+10000+40000 successful
 new updates, zero restarts. C09H had10 AMP-skipped attempts, not counted as
@@ -60,10 +66,16 @@ at0.20; there is no demonstrated additional training gain or submission qualific
 New80 confirmation results were not used in selection. Freeze receipt21:32UTC,
 while the T4 run was RUNNING: `outputs/local/c09-followup-evaluation-20261109/`.
 
-`scripts/finish_c09_confirmation.py` owns the bounded wait/download/frozen local
-inference, with no submission or reselection. Inspect its process and status
-before starting overlapping local GPU work. Read-only campaign/hourly tracking
-continues; dashboard http://127.0.0.1:8766 shows the completed training queue.
+Final80 confirms no additional training benefit: frozen control delta+.001891
+versusP01 has an interval crossing0; versusP15parent it is-.000223 with0 improved/
+1 harmed. On raw-clean60, all trained recipes equal the parent and harm1 query
+versusP01. No trained C09 model is submission-qualified. Do not repeat these fits.
+
+Read-only campaign/hourly tracking continues. Scoring runs use platform
+`kaggle-submission` and actual account status, never the COMPLETE commit kernel.
+The readers were recovered on current code with their original24h deadline;
+current PIDs are recorded in the tracker/process receipts. Dashboard
+http://127.0.0.1:8766 shows the completed training queue.
 C09S3 CPU audit completed:20/80 queries match raw spectrum signatures despite
 cached-group exclusions. Full80 remains primary; predeclared label-blind
 no-raw-overlap cohort is secondary. Do not call this universally leakage-free.
@@ -73,12 +85,12 @@ using the local2070 and free Kaggle concurrently. Training/recovery/private mode
 uploads/qualified sequential submissions/GitHub pushes are authorized. Historical
 C08/F07 exhausted-authorization and pause instructions below do not limit C09.
 Exactly **ONE pending leaderboard submission globally** is allowed. At21:06UTC
-P15/ref58163163 is COMPLETE0.479/no error, below champion0.480; no pending
-submissions remain. Never automatically resubmit P15 or spend an unqualified slot.
+P15/ref58163163 is COMPLETE0.479/no error, below champion0.480. P16/ref58181280
+is now the only pending submission. Never automatically resubmit either trial.
 Use `configs/c09-campaign-20261109.json`, `.local/c09-submission-ledger.json`,
 `docs/C09-CAMPAIGN-2026-11-09.md`; inspect processes before any restart.
-C09T continues existing C08 fits with a new served-score objective; C09V is a
-separate private P14 full-pipeline negative control and candidate-coverage audit.
+C09T completed its continuation of existing C08 fits; C09V is the obsolete
+cancel-requested diagnostic, replaced by completed C09C2.
 The existing128-query panel is already used, not an untouched new holdout.
 Keep P01/P13 at0.480 champion until an actual better nonempty score returns.
 Use `scripts/c09_submission_guard.py` for fail-closed account status, not the old

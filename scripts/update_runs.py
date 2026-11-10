@@ -98,11 +98,47 @@ def submissions_today():
     return sum(1 for line in out.splitlines() if f",{today} " in line)
 
 
-def refresh(rows):
+def submission_run_status(row):
+    """A COMPLETE kernel or an empty scoring result cannot prove success."""
+    from c09_submission_guard import normalize
+    record = normalize(row)
+    state = record['status']
+    if state == 'COMPLETE':
+        status = 'complete' if record['success'] else 'error'
+    elif state in ['CANCELLED', 'CANCELED']:
+        status = 'cancelled'
+    else:
+        status = state.lower()
+    result = f"Submission {record['reference']}: {state}; public score {record['public_score']}"
+    if record['error']:
+        result += '; ' + str(record['error'])[:300]
+    elif state == 'COMPLETE' and not record['success']:
+        result += '; no successful nonempty score'
+    return status, result
+
+
+def refresh(rows, submission_rows=None):
+    scoring = [r for r in rows if r['platform'] == 'kaggle-submission' and r['status'] not in FINAL]
+    submission_error = ''
+    if scoring and submission_rows is None:
+        try:
+            from kaggle.api.kaggle_api_extended import KaggleApi
+            api = KaggleApi(); api.authenticate()
+            submission_rows = api.competition_submissions(COMP)
+        except Exception as exc:
+            submission_rows = []
+            submission_error = exc.__class__.__name__
     for r in rows:
         if r["status"] in FINAL:
             continue
-        if r["platform"].startswith("kaggle"):
+        if r['platform'] == 'kaggle-submission':
+            from c09_submission_guard import field
+            matches = [raw for raw in submission_rows if str(field(raw, 'ref', '')) == r['ref'].split()[0]]
+            if len(matches) == 1:
+                r['status'], r['result'] = submission_run_status(matches[0])
+            else:
+                r['result'] = 'Scoring record unavailable; no terminal state inferred' + (f' ({submission_error})' if submission_error else '')
+        elif r["platform"].startswith("kaggle"):
             s = kaggle_status(r["ref"])
             if s:
                 r["status"] = {"cancel_acknowledged": "cancelled"}.get(s, s)

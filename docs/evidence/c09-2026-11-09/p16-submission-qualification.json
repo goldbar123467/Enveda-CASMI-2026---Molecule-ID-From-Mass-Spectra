@@ -1,0 +1,55 @@
+{
+  "reviewed_utc": "2026-11-10T01:21:57.463537+00:00",
+  "decision": "qualified_sequential_trial",
+  "marker": "C09-P16-EXTREF-20261109",
+  "kernel_version": 2,
+  "maximum_pending": 1,
+  "champion_retained": 0.48,
+  "negative_control_interpretation": {
+    "detects_known_P14_regression": false,
+    "detects_known_P15_regression": false,
+    "assessment": "Full80 fails to reproduce the known P14/P15 public regressions. P14 delta +0.00375 has an interval spanning zero; P15 +0.002114 also spans zero. All20 GNPS queries are raw-signature flagged. In the60 MassBank-only raw-clean cohort both controls have negative point deltas, while fixed P16 gains +0.063889 with a positive95% lower bound. This is independent external lookup evidence, not calibrated hidden-score prediction."
+  },
+  "rationale": "One policy and implementation froze before new80 results. P16 improves full80 by0.123586 (95%CI0.05625 to0.196503),13 improved/3 harmed,truth coverage71 to77. It also improves the predeclared60 raw-clean MassBank queries by0.063889 (CI0.005556 to0.133333),6 improved/2 harmed,truth coverage56 to59. Reference-input-alias exclusion gives identical results with0 detected matches. Real12/400 Kaggle execution plus separate real30 changed-path fixtures and independent source/model/reference/peak/merge/identity/fallback/score-parity audits pass. The extra trained recipes and unsupported MassBank extension are not selected. A single actual-score trial is warranted; retain the0.480 champion until a better nonempty score returns.",
+  "limitations": [
+    "Provisional source-biased external validation cannot establish hidden competition gain or a final medal.",
+    "All20 GNPS queries match raw competition signatures; the60-query raw-clean subset is entirely MassBank and provides no independent clean GNPS evidence.",
+    "Full80 does not detect the known P14/P15 public regressions; do not hide or reinterpret those controls as successes.",
+    "The public merged reference metadata lacks per-record acquisition/source/license attribution; signature audits are not universal pretraining/acquisition exclusions.",
+    "There are3 harmed confirmation queries, including one allowed NH4/H adduct mismatch. Keep the predeclared adduct-agnostic rule unchanged rather than tuning on confirmation.",
+    "The12 visible preview queries are protected library hits. Changed paths are exercised on30 separate previously used real development fixtures without truth labels; those fixtures are execution tests, not new validation."
+  ],
+  "source_codes": {
+    "1": "MassBank",
+    "2": "GNPS"
+  },
+  "threshold_or_recipe_reselection": false,
+  "artifact_sha256": {
+    "outputs/forks/p16-external-reference-c09-v2/independent_external_smoke_audit.json": "99ee082ae7d56488519762d223ed062b162f28f8e5ca85671cc38304a4cfa5c7",
+    "outputs/forks/p16-external-reference-c09-v2/p16_execution_receipt.json": "2af8dd2d3f21eeda0db8d518a15c55920d81d2370f3b0c56df5d07087cec8251",
+    "outputs/forks/p16-external-reference-c09-v2/p16_fixture_receipt.json": "652d54824e5380581693de6738b670b026d831d489aa921cebb1c6480a59021c",
+    "outputs/forks/p16-external-reference-c09-v2/submission.csv": "5cb2f1ad75c64791fa63cbfabb7e70e29948e05d8cc3987de79d7e137cdc20b9",
+    "outputs/local/c09-external-reference-20261109/confirmation.json": "0fc0d1395ce82a19372ee427e88241e7698b50e01c2295e9bcdbecfc3edd463f",
+    "outputs/local/c09-external-reference-20261109/confirmation-predictions.csv": "4b3f61861cf757fd0b0fe4452b02aaf2b9f0133a9c1ccf330f291d95d6418c52",
+    "outputs/local/c09-external-reference-20261109/confirmation-source-sensitivity.json": "2f2d1ae01d6c5c925612d4707abc9c792cc8e746c450c7976ed933ea1115fbe5",
+    "outputs/local/c09-external-reference-20261109/confirmation-match-review.json": "90da74a143f1b2b2cfc39d6e3493aa21d053b2ebd91b1f68a01019566b4eec4b",
+    "outputs/local/c09-external-reference-20261109/development.json": "ed753564e541a95a38e89ec39f7a1be481e5f55f5d58c888bb0f8d18d1117483",
+    "outputs/local/c09-external-reference-20261109/implementation-freeze.json": "cf818c5c06f228b356c10347d2c3940e3f76e6a18e690be289dc564511a53f30",
+    "outputs/local/c09-followup-evaluation-20261109/confirmation.json": "f26dada86ba99f81457bdf23b33bab1431437b428ac8f1aadf84289c5a3ab59f",
+    "outputs/local/c09-followup-evaluation-20261109/freeze-receipt.json": "85cdc1899bff31596f03994bed84280f412b0d862df72769a533207553bc6581",
+    "outputs/forks/c09-clean-validation-v2/c09_clean_report.json": "f36cb936c84172e9c07a8fa64359c468005cf2f0e3a02fa795bcabda25c89e3d",
+    "outputs/forks/c09-clean-validation-v2/c09_gpu1_preflight.json": "6a7dcb9435cb54de2f523b68a4819b8956769adb80cc64a960242a4379456a6d",
+    "kaggle/forks/p16-external-reference-c09/notebook.ipynb": "d6b9c9625ad8fb7d503341c6fd702bd909101d719ca55e400145fb96f2b2af6a",
+    "kaggle/forks/p16-external-reference-c09/external-pin.json": "4ba9c6a7ca614a4e6bb77e5b697f1c0de8ee106c84ad1fe4b327fd8d4cbcd39d",
+    "configs/c09-external-reference-20261109.json": "ea662270a895dc902cc9dd242afd7cd7f63e4a42ce3468474c6bff73d984043c",
+    "scripts/audit_external_reference_smoke.py": "c3c934346b96b4dc9b0a506c16ae23af5a93aca8a8b236d2e030f649a50e0c84",
+    "scripts/submit_c09_external_once.py": "0ce237b2b0f4d012b3896b4973546f4a2c2c220b7911be610ab1cdb14dd411cc",
+    "scripts/report_c09_confirmation_sources.py": "9e7acbe8c54678a7661f6df246ea5807b07945b363b685d1bb359dd80ff592f8",
+    "scripts/external_reference_overlay.py": "826a689fdcecc05436cd201219ac066ef2ebf557df22200ac807c6bb6c0681e5",
+    "scripts/apply_external_reference.py": "a65d0b63ba20b64f8efc49424a2513cc26f492b4148dc66d68bcc0a5ce62beca",
+    "scripts/evaluate_c09_external_confirmation.py": "eaf9652f87c9b32dea5fdfaf9bd694ec466da11f4eeaa4907be733d03742b954",
+    "docs/evidence/c09-2026-11-09/source-sensitivity-preparation.json": "8ac493c86e08228db233170f31ba3951e351bd0062063d9ce2731f2dd79199d7",
+    "docs/evidence/c09-2026-11-09/remote-container-metadata.json": "73cb28456cfe9e22f795b3df0b2e607dd59f5c2ecd8afc8a5c5a6a31eb842bbb",
+    "docs/evidence/c09-2026-11-09/p16-v2-remote-source-verification.json": "83e99e1d5f1fb7c5e226361dc8d5658fe6cd7e541a8bdfac879a7648d2734d28"
+  }
+}

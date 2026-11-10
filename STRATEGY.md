@@ -1,13 +1,13 @@
-# C09 results and recovered T4 validation — 9 November
+# C09 results and P16 scoring trial — 9–10 November
 
 Active user goal: verified silver leaderboard position, with24 hourly worker
-wake-ups in this chat. Live22:08UTC rank907/5034 at0.480; nominal silver rank251
-at0.482, but0.482 ties extend to269.0.483 currently clears the boundary.
+wake-ups in this chat. Latest01:28UTC10November rank918/5043 at0.480; nominal
+silver rank252 at0.482. Verify actual rank after scoring, not a tied score alone.
 Preserve all C09 qualification and one-pending rules.
 
 New C09E lead: one fixed external-reference matching rule on unchanged P01,
-inspired by alexchilton's public external-library approach. Its author's live
-team is0.484; that corroborates the family, not this exact source version.
+inspired by alexchilton's public external-library approach. Its author's team
+was0.484 at the9November evening scan; that corroborates the family, not this exact source version.
 Our independent implementation uses only Takumu Hata's public CC0-declared
 200724-reference library, adds official identity dedup and fail-closed execution,
 and does not adopt the additional mixed-license MassBank dataset or LOTUS branch.
@@ -26,14 +26,23 @@ rule/models/references remain fixed. All400 rows are valid and both P01 models
 support12 real preview queries. Those12 library-protected queries pass through;
 30 separate real development fixtures exercise7 promotions/2 insertions with
 independent score parity1.11e-16 andzero metric duplicates. Input precision in
-the independent audit follows the serving parser's float32 values. Original80
-confirmation remains required and is RUNNING at23:25UTC, after metric-identity
-fusion completed127.7 minutes into the run. No new
-submission has been sent. The hourly worker remains active for24 occurrences.
+the independent audit follows the serving parser's float32 values. Both frozen
+confirmations are COMPLETE. Fixed P16 MRR.713859→.837445 on80,delta.123586,
+CI[.05625,.196503],13 improved/3 harmed,truths71→77. On raw-clean60 MassBank,
+.826687→.890575,delta.063889,CI[.005556,.133333],6 improved/2 harmed. All20
+GNPS queries are raw-overlap flagged; no clean GNPS evidence is available.
+Reference-alias exclusion is identical,with0 detected matches. The3 harms include
+one NH4/H adduct mismatch; no post-confirmation filter or recipe change was made.
+
+P16v2 accepted10November01:22UTC,ref58181280,markerC09-P16-EXTREF-20261109.
+It is the ONLY pending leaderboard submission; API=PENDING,UI=Notebook Running.
+The hash-bound review and remote-code/privacy/single-pending dry-run passed.
+Wait for the actual score; do not resubmit. The hourly worker remains active.
 
 P15 returned COMPLETE public **0.479**, no error, verified21:06UTC. P01/P13
 remain champion0.480. The small old external improvement did not transfer;
-preserve P15 as another negative control. No submission is pending or queued.
+preserve P15 as another negative control. Its full80 measured gain does not
+reproduce its public regression; that limitation remains in the P16 review.
 
 All local follow-ups completed: C09T10000 served-score continuation updates,
 C09CT10000 matched cosine-only updates and C09H40000 online-hard updates.
@@ -48,12 +57,18 @@ P01.737222. The predeclared tie rule selects cosine-control0.20, frozen21:32UTC
 while new80 cloud confirmation is RUNNING. Additional training has not shown a
 benefit over P15. No new80 or old confirmation metrics selected this recipe.
 
+Final80 frozen control delta+.001891 versusP01 hasCI crossing0; versusP15parent
+it is-.000223,0 improved/1 harmed. On raw-clean60 all trained recipes equal the
+parent and harm1 versusP01. No trained follow-up is qualified for a new trial.
+The separately tested4905-record MassBank extension also haszero development
+precursor candidates/gain and was rejected before new80 results; it is not adopted.
+
 The user requested a cloudT4 retry. A private liveness probe COMPLETE on two
 TeslaT4s with finite CUDA work; the full80-query P01/P14 retry C09C2 v2 is COMPLETE
 at10November01:03UTC. ExactP01 replay passes:MRR.713859/71truths. P14delta+.00375,
 CI[-.0071875,.0146875],does not detect its knownpublic regression. This panel is
 not calibrated to hidden gains. GPU1realDreaMS/MolFormer execution isfinite onT4,
-Torch2.10.0+cu128/CUDA12.8. Frozen local-model and C09E confirmation continue.
+Torch2.10.0+cu128/CUDA12.8. Frozen local-model and C09E confirmations are complete.
 Original v1 jobs were
 CANCEL_ACKNOWLEDGED after Kaggle's notebook-start incident. The obsolete C09V
 old-panel job remains CANCEL_REQUESTED, not acknowledged.

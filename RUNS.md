@@ -1,22 +1,24 @@
 # Runs
 
-Updated 2026-11-10 01:06 UTC by `scripts/update_runs.py` (hourly). Generated from `runs.csv` — edit that file, not this one.
+Updated 2026-11-10 01:28 UTC by `scripts/update_runs.py` (hourly). Generated from `runs.csv` — edit that file, not this one.
 
 - Kaggle quota: GPU 9.2 h used of 30 h · TPU 0.0 h of 20 h · resets 2026-11-14 00:00 UTC
-- Submissions today (UTC): 0 of 5 — see `SUBMISSIONS.md`
+- Submissions today (UTC): 1 of 5 — see `SUBMISSIONS.md`
 
 ## Active
 
 | id | platform | kind | ref | started (UTC) | status | purpose | progress |
 |---|---|---|---|---|---|---|---|
 | C09V | kaggle-gpu | diag | c09-coverage-controls v1 | 2026-11-09 14:44 | **cancel_requested** | C09 dual-device diagnostic: exact P14 full128 external pipeline negative control onGPU0; existing C08 expanded candidate coverage/scoring onGPU1; no scoring submission | Old128 panel superseded after67 base-connected acquisition groups found; cancellation requested, not acknowledged. No allocation/training/validation result; no GPU quota added at16:34UTC. |
-| C09FC | local-2070 | diag | outputs/local/c09-followup-evaluation-20261109/confirmation-finisher.log | 2026-11-09 21:32 | **running** | Bounded wait for existing T4v2 COMPLETE, download exact P01/P14 outputs then evaluate frozen development-selected control plus P15/C09T references;full80 and predeclared no-raw-overlap cohort;no reselection or submission | 0/1 done |
-| C09EF2 | local-cpu | diag | outputs/local/c09-external-reference-20261109/completion-v3.log | 2026-11-09 23:01 | **running** | Collect currentP16v2 only;independently audit real12/400 plusreal30 changed-path fixtures and model/source hashes;then frozen80 confirmation;no leaderboard submission | 0/1 done |
+| C09P16S | kaggle-submission | scoring | 58181280 | 2026-11-10 01:22 | **pending** | Only pending global leaderboard trial:P16v2 unchangedP01 plus fixed external-reference promotions,qualified full80/clean60 and complete realKaggle/independent audits | Submission 58181280: PENDING; public score None |
 
 ## Finished (newest first)
 
 | id | platform | kind | ref | started (UTC) | ended (UTC) | status | purpose | result |
 |---|---|---|---|---|---|---|---|---|
+| C09SR1 | local-cpu | diag | outputs/local/c09-external-reference-20261109/source-sensitivity.log | 2026-11-10 01:15 | 2026-11-10 01:15 | complete | Preplanned descriptive source sensitivity of fixed C09/C09E reports;all missing-truth zeros and paired comparisons retained,no recipe selection | Source1MassBank60 is entire raw-clean cohort;source2GNPS20 all raw-overlap flagged. P16 gainsbothsources;clean MassBankdelta+0.063889 CI>0. Full P14/P15 controls reverse publicregressions;clean controlpointdeltasnegative. No clean GNPS evidence. |
+| C09EF2 | local-cpu | diag | outputs/local/c09-external-reference-20261109/completion-v3.log | 2026-11-09 23:01 | 2026-11-10 01:13 | complete | Collect currentP16v2 only;independently audit real12/400 plusreal30 changed-path fixtures and model/source hashes;then frozen80 confirmation;no leaderboard submission | P16v2 execution audit passes;frozen80 MRRa0.713859 to0.837445,13improved3harmed,truths71to77;clean60MassBank +0.063889 CI[0.005556,0.133333],6improved2harmed.0input-referencealiases;bothviewsidentical. Qualified one sequential trial,not hidden proof. |
+| C09FC | local-2070 | diag | outputs/local/c09-followup-evaluation-20261109/confirmation-finisher.log | 2026-11-09 21:32 | 2026-11-10 01:12 | complete | Bounded wait for existing T4v2 COMPLETE, download exact P01/P14 outputs then evaluate frozen development-selected control plus P15/C09T references;full80 and predeclared no-raw-overlap cohort;no reselection or submission | Frozenwinner cosine-control0.20:full80 delta+0.001891 CI crosses0;vsP15parent -0.000223,0improved1harmed. Clean60 equalsparent andalltrainedgroups harm1. No additional training benefit;P14/P15 full-panel publicregressions not detected;not submission-qualified. |
 | C09C2 | kaggle-gpu | diag | c09-clean-validation v2 | 2026-11-09 21:14 | 2026-11-10 01:03 | complete | User-requested recovery retry after CANCEL_ACKNOWLEDGED/no outputs:GPU0 fullP01 clean80, GPU1 pinned realP14 encoder preflight and negative-control scores; unchanged models/data/metrics;no scoring submission | COMPLETE full80 onactual2xT4;exactP01 replay;P01MRR0.713859/71truths,P14MRR0.717609,delta+0.00375 CI[-0.0071875,0.0146875],7improved4harmed. DoesNOT detect knownP14 publicregression. GPU1realDreaMS/MolFormer finite,Torch2.10cu128,peak0.4805GiB. Frozenlocalmodel andC09E confirmations continue;no submission. |
 | C09EM1 | local-cpu | diag | outputs/local/c09-massbank-extension-20261110/development.log | 2026-11-10 00:33 | 2026-11-10 00:33 | complete | Prospective old30 development test of fixed-rule additional record-CC0 positiveMS2 references; originalP16 unchanged, retain attribution/compilationterms, no query/threshold tuning or new80 metrics | 4905 references pass peaks/structure-key checks, but0precursor candidates/0comparisons on old30;MRR unchanged0.911111 vsP16,delta0/CI[0,0],0improved/0harmed,bothviews. Predeclared retention fails; no80metric use/adoption/upload/submission. |
 | C09RM | local-cpu | research | outputs/research/2026-11-09-silver/massbank-coverage-audit/coverage.json | 2026-11-09 23:45 | 2026-11-09 23:45 | complete | Backup MassBank record-license/raw-connectivity coverage inventory; no query labels or P16 policy/data change | 139744 records/6 record-license labels; literalCC0 positiveMS2 >=4peaks subset4905spectra/515rawkeys,471keys absent from currentextlib. CompilationCC-BY-NC-SA-4.0; not adopted, no validation/metric-novelty claim. |

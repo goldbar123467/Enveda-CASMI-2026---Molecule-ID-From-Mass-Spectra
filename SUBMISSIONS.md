@@ -2,13 +2,16 @@
 
 Public LB = MRR@25 on ~125 public molecules (one rank-2→1 flip ≈ 0.004). Scoring reruns take hours.
 
-C09 latest actual check,9November21:06UTC: **P15 v1/ref58163163 COMPLETE0.479**,
-no reported error. It regresses0.001 against P01/P13. No leaderboard submission
-is pending and no C09 submission has been sent. The limit remains ONE pending
-globally; `.local/c09-submission-ledger.json` has no C09 intents/submissions.
-Never resubmit P15. Cloud C09 validation retries are private diagnostic runs,
-not leaderboard submissions. Further submissions require scientific qualification
-and the complete real Kaggle smoke/independent audits.
+C09 P16v2 accepted10November01:22UTC, **ref58181280**, marker
+`C09-P16-EXTREF-20261109`. Actual public score is pending; authenticated API
+reportsPENDING and native UI showsNotebook Running. This is the ONLY pending
+submission globally. Do not resubmit or send another trial until its actual
+score resolves. P01/P13 remain champion0.480. P15/ref58163163 is COMPLETE0.479,
+no reported error; never resubmit P15. Durable intent was resolved to58181280.
+
+| Date (UTC) | Slot | Kernel | Change | Ref | Public LB |
+|---|---|---|---|---|---|
+| 2026-11-10 01:22 | P16 | casmi26-p16-external-reference-c09 v2 | Unchanged pinned P01 plus fixed measured-reference promotions; no newly trained model | 58181280 | **Pending** |
 
 P16 (`casmi26-p16-external-reference-c09` v2) completed its private real12/400
 Kaggle smoke and independent execution/identity/fallback/local-cloud audit.
@@ -16,8 +19,15 @@ V1 failed after P01 on a checkpoint-audit bundle alias; no leaderboard trial was
 spent. V2 preserves the production rule/models/references, explicitly audits
 both checkpoints and exercises7 promotions/2 insertions on30 isolated real
 development fixtures. The preview12 are protected pipeline-library matches.
-It has NOT been submitted to the leaderboard. New80 scientific confirmation
-remains pending; execution qualification alone cannot authorize submission.
+Frozen80 confirmation is complete:MRR.713859→.837445,13 improved/3 harmed,
+truths71→77;raw-clean60 MassBank delta+.063889,95%CI[.005556,.133333]. All20
+GNPS queries are raw-signature flagged,so there is no clean GNPS evidence.
+Reference-input alias exclusion gives identical results;0 detected matches.
+The full80 panel does not detect P14/P15 public regressions. Three harms include
+one NH4/H adduct mismatch; the predeclared rule was not tuned on confirmation.
+Review/qualification and independent execution/source/identity/fallback/parity
+receipts are retained in `docs/evidence/c09-2026-11-09/`. One actual-score trial
+is authorized by the current C09 campaign; hidden benefit remains unproven.
 
 P15 was accepted at12:01UTC after its real Kaggle smoke and independent audits,
 spending C08's single-trial authorization. C09 is separately authorized.

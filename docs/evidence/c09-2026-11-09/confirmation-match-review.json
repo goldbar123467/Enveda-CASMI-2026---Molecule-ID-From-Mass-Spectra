@@ -1,0 +1,35 @@
+{
+  "changed_queries": 16,
+  "raw_adduct_string_agreements": 15,
+  "minimum_changed_cosine": 0.824508878417891,
+  "minimum_changed_matched_peaks": 4,
+  "harmed_queries": 3,
+  "changed_actions": {
+    "all_reference": {
+      "same_identity_as_current_leader": 31,
+      "no_qualifying_match": 30,
+      "promoted_existing_identity": 8,
+      "inserted_external_identity": 8,
+      "protected_pipeline_library": 3
+    },
+    "input_alias_excluded": {
+      "same_identity_as_current_leader": 31,
+      "no_qualifying_match": 30,
+      "promoted_existing_identity": 8,
+      "inserted_external_identity": 8,
+      "protected_pipeline_library": 3
+    }
+  },
+  "adduct_mismatch": {
+    "query": "[M+NH4]+",
+    "reference": "[M+H]+",
+    "precursor_mz": 297.165,
+    "cosine": 0.9053475977734097,
+    "matched_peaks": 51,
+    "baseline_mrr25": 0.3333333333333333,
+    "candidate_mrr25": 0.25
+  },
+  "interpretation": "The frozen public matching heuristic does not require equal adducts. One actual mismatch harms a confirmation query. Do not add a post-hoc filter or claim physical/adduct consistency for every promotion.",
+  "policy_changed": false,
+  "confirmation_recipe_reselection": false
+}
