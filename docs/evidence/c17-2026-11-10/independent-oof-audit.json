@@ -1,0 +1,15 @@
+{
+  "checked_utc": "2026-11-10T07:53:18.754392+00:00",
+  "queries": 160,
+  "each_scored_once": true,
+  "truth_identity_overlap_across_folds": 0,
+  "train_and_heldout_ids_match_receipt": true,
+  "max_cpu_gpu_posterior_abs_difference": 2.682209014892578e-07,
+  "masked_probability_mass": 0,
+  "none_class_retained": true,
+  "missing_truths_not_discarded": 41,
+  "final_model_fitted": false,
+  "source_development_sha256": "7d95eb6548f1c379328e7b9dbacd28b1b2d27f70819a1d5cd7cd90c519847fb5",
+  "fresh_C13_prediction_metrics_read": false,
+  "automatic_submission": false
+}

@@ -1,0 +1,48 @@
+{
+  "run_id": "C18PK",
+  "kind": "compatible_scorer",
+  "output": "outputs/local/c18-peak-drop-20261110",
+  "parent_output": "outputs/local/long-compatible-20261108",
+  "parent_arm": "legacy16-hard",
+  "raw_training": "outputs/competition-raw/train.parquet",
+  "base_cache": "outputs/local/n0/cache",
+  "split_groups": "outputs/local/long-20261106/spectrum_groups.npz",
+  "cache": "outputs/local/precision-cache-20261108",
+  "views_per_identity": 8,
+  "folds": [
+    0,
+    1
+  ],
+  "arms": [
+    {
+      "name": "peak-drop",
+      "cache_precision": "float16",
+      "hard_negatives": 48,
+      "negative_pool": 512
+    }
+  ],
+  "maximum_hours": 3,
+  "minimum_free_ram_gib": 4,
+  "gpu_memory_fraction": 0.7,
+  "training": {
+    "steps": 5000,
+    "lr": 2e-05,
+    "warmup_steps": 100,
+    "checkpoint_interval": 100,
+    "batch_size": 384,
+    "hard_negatives": 48,
+    "negative_pool": 512,
+    "seed": 202611090
+  },
+  "objective": "Matched C09CT cosine/BCE continuation; only drop40% valid peaks while always retaining the three strongest. Stable compaction/zero padding; retained masses/intensities,metadata/adducts unchanged. Separate checkpointed CUDA RNG; original base parents/samples/negative pools/schedule unchanged.",
+  "automatic_submission": false,
+  "augmentation": {
+    "drop_probability": 0.4,
+    "protected_strongest_peaks": 3,
+    "rng_seed_offset": 180000,
+    "rationale": "Valid cached train median75 peaks versus used C10 median44 raw peaks. Fixed40% peak sparsification, no severity search; do not infer a hidden-score gain.",
+    "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12462763/",
+    "source_scope": "Prior work supports random peak masking as an augmentation;40% and top3 protection are our fixed experiment, not a copied validated recipe."
+  },
+  "evaluation": "Only final5000-update checkpoints/twofolds, fixed0.20tailRRF after completeP01/P16; used160 positive95%lowerbound versus P01/P16 and nonnegative mean versus matchedC09. If rejected no fresh120 metrics/final refit/submission. If selected freeze before fresh120 plus realKaggle smoke/independent audits."
+}

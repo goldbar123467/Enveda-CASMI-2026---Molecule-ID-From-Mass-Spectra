@@ -1,36 +1,44 @@
 # Enveda CASMI 2026 — working rules
 
-## Current measured state — 10 November,06:50UTC
+## Current measured state — 10 November,07:56UTC
 
-P16/ref58181280 is COMPLETE0.480/noerror (API06:29),matching the reported
-champion;no measured publicgain. Globalpublicpending0,extraapprovedtrial1
-unconsumed,ledgerreconciled. NeverresubmitP16. Latestactualrank944/5052 at
-06:49UTC;nominalsilver252/0.483,goalUNMET. PreserveP01/P13/P16 source/weights.
+P16/ref58181280 is COMPLETE at0.480 with no error; it produced no reported
+public gain. Global public pending0; the additional approved trial remains
+unconsumed. Never resubmit P16. Latest leaderboard snapshot07:20UTC:rank946
+of5053, nominal silver252 at0.484. The silver goal remains UNMET.
 
-C14 andC15 bothcompleted10000successfulupdates/2folds each,0AMPskips/
-0restarts,peak1.4121GiB. Bothfixedtailrecipesfailused160development. C15delta
--.000385264 vsP01/P16 CI[-.00232284,.00167152],11improved/17harmed;
-vsmatchedC09+.000478943 butCIcrosses0. C14delta-.00138476. Same100/160truths,
-rank1/candidate sets exact. Trainers/evaluators exited;neverrefitcompletedjobs.
-Finalmodels remainlocal/private;freshC13predictionmetrics stillUNREAD.
+C14/C15 each completed10000 successful updates and failed their fixed used160
+development gates. C16 broader-pool inference completed all160/14184 rows
+without errors; both joint-fold agreement recipes failed, recovering0 truths.
+C17 completed five query-held-out calibration heads/2500 fixed updates and
+failed. C19 reused exact C17 OOF posteriors with adaptive insertion positions:
+delta+.002494124,95%CI[-.001018928,.007643764],3 recovered truths but8 harms.
+It also fails its predeclared gate. No final calibration head, fresh120 metrics
+or public submission is justified. Do not rerun or tune these completed fits.
 
-C13privatev1 ERROR06:27:Engine2covered98/120 because22negativeformatealiases
-wereabsentfromPVlookupvocabulary. Real2T4hardware/GPU1preflighthealthy.
-V2accepted06:47,nowRUNNING withonlyequivalentformatespelling/whitespace
-normalization inPVneutral-mass andFPadductlookup. Same120/inputs/weights;
-strictcoverageguard/allotherfrozencellsunchanged. Canonicaltableand98old
-querymassesexact;all120nowfinite. Threealias tests pass. No freshlabels/metrics
-usedfordebugging. Notebookcbd4503e...,remote scientific17891a07...,private/
-internetoff/image37c64/source/versionverified. Collector27800/9740tracks
-exactv2 to16:47UTC;readcollector-v2-status.json. V1collector hasexited;never
-restartv1or duplicatev2. Actualv2allocation/coverage needexecutionreceipts.
+C18 is a new fixed peak-drop experiment, same two C08 parents/control objective,
+data/negatives/seed/schedule; only40% random peak removal with top3 protected.
+Separate checkpointed CUDA RNG, stable compaction/exact retained values; CPU
+and actual CUDA audits pass. Worker launcher9012/worker27332 owns trainer27532;
+read actual processes and outputs/local/c18-peak-drop-20261110/{status,
+worker-status}.json. At07:55 fold0 is1600/5000,0AMPskips,peak1.4121GiB. Worker
+runs both final5000-update fits then prepares/evaluates one fixed0.20tailRRF
+on used160. Deadline10:51UTC. Do not start a duplicate. No upload, fresh metrics
+or public submit is automated. Read docs/C16-C19-2026-11-10.md before acting.
 
-Next serving hypothesis may test the completed learnedmodels against earlier
-deepercandidatepools forcoverage,witha newprospectivedevelopmentprotocol.
-No newrecipe isqualified. Preservefresh120 untilanewwinner/source/modelfreeze;
-retainrealKaggle smoke/independentaudits andoneglobalpendingrule beforetrial.
-Read C13/C14/C15notes andactualprocess/status beforeacting. Older checkpoints
-below arehistorical;this measuredstate supersedes their running/pending claims.
+C13 private formate-recovery v2 remains RUNNING at07:55. Same120 query inputs,
+labels/weights, strict coverage guard and all other frozen cells retained;
+only equivalent formate/whitespace PV lookup correction. Notebookcbd4503e...,
+remote scientific17891a07..., private/internet-off/image37c64/version verified.
+Collector launcher27800/worker9740 owns v2 until16:47UTC. Do not restart v1 or
+duplicate v2. Actual v2 allocation/full coverage need terminal execution receipts.
+Fresh balanced120 prediction metrics remain UNREAD. Only a newly selected,
+frozen recipe can consume them, followed by real Kaggle changed-path smoke,
+independent audits and the one-global-pending rule before the approved trial.
+
+Preserve the0.480 champion source/weights. The native24-hour hourly heartbeat
+and bounded tracker remain active. Older checkpoints below are historical;
+this measured state supersedes their running/pending/next-experiment claims.
 
 ## Authorization and earlier checkpoints — C09, 2026-11-09
 

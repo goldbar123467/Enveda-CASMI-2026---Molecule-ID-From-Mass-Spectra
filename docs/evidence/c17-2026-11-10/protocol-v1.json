@@ -1,0 +1,26 @@
+{
+  "prepared_utc": "2026-11-10T07:41:23.717469+00:00",
+  "config_sha256": "8de03ac79056378dde03bdca350c795d9c45f0fde23588c36a5e6857f1b1965f",
+  "source_sha256": {
+    "prepare_c17_features.py": "774050c5c32e3ed765b58663a6c1fa2ecce65e48c7374571b5c2a67caf4a4c3c",
+    "train_c17_fusion.py": "2c52242005dbac03bfd07a46a2a59e51dfb00ce4c8d65c7b2911858d93cacff6",
+    "expected_mrr_expansion.py": "3a7ef2dd0bc849403b27663766dfdd55cfc024147e352cc299afae3e968051ef"
+  },
+  "input_sha256": {
+    "outputs\\local\\c12-deep-candidates-20261110\\all\\pool.parquet": "399e8a916f6853b2e3139837bcee7c213be56a9315041338258ee3259b0a8651",
+    "outputs\\local\\c12-deep-candidates-20261110\\all\\parent.csv": "e56ec5755beb254a99ca8c385dbeee3217f77e3db4d6e308663353c08766a8e9",
+    "outputs\\local\\c12-deep-candidates-20261110\\all\\fingerprint-smiles.parquet": "9d65c4f7645ca91b3e83cd37df83db023ea75f335f0dced900daf15012d45975",
+    "outputs\\local\\c12-deep-candidates-20261110\\all\\scores.parquet": "f2109e8baf1de8657dad3568df97e988bfc28d7601267c093e98ca19b48baae6",
+    "outputs\\local\\c16-learned-pool-20261110\\cosine-control-scores.parquet": "872bb82961436bb367da9cf13abfe37e43c48aad26ddf3b64e3e5ed1f6009fb0",
+    "outputs\\local\\c16-learned-pool-20261110\\C15NP-scores.parquet": "041c5dc2594dd2f88c845692dcbcf5739ca492ce6098661f45e6216cee338a20",
+    "outputs\\forks\\c10-candidate-pools-v1\\eng_lists.json": "3c9816792436f394286dcf236e32f79786406a682d121c2746639db3563aa0fd",
+    "outputs\\forks\\c10-candidate-pools-v1\\pc_lists.json": "df48a2c56346167441c949eaddfa994befbdde6b16da94ae4e435c709fdf16da",
+    "outputs\\forks\\c10-candidate-pools-v1\\ice_work\\ice_out.json": "63ac7357d496cd6cf2f9a90f0b9147d94fe8d3999409eba13d4dc940184cc245",
+    "outputs\\forks\\c10-candidate-pools-v1\\gl_work\\gl_out.json": "6f227ed6c5799d0affdf7c09475c68770ad39006e2db0a1b7887c15a9e20377a",
+    "outputs\\forks\\c10-candidate-pools-v1\\n1_work\\n1_out.json": "b71464e8017bf698e34a3b91af89ed44b893bccb91424b932cbfb3ecbd441f7b"
+  },
+  "labels_read": false,
+  "fresh_C13_prediction_metrics_read": false,
+  "automatic_submission": false,
+  "rules": "Official identity joins; score alias=max, rank alias=min; missing0pluspresence; constant channel has zero rank/z signal. Query-only normalization, no learned preprocessing. N1 only one spectrum supported here."
+}

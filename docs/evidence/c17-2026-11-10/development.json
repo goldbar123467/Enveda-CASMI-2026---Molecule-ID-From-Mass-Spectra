@@ -1,0 +1,46 @@
+{
+  "completed_utc": "2026-11-10T07:44:52.204412+00:00",
+  "queries": 160,
+  "vs_P01": {
+    "n": 160,
+    "baseline_mrr25": 0.27874430083805085,
+    "candidate_mrr25": 0.27841691988566986,
+    "delta": -0.00032738095238095237,
+    "ci95": [
+      -0.0009672619047619046,
+      0.0
+    ],
+    "improved": 0,
+    "harmed": 2
+  },
+  "vs_P16": {
+    "n": 160,
+    "baseline_mrr25": 0.27874430083805085,
+    "candidate_mrr25": 0.27841691988566986,
+    "delta": -0.00032738095238095237,
+    "ci95": [
+      -0.0009672619047619046,
+      0.0
+    ],
+    "improved": 0,
+    "harmed": 2
+  },
+  "absent_truths_recovered": 0,
+  "truths_lost": 0,
+  "pool_absent_truths": 41,
+  "actions": {
+    "nonpositive_expected_gain": 148,
+    "expected_gain_inserted": 9,
+    "protected_library": 2,
+    "no_outsider": 1
+  },
+  "selected": false,
+  "training_updates": 2500,
+  "all_development_previously_used": true,
+  "evaluation": "Each query scored only by model fitted on other query IDs. This remains development screening, not fresh confirmation.",
+  "oof_input_freeze_sha256": "3bc4d72131aa849ec29bf2572e65f5317fbc272ef8e683cc261b1adf5ed885dd",
+  "peak_Torch_reserved_gib": 0.041015625,
+  "fresh_C13_prediction_metrics_read": false,
+  "automatic_submission": false,
+  "submission_qualified": false
+}

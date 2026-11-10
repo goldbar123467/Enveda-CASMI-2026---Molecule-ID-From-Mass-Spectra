@@ -1,0 +1,8 @@
+{
+  "selected": false,
+  "development_sha256": "79b47fa94a4ac13779f30b24c1da2787cf6b5c0b59da33f3ad74aa267768c45c",
+  "final_model_fitted": false,
+  "next_action": "Reject; no final fit or fresh120 read",
+  "fresh_C13_prediction_metrics_read": false,
+  "automatic_submission": false
+}

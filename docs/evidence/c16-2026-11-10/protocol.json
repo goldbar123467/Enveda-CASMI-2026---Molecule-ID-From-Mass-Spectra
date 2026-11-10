@@ -1,0 +1,46 @@
+{
+  "prepared_utc": "2026-11-10T07:12:24.503319+00:00",
+  "config_sha256": "24cfe1a655f56548b2f6e8f9bd750c762e0bf5ccfbac0c14a38af73249525860",
+  "source_sha256": {
+    "develop_c16_pool.py": "c4a7d8776742599ef2879124971c71d00a6fbb2cbb12468be9a04adbf3958646",
+    "fold_agreement_expansion.py": "b57aede8c5006e3be258c30b915629d92b4dcdf1f7a0ae98114592f347247bde",
+    "c15_models.py": "0d675a1d31184ba43ecf6cd14de0730b8816cf81f5f3cb2e90f22e306f0ac89c",
+    "followup_models.py": "efe821f214f1cb20efdfcc38387a43c3d06bb6bbf8cad3051d4abcfedd5685a3",
+    "compatible_inference.py": "bd19325814e066615ace15a765c84c74ccedbb867e609b8d95ed4dbcdf092832",
+    "finish_c09_confirmation.py": "d74e3258498cbaf496f91ae3398f54c4131ee25569b269e18e318ed5c9d615af",
+    "tail_fusion.py": "b1fd92ee93412454c80942c70fd3bc72f89f07a673ff1a319d7e821be368a5d4"
+  },
+  "used_labels_sha256": "f1d3b96f002827d2c9ddd1e61f0fe4e97551a27859da8c74d248588893515c6a",
+  "pool_preparation_sha256": "d92484d8d884bd223c06d5cc267d4c4f69cbb199a5e1884995e0c92ac6175125",
+  "pool_files_sha256": {
+    "pool.parquet": "399e8a916f6853b2e3139837bcee7c213be56a9315041338258ee3259b0a8651",
+    "parent.csv": "e56ec5755beb254a99ca8c385dbeee3217f77e3db4d6e308663353c08766a8e9",
+    "queries.parquet": "5c6735cc6e16783a76861c2d1e391d842b1e5fd72104c45653c64f96455b8cf0",
+    "fingerprints.npy": "71c5771c2aa3178fb994b448cb36a640af005f65768437fabbc94e5bba533489",
+    "fingerprint-smiles.parquet": "9d65c4f7645ca91b3e83cd37df83db023ea75f335f0dced900daf15012d45975"
+  },
+  "parent_sha256": "e56ec5755beb254a99ca8c385dbeee3217f77e3db4d6e308663353c08766a8e9",
+  "candidate_pool_sha256": "755a6a935eb253596cff5fa3770c4e51a466b9a1d3e2ca337824500a8248dc01",
+  "queries_sha256": "c0f90ca5174c0f637fbc5c082afa9462fb4d310adf2548550ee086a0bf3f4f5d",
+  "models": {
+    "cosine-control": {
+      "bundle": "outputs\\local\\c16-learned-pool-20261110\\bundles\\cosine-control",
+      "manifest_sha256": "be6527550a26d0c331d3ddcac5132163f4cbab5eed0fc2d605ac35714788f191"
+    },
+    "C15NP": {
+      "bundle": "outputs\\publish\\c15-np-models-20261110",
+      "manifest_sha256": "ecf9c437a484114bc09891fcc16534b8b1559cd8b0e019db000b0248fe6ac55c"
+    }
+  },
+  "narrow_score_sha256": {
+    "cosine-control": "c4b1c30de5510fdd327a0067621c88bff6cd39ecb666ac53f4801a890e135b63",
+    "C15NP": "44663185224807b207dc80095abba576f37660edc2dc5df7438360d60c3059b2"
+  },
+  "queries": 160,
+  "candidates": 14184,
+  "raw_parent_score_parity_tolerance": 0.0001,
+  "all_development_previously_used": true,
+  "fresh_C13_prediction_metrics_read": false,
+  "selection": "Predeclared2groups/onefixedrule. Requirepositive95%lowerbound vsboth completeP01/P16 plusnewtruth. GreatestMRR,tieoldercontrol. No thresholds/checkpoints searched.",
+  "automatic_submission": false
+}

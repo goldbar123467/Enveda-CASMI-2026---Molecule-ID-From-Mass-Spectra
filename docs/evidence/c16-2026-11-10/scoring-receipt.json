@@ -1,0 +1,71 @@
+{
+  "completed_utc": "2026-11-10T07:12:34.246467+00:00",
+  "queries": 160,
+  "groups": {
+    "cosine-control": {
+      "arm": "cosine-control",
+      "models": 2,
+      "folds": [
+        0,
+        1
+      ],
+      "cache_precision": "float16",
+      "smoke": false,
+      "steps": 45000,
+      "manifest_sha256": "be6527550a26d0c331d3ddcac5132163f4cbab5eed0fc2d605ac35714788f191",
+      "baseline_content_sha256": "b0a3281c547d1a7e0c705720267a80f73a5471f4c5fb1ede3adbb0c47687ba1e",
+      "queries_sha256": "c0f90ca5174c0f637fbc5c082afa9462fb4d310adf2548550ee086a0bf3f4f5d",
+      "scored_molecules": 160,
+      "unsupported_molecules": [],
+      "unprocessed_molecules": 0,
+      "input_errors": 0,
+      "peak_selection": "stable_intensity_then_mz",
+      "spectrum_aggregation": "all usable spectra, equal average",
+      "model_aggregation": "mean of per-query standardized raw scores",
+      "numpy_version": "2.0.2",
+      "torch_version": "2.11.0+cu128"
+    },
+    "C15NP": {
+      "arm": "np-balanced",
+      "models": 2,
+      "folds": [
+        0,
+        1
+      ],
+      "cache_precision": "float16",
+      "smoke": false,
+      "steps": 45000,
+      "manifest_sha256": "ecf9c437a484114bc09891fcc16534b8b1559cd8b0e019db000b0248fe6ac55c",
+      "baseline_content_sha256": "b0a3281c547d1a7e0c705720267a80f73a5471f4c5fb1ede3adbb0c47687ba1e",
+      "queries_sha256": "c0f90ca5174c0f637fbc5c082afa9462fb4d310adf2548550ee086a0bf3f4f5d",
+      "scored_molecules": 160,
+      "unsupported_molecules": [],
+      "unprocessed_molecules": 0,
+      "input_errors": 0,
+      "peak_selection": "stable_intensity_then_mz",
+      "spectrum_aggregation": "all usable spectra, equal average",
+      "model_aggregation": "mean of per-query standardized raw scores",
+      "numpy_version": "2.0.2",
+      "torch_version": "2.11.0+cu128"
+    }
+  },
+  "raw_parent_parity": {
+    "cosine-control": {
+      "rows": 3978,
+      "max_raw_score_abs_difference": 2.86102294921875e-06
+    },
+    "C15NP": {
+      "rows": 3978,
+      "max_raw_score_abs_difference": 2.86102294921875e-06
+    }
+  },
+  "scores_sha256": {
+    "cosine-control": "872bb82961436bb367da9cf13abfe37e43c48aad26ddf3b64e3e5ed1f6009fb0",
+    "C15NP": "041c5dc2594dd2f88c845692dcbcf5739ca492ce6098661f45e6216cee338a20"
+  },
+  "protocol_sha256": "0d824d63d87410a778bd34dd8f0b739826f420f0163ca9c7d9839a2888957e61",
+  "query_labels_read": false,
+  "fresh_C13_prediction_metrics_read": false,
+  "peak_Torch_reserved_gib": 0.046875,
+  "automatic_submission": false
+}

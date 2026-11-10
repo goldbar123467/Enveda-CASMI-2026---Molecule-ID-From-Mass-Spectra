@@ -1,0 +1,21 @@
+{
+  "prepared_utc": "2026-11-10T07:54:48.035796+00:00",
+  "config_sha256": "4338f11d44438b558a0d3f7c803cea9165a831b15f9210e6c235438f0be9f150",
+  "source_sha256": {
+    "develop_c19_adaptive.py": "e536101b5c073a44bdee0eba2937585074570b34af8ecddd72a5ce065ba1fa2d",
+    "adaptive_mrr_expansion.py": "e59b5b62c89debded288fc271c3e792ce480432db848b72d3237253ea4c214c6",
+    "finish_c09_confirmation.py": "d74e3258498cbaf496f91ae3398f54c4131ee25569b269e18e318ed5c9d615af",
+    "tail_fusion.py": "b1fd92ee93412454c80942c70fd3bc72f89f07a673ff1a319d7e821be368a5d4"
+  },
+  "C17_input_sha256": {
+    "feature-freeze.json": "3c43e0784f7473770dfeae32ff381a7b7b45ea3ddaf65c04ed1aeade04895a20",
+    "features.npz": "385aa244571681da2cd7c63f6807464bd5593f186da382e26086ee3b3048b97e",
+    "evidence.parquet": "fa49ee30d54960253a7be548fba4282d1fbf0d869a057e8fa7edfc021ceae70f",
+    "oof-input-freeze.json": "3bc4d72131aa849ec29bf2572e65f5317fbc272ef8e683cc261b1adf5ed885dd",
+    "oof-probabilities.npy": "10a68cc40ed0d85af219cbeefc50037015527a074f10cc47d5649c0cafd83ef0",
+    "independent-oof-audit.json": "84ba8d3a04a433c44a269abac65f0fef18c2d719bd3b8cea252afc48f91cbbad"
+  },
+  "fresh_C13_prediction_metrics_read": false,
+  "model_refitted": false,
+  "automatic_submission": false
+}

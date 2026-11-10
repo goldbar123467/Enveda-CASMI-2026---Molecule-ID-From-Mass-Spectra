@@ -1,0 +1,12 @@
+{
+  "campaign": "C19",
+  "hypothesis": "The fixed rank2 insertion can reject useful low-position coverage because shifting high-ranked parents costs too much expected MRR",
+  "model": "Reuse exact five C17 out-of-fold posterior arrays; no OOF model refit or coefficient/epoch/feature search",
+  "decision": "Highest posterior outsider, at most one insertion; evaluate expected MRR at positions2 through min(parent_length+1,25), choose largest expected gain/tie later position. Rank1 and exact retained parent order protected.",
+  "protect_library_at": 0.9,
+  "minimum_expected_mrr_gain": 0.000001,
+  "selection": "Used160 OOF positive paired95%lowerbound versus completeP01/P16 and at least1absenttruth recovered. Only then one fixed500-epoch C17 final fit on all160 and freeze before fresh120 metrics.",
+  "fresh_confirmation": "One selected frozen model/recipe; full120 vscompleteP01/P16 positive95%lowerbound, nonnegative polarity means and alias sensitivity. Actual Kaggle smoke and independent audits before any public trial.",
+  "automatic_submission": false,
+  "paid_compute": false
+}

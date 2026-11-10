@@ -1,0 +1,5 @@
+{
+  "checked_utc": "2026-11-10T07:43:00.028559+00:00",
+  "error": "ICE contains3054 JSONnull scores; np.isfinite(None) rejected before feature seal/labels/training",
+  "recovery": "Handle null as missing under existing missing0+presence rule; preserve original source/protocol; no model/labels/metrics involved"
+}

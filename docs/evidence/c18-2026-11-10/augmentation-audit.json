@@ -1,0 +1,40 @@
+{
+  "checked_utc": "2026-11-10T07:51:03.235082+00:00",
+  "gpu": "NVIDIA GeForce RTX 2070",
+  "synthetic_batch": 384,
+  "cuda_rng_restore_bit_exact": true,
+  "default_cuda_rng_unchanged": true,
+  "counts": {
+    "peaks_before": 36864,
+    "peaks_after": 22767,
+    "spectra": 384,
+    "spectra_changed": 384
+  },
+  "retained_peak_values_exact": true,
+  "tests_passed": 3,
+  "train_valid_peak_quantiles": [
+    3,
+    10,
+    23,
+    75,
+    96,
+    96,
+    96
+  ],
+  "C10_raw_peak_quantiles": [
+    9,
+    14.9,
+    22,
+    44,
+    76,
+    127.1,
+    243
+  ],
+  "caveat": "Train counts capped96 while C10 counts raw; this is an unlabeled sparsity hypothesis, not a matched-distribution guarantee",
+  "source_sha256": {
+    "scripts/peak_dropout.py": "3c3e0e1cce2148337b4b41db5a412ea5e26d42353233951befb8bc1fc7390172",
+    "scripts/c18_peak_train.py": "f04206eeb6abf9a69b75b399721d394e39b1245138aaa36ca1420db7c632186a"
+  },
+  "fresh_C13_prediction_metrics_read": false,
+  "automatic_submission": false
+}

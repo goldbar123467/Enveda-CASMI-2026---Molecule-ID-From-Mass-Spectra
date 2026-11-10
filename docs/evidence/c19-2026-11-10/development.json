@@ -1,0 +1,70 @@
+{
+  "completed_utc": "2026-11-10T07:54:48.364017+00:00",
+  "queries": 160,
+  "vs_P01": {
+    "n": 160,
+    "baseline_mrr25": 0.27874430083805085,
+    "candidate_mrr25": 0.28123842504352375,
+    "delta": 0.00249412420547289,
+    "ci95": [
+      -0.001018928460519743,
+      0.0076437640621439965
+    ],
+    "improved": 3,
+    "harmed": 8
+  },
+  "vs_P16": {
+    "n": 160,
+    "baseline_mrr25": 0.27874430083805085,
+    "candidate_mrr25": 0.28123842504352375,
+    "delta": 0.00249412420547289,
+    "ci95": [
+      -0.001018928460519743,
+      0.0076437640621439965
+    ],
+    "improved": 3,
+    "harmed": 8
+  },
+  "absent_truths_recovered": 3,
+  "truths_lost": 0,
+  "selected": false,
+  "model_refitted": false,
+  "action_reasons": {
+    "adaptive_expected_gain_inserted": 123,
+    "nonpositive_expected_gain": 34,
+    "protected_library": 2,
+    "no_outsider": 1
+  },
+  "insertion_positions": {
+    "25": 12,
+    "8": 12,
+    "7": 9,
+    "6": 8,
+    "12": 7,
+    "17": 7,
+    "22": 6,
+    "16": 6,
+    "19": 6,
+    "9": 5,
+    "4": 5,
+    "5": 5,
+    "2": 5,
+    "13": 5,
+    "20": 4,
+    "10": 4,
+    "18": 4,
+    "3": 3,
+    "15": 2,
+    "14": 2,
+    "21": 2,
+    "23": 2,
+    "24": 1,
+    "11": 1
+  },
+  "all_development_previously_used": true,
+  "protocol_sha256": "0758a4cbd6522f21721a2b5d3485161be558b92aeb9b0c349db33aaad8fc60b4",
+  "input_freeze_sha256": "478353004e2fea3fb266056e140de31790f03fbdbe3a391a546532cf64e58761",
+  "fresh_C13_prediction_metrics_read": false,
+  "automatic_submission": false,
+  "submission_qualified": false
+}

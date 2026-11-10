@@ -1,0 +1,10 @@
+{
+  "frozen_utc": "2026-11-10T07:14:37.436526+00:00",
+  "selected_group": null,
+  "new_candidate_selected": false,
+  "development_sha256": "cad4f38c697cdfc31ee687e40f116348a57d2b688e3f94cc1022d3e94f83fbd5",
+  "config_sha256": "24cfe1a655f56548b2f6e8f9bd750c762e0bf5ccfbac0c14a38af73249525860",
+  "protocol_sha256": "0d824d63d87410a778bd34dd8f0b739826f420f0163ca9c7d9839a2888957e61",
+  "fresh_C13_prediction_metrics_read": false,
+  "automatic_submission": false
+}

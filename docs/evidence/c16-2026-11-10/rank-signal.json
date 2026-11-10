@@ -1,0 +1,137 @@
+{
+  "completed_utc": "2026-11-10T07:19:51.112717+00:00",
+  "queries": 160,
+  "auditor_sha256": "4b652dfd35aecec35a173384f4908cee016671a21ffa3be927dd8de7af3e279e",
+  "sources_sha256": {
+    "outputs\\local\\c16-learned-pool-20261110\\cosine-control-scores.parquet": "872bb82961436bb367da9cf13abfe37e43c48aad26ddf3b64e3e5ed1f6009fb0",
+    "outputs\\local\\c16-learned-pool-20261110\\C15NP-scores.parquet": "041c5dc2594dd2f88c845692dcbcf5739ca492ce6098661f45e6216cee338a20",
+    "outputs\\local\\c12-deep-candidates-20261110\\all\\scores.parquet": "f2109e8baf1de8657dad3568df97e988bfc28d7601267c093e98ca19b48baae6"
+  },
+  "channels": {
+    "cosine-control:c08_score": {
+      "queries": 160,
+      "direct_raw_model_mrr25": 0.148749434770381,
+      "parent_truths_present": 100,
+      "additional_truths_present": 19,
+      "additional_truth_rank_median": 20.0,
+      "additional_truths_at_or_above": {
+        "1": 0,
+        "3": 0,
+        "5": 1,
+        "10": 4,
+        "25": 11,
+        "50": 15,
+        "128": 19
+      },
+      "existing_truth_rank_median": 8.0
+    },
+    "cosine-control:c08_raw_fold0": {
+      "queries": 160,
+      "direct_raw_model_mrr25": 0.14480950105741464,
+      "parent_truths_present": 100,
+      "additional_truths_present": 19,
+      "additional_truth_rank_median": 23.0,
+      "additional_truths_at_or_above": {
+        "1": 0,
+        "3": 1,
+        "5": 2,
+        "10": 4,
+        "25": 11,
+        "50": 16,
+        "128": 19
+      },
+      "existing_truth_rank_median": 10.5
+    },
+    "cosine-control:c08_raw_fold1": {
+      "queries": 160,
+      "direct_raw_model_mrr25": 0.14145714727341838,
+      "parent_truths_present": 100,
+      "additional_truths_present": 19,
+      "additional_truth_rank_median": 27.0,
+      "additional_truths_at_or_above": {
+        "1": 0,
+        "3": 2,
+        "5": 2,
+        "10": 3,
+        "25": 8,
+        "50": 13,
+        "128": 19
+      },
+      "existing_truth_rank_median": 9.0
+    },
+    "C15NP:c08_score": {
+      "queries": 160,
+      "direct_raw_model_mrr25": 0.14884560329441876,
+      "parent_truths_present": 100,
+      "additional_truths_present": 19,
+      "additional_truth_rank_median": 20.0,
+      "additional_truths_at_or_above": {
+        "1": 0,
+        "3": 1,
+        "5": 1,
+        "10": 6,
+        "25": 12,
+        "50": 17,
+        "128": 19
+      },
+      "existing_truth_rank_median": 8.5
+    },
+    "C15NP:c08_raw_fold0": {
+      "queries": 160,
+      "direct_raw_model_mrr25": 0.15139495707713374,
+      "parent_truths_present": 100,
+      "additional_truths_present": 19,
+      "additional_truth_rank_median": 17.0,
+      "additional_truths_at_or_above": {
+        "1": 1,
+        "3": 1,
+        "5": 2,
+        "10": 6,
+        "25": 10,
+        "50": 17,
+        "128": 19
+      },
+      "existing_truth_rank_median": 9.0
+    },
+    "C15NP:c08_raw_fold1": {
+      "queries": 160,
+      "direct_raw_model_mrr25": 0.1283631053504291,
+      "parent_truths_present": 100,
+      "additional_truths_present": 19,
+      "additional_truth_rank_median": 24.0,
+      "additional_truths_at_or_above": {
+        "1": 1,
+        "3": 1,
+        "5": 1,
+        "10": 3,
+        "25": 10,
+        "50": 17,
+        "128": 19
+      },
+      "existing_truth_rank_median": 9.5
+    },
+    "P01pair:ensemble": {
+      "queries": 160,
+      "direct_raw_model_mrr25": 0.10764685057622154,
+      "parent_truths_present": 100,
+      "additional_truths_present": 19,
+      "additional_truth_rank_median": 28.0,
+      "additional_truths_at_or_above": {
+        "1": 1,
+        "3": 2,
+        "5": 2,
+        "10": 4,
+        "25": 8,
+        "50": 14,
+        "128": 19
+      },
+      "existing_truth_rank_median": 16.0
+    }
+  },
+  "all_development_previously_used": true,
+  "fresh_C13_prediction_metrics_read": false,
+  "model_trained": false,
+  "recipe_selected": false,
+  "automatic_submission": false,
+  "limitation": "Oracle truth-rank diagnosis on useddevelopment; comparing individual/ensemble channels here is not model selection or independent confirmation."
+}

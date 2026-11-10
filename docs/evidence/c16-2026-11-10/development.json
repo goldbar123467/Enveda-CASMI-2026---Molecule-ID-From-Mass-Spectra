@@ -1,0 +1,90 @@
+{
+  "completed_utc": "2026-11-10T07:14:37.436526+00:00",
+  "queries": 160,
+  "candidates": {
+    "cosine-control": {
+      "vs_P01": {
+        "n": 160,
+        "baseline_mrr25": 0.27874430083805085,
+        "candidate_mrr25": 0.2766460865523365,
+        "delta": -0.0020982142857142857,
+        "ci95": [
+          -0.004895833333333334,
+          -0.00022321428571428587
+        ],
+        "improved": 0,
+        "harmed": 5
+      },
+      "vs_P16": {
+        "n": 160,
+        "baseline_mrr25": 0.27874430083805085,
+        "candidate_mrr25": 0.2766460865523365,
+        "delta": -0.0020982142857142857,
+        "ci95": [
+          -0.004895833333333334,
+          -0.00022321428571428587
+        ],
+        "improved": 0,
+        "harmed": 5
+      },
+      "absent_truths_recovered": 0,
+      "truths_lost": 0,
+      "truth_coverage": 100,
+      "supported_development": false,
+      "actions": {
+        "fold_disagreement": 116,
+        "top_is_parent": 29,
+        "joint_top_outsider_inserted": 13,
+        "protected_library": 2
+      }
+    },
+    "C15NP": {
+      "vs_P01": {
+        "n": 160,
+        "baseline_mrr25": 0.27874430083805085,
+        "candidate_mrr25": 0.2764377532190032,
+        "delta": -0.0023065476190476187,
+        "ci95": [
+          -0.005208333333333334,
+          -0.00022321428571428587
+        ],
+        "improved": 0,
+        "harmed": 5
+      },
+      "vs_P16": {
+        "n": 160,
+        "baseline_mrr25": 0.27874430083805085,
+        "candidate_mrr25": 0.2764377532190032,
+        "delta": -0.0023065476190476187,
+        "ci95": [
+          -0.005208333333333334,
+          -0.00022321428571428587
+        ],
+        "improved": 0,
+        "harmed": 5
+      },
+      "absent_truths_recovered": 0,
+      "truths_lost": 0,
+      "truth_coverage": 100,
+      "supported_development": false,
+      "actions": {
+        "fold_disagreement": 124,
+        "top_is_parent": 22,
+        "joint_top_outsider_inserted": 12,
+        "protected_library": 2
+      }
+    }
+  },
+  "selected_group": null,
+  "new_candidate_selected": false,
+  "baseline_truths": 100,
+  "truth_absent_mrr": 0,
+  "all_development_previously_used": true,
+  "protocol_sha256": "0d824d63d87410a778bd34dd8f0b739826f420f0163ca9c7d9839a2888957e61",
+  "score_receipt_sha256": "129e2ff263645ce62c63a9a46d41a46edb29b8818071fbd739081dd5d690109f",
+  "input_freeze_sha256": "54230dc773e8c784a22a704e3c545e4e12f5d759c391b074dd94496955381f7b",
+  "fresh_C13_prediction_metrics_read": false,
+  "automatic_submission": false,
+  "submission_qualified": false,
+  "limitation": "UsedpositiveCASMI2022,sharedfoldmodeltraining and knownwrong-signP14control limit hidden-score calibration. A selected recipe still needs fresh120,realKagglechanged-path smoke/independentaudits. No automatic trial."
+}

@@ -1,0 +1,15 @@
+{
+  "started_utc": "2026-11-10T07:51:23.675626+00:00",
+  "pid": 27332,
+  "source_sha256": {
+    "scripts/run_c18_worker.py": "ebcb10fdc1adabcf26abb360c8e12ac816c5d938a794f8203d78004a529a1c55",
+    "scripts/c18_peak_train.py": "f04206eeb6abf9a69b75b399721d394e39b1245138aaa36ca1420db7c632186a",
+    "scripts/peak_dropout.py": "3c3e0e1cce2148337b4b41db5a412ea5e26d42353233951befb8bc1fc7390172",
+    "scripts/develop_c18_peak.py": "09ca841dce616ce7e6f880f42443906862e59dc27982ac60e103b4969a2913d3",
+    "scripts/c18_models.py": "55f47735dfe1f5017a1dd85aa7f361e92e5701d987ed2694535adf8dcd970a7b",
+    "configs/c18-peak-drop-20261110.json": "c77e25d9dd2e9f812d0c506e762147e18610d0450e7d51fad072e0c6d1b44419",
+    "configs/c18-evaluation-20261110.json": "f733ed3e8bf46cbd04efb18c719d795394532253211b31d6c9f9958fbd69ebaa"
+  },
+  "automatic_submission": false,
+  "fresh_C13_prediction_metrics_read": false
+}

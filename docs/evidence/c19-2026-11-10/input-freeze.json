@@ -1,0 +1,8 @@
+{
+  "frozen_utc": "2026-11-10T07:54:48.338277+00:00",
+  "protocol_sha256": "0758a4cbd6522f21721a2b5d3485161be558b92aeb9b0c349db33aaad8fc60b4",
+  "prediction_sha256": "307cddc76e250dd4ea677ab662a325250d7d86a06d0a0d12e8224e5fcfd162b7",
+  "model_refitted": false,
+  "fresh_C13_prediction_metrics_read": false,
+  "automatic_submission": false
+}

@@ -1,0 +1,62 @@
+{
+  "completed_utc": "2026-11-10T07:44:26.948451+00:00",
+  "protocol_sha256": "0b5015e68e8a7599d84defcaf68694ec3898088b5090a86c369a35389ab997a7",
+  "features_sha256": "385aa244571681da2cd7c63f6807464bd5593f186da382e26086ee3b3048b97e",
+  "evidence_sha256": "fa49ee30d54960253a7be548fba4282d1fbf0d869a057e8fa7edfc021ceae70f",
+  "feature_names": [
+    "parent",
+    "parent_rank1",
+    "inverse_parent_rank",
+    "inverse_prior_rank",
+    "library",
+    "library_parent",
+    "inverse_engine2",
+    "inverse_pubchem",
+    "ice_present",
+    "ice_z",
+    "ice_inverse_rank",
+    "gl_present",
+    "gl_z",
+    "gl_inverse_rank",
+    "n1_present",
+    "n1_z",
+    "n1_inverse_rank",
+    "p01pair_present",
+    "p01pair_z",
+    "p01pair_inverse_rank",
+    "c09_present",
+    "c09_z",
+    "c09_inverse_rank",
+    "c15_present",
+    "c15_z",
+    "c15_inverse_rank",
+    "log_pool_size",
+    "generator_count"
+  ],
+  "queries": 160,
+  "rows": 14184,
+  "shape": [
+    160,
+    128,
+    28
+  ],
+  "fold_sizes": {
+    "0": 37,
+    "1": 29,
+    "2": 29,
+    "3": 32,
+    "4": 33
+  },
+  "extra_official_identities_computed": 2164,
+  "invalid_generator_structures": 0,
+  "channel_rows": {
+    "engine2": 5755,
+    "pubchem": 3875,
+    "ice": 10712,
+    "gl": 7747,
+    "n1": 3033
+  },
+  "labels_read": false,
+  "fresh_C13_prediction_metrics_read": false,
+  "automatic_submission": false
+}
