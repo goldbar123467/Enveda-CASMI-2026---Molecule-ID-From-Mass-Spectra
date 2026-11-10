@@ -1,0 +1,21 @@
+{
+  "checked_utc": "2026-11-10T12:38:01.579697+00:00",
+  "notebook_sha256": "a1ec683267f48340577696557689a9633fa1925c98ec8dfbf3505e926e4e24c9",
+  "scientific_sha256": "1b089ce02fd6346abb61ea69c0498f4ce5fcbc8bf4b800fbb584b48c73a0e3dd",
+  "template_sha256": "02304e42bc27cbbad98b2995333ccf6d16e1599838d1de3eef13c964d85db428",
+  "changed_cells": [
+    0,
+    6,
+    27,
+    29
+  ],
+  "only_input_contract_count_and_run_metadata_changed": true,
+  "scientific_payload_exact": true,
+  "all_poststage_arithmetic_weights_and_thresholds_exact_after_count_substitution": true,
+  "private": true,
+  "internet": false,
+  "queries": 120,
+  "query_labels_mounted": false,
+  "quality_metrics_read": false,
+  "declaration": "Predictions only; not candidate selection or confirmation. C30passing C29 selection is required before any reserved metric access."
+}

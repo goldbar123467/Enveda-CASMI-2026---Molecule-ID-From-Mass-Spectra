@@ -1,8 +1,8 @@
 # Runs
 
-Updated 2026-11-10 12:29 UTC by `scripts/update_runs.py` (hourly). Generated from `runs.csv` — edit that file, not this one.
+Updated 2026-11-10 12:54 UTC by `scripts/update_runs.py` (hourly). Generated from `runs.csv` — edit that file, not this one.
 
-- Kaggle quota: GPU 14.8 h used of 30 h · TPU 0.0 h of 20 h · resets 2026-11-14 00:00 UTC
+- Kaggle quota: GPU 15.5 h used of 30 h · TPU 0.0 h of 20 h · resets 2026-11-14 00:00 UTC
 - Submissions today (UTC): 1 of 5 — see `SUBMISSIONS.md`
 
 ## Active
@@ -13,6 +13,8 @@ Updated 2026-11-10 12:29 UTC by `scripts/update_runs.py` (hourly). Generated fro
 | C29V | kaggle-2xt4 | eval | c29-fixed-public-replay-development v1 | 2026-11-10 12:16 | **running** | Private full240 P01/control pipeline plus one fixed public MASS/dual-reference recipe; no labels or publictrial | Accepted v1 at actual title-resolved handle casmi26-c29-fixed-public-replay-development. Never duplicate shorter requested slug. Bothcycles must terminate before outer C30selection/freshC13. |
 | C29COL | local-cpu | diag | outputs/local/c29-public-replay-20261110/collector.log | 2026-11-10 12:21 | **running** | Bounded collection of exact returned C29v1 handle, source/real240 verification; no metrics | Worker 8600 live; RUNNING |
 | C29EW | local-cpu | eval | outputs/local/c29-public-replay-20261110/worker.log | 2026-11-10 12:21 | **running** | After exactcollector exit, frozen C29full240 metrics and C30outer selection after both cycles; no reservedmetrics/trial | Worker 25024 live; waiting exact C29collector terminal and exit |
+| C31V | kaggle-2xt4 | eval | c31-reserved-public-replay v1 | 2026-11-10 12:39 | **running** | Same frozen C29recipe/query120 predictions in parallel without label metrics; quarantined until C30selection | Private/offline/image37c64/remoteSCI verified; only contract and7counts differ from frozen C29. No new model/threshold, labels, confirmation metrics or publictrial. Do not duplicate. |
+| C31COL | local-cpu | diag | outputs/local/c31-reserved-public-20261110/collector.log | 2026-11-10 12:42 | **running** | Bounded C31 exact-source/real120/unchangedP01 collection without reserved label metrics | Worker 24632 live; RUNNING |
 
 ## Finished (newest first)
 

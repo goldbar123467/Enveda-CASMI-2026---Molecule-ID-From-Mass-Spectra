@@ -1,0 +1,16 @@
+{
+  "campaign": "C31",
+  "purpose": "Label-blind reserved120 prediction preparation for the already frozen C29 recipe; not candidate selection or confirmation metrics.",
+  "candidate_cycle": "C29",
+  "queries": 120,
+  "positive": 60,
+  "negative": 60,
+  "source": "C29 exact private full-pipeline build, changing only the validation contract/count and run metadata. All C29 scientific recipe, source payload, thresholds and weights remain fixed.",
+  "source_notebook_sha256": "02304e42bc27cbbad98b2995333ccf6d16e1599838d1de3eef13c964d85db428",
+  "input_contract_sha256": "8ef3d0600cf0dc1ca2e8f2edbe664adffc84e80e75a9e972ea50f5fdaf9554c7",
+  "performance_access": "No labels mounted or quality metrics computed. Predictions are quarantined. Only C30 selected_cycle C29 with passing fixed development can unlock the one global C13 consumption marker; otherwise preserve fresh120. A late execution failure does not justify another recipe.",
+  "confirmation_gate": "Unchanged C14 gate: all120 positive95%lower vsboth complete P01/P16 parents, alias-excluded mean/lower>=0, each view and polarity mean>=0 for both parents. Report all absent truths as zero, P14/P15 controls and source limitations.",
+  "automatic_confirmation": false,
+  "automatic_submission": false,
+  "paid_compute": false
+}

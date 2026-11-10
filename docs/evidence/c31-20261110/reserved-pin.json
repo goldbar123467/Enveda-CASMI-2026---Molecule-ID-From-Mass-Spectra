@@ -1,0 +1,25 @@
+{
+  "prepared_utc": "2026-11-10T12:37:19.359766+00:00",
+  "plan_sha256": "33d294c6591dbf33a3c0f037fa5ce2568db1089e899ae05237797c78a742e5d8",
+  "builder_sha256": "88854f4d248771cf95931007121a3c6aeedf9947bb7467e44aebeab5fa073703",
+  "notebook_sha256": "a1ec683267f48340577696557689a9633fa1925c98ec8dfbf3505e926e4e24c9",
+  "scientific_sha256": "1b089ce02fd6346abb61ea69c0498f4ce5fcbc8bf4b800fbb584b48c73a0e3dd",
+  "source_notebook_sha256": "02304e42bc27cbbad98b2995333ccf6d16e1599838d1de3eef13c964d85db428",
+  "input_contract_sha256": "8ef3d0600cf0dc1ca2e8f2edbe664adffc84e80e75a9e972ea50f5fdaf9554c7",
+  "changed_cells": [
+    0,
+    6,
+    27,
+    29
+  ],
+  "changed_contract_literals": 2,
+  "changed_count_literals": 7,
+  "original_scientific_payload_exact": true,
+  "no_new_recipe_model_or_threshold": true,
+  "quarantined_predictions": true,
+  "query_labels_mounted": false,
+  "confirmation_metrics_read": false,
+  "automatic_confirmation": false,
+  "automatic_submission": false,
+  "note": "C29 artifact names retained inside the separate C31 job. Actual source/metadata and complete120/parent parity must be verified."
+}

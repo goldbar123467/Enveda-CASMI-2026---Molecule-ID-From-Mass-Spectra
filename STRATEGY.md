@@ -1,6 +1,6 @@
 # C09 results and P16 scoring trial — 9–10 November
 
-## Current measured state — 10 November,12:25 UTC
+## Current measured state — 10 November,12:49 UTC
 
 Silver goal UNMET. P16/ref58181280 COMPLETE0.480/noerror. Latest board12:22UTC:
 rank972/5066; nominal silver253 at0.485. Last tracker account check12:19UTC:zero pending.
@@ -65,6 +65,18 @@ Only their fixed passing recipes are eligible; greatest full240MRR/tiesC28.
 Never send C28 directly to reserved confirmation while C29 remains unresolved.
 C30 selector does not confirm or submit. New all-mode source/model/recipe freeze,
 once-onlyC13full120/alias/polarity gate, realKaggle smoke and audits still required.
+
+C31 same frozen C29recipe on reserved120 accepted at exacthandle
+clarkkitchen/casmi26-c31-reserved-public-replay v1; remote RUNNING/private/offline/
+image37c64/SCI1b089ce0... verified. Only contract/count/run metadata differ; no
+new recipe/model/threshold. Existing query-only datasetv1 privacy/READY verified.
+Predictions QUARANTINED: no labels or quality metrics. Collector24632 until
+22:08:41UTC; requires full120/source/twoT4/originalP01bytes before collection.
+C32 once-only confirmation script implemented, actual pending-selection guards
+and5 existing gate tests PASS. No C32protocol/metric consumption yet. It requires
+C30selected C29 and C33production-source seal BEFORE any reserved metric access.
+C33production builder/seal is the next available work; not yet implemented.
+No worker automatically calls C32metrics. See docs/C31-C32-2026-11-10.md.
 
 Native24-hour hourly heartbeat ACTIVE(last inspected12:22), bounded read-only
 tracker296 continues to22:08UTC. C09oldcoverage remains CANCEL_REQUESTED and

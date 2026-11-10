@@ -1,0 +1,17 @@
+{
+  "checked_utc": "2026-11-10T12:59:50.705252+00:00",
+  "extlib": {
+    "ref": "takumuhata/casmi26-extlib",
+    "id": 12267306,
+    "current_version": 2,
+    "last_updated_utc": "2026-10-03T16:02:58.440Z"
+  },
+  "massbank": {
+    "ref": "samartalwar/casmi-2026-spectral-library-massbankharmonized",
+    "id": 12067949,
+    "current_version": 1,
+    "last_updated_utc": "2026-09-17T21:16:16.477Z",
+    "local_spectra_sha256": "6ebb46b32ddd344d988c3bdb90e7160d4ce46e6d0b900a1217607aa2234c9477"
+  },
+  "limitation": "API current dataset metadata and lastUpdated precede both job launches. Kernel metadata lists source refs; runtime byte-hash checks still required in production."
+}

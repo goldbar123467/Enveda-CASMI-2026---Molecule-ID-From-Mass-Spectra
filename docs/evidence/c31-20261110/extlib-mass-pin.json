@@ -1,0 +1,8 @@
+{
+  "file": "ext_mass.parquet",
+  "bytes": 7979821,
+  "sha256": "e82a878f3e9f4d19067199d1376231b1663a83d08c512ba8e03d6ae88b7af12e",
+  "dataset": "takumuhata/casmi26-extlib",
+  "current_version": 2,
+  "query_labels_used": false
+}

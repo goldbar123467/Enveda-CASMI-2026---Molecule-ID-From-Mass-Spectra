@@ -209,3 +209,12 @@ docs/evidence/c25-20261110-final/* -text whitespace=trailing-space,space-before-
 docs/evidence/c27-research-20261110/* -text whitespace=trailing-space,space-before-tab,cr-at-eol
 docs/evidence/c28-20261110/* -text whitespace=trailing-space,space-before-tab,cr-at-eol
 docs/evidence/c29-c30-20261110/* -text whitespace=trailing-space,space-before-tab,cr-at-eol
+
+configs/c31-reserved-public-20261110.json text eol=lf
+scripts/build_c31_reserved_public.py text eol=lf
+kaggle/forks/c31-reserved-public-replay/* -text whitespace=trailing-space,space-before-tab,cr-at-eol
+docs/evidence/c31-20261110/* -text whitespace=trailing-space,space-before-tab,cr-at-eol
+
+scripts/collect_c31_reserved.py text eol=lf
+
+scripts/confirm_c32_public.py text eol=lf

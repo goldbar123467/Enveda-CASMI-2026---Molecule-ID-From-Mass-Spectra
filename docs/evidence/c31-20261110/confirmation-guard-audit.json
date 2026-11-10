@@ -1,0 +1,12 @@
+{
+  "checked_utc": "2026-11-10T12:53:58.814418+00:00",
+  "actual_freeze_guard": "C30 development selection pending",
+  "actual_evaluate_guard": "C30 development selection pending",
+  "C14_gate_tests": 5,
+  "gate_tests_passed": true,
+  "C13_consumption_marker_exists": false,
+  "C32_confirmation_protocol_exists": false,
+  "source_sha256": "cf0bcebf1144672a2e0257c0fea8802bf7858c6f2438bc268e1a1563d9a96f44",
+  "production_seal_pending": true,
+  "automatic_confirmation": false
+}

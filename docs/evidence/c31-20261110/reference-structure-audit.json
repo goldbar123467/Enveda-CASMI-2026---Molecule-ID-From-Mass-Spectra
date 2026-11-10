@@ -1,0 +1,18 @@
+{
+  "checked_utc": "2026-11-10T13:00:39.280329+00:00",
+  "source_sha256": "6ebb46b32ddd344d988c3bdb90e7160d4ce46e6d0b900a1217607aa2234c9477",
+  "source_rows": 139744,
+  "casmi_subset_rows_dropped": 648,
+  "non_null_selected_rows": 139096,
+  "selected_unique_smiles": 20353,
+  "invalid_unique_smiles": 0,
+  "invalid_selected_rows": 0,
+  "selected_modes": {
+    "POSITIVE": 97716,
+    "NEGATIVE": 41380
+  },
+  "query_inputs_or_labels_used": false,
+  "quality_metrics_computed": false,
+  "reference_data_changed": false,
+  "limitation": "SMILES parse validity only; not official tautomer identity, exact source provenance or a validation gain."
+}
