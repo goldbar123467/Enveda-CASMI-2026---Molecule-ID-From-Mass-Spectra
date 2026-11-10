@@ -153,3 +153,8 @@ release hold may be removed; the observer still requires P18's successful
 actual score and zero global pending before sending the one remaining C18
 entry. A first error instead stops for inspection. P18 remains PENDING; exactly
 one entry has been accepted. No additional training or reserved metrics were used.
+
+Checkpoint 92a9102 was pushed successfully. The P19 release hold was removed at
+22:01 UTC after all immutable qualification hashes were rechecked and the exact
+observer process was verified live. One P18 entry is still PENDING; the release
+does not bypass the successful-first-result or one-global-pending gate.

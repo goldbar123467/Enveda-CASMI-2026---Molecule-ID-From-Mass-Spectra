@@ -23,8 +23,9 @@ the diagnostic parent. This is not evidence of a failure in pending P18.
 First source, qualification and submission remain immutable.
 
 The guarded qualification is sealed (SHA256 ddeb2321eae1ace3c15d5a2a105e643256bfcd79b8e018dd17ff3de689a9cb38).
-Release P19-release-hold.json only after this checkpoint is pushed. Current
-observer actual19988/launcher22028 uses monitor_reviewed_past_trials.py;
+Checkpoint 92a9102 was pushed and the P19 release hold was removed at 22:01 UTC.
+This permits only the one remaining entry after the first actual success.
+Current observer actual19988/launcher22028 uses monitor_reviewed_past_trials.py;
 it requires the first successful actual score before sending P19 and stops
 for review on a first error. The remaining entry MUST use
 submit_guarded_past_trial.py and submission-qualification-guarded.json;

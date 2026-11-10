@@ -1,0 +1,18 @@
+{
+  "released_utc": "2026-11-10T22:01:06.352034+00:00",
+  "checkpoint": "92a9102c4ddfb9931c26d246fc9dfabfcf2c6b35",
+  "qualification_sha256": "ddeb2321eae1ace3c15d5a2a105e643256bfcd79b8e018dd17ff3de689a9cb38",
+  "prior_hold": {
+    "reason": "Fail-closed preflight guard audit pending; same C18 weights/recipe",
+    "user_approved_remaining": 1
+  },
+  "accepted_entries_at_release": 1,
+  "maximum_entries": 2,
+  "maximum_pending": 1,
+  "requires_first_actual_success": true,
+  "submitter": "scripts/submit_guarded_past_trial.py",
+  "kernel": "clarkkitchen/casmi26-p19-c18-guarded-export",
+  "version": 1,
+  "observer_pid": 19988,
+  "training_authorized": false
+}
