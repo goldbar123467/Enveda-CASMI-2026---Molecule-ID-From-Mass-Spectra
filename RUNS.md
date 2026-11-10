@@ -1,8 +1,8 @@
 # Runs
 
-Updated 2026-11-10 18:41 UTC by `scripts/update_runs.py` (hourly). Generated from `runs.csv` — edit that file, not this one.
+Updated 2026-11-10 18:52 UTC by `scripts/update_runs.py` (hourly). Generated from `runs.csv` — edit that file, not this one.
 
-- Kaggle quota: GPU 19.0 h used of 30 h · TPU 0.0 h of 20 h · resets 2026-11-14 00:00 UTC
+- Kaggle quota: GPU 19.1 h used of 30 h · TPU 0.0 h of 20 h · resets 2026-11-14 00:00 UTC
 - Submissions today (UTC): 1 of 5 — see `SUBMISSIONS.md`
 
 ## Active
@@ -10,6 +10,8 @@ Updated 2026-11-10 18:41 UTC by `scripts/update_runs.py` (hourly). Generated fro
 | id | platform | kind | ref | started (UTC) | status | purpose | progress |
 |---|---|---|---|---|---|---|---|
 | C09V | kaggle-gpu | diag | c09-coverage-controls v1 | 2026-11-09 14:44 | **cancel_requested** | C09 dual-device diagnostic: exact P14 full128 external pipeline negative control onGPU0; existing C08 expanded candidate coverage/scoring onGPU1; no scoring submission | Old128 panel superseded after67 base-connected acquisition groups found; cancellation requested, not acknowledged. No allocation/training/validation result; no GPU quota added at16:34UTC. |
+| C34EX18 | kaggle-2xt4 | diag | p18-c22-past-trained-trial v1 | 2026-11-10 18:47 | **queued** | P18 mandatory submission.csv export smoke; entire qualified joint scientific prefix exact | Only export filename alias added; no recipe/model change. Private/offline. No scoring trial accepted yet. |
+| C34EX19 | kaggle-2xt4 | diag | p19-c18-past-trained-trial v1 | 2026-11-10 18:47 | **running** | P19 mandatory submission.csv export smoke; entire qualified joint scientific prefix exact | Only export filename alias added; no recipe/model change. Private/offline. No scoring trial accepted yet. |
 
 ## Finished (newest first)
 

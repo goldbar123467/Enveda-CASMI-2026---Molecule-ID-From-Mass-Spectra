@@ -1,0 +1,17 @@
+{
+  "checked_utc": "2026-11-10T18:47:15.348252+00:00",
+  "slot": "P19",
+  "kernel": "clarkkitchen/casmi26-p19-c18-past-trained-trial",
+  "version": 1,
+  "private": true,
+  "internet": false,
+  "docker_image": "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461",
+  "scientific_sha256": "92cdc698e3bf98e5a4882849b75a2198142acc5fba9023c7069f5a1a6d131954",
+  "state": "RUNNING",
+  "response": {
+    "ref": "/code/clarkkitchen/casmi26-p19-c18-past-trained-trial",
+    "url": "https://www.kaggle.com/code/clarkkitchen/casmi26-p19-c18-past-trained-trial",
+    "versionNumber": 1,
+    "kernelId": 144253125
+  }
+}

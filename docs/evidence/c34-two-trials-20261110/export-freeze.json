@@ -1,0 +1,35 @@
+{
+  "frozen_utc": "2026-11-10T18:46:37.518461+00:00",
+  "exports": {
+    "P18": {
+      "kernel": "clarkkitchen/casmi26-p18-c22-past-trained-trial",
+      "notebook_path": "kaggle\\forks\\p18-c22-past-trained-trial\\notebook.ipynb",
+      "notebook_sha256": "3b930386b3f8d5366e32bfc041b6f4052167fc7241dab7d68ad98b531c877b74",
+      "scientific_sha256": "b4a25474a4253897449bf8142c8050dc1128d55cf3039cd798c857f572b792b0",
+      "version": 1,
+      "output": "submission.csv",
+      "source_file": "p18_c22_submission.csv",
+      "joint_prefix_exact": true,
+      "scientific_prefix_sha256": "b88a91052f2264d0952576227cc4e5d0f0b83801ed5d3440e34d923b6026e916"
+    },
+    "P19": {
+      "kernel": "clarkkitchen/casmi26-p19-c18-past-trained-trial",
+      "notebook_path": "kaggle\\forks\\p19-c18-past-trained-trial\\notebook.ipynb",
+      "notebook_sha256": "241f3d94d775021144a5c8efc9c3b822184520123eaf7f2d10cd8da1ac5045c6",
+      "scientific_sha256": "92cdc698e3bf98e5a4882849b75a2198142acc5fba9023c7069f5a1a6d131954",
+      "version": 1,
+      "output": "submission.csv",
+      "source_file": "p19_c18_submission.csv",
+      "joint_prefix_exact": true,
+      "scientific_prefix_sha256": "b88a91052f2264d0952576227cc4e5d0f0b83801ed5d3440e34d923b6026e916"
+    }
+  },
+  "joint_notebook_sha256": "16d5bb473451fe1a02d049ce43784c07a549691154a4386ad3a0fd8df9dbcaf1",
+  "joint_scientific_sha256": "b88a91052f2264d0952576227cc4e5d0f0b83801ed5d3440e34d923b6026e916",
+  "builder_sha256": "bcf912bdf25224d840292f9744bf7912927f73c9a715680cd377722b4358b584",
+  "reason": "Kaggle HTTP400 explicitly requires filename submission.csv; neither rejected request consumed an accepted scoring trial.",
+  "original_qualification_preserved": true,
+  "new_training": false,
+  "new_recipe": false,
+  "maximum_accepted_trials": 2
+}

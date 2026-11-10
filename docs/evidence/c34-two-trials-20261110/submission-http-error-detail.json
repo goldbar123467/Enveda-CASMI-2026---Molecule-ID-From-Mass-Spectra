@@ -1,0 +1,5 @@
+{
+  "http_status": 400,
+  "response_body": "{\"error\":{\"code\":400,\"message\":\"Submission not allowed:  Submission files must be named \\u0022submission.csv\\u0022 for this Competition.\",\"status\":\"FAILED_PRECONDITION\"}}",
+  "automatic_retry": false
+}

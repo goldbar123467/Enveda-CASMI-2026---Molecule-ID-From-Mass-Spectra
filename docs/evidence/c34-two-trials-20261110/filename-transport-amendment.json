@@ -1,0 +1,11 @@
+{
+  "prepared_utc": "2026-11-10T18:52:12.175953+00:00",
+  "old_qualification": "submission-qualification.json",
+  "old_transport_accepted_entries": 0,
+  "reason": "Kaggle explicitly requires submission.csv; two HTTP400 requests rejected custom filenames. Account history and unchanged daily acceptance count reconciled.",
+  "correction": "Two separate export notebooks retain every joint scientific code cell exact and append a guarded byte-exact copy to submission.csv. Both receive fresh actual Kaggle GPU execution and independent export audits.",
+  "current_qualification_target": "submission-qualification-exports.json",
+  "model_or_recipe_changed": false,
+  "new_training": false,
+  "maximum_new_accepted_entries": 2
+}

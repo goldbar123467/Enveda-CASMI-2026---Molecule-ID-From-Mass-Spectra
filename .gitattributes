@@ -239,3 +239,11 @@ kaggle/forks/p18-p19-past-trained-trials/* -text whitespace=trailing-space,space
 docs/evidence/c34-two-trials-20261110/* -text whitespace=trailing-space,space-before-tab,cr-at-eol
 
 scripts/qualify_two_past_trials.py text eol=lf
+
+scripts/build_past_trial_exports.py text eol=lf
+scripts/audit_past_trial_export.py text eol=lf
+scripts/qualify_past_trial_exports.py text eol=lf
+scripts/submit_past_trial_exports.py text eol=lf
+scripts/monitor_past_trial_exports.py text eol=lf
+kaggle/forks/p18-c22-past-trained-trial/* -text whitespace=trailing-space,space-before-tab,cr-at-eol
+kaggle/forks/p19-c18-past-trained-trial/* -text whitespace=trailing-space,space-before-tab,cr-at-eol

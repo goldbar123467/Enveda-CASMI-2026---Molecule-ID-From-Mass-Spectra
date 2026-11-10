@@ -67,3 +67,20 @@ COMPLETE remote v1, privacy/offline/source hashes, account history and quota: ze
 pending, ready, no submission sent by that dry-run. The prior unused single-trial
 approval is superseded by this request for TWO total new entries; it is not a
 third trial. The native hourly automation remains PAUSED.
+
+At18:41 UTC the submission API rejected the custom output filename with HTTP400.
+A reconciled diagnostic request returned the explicit requirement that submission
+files must be named submission.csv. Neither request was accepted: account history
+still has zero new markers, zero pending, and the same one daily accepted entry.
+Both durable rejected intents are retained and reconciled; no trial was consumed.
+
+The fixed-filename requirement was missed in the first transport. Two separate
+private export notebooks now preserve the entire qualified joint scientific prefix
+exact and append only a guarded byte-exact copy of the corresponding model's CSV
+to submission.csv. No model, weight, threshold, recipe or selection changed.
+P18/C22 and P19/C18 exports were accepted as private v1 GPU runs at18:47 UTC, with
+remote source hashes/privacy/offline settings verified. Fresh real Kaggle runs
+and independent export/forward/identity audits are required before the corrected
+submitter is allowed to send. The original qualification/source/auditor remain
+immutable historical evidence; a separate export qualification will bind the
+new source versions. The current authorization remains TWO accepted trials total.
