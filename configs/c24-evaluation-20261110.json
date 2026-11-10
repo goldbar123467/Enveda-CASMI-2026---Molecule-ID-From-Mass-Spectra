@@ -1,0 +1,13 @@
+{
+  "campaign": "C24PL",
+  "candidate": "Only final5000-additional-update models from both completed C18 parents, cumulative50000; fixed polarity loss importance weights",
+  "development": "Same full240 as C21: previously used160positive and C20development80negative, all rows retained; no C13 confirmation metrics",
+  "serving": "Negative-only fixed0.20 tailRRF with offset3 after complete P01/P16-compatible parent. Positive strings, rank1 and candidate identities remain exact.",
+  "source_adaptation": "C20v2 retains the same80 inputs and strict coverage guard; it fingerprints/ranks Engine1 generated proposals only for a genuinely empty Engine2 pool. Document this recovered baseline and verify original79 Engine2 entries before metrics.",
+  "selection": "Positive full240 paired95%lowerbounds versus both complete parents, no individual truth lost, nonnegative means in both polarity strata; no coefficient/checkpoint search",
+  "global_winner_policy": "Evaluate the five predeclared C21 groups and this single C24 group before any fresh120 metric read. Among passing groups choose highest aggregate development MRR; ties within1e-12 prefer the older C21 group. Disclose all six groups; no added C22 dose arm or retrospective subgroup/weight search.",
+  "confirmation": "Only one globally selected source/model/recipe-frozen winner may use reserved C13mixed120 once; positive95%lowerbounds vsboth parents, nonnegative polarity means and alias sensitivity; then actual Kaggle changed-path smoke and independent audits before a public trial",
+  "loss_interpretation": "Importance weights define an equal-polarity target objective. They do not guarantee equal realized loss values or gradient norms.",
+  "automatic_submission": false,
+  "paid_compute": false
+}

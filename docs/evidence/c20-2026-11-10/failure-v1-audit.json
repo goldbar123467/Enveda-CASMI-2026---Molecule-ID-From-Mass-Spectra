@@ -1,0 +1,29 @@
+{
+  "checked_utc": "2026-11-10T09:33:03.239513+00:00",
+  "kernel_version": 1,
+  "status": "ERROR",
+  "original_queries": 80,
+  "engine2_covered": 79,
+  "missing_id": "C20Q_3f38081e510120c5bad2",
+  "adduct": "[M-H]-",
+  "precursor_mz": 1641.7150386695,
+  "reason": "Engine2 omitted one query with no candidates in its fixed pool. Engine1 generated25 real near-mass proposals; strict final coverage assertion stopped the run.",
+  "engine1_pre_guard_candidates": 25,
+  "candidate_mass_min": 1642.725023955999,
+  "candidate_mass_max": 1642.7250239559994,
+  "candidate_mass_error_ppm": 1.648991023386057,
+  "engine1_static_pool_direct_candidates_within_30ppm": 0,
+  "original_guard_retained": true,
+  "partial_baseline_is_not_full_P01": true,
+  "artifact_sha256": {
+    "eng_lists.json": "b778b608600a7f4204832e3f4cf1e1ad69643f69d57407e0cf7e22244a0df383",
+    "pc_lists.json": "fbbf794ef8aef8ebd3d94845717d39cc9c29a50c50bfe33fccee0ba07b9d2486",
+    "baseline_submission.csv": "99d0aec9ecdf0d8d6240c17225b72c2fc7dd73618969fb0b3f050516c386273f",
+    "submission_pipeline.log": "d587c834bdaf90dd0746317c8c7a500ed593dee660a3cbc24eb65f15fa3c1b94",
+    "c20_t4_allocation.json": "2424b71eb8adfbf0b3fdf637d5b06eecc9ec98ad04a5301b35676e59ce32f144"
+  },
+  "source_pool_metadata_sha256": "82b8c40315611289b9a4004b3af18d6d3402b3cd5baa4ee5723da07b7e2f6bb0",
+  "C20_prediction_label_metrics_read": false,
+  "C13_confirmation_metrics_read": false,
+  "automatic_submission": false
+}

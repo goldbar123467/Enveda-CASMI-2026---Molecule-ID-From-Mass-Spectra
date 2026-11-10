@@ -1,58 +1,77 @@
 # Enveda CASMI 2026 — working rules
 
-## Current measured state — 10 November,08:43UTC
+## Current measured state — 10 November,10:29UTC
 
-P16/ref58181280 is COMPLETE0.480/noerror, no reported public gain. Global public
-pending0; one additional approved trial remains unconsumed. Never resubmit P16.
-Latest actual leaderboard08:21UTC:rank949/5056, nominal silver252 at0.484. Goal
-UNMET. Preserve the0.480 champion source/weights and all qualification gates.
+Silver goal UNMET. P16/ref58181280 COMPLETE0.480/noerror; no reported public gain.
+Board10:22UTC:rank960/5062, nominal silver253 at0.484.
+Account10:28UTC:zero pending public submissions. One extra user-approved trial
+remains unconsumed. Never resubmit P16 or infer silver from a rounded score.
 
-C13 formate-compatible privatev2 completed/collected08:05. Execution audit
-proves full120/Engine2nonempty120, exact P01 replay, both neural models support
-all120, real2T4/metricRDKit2026.03.3. P14 supports59 plus61exactP01fallbacks.
-Fresh balanced120 label metrics remain UNREAD. Collector9740 finished; never
-restart/duplicate C13v2 or resurrect failedv1. Full earlier candidate artifacts
-are in outputs/forks/c13-mixed-casmi2022-validation-v2.
+C13v2 full120 collected08:05:Engine2nonempty120,both neuralmodels support120,
+exactP01replay,real2T4/metricRDKit2026.03.3. P14supports59/61explicit exact
+fallbacks. Fresh balanced120 label metrics remain UNREAD. Do not restart C13.
 
-C18 completed10000updates/2folds08:16,0AMPskips/0restarts. Fixed0.20tail recipe
-FAILS the used160 P01/P16 gate:delta+.000676691,CI[-.001386304,.002816636],
-15improved/15harmed;vsC09control+.001540899 CI[.000329888,.003132033]. Same
-100truths/rank1/candidate identities. Both actual final RNG streams match control
-except separate augmentation RNG. No fresh120 metrics or trial used. C14-C19
-completed screens remain rejected; no completed fit may be repeated.
+C22 completed09:13:20000new successful updates,6AMPskips,final55000cumulative.
+Fixed used160 gate FAILED:delta+.000917923 CI[-.001186285,.003078057],17up/13down.
+No freshmetrics/trial. Do not refit C14-C24 completed fits or add C22 to C21.
 
-C20 is a separate DEVELOPMENT-only80negative CASMI2022 panel, excludes all
-reservedC13/oldpanel/training identities; strict scan/raw/source audits pass.
-Private query-only datasetv1 READY. Kernel clarkkitchen/casmi26-c20-negative-
-casmi2022-development v1 RUNNING by08:26, private/offline/exact image37c64/source
-verified. Actual C20 hardware/fullcoverage need terminal receipts. P14 has no
-negative support and must be exact P01 fallback. Collector24980/28348 owns this
-same v1 to18:18UTC; read collector-v1-status.json and actual process/API state.
-Do not duplicate/requeue while live. It collects predictions/pools, never metrics.
+C20v1 ERROR09:01:Engine2covers79/80. One1641.715[M-H]- query has no fixed-pool
+candidates while Engine1 generated25near-mass proposals. Strictguard stopped
+before completeP01. Partial80-row CSV is NOT fullP01; no dropping/resampling.
+C20v2 accepted09:33/private/offline/image37c64/source verified09:36. It moved
+from QUEUED to RUNNING by10:24:56UTC; latest10:29UTC=RUNNING.
+Same80/strict48guard/originalfusion. Only43prefix fingerprints/ranks real BASE
+proposals for initially empty Engine2pools; this DECLARED universe extension
+must retain original79 lists exactly. NeuralFP onGPU1, fingerprints/rankersCPU.
+Actual recovered80/old79parity receipts still required. Collector19008 until
+19:36UTC. Never duplicate/requeue while live; original v1 remains preserved.
 
-C21 config prospectively fixes5groups and negative-only0.20tailRRF on full240
-(used160positive+C20dev80negative); positive strings/rank1/candidates exact.
-Original P16 reference search completed80, exact200724reference rows/policy,
-0query-input aliases. Full240 scorer/evaluator is NOT YET IMPLEMENTED/RUN;
-implement/freeze before C20development metrics once baseline collected. Require
-positive95%lowerbounds over both full parents, no coverage loss and nonnegative
-polarity means; disclose all groups and weak/wrong-sign controls. Read config
-and docs/C20-C22-2026-11-10.md; preserve freshC13mixed120 for frozen winner only.
+C21 full240 evaluator frozenSHA22a70523...:five fixed groups,negative-only0.20
+RRF/offset3,positive strings/rank1/identities exact,allabsenttruthzeros. Current
+worker7712 waits C20v2 then prepares/scores/evaluates once, deadline20:06UTC.
+No freshmetrics/submit automated; any C21 selection MUST WAIT for C24.
 
-C22 new dose is RUNNING: one additional10000-step cycle/fold from completedC18,
-restoring model/optimizer/scaler/all RNG states. No old fit repeated; only final
-55000cumulative models. Worker13640/20596 owns trainer18968; read outputs/local/
-c22-peak-dose-20261110/{status,worker-status}.json and actual processes. At08:43
-fold0new7900/10000,2AMPskip(s),peak1.4512GiB; skipped attempts are not updates. Deadline11:23UTC. It automatically
-finishes both fits and one fixed used160 evaluation; require positive95%lower
-against P01/P16 and nonnegative mean versus directC18parent. C20negative80
-sensitivity required before fresh120. Actual selection/config uses C18parent;
-selection-rule-audit clarifies an inherited C09 description without changing
-source/rule. No upload/freshmetrics/public submission is automated.
+C24 COMPLETE10:07:40:two5000additional-update fits/10000successful,oneAMPskip
+(fold0),no restarts,final50000cumulative. Same C18parent optimizer/scaler/RNG,
+query/views/negatives/peakdrop; only per-query CE/BCE polarity weights change.
+Package outputs/publish/c24-polarity-models-20261110 audited finite and source-
+pinned,manifest91ca80c0...; private local only. Five-query serving audit passed:
+CPU/CUDA raw max2.862e-6, normalized9.531e-6; independent arithmetic raw1.908e-6,
+normalized5.132e-6. Fixtures include partial-v1 negative lists for arithmetic,
+NOT full-pipeline qualification or quality metrics. Ten focused tests pass.
+Full240/global six-group evaluator IMPLEMENTED and frozen10:13,protocolSHA
+ef1445ff61d59fe61a5531d35d9b797700909a4e4d141cf3c3a3ed7dc3e062f7.
+Worker6784 waits actual C21 terminal+exit, then scores/evaluates/selects once;
+deadline21:00UTC. Read outputs/local/c24-evaluation-20261110/worker-status.json.
 
-Native24-hour hourly heartbeat remains ACTIVE (nativeview/TOML08:33), tracker296
-live to22:08UTC. Old superseded C09 coverage still CANCEL_REQUESTED; do not use
-its discarded panel. Older checkpoints below are historical; this state wins.
+Local C20 Engine2 recovery diagnostic ACTIVE:supervisor22468,redirector
+child11168; exact actual process via CIM. Real full2.54M library,
+original COCONUT/BIO/PubChemLite/train pool, real25generated candidates and
+original FPmodels/rankers; only filesystem ROOTS adapted. Asset16/16 cached.
+Isolated engine-site usesRDK2025.03.6/Torch2.11/sklearn1.6.1; complete cloud
+parity remains mandatory, never substitute this one-query diagnostic for full80.
+Two preparatory attempts archived: v1 control-tree correction before rankers;
+v2 duplicate Windows/slash source-pin record correctly rejected before loading.
+Current canonical contract11c0b1f8...; original12:23:37UTC deadline retained.
+TwoCPU threads/4GiB floor/70%VRAM; inspect local-engine-status/log/err in
+outputs/research/c20-engine-recovery-20261110. No new C24 fit or labels/metrics.
+Do not duplicate while live. Watchdog kills its exact child tree on failure.
+
+NEXT: collect and verify C20v2 recovered80/old79parity. Let existing C21 and
+C24 workers evaluate ALL six fixed groups. Among passing choose greatest full
+MRR/tiesolderC21 within1e-12; require positive paired95%lower vsboth fullparents,
+no truthlost,nonnegative polarity means. P14negative noop/wrong-sign controls
+must be disclosed. Freeze ONE global winner before once-only fresh C13mixed120
+alias/polarity gates, then actual Kaggle changed-path smoke and independent
+source/model/identity/fallback/fusion audits before the approved trial.
+
+Native24-hour hourly heartbeat ACTIVE (view verified10:26); tracker296 to22:08UTC.
+Superseded C09coverage remains CANCEL_REQUESTED/old panel discarded. Worker
+health updater now uses structured receipts+actual process handles, so waiting
+workers cannot be called stalled merely because their stdout stays quiet.
+Read docs/C21-C24-2026-11-10.md. Older checkpoints below are historical;
+this current state supersedes them.
+
 
 ## Authorization and earlier checkpoints — C09, 2026-11-09
 

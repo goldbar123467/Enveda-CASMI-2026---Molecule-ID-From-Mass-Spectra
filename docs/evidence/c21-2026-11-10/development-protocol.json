@@ -1,0 +1,78 @@
+{
+  "prepared_utc": "2026-11-10T09:39:02.577004+00:00",
+  "config_sha256": "6caecee1aa245fec485970d35174ed3121e2f84b926f818b93bc52d14a9a9d44",
+  "source_sha256": {
+    "develop_c21_negative.py": "67a71b808ca5911775f6aa5e88048c12a0e92b7861a013000435c4acce2a4f28",
+    "negative_tail.py": "9733a0c91a5186cc749a3b969711578cdc7d5616e3252f9f8917c249e893318e",
+    "compatible_tail.py": "b5677d884008f0fd16a66ca045eb5c5c61420e895c66612d3fefdef166f58378",
+    "compatible_inference.py": "bd19325814e066615ace15a765c84c74ccedbb867e609b8d95ed4dbcdf092832",
+    "followup_models.py": "efe821f214f1cb20efdfcc38387a43c3d06bb6bbf8cad3051d4abcfedd5685a3",
+    "c14_models.py": "444ad95a85828f2962af070abe37e6ab52a5c5558cac5995d2ac8c7efa5e0f4f",
+    "c15_models.py": "0d675a1d31184ba43ecf6cd14de0730b8816cf81f5f3cb2e90f22e306f0ac89c",
+    "c18_models.py": "55f47735dfe1f5017a1dd85aa7f361e92e5701d987ed2694535adf8dcd970a7b",
+    "external_reference_overlay.py": "826a689fdcecc05436cd201219ac066ef2ebf557df22200ac807c6bb6c0681e5",
+    "finish_c09_confirmation.py": "d74e3258498cbaf496f91ae3398f54c4131ee25569b269e18e318ed5c9d615af",
+    "tail_fusion.py": "b1fd92ee93412454c80942c70fd3bc72f89f07a673ff1a319d7e821be368a5d4"
+  },
+  "input_sha256": {
+    "outputs\\local\\c12-deep-candidates-20261110\\all\\parent.csv": "e56ec5755beb254a99ca8c385dbeee3217f77e3db4d6e308663353c08766a8e9",
+    "outputs\\local\\c12-deep-candidates-20261110\\all\\preparation.json": "d92484d8d884bd223c06d5cc267d4c4f69cbb199a5e1884995e0c92ac6175125",
+    "outputs\\local\\c12-deep-candidates-20261110\\all\\fingerprint-smiles.parquet": "9d65c4f7645ca91b3e83cd37df83db023ea75f335f0dced900daf15012d45975",
+    "outputs\\local\\c12-deep-candidates-20261110\\all\\fingerprints.npy": "71c5771c2aa3178fb994b448cb36a640af005f65768437fabbc94e5bba533489",
+    "outputs\\local\\c12-deep-candidates-20261110\\source-contract.json": "e4f9208dbd1decfede25290f3ed47e1bcd4e347c77e396982ab25a8be70a8be5",
+    "outputs\\forks\\c10-casmi2022-validation-v1\\c10_p01.csv": "27730ce2e2d3a3b51529216d29319cf857bf69bb01449b37a30795b51badf7ff",
+    "outputs\\forks\\c10-casmi2022-validation-v1\\c10_p14.csv": "6c15e28b294c88a7ef2b0fe6f1337c56e91515578f29fed15e3efdd6481a674f",
+    "outputs\\forks\\c10-casmi2022-validation-v1\\c10_queries.parquet": "c0f90ca5174c0f637fbc5c082afa9462fb4d310adf2548550ee086a0bf3f4f5d",
+    "outputs\\local\\c10-candidates-20261110\\p15-control.csv": "905fd37787bcf531210fcd18e88f41df474d159ec2817f479961884f89fb5ed9",
+    "outputs\\local\\c10-casmi2022-20261110\\labels.csv": "f1d3b96f002827d2c9ddd1e61f0fe4e97551a27859da8c74d248588893515c6a",
+    "outputs\\local\\c20-negative-development-20261110\\labels.csv": "4d0f0803904dcf592fa9bda6786db72b40d9e27790ce0f891bb9ed700f82e1a3",
+    "outputs\\local\\c20-negative-development-20261110\\push-receipt-v2.json": "48730170924b9e67833371f8469839d52d8d986c78c20632dcd0b7e359e8815d",
+    "outputs\\local\\c20-negative-development-20261110\\independent-input-audit.json": "8ef2ffaa33751543dfc7e1210b403e68c6fdd2213035724ededd96b8e9281272",
+    "outputs\\local\\c20-negative-development-20261110\\neural-input-audit.json": "268c54da6472d5c107444f49482b148e6468b6fb29ed305804f2e117318db3be",
+    "outputs\\publish\\c20-negative-casmi2022-20261110\\validation-queries.parquet": "ac19fdc6ec2500237dff5d11758820d2926a0e359c99136d32907a51205d8afe",
+    "outputs\\publish\\c20-negative-casmi2022-20261110\\validation-contract.json": "7f9a0c51de6a7613cb4a708d39608ca9429af182e3f8ae7c18b271ecbd93f14e",
+    "outputs\\local\\c21-negative-tail-20261110\\reference-protocol.json": "ad97126603d644abcd64cf56ddde68ff615f4fa4fbbda69ac58f9b29897afe26",
+    "outputs\\local\\c21-negative-tail-20261110\\reference-search.json": "29c82c420f82f2d37f31abbe0b2725aae61c072276effd635ca09153898a8c61",
+    "outputs\\local\\c21-negative-tail-20261110\\reference-matches.parquet": "8888c7faf1ad535bdf7a1debbf9a88ffac1abfe513a0ac225649adf7e47d996a",
+    "configs\\c09-external-reference-20261109.json": "ea662270a895dc902cc9dd242afd7cd7f63e4a42ce3468474c6bff73d984043c"
+  },
+  "serving_models": {
+    "C08-parent": {
+      "bundle": "outputs\\local\\c21-negative-tail-20261110\\bundles\\p15-parent",
+      "arm": "legacy16-hard",
+      "manifest_sha256": "86c977781695e5bfa8d5dc389c696f190359d9ca46b62fa5d087a4c6feee3909"
+    },
+    "C09-control": {
+      "bundle": "outputs\\local\\c21-negative-tail-20261110\\bundles\\cosine-control",
+      "arm": "cosine-control",
+      "manifest_sha256": "be6527550a26d0c331d3ddcac5132163f4cbab5eed0fc2d605ac35714788f191"
+    },
+    "C14-CE": {
+      "bundle": "outputs\\publish\\c14-ce-models-20261110",
+      "arm": "ce-mask",
+      "manifest_sha256": "b758d9a123305e01f8f51d9b90f04dc82f8a1b1e50d6c996d4c5fa614b1f7d53"
+    },
+    "C15-NP": {
+      "bundle": "outputs\\publish\\c15-np-models-20261110",
+      "arm": "np-balanced",
+      "manifest_sha256": "ecf9c437a484114bc09891fcc16534b8b1559cd8b0e019db000b0248fe6ac55c"
+    },
+    "C18-peak-drop": {
+      "bundle": "outputs\\publish\\c18-peak-models-20261110",
+      "arm": "peak-drop",
+      "manifest_sha256": "c47ae5767606d387bbbbbb1317451a29d286160bb4eb2a1a6afdcba6c57ba799"
+    }
+  },
+  "positive_queries": 160,
+  "negative_queries": 80,
+  "all_queries": 240,
+  "positive_outputs_exact_parent": true,
+  "absent_truths_kept": true,
+  "selection": "Both full240 paired95% lowerbounds positive; no individual truth lost versus either full parent; both polarity means nonnegative; greatest aggregate MRR/tie older within1e-12.",
+  "P15_control": "Exact C08 recipe on complete P01; reuse negative parent scores only if P01/P16 strings are identical, otherwise infer separately.",
+  "C20_prediction_metrics_read": false,
+  "C13_confirmation_metrics_read": false,
+  "automatic_submission": false,
+  "source_amendment": "C20v1 stopped before metrics on one empty Engine2 pool. Same80inputs; v2 uses actual Engine1 generated proposals and unchanged Engine2 rankers, preserving guard and original79 entries.",
+  "prior_protocol_sha256": "634e528b34b937c8df9e9a7ea5cc365a7ed36e3848a970eefb24fb52daa761b6"
+}

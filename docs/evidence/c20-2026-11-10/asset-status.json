@@ -1,0 +1,29 @@
+{
+  "completed_utc": "2026-11-10T10:20:29.670178+00:00",
+  "pid": 16844,
+  "state": "complete",
+  "completed": 16,
+  "total": 16,
+  "dataset": "dmitriigluzdov/casmi26-attributed-v4g-reproduction-assets",
+  "files_sha256": {
+    "coconut-casmi26-candidates/coco_fp.npy": "5d960d7355e0e10b22f1b2fa97c9fde37e86ddffbea8e562ec1873bdbb0e5f88",
+    "coconut-casmi26-candidates/coco_mass.npy": "2b2af92c3185fa8cd52a4a3e3e7fd7eda4d94e8b9402662a3a4c55ffb13c6e5c",
+    "coconut-casmi26-candidates/coco_meta.pkl": "29eab3083adcb329b52ac7909b4d3ce21f9f95a4008a93356bc526310ab44091",
+    "coconut-casmi26-candidates/fp_bits.npy": "a61e372fc41091bf5c7467e08134081266262665077cb9e2c56d73e4887f3013",
+    "casmi-chebi-lmsd-structures/bio_fp.npy": "daa609d2b598f5b7e4a7692116f05b39b508d1a5565a9f19ef163cd0d4e98544",
+    "casmi-chebi-lmsd-structures/bio_mass.npy": "2407a2ee04bd6bc468db876e7c0569842e7652432386cf1101dc85ef5a5611df",
+    "casmi-chebi-lmsd-structures/bio_meta.pkl": "bfc92d81dafe8244a86f3a7b74b0da66b61605a9581b78c60acea619908404d4",
+    "casmi-chebi-lmsd-structures/ATTRIBUTION.md": "fb49f6a959f562b7edb50a9103eccbbdf55a2c38327f09b989a369311fd280d7",
+    "casmi26-pubchemlite-cc0-candidate-fingerprints/pubchemlite_fp.npy": "724926ecb4bfb2efc7e63014e7f6b8bed8aec34882a435f039c0ddab139e569c",
+    "casmi26-pubchemlite-cc0-candidate-fingerprints/pubchemlite_mass.npy": "f107bdf361b75fb2f6115abb2a28eda053b476b6c3694f4b0a2bfdadb248730f",
+    "casmi26-pubchemlite-cc0-candidate-fingerprints/pubchemlite_meta.pkl": "3c9a18c7662022bce51759b1660292b712fe7544459020e38299d2f0747517ce",
+    "casmi26-pubchemlite-cc0-candidate-fingerprints/MANIFEST.json": "f333f6fa150f807f2981faa7dcb930b90c6f5022015f7314f428cb8bd84e42cb",
+    "casmi26-fp-models-v2/fp_merged_m1.pt": "261529c823825cbe2028684bbf7214a95a7e631ca9f656336d577c507cce8294",
+    "casmi26-fp-models-v2/fp_single_s2.pt": "c19aa29016ed4d7a67bac38105b8fa5076c696c29eb66a504558c9b2e52b614a",
+    "casmi26-simulated-ranker-rows/sim_rank_rows_nofp.npz": "c19ae76f69c7a3f23e67d2e27441830213eee941aa5658b47b1798872a61a7e9",
+    "casmi26-ranker-features/rank_train.npz": "41ccec87fba5f8ab255aaf5a723567f25bd766064265c5cc2b83ba2cf15f57f8"
+  },
+  "labels_read": false,
+  "inference_started": false,
+  "automatic_submission": false
+}

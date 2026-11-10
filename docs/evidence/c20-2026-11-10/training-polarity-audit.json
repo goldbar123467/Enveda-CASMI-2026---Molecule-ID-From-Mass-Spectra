@@ -1,0 +1,19 @@
+{
+  "eligible": 270127,
+  "identities_with_negative": 110318,
+  "identities_with_positive": 253451,
+  "both": 93642,
+  "expected_negative_view_fraction_uniform_identity_then_view": 0.2091097802850052,
+  "folds": {
+    "0": {
+      "allowed": 216270,
+      "negative_ids": 88271,
+      "positive_ids": 202936
+    },
+    "1": {
+      "allowed": 216175,
+      "negative_ids": 88360,
+      "positive_ids": 202858
+    }
+  }
+}

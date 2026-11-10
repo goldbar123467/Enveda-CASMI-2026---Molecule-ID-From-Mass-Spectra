@@ -1,0 +1,18 @@
+{
+  "notebook_sha256": "23d06ba65b7c9a22156f72868ea4a790c8f3ba168ae7134dbbce62692145f33a",
+  "original_notebook_sha256": "b46df73b9a897d0c68c04931afbfaa4ef44561aca66f0aaf8c8a828db4127871",
+  "builder_sha256": "a7a6d773e0367d297ffdabe98ec2ae54579517cac605952abaec926d8ba89994",
+  "helper_sha256": "7b58e57b397064bbcd1e9c630b614e3cb04d22e08cf4677056f604e969b9e975",
+  "changed_frozen_cell": 43,
+  "strict_coverage_guard_exact": true,
+  "existing_fusion_source_exact": true,
+  "other_frozen_cells_exact": true,
+  "query_data_and_contract_unchanged": true,
+  "queries_retained": 80,
+  "query_labels_or_metrics_read": false,
+  "original_engine2_models_rankers_and_30ppm_rules_unchanged": true,
+  "adaptation": "Real Engine1 generated proposals extend only an initially empty Engine2 candidate pool. Actual fingerprints and rankers execute on GPU1; do not claim an unchanged candidate universe for recovered queries.",
+  "existing_covered_79_parity_requires_execution_receipt": true,
+  "private": true,
+  "scoring_submission": false
+}

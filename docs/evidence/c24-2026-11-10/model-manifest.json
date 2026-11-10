@@ -1,0 +1,53 @@
+{
+  "kind": "compatible_scorer",
+  "run_id": "C24PL",
+  "steps": 50000,
+  "smoke": false,
+  "architecture": {
+    "width": 320,
+    "heads": 8,
+    "layers": 3,
+    "embedding": 320,
+    "fp_bits": 2048,
+    "max_peaks": 96,
+    "min_peaks": 3,
+    "temperature": 0.1,
+    "fp_score_weight": 2.0
+  },
+  "models": [
+    {
+      "file": "polarity-loss-fold0.pt",
+      "fold": 0,
+      "arm": "polarity-loss",
+      "steps": 50000,
+      "cache_precision": "float16",
+      "checkpoint_sha256": "ea5985c0bfe56d5eed04f6fb7ddf0bf001878d220250d7c7595f0ec4af1557c2"
+    },
+    {
+      "file": "polarity-loss-fold1.pt",
+      "fold": 1,
+      "arm": "polarity-loss",
+      "steps": 50000,
+      "cache_precision": "float16",
+      "checkpoint_sha256": "67da13afbb791fc559ab0b1eac046bef2511a2957c5055778e4be4ef926de6ce"
+    }
+  ],
+  "files": {
+    "model.py": "2547418857386d1c2513fd1ab6c70961e6a96e73d9d495bbfe3052197e69dc39",
+    "features.py": "a97ad9b3ab3711517864d56e497e1672cb29bb05683c72b52db9f9b0a17b1455",
+    "fingerprint-cache.npy": "9c49b4ccbd9bad1738f4cd29a760f7f7a6284427eb97d2dfe6bc52a9a227fdda",
+    "fingerprint-cache-smiles.parquet": "f01df6a8cac1aaf8e9ef803cb4a01eebb9dba49089ba5cc7bcbe264b07a8e99a",
+    "compatible_tail.py": "b5677d884008f0fd16a66ca045eb5c5c61420e895c66612d3fefdef166f58378",
+    "inference.py": "3d30146f788017bbb0d4941275e2d05489a2f8ff279ba9dbdf3a93bfbc690c6b",
+    "polarity-loss-fold0.pt": "ea5985c0bfe56d5eed04f6fb7ddf0bf001878d220250d7c7595f0ec4af1557c2",
+    "polarity-loss-fold1.pt": "67da13afbb791fc559ab0b1eac046bef2511a2957c5055778e4be4ef926de6ce"
+  },
+  "training_contract_sha256": "68f800bd8824cb58773eb7322dd870eb1e67d04147e590dc20b3cc6542efe4e4",
+  "evaluation_plan_sha256": "47fb0f0d24e1f2cc67770eef28b52727ba4b0b4cedf041cdffbc87cf8086aebd",
+  "packager_sha256": "dc1e691da0dc8bbfffc297fde162c7127351184e2ff918d671adbc41845d3fff",
+  "parent_manifest_sha256": "c47ae5767606d387bbbbbb1317451a29d286160bb4eb2a1a6afdcba6c57ba799",
+  "architecture_cache_manifest_sha256": "c73d2383b7494fdbaedb9e437f8f389dbe175418bf13e5260a2f277ada49b602",
+  "automatic_submission": false,
+  "selection": "Only final5000-additional-update models; fixed negative-only tail recipe; no coefficient/checkpoint search",
+  "attribution": "Compatible architecture/features from credited Saner/P01 kit; local C08/C18 parents. Original source/model terms retained."
+}

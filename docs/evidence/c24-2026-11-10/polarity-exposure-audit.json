@@ -1,0 +1,11 @@
+{
+  "fold": 0,
+  "training_identities": 216270,
+  "expected_negative_query_fraction": 0.20902849612587437,
+  "negative_query_loss_weight": 2.3920183576257763,
+  "positive_query_loss_weight": 0.6321340244889144,
+  "target_expected_negative_loss_share": 0.5,
+  "unknown_polarity_views": 0,
+  "query_sampling_and_acquisitions_unchanged": true,
+  "prediction_metrics_read": false
+}

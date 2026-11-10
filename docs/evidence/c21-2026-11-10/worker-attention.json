@@ -1,0 +1,9 @@
+{
+  "checked_utc": "2026-11-10T09:01:20.790787+00:00",
+  "pid": 22108,
+  "error": "AssertionError: C20 collector handle missing; poll the same Kaggle kernel before any recovery. Cloud termination is not inferred.",
+  "job_termination_inferred": false,
+  "automatic_recovery": false,
+  "automatic_submission": false,
+  "C13_confirmation_metrics_read": false
+}

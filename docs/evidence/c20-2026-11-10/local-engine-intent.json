@@ -1,0 +1,9 @@
+{
+  "started_utc": "2026-11-10T10:26:05.097782+00:00",
+  "pid": 22468,
+  "deadline_utc": "2026-11-10T12:23:37.538723+00:00",
+  "source_sha256": "57f3d94770bf8ed2dae28895216a6a17b7da64e44827e7dfd4f53d2dfc6d68d6",
+  "labels_read": false,
+  "quality_metrics_computed": false,
+  "automatic_submission": false
+}

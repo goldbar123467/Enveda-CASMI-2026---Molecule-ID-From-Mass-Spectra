@@ -1,0 +1,242 @@
+"""Prospective C21 full240 development; fresh C13 metrics are never accessed."""
+import os
+os.environ.setdefault('OMP_NUM_THREADS','2')
+os.environ.setdefault('MKL_NUM_THREADS','2')
+import torch
+import argparse,hashlib,json,gc
+from datetime import datetime,timezone
+import numpy as np
+import pandas as pd
+import pyarrow as pa
+from rdkit import rdBase
+from precision_cache import ROOT,sha,write,features
+from negative_tail import merge
+from compatible_tail import apply
+from external_reference_overlay import apply_overlay
+from followup_models import serving_bundle
+from finish_c09_confirmation import metric_vector
+from tail_fusion import paired_summary
+from training_monitor import system_memory
+
+OUT=ROOT/'outputs/local/c21-negative-tail-20261110'
+CONFIG=ROOT/'configs/c21-negative-tail-20261110.json'
+POLICY=ROOT/'configs/c09-external-reference-20261109.json'
+CLOUD=ROOT/'outputs/forks/c20-negative-development-v1'
+LOCAL=ROOT/'outputs/local/c20-negative-development-20261110'
+POS=ROOT/'outputs/forks/c10-casmi2022-validation-v1'
+CACHE=ROOT/'outputs/local/c12-deep-candidates-20261110/all'
+
+
+def stamp():return datetime.now(timezone.utc).isoformat()
+
+
+def groups():
+    from c14_models import serving_module as ce_module,PACKAGE as ce_package
+    from c15_models import serving_module as np_module,PACKAGE as np_package
+    from c18_models import serving_module as peak_module,PACKAGE as peak_package
+    result={}
+    for name,group in [('C08-parent','p15-parent'),('C09-control','cosine-control')]:
+        bundle,record,module=serving_bundle(group,OUT/'bundles');result[name]=(bundle,record['arm'],module)
+    for name,path,arm,loader in [('C14-CE',ce_package,'ce-mask',ce_module),('C15-NP',np_package,'np-balanced',np_module),
+            ('C18-peak-drop',peak_package,'peak-drop',peak_module)]:
+        _,module=loader();result[name]=(path,arm,module)
+    return result
+
+
+def setup():
+    torch.set_num_threads(2);pa.set_cpu_count(2)
+    assert rdBase.rdkitVersion=='2026.03.3' and system_memory()['free_gib']>=4
+    assert not (ROOT/'.local/compute-paused.json').exists()
+
+
+def freeze():
+    setup();assert not (OUT/'development-protocol.json').exists()
+    reference=json.loads((OUT/'reference-protocol.json').read_text());cfg=json.loads(CONFIG.read_text())
+    assert sha(CONFIG)==reference['config_sha256'] and cfg['weight']==.2 and cfg['offset']==3.
+    for entry in reference['model_manifests'].values():assert sha(ROOT/entry['path'])==entry['sha256']
+    model_groups=groups();assert list(model_groups)==cfg['model_groups_in_tie_order']
+    files=[CACHE/'parent.csv',CACHE/'preparation.json',CACHE/'fingerprint-smiles.parquet',CACHE/'fingerprints.npy',
+        CACHE.parent/'source-contract.json',POS/'c10_p01.csv',POS/'c10_p14.csv',POS/'c10_queries.parquet',
+        ROOT/'outputs/local/c10-candidates-20261110/p15-control.csv',ROOT/'outputs/local/c10-casmi2022-20261110/labels.csv',
+        LOCAL/'labels.csv',LOCAL/'push-receipt.json',LOCAL/'independent-input-audit.json',LOCAL/'neural-input-audit.json',
+        ROOT/'outputs/publish/c20-negative-casmi2022-20261110/validation-queries.parquet',
+        ROOT/'outputs/publish/c20-negative-casmi2022-20261110/validation-contract.json',
+        OUT/'reference-protocol.json',OUT/'reference-search.json',OUT/'reference-matches.parquet',POLICY]
+    sources=['develop_c21_negative.py','negative_tail.py','compatible_tail.py','compatible_inference.py','followup_models.py',
+        'c14_models.py','c15_models.py','c18_models.py','external_reference_overlay.py','finish_c09_confirmation.py','tail_fusion.py']
+    write(OUT/'development-protocol.json',dict(prepared_utc=stamp(),config_sha256=sha(CONFIG),
+        source_sha256={n:sha(ROOT/'scripts'/n) for n in sources},input_sha256={str(p.relative_to(ROOT)):sha(p) for p in files},
+        serving_models={n:dict(bundle=str(b.relative_to(ROOT)),arm=a,manifest_sha256=sha(b/'c08-manifest.json')) for n,(b,a,_) in model_groups.items()},
+        positive_queries=160,negative_queries=80,all_queries=240,positive_outputs_exact_parent=True,
+        absent_truths_kept=True,selection='Both full240 paired95% lowerbounds positive; no individual truth lost versus either full parent; both polarity means nonnegative; greatest aggregate MRR/tie older within1e-12.',
+        P15_control='Exact C08 recipe on complete P01; reuse negative parent scores only if P01/P16 strings are identical, otherwise infer separately.',
+        C20_prediction_metrics_read=False,C13_confirmation_metrics_read=False,automatic_submission=False))
+    print('C21 PROSPECTIVE FULL240 PROTOCOL FROZEN',sha(OUT/'development-protocol.json'),flush=True)
+
+
+def verify():
+    p=json.loads((OUT/'development-protocol.json').read_text());assert sha(CONFIG)==p['config_sha256']
+    for n,pin in p['source_sha256'].items():assert sha(ROOT/'scripts'/n)==pin,n
+    for n,pin in p['input_sha256'].items():assert sha(ROOT/n)==pin,n
+    for n,entry in p['serving_models'].items():assert sha(ROOT/entry['bundle']/'c08-manifest.json')==entry['manifest_sha256'],n
+    return p
+
+
+def prepare():
+    setup();verify();assert not (OUT/'preparation.json').exists() and not (OUT/'preparation-intent.json').exists()
+    collector=json.loads((LOCAL/'collector-v1-status.json').read_text());assert collector['state']=='collected'
+    report=json.loads((CLOUD/'c20_report.json').read_text());execution=json.loads((CLOUD/'execution_receipt.json').read_text())
+    contract=ROOT/'outputs/publish/c20-negative-casmi2022-20261110/validation-contract.json'
+    assert report['validation_contract_sha256']==sha(contract) and report['queries']==80 and report['baseline_replay_exact']
+    assert not report['query_labels_mounted'] and not report['metrics_computed'] and not report['recipe_selection']
+    assert execution['is_full_run'] and execution['processed_molecules']==80
+    allocation=json.loads((CLOUD/'c20_t4_allocation.json').read_text());assert len(allocation['devices'])==2 and all(x['name']=='Tesla T4' for x in allocation['devices'])
+    preflight=json.loads((CLOUD/'c20_gpu1_preflight.json').read_text());assert preflight['dreams_finite'] and preflight['molformer_finite']
+    assert 'Official-metric RDKit: 2026.03.3' in (CLOUD/'submission_pipeline.log').read_text(encoding='utf-8')
+    assert report['p14_receipt']['scored_molecules']==0 and report['p14_receipt']['input_errors']==0
+    positive=pd.read_csv(CACHE/'parent.csv',dtype=str,keep_default_na=False)
+    positive01=pd.read_csv(POS/'c10_p01.csv',dtype=str,keep_default_na=False);assert positive.equals(positive01) and len(positive)==160
+    negative=pd.read_csv(CLOUD/'c20_p01.csv',dtype=str,keep_default_na=False);control=pd.read_csv(CLOUD/'c20_p14.csv',dtype=str,keep_default_na=False)
+    assert negative.equals(control) and sha(CLOUD/'c20_p01.csv')==report['baseline_sha256']
+    q=pd.read_parquet(CLOUD/'c20_queries.parquet');original=pd.read_parquet(contract.parent/'validation-queries.parquet')
+    assert len(q)==80 and q.molecule_id.is_unique and q.ionization_mode.eq('negative').all()
+    assert negative.molecule_id.tolist()==q.molecule_id.tolist()==original.molecule_id.tolist()
+    for a,b in zip(q.itertuples(index=False),original.itertuples(index=False)):
+        assert a.precursor_mz==b.precursor_mz and a.adduct==b.adduct and a.ionization_mode==b.ionization_mode
+        for field in ['ms2_mzs','ms2_normalized_intensities']:assert np.array_equal(features.array_value(getattr(a,field)),features.array_value(getattr(b,field)))
+    for name in ['neural_public.parquet','neural_ours.parquet']:
+        d=pd.read_parquet(CLOUD/name);assert d.molecule_id.nunique()==80 and d.neural_ok.astype(bool).all()
+    write(OUT/'preparation-intent.json',dict(started_utc=stamp(),protocol_sha256=sha(OUT/'development-protocol.json'),C20_prediction_metrics_read=False,C13_confirmation_metrics_read=False))
+    index=pd.read_parquet(CACHE/'fingerprint-smiles.parquet');fps=np.load(CACHE/'fingerprints.npy',mmap_mode='r')
+    lookup=dict(zip(index.smiles,range(len(index))));structures={}
+    def structure(smiles):
+        if smiles not in structures:
+            if smiles in lookup:
+                i=lookup[smiles];structures[smiles]=(str(index.metric_key.iloc[i]),np.asarray(fps[i]))
+            else:
+                item=features.structure(smiles);structures[smiles]=(item[0],item[-1])
+        return structures[smiles]
+    evidence=pd.read_parquet(CLOUD/'c20_neural_p01.parquet')
+    assert evidence.processed.astype(bool).all() and evidence.groupby('molecule_id').library_max.nunique().eq(1).all()
+    confidence=evidence.groupby('molecule_id').library_max.first().to_dict();assert set(confidence)==set(q.molecule_id)
+    matches=pd.read_parquet(OUT/'reference-matches.parquet');policy=json.loads(POLICY.read_text())
+    parent_neg,actions=apply_overlay(negative,matches[matches.view.eq('all_reference')],confidence,policy,lambda s:structure(s)[0])
+    parent=pd.concat([positive,parent_neg],ignore_index=True);p01=pd.concat([positive01,negative],ignore_index=True)
+    p14=pd.concat([pd.read_csv(POS/'c10_p14.csv',dtype=str,keep_default_na=False),control],ignore_index=True)
+    assert parent.molecule_id.is_unique and len(parent)==240 and not set(positive.molecule_id)&set(negative.molecule_id)
+    posq=pd.read_parquet(POS/'c10_queries.parquet');assert len(posq)==160 and posq.ionization_mode.eq('positive').all()
+    queries=pd.concat([posq,q],ignore_index=True);assert queries.molecule_id.tolist()==parent.molecule_id.tolist()
+    for frame in [parent,p01,p14,pd.read_csv(ROOT/'outputs/local/c10-candidates-20261110/p15-control.csv',dtype=str)]:
+        for row in frame.itertuples(index=False):
+            keys=[structure(s)[0] for s in row.smiles.split(';')];assert 1<=len(keys)<=25 and len(keys)==len(set(keys))
+    for name,frame in [('parent.csv',parent),('P01.csv',p01),('P14.csv',p14),('negative-parent.csv',parent_neg),('negative-P01.csv',negative)]:frame.to_csv(OUT/name,index=False)
+    queries.to_parquet(OUT/'queries.parquet',index=False);q.to_parquet(OUT/'negative-queries.parquet',index=False)
+    actions.to_csv(OUT/'reference-actions.csv',index=False)
+    names=list(structures);pd.DataFrame(dict(smiles=names,metric_key=[structures[s][0] for s in names])).to_parquet(OUT/'fingerprint-smiles.parquet',index=False)
+    np.save(OUT/'fingerprints.npy',np.stack([structures[s][1] for s in names]).astype(np.uint8))
+    files=['parent.csv','P01.csv','P14.csv','negative-parent.csv','negative-P01.csv','queries.parquet','negative-queries.parquet','reference-actions.csv','fingerprint-smiles.parquet','fingerprints.npy']
+    cloud_files=['c20_report.json','execution_receipt.json','c20_p01.csv','c20_p14.csv','c20_queries.parquet','c20_neural_p01.parquet','c20_t4_allocation.json','c20_gpu1_preflight.json']
+    write(OUT/'preparation.json',dict(completed_utc=stamp(),protocol_sha256=sha(OUT/'development-protocol.json'),queries=240,
+        positive=160,negative=80,all_reference_parent_changed=int(actions.changed.sum()) if 'changed' in actions else int((parent_neg.smiles!=negative.smiles).sum()),
+        files_sha256={n:sha(OUT/n) for n in files},cloud_files_sha256={n:sha(CLOUD/n) for n in cloud_files},
+        negative_P01_equals_P16=parent_neg.equals(negative),P14_negative_exact_baseline=True,
+        C20_prediction_metrics_read=False,C13_confirmation_metrics_read=False,automatic_submission=False))
+    print('C21 FULL240 INPUTS PREPARED',len(names),'IDENTITIES',flush=True)
+
+
+def prepared():
+    verify();p=json.loads((OUT/'preparation.json').read_text());assert p['protocol_sha256']==sha(OUT/'development-protocol.json')
+    for n,pin in p['files_sha256'].items():assert sha(OUT/n)==pin,n
+    for n,pin in p['cloud_files_sha256'].items():assert sha(CLOUD/n)==pin,n
+    return p
+
+
+def score():
+    import msvcrt
+    setup();prepared();assert not (OUT/'scoring-receipt.json').exists()
+    lock=(OUT/'scoring.lock').open('a+b');lock.write(b'0');lock.flush();lock.seek(0);msvcrt.locking(lock.fileno(),msvcrt.LK_NBLCK,1)
+    assert torch.cuda.is_available() and '2070' in torch.cuda.get_device_name();torch.cuda.set_per_process_memory_fraction(.7)
+    # Keep the current longer training/evaluation worker's GPU ownership intact.
+    local=ROOT/'outputs/local/c22-peak-dose-20261110/worker-status.json'
+    assert json.loads(local.read_text())['state'] in ['complete','error'],'C22 worker still owns the GPU'
+    index=pd.read_parquet(OUT/'fingerprint-smiles.parquet');fp=np.load(OUT/'fingerprints.npy',mmap_mode='r')
+    shared={s:np.asarray(fp[i]) for i,s in enumerate(index.smiles)}
+    parent=pd.read_csv(OUT/'negative-parent.csv',dtype=str,keep_default_na=False);records={};model_groups=groups()
+    for name,(bundle,arm,module) in model_groups.items():
+        path=OUT/(name+'-scores.parquet');assert not path.exists(),'Inspect any existing inference before recovery'
+        values,receipt=module.score(bundle,arm,parent,OUT/'negative-queries.parquet',path,shared_fps=shared)
+        assert receipt['scored_molecules']==80 and not receipt['unsupported_molecules'] and receipt['input_errors']==receipt['unprocessed_molecules']==0
+        assert values.c08_ok.astype(bool).all() and values.molecule_id.nunique()==80
+        records[name]=dict(receipt=receipt,scores_sha256=sha(path))
+        print('C21 NEGATIVE80 MODEL SCORED',name,flush=True)
+    original=pd.read_csv(OUT/'negative-P01.csv',dtype=str,keep_default_na=False)
+    if parent.equals(original):values=pd.read_parquet(OUT/'C08-parent-scores.parquet');p15_receipt=records['C08-parent']['receipt'];reuse=True
+    else:
+        bundle,arm,module=model_groups['C08-parent'];values,p15_receipt=module.score(bundle,arm,original,OUT/'negative-queries.parquet',OUT/'P15-control-scores.parquet',shared_fps=shared);reuse=False
+        assert p15_receipt['scored_molecules']==80 and not p15_receipt['unsupported_molecules'] and not p15_receipt['input_errors']
+    p15,changes=apply(original,values,.2);assert changes['passthrough_molecules']==0
+    positive=pd.read_csv(ROOT/'outputs/local/c10-candidates-20261110/p15-control.csv',dtype=str,keep_default_na=False)
+    pd.concat([positive,p15],ignore_index=True).to_csv(OUT/'P15.csv',index=False)
+    write(OUT/'scoring-receipt.json',dict(completed_utc=stamp(),queries=240,active_negative_queries=80,positive_exact_passthrough=160,
+        models=records,P15_inference=p15_receipt,P15_reused_exact_parent_scores=reuse,P15_sha256=sha(OUT/'P15.csv'),
+        preparation_sha256=sha(OUT/'preparation.json'),C20_prediction_metrics_read=False,C13_confirmation_metrics_read=False,automatic_submission=False))
+
+
+def evaluate():
+    setup();prepared();assert not (OUT/'development.json').exists() and not (OUT/'evaluation-input-freeze.json').exists()
+    cfg=json.loads(CONFIG.read_text());receipt=json.loads((OUT/'scoring-receipt.json').read_text());assert receipt['preparation_sha256']==sha(OUT/'preparation.json')
+    assert receipt['P15_sha256']==sha(OUT/'P15.csv')
+    frames={n:pd.read_csv(OUT/(n+'.csv'),dtype=str,keep_default_na=False) for n in ['P01','P14','P15']}
+    frames['P16']=pd.read_csv(OUT/'parent.csv',dtype=str,keep_default_na=False)
+    q=pd.read_parquet(OUT/'queries.parquet');modes=dict(zip(q.molecule_id,q.ionization_mode));actions={}
+    for name in cfg['model_groups_in_tie_order']:
+        path=OUT/(name+'-scores.parquet');assert sha(path)==receipt['models'][name]['scores_sha256']
+        frames[name],actions[name]=merge(frames['P16'],pd.read_parquet(path),modes,cfg['weight'])
+        assert actions[name]['positive_exact_passthrough']==160 and actions[name]['scored_molecules']==80 and not actions[name]['passthrough_molecules']
+        frames[name].to_csv(OUT/(name+'-predictions.csv'),index=False)
+    write(OUT/'evaluation-input-freeze.json',dict(frozen_utc=stamp(),protocol_sha256=sha(OUT/'development-protocol.json'),
+        scoring_receipt_sha256=sha(OUT/'scoring-receipt.json'),prediction_sha256={n:sha(OUT/(n+'-predictions.csv')) for n in cfg['model_groups_in_tie_order']},
+        C20_prediction_metrics_read=False,C13_confirmation_metrics_read=False,automatic_submission=False))
+    labels=pd.concat([pd.read_csv(ROOT/'outputs/local/c10-casmi2022-20261110/labels.csv',dtype=str),pd.read_csv(LOCAL/'labels.csv',dtype=str)],ignore_index=True).set_index('molecule_id')
+    ids=frames['P16'].molecule_id.tolist();labels=labels.loc[ids]
+    assert len(labels)==labels.key.nunique()==240 and labels.index.is_unique
+    # C10's label file predates the mode column; its original query metadata
+    # proves all160 positive. C20 carries explicit mode annotations.
+    annotated=labels['mode'].notna()
+    assert all(labels.loc[mid,'mode']==modes[mid] for mid in labels.index[annotated])
+    index=pd.read_parquet(OUT/'fingerprint-smiles.parquet');identity=dict(zip(index.smiles,index.metric_key))
+    values={n:metric_vector(frame,labels,identity) for n,frame in frames.items()}
+    strata={mode:np.array([modes[mid]==mode for mid in ids]) for mode in ['positive','negative']}
+    assert int(strata['positive'].sum())==160 and int(strata['negative'].sum())==80
+    reports={};eligible=[]
+    for name in cfg['model_groups_in_tie_order']:
+        comparisons={p:paired_summary(values[p],values[name]) for p in ['P01','P16']}
+        polarity={mode:{p:paired_summary(values[p][mask],values[name][mask]) for p in ['P01','P16']} for mode,mask in strata.items()}
+        losses={p:int(((values[p]>0)&(values[name]==0)).sum()) for p in ['P01','P16']}
+        passed=all(s['delta']>0 and s['ci95'][0]>0 for s in comparisons.values()) and not any(losses.values()) and all(s['delta']>=0 for v in polarity.values() for s in v.values())
+        reports[name]=dict(comparisons=comparisons,polarity=polarity,truths_lost=losses,truths_present=int((values[name]>0).sum()),
+            actions=actions[name],supported_development=bool(passed))
+        if passed:eligible.append(name)
+    best=max((float(values[n].mean()) for n in eligible),default=None)
+    winner=next((n for n in eligible if float(values[n].mean())>=best-1e-12),None)
+    controls={n:dict(aggregate=paired_summary(values['P01'],values[n]),polarity={mode:paired_summary(values['P01'][mask],values[n][mask]) for mode,mask in strata.items()}) for n in ['P14','P15']}
+    pd.DataFrame(dict(molecule_id=ids,mode=[modes[mid] for mid in ids],**values)).to_csv(OUT/'development-predictions.csv',index=False)
+    report=dict(completed_utc=stamp(),queries=240,positive=160,negative=80,groups=reports,selected_group=winner,
+        new_candidate_selected=winner is not None,controls=controls,baseline_MRR={p:float(values[p].mean()) for p in ['P01','P16']},
+        baseline_truths={p:int((values[p]>0).sum()) for p in ['P01','P16']},truth_absent_mrr=0,
+        positive_parent_preserved_exact=True,P14_negative_noop_disclosed=True,
+        limitation='Development screening over five fixed models, previously used160 plus new80negative development data. Wrong-sign controls/source shift and historical pretraining remain limitations; no hidden-score proof.',
+        protocol_sha256=sha(OUT/'development-protocol.json'),input_freeze_sha256=sha(OUT/'evaluation-input-freeze.json'),
+        C20_development_metrics_read=True,C13_confirmation_metrics_read=False,automatic_submission=False,submission_qualified=False)
+    write(OUT/'development.json',report)
+    write(OUT/'selection-freeze.json',dict(frozen_utc=stamp(),selected_group=winner,new_candidate_selected=winner is not None,
+        development_sha256=sha(OUT/'development.json'),protocol_sha256=sha(OUT/'development-protocol.json'),config_sha256=sha(CONFIG),
+        source_model_pins=json.loads((OUT/'development-protocol.json').read_text())['serving_models'],
+        C13_confirmation_metrics_read=False,automatic_submission=False,submission_qualified=False,
+        next_action='Freeze prospective fresh120 protocol and selected serving source; require confirmation, actual Kaggle smoke and independent audits before trial.' if winner else 'Reject all fixed groups; preserve fresh120 and extra public approval.'))
+    print('C21 FULL240 DEVELOPMENT',json.dumps(report),flush=True)
+
+
+if __name__=='__main__':
+    parser=argparse.ArgumentParser();parser.add_argument('stage',choices=['freeze','prepare','score','evaluate']);args=parser.parse_args()
+    {'freeze':freeze,'prepare':prepare,'score':score,'evaluate':evaluate}[args.stage]()

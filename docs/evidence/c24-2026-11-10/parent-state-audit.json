@@ -1,0 +1,9 @@
+{
+  "parent_checkpoint_sha256": "839d163c523d685ac4a28fa2d892a5f753d0f75f751d77cee6ce5b083963edab",
+  "parent_resume_sha256": "9f6ab401156a6e4601d826e6934998e2bcbdc4fc07fa670bbd82a5b50c793d7c",
+  "parent_updates": 5000,
+  "model_state_exact": true,
+  "optimizer_and_scaler_restored": true,
+  "query_negative_python_torch_cuda_peak_rng_restored": true,
+  "additional_updates_only": true
+}

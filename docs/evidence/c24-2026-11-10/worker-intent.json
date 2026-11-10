@@ -1,0 +1,13 @@
+{
+  "started_utc": "2026-11-10T10:13:41.595646+00:00",
+  "pid": 6784,
+  "deadline_utc": "2026-11-10T21:00:00+00:00",
+  "source_sha256": {
+    "run_c24_evaluation_worker.py": "c3b2be0b850f3d0bc69f7c527acf77a0ff5598dc9830d7042a41642c2489bb49",
+    "develop_c24_negative.py": "9d8405fe7fe03b4b312cc5a26a5b46c77dafbb7d7481ecf273214b5d89db2767",
+    "c24_models.py": "dc1e691da0dc8bbfffc297fde162c7127351184e2ff918d671adbc41845d3fff"
+  },
+  "protocol_sha256": "ef1445ff61d59fe61a5531d35d9b797700909a4e4d141cf3c3a3ed7dc3e062f7",
+  "C13_confirmation_metrics_read": false,
+  "automatic_submission": false
+}

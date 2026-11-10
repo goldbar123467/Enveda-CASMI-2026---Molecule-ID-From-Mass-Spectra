@@ -1,0 +1,50 @@
+{
+  "run_id": "C24PL",
+  "kind": "compatible_scorer",
+  "output": "outputs/local/c24-polarity-loss-20261110",
+  "parent_output": "outputs/local/c18-peak-drop-20261110",
+  "parent_arm": "peak-drop",
+  "raw_training": "outputs/competition-raw/train.parquet",
+  "base_cache": "outputs/local/n0/cache",
+  "split_groups": "outputs/local/long-20261106/spectrum_groups.npz",
+  "cache": "outputs/local/precision-cache-20261108",
+  "views_per_identity": 8,
+  "folds": [
+    0,
+    1
+  ],
+  "arms": [
+    {
+      "name": "polarity-loss",
+      "cache_precision": "float16",
+      "hard_negatives": 48,
+      "negative_pool": 512
+    }
+  ],
+  "maximum_hours": 3,
+  "minimum_free_ram_gib": 4,
+  "gpu_memory_fraction": 0.7,
+  "training": {
+    "steps": 5000,
+    "lr": 2e-05,
+    "warmup_steps": 100,
+    "checkpoint_interval": 100,
+    "batch_size": 384,
+    "hard_negatives": 48,
+    "negative_pool": 512,
+    "seed": 202611090
+  },
+  "objective": "One5000-update cycle/fold from completed C18 parents. Only per-query CE/BCE loss importance weights change: negative0.5/p,positive0.5/(1-p), where p is fold-specific expected negative acquisition probability under unchanged uniform identity/view sampling. Preserve optimizer/scaler/all RNG streams and40% peak dropout.",
+  "automatic_submission": false,
+  "augmentation": {
+    "drop_probability": 0.4,
+    "protected_strongest_peaks": 3,
+    "rng_seed_offset": 180000,
+    "rationale": "Valid cached train median75 peaks versus used C10 median44 raw peaks. Fixed40% peak sparsification, no severity search; do not infer a hidden-score gain.",
+    "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12462763/",
+    "source_scope": "Prior work supports random peak masking as an augmentation;40% and top3 protection are our fixed experiment, not a copied validated recipe."
+  },
+  "evaluation": "Final50000 cumulative checkpoints only. One fixed negative-only0.20tailRRF after full P01/P16; positive outputs/rank1/candidates exact. Full240 used160positive+C20negative80 positive paired95%lowerbound vsboth parents, no lost truth coverage, nonnegative polarity means. No coefficient/checkpoint search; selected source/model freeze before fresh120; realKaggle smoke/independent audits before any trial.",
+  "dose_rationale": "Training audit estimates20.91% negative query views, versus the mixed confirmation design50%; test equal expected polarity gradient exposure without resampling or reading negative development performance.",
+  "negative_loss_target_fraction": 0.5
+}

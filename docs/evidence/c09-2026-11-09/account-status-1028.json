@@ -1,0 +1,13 @@
+{
+  "checked_utc": "2026-11-10T10:28:30.304165+00:00",
+  "pending": [],
+  "P16": {
+    "reference": "58181280",
+    "status": "COMPLETE",
+    "public_score": 0.48,
+    "error": "",
+    "success": true,
+    "description": "C09-P16-EXTREF-20261109: Complete pinned P01 plus fixed measured-reference spectral promotions; official identity dedup. Real12/400 Kaggle smoke, independent peak/merge/fallback/local-cloud parity, frozen development and complete80 confirmation reviewed. External-source/provenance limitations retained; hidden gain unproven."
+  },
+  "extra_user_approval_consumed": false
+}

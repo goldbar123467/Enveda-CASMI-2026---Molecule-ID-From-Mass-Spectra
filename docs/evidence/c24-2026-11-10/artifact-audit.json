@@ -1,0 +1,49 @@
+{
+  "completed_utc": "2026-11-10T10:13:30.057684+00:00",
+  "models": 2,
+  "all_finite": true,
+  "checkpoint_receipts": [
+    {
+      "fold": 0,
+      "continuation_steps": 5000,
+      "parent_steps": 45000,
+      "parent_sha256": "839d163c523d685ac4a28fa2d892a5f753d0f75f751d77cee6ce5b083963edab",
+      "checkpoint_sha256": "ea5985c0bfe56d5eed04f6fb7ddf0bf001878d220250d7c7595f0ec4af1557c2",
+      "attempts": 5001,
+      "amp_skips": 1,
+      "training_identities": 216270,
+      "heldout_in_training": 0,
+      "augmentation_counts": {
+        "peaks_before": 123613981,
+        "peaks_after": 76470318,
+        "spectra": 1920384,
+        "spectra_changed": 1870972
+      },
+      "gpu_peak_reserved_gib": 1.451171875,
+      "completed_utc": "2026-11-10T09:55:07.524993+00:00"
+    },
+    {
+      "fold": 1,
+      "continuation_steps": 5000,
+      "parent_steps": 45000,
+      "parent_sha256": "3b48750d0b61205a69c6365d9e8a83824e1af5dcae5aec80f7dc04bf846e7d9f",
+      "checkpoint_sha256": "67da13afbb791fc559ab0b1eac046bef2511a2957c5055778e4be4ef926de6ce",
+      "attempts": 5000,
+      "amp_skips": 0,
+      "training_identities": 216175,
+      "heldout_in_training": 0,
+      "augmentation_counts": {
+        "peaks_before": 123545634,
+        "peaks_after": 76427291,
+        "spectra": 1920000,
+        "spectra_changed": 1870819
+      },
+      "gpu_peak_reserved_gib": 1.298828125,
+      "completed_utc": "2026-11-10T10:07:40.005343+00:00"
+    }
+  ],
+  "private_upload_required": true,
+  "inference_adaptation": "Only cumulative-step/run-id acceptance differs from original compatible_inference; scoring arithmetic unchanged",
+  "quality_gate_passed": false,
+  "automatic_submission": false
+}

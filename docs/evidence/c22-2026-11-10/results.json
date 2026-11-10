@@ -1,0 +1,44 @@
+{
+  "models": [
+    {
+      "fold": 0,
+      "continuation_steps": 10000,
+      "parent_steps": 45000,
+      "parent_sha256": "839d163c523d685ac4a28fa2d892a5f753d0f75f751d77cee6ce5b083963edab",
+      "checkpoint_sha256": "a817fd6fdf50ed72f3ff78aed5b7ac9cf6597d0b16ca184edb97759bf58d9a5a",
+      "attempts": 10003,
+      "amp_skips": 3,
+      "training_identities": 216270,
+      "heldout_in_training": 0,
+      "augmentation_counts": {
+        "peaks_before": 247405693,
+        "peaks_after": 153049279,
+        "spectra": 3841152,
+        "spectra_changed": 3742339
+      },
+      "gpu_peak_reserved_gib": 1.451171875,
+      "completed_utc": "2026-11-10T08:48:23.547591+00:00"
+    },
+    {
+      "fold": 1,
+      "continuation_steps": 10000,
+      "parent_steps": 45000,
+      "parent_sha256": "3b48750d0b61205a69c6365d9e8a83824e1af5dcae5aec80f7dc04bf846e7d9f",
+      "checkpoint_sha256": "56d1f696d102116b4d841b0cd157f6ddcd437b3c45458ea150ae5bacc1f273e3",
+      "attempts": 10003,
+      "amp_skips": 3,
+      "training_identities": 216175,
+      "heldout_in_training": 0,
+      "augmentation_counts": {
+        "peaks_before": 247256154,
+        "peaks_after": 152949837,
+        "spectra": 3841152,
+        "spectra_changed": 3742808
+      },
+      "gpu_peak_reserved_gib": 1.294921875,
+      "completed_utc": "2026-11-10T09:13:16.444264+00:00"
+    }
+  ],
+  "completed_utc": "2026-11-10T09:13:16.507709+00:00",
+  "quality_gate_passed": false
+}

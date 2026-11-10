@@ -1,0 +1,13 @@
+{
+  "started_utc": "2026-11-10T09:33:03.323802+00:00",
+  "kernel": "clarkkitchen/casmi26-c20-negative-casmi2022-development",
+  "expected_version": 2,
+  "notebook_sha256": "23d06ba65b7c9a22156f72868ea4a790c8f3ba168ae7134dbbce62692145f33a",
+  "recovery_pin_sha256": "34d666fc7227d958fa503266735f4af21ea44a9a11b2ff3ae0feb6acac76e99d",
+  "recovery": "Only for initially empty Engine2 pools, fingerprint and rank existing Engine1 generated proposals; strictguard retained and same80 inputs.",
+  "old_version_terminal": "ERROR",
+  "query_labels_mounted": false,
+  "query_rows_dropped": 0,
+  "private": true,
+  "scoring_submission": false
+}

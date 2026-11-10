@@ -1,0 +1,10 @@
+{
+  "dataset": "dmitriigluzdov/casmi26-attributed-v4g-reproduction-assets",
+  "pages": 3,
+  "files": [
+    {
+      "name": "casmi26-v2-pool/pool_meta.parquet",
+      "totalBytes": 36692358
+    }
+  ]
+}

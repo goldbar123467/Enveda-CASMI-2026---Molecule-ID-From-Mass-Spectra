@@ -1,0 +1,23 @@
+{
+  "completed_utc": "2026-11-10T10:16:20.893275+00:00",
+  "queries": 5,
+  "positive": 1,
+  "negative": 4,
+  "includes_formate_chloride_high_mass": true,
+  "CPU_CUDA_max_abs_error": {
+    "c08_raw_fold0": 2.86102294921875e-06,
+    "c08_raw_fold1": 1.9073486328125e-06,
+    "c08_score": 9.530845084315676e-06
+  },
+  "independent_raw_max_abs_error": 1.9073486328125e-06,
+  "independent_standardized_mean_max_abs_error": 5.1316210529783746e-06,
+  "model_manifest_sha256": "91ca80c0b855efcca0f8c1bd7f8f7ee3446783b8f5be4a4fad5b3807326617f3",
+  "audit_source_sha256": "86c741f961e1cfe895fffed2f794c0d92fadab7a243b75bc3c8348312c94f709",
+  "query_sha256": "1421cfa6c7b7e6c122fdfedd8a8a1d769f8dd1f8b2280a0d2c3298564b4d10aa",
+  "fixture_sha256": "d5533b01f0422175d81a2ab2f4d336eccf67099763e255a2cc308b0419313d5a",
+  "fixture_scope": "One completed positive baseline and four real partial-v1 negative lists, used only for arithmetic/feature acceptance, never full-pipeline qualification.",
+  "labels_read": false,
+  "quality_metrics_computed": false,
+  "C13_confirmation_metrics_read": false,
+  "submission_qualified": false
+}

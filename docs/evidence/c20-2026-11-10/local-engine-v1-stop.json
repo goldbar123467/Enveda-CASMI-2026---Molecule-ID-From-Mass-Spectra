@@ -1,0 +1,11 @@
+{
+  "stopped_utc": "2026-11-10T10:24:51.067408+00:00",
+  "root_pid": 3948,
+  "actual_worker_pid": 22272,
+  "entire_known_process_tree_terminated": true,
+  "stage": "library/candidate-pool preparation",
+  "reason": "Correct watchdog subprocess-tree cleanup before proceeding",
+  "no_quality_metrics": true,
+  "no_C24_training_repeated": true,
+  "original_deadline_utc": "2026-11-10T12:23:37.538723+00:00"
+}

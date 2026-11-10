@@ -25,6 +25,12 @@ PY = str(ROOT / ".venv/Scripts/python.exe")
 COMP = "enveda-CASMI26-molecule-id-mass-spectra"
 FINAL = {"complete", "error", "cancelled", "killed"}
 GPU_HOURS, TPU_HOURS = 30, 20  # account page; the API's GPU total (6 h) is wrong
+WORKER_RECEIPTS = {
+    'C20COL2': ('outputs/local/c20-negative-development-20261110/collector-v2-status.json', 'collected', 'outputs/local/c20-negative-development-20261110/collector-v2-attention.json'),
+    'C21W2': ('outputs/local/c21-negative-tail-20261110/worker-status-v2.json', 'complete', 'outputs/local/c21-negative-tail-20261110/worker-attention-v2.json'),
+    'C24EW': ('outputs/local/c24-evaluation-20261110/worker-status.json', 'complete', 'outputs/local/c24-evaluation-20261110/worker-attention.json'),
+    'C20LOCAL': ('outputs/research/c20-engine-recovery-20261110/local-engine-status.json', 'complete', 'outputs/research/c20-engine-recovery-20261110/local-engine-attention.json'),
+}
 
 
 def now():
@@ -42,7 +48,42 @@ def kaggle_status(ref):
     return m.group(1).lower() if m else None
 
 
+def process_running(pid):
+    import ctypes
+    kernel = ctypes.WinDLL('kernel32', use_last_error=True)
+    kernel.OpenProcess.restype = ctypes.c_void_p
+    kernel.OpenProcess.argtypes = [ctypes.c_ulong, ctypes.c_int, ctypes.c_ulong]
+    kernel.GetExitCodeProcess.argtypes = [ctypes.c_void_p, ctypes.POINTER(ctypes.c_ulong)]
+    kernel.CloseHandle.argtypes = [ctypes.c_void_p]
+    handle = kernel.OpenProcess(0x1000, False, int(pid))
+    if not handle:
+        return False
+    try:
+        code = ctypes.c_ulong()
+        if not kernel.GetExitCodeProcess(handle, ctypes.byref(code)):
+            raise OSError('Cannot inspect worker process')
+        return code.value == 259
+    finally:
+        kernel.CloseHandle(handle)
+
+
 def local_status(row):
+    if row['id'] in WORKER_RECEIPTS:
+        status_path, terminal, attention = WORKER_RECEIPTS[row['id']]
+        try:
+            receipt = json.loads((ROOT / status_path).read_text())
+            live = process_running(receipt['pid'])
+            state = receipt.get('state', 'observing')
+            stage = receipt.get('stage', state)
+            if state == terminal and not live:
+                return 'complete', f'Exact worker {receipt["pid"]} exited with {terminal} receipt'
+            if not live:
+                if (ROOT / attention).is_file():
+                    return 'error', 'Exact worker exited; inspect its attention receipt before recovery'
+                return 'stalled', 'Worker handle missing without terminal receipt; no cloud termination inferred'
+            return 'running', f'Worker {receipt["pid"]} live; {stage}'
+        except (OSError, ValueError, KeyError) as exc:
+            return row['status'], f'Worker observation unavailable ({type(exc).__name__}); no terminal state inferred'
     log = ROOT / row["ref"]
     manifest = log.parent / 'manifest.json'
     if manifest.is_file():

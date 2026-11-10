@@ -1,0 +1,26 @@
+{
+  "started_utc": "2026-11-10T10:19:02.477292+00:00",
+  "pid": 16844,
+  "deadline_utc": "2026-11-10T12:19:02.477292+00:00",
+  "dataset": "dmitriigluzdov/casmi26-attributed-v4g-reproduction-assets",
+  "requested_files": {
+    "coconut-casmi26-candidates/coco_fp.npy": 378349391,
+    "coconut-casmi26-candidates/coco_mass.npy": 3491240,
+    "coconut-casmi26-candidates/coco_meta.pkl": 41450156,
+    "coconut-casmi26-candidates/fp_bits.npy": 55568,
+    "casmi-chebi-lmsd-structures/bio_fp.npy": 85341539,
+    "casmi-chebi-lmsd-structures/bio_mass.npy": 787592,
+    "casmi-chebi-lmsd-structures/bio_meta.pkl": 14266637,
+    "casmi-chebi-lmsd-structures/ATTRIBUTION.md": 2428,
+    "casmi26-pubchemlite-cc0-candidate-fingerprints/pubchemlite_fp.npy": 334454048,
+    "casmi26-pubchemlite-cc0-candidate-fingerprints/pubchemlite_mass.npy": 3086208,
+    "casmi26-pubchemlite-cc0-candidate-fingerprints/pubchemlite_meta.pkl": 23642096,
+    "casmi26-pubchemlite-cc0-candidate-fingerprints/MANIFEST.json": 920,
+    "casmi26-fp-models-v2/fp_merged_m1.pt": 144110255,
+    "casmi26-fp-models-v2/fp_single_s2.pt": 144110255,
+    "casmi26-simulated-ranker-rows/sim_rank_rows_nofp.npz": 26872207,
+    "casmi26-ranker-features/rank_train.npz": 9553020
+  },
+  "bytes": 1209573560,
+  "purpose": "Prepare local contingency only; no inference/labels/metrics/submission; leave queued T4 run untouched."
+}

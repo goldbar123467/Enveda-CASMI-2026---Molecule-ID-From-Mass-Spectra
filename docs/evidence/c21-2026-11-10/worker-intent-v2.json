@@ -1,0 +1,13 @@
+{
+  "started_utc": "2026-11-10T09:39:04.229912+00:00",
+  "pid": 7712,
+  "source_sha256": {
+    "scripts/run_c21_worker_v2.py": "144e02a9aef892264c10bb95e29cb745b4158c1044c9ef069a9c84636d52bb32",
+    "scripts/develop_c21_negative.py": "67a71b808ca5911775f6aa5e88048c12a0e92b7861a013000435c4acce2a4f28",
+    "scripts/negative_tail.py": "9733a0c91a5186cc749a3b969711578cdc7d5616e3252f9f8917c249e893318e"
+  },
+  "protocol_sha256": "22a70523fb23883f99e92076adf0549ded0131096adc9ee0c1a041da470c9ee7",
+  "deadline_utc": "2026-11-10T20:06:46.474101+00:00",
+  "C13_confirmation_metrics_read": false,
+  "automatic_submission": false
+}
