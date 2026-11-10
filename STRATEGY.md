@@ -14,17 +14,20 @@ Do not select on reserved labels or call weak development changes proven gains.
 
 Current bounded task: P18/C22 ACCEPTED19:19UTC, ref58212322, exact v1 and
 submission.csv. Actual result PENDING; never resubmit. P19/C18 is the one remaining
-approved entry, fixed before either result. Both corrected exportsmokes and
-independent audits PASS. Use submit_past_trial_exports.py only; the custom-name
-transport was rejected twice with HTTP400 and consumed no accepted entry.
-Bounded reviewed monitor actual28124/launcher18884 runs to11Nov19:25UTC; it waits
-for first successful actualscore before auto C18. Any first error stops for review
-and repair before spending the remaining entry. It waits both results, then
-restores compute pause and exits. Inspect actual processes/ledger/status before
-any launch or recovery; never duplicate this worker or a pending trial. Maximum
-two accepted total, one pending globally. No training, reserved metrics, third
-trial or hourly campaign. Prior unused approval superseded. Silver goal stays
-paused. See docs/TWO-PAST-TRIALS-2026-11-10.md and the two-past-trials local ledger.
+approved entry, fixed before either result. It is HELD by P19-release-hold.json
+until a demonstrated preflight cleanup gap is closed. First source/qualification
+and submission remain immutable. The retained scoring body/model weights/recipe
+are unchanged; guarded C18 export v1 is RUNNING, with synthetic real-Kaggle failure
+probe required. Local probe proved old preflight could leave default baseline;
+whole-stage wrapper deletes it while preserving protected parent. Do not claim
+this occurred in the pending hidden run. See C34 docs/evidence.
+Current observer actual19988/launcher22028 uses monitor_reviewed_past_trials.py;
+it polls P18, requires first successful actualscore, and blocks automatic P19
+while release-hold exists. Any first error stops for review. The future remaining
+entry MUST use submit_guarded_past_trial.py with new guarded qualification;
+superseded export submitters must not be used. Do not remove hold before complete
+real guarded smoke/audit/source binding. Max2accepted total/1pending globally.
+No training, reserved metrics, third entry or hourly campaign. Silver goal paused.
 
 ## USER STOPPED CAMPAIGN — 10 November,14:59 UTC
 

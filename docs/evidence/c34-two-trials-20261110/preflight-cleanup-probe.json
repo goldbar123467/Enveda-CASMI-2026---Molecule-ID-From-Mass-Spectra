@@ -1,0 +1,10 @@
+{
+  "original": {
+    "default_file_left": true,
+    "protected_parent_retained": true
+  },
+  "guarded": {
+    "default_file_left": false,
+    "protected_parent_retained": true
+  }
+}

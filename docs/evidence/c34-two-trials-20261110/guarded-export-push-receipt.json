@@ -1,0 +1,16 @@
+{
+  "checked_utc": "2026-11-10T21:33:30.373016+00:00",
+  "kernel": "clarkkitchen/casmi26-p19-c18-guarded-export",
+  "version": 1,
+  "private": true,
+  "internet": false,
+  "docker_image": "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461",
+  "scientific_sha256": "4d1254b9eec0700874481cd04c59f500415056432bf511495eed06b7becaac42",
+  "state": "RUNNING",
+  "response": {
+    "ref": "/code/clarkkitchen/casmi26-p19-c18-guarded-export",
+    "url": "https://www.kaggle.com/code/clarkkitchen/casmi26-p19-c18-guarded-export",
+    "versionNumber": 1,
+    "kernelId": 144272346
+  }
+}

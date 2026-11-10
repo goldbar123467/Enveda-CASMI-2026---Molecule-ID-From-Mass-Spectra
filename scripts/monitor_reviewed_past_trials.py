@@ -2,7 +2,7 @@
 import argparse,json,os,subprocess,time
 from datetime import datetime,timezone
 from pathlib import Path
-from submit_past_trial_exports import ROOT,OUT,LEDGER,COMP,write,stamp
+from submit_guarded_past_trial import ROOT,OUT,LEDGER,COMP,write,stamp
 from c09_submission_guard import normalize,TERMINAL
 
 def result_ready(row):
@@ -31,13 +31,13 @@ def main():
         second=next((r for r in ledger['submissions'] if r['slot']=='P19'),None)
         if result_ready(first) and not first.get('success') and second is None:
             raise RuntimeError('First scoring trial returned an error; review and repair before spending the remaining approved entry')
-        if result_ready(first) and second is None:
+        if result_ready(first) and second is None and not (OUT/'P19-release-hold.json').exists():
             # The guarded submitter rechecks global pending, quota, immutable
             # qualification, exact remote version and both durable intents.
-            result=subprocess.run([str(ROOT/'.venv/Scripts/python.exe'),'-u','scripts/submit_past_trial_exports.py','--slot','P19'],cwd=ROOT)
+            result=subprocess.run([str(ROOT/'.venv/Scripts/python.exe'),'-u','scripts/submit_guarded_past_trial.py','--slot','P19'],cwd=ROOT)
             assert result.returncode==0,'Second trial requires inspection; never blindly retry an intent'
             ledger=json.loads(LEDGER.read_text());second=next(r for r in ledger['submissions'] if r['slot']=='P19')
-        status=dict(checked_utc=stamp(),pid=os.getpid(),deadline_utc=deadline.isoformat(),state='waiting_actual_scores',
+        status=dict(checked_utc=stamp(),pid=os.getpid(),deadline_utc=deadline.isoformat(),state='waiting_guarded_second_release' if result_ready(first) and second is None else 'waiting_actual_scores',
             accepted=len(ledger['submissions']),maximum_submissions=2,maximum_pending=1,submissions=ledger['submissions'],
             training_performed=False,hourly_campaign_resumed=False)
         if second is not None and all(result_ready(r) for r in ledger['submissions']):

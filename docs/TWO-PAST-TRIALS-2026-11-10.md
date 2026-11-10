@@ -114,3 +114,21 @@ and repair before spending the remaining slot. All source/model/smoke artifacts
 bound by the immutable export qualification remain byte-exact; the qualified
 submission guard and recipes were not changed. There is still exactly one
 accepted P18 reference and one approved entry remaining; no duplicate observer.
+
+At21:29 UTC an additional controlled failure test found a real cleanup gap:
+the joint cell's GPU/model preflight preceded its inner try/except, so forcing a
+zero-device preflight failure left the parent's defaultsubmission.csv. Wrapping
+the entire unchanged cell removed that file while preserving the diagnostic
+parent. This is an error-path defect, not evidence that the pending P18 run took
+that path; its submitted source/version remain immutable and are not resubmitted.
+
+The remaining C18 entry was held before any second acceptance. A separate guarded
+export preserves every byte of the raw scoring body and all parent/export cells,
+adds only a whole-stage cleanup wrapper, and exercises the exact failure branch
+with synthetic files on real Kaggle. Its v1 private/offline/T4/source pins were
+verified at21:33 UTC; actual GPU smoke is RUNNING. No model/recipe/weight changed.
+The old observer exited under a temporary internal submission hold; current
+actual19988/launcher22028 now polls P18 and retains the P19 release gate. It uses
+only the future guarded submitter for the one remaining entry after qualification.
+Source/model/smoke artifacts of the original first qualification remain exact.
+No new training, reserved-label read, second acceptance or third trial occurred.

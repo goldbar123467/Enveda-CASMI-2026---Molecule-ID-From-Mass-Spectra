@@ -249,3 +249,9 @@ kaggle/forks/p18-c22-past-trained-trial/* -text whitespace=trailing-space,space-
 kaggle/forks/p19-c18-past-trained-trial/* -text whitespace=trailing-space,space-before-tab,cr-at-eol
 
 scripts/monitor_reviewed_past_trials.py text eol=lf
+
+scripts/build_guarded_past_export.py text eol=lf
+scripts/audit_guarded_past_export.py text eol=lf
+scripts/qualify_guarded_past_export.py text eol=lf
+scripts/submit_guarded_past_trial.py text eol=lf
+kaggle/forks/p19-c18-guarded-export/* -text whitespace=trailing-space,space-before-tab,cr-at-eol
