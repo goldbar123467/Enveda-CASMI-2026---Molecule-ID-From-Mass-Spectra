@@ -81,4 +81,5 @@ scripts/finish_c10_development.py text eol=lf
 scripts/confirm_c10_candidate.py text eol=lf
 scripts/audit_c10_primary_references.py text eol=lf
 scripts/audit_c10_current_primary.py text eol=lf
+scripts/audit_c11_training_novelty.py text eol=lf
 docs/evidence/c09-2026-11-09/finisher-v1-source.txt text eol=lf

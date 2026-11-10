@@ -34,6 +34,15 @@ including peaks/structures/license/authors/precursors/adducts.0unresolvedissues;
 Takumu provenance and mirrorcompilation terms remain explicit; no blanket
 rights/gain claim or newdatasetdeployment. See currentC10 notes/evidence.
 
+C11F feasibility isCOMPLETE:the31,030 added references have only58 rawkeys
+absentfromrawtrain (57afterprior-panel exclusions;upperbounds),and4,169of4,572
+rawkeys directlymatchtraining-eligibleC08/C09canonicalkeys. Lookupnovelty is
+not trainingnovelty;no newfit launchedfromthisinventory. Prior-panel identity
+keys,includingC10reservedkeys,were readONLYfortrainingexclusion;no predictions/
+reservedmetricsorC10-specifictruthcoveragecomputed. C10recipes/protocols stay
+frozen. The2070controlworker remains scheduled;choose furthertrainingchanges
+from completedpipelineerror evidence. No novel-acquisition claim.
+
 Latest user override at22:07UTC: continue UI/work until verified silver; run an
 hourly worker for24 hours. Active Codex goal and heartbeat
 `casmi-silver-campaign-hourly-for-24-hours` target this chat. Read

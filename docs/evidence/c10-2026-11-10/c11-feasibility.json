@@ -1,0 +1,15 @@
+{
+  "checked_utc": "2026-11-10T03:45:16.015848+00:00",
+  "audited_reference_rows": 31030,
+  "raw_reference_keys": 4572,
+  "raw_training_keys": 275810,
+  "absent_raw_training_rows": 785,
+  "absent_raw_training_keys": 58,
+  "rawkey_not_in_any_previous_panel_rows": 31028,
+  "rawkey_not_in_raw_training_or_previous_panels_keys": 57,
+  "previous_panel_identity_keys_used_only_for_exclusion": true,
+  "prediction_metrics_used": false,
+  "canonical_identity_audit_still_required": true,
+  "C10_selection_changed": false,
+  "training_started": false
+}

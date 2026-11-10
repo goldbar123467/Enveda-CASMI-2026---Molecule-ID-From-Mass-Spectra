@@ -28,6 +28,14 @@ resolves olderMarch-source omissions/metadata differences, not model quality.
 The prospective reserved120 evaluator is prepared/source-pinned before any
 development result, with five statistical gate tests; no reserved metrics read.
 
+Training feasibility C11F distinguishes lookup coverage from fresh training:
+only58 supplemental rawkeys are absentrawtrain (57afterpanel exclusions,upper
+bounds);4,169/4,572rawkeys directlymatchtraining-eligibleC08/C09canonicalkeys.
+No new fit was justified/launched as a new-identity expansion. Novel acquisition
+coverage remains unaudited. Pooled prior-panel keys were usedonlyforexclusion,
+includingC10reservedidentities;no C10predictionmetricsorrecipechanges. Await
+the active full-pipeline outputs for the next training hypothesis.
+
 New C09E lead: one fixed external-reference matching rule on unchanged P01,
 inspired by alexchilton's public external-library approach. Its author's team
 was0.484 at the9November evening scan; that corroborates the family, not this exact source version.

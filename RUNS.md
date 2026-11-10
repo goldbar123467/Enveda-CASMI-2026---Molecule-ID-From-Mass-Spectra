@@ -1,8 +1,8 @@
 # Runs
 
-Updated 2026-11-10 03:21 UTC by `scripts/update_runs.py` (hourly). Generated from `runs.csv` — edit that file, not this one.
+Updated 2026-11-10 03:54 UTC by `scripts/update_runs.py` (hourly). Generated from `runs.csv` — edit that file, not this one.
 
-- Kaggle quota: GPU 10.3 h used of 30 h · TPU 0.0 h of 20 h · resets 2026-11-14 00:00 UTC
+- Kaggle quota: GPU 10.8 h used of 30 h · TPU 0.0 h of 20 h · resets 2026-11-14 00:00 UTC
 - Submissions today (UTC): 1 of 5 — see `SUBMISSIONS.md`
 
 ## Active
@@ -19,6 +19,7 @@ Updated 2026-11-10 03:21 UTC by `scripts/update_runs.py` (hourly). Generated fro
 
 | id | platform | kind | ref | started (UTC) | ended (UTC) | status | purpose | result |
 |---|---|---|---|---|---|---|---|---|
+| C11F | local-cpu | research | outputs/local/c11-new-source-20261110/novelty.log | 2026-11-10 03:48 | 2026-11-10 03:52 | complete | Reproduce noveltraining-identity inventory for auditedreferences before proposing a2070 expansion pilot;prior-panel keys usedonlyforexclusion | 58rawkeys absent275810rawtrain/57afterpanelexclusion,upperbounds;4169/4572keys matchtraining-eligibleC08/C09canonicalkeys,403unresolved. No acquisitionnoveltyclaim/newfit/C10predictionmetricorrecipechange;priorpanelkeys usedonlyforexclusion. |
 | C10PRIMARY2 | local-cpu | diag | outputs/research/c10-massbank-current-primary-20261110/audit.log | 2026-11-10 03:17 | 2026-11-10 03:18 | complete | Trace all31030 supplemental spectra to official2026.11 commit72980b3;resolveMUI/newauthors and optionalkeyabsence using originalstructures;no query labels/metrics/pool change | 31030/31030 original2026.11 records verified:allpeaks,structures,authors,licenses,adducts/precursors match;0issues,91optionaldeclaredkeysabsent but computedrawkeys match. AllMarch differences resolved;26149CC BY/4881CC0. No querymetrics/poolchange;not blanket rights clearance. |
 | C10PRIMARY | local-cpu | diag | outputs/research/c10-massbank-primary-20261110/audit.log | 2026-11-10 03:10 | 2026-11-10 03:12 | complete | Independently trace all31030 frozen supplemental records to checksum-verified officialMassBank2026.03; licenses/authors/identity/adduct/precursor/peak integrity, no labels/metrics | OfficialMarch archive checksumverified;29787exact/29934found of31030.1096MUI absentMarch;91optionaldeclaredkeyabsence/56authorupdates needNovreleasecomparison. No license/precursor/adduct/peak mismatch in29934found. No pool/policy/metric change. |
 | C10CONFPROTO | local-cpu | research | outputs/local/c10-candidates-20261110/confirmation-protocol.json | 2026-11-10 03:07 | 2026-11-10 03:07 | complete | Prospective reserved120 confirmation evaluator/source/statisticalgate protocol before development or reserved metrics;never submits | 5gate tests pass:requirepositive95%CI incrementalvsbothP01/P16 andnonnegativealiassensitivity;rejectpartial/nonfinitepanel. Preparedonly,no reservedlabels/metricsread. |

@@ -1,0 +1,19 @@
+{
+  "checked_utc": "2026-11-10T03:52:08.962116+00:00",
+  "catalogue_identities": 273833,
+  "eligible_union_of_folds0and1": 270127,
+  "reference_rows": 31030,
+  "reference_raw_keys": 4572,
+  "minimum_exact_rawkey_to_trained_canonical_key_matches": 4169,
+  "minimum_matching_rows": 27956,
+  "remaining_unresolved_raw_keys": 403,
+  "full_canonicalization_performed": false,
+  "interpretation": "Exact key-string matches prove eligible canonical-identity exposure in at least one of the completed complementary C08/C09 folds. Unmatched keys are unresolved, not necessarily novel. Sampling does not prove each identity appeared in a saved optimization step.",
+  "query_labels_or_metrics_used": false,
+  "input_sha256": {
+    "outputs/local/n0/cache/molecules.parquet": "a158239c869f4565971d93d37cae0c88c52677e6622807392222118516c71e09",
+    "outputs/local/precision-cache-20261108/selected.parquet": "56c6f2ff7ca32c2371d3d210eeade796adaa671f145b99324361a199f957ac8b",
+    "outputs/local/precision-cache-20261108/valid.npy": "fa6b0b0ac64c65444854b2a7c94cd1f7514b119899598f678ace1df037308a82",
+    "outputs/local/long-20261106/spectrum_groups.npz": "06a2626d571272a4780ea3965624377e5f785dd5c23131d4527ce89e38f9698e"
+  }
+}
