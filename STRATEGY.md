@@ -1,24 +1,26 @@
 # C09 results and P16 scoring trial — 9–10 November
 
 Active user goal: verified silver leaderboard position, with24 hourly worker
-wake-ups in this chat. Latest03:19UTC10November rank926/5047 at0.480; nominal
+wake-ups in this chat. Latest04:19UTC10November rank929/5047 at0.480; nominal
 silver rank252 at0.483. Verify actual rank after scoring, not a tied score alone.
 Preserve all C09 qualification and one-pending rules.
 
 The user approved one additional trial at10November01:37UTC; it remains
-reserved/unconsumed while P16 is pending. C10 private inference is nowRUNNING
+reserved/unconsumed while P16 is pending. C10 private inference is nowCOMPLETE
 on160 fresh CASMI2022 queries,40 development/120 reserved, after identity and
 bounded raw-spectrum exclusions. Labels stay local and the notebook computes
 no label metrics. See `docs/C10-CASMI2022-2026-11-10.md`; select/freeze using
-only40dev before reading120reserved. This private run is not another submission.
+only40dev before reading120reserved. Local40dev nowtiesallfourreference
+recipes atMRR0.2722727273,20/40truths;P16winsfixedtie,no newcandidate/no120
+evaluation ortrial. P14delta+0.006126CIcrosses0/failsknownpublicregression;
+P15delta-0.000187,0improved2harmed. Both localworkerscompleted/exited.
 
 Prospective C10 reference preparation/search isCOMPLETE before label metrics:
 31,030 attributed literalCC0/CC BY supplemental spectra,3,966 added connectivity
 keys,zero bounded input aliases on160 queries,exact parentP16 match parity.
 Four fixed parent/expanded/adduct recipes use unchanged thresholds; P16 wins
-ties. These are coverage/execution checks, not measured model gains. A bounded
-worker waits for existing cloud collection, then runs one useful2070 P15 control,
-selects/freezes usingONLY40dev, and stops before120reserved metrics/submission.
+ties. The completed160-query inference/2070control and40dev evaluation found
+no newreference gain;the120reserved metrics remainunread.
 Mixed compilation terms/attribution remain explicit; no new reference deployment.
 
 Independent original-source audit now verifies all31,030 supplemental records
@@ -34,7 +36,24 @@ bounds);4,169/4,572rawkeys directlymatchtraining-eligibleC08/C09canonicalkeys.
 No new fit was justified/launched as a new-identity expansion. Novel acquisition
 coverage remains unaudited. Pooled prior-panel keys were usedonlyforexclusion,
 includingC10reservedidentities;no C10predictionmetricsorrecipechanges. Await
-the active full-pipeline outputs for the next training hypothesis.
+the completed full-pipeline error evidence for the next training hypothesis.
+
+C12C coverage on40useddev finds25truths in full earlierpools versus20final,
+butonly22withtheexisting20-outsiderpool. This gives5potentialrecoveries;
+15truths still needbroaderretrieval. Fixed C12 deeper-pool inference with the
+unchanged P01pair/officialdedup covers3713dev candidates,40queries,zero errors;
+raw local/cloud scores agree within2.39e-6. One frozen .20RRF/max3insertion
+recipe gives delta+0.0013075,CI[-0.0004891,0.0044118],1improved/1harmed and
+truths20→21. Positive-point/new-truth selection permits the prospective120check,
+not a public trial. Confirmation protocol froze05:08UTC; all160 preparation is
+live. Require exact40dev output parity and positive120CI lowerbound against
+both completeP01/P16; no reserved reselection. See currentC12notes/evidence.
+
+Public refresh C11PUB:247catalogue entries/five sources,fourunchanged. New
+peaks-v2 dual-polarity massguard/threshold edits are untested here and exact
+version score is unverified. Unknown-adduct defaults/charge handling need
+independent treatment. C10 haszero paired-mode queries,so cannot qualify the
+new path;do not graft it onto the pending P16 or frozen C10 experiment.
 
 New C09E lead: one fixed external-reference matching rule on unchanged P01,
 inspired by alexchilton's public external-library approach. Its author's team

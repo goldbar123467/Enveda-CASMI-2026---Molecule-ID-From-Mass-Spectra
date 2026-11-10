@@ -1,0 +1,91 @@
+{
+  "completed_utc": "2026-11-10T05:01:17.950494+00:00",
+  "queries": 40,
+  "candidate": "P16_plus_deep_prefix",
+  "fixed_config_sha256": "0c4ad92554b8d1f91dd79c0df6949f1f58d306d08327ea1401e215a9aa42143a",
+  "source_contract_sha256": "e4f9208dbd1decfede25290f3ed47e1bcd4e347c77e396982ab25a8be70a8be5",
+  "development_protocol_sha256": "4591dc95721b05fd79696ac6d05a5e45152a05559f9a82dbb2f714020460d677",
+  "scoring_receipt_sha256": "4275450969405dde1edd1e3615bece8aceb75ee83c41073906cdff545f226b60",
+  "comparisons": {
+    "P01": {
+      "n": 40,
+      "baseline_mrr25": 0.2722727272727273,
+      "candidate_mrr25": 0.27358027202976054,
+      "delta": 0.001307544757033248,
+      "ci95": [
+        -0.000489130434782609,
+        0.004411764705882353
+      ],
+      "improved": 1,
+      "harmed": 1
+    },
+    "P16": {
+      "n": 40,
+      "baseline_mrr25": 0.2722727272727273,
+      "candidate_mrr25": 0.27358027202976054,
+      "delta": 0.001307544757033248,
+      "ci95": [
+        -0.000489130434782609,
+        0.004411764705882353
+      ],
+      "improved": 1,
+      "harmed": 1
+    },
+    "P15": {
+      "n": 40,
+      "baseline_mrr25": 0.27208599149388624,
+      "candidate_mrr25": 0.27358027202976054,
+      "delta": 0.00149428053587429,
+      "ci95": [
+        -9.881422924901198e-05,
+        0.004557963536291709
+      ],
+      "improved": 2,
+      "harmed": 1
+    }
+  },
+  "baseline_truths": 20,
+  "candidate_truths": 21,
+  "absent_truths_recovered": 1,
+  "truths_lost": 0,
+  "actions": {
+    "inserted_outsiders": 38,
+    "no_outsider_selected": 1,
+    "protected_library": 1
+  },
+  "total_insertions": 98,
+  "maximum_row_insertions": 3,
+  "new_candidate_selected": true,
+  "controls": {
+    "P14": {
+      "n": 40,
+      "baseline_mrr25": 0.2722727272727273,
+      "candidate_mrr25": 0.27839912280701756,
+      "delta": 0.006126395534290272,
+      "ci95": [
+        -0.004100877192982455,
+        0.02084534489633172
+      ],
+      "improved": 4,
+      "harmed": 1
+    },
+    "P15": {
+      "n": 40,
+      "baseline_mrr25": 0.2722727272727273,
+      "candidate_mrr25": 0.27208599149388624,
+      "delta": -0.00018673577884104203,
+      "ci95": [
+        -0.0004871079213184477,
+        0.0
+      ],
+      "improved": 0,
+      "harmed": 2
+    }
+  },
+  "negative_control_interpretation": "P14 has the wrong development sign relative to its actual public regression; P15 direction agrees but uncertainty reaches zero. Source/CE shift limits public-score calibration.",
+  "truth_absent_mrr": 0,
+  "reserved_prediction_metrics_computed": false,
+  "automatic_submission": false,
+  "submission_qualified": false,
+  "limitation": "Already-used positive-only CASMI2022 development; a positive point estimate alone cannot qualify a trial. Freeze before120 metrics, then require supported incremental benefit versusP01/P16 plus real Kaggle smoke and independent audits."
+}

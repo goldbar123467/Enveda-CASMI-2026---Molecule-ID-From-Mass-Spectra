@@ -1,0 +1,10 @@
+{
+  "prepared_utc": "2026-11-10T05:01:17.839594+00:00",
+  "evaluator_sha256": "5d2f837fdcda88af06e67bbc40e5eb5aad1966e0219534df666376b72559469e",
+  "source_contract_sha256": "e4f9208dbd1decfede25290f3ed47e1bcd4e347c77e396982ab25a8be70a8be5",
+  "scoring_receipt_sha256": "4275450969405dde1edd1e3615bece8aceb75ee83c41073906cdff545f226b60",
+  "labels_sha256": "f1d3b96f002827d2c9ddd1e61f0fe4e97551a27859da8c74d248588893515c6a",
+  "selection": "One fixed candidate; retain only if positive development increment overP16 with at least one absent truth recovered. No parameter search.",
+  "reserved_prediction_metrics_read": false,
+  "automatic_submission": false
+}

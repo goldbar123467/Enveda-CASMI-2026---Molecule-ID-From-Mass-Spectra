@@ -1,0 +1,101 @@
+{
+  "checked_utc": "2026-11-10T04:05:07.271963+00:00",
+  "catalogue_entries": 247,
+  "selected_sources": 5,
+  "source_comparisons": [
+    {
+      "ref": "heliosli/casmi26-0-488",
+      "url": "https://www.kaggle.com/code/heliosli/casmi26-0-488",
+      "source_sha256": "fa688e4b7fa8c03283a0e8e5fe8aabc64fd2b394bae2bcead4610a294c8973c3",
+      "previous_checked_utc": "2026-11-09T22:10:52.683071+00:00",
+      "previous_source_sha256": "fa688e4b7fa8c03283a0e8e5fe8aabc64fd2b394bae2bcead4610a294c8973c3",
+      "previous_receipt": "docs/evidence/scan-2026-11-09-silver/source-index.json",
+      "changed": false,
+      "exact_version_public_score_verified": false
+    },
+    {
+      "ref": "heliosli/casmi26-0-486",
+      "url": "https://www.kaggle.com/code/heliosli/casmi26-0-486",
+      "source_sha256": "cd6ecb1d65eea25260284caf94cf69dbdff603228cfa89bee0f0097d6c4f09b0",
+      "previous_checked_utc": "2026-11-09T22:10:52.683071+00:00",
+      "previous_source_sha256": "cd6ecb1d65eea25260284caf94cf69dbdff603228cfa89bee0f0097d6c4f09b0",
+      "previous_receipt": "docs/evidence/scan-2026-11-09-silver/source-index.json",
+      "changed": false,
+      "exact_version_public_score_verified": false
+    },
+    {
+      "ref": "alexchilton/casmi26-lb-0-484-peaks-to-structures-extlib",
+      "url": "https://www.kaggle.com/code/alexchilton/casmi26-lb-0-484-peaks-to-structures-extlib",
+      "source_sha256": "6d458a8dc469a28ba427f2411685b3bcefcf10eccf65e4b0befa1e4678d399f0",
+      "previous_checked_utc": "2026-11-09T22:10:52.683071+00:00",
+      "previous_source_sha256": "6d458a8dc469a28ba427f2411685b3bcefcf10eccf65e4b0befa1e4678d399f0",
+      "previous_receipt": "docs/evidence/scan-2026-11-09-silver/source-index.json",
+      "changed": false,
+      "exact_version_public_score_verified": false
+    },
+    {
+      "ref": "zz3t3rn41/casmi26-peaks-to-structures-v2",
+      "url": "https://www.kaggle.com/code/zz3t3rn41/casmi26-peaks-to-structures-v2",
+      "source_sha256": "6382ab6e0ac504a6b989979de99a867d9dc781f75c728174ca9dfebab4ec9f23",
+      "previous_checked_utc": "2026-11-09T22:10:52.683071+00:00",
+      "previous_source_sha256": "d373d569e4a076eb83f568de023549ca81fcab343639b142ae79b321f2331c92",
+      "previous_receipt": "docs/evidence/scan-2026-11-09-silver/source-index.json",
+      "changed": true,
+      "exact_version_public_score_verified": false
+    },
+    {
+      "ref": "ozertuu/0-485-sota-casmi26-from-peaks-to-structures",
+      "url": "https://www.kaggle.com/code/ozertuu/0-485-sota-casmi26-from-peaks-to-structures",
+      "source_sha256": "3d484e3ea072bb7f9ee7dbd243447dea3477c0c15a7f12093f1880a3504c8c2f",
+      "previous_checked_utc": "2026-11-09T22:10:52.683071+00:00",
+      "previous_source_sha256": "3d484e3ea072bb7f9ee7dbd243447dea3477c0c15a7f12093f1880a3504c8c2f",
+      "previous_receipt": "docs/evidence/scan-2026-11-09-silver/source-index.json",
+      "changed": false,
+      "exact_version_public_score_verified": false
+    }
+  ],
+  "new_method_source": "zz3t3rn41/casmi26-peaks-to-structures-v2",
+  "changes": [
+    "External cosine threshold0.82->0.825; pipeline-library shield0.90->0.825",
+    "New dual-polarity inferred-neutral-mass guard:4ppm cross-mode agreement; rank1 masserror>4ppm; promotefirst rank2-5 witherror<2ppm"
+  ],
+  "source_risks": [
+    "Unknown adducts default to proton/deprotonation offsets; no explicit charge-aware handling",
+    "Cross-mode agreement does not guarantee correct precursor annotation or eliminate coisolated/isobaric candidates",
+    "Claimed0.493+/0.4870 text is not exact-version leaderboard evidence"
+  ],
+  "available_mode_counts": {
+    "P16_preview": {
+      "queries": 12,
+      "spectra": 41,
+      "dual_polarity": 5
+    },
+    "C09_used_confirmation": {
+      "queries": 80,
+      "spectra": 302,
+      "dual_polarity": 36
+    },
+    "C08_used_external": {
+      "queries": 128,
+      "spectra": 356,
+      "dual_polarity": 34
+    },
+    "C10": {
+      "queries": 160,
+      "spectra": 160,
+      "dual_polarity": 0
+    },
+    "CASMI2022_all_metadata": {
+      "records": 500,
+      "raw_identities": 497,
+      "dual_polarity_raw_keys": 1
+    }
+  },
+  "prediction_labels_or_metrics_used": false,
+  "downloaded_code_executed": false,
+  "P16_source_changed": false,
+  "C10_recipe_changed": false,
+  "adopted": false,
+  "decision": "Keep as a separate untested hypothesis. A robust independent implementation and fresh paired-mode full-pipeline validation would be needed; currentpositive-onlyC10 cannot qualify this path. Do not modify the pending P16 or frozen C10 recipes.",
+  "limitation": "Catalogue is three first-page sorts,100 each; not exhaustive. Notebook titles, catalogue ordering and changed code do not prove a public score or improvement."
+}

@@ -1,0 +1,32 @@
+{
+  "kind": "prospective_unlabelled_full_pipeline_inference",
+  "queries": 160,
+  "baseline_replay_exact": true,
+  "query_labels_mounted": false,
+  "metrics_computed": false,
+  "recipe_selection": false,
+  "scoring_submission": false,
+  "validation_contract_sha256": "2d75016513dca38ef4d4bb5f3a011c429f7f81173310e746d2e2359cfa26b463",
+  "p14_receipt": {
+    "run_id": "F07R1",
+    "selected_seed": 202611071,
+    "weight": 0.5,
+    "numpy_version": "2.0.2",
+    "preprocess_sort": "stable_intensity_original_index",
+    "manifest_sha256": "22c5300c20a942fdd346aa26ca5f57237664e6a251e4c48ba18daaace16eac19",
+    "head_sha256": "81d117d0e81698ae46a4f3b0077c329c8710aae555bdba6331955c4fbe896350",
+    "scored_molecules": 154,
+    "known_structures": 490,
+    "new_structures": 3226,
+    "input_errors": 0,
+    "unsupported_fallback": "exact P01 baseline score",
+    "scope": "Final lists only; P01 outsider scorer unchanged",
+    "coverage_summary": {
+      "supported": 154,
+      "unsupported": 6
+    }
+  },
+  "baseline_sha256": "27730ce2e2d3a3b51529216d29319cf857bf69bb01449b37a30795b51badf7ff",
+  "limitation": "Predictions only. Local development-only recipe freeze must precede reserved evaluation; no hidden-score or universal-pretraining-exclusion claim.",
+  "original_full_report_sha256": "9bd3d2283680193d41bbd64179c2e098146bce1f6c1987bfc595e421527e7d18"
+}

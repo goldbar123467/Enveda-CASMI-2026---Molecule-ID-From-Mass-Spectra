@@ -1,0 +1,90 @@
+{
+  "completed_utc": "2026-11-10T04:28:38.731906+00:00",
+  "development_queries": 40,
+  "C10_development_already_used": true,
+  "coverage": {
+    "P01_final": {
+      "queries": 40,
+      "truth_present": 20,
+      "truth_absent": 20,
+      "absent_final_truths_recoverable": 0,
+      "median_unique_candidates": 25.0,
+      "maximum_unique_candidates": 25
+    },
+    "engine_top40": {
+      "queries": 40,
+      "truth_present": 18,
+      "truth_absent": 22,
+      "absent_final_truths_recoverable": 3,
+      "median_unique_candidates": 40.0,
+      "maximum_unique_candidates": 40
+    },
+    "pubchem_top25": {
+      "queries": 40,
+      "truth_present": 8,
+      "truth_absent": 32,
+      "absent_final_truths_recoverable": 1,
+      "median_unique_candidates": 25.0,
+      "maximum_unique_candidates": 25
+    },
+    "outsider_pool": {
+      "queries": 40,
+      "truth_present": 2,
+      "truth_absent": 38,
+      "absent_final_truths_recoverable": 2,
+      "median_unique_candidates": 20.0,
+      "maximum_unique_candidates": 20
+    },
+    "ice_input_pool": {
+      "queries": 40,
+      "truth_present": 25,
+      "truth_absent": 15,
+      "absent_final_truths_recoverable": 5,
+      "median_unique_candidates": 97.0,
+      "maximum_unique_candidates": 117
+    },
+    "gl_input_pool": {
+      "queries": 40,
+      "truth_present": 15,
+      "truth_absent": 25,
+      "absent_final_truths_recoverable": 3,
+      "median_unique_candidates": 86.0,
+      "maximum_unique_candidates": 117
+    },
+    "n1_input_pool": {
+      "queries": 40,
+      "truth_present": 5,
+      "truth_absent": 35,
+      "absent_final_truths_recoverable": 2,
+      "median_unique_candidates": 0.0,
+      "maximum_unique_candidates": 109
+    },
+    "final_plus_outsiders": {
+      "queries": 40,
+      "truth_present": 22,
+      "truth_absent": 18,
+      "absent_final_truths_recoverable": 2,
+      "median_unique_candidates": 45.0,
+      "maximum_unique_candidates": 45
+    },
+    "all_existing_pools": {
+      "queries": 40,
+      "truth_present": 25,
+      "truth_absent": 15,
+      "absent_final_truths_recoverable": 5,
+      "median_unique_candidates": 98.0,
+      "maximum_unique_candidates": 121
+    }
+  },
+  "invalid_structure_strings": 0,
+  "supplied_engine_pubchem_key_mismatches": 10,
+  "coverage_protocol_sha256": "12a7f57fafb0b6b7641d657b2c51765694ba16fe39bea1ef6659c2125c60e99e",
+  "row_audit_sha256": "caba2352755e94aa7c073d214b9ce7e7acd065b493dfb248364653a63b70ca62",
+  "reserved_labels_read": false,
+  "reserved_prediction_metrics_computed": false,
+  "model_scores_computed": false,
+  "recipe_selected": false,
+  "submission_qualified": false,
+  "automatic_submission": false,
+  "limitation": "Oracle candidate presence in already-used development pools is not achievable top25 MRR or hidden improvement. Frozen C10 confirmation remains unused; any new recipe must freeze before reserved evaluation."
+}

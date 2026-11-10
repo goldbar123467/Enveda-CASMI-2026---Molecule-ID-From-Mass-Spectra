@@ -1,0 +1,12 @@
+{
+  "frozen_utc": "2026-11-10T05:01:17.966533+00:00",
+  "selected_candidate": "P16_plus_deep_prefix",
+  "new_candidate_selected": true,
+  "config_sha256": "0c4ad92554b8d1f91dd79c0df6949f1f58d306d08327ea1401e215a9aa42143a",
+  "source_contract_sha256": "e4f9208dbd1decfede25290f3ed47e1bcd4e347c77e396982ab25a8be70a8be5",
+  "development_report_sha256": "6e71ed48e40689b70707c692b43fa19c8a302f5a89f0391594f3297a99604e7b",
+  "evaluator_sha256": "5d2f837fdcda88af06e67bbc40e5eb5aad1966e0219534df666376b72559469e",
+  "reserved_prediction_metrics_computed": false,
+  "automatic_submission": false,
+  "next_action": "If selected, validate the frozen complete recipe on120 reserved plus real Kaggle smoke/independent audits. Otherwise preserve the unused reserve; never submit an unqualified variant."
+}

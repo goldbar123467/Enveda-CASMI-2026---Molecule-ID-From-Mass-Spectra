@@ -1,0 +1,38 @@
+{
+  "completed_utc": "2026-11-10T04:11:21.451085+00:00",
+  "receipt": {
+    "arm": "legacy16-hard",
+    "models": 2,
+    "folds": [
+      0,
+      1
+    ],
+    "cache_precision": "float16",
+    "smoke": false,
+    "steps": 40000,
+    "manifest_sha256": "86c977781695e5bfa8d5dc389c696f190359d9ca46b62fa5d087a4c6feee3909",
+    "baseline_content_sha256": "27730ce2e2d3a3b51529216d29319cf857bf69bb01449b37a30795b51badf7ff",
+    "queries_sha256": "c0f90ca5174c0f637fbc5c082afa9462fb4d310adf2548550ee086a0bf3f4f5d",
+    "scored_molecules": 160,
+    "unsupported_molecules": [],
+    "unprocessed_molecules": 0,
+    "input_errors": 0,
+    "peak_selection": "stable_intensity_then_mz",
+    "spectrum_aggregation": "all usable spectra, equal average",
+    "model_aggregation": "mean of per-query standardized raw scores",
+    "numpy_version": "2.0.2",
+    "torch_version": "2.11.0+cu128"
+  },
+  "changes": {
+    "weight": 0.2,
+    "offset": 3.0,
+    "rank_one_changes": 0,
+    "candidate_set_changes": 0,
+    "changed_rows": 159,
+    "scored_molecules": 160,
+    "passthrough_molecules": 0
+  },
+  "query_labels_used": false,
+  "metrics_computed": false,
+  "original_receipt_sha256": "7d1cc21a0b3de06f333a35ae886839df6df639314f1657d6212607ca24f55c81"
+}

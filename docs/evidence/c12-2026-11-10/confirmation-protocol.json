@@ -1,0 +1,27 @@
+{
+  "prepared_utc": "2026-11-10T05:08:34.703189+00:00",
+  "selection_freeze_sha256": "4a58b25de4f1ce9515fa202f9e67a97703d551f33e2ceee691ea742cbfdaf38e",
+  "config_sha256": "0c4ad92554b8d1f91dd79c0df6949f1f58d306d08327ea1401e215a9aa42143a",
+  "source_contract_sha256": "e4f9208dbd1decfede25290f3ed47e1bcd4e347c77e396982ab25a8be70a8be5",
+  "source_sha256": {
+    "confirm_c12_pool.py": "9f4ca7f22865b5eb9d9a7dd083309a43222edc065c4f9f0b64f51abe45fee090",
+    "develop_c12_pool.py": "5d2f837fdcda88af06e67bbc40e5eb5aad1966e0219534df666376b72559469e",
+    "prepare_c12_pool.py": "94224b26271e94db5093d898b7df33b6693c68d2851e83097c47385a832e3153",
+    "score_c12_pool.py": "cf60d9844d8770e21d7d6d2190c3a277cb4b60b387245f927c6b89c3815885a2",
+    "prefix_expansion.py": "0142a9bd56b82e9a69a3a99c6fd663cb0ada40a0adaf0294ab3c2466038a734a",
+    "confirm_c10_candidate.py": "aed063816513fcf842bc5b967e128f905bc914b181d642ff44707a316e2c3f4c",
+    "tail_fusion.py": "b1fd92ee93412454c80942c70fd3bc72f89f07a673ff1a319d7e821be368a5d4",
+    "finish_c09_confirmation.py": "d74e3258498cbaf496f91ae3398f54c4131ee25569b269e18e318ed5c9d615af"
+  },
+  "labels_sha256": "f1d3b96f002827d2c9ddd1e61f0fe4e97551a27859da8c74d248588893515c6a",
+  "partitions_sha256": "5fa93a056ee27fd90ec6dc69b3c4d9b7580411fd5c46caab44ad9b1e55538c75",
+  "required_queries": 120,
+  "selection": "One frozen recipe; no reserved reselection or coefficient search",
+  "gate": "Positive paired95% lower bound against both completeP01 andP16; nonnegative alias sensitivity; retain all missing-truth zeros",
+  "bootstrap_draws": 10000,
+  "bootstrap_seed": 20261105,
+  "negative_controls": "Report P14/P15 even if they contradict actual public regressions",
+  "reserved_prediction_metrics_read": false,
+  "automatic_submission": false,
+  "full_submission_qualification": "Real Kaggle changed-path smoke, independent execution/parity/source/identity/fallback audit and actual P16 resolution still required"
+}

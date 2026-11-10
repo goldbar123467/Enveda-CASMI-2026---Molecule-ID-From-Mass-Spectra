@@ -7,22 +7,38 @@ One additional trial is reserved/unconsumed in the C09 ledger. P16/ref58181280
 is still pending; existing ONE-pending and qualification rules remain. Do not
 resubmit P16. Prepare a fresh qualified candidate in parallel. C10 now has a
 new160-query CASMI2022 panel,40 development/120 reserved, withzero detected
-bounded raw-spectrum overlap. Query-only private inference v1 isRUNNING at
+bounded raw-spectrum overlap. Query-only private inference v1 isCOMPLETE at
 `clarkkitchen/casmi26-c10-unlabelled-casmi2022-validation`; actual remote source,
 privacy and image pin are verified. Read `docs/C10-CASMI2022-2026-11-10.md`.
-No C10 labels are mounted, no metrics computed. Choose/freeze using ONLY40dev
-before reading120reserved metrics. C10 is not a leaderboard submission and has
+No C10 labels were mounted inKaggle. Local40dev evaluation isCOMPLETE:
+all four reference recipes tieP01 atMRR0.2722727273,20/40truths. Fixedtie rule
+retainsP16;no newcandidate/no confirmation/no additionaltrial. The120reserved
+predictionmetrics remainunread. C10 is not a leaderboard submission and has
 not consumed the extra approval. Never launch a duplicate to the shorter slug.
 
 C10 reference preparation and label-blind search areCOMPLETE:31,030 attributed
 CC0/CC BY supplemental spectra/3,966 added connectivity keys; four fixed
 parent/expanded and any-positive/same-normalized-adduct recipes are predeclared.
 All160 searched,zero bounded input aliases,exact originalP16 parent parity.
-Coverage is not a validation gain. Development worker launcher22268/worker16844
-waits for existing collector5044/13360; it retains12:16:54UTC original deadline,
-then uses the2070 for one label-blind P15 control andONLY40dev selection/freeze.
-No120reserved metrics or automatic submission. Do not duplicate/restart live
-workers without inspecting handles/logs. Read current C10 notes and protocols.
+Coverage is not a validation gain. Collector5044/13360 anddevelopmentworker
+22268/16844 completedandexitednormally. The2070 P15control scoredall160with
+0inputerrors. P14controlsupports154/160with6explicitP01fallbacks. P14devdelta
++0.006126CIcrosses0/failsknownpublicregression;P15delta-0.000187,0improved/
+2harmed. Do not restartcompletedC10jobs. Read currentC10notes andsealedreports.
+
+C12C development-only coverage audit found25/40truths in earlierinputpools
+versus20/40final:5missingtruths areretrievable,15remainoutsideallprovidedpools.
+Only2areinexisting20-outsiderpool. Ten engine/PubChem suppliedkeys differfrom
+officialidentity;useofficialdedup. C12 now freezes one deeper-pool recipe using
+the unchanged P01 public/v80 pair. On40dev, MRR0.2722727273→0.2735802720,
+delta+0.0013075,95%CI[-0.0004891,0.0044118],1improved/1harmed,truths20→21.
+Selected prospectively by positive-point/new-truth rule;NOT submission-qualified.
+Confirmation protocol froze05:08UTC before120metrics. All160 label-blind pool
+preparation is running from05:15UTC, launcher24880/worker7724. Verify its actual
+handle;do not duplicate. Then score --scope all,require exact40dev output parity,
+and run confirm_c12_pool.py --evaluate ONCE. Reject if either incremental95%
+lowerbound versus completeP01/P16 is nonpositive. No reserved reselection.
+See docs/C12-DEEP-CANDIDATES-2026-11-10.md and sealed local receipts.
 
 Prospective reserved evaluator/protocol is prepared and5gate tests pass.
 `confirm_c10_candidate.py --evaluate` is authorized once ONLY after a new
@@ -40,14 +56,21 @@ rawkeys directlymatchtraining-eligibleC08/C09canonicalkeys. Lookupnovelty is
 not trainingnovelty;no newfit launchedfromthisinventory. Prior-panel identity
 keys,includingC10reservedkeys,were readONLYfortrainingexclusion;no predictions/
 reservedmetricsorC10-specifictruthcoveragecomputed. C10recipes/protocols stay
-frozen. The2070controlworker remains scheduled;choose furthertrainingchanges
+frozen. The2070controlworker hascompleted;choose furthertrainingchanges
 from completedpipelineerror evidence. No novel-acquisition claim.
+
+C11PUB refreshed247publiccatalogue entries/five sources. Fourunchanged;
+peaks-v2 adds a dual-polaritymassguard and changesoverlaythresholds. No exact
+version score verified,no adoption. C10 has0pairedqueries (preview5,C09used36,
+C08used34);it cannot validate that newpath. Treat it as a separate untested
+hypothesis requiringfreshpaired fullpipeline evidence;do not change frozen
+P16/C10. Source/risk review is in currentC10 notes/evidence.
 
 Latest user override at22:07UTC: continue UI/work until verified silver; run an
 hourly worker for24 hours. Active Codex goal and heartbeat
 `casmi-silver-campaign-hourly-for-24-hours` target this chat. Read
 `configs/c09-silver-worker-20261109.json` and current C09 notes before acting.
-Latest03:19UTC10November rank926/5047, score0.480; nominal silver cutoff252
+Latest04:19UTC10November rank929/5047, score0.480; nominal silver cutoff252
 at0.483. Matching a tied cutoff score is insufficient; verify actual rank.
 No paid compute or
 unqualified submission is authorized by the rank target. Continue useful work

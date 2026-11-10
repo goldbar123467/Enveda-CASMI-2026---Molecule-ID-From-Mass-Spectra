@@ -1,0 +1,212 @@
+{
+  "completed_utc": "2026-11-10T04:11:21.867590+00:00",
+  "queries": 40,
+  "sources": {
+    "CASMI2022": 40
+  },
+  "baseline_mrr25": 0.2722727272727273,
+  "baseline_truths": 20,
+  "candidates": {
+    "P16:all_reference": {
+      "comparison": {
+        "n": 40,
+        "baseline_mrr25": 0.2722727272727273,
+        "candidate_mrr25": 0.2722727272727273,
+        "delta": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "improved": 0,
+        "harmed": 0
+      },
+      "truth_recovered": 20,
+      "actions": {
+        "no_qualifying_match": 39,
+        "protected_pipeline_library": 1
+      }
+    },
+    "P16:input_alias_excluded": {
+      "comparison": {
+        "n": 40,
+        "baseline_mrr25": 0.2722727272727273,
+        "candidate_mrr25": 0.2722727272727273,
+        "delta": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "improved": 0,
+        "harmed": 0
+      },
+      "truth_recovered": 20,
+      "actions": {
+        "no_qualifying_match": 39,
+        "protected_pipeline_library": 1
+      }
+    },
+    "P16-adduct:all_reference": {
+      "comparison": {
+        "n": 40,
+        "baseline_mrr25": 0.2722727272727273,
+        "candidate_mrr25": 0.2722727272727273,
+        "delta": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "improved": 0,
+        "harmed": 0
+      },
+      "truth_recovered": 20,
+      "actions": {
+        "no_qualifying_match": 39,
+        "protected_pipeline_library": 1
+      }
+    },
+    "P16-adduct:input_alias_excluded": {
+      "comparison": {
+        "n": 40,
+        "baseline_mrr25": 0.2722727272727273,
+        "candidate_mrr25": 0.2722727272727273,
+        "delta": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "improved": 0,
+        "harmed": 0
+      },
+      "truth_recovered": 20,
+      "actions": {
+        "no_qualifying_match": 39,
+        "protected_pipeline_library": 1
+      }
+    },
+    "expanded:all_reference": {
+      "comparison": {
+        "n": 40,
+        "baseline_mrr25": 0.2722727272727273,
+        "candidate_mrr25": 0.2722727272727273,
+        "delta": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "improved": 0,
+        "harmed": 0
+      },
+      "truth_recovered": 20,
+      "actions": {
+        "no_qualifying_match": 37,
+        "promoted_existing_identity": 1,
+        "protected_pipeline_library": 1,
+        "same_identity_as_current_leader": 1
+      }
+    },
+    "expanded:input_alias_excluded": {
+      "comparison": {
+        "n": 40,
+        "baseline_mrr25": 0.2722727272727273,
+        "candidate_mrr25": 0.2722727272727273,
+        "delta": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "improved": 0,
+        "harmed": 0
+      },
+      "truth_recovered": 20,
+      "actions": {
+        "no_qualifying_match": 37,
+        "promoted_existing_identity": 1,
+        "protected_pipeline_library": 1,
+        "same_identity_as_current_leader": 1
+      }
+    },
+    "expanded-adduct:all_reference": {
+      "comparison": {
+        "n": 40,
+        "baseline_mrr25": 0.2722727272727273,
+        "candidate_mrr25": 0.2722727272727273,
+        "delta": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "improved": 0,
+        "harmed": 0
+      },
+      "truth_recovered": 20,
+      "actions": {
+        "no_qualifying_match": 37,
+        "promoted_existing_identity": 1,
+        "protected_pipeline_library": 1,
+        "same_identity_as_current_leader": 1
+      }
+    },
+    "expanded-adduct:input_alias_excluded": {
+      "comparison": {
+        "n": 40,
+        "baseline_mrr25": 0.2722727272727273,
+        "candidate_mrr25": 0.2722727272727273,
+        "delta": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "improved": 0,
+        "harmed": 0
+      },
+      "truth_recovered": 20,
+      "actions": {
+        "no_qualifying_match": 37,
+        "promoted_existing_identity": 1,
+        "protected_pipeline_library": 1,
+        "same_identity_as_current_leader": 1
+      }
+    }
+  },
+  "winner": {
+    "name": "P16",
+    "reference_pool": "parent",
+    "adduct_rule": "any_positive"
+  },
+  "new_candidate_selected": false,
+  "controls": {
+    "P14": {
+      "n": 40,
+      "baseline_mrr25": 0.2722727272727273,
+      "candidate_mrr25": 0.27839912280701756,
+      "delta": 0.006126395534290272,
+      "ci95": [
+        -0.004100877192982455,
+        0.02084534489633172
+      ],
+      "improved": 4,
+      "harmed": 1
+    },
+    "P15": {
+      "n": 40,
+      "baseline_mrr25": 0.2722727272727273,
+      "candidate_mrr25": 0.27208599149388624,
+      "delta": -0.00018673577884104203,
+      "ci95": [
+        -0.0004871079213184477,
+        0.0
+      ],
+      "improved": 0,
+      "harmed": 2
+    }
+  },
+  "truth_absent_mrr": 0,
+  "reserved_labels_read": false,
+  "reserved_metrics_computed": false,
+  "development_protocol_sha256": "167177db52de5b2e773a3fd28fc91cc562d747a892e6d472046a84969caccffd",
+  "search_report_sha256": "e8b114823d9beb5c55772e241491f5f074dbd1011d500ced25a8ec41d44f8b1c",
+  "cloud_report_sha256": "9bd3d2283680193d41bbd64179c2e098146bce1f6c1987bfc595e421527e7d18",
+  "automatic_submission": false,
+  "submission_qualified": false,
+  "limitation": "External CASMI2022 source/CE shift and historical-pretraining uncertainty. Development selection alone does not qualify a submission."
+}

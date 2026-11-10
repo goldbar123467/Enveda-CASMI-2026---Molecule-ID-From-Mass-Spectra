@@ -1,0 +1,82 @@
+{
+  "checked_utc": "2026-11-10T04:09:58.899383+00:00",
+  "collected_files": {
+    "c10_gpu1_preflight.json": {
+      "bytes": 298,
+      "sha256": "6a7dcb9435cb54de2f523b68a4819b8956769adb80cc64a960242a4379456a6d"
+    },
+    "c10_gpu1_preflight.log": {
+      "bytes": 313,
+      "sha256": "5f04fad56133136ea38ded4e347a92e22c71a62b0b9f5532c1e2241508ca98e1"
+    },
+    "c10_neural_p01.parquet": {
+      "bytes": 334625,
+      "sha256": "feee6298e3793e5c24501d8caa586421358583d062303c02e259a98819ad710c"
+    },
+    "c10_p01.csv": {
+      "bytes": 243951,
+      "sha256": "27730ce2e2d3a3b51529216d29319cf857bf69bb01449b37a30795b51badf7ff"
+    },
+    "c10_p14.csv": {
+      "bytes": 243951,
+      "sha256": "6c15e28b294c88a7ef2b0fe6f1337c56e91515578f29fed15e3efdd6481a674f"
+    },
+    "c10_p14.log": {
+      "bytes": 23705,
+      "sha256": "e7c3bb6493da3553e5c66739f36a4f1712a3d3f0f476055a48d87bc15eb0f773"
+    },
+    "c10_queries.parquet": {
+      "bytes": 120181,
+      "sha256": "c0f90ca5174c0f637fbc5c082afa9462fb4d310adf2548550ee086a0bf3f4f5d"
+    },
+    "c10_report.json": {
+      "bytes": 21686,
+      "sha256": "9bd3d2283680193d41bbd64179c2e098146bce1f6c1987bfc595e421527e7d18"
+    },
+    "c10_t4_allocation.json": {
+      "bytes": 371,
+      "sha256": "2b7d9f688b3942862d23b21d8f866edadb5719668a1faf501cce5a77d350cff2"
+    },
+    "casmi26-c10-unlabelled-casmi2022-validation.log": {
+      "bytes": 33791,
+      "sha256": "8ad7f1ec5dec65f171c8ad12bfb9691dc30a593d32bc856d278b1219bb5c6bac"
+    },
+    "frozen_candidate_evidence.parquet": {
+      "bytes": 250159,
+      "sha256": "effa0f1500167197d9bd43c59f345955baae6311f3663f17a922e265b28d7e9f"
+    },
+    "neural_ours.parquet": {
+      "bytes": 318948,
+      "sha256": "e281835cdfa87e9ca60d91fdc7db4d0056ea3d5c0dddb4aeb861b74d7219b26d"
+    },
+    "neural_public.parquet": {
+      "bytes": 318944,
+      "sha256": "2ad883b348161aac195fb6e5d4a92eceb73a25e5b60eefae6f18e7bf69636b7d"
+    },
+    "outsider_neural_features.parquet": {
+      "bytes": 210395,
+      "sha256": "8b56ee27944a874a86645028de965c4775bc2eb6a0f34a6b96a3564c64698af0"
+    }
+  },
+  "queries": 160,
+  "exact_baseline_replay": true,
+  "query_labels_mounted": false,
+  "model_metrics_computed": false,
+  "devices": [
+    {
+      "index": 0,
+      "name": "Tesla T4",
+      "vram_gib": 14.56219482421875
+    },
+    {
+      "index": 1,
+      "name": "Tesla T4",
+      "vram_gib": 14.56219482421875
+    }
+  ],
+  "gpu1_preflight_finite": true,
+  "p14_scored_molecules": 154,
+  "p14_input_errors": 0,
+  "p14_unsupported_fallback": "exact P01 baseline score",
+  "source": "Existing private v1 collector has verified remote scientific source/version/privacy before download"
+}

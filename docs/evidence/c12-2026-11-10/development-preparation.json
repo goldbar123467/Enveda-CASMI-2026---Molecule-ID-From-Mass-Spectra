@@ -1,0 +1,19 @@
+{
+  "completed_utc": "2026-11-10T04:54:53.580678+00:00",
+  "scope": "development",
+  "queries": 40,
+  "candidates": 3713,
+  "unique_smiles": 3713,
+  "invalid_extra_strings": 0,
+  "source_contract_sha256": "e4f9208dbd1decfede25290f3ed47e1bcd4e347c77e396982ab25a8be70a8be5",
+  "files": {
+    "pool.parquet": "a4acfefd36f520f48b0a1607250c10fb612acbbe35885221e1405cd8e92c5fe6",
+    "parent.csv": "98ae4600b7c1e6657eb428343511689b7952851e736099ea01a28fbded34fec4",
+    "queries.parquet": "c99c84de7024dba8924d2de68ecc419d98bcb44c295895fb77d8e3378b82b97d",
+    "fingerprints.npy": "013e58a870f39795eb0007575934e1c2b9dfe6e1707d64ff196f68118789d40b",
+    "fingerprint-smiles.parquet": "6bb667ad1e0a4dd121830916bd7e1183cfcb40452937807d05b7c101eb6eaa04"
+  },
+  "query_labels_read": false,
+  "prediction_metrics_computed": false,
+  "automatic_submission": false
+}

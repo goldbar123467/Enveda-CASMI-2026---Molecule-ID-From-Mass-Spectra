@@ -1,0 +1,18 @@
+{
+  "devices": [
+    {
+      "index": 0,
+      "name": "Tesla T4",
+      "vram_gib": 14.56219482421875
+    },
+    {
+      "index": 1,
+      "name": "Tesla T4",
+      "vram_gib": 14.56219482421875
+    }
+  ],
+  "allocation": {
+    "GPU0": "complete P01 unlabelled160 pipeline",
+    "GPU1": "real P14 encoder preflight and complete final-list negative-control scoring"
+  }
+}

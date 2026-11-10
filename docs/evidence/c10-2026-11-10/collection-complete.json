@@ -1,0 +1,10 @@
+{
+  "completed_utc": "2026-11-10T04:08:20.825126+00:00",
+  "pid": 13360,
+  "kernel": "clarkkitchen/casmi26-c10-unlabelled-casmi2022-validation",
+  "state": "collected",
+  "artifacts": "C:\\Users\\imsa\\Documents\\Enveda CASMI\\outputs\\forks\\c10-casmi2022-validation-v1",
+  "label_metrics_computed": false,
+  "automatic_submission": false,
+  "next_action": "Use only40 development labels for selection; freeze recipe before120 reserved metrics"
+}
