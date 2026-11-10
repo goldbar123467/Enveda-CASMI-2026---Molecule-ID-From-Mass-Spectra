@@ -1,9 +1,9 @@
 # Runs
 
-Updated 2026-11-09 23:46 UTC by `scripts/update_runs.py` (hourly). Generated from `runs.csv` — edit that file, not this one.
+Updated 2026-11-10 00:35 UTC by `scripts/update_runs.py` (hourly). Generated from `runs.csv` — edit that file, not this one.
 
-- Kaggle quota: GPU 7.9 h used of 30 h · TPU 0.0 h of 20 h · resets 2026-11-14 00:00 UTC
-- Submissions today (UTC): 1 of 5 — see `SUBMISSIONS.md`
+- Kaggle quota: GPU 8.7 h used of 30 h · TPU 0.0 h of 20 h · resets 2026-11-14 00:00 UTC
+- Submissions today (UTC): 0 of 5 — see `SUBMISSIONS.md`
 
 ## Active
 
@@ -18,6 +18,7 @@ Updated 2026-11-09 23:46 UTC by `scripts/update_runs.py` (hourly). Generated fro
 
 | id | platform | kind | ref | started (UTC) | ended (UTC) | status | purpose | result |
 |---|---|---|---|---|---|---|---|---|
+| C09EM1 | local-cpu | diag | outputs/local/c09-massbank-extension-20261110/development.log | 2026-11-10 00:33 | 2026-11-10 00:33 | complete | Prospective old30 development test of fixed-rule additional record-CC0 positiveMS2 references; originalP16 unchanged, retain attribution/compilationterms, no query/threshold tuning or new80 metrics | 4905 references pass peaks/structure-key checks, but0precursor candidates/0comparisons on old30;MRR unchanged0.911111 vsP16,delta0/CI[0,0],0improved/0harmed,bothviews. Predeclared retention fails; no80metric use/adoption/upload/submission. |
 | C09RM | local-cpu | research | outputs/research/2026-11-09-silver/massbank-coverage-audit/coverage.json | 2026-11-09 23:45 | 2026-11-09 23:45 | complete | Backup MassBank record-license/raw-connectivity coverage inventory; no query labels or P16 policy/data change | 139744 records/6 record-license labels; literalCC0 positiveMS2 >=4peaks subset4905spectra/515rawkeys,471keys absent from currentextlib. CompilationCC-BY-NC-SA-4.0; not adopted, no validation/metric-novelty claim. |
 | C09ES2 | kaggle-gpu | diag | p16-external-reference-c09 v2 | 2026-11-09 23:00 | 2026-11-09 23:26 | complete | Recover realP16 smoke:explicit public/second model hash checks plus isolated real30 input fixtures exercising7promotions/2newcandidates;unchanged policy/models/data;no scoring submission | COMPLETE realT4x2;400valid/12real both-model supported,0metricduplicates;12protectedpreviewpass-through. Isolated30real fixtures:7promoted/2inserted;independent scoreerror1.11e-16,primaryerror4.44e-16;explicitcheckpoint/source/ref pins,invalidfallback andCSV isolation pass. Scientific80confirmation pending;not submitted. |
 | C09EX | local-cpu | diag | outputs/local/c09-external-reference-20261109/fixture-preflight.log | 2026-11-09 22:56 | 2026-11-09 23:13 | complete | Real30-input fixture and real12-preview mandatory-stage local preflight before recoveredKaggle smoke;no new data/threshold choice/training/submission | 30real/113spectra:7promoted,2inserted,5existing;expectedlists exact,invalid-structure fallback and scoring-CSV isolation pass. Independent peak audit real30 error0 after matching servingfloat32 input precision. Preview400valid/12protected/388unchanged;0identity duplicates. RealKagglev2 still required. |

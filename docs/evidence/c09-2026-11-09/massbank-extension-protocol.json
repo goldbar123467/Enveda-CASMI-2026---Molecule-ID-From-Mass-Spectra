@@ -1,0 +1,13 @@
+{
+  "prepared_utc": "2026-11-10T00:33:29.525023+00:00",
+  "new80_metrics_read": false,
+  "policy_sha256": "ea662270a895dc902cc9dd242afd7cd7f63e4a42ce3468474c6bff73d984043c",
+  "parent_development_sha256": "ed753564e541a95a38e89ec39f7a1be481e5f55f5d58c888bb0f8d18d1117483",
+  "parent_matches_sha256": "0947e2aa281b547c88715424461f46dadf024552d75089b70b1df686fd0db616",
+  "source_sha256": "6ebb46b32ddd344d988c3bdb90e7160d4ce46e6d0b900a1217607aa2234c9477",
+  "experiment_sha256": "4c73f3c6889fdb79ffd206c6638ce839f6053a0aecb09c19b57cff2339759430",
+  "selection": "One literalCC0 positiveMS2 >=4peak extension; same fixed thresholds, no tuning. Retain only if old30 MRR increases versus P16 with zero harmed queries.",
+  "future_confirmation": "A retained extension must separately demonstrate incremental positive95% lower-bound gain versus P16 in full80 and raw-clean60 before any trial. No confirmation recipe reselection.",
+  "compilation_license": "CC-BY-NC-SA-4.0; retain source/record attribution; no public redistribution or P16 adoption",
+  "automatic_submission": false
+}

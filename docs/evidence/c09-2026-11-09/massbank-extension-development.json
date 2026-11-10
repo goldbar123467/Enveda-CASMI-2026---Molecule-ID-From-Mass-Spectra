@@ -1,0 +1,88 @@
+{
+  "completed_utc": "2026-11-10T00:33:45.791084+00:00",
+  "new80_metrics_read": false,
+  "development": {
+    "all_reference": {
+      "versus_P01": {
+        "n": 30,
+        "baseline_mrr25": 0.7372222222222222,
+        "candidate_mrr25": 0.9111111111111111,
+        "delta": 0.1738888888888889,
+        "ci95": [
+          0.06666666666666667,
+          0.2972222222222223
+        ],
+        "improved": 7,
+        "harmed": 0
+      },
+      "versus_P16": {
+        "n": 30,
+        "baseline_mrr25": 0.9111111111111111,
+        "candidate_mrr25": 0.9111111111111111,
+        "delta": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "improved": 0,
+        "harmed": 0
+      }
+    },
+    "input_alias_excluded": {
+      "versus_P01": {
+        "n": 30,
+        "baseline_mrr25": 0.7372222222222222,
+        "candidate_mrr25": 0.9111111111111111,
+        "delta": 0.1738888888888889,
+        "ci95": [
+          0.06666666666666667,
+          0.2972222222222223
+        ],
+        "improved": 7,
+        "harmed": 0
+      },
+      "versus_P16": {
+        "n": 30,
+        "baseline_mrr25": 0.9111111111111111,
+        "candidate_mrr25": 0.9111111111111111,
+        "delta": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "improved": 0,
+        "harmed": 0
+      }
+    }
+  },
+  "supplemental_records": 4905,
+  "rejected": {
+    "peak_shape": 0,
+    "fewer_than_four_positive_peaks": 0,
+    "invalid_structure_or_key": 0
+  },
+  "search": {
+    "queries": 30,
+    "spectra": 113,
+    "reference_rows": 4905,
+    "precursor_candidate_rows": 0,
+    "query_reference_comparisons": 0,
+    "query_input_alias_reference_rows": 0,
+    "query_labels_used": false,
+    "limitation": "Rounded full peaks and FP16top96 signatures only; not universal acquisition/provenance exclusion"
+  },
+  "changed_best_matches": 0,
+  "retained": false,
+  "policy_sha256": "ea662270a895dc902cc9dd242afd7cd7f63e4a42ce3468474c6bff73d984043c",
+  "protocol_sha256": "1ff2867894b6c4f51ef62b2bddde1a8108b6224cb90eab2ce47fdbc2dd78b93d",
+  "source_sha256": "4c73f3c6889fdb79ffd206c6638ce839f6053a0aecb09c19b57cff2339759430",
+  "reference_sha256": {
+    "ext_meta.parquet": "9a146e746fb9d27089f84ad088f100575bffa9768bb526b69f9fd71d74294ac4",
+    "ext_mz.npy": "ad6e6f453d160af01eacfc7683a35677038df0caadad9701cf1b081299184198",
+    "ext_in.npy": "a204ef3daa1af8ef70f597b480d46552b3dfa2362da95e7d61d37d437370b537"
+  },
+  "threshold_search": false,
+  "original_P16_unchanged": true,
+  "automatic_submission": false,
+  "limitation": "Used development data, raw source license metadata retained; no hidden gain, universal acquisition exclusion or additional redistribution rights inferred."
+}
