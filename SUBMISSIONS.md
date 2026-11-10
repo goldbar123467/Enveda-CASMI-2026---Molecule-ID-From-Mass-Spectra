@@ -179,3 +179,24 @@ by P15. The explicit single-trial authorization is exhausted; no extra candidate
 or training is queued. P01/P13 at0.480 remain the champion while scoring runs.
 No statistical promotion is claimed. Full evidence is in
 `docs/evidence/compatible-2026-11-08/`.
+
+## Two user-requested past-work trials — 10 November
+
+The user explicitly requested two best past-work entries for scoring. Both
+selected recipes use retained completed fits, frozen before any new public
+result. Statistical improvement remains unproven; both development intervals
+include zero. The0.480 champion is retained.
+
+| Date (UTC) | Slot | Kernel | Retained recipe | Ref | Public LB |
+|---|---|---|---|---|---|
+|2026-11-10 19:19|P18|casmi26-p18-c22-past-trained-trial v1|Complete pinned P16 plus final55000 C22 two-fold all-mode0.20 tail RRF; exact rank1/membership|58212322|**Pending**|
+
+P19/C18 is the remaining approved entry and must wait for P18's actual result.
+Only one pending is allowed globally; exactly two new accepted entries total.
+The previous unused single-trial approval is superseded, not a third slot.
+Kaggle requires the scoring file to be named submission.csv. Two earlier custom-
+filename HTTP400 requests were rejected and reconciled without an accepted entry
+or quota use. Both corrected exports completed real GPU reruns and independent
+hash/model/fusion/identity/fallback/local-cloud parity audits before P18 was sent.
+See docs/TWO-PAST-TRIALS-2026-11-10.md and compact C34 evidence. The hourly campaign
+and silver goal remain paused; no new training is authorized by these two trials.

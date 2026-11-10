@@ -1,15 +1,17 @@
 # Runs
 
-Updated 2026-11-10 19:18 UTC by `scripts/update_runs.py` (hourly). Generated from `runs.csv` — edit that file, not this one.
+Updated 2026-11-10 19:22 UTC by `scripts/update_runs.py` (hourly). Generated from `runs.csv` — edit that file, not this one.
 
 - Kaggle quota: GPU 19.8 h used of 30 h · TPU 0.0 h of 20 h · resets 2026-11-14 00:00 UTC
-- Submissions today (UTC): 1 of 5 — see `SUBMISSIONS.md`
+- Submissions today (UTC): 2 of 5 — see `SUBMISSIONS.md`
 
 ## Active
 
 | id | platform | kind | ref | started (UTC) | status | purpose | progress |
 |---|---|---|---|---|---|---|---|
 | C09V | kaggle-gpu | diag | c09-coverage-controls v1 | 2026-11-09 14:44 | **cancel_requested** | C09 dual-device diagnostic: exact P14 full128 external pipeline negative control onGPU0; existing C08 expanded candidate coverage/scoring onGPU1; no scoring submission | Old128 panel superseded after67 base-connected acquisition groups found; cancellation requested, not acknowledged. No allocation/training/validation result; no GPU quota added at16:34UTC. |
+| C34P18 | kaggle-submission | eval | 58212322 | 2026-11-10 19:19 | **pending** | Explicit past-work P18 scoring trial; retained fitted two-model0.20 tail, complete P16 parent | Submission 58212322: PENDING; public score None |
+| C34MON | local-cpu | diag | outputs/local/two-past-trials-20261110/monitor.log | 2026-11-10 19:21 | **running** | Bounded two-trial actual-score reconciliation; after first result submit exactly one fixed C18 trial, then stop after both results | Worker 5620 live; waiting_actual_scores |
 
 ## Finished (newest first)
 

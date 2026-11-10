@@ -97,3 +97,11 @@ export submitter registers accepted references immediately, preserves an unresol
 intent and server error details on rejection, and caps accepted entries at two.
 The bounded score monitor uses a temporary thread-scoped sleep inhibitor while
 waiting; it releases this when it exits and leaves the display free to sleep.
+
+P18/C22 is ACCEPTED at19:19:08 UTC as reference58212322, exact exportkernel v1,
+outputsubmission.csv, markerC09-TWO-P18-C22-20261110. Actual account polling is
+PENDING with no score; do not report success or resubmit it. The bounded monitor
+has actualPID5620/launcher20732 and deadline11November19:25 UTC. It polls actual
+results, sends P19/C18 once only after P18 reaches an actual score/error, then
+waits for both terminal results and restores the compute pause. It cannot train,
+change recipes or spend a third entry. Source qualification stays immutable.

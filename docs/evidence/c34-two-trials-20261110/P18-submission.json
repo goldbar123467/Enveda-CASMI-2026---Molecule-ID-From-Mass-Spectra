@@ -1,0 +1,12 @@
+{
+  "slot": "P18",
+  "marker": "C09-TWO-P18-C22-20261110",
+  "reference": 58212322,
+  "kernel": "clarkkitchen/casmi26-p18-c22-past-trained-trial",
+  "version": 1,
+  "output": "submission.csv",
+  "submitted_utc": "2026-11-10T19:19:08.855374+00:00",
+  "status": "ACCEPTED; ACTUAL SCORE PENDING",
+  "csv_sha256": "b84df048e46657d17e172be3c95a4fcea86ffd4636268e6ace07a651e1aea913",
+  "qualification_sha256": "c600490df2b738c1580b736ca247894e785f5bf033514d0a4175c83128e1c9ed"
+}
