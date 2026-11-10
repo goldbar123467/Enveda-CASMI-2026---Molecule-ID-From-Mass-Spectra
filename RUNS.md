@@ -1,8 +1,8 @@
 # Runs
 
-Updated 2026-11-10 01:28 UTC by `scripts/update_runs.py` (hourly). Generated from `runs.csv` — edit that file, not this one.
+Updated 2026-11-10 02:33 UTC by `scripts/update_runs.py` (hourly). Generated from `runs.csv` — edit that file, not this one.
 
-- Kaggle quota: GPU 9.2 h used of 30 h · TPU 0.0 h of 20 h · resets 2026-11-14 00:00 UTC
+- Kaggle quota: GPU 9.5 h used of 30 h · TPU 0.0 h of 20 h · resets 2026-11-14 00:00 UTC
 - Submissions today (UTC): 1 of 5 — see `SUBMISSIONS.md`
 
 ## Active
@@ -11,11 +11,14 @@ Updated 2026-11-10 01:28 UTC by `scripts/update_runs.py` (hourly). Generated fro
 |---|---|---|---|---|---|---|---|
 | C09V | kaggle-gpu | diag | c09-coverage-controls v1 | 2026-11-09 14:44 | **cancel_requested** | C09 dual-device diagnostic: exact P14 full128 external pipeline negative control onGPU0; existing C08 expanded candidate coverage/scoring onGPU1; no scoring submission | Old128 panel superseded after67 base-connected acquisition groups found; cancellation requested, not acknowledged. No allocation/training/validation result; no GPU quota added at16:34UTC. |
 | C09P16S | kaggle-submission | scoring | 58181280 | 2026-11-10 01:22 | **pending** | Only pending global leaderboard trial:P16v2 unchangedP01 plus fixed external-reference promotions,qualified full80/clean60 and complete realKaggle/independent audits | Submission 58181280: PENDING; public score None |
+| C10V | kaggle-gpu | diag | c10-unlabelled-casmi2022-validation v1 | 2026-11-10 02:15 | **running** | Private unlabelled fullP01/P14 inference on fresh160 CASMI2022 queries;40dev120reserved labels remain local,exact baseline replay and realdualT4 required,no scoring submission | Remotev1 RUNNING/private/internetoff,exactscientificsource andpinned37c64image verified. Kaggle chose title-derived slug; corrected tracking only,no duplicatepush. Labelsnotmounted;noMRRcomputed. |
+| C10COL | local-cpu | diag | outputs/local/c10-casmi2022-20261110/collector.log | 2026-11-10 02:25 | **running** | Bounded collector for existing C10v1 exact remote source;download completed unlabelled predictions only,no metrics/selection/submission | 0/1 done |
 
 ## Finished (newest first)
 
 | id | platform | kind | ref | started (UTC) | ended (UTC) | status | purpose | result |
 |---|---|---|---|---|---|---|---|---|
+| C10PREP | local-cpu | diag | outputs/local/c10-casmi2022-20261110/preparation.log | 2026-11-10 01:59 | 2026-11-10 01:59 | complete | Prospective CASMI2022 scan assignment and identity/raw-signature exclusion before deterministic40dev/up-to120confirmation split;labels stay local,no model metric or scoring submission | 160positive CASMI2022 identities/160scans;40dev120reserved;raw3033286496bytes/2539608spectra audited,90709candidate rows checked,0reference/cross-label signature overlaps. Training/oldpanel keys excluded;strict RT/mass maxTIC,no unmatched fallback. Labels local only;no MRR computed. |
 | C09SR1 | local-cpu | diag | outputs/local/c09-external-reference-20261109/source-sensitivity.log | 2026-11-10 01:15 | 2026-11-10 01:15 | complete | Preplanned descriptive source sensitivity of fixed C09/C09E reports;all missing-truth zeros and paired comparisons retained,no recipe selection | Source1MassBank60 is entire raw-clean cohort;source2GNPS20 all raw-overlap flagged. P16 gainsbothsources;clean MassBankdelta+0.063889 CI>0. Full P14/P15 controls reverse publicregressions;clean controlpointdeltasnegative. No clean GNPS evidence. |
 | C09EF2 | local-cpu | diag | outputs/local/c09-external-reference-20261109/completion-v3.log | 2026-11-09 23:01 | 2026-11-10 01:13 | complete | Collect currentP16v2 only;independently audit real12/400 plusreal30 changed-path fixtures and model/source hashes;then frozen80 confirmation;no leaderboard submission | P16v2 execution audit passes;frozen80 MRRa0.713859 to0.837445,13improved3harmed,truths71to77;clean60MassBank +0.063889 CI[0.005556,0.133333],6improved2harmed.0input-referencealiases;bothviewsidentical. Qualified one sequential trial,not hidden proof. |
 | C09FC | local-2070 | diag | outputs/local/c09-followup-evaluation-20261109/confirmation-finisher.log | 2026-11-09 21:32 | 2026-11-10 01:12 | complete | Bounded wait for existing T4v2 COMPLETE, download exact P01/P14 outputs then evaluate frozen development-selected control plus P15/C09T references;full80 and predeclared no-raw-overlap cohort;no reselection or submission | Frozenwinner cosine-control0.20:full80 delta+0.001891 CI crosses0;vsP15parent -0.000223,0improved1harmed. Clean60 equalsparent andalltrainedgroups harm1. No additional training benefit;P14/P15 full-panel publicregressions not detected;not submission-qualified. |

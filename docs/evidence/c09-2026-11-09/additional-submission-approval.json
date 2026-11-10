@@ -1,0 +1,8 @@
+{
+  "approved_utc": "2026-11-10T01:37:59.374102+00:00",
+  "user_instruction": "Approval for another submission",
+  "additional_trials": 1,
+  "consumed": false,
+  "current_pending_reference": 58181280,
+  "conditions": "Sequential after current actual result, with a fresh qualified candidate and existing smoke/independent-audit rules; no paid compute"
+}

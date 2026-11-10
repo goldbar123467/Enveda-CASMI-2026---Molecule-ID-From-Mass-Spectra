@@ -1,0 +1,31 @@
+{
+  "prepared_utc": "2026-11-10T01:59:12.696223+00:00",
+  "parameters": {
+    "positive_only": true,
+    "excluded_known_errors": [
+      81,
+      282,
+      432,
+      476
+    ],
+    "mass_assignment_da": 0.005,
+    "rt_assignment_minutes": 0.1,
+    "selection": "maximum positive finite total intensity; deterministic RT/mass/name ties",
+    "minimum_usable_peaks": 3,
+    "raw_signature_precursor_window": "20ppm +.003Da",
+    "draw_salt": "C10-CASMI2022-prospective-v1:",
+    "maximum_queries": 160,
+    "development": 40,
+    "minimum_confirmation": 80,
+    "unmatched_target_fallback": false,
+    "unknown_collision_energy": "NaN, not imputed"
+  },
+  "source_sha256": "febe375faf786ab65950c50ec8f0c4ee8ea9c8ce6ff10b4cd68f25fcd5ce1e31",
+  "preparer_sha256": "4c3adc81c15898280c401506769d2b4793c01fde4be13d6e4518d76df25b8fe0",
+  "parser_sha256": "a8d3e288437d088e0816d70b2de51f00f939bc213ea14133ed689b3e2c943bfe",
+  "feature_sha256": "a97ad9b3ab3711517864d56e497e1672cb29bb05683c72b52db9f9b0a17b1455",
+  "author_method_url": "https://github.com/Roestlab/massformer/blob/master/preproc_scripts/prepare_casmi22_data.py",
+  "author_method_git_blob": "0987cc5c48ea7309661ac7a05cd7df5e1fcf2464",
+  "no_prediction_metrics_read": true,
+  "labels_excluded_from_runtime": true
+}

@@ -1,0 +1,20 @@
+{
+  "campaign": "C10",
+  "notebook_sha256": "98a304613ba2e38a9814465e8632ddfd7bca7cc2df4af63c98b0ca09e182ca48",
+  "validation_contract_sha256": "2d75016513dca38ef4d4bb5f3a011c429f7f81173310e746d2e2359cfa26b463",
+  "original_P01_sha256": "6a3d037dbc40f9c6d73fcbb8c7a5d607ad044f67af3315950a240db26a0c25da",
+  "input_adapter_builder_sha256": "cf1bcf79fa39d12344a3700546c2ac00d931e957c36207a574a8dc3113f292ad",
+  "builder_sha256": "8811587a4af24f60fcd717d6c7ff043b355ebb07f581d98d762e5437864b93dd",
+  "frozen_manifest_sha256": "22c5300c20a942fdd346aa26ca5f57237664e6a251e4c48ba18daaace16eac19",
+  "p14_driver_sha256": "5c4042bc64f2eb6dd7c6870b1c0d2d92f07aafa186f4c376b0d7cbe29632ed68",
+  "queries": 160,
+  "local_development": 40,
+  "local_confirmation": 120,
+  "query_labels_mounted": false,
+  "removed_historical_label_evaluation_cells": 1,
+  "private": true,
+  "internet": false,
+  "scoring_submission": false,
+  "pre_push_builder_sha256": "5ec7bb53e0470e9b1821dc8398c0553e4b5d2a5c5ed9c3b3e32929f250fbac97",
+  "metadata_slug_correction": "Track the single existing title-derived casmi26-c10-unlabelled-casmi2022-validation v1; notebook/scientific source unchanged"
+}

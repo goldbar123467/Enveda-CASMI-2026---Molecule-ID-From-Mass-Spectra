@@ -2,6 +2,18 @@
 
 ## Current authorization — C09, 2026-11-09
 
+Latest explicit user approval at10November01:37UTC: **another submission**.
+One additional trial is reserved/unconsumed in the C09 ledger. P16/ref58181280
+is still pending; existing ONE-pending and qualification rules remain. Do not
+resubmit P16. Prepare a fresh qualified candidate in parallel. C10 now has a
+new160-query CASMI2022 panel,40 development/120 reserved, withzero detected
+bounded raw-spectrum overlap. Query-only private inference v1 isRUNNING at
+`clarkkitchen/casmi26-c10-unlabelled-casmi2022-validation`; actual remote source,
+privacy and image pin are verified. Read `docs/C10-CASMI2022-2026-11-10.md`.
+No C10 labels are mounted, no metrics computed. Choose/freeze using ONLY40dev
+before reading120reserved metrics. C10 is not a leaderboard submission and has
+not consumed the extra approval. Never launch a duplicate to the shorter slug.
+
 Latest user override at22:07UTC: continue UI/work until verified silver; run an
 hourly worker for24 hours. Active Codex goal and heartbeat
 `casmi-silver-campaign-hourly-for-24-hours` target this chat. Read

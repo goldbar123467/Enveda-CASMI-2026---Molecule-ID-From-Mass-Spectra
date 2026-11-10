@@ -1,0 +1,62 @@
+{
+  "prepared_utc": "2026-11-10T01:59:50.229263+00:00",
+  "version": 1,
+  "queries": 160,
+  "spectra": 160,
+  "development": 40,
+  "confirmation": 120,
+  "source": "CASMI2022",
+  "source_doi": "10.5281/zenodo.8371051",
+  "declared_license": "CC-BY-4.0",
+  "parameters": {
+    "positive_only": true,
+    "excluded_known_errors": [
+      81,
+      282,
+      432,
+      476
+    ],
+    "mass_assignment_da": 0.005,
+    "rt_assignment_minutes": 0.1,
+    "selection": "maximum positive finite total intensity; deterministic RT/mass/name ties",
+    "minimum_usable_peaks": 3,
+    "raw_signature_precursor_window": "20ppm +.003Da",
+    "draw_salt": "C10-CASMI2022-prospective-v1:",
+    "maximum_queries": 160,
+    "development": 40,
+    "minimum_confirmation": 80,
+    "unmatched_target_fallback": false,
+    "unknown_collision_energy": "NaN, not imputed"
+  },
+  "counts": {
+    "positive_rows_after_known_error_exclusion": 300,
+    "raw_key_excluded": 78
+  },
+  "scans_read": 34293,
+  "audit": {
+    "raw_rows": 2539608,
+    "candidate_rows": 90709,
+    "checked_rows": 90709,
+    "reference_overlap_queries": 0,
+    "cross_identity_query_aliases": 0,
+    "match_records": 0,
+    "labels_used": false,
+    "limitation": "Bounded rounded/full and FP16top96 signatures, not universal near-duplicate or historical-pretraining exclusion"
+  },
+  "raw_training_sha256": "9423f90ec08b941a9646b535bf0606183e86ff0c5a297978f5a70693d41bcd98",
+  "production_train_structs_sha256": "f20aa1cac23af42e430a6633707fda34e48dea97114bdc3e443897f692df3656",
+  "prior_panel_labels_sha256": {
+    "c08-validation-20261108": "5c2b3b269bef779d6364dcebd0edf900f7663cfa13ba18c6cb382c8c2020e820",
+    "c09-validation-20261109": "86f54a9ca39dbf6353eef237a35406f1f8203f0ea5f0bc71fd1f3f420b5c4d4e"
+  },
+  "labels_sha256": "f1d3b96f002827d2c9ddd1e61f0fe4e97551a27859da8c74d248588893515c6a",
+  "preparation_protocol_sha256": "9bbeb377be12ff9b2faead25d3b6a080e370b702de49ab6a4582a92a2c84dd71",
+  "query_labels_visible_to_pipeline": false,
+  "truth_injection": false,
+  "truth_absent_mrr": 0,
+  "limitation": "Historical public pretraining exposure not universally excluded. Single selected LC-MS2 scan per identity; FT/HCD metadata follows source authors, collision energy unavailable. No model metrics or recipe selection performed.",
+  "files": {
+    "validation-queries.parquet": "bf87d0947cb55c58c35c5d50d7a9a331095872f3503bf256ca264f6fb8901765",
+    "validation-sample.csv": "dc5c07fc6b72902d30c7b07cba6525d17d22442e85a263ca95500e5106d30011"
+  }
+}

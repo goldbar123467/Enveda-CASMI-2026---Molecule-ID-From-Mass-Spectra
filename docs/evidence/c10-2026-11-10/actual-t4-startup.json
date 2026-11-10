@@ -1,0 +1,22 @@
+{
+  "recorded_utc": "2026-11-10T02:33:27.061612+00:00",
+  "evidence_source": "Native Kaggle C10 log view",
+  "kernel": "clarkkitchen/casmi26-c10-unlabelled-casmi2022-validation",
+  "actual_devices": [
+    {
+      "index": 0,
+      "name": "Tesla T4",
+      "vram_gib": 14.56219482421875
+    },
+    {
+      "index": 1,
+      "name": "Tesla T4",
+      "vram_gib": 14.56219482421875
+    }
+  ],
+  "full_rerun_detection": true,
+  "official_rdkit": "2026.03.3",
+  "observed_runtime_seconds": 798.7,
+  "completed_inference": false,
+  "scoring_submission": false
+}

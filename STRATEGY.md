@@ -5,6 +5,13 @@ wake-ups in this chat. Latest01:28UTC10November rank918/5043 at0.480; nominal
 silver rank252 at0.482. Verify actual rank after scoring, not a tied score alone.
 Preserve all C09 qualification and one-pending rules.
 
+The user approved one additional trial at10November01:37UTC; it remains
+reserved/unconsumed while P16 is pending. C10 private inference is nowRUNNING
+on160 fresh CASMI2022 queries,40 development/120 reserved, after identity and
+bounded raw-spectrum exclusions. Labels stay local and the notebook computes
+no label metrics. See `docs/C10-CASMI2022-2026-11-10.md`; select/freeze using
+only40dev before reading120reserved. This private run is not another submission.
+
 New C09E lead: one fixed external-reference matching rule on unchanged P01,
 inspired by alexchilton's public external-library approach. Its author's team
 was0.484 at the9November evening scan; that corroborates the family, not this exact source version.

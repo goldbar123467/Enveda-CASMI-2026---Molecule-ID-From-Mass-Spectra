@@ -8,6 +8,8 @@ reportsPENDING and native UI showsNotebook Running. This is the ONLY pending
 submission globally. Do not resubmit or send another trial until its actual
 score resolves. P01/P13 remain champion0.480. P15/ref58163163 is COMPLETE0.479,
 no reported error; never resubmit P15. Durable intent was resolved to58181280.
+The10November01:37UTC approval for one further trial is reserved/unconsumed.
+C10's running private inference is validation only, not a leaderboard submission.
 
 | Date (UTC) | Slot | Kernel | Change | Ref | Public LB |
 |---|---|---|---|---|---|

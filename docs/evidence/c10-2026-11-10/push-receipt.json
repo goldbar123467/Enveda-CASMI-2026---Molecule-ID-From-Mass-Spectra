@@ -1,0 +1,13 @@
+{
+  "checked_utc": "2026-11-10T02:16:54.603708+00:00",
+  "kernel": "clarkkitchen/casmi26-c10-unlabelled-casmi2022-validation",
+  "version": 1,
+  "status": "RUNNING",
+  "is_private": true,
+  "internet": false,
+  "docker_image": "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461",
+  "remote_scientific_sha256": "2c0927016916c8228c749125957220effcc90af39532dbfee6db077f144b93ec",
+  "notebook_sha256": "98a304613ba2e38a9814465e8632ddfd7bca7cc2df4af63c98b0ca09e182ca48",
+  "scoring_submission": false,
+  "slug_note": "Kaggle created the title-derived slug; track this existing run, never push a duplicate to the initially requested slug."
+}

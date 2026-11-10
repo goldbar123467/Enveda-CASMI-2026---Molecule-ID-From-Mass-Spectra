@@ -35,7 +35,7 @@ def main():
             submissions=[normalize(r) for r in api.competition_submissions('enveda-CASMI26-molecule-id-mass-spectra')]
             pending=[r for r in submissions if r['status'] not in ('COMPLETE','ERROR','CANCELLED','CANCELED')]
             with (ROOT/'runs.csv').open(newline='',encoding='utf-8') as stream:rows=list(csv.DictReader(stream))
-            refs=list(dict.fromkeys('clarkkitchen/casmi26-'+r['ref'].split()[0] for r in rows if r['id'].startswith('C09') and r['platform'].startswith('kaggle') and r['platform']!='kaggle-submission'))
+            refs=list(dict.fromkeys('clarkkitchen/casmi26-'+r['ref'].split()[0] for r in rows if r['id'].startswith(('C09','C10')) and r['platform'].startswith('kaggle') and r['platform']!='kaggle-submission'))
             cloud={}
             for ref in refs:
                 value=api.kernels_status(ref);cloud[ref]=dict(status=status_name(value))
