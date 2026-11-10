@@ -1,0 +1,43 @@
+{
+  "frozen_utc": "2026-11-10T17:50:59.383835+00:00",
+  "prediction_sha256": {
+    "C08-parent_negative": "2637b5dc0812eee4f742d51bdcab825880355ab6abb7a4144d06645da922d049",
+    "C09-control_negative": "da2eccffcca8e7c1c6bc781550882c20a07d5069ce9fb41fbab7029b881c2a56",
+    "C14-CE_negative": "15af12c4ae2e402449f70f12fe349fb830680165223e279e371b07717f95e3ce",
+    "C15-NP_negative": "bad47990a5f06c9f25102dc4b13d7b90ab03ae1f7a666b3139c4003c79cf8498",
+    "C18-peak-drop_negative": "a5fba3dbb0654037f484ad025ce9f466eca42c6e2f5785a3daf2da0b532fc872",
+    "C14-CE_allmode": "c3e0df1d5b8f6b623145c40cd564eb270ebb7eee5efecea64c43f599503e4f1b",
+    "C15-NP_allmode": "68e8b3e5fd7405ae600568aa1af5b79fe9f1b75459af5f2ae28f61b7112703a3",
+    "C18-peak-drop_allmode": "272957fc9a6d963d2aa0886e59cc10c10587017b812faac57936460d91b1b66d",
+    "C22-peak-dose_allmode": "ce9a80ed8430203bb6f6a484305eb32501f28edd6fbe7f820126b59d6b1908c0",
+    "C24_negative": "87f658971af2abdc93c045a6beb15609210ef4e4523807c10fff3cf571bb0622",
+    "C28_allmode": "b04bf10b6a17d5b12b33198e001c659cdba357fc9d9485e388d4c6696f39677b",
+    "C09_allmode": "5ada2dc0ddbcb3fca845efcd05a0bb37f3b367757b8d2cc550389b26ccd760e3",
+    "C29_public": "1ec9da82f89cd7e0c359e2b2ce7b34ec7bd391e5f8e6d757c7667e3981c7e17e"
+  },
+  "C22_manifest_sha256": "d34719302b08256122e45e0f83b6e25bff472eff3ed4638789fd45280b53a456",
+  "C22_negative_receipt": {
+    "arm": "peak-drop-dose",
+    "models": 2,
+    "folds": [
+      0,
+      1
+    ],
+    "cache_precision": "float16",
+    "smoke": false,
+    "steps": 55000,
+    "manifest_sha256": "d34719302b08256122e45e0f83b6e25bff472eff3ed4638789fd45280b53a456",
+    "baseline_content_sha256": "59ecba0ba8accfc4df45334390c45811630975b3ca7a849eeda7baa1d49cbf19",
+    "queries_sha256": "60dad0082b420edd5f07f1a3d3fb373f51bdeecc117b8224f90fe285d3de1f8e",
+    "scored_molecules": 80,
+    "unsupported_molecules": [],
+    "unprocessed_molecules": 0,
+    "input_errors": 0,
+    "peak_selection": "stable_intensity_then_mz",
+    "spectrum_aggregation": "all usable spectra, equal average",
+    "model_aggregation": "mean of per-query standardized raw scores",
+    "numpy_version": "2.0.2",
+    "torch_version": "2.11.0+cu128"
+  },
+  "reserved_labels_read": false
+}

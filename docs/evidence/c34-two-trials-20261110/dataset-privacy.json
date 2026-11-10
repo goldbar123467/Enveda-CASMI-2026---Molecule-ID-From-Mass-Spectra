@@ -1,0 +1,21 @@
+{
+  "checked_utc": "2026-11-10T17:56:43.972196+00:00",
+  "datasets": [
+    {
+      "ref": "clarkkitchen/casmi26-c22-peak-models-20261110",
+      "isPrivate": true,
+      "currentVersionNumber": 1,
+      "id": 13239879,
+      "title": "CASMI26 C22 peak dropout dose models",
+      "status": "ready"
+    },
+    {
+      "ref": "clarkkitchen/casmi26-c18-peak-models-20261110",
+      "isPrivate": true,
+      "currentVersionNumber": 1,
+      "id": 13239919,
+      "title": "CASMI26 C18 NP balanced compatible models",
+      "status": "ready"
+    }
+  ]
+}

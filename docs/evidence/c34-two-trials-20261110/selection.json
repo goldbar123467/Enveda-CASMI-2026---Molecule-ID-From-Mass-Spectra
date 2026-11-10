@@ -1,0 +1,549 @@
+{
+  "completed_utc": "2026-11-10T17:51:00.031623+00:00",
+  "selected": [
+    "C22-peak-dose_allmode",
+    "C18-peak-drop_allmode"
+  ],
+  "ranking": [
+    "C22-peak-dose_allmode",
+    "C18-peak-drop_allmode",
+    "C08-parent_negative",
+    "C09-control_negative",
+    "C18-peak-drop_negative",
+    "C24_negative",
+    "C14-CE_negative",
+    "C15-NP_negative",
+    "C15-NP_allmode",
+    "C28_allmode",
+    "C09_allmode",
+    "C14-CE_allmode",
+    "C29_public"
+  ],
+  "results": {
+    "C08-parent_negative": {
+      "full240": {
+        "n": 240,
+        "baseline_mrr25": 0.28374784096858907,
+        "candidate_mrr25": 0.2843037364655643,
+        "delta": 0.0005558954969752182,
+        "ci95": [
+          -0.0004054533196851312,
+          0.0016863327373413466
+        ],
+        "improved": 9,
+        "harmed": 8
+      },
+      "positive160": {
+        "n": 160,
+        "baseline_mrr25": 0.27874430083805085,
+        "candidate_mrr25": 0.27874430083805085,
+        "delta": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "improved": 0,
+        "harmed": 0
+      },
+      "negative80": {
+        "n": 80,
+        "baseline_mrr25": 0.29375492122966546,
+        "candidate_mrr25": 0.29542260772059115,
+        "delta": 0.0016676864909256546,
+        "ci95": [
+          -0.0011525955044482537,
+          0.00504997190363386
+        ],
+        "improved": 9,
+        "harmed": 8
+      },
+      "truths_lost": 0,
+      "truths_present": 150
+    },
+    "C09-control_negative": {
+      "full240": {
+        "n": 240,
+        "baseline_mrr25": 0.28374784096858907,
+        "candidate_mrr25": 0.28411425848138816,
+        "delta": 0.0003664175127990916,
+        "ci95": [
+          -0.0007045786247242326,
+          0.0015546420415204257
+        ],
+        "improved": 8,
+        "harmed": 9
+      },
+      "positive160": {
+        "n": 160,
+        "baseline_mrr25": 0.27874430083805085,
+        "candidate_mrr25": 0.27874430083805085,
+        "delta": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "improved": 0,
+        "harmed": 0
+      },
+      "negative80": {
+        "n": 80,
+        "baseline_mrr25": 0.29375492122966546,
+        "candidate_mrr25": 0.2948541737680627,
+        "delta": 0.001099252538397275,
+        "ci95": [
+          -0.002134847658200502,
+          0.004629338293715228
+        ],
+        "improved": 8,
+        "harmed": 9
+      },
+      "truths_lost": 0,
+      "truths_present": 150
+    },
+    "C14-CE_negative": {
+      "full240": {
+        "n": 240,
+        "baseline_mrr25": 0.28374784096858907,
+        "candidate_mrr25": 0.2840158086819902,
+        "delta": 0.00026796771340114976,
+        "ci95": [
+          -0.0008225865046975733,
+          0.0014578892360577727
+        ],
+        "improved": 9,
+        "harmed": 9
+      },
+      "positive160": {
+        "n": 160,
+        "baseline_mrr25": 0.27874430083805085,
+        "candidate_mrr25": 0.27874430083805085,
+        "delta": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "improved": 0,
+        "harmed": 0
+      },
+      "negative80": {
+        "n": 80,
+        "baseline_mrr25": 0.29375492122966546,
+        "candidate_mrr25": 0.2945588243698689,
+        "delta": 0.0008039031402034492,
+        "ci95": [
+          -0.002445786027268226,
+          0.00434547055273158
+        ],
+        "improved": 9,
+        "harmed": 9
+      },
+      "truths_lost": 0,
+      "truths_present": 150
+    },
+    "C15-NP_negative": {
+      "full240": {
+        "n": 240,
+        "baseline_mrr25": 0.28374784096858907,
+        "candidate_mrr25": 0.28401355637275266,
+        "delta": 0.0002657154041635464,
+        "ci95": [
+          -0.0005286399301879179,
+          0.001096137953964966
+        ],
+        "improved": 9,
+        "harmed": 5
+      },
+      "positive160": {
+        "n": 160,
+        "baseline_mrr25": 0.27874430083805085,
+        "candidate_mrr25": 0.27874430083805085,
+        "delta": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "improved": 0,
+        "harmed": 0
+      },
+      "negative80": {
+        "n": 80,
+        "baseline_mrr25": 0.29375492122966546,
+        "candidate_mrr25": 0.2945520674421561,
+        "delta": 0.0007971462124906393,
+        "ci95": [
+          -0.0016240877057561462,
+          0.0032589617815212807
+        ],
+        "improved": 9,
+        "harmed": 5
+      },
+      "truths_lost": 0,
+      "truths_present": 150
+    },
+    "C18-peak-drop_negative": {
+      "full240": {
+        "n": 240,
+        "baseline_mrr25": 0.28374784096858907,
+        "candidate_mrr25": 0.2841118665082481,
+        "delta": 0.00036402553965903645,
+        "ci95": [
+          -0.0005681679594556923,
+          0.0014557437974344052
+        ],
+        "improved": 9,
+        "harmed": 9
+      },
+      "positive160": {
+        "n": 160,
+        "baseline_mrr25": 0.27874430083805085,
+        "candidate_mrr25": 0.27874430083805085,
+        "delta": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "improved": 0,
+        "harmed": 0
+      },
+      "negative80": {
+        "n": 80,
+        "baseline_mrr25": 0.29375492122966546,
+        "candidate_mrr25": 0.29484699784864254,
+        "delta": 0.0010920766189771094,
+        "ci95": [
+          -0.001688781326772961,
+          0.004353420773205253
+        ],
+        "improved": 9,
+        "harmed": 9
+      },
+      "truths_lost": 0,
+      "truths_present": 150
+    },
+    "C14-CE_allmode": {
+      "full240": {
+        "n": 240,
+        "baseline_mrr25": 0.28374784096858907,
+        "candidate_mrr25": 0.28309263536050033,
+        "delta": -0.0006552056080887356,
+        "ci95": [
+          -0.0031096967228570367,
+          0.0016218967692917963
+        ],
+        "improved": 23,
+        "harmed": 25
+      },
+      "positive160": {
+        "n": 160,
+        "baseline_mrr25": 0.27874430083805085,
+        "candidate_mrr25": 0.277359540855816,
+        "delta": -0.0013847599822348277,
+        "ci95": [
+          -0.0046629630709364165,
+          0.001504268256441485
+        ],
+        "improved": 14,
+        "harmed": 16
+      },
+      "negative80": {
+        "n": 80,
+        "baseline_mrr25": 0.29375492122966546,
+        "candidate_mrr25": 0.2945588243698689,
+        "delta": 0.0008039031402034492,
+        "ci95": [
+          -0.002445786027268226,
+          0.00434547055273158
+        ],
+        "improved": 9,
+        "harmed": 9
+      },
+      "truths_lost": 0,
+      "truths_present": 150
+    },
+    "C15-NP_allmode": {
+      "full240": {
+        "n": 240,
+        "baseline_mrr25": 0.28374784096858907,
+        "candidate_mrr25": 0.28375671367840993,
+        "delta": 8.872709820851738e-06,
+        "ci95": [
+          -0.0015283979387234999,
+          0.00157078391898922
+        ],
+        "improved": 20,
+        "harmed": 22
+      },
+      "positive160": {
+        "n": 160,
+        "baseline_mrr25": 0.27874430083805085,
+        "candidate_mrr25": 0.2783590367965368,
+        "delta": -0.00038526404151404195,
+        "ci95": [
+          -0.0023228433892496392,
+          0.0016715242223054707
+        ],
+        "improved": 11,
+        "harmed": 17
+      },
+      "negative80": {
+        "n": 80,
+        "baseline_mrr25": 0.29375492122966546,
+        "candidate_mrr25": 0.2945520674421561,
+        "delta": 0.0007971462124906393,
+        "ci95": [
+          -0.0016240877057561462,
+          0.0032589617815212807
+        ],
+        "improved": 9,
+        "harmed": 5
+      },
+      "truths_lost": 0,
+      "truths_present": 150
+    },
+    "C18-peak-drop_allmode": {
+      "full240": {
+        "n": 240,
+        "baseline_mrr25": 0.28374784096858907,
+        "candidate_mrr25": 0.28456299401636087,
+        "delta": 0.0008151530477718387,
+        "ci95": [
+          -0.0008946853072371524,
+          0.002606696964277265
+        ],
+        "improved": 24,
+        "harmed": 24
+      },
+      "positive160": {
+        "n": 160,
+        "baseline_mrr25": 0.27874430083805085,
+        "candidate_mrr25": 0.2794209921002201,
+        "delta": 0.0006766912621692032,
+        "ci95": [
+          -0.0013863038972873531,
+          0.0028166359197379404
+        ],
+        "improved": 15,
+        "harmed": 15
+      },
+      "negative80": {
+        "n": 80,
+        "baseline_mrr25": 0.29375492122966546,
+        "candidate_mrr25": 0.29484699784864254,
+        "delta": 0.0010920766189771094,
+        "ci95": [
+          -0.001688781326772961,
+          0.004353420773205253
+        ],
+        "improved": 9,
+        "harmed": 9
+      },
+      "truths_lost": 0,
+      "truths_present": 150
+    },
+    "C22-peak-dose_allmode": {
+      "full240": {
+        "n": 240,
+        "baseline_mrr25": 0.28374784096858907,
+        "candidate_mrr25": 0.284919310153927,
+        "delta": 0.0011714691853379764,
+        "ci95": [
+          -0.000479460344207555,
+          0.0029428504837983303
+        ],
+        "improved": 26,
+        "harmed": 22
+      },
+      "positive160": {
+        "n": 160,
+        "baseline_mrr25": 0.27874430083805085,
+        "candidate_mrr25": 0.27966222400965046,
+        "delta": 0.0009179231715996421,
+        "ci95": [
+          -0.0011862851405130815,
+          0.0030780572725885224
+        ],
+        "improved": 17,
+        "harmed": 13
+      },
+      "negative80": {
+        "n": 80,
+        "baseline_mrr25": 0.29375492122966546,
+        "candidate_mrr25": 0.29543348244248013,
+        "delta": 0.001678561212814645,
+        "ci95": [
+          -0.0008585406112205646,
+          0.004772303848810716
+        ],
+        "improved": 9,
+        "harmed": 9
+      },
+      "truths_lost": 0,
+      "truths_present": 150
+    },
+    "C24_negative": {
+      "full240": {
+        "n": 240,
+        "baseline_mrr25": 0.28374784096858907,
+        "candidate_mrr25": 0.28406162963999654,
+        "delta": 0.0003137886714074624,
+        "ci95": [
+          -0.0007211335387944793,
+          0.0015017014647121308
+        ],
+        "improved": 9,
+        "harmed": 12
+      },
+      "positive160": {
+        "n": 160,
+        "baseline_mrr25": 0.27874430083805085,
+        "candidate_mrr25": 0.27874430083805085,
+        "delta": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "improved": 0,
+        "harmed": 0
+      },
+      "negative80": {
+        "n": 80,
+        "baseline_mrr25": 0.29375492122966546,
+        "candidate_mrr25": 0.29469628724388786,
+        "delta": 0.0009413660142223873,
+        "ci95": [
+          -0.002138829331129565,
+          0.004416109749028882
+        ],
+        "improved": 9,
+        "harmed": 12
+      },
+      "truths_lost": 0,
+      "truths_present": 150
+    },
+    "C28_allmode": {
+      "full240": {
+        "n": 240,
+        "baseline_mrr25": 0.28374784096858907,
+        "candidate_mrr25": 0.2835401439421033,
+        "delta": -0.0002076970264857263,
+        "ci95": [
+          -0.002140736556937214,
+          0.00176789220858977
+        ],
+        "improved": 22,
+        "harmed": 28
+      },
+      "positive160": {
+        "n": 160,
+        "baseline_mrr25": 0.27874430083805085,
+        "candidate_mrr25": 0.2779218287195261,
+        "delta": -0.00082247211852475,
+        "ci95": [
+          -0.003308015358179831,
+          0.0016181607591969419
+        ],
+        "improved": 14,
+        "harmed": 19
+      },
+      "negative80": {
+        "n": 80,
+        "baseline_mrr25": 0.29375492122966546,
+        "candidate_mrr25": 0.29477677438725775,
+        "delta": 0.0010218531575923212,
+        "ci95": [
+          -0.0022103708514675056,
+          0.004543066236201877
+        ],
+        "improved": 8,
+        "harmed": 9
+      },
+      "truths_lost": 0,
+      "truths_present": 150
+    },
+    "C09_allmode": {
+      "full240": {
+        "n": 240,
+        "baseline_mrr25": 0.28374784096858907,
+        "candidate_mrr25": 0.28353812025199915,
+        "delta": -0.00020972071658991164,
+        "ci95": [
+          -0.0021389248537589285,
+          0.0017867647773873584
+        ],
+        "improved": 22,
+        "harmed": 29
+      },
+      "positive160": {
+        "n": 160,
+        "baseline_mrr25": 0.27874430083805085,
+        "candidate_mrr25": 0.27788009349396736,
+        "delta": -0.0008642073440835049,
+        "ci95": [
+          -0.003358954291886518,
+          0.0015829145409544
+        ],
+        "improved": 14,
+        "harmed": 20
+      },
+      "negative80": {
+        "n": 80,
+        "baseline_mrr25": 0.29375492122966546,
+        "candidate_mrr25": 0.2948541737680627,
+        "delta": 0.001099252538397275,
+        "ci95": [
+          -0.002134847658200502,
+          0.004629338293715228
+        ],
+        "improved": 8,
+        "harmed": 9
+      },
+      "truths_lost": 0,
+      "truths_present": 150
+    },
+    "C29_public": {
+      "full240": {
+        "n": 240,
+        "baseline_mrr25": 0.28374784096858907,
+        "candidate_mrr25": 0.2787936113316969,
+        "delta": -0.0049542296368921745,
+        "ci95": [
+          -0.012645104090561713,
+          0.003182253135849786
+        ],
+        "improved": 25,
+        "harmed": 33
+      },
+      "positive160": {
+        "n": 160,
+        "baseline_mrr25": 0.27874430083805085,
+        "candidate_mrr25": 0.2735520608562404,
+        "delta": -0.005192239981810415,
+        "ci95": [
+          -0.01387683313150128,
+          0.0033329325231656894
+        ],
+        "improved": 17,
+        "harmed": 27
+      },
+      "negative80": {
+        "n": 80,
+        "baseline_mrr25": 0.29375492122966546,
+        "candidate_mrr25": 0.28927671228260976,
+        "delta": -0.004478208947055697,
+        "ci95": [
+          -0.020236514787296038,
+          0.013254514531628502
+        ],
+        "improved": 8,
+        "harmed": 6
+      },
+      "truths_lost": 0,
+      "truths_present": 150
+    }
+  },
+  "protocol_sha256": "f88759ad09370aa5dbd2c86df224cc4d8298c55414465042a5841fedd04fc2fe",
+  "prediction_freeze_sha256": "45e90c6d86dea1006315b2cc2093cc24ce8b73068726bf35e9a4296e1d05c204",
+  "reserved_labels_read": false,
+  "statistical_promotion": false,
+  "reason": "Exactly two explicit user scoring trials; ranking on already used development only. Confidence intervals and failed previous gates remain disclosed. Real smoke and independent audits required before sending."
+}

@@ -229,3 +229,11 @@ scripts/public_reference_fixture.py text eol=lf
 scripts/audit_c33_reference_local.py text eol=lf
 
 scripts/stop_after_current_runs.py text eol=lf
+
+scripts/select_two_past_trials.py text eol=lf
+scripts/build_two_past_trials.py text eol=lf
+scripts/audit_two_past_trials.py text eol=lf
+scripts/submit_two_past_trials.py text eol=lf
+scripts/monitor_two_past_trials.py text eol=lf
+kaggle/forks/p18-p19-past-trained-trials/* -text whitespace=trailing-space,space-before-tab,cr-at-eol
+docs/evidence/c34-two-trials-20261110/* -text whitespace=trailing-space,space-before-tab,cr-at-eol

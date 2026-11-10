@@ -1,6 +1,6 @@
 # Runs
 
-Updated 2026-11-10 15:00 UTC by `scripts/update_runs.py` (hourly). Generated from `runs.csv` — edit that file, not this one.
+Updated 2026-11-10 18:02 UTC by `scripts/update_runs.py` (hourly). Generated from `runs.csv` — edit that file, not this one.
 
 - Kaggle quota: GPU 18.7 h used of 30 h · TPU 0.0 h of 20 h · resets 2026-11-14 00:00 UTC
 - Submissions today (UTC): 1 of 5 — see `SUBMISSIONS.md`
@@ -10,11 +10,14 @@ Updated 2026-11-10 15:00 UTC by `scripts/update_runs.py` (hourly). Generated fro
 | id | platform | kind | ref | started (UTC) | status | purpose | progress |
 |---|---|---|---|---|---|---|---|
 | C09V | kaggle-gpu | diag | c09-coverage-controls v1 | 2026-11-09 14:44 | **cancel_requested** | C09 dual-device diagnostic: exact P14 full128 external pipeline negative control onGPU0; existing C08 expanded candidate coverage/scoring onGPU1; no scoring submission | Old128 panel superseded after67 base-connected acquisition groups found; cancellation requested, not acknowledged. No allocation/training/validation result; no GPU quota added at16:34UTC. |
+| C34SMOKE | kaggle-2xt4 | diag | p18-p19-past-trained-trials v1 | 2026-11-10 17:56 | **queued** | Private real Kaggle smoke: exact P16 parent plus retained C22/C18 all-mode0.20 tails; two distinct scoring files | One source/version, models on distinct T4s. Both stages required; no submission yet. |
 
 ## Finished (newest first)
 
 | id | platform | kind | ref | started (UTC) | ended (UTC) | status | purpose | result |
 |---|---|---|---|---|---|---|---|---|
+| C34SEL | local-2070 | eval | outputs/local/two-past-trials-20261110/selection.log | 2026-11-10 17:50 | 2026-11-10 17:56 | complete | Rank retained completed-model past recipes on common used240 for exactly two explicitly requested sequential scoring trials | Selected completed C22allmode +.001171469 and C18allmode +.000815153 on common240; both95%CIs cross0. No training/reserved labels. Explicit two scoring trials, not supported promotion. |
+| C34D29 | local-cpu | eval | outputs/local/c29-public-replay-20261110/development.json | 2026-11-10 17:49 | 2026-11-10 17:49 | complete | Frozen C29full240 development resumed under explicit two-past-trials request; no reserved labels | Rejected:delta-.00495423 CI[-.01264510,.00318225],25improved33harmed; bothpolarities negative. Not a chosen trial. |
 | C29COL | local-cpu | diag | outputs/local/c29-public-replay-20261110/collector.log | 2026-11-10 12:21 | 2026-11-10 14:59 | complete | Bounded collection of exact returned C29v1 handle, source/real240 verification; no metrics | Collector8600 exited normally; full240 required artifacts/source hashes verified and saved. No label metrics or submission; old next_action in collection receipt is superseded by explicit userstop. |
 | STOPWAIT | local-cpu | diag | outputs/local/stop-after-runs-20261110/controller.log | 2026-11-10 14:03 | 2026-11-10 14:59 | complete | Honor explicit stop-after-current-runs request; observe exact C29/C31 handles and let existing collectors finish | Both exact current Kaggle runs COMPLETE; both collectors exited. Stop controller exited after final stopped marker. Native hourly automation PAUSED, general tracker/updater stopped. Pause goal; silver unmet; explicit user resumption required. |
 | C29V | kaggle-2xt4 | eval | c29-fixed-public-replay-development v1 | 2026-11-10 12:16 | 2026-11-10 14:58 | complete | Private full240 P01/control pipeline plus one fixed public MASS/dual-reference recipe; no labels or publictrial | Exact frozen private v1 COMPLETE; full240 outputs retained. Baseline replay exact; real Engine2 recovery full240 with zero dropped/placeholder rows. No development quality metrics or C30selection under userstop. |

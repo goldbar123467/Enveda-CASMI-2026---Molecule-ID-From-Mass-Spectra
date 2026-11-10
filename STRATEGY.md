@@ -1,5 +1,17 @@
 # C09 results and P16 scoring trial — 9–10 November
 
+## CURRENT AUTHORIZATION — 10 November, two existing-work scoring trials
+
+The user explicitly requested two best past-work submissions for scoring. This
+permits bounded evaluation, production packaging, real Kaggle smoke/audits and
+exactly TWO new sequential submissions. No new training or hourly campaign is
+authorized by this instruction. The hourly automation and silver goal stay paused.
+Keep at most one pending globally, reconcile actual results, retain unique durable
+intents and preserve the0.480 champion. Historical stop markers are archived for
+this bounded task; do not treat the older stop paragraph as a current blocker.
+Do not select on reserved labels or call weak development changes proven gains.
+
+
 ## USER STOPPED CAMPAIGN — 10 November,14:59 UTC
 
 Latest user instruction: "after this next full run finishes stop". Both current

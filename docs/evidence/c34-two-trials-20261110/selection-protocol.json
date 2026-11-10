@@ -1,0 +1,43 @@
+{
+  "prepared_utc": "2026-11-10T17:50:56.454341+00:00",
+  "input_sha256": {
+    "outputs\\local\\c21-negative-tail-20261110\\parent.csv": "76f63eb680300424b4c90a33c7cc8c98a2f345c7b734587fdc4ac57dc81792c4",
+    "outputs\\local\\c21-negative-tail-20261110\\queries.parquet": "ef072e28bc637ae3b36cceabbb72f2a431b4125a4f8349a534a60bf01891cc86",
+    "outputs\\local\\c21-negative-tail-20261110\\negative-parent.csv": "c8fdf011325a7fce99c49901a2843f8089ab07fad705f189c0e9a6c04c08a202",
+    "outputs\\local\\c21-negative-tail-20261110\\negative-queries.parquet": "60dad0082b420edd5f07f1a3d3fb373f51bdeecc117b8224f90fe285d3de1f8e",
+    "outputs\\local\\c21-negative-tail-20261110\\fingerprint-smiles.parquet": "3c6031cab7803deb24c15e8e5c5c9b2aa4077e8c829d1561be0ba433f4a87e9d",
+    "outputs\\local\\c21-negative-tail-20261110\\fingerprints.npy": "e21a5c673cd426a63c116a48b16b5dfb12a72fd09efe05e3b0bb6abeb45cb734",
+    "outputs\\local\\c21-negative-tail-20261110\\P15.csv": "694e9105546860f42bf92423612737c9633355c3dec97abbaa2fcf2ee7d144c8",
+    "outputs\\local\\c10-casmi2022-20261110\\labels.csv": "f1d3b96f002827d2c9ddd1e61f0fe4e97551a27859da8c74d248588893515c6a",
+    "outputs\\local\\c20-negative-development-20261110\\labels.csv": "4d0f0803904dcf592fa9bda6786db72b40d9e27790ce0f891bb9ed700f82e1a3",
+    "outputs\\publish\\c22-peak-models-20261110\\c08-manifest.json": "d34719302b08256122e45e0f83b6e25bff472eff3ed4638789fd45280b53a456",
+    "outputs\\local\\c21-negative-tail-20261110\\C14-CE-predictions.csv": "15af12c4ae2e402449f70f12fe349fb830680165223e279e371b07717f95e3ce",
+    "outputs\\local\\c14-evaluation-20261110\\development.csv": "ef7e6cd549098d0abf5a21e15f390b3df6c37cda236d1d152893be2df57ace79",
+    "outputs\\local\\c21-negative-tail-20261110\\C15-NP-predictions.csv": "bad47990a5f06c9f25102dc4b13d7b90ab03ae1f7a666b3139c4003c79cf8498",
+    "outputs\\local\\c15-evaluation-20261110\\development.csv": "77dcdad6f2ef2feec222b48f058a84fc3692f929cf85a46751d6f0a02efaac48",
+    "outputs\\local\\c21-negative-tail-20261110\\C18-peak-drop-predictions.csv": "a5fba3dbb0654037f484ad025ce9f466eca42c6e2f5785a3daf2da0b532fc872",
+    "outputs\\local\\c18-evaluation-20261110\\development.csv": "5acbb9c546d9bd873fdfacea21a874dc7d3ac47fc261387b58bafe0d8e03ea1c",
+    "outputs\\local\\c22-evaluation-20261110\\development.csv": "5f04cdc5441fbbfe2f1f9cbd97566251fd1f01d639201bbd58f464080b941fcb",
+    "outputs\\local\\c24-evaluation-20261110\\development.csv": "87f658971af2abdc93c045a6beb15609210ef4e4523807c10fff3cf571bb0622",
+    "outputs\\local\\c28-evaluation-20261110\\C28-predictions.csv": "b04bf10b6a17d5b12b33198e001c659cdba357fc9d9485e388d4c6696f39677b",
+    "outputs\\local\\c28-evaluation-20261110\\matched_C09-predictions.csv": "5ada2dc0ddbcb3fca845efcd05a0bb37f3b367757b8d2cc550389b26ccd760e3",
+    "outputs\\forks\\c29-public-replay-v1\\c29_all_reference.csv": "24a652adb6ccdaf18e9adf49405aa8d99eaebc7f76716f058eafa489bf2e6d22",
+    "outputs\\local\\c21-negative-tail-20261110\\C08-parent-predictions.csv": "2637b5dc0812eee4f742d51bdcab825880355ab6abb7a4144d06645da922d049",
+    "outputs\\local\\c21-negative-tail-20261110\\C09-control-predictions.csv": "da2eccffcca8e7c1c6bc781550882c20a07d5069ce9fb41fbab7029b881c2a56",
+    "outputs\\local\\c21-negative-tail-20261110\\development-predictions.csv": "ec4b38df68983895b1f6a7c493b36c71a14ad6481c391d2609dc1a31b0a15f2e"
+  },
+  "source_sha256": {
+    "select_two_past_trials.py": "eee70ef6f2fa6167d0364f518a9d0eb7f7af16a528176bf8559e43c9375cf4f5",
+    "compatible_tail.py": "b5677d884008f0fd16a66ca045eb5c5c61420e895c66612d3fefdef166f58378",
+    "finish_c09_confirmation.py": "d74e3258498cbaf496f91ae3398f54c4131ee25569b269e18e318ed5c9d615af",
+    "tail_fusion.py": "b1fd92ee93412454c80942c70fd3bc72f89f07a673ff1a319d7e821be368a5d4"
+  },
+  "choice": "Top two unsubmitted complete fitted recipes by full240 MRR, exact 0.20/offset3; tie lexical. All labels previously used; no reserved labels.",
+  "candidate_pool": "Existing all-mode C09/C14/C15/C18/C22/C28/C29 and previously fixed negative-only C08/C09/C14/C15/C18/C24.",
+  "additional_inference": "Only missing C22 negative80 inference using retained final55000 checkpoints; no training or checkpoint selection.",
+  "excluded_C19": "Only five cross-validation fold fits and OOF predictions retained; prospective final production fit was never performed. This task uses completed production fits without new training.",
+  "statistical_promotion": false,
+  "user_requested_trials": 2,
+  "maximum_pending": 1,
+  "fresh_reserved_labels_read": false
+}

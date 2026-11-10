@@ -1,0 +1,259 @@
+{
+  "completed_utc": "2026-11-10T17:47:02.632099+00:00",
+  "queries": 240,
+  "positive": 160,
+  "negative": 80,
+  "candidate": "C29_fixed_public_mass_dualref",
+  "comparisons": {
+    "P01": {
+      "n": 240,
+      "baseline_mrr25": 0.28374784096858907,
+      "candidate_mrr25": 0.2787936113316969,
+      "delta": -0.0049542296368921745,
+      "ci95": [
+        -0.012645104090561713,
+        0.003182253135849786
+      ],
+      "improved": 25,
+      "harmed": 33
+    },
+    "P16": {
+      "n": 240,
+      "baseline_mrr25": 0.28374784096858907,
+      "candidate_mrr25": 0.2787936113316969,
+      "delta": -0.0049542296368921745,
+      "ci95": [
+        -0.012645104090561713,
+        0.003182253135849786
+      ],
+      "improved": 25,
+      "harmed": 33
+    }
+  },
+  "alias_excluded": {
+    "P01": {
+      "n": 240,
+      "baseline_mrr25": 0.28374784096858907,
+      "candidate_mrr25": 0.2787936113316969,
+      "delta": -0.0049542296368921745,
+      "ci95": [
+        -0.012645104090561713,
+        0.003182253135849786
+      ],
+      "improved": 25,
+      "harmed": 33
+    },
+    "P16": {
+      "n": 240,
+      "baseline_mrr25": 0.28374784096858907,
+      "candidate_mrr25": 0.2787936113316969,
+      "delta": -0.0049542296368921745,
+      "ci95": [
+        -0.012645104090561713,
+        0.003182253135849786
+      ],
+      "improved": 25,
+      "harmed": 33
+    }
+  },
+  "polarity": {
+    "positive": {
+      "P01": {
+        "n": 160,
+        "baseline_mrr25": 0.27874430083805085,
+        "candidate_mrr25": 0.2735520608562404,
+        "delta": -0.005192239981810415,
+        "ci95": [
+          -0.01387683313150128,
+          0.0033329325231656894
+        ],
+        "improved": 17,
+        "harmed": 27
+      },
+      "P16": {
+        "n": 160,
+        "baseline_mrr25": 0.27874430083805085,
+        "candidate_mrr25": 0.2735520608562404,
+        "delta": -0.005192239981810415,
+        "ci95": [
+          -0.01387683313150128,
+          0.0033329325231656894
+        ],
+        "improved": 17,
+        "harmed": 27
+      }
+    },
+    "negative": {
+      "P01": {
+        "n": 80,
+        "baseline_mrr25": 0.29375492122966546,
+        "candidate_mrr25": 0.28927671228260976,
+        "delta": -0.004478208947055697,
+        "ci95": [
+          -0.020236514787296038,
+          0.013254514531628502
+        ],
+        "improved": 8,
+        "harmed": 6
+      },
+      "P16": {
+        "n": 80,
+        "baseline_mrr25": 0.29375492122966546,
+        "candidate_mrr25": 0.28927671228260976,
+        "delta": -0.004478208947055697,
+        "ci95": [
+          -0.020236514787296038,
+          0.013254514531628502
+        ],
+        "improved": 8,
+        "harmed": 6
+      }
+    }
+  },
+  "truths_lost": {
+    "P01": 0,
+    "P16": 0
+  },
+  "truth_coverage": {
+    "P01": 150,
+    "P16": 150,
+    "P14": 150,
+    "P15": 150,
+    "all_reference": 150,
+    "input_alias_excluded": 150
+  },
+  "controls": {
+    "P14": {
+      "aggregate": {
+        "n": 240,
+        "baseline_mrr25": 0.28374784096858907,
+        "candidate_mrr25": 0.2854064548936503,
+        "delta": 0.0016586139250612934,
+        "ci95": [
+          -0.0034058645271638687,
+          0.007054386074451864
+        ],
+        "improved": 27,
+        "harmed": 17
+      },
+      "polarity": {
+        "positive": {
+          "n": 160,
+          "baseline_mrr25": 0.27874430083805085,
+          "candidate_mrr25": 0.2812322217256428,
+          "delta": 0.00248792088759194,
+          "ci95": [
+            -0.0049185683194729254,
+            0.01039204388447809
+          ],
+          "improved": 27,
+          "harmed": 17
+        },
+        "negative": {
+          "n": 80,
+          "baseline_mrr25": 0.29375492122966546,
+          "candidate_mrr25": 0.29375492122966546,
+          "delta": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "improved": 0,
+          "harmed": 0
+        }
+      }
+    },
+    "P15": {
+      "aggregate": {
+        "n": 240,
+        "baseline_mrr25": 0.28374784096858907,
+        "candidate_mrr25": 0.2836196893966488,
+        "delta": -0.00012815157194027177,
+        "ci95": [
+          -0.0020051606775290986,
+          0.001787208919856945
+        ],
+        "improved": 22,
+        "harmed": 28
+      },
+      "polarity": {
+        "positive": {
+          "n": 160,
+          "baseline_mrr25": 0.27874430083805085,
+          "candidate_mrr25": 0.27771823023467757,
+          "delta": -0.0010260706033732349,
+          "ci95": [
+            -0.003464726088513095,
+            0.0013434949872861055
+          ],
+          "improved": 13,
+          "harmed": 20
+        },
+        "negative": {
+          "n": 80,
+          "baseline_mrr25": 0.29375492122966546,
+          "candidate_mrr25": 0.29542260772059115,
+          "delta": 0.0016676864909256546,
+          "ci95": [
+            -0.0011525955044482537,
+            0.00504997190363386
+          ],
+          "improved": 9,
+          "harmed": 8
+        }
+      }
+    }
+  },
+  "source_alias_audits": {
+    "all_reference": {
+      "molecules": 240,
+      "hits": 5,
+      "promoted": 2,
+      "elapsed_s": 34.8,
+      "sourceA_valid_rows": 200724,
+      "sourceB_valid_rows": 124160,
+      "alias_audit": {
+        "reference_rows": 324884,
+        "precursor_candidate_rows": 5919,
+        "input_alias_rows": 0,
+        "excluded": false,
+        "retained_rows": 324884,
+        "labels_used": false,
+        "limitation": "Only precursor10ppm+.002Da candidate rows; rounded full peaks and FP16top96 signatures. No universal provenance or pretraining exclusion claim."
+      },
+      "sourceB_casmi_subset_dropped": true,
+      "metric_identity_dedup_events": 159
+    },
+    "input_alias_excluded": {
+      "molecules": 240,
+      "hits": 5,
+      "promoted": 2,
+      "elapsed_s": 21.3,
+      "sourceA_valid_rows": 200724,
+      "sourceB_valid_rows": 124160,
+      "alias_audit": {
+        "reference_rows": 324884,
+        "precursor_candidate_rows": 5919,
+        "input_alias_rows": 0,
+        "excluded": true,
+        "retained_rows": 324884,
+        "labels_used": false,
+        "limitation": "Only precursor10ppm+.002Da candidate rows; rounded full peaks and FP16top96 signatures. No universal provenance or pretraining exclusion claim."
+      },
+      "sourceB_casmi_subset_dropped": true,
+      "metric_identity_dedup_events": 159
+    }
+  },
+  "public_mass_adduct_unsupported": {
+    "[M+FA-H]-": 25
+  },
+  "truth_absent_mrr": 0,
+  "new_candidate_selected": false,
+  "protocol_sha256": "c6c007355ec8dd6753131da6014ceaac62c898910f62959f17dbff5524405aa1",
+  "input_freeze_sha256": "f0814b9459cdec460dfa7eaab672d886293f4563fc1fe7bbbfc25d450f544c4b",
+  "limitation": "Used CASMI2022 development and reference-source overlap; bounded alias checks do not prove universal exclusion. Preserve wrong-sign controls. Public author score is not this account score.",
+  "all_development_previously_used": true,
+  "C13_confirmation_metrics_read": false,
+  "automatic_submission": false,
+  "submission_qualified": false
+}

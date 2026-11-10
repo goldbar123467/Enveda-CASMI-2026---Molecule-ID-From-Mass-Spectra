@@ -1,0 +1,24 @@
+{
+  "checked_utc": "2026-11-10T17:57:03.931635+00:00",
+  "kernel": "clarkkitchen/casmi26-p18-p19-past-trained-trials",
+  "version": 1,
+  "private": true,
+  "internet": false,
+  "docker_image": "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461",
+  "remote_scientific_sha256": "b88a91052f2264d0952576227cc4e5d0f0b83801ed5d3440e34d923b6026e916",
+  "status": "QUEUED",
+  "source_data": [
+    "sanpier/casmi-spectrum-model-v1",
+    "clarkkitchen/casmi26-c09e-smoke-fixtures-20261109",
+    "clarkkitchen/casmi26-c18-peak-models-20261110",
+    "clarkkitchen/casmi26-c22-peak-models-20261110",
+    "dmitriigluzdov/casmi26-fold-safe-fpnet",
+    "dmitriigluzdov/casmi26-natural-product-knowledge-table",
+    "dmitriigluzdov/casmi26-natural-product-panel-benchmark",
+    "dmitriigluzdov/casmi26-pubchem-popularity-prior",
+    "dmitriigluzdov/casmi26-attributed-v4g-reproduction-assets",
+    "takumuhata/casmi26-extlib",
+    "sanpier/catalogue-experiment-saner",
+    "metric/rdkit-2026-3-3-wheel"
+  ]
+}
