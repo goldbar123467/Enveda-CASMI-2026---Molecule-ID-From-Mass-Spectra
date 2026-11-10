@@ -1,8 +1,8 @@
 # Runs
 
-Updated 2026-11-10 14:19 UTC by `scripts/update_runs.py` (hourly). Generated from `runs.csv` — edit that file, not this one.
+Updated 2026-11-10 15:00 UTC by `scripts/update_runs.py` (hourly). Generated from `runs.csv` — edit that file, not this one.
 
-- Kaggle quota: GPU 18.0 h used of 30 h · TPU 0.0 h of 20 h · resets 2026-11-14 00:00 UTC
+- Kaggle quota: GPU 18.7 h used of 30 h · TPU 0.0 h of 20 h · resets 2026-11-14 00:00 UTC
 - Submissions today (UTC): 1 of 5 — see `SUBMISSIONS.md`
 
 ## Active
@@ -10,14 +10,14 @@ Updated 2026-11-10 14:19 UTC by `scripts/update_runs.py` (hourly). Generated fro
 | id | platform | kind | ref | started (UTC) | status | purpose | progress |
 |---|---|---|---|---|---|---|---|
 | C09V | kaggle-gpu | diag | c09-coverage-controls v1 | 2026-11-09 14:44 | **cancel_requested** | C09 dual-device diagnostic: exact P14 full128 external pipeline negative control onGPU0; existing C08 expanded candidate coverage/scoring onGPU1; no scoring submission | Old128 panel superseded after67 base-connected acquisition groups found; cancellation requested, not acknowledged. No allocation/training/validation result; no GPU quota added at16:34UTC. |
-| C29V | kaggle-2xt4 | eval | c29-fixed-public-replay-development v1 | 2026-11-10 12:16 | **running** | Private full240 P01/control pipeline plus one fixed public MASS/dual-reference recipe; no labels or publictrial | Accepted v1 at actual title-resolved handle casmi26-c29-fixed-public-replay-development. Never duplicate shorter requested slug. Bothcycles must terminate before outer C30selection/freshC13. |
-| C29COL | local-cpu | diag | outputs/local/c29-public-replay-20261110/collector.log | 2026-11-10 12:21 | **running** | Bounded collection of exact returned C29v1 handle, source/real240 verification; no metrics | Worker 8600 live; RUNNING |
-| STOPWAIT | local-cpu | diag | outputs/local/stop-after-runs-20261110/controller.log | 2026-11-10 14:03 | **running** | Honor explicit stop-after-current-runs request; observe exact C29/C31 handles and let existing collectors finish | Worker 14252 live; draining |
 
 ## Finished (newest first)
 
 | id | platform | kind | ref | started (UTC) | ended (UTC) | status | purpose | result |
 |---|---|---|---|---|---|---|---|---|
+| C29COL | local-cpu | diag | outputs/local/c29-public-replay-20261110/collector.log | 2026-11-10 12:21 | 2026-11-10 14:59 | complete | Bounded collection of exact returned C29v1 handle, source/real240 verification; no metrics | Collector8600 exited normally; full240 required artifacts/source hashes verified and saved. No label metrics or submission; old next_action in collection receipt is superseded by explicit userstop. |
+| STOPWAIT | local-cpu | diag | outputs/local/stop-after-runs-20261110/controller.log | 2026-11-10 14:03 | 2026-11-10 14:59 | complete | Honor explicit stop-after-current-runs request; observe exact C29/C31 handles and let existing collectors finish | Both exact current Kaggle runs COMPLETE; both collectors exited. Stop controller exited after final stopped marker. Native hourly automation PAUSED, general tracker/updater stopped. Pause goal; silver unmet; explicit user resumption required. |
+| C29V | kaggle-2xt4 | eval | c29-fixed-public-replay-development v1 | 2026-11-10 12:16 | 2026-11-10 14:58 | complete | Private full240 P01/control pipeline plus one fixed public MASS/dual-reference recipe; no labels or publictrial | Exact frozen private v1 COMPLETE; full240 outputs retained. Baseline replay exact; real Engine2 recovery full240 with zero dropped/placeholder rows. No development quality metrics or C30selection under userstop. |
 | C31V | kaggle-2xt4 | eval | c31-reserved-public-replay v1 | 2026-11-10 12:39 | 2026-11-10 14:03 | complete | Same frozen C29recipe/query120 predictions in parallel without label metrics; quarantined until C30selection | Private complete120;25artifacts saved. Bothmodels120supported/Engine2full120/originalP01bytesexact. No reservedqualitymetrics. Collector flagged missing optional recovery receipt; attention retained, no rerun under userstop. |
 | C31COL | local-cpu | diag | outputs/local/c31-reserved-public-20261110/collector.log | 2026-11-10 12:42 | 2026-11-10 14:03 | error | Bounded C31 exact-source/real120/unchangedP01 collection without reserved label metrics | 25completed-run artifacts retained. Completeness guard required recovery receipt absent for nonempty120 pool; read-only retentionaudit verifies full120 and exactP01. No repair or retry under userstop. |
 | C29EW | local-cpu | eval | outputs/local/c29-public-replay-20261110/worker.log | 2026-11-10 12:21 | 2026-11-10 13:57 | killed | After exactcollector exit, frozen C29full240 metrics and C30outer selection after both cycles; no reservedmetrics/trial | User requested stop after current full runs. Exact waiting worker25024 stopped; no C29development metrics, C30selection or reservedmetrics started. Cloud jobs/collectors allowed to finish. |

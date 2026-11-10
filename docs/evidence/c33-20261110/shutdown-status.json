@@ -1,0 +1,29 @@
+{
+  "checked_utc": "2026-11-10T14:59:30.395789+00:00",
+  "pid": 14252,
+  "deadline_utc": "2026-11-11T02:00:00+00:00",
+  "state": "stopped",
+  "cloud": {
+    "clarkkitchen/casmi26-c29-fixed-public-replay-development": "COMPLETE",
+    "clarkkitchen/casmi26-c31-reserved-public-replay": "COMPLETE"
+  },
+  "observation_errors": {},
+  "collectors": {
+    "clarkkitchen/casmi26-c29-fixed-public-replay-development": {
+      "pid": 8600,
+      "live": false,
+      "state": "collected"
+    },
+    "clarkkitchen/casmi26-c31-reserved-public-replay": {
+      "pid": 24632,
+      "live": false,
+      "state": "COMPLETE"
+    }
+  },
+  "new_work_permitted": false,
+  "reserved_metrics_read": false,
+  "automatic_submission": false,
+  "completed_utc": "2026-11-10T14:59:30.402556+00:00",
+  "goal_pause_ready": true,
+  "next_action": "Pause the Codex goal per user request; do not pursue silver or launch/evaluate/submit anything further."
+}

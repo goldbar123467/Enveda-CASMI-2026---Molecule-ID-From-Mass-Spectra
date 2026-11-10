@@ -1,25 +1,23 @@
 # Enveda CASMI 2026 — working rules
 
-## USER STOP REQUEST — 10 November, after the current full runs
+## USER STOPPED CAMPAIGN — 10 November,14:59 UTC
 
-Latest user instruction: "after this next full run finishes stop". This supersedes
-continuing toward silver. No new training, cloud runs, submissions or reserved
-metric evaluation. Hourly native heartbeat is PAUSED. Project compute-paused
-marker is set with phase draining_existing_runs; existing C29/C31cloud jobs and
-collectors may finish only. Default is both current runs; optional first-finish
-clarification was offered. Do not infer a new approval from silence.
-C29waiting postprocessor25024 was stopped before development metrics/C30selection.
-C31completed14:03;25artifacts retained, originalP01bytesexact, bothmodels120supported.
-Collector24632 exited with optional-empty-pool-receipt attention; no rerun/repair.
-C29and collector8600 are still finishing. General tracker and hourly metadata updater are stopped. STOPWAIT controller watches exact
-C29/C31handles and collector exits, then sets stopped/tracker-stop flags. Once
-that condition is observed, call update_goal paused per user request and stop.
-Do not mark silver complete. Do not resume any campaign without explicit user
-instruction. P17/C33 is an UNSEALED LOCAL DRAFT, never pushed or qualified; its
-existing local fixture completed, but no further integration/seal/smoke is allowed.
-Read docs/C33-2026-11-10.md and .local/stop-after-current-runs.json before acting.
-The older measured-state sections below are historical and cannot authorize work
-past this stop boundary. Reserved120 remains unconsumed; extra publictrial unused.
+Latest user instruction: "after this next full run finishes stop". Both current
+full private Kaggle runs have now completed: C29 development240 and C31 reserved120
+predictions. Their outputs are retained. C29 collection passed source/coverage/
+baseline checks; C31 retained25 artifacts with its optional recovery-receipt
+attention documented. No development or reserved quality metrics were opened.
+Both collectors and the exact-job stop controller have exited. The general
+tracker, hourly metadata updater and waiting C29 postprocessor are stopped.
+Native hourly automation is PAUSED; project compute-paused phase is stopped.
+Pause the active Codex goal before replying. Silver remains unachieved; do not
+mark the objective complete. Do not launch training, cloud runs, confirmation,
+smoke tests or submissions without explicit new user instruction. The additional
+public submission approval remains unused, and the0.480 champion is preserved.
+P17/C33 remains an UNSEALED LOCAL DRAFT, never pushed or qualified on Kaggle.
+Read docs/C33-2026-11-10.md and docs/evidence/c33-20261110/shutdown-status.json.
+The older measured-state sections below are historical and cannot authorize
+resuming this campaign. Review the stop markers before any explicit resumption.
 
 ## Current measured state — 10 November,12:49 UTC
 

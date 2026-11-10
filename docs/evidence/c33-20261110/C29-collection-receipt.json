@@ -1,0 +1,26 @@
+{
+  "completed_utc": "2026-11-10T14:59:05.089875+00:00",
+  "pid": 8600,
+  "kernel": "clarkkitchen/casmi26-c29-fixed-public-replay-development",
+  "state": "collected",
+  "queries": 240,
+  "artifact_sha256": {
+    "c29_report.json": "4d2bf7b0f0d1977efe427468be690a973744af35bd5bb43dcd91a766a5b79ebc",
+    "c29_public_report.json": "14dcaa10617de8be462634fcfb505c81b2c50cc748ecc9554456ca266e610813",
+    "c29_p01.csv": "e1c272db20899dd1254bd5afe229a7e6d299a194ee268b63caefac1dd1807a5d",
+    "c29_p14.csv": "8702877e23f20eb83b6013db6d512a50486f32ff208c45d8ab7a8fc5c3af5baf",
+    "c29_queries.parquet": "3877308d36d6e100cee1b36e27f0903b82b4094c3d4da680515abd1cdf731b50",
+    "c29_all_reference.csv": "24a652adb6ccdaf18e9adf49405aa8d99eaebc7f76716f058eafa489bf2e6d22",
+    "c29_input_alias_excluded.csv": "24a652adb6ccdaf18e9adf49405aa8d99eaebc7f76716f058eafa489bf2e6d22",
+    "c29_all_reference_audit.json": "d1fb426a40c1ad50fd3bd2ba5f6da4ebbc6ff7b81451ad6e1774cad7da1f25f1",
+    "c29_input_alias_excluded_audit.json": "ae4a247b5cab73a64dc1fb5e410174f994b2c381166e70ecbdfe7d40c5c87bb3",
+    "c29_t4_allocation.json": "d83da1728ab835cff55f994667ee88d4c0789810e22bb76139c2b12963ecf1c3",
+    "c29_gpu1_preflight.json": "6a7dcb9435cb54de2f523b68a4819b8956769adb80cc64a960242a4379456a6d",
+    "c20_engine2_recovery.json": "c5efa3ab43c11e29fff18454c7e2549010047e9f0bad299c7ce2394ca4131a05",
+    "execution_receipt.json": "b42e7f8ee74365a58a4be02a44705378134566466fed12b645bab40b4e95e9c3",
+    "eng_lists.json": "9426b4c7eefa13c7c9f81daa4c61a7e8cdc0ae93e8650c164aeaeb03b38c28fe"
+  },
+  "label_metrics_computed": false,
+  "automatic_submission": false,
+  "next_action": "Evaluate fixed C29used240 only; C30must wait both separate development cycles. Reserved C13metrics remain unread."
+}
