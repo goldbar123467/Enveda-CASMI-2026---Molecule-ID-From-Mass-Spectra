@@ -84,3 +84,16 @@ and independent export/forward/identity audits are required before the corrected
 submitter is allowed to send. The original qualification/source/auditor remain
 immutable historical evidence; a separate export qualification will bind the
 new source versions. The current authorization remains TWO accepted trials total.
+
+Both corrected export notebooks are COMPLETE by19:15 UTC. Both independent
+export audits pass: defaultsubmission.csv bytes exactly equal the corresponding
+scientific output, source prefix exact,400valid/12realchanged/388fallback,zero
+identity duplicates, exact independent arithmetic and local/cloud final lists.
+Raw-score differences remain at most1.90735e-6. Both new exported CSV hashes are
+identical to the original joint smoke's corresponding files. No recipe changed.
+The separate immutable export qualification is sealed; its corrected P18 dry-run
+reports ready/zero pending/defaultsubmission.csv/no submission sent. The guarded
+export submitter registers accepted references immediately, preserves an unresolved
+intent and server error details on rejection, and caps accepted entries at two.
+The bounded score monitor uses a temporary thread-scoped sleep inhibitor while
+waiting; it releases this when it exits and leaves the display free to sleep.

@@ -1,8 +1,8 @@
 # Runs
 
-Updated 2026-11-10 18:52 UTC by `scripts/update_runs.py` (hourly). Generated from `runs.csv` — edit that file, not this one.
+Updated 2026-11-10 19:18 UTC by `scripts/update_runs.py` (hourly). Generated from `runs.csv` — edit that file, not this one.
 
-- Kaggle quota: GPU 19.1 h used of 30 h · TPU 0.0 h of 20 h · resets 2026-11-14 00:00 UTC
+- Kaggle quota: GPU 19.8 h used of 30 h · TPU 0.0 h of 20 h · resets 2026-11-14 00:00 UTC
 - Submissions today (UTC): 1 of 5 — see `SUBMISSIONS.md`
 
 ## Active
@@ -10,13 +10,15 @@ Updated 2026-11-10 18:52 UTC by `scripts/update_runs.py` (hourly). Generated fro
 | id | platform | kind | ref | started (UTC) | status | purpose | progress |
 |---|---|---|---|---|---|---|---|
 | C09V | kaggle-gpu | diag | c09-coverage-controls v1 | 2026-11-09 14:44 | **cancel_requested** | C09 dual-device diagnostic: exact P14 full128 external pipeline negative control onGPU0; existing C08 expanded candidate coverage/scoring onGPU1; no scoring submission | Old128 panel superseded after67 base-connected acquisition groups found; cancellation requested, not acknowledged. No allocation/training/validation result; no GPU quota added at16:34UTC. |
-| C34EX18 | kaggle-2xt4 | diag | p18-c22-past-trained-trial v1 | 2026-11-10 18:47 | **queued** | P18 mandatory submission.csv export smoke; entire qualified joint scientific prefix exact | Only export filename alias added; no recipe/model change. Private/offline. No scoring trial accepted yet. |
-| C34EX19 | kaggle-2xt4 | diag | p19-c18-past-trained-trial v1 | 2026-11-10 18:47 | **running** | P19 mandatory submission.csv export smoke; entire qualified joint scientific prefix exact | Only export filename alias added; no recipe/model change. Private/offline. No scoring trial accepted yet. |
 
 ## Finished (newest first)
 
 | id | platform | kind | ref | started (UTC) | ended (UTC) | status | purpose | result |
 |---|---|---|---|---|---|---|---|---|
+| C34EA18 | local-2070 | diag | outputs/local/two-past-trials-20261110/P18-export-audit.log | 2026-11-10 19:16 | 2026-11-10 19:17 | complete | Audit P18 defaultfilename alias and exact full joint-prefix model/identity/arithmetic/fallback/local-cloud rerun | Exact defaultfilename alias/400valid/12realchanged/388fallback/0identityduplicates; bothfoldpair arithmetic and local/cloud final lists exact. C22 maxraw1.90735e-6; no labels/training. |
+| C34EX18 | kaggle-2xt4 | diag | p18-c22-past-trained-trial v1 | 2026-11-10 18:47 | 2026-11-10 19:15 | complete | P18 mandatory submission.csv export smoke; entire qualified joint scientific prefix exact | Private v1 COMPLETE; defaultsubmission.csv and exact export receipt retained. Same qualified joint scientific prefix; independent export audit next; no trial accepted. |
+| C34EA19 | local-2070 | diag | outputs/local/two-past-trials-20261110/P19-export-audit.log | 2026-11-10 19:13 | 2026-11-10 19:13 | complete | Audit P19 defaultfilename alias and exact full joint-prefix model/identity/arithmetic/fallback/local-cloud rerun | Exact defaultfilename alias/400valid/12realchanged/388fallback/0identityduplicates; bothfoldpair arithmetic and local/cloud final lists exact. C18 maxraw1.43e-6; no labels/training. |
+| C34EX19 | kaggle-2xt4 | diag | p19-c18-past-trained-trial v1 | 2026-11-10 18:47 | 2026-11-10 19:12 | complete | P19 mandatory submission.csv export smoke; entire qualified joint scientific prefix exact | Private v1 COMPLETE; required default submission.csv and export receipt retained. Same joint model/scoring prefix; independent export audit next; no trial accepted. |
 | C34SMOKE | kaggle-2xt4 | diag | p18-p19-past-trained-trials v1 | 2026-11-10 17:56 | 2026-11-10 18:39 | complete | Private real Kaggle smoke: exact P16 parent plus retained C22/C18 all-mode0.20 tails; two distinct scoring files | Private/offline/source-pinned v1 COMPLETE. Both actualT4s used;25 artifacts retained; both required model stages succeeded. Independent local/cloud audit pending; no submission yet. |
 | C34AUD | local-2070 | diag | outputs/local/two-past-trials-20261110/audit.log | 2026-11-10 18:39 | 2026-11-10 18:39 | complete | Independent two-recipe meanZ/RRF/official identity/exact parent/local-Kaggle forward and final-list audit | Both400rows/12real changed/388exactfallback/0identityduplicates; unchangedP01 error4.44e-16; independentmeanZ/RRF exact. Local/cloudlists exact; rawmax1.90735e-6. Bothmodel/sourcepins pass; no labels/training. |
 | C34SEL | local-2070 | eval | outputs/local/two-past-trials-20261110/selection.log | 2026-11-10 17:50 | 2026-11-10 17:56 | complete | Rank retained completed-model past recipes on common used240 for exactly two explicitly requested sequential scoring trials | Selected completed C22allmode +.001171469 and C18allmode +.000815153 on common240; both95%CIs cross0. No training/reserved labels. Explicit two scoring trials, not supported promotion. |

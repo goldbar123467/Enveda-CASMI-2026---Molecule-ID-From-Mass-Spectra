@@ -1,5 +1,5 @@
 """Submit the two exact audited submission.csv exports, one pending globally."""
-import argparse,hashlib,json
+import argparse,csv,hashlib,json
 from pathlib import Path
 from datetime import datetime,timezone
 from c09_submission_guard import check,normalize,TERMINAL
@@ -14,6 +14,19 @@ def stamp():return datetime.now(timezone.utc).isoformat()
 def sha(p):return hashlib.sha256(Path(p).read_bytes()).hexdigest()
 def write(p,d):
     p=Path(p);t=p.with_suffix('.tmp');t.write_text(json.dumps(d,indent=2),encoding='utf-8');t.replace(p)
+
+def register_submission(record):
+    path=ROOT/'runs.csv'
+    with path.open(newline='',encoding='utf-8') as stream:
+        reader=csv.DictReader(stream);fields=reader.fieldnames;rows=list(reader)
+    run_id='C34'+record['slot']
+    if any(r['id']==run_id for r in rows):return
+    row={k:'' for k in fields}
+    row.update(id=run_id,platform='kaggle-submission',kind='eval',ref=str(record['reference']),
+        started_utc=datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M'),status='running',
+        purpose='Explicit past-work '+record['slot']+' scoring trial; retained fitted two-model0.20 tail, complete P16 parent',
+        result='Accepted exact source/version and submission.csv; actual score pending. Maximum two new trials and one pending globally.')
+    with path.open('a',newline='',encoding='utf-8') as stream:csv.DictWriter(stream,fieldnames=fields).writerow(row)
 
 def submit(slot,dry_run=False):
     import msvcrt
@@ -55,7 +68,7 @@ def submit(slot,dry_run=False):
             ledger['submissions'].append(record)
         for intent in ledger['intents']:
             if intent['marker']==marker:intent.update(resolved=True,reference=action['submission']['reference'])
-        if not dry_run:write(LEDGER,ledger)
+        if not dry_run:write(LEDGER,ledger);register_submission(record)
         print(json.dumps(dict(already_recorded=True,submission=record)),flush=True);return record
     assert len(ledger['submissions'])<2 and not any(s['slot']==slot for s in ledger['submissions'])
     assert sum(r.date.date()==datetime.now(timezone.utc).date() for r in raw)<5,'Daily submission limit'
@@ -87,6 +100,7 @@ def submit(slot,dry_run=False):
     record=dict(slot=slot,marker=marker,reference=reference,kernel=KERNEL,version=export['version'],output=entry['output'],
         submitted_utc=stamp(),status='ACCEPTED; ACTUAL SCORE PENDING',csv_sha256=entry['csv_sha256'],qualification_sha256=sha(qualification_path))
     ledger['submissions'].append(record);write(LEDGER,ledger);write(OUT/(slot+'-submission.json'),record)
+    register_submission(record)
     print('ACCEPTED TWO-TRIAL SLOT',json.dumps(record),flush=True);return record
 
 if __name__=='__main__':

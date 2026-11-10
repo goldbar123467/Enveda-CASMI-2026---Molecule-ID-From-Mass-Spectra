@@ -1,0 +1,76 @@
+{
+  "completed_utc": "2026-11-10T19:13:55.041225+00:00",
+  "execution_qualified": true,
+  "source_parent_exact": true,
+  "unchanged_P01_primary_error": 4.440892098500626e-16,
+  "independent_audit_source_sha256": "0c70afc921da58b86ea192ca13236f33279a4ea3574d5d92884dc344ebddefec",
+  "notebook_sha256": "241f3d94d775021144a5c8efc9c3b822184520123eaf7f2d10cd8da1ac5045c6",
+  "remote_scientific_sha256": "92cdc698e3bf98e5a4882849b75a2198142acc5fba9023c7069f5a1a6d131954",
+  "selection_sha256": "3bc3cb1d6d38ced4a55825b67af81dfd74f2269cc7a3f6f292a4ccd4a83e1903",
+  "recipes": {
+    "P18": {
+      "valid_rows": 400,
+      "real_queries": 12,
+      "changed_rows": 12,
+      "exact_fallback_rows": 388,
+      "official_identity_duplicates": 0,
+      "rank_one_changes": 0,
+      "candidate_set_changes": 0,
+      "independent_standardization_error": 0.0,
+      "independent_tail_arithmetic_exact": true,
+      "local_cloud_forward_max_abs_difference": {
+        "c08_raw_fold0": 1.9073486328125e-06,
+        "c08_raw_fold1": 1.430511474609375e-06,
+        "c08_score": 9.372941783825084e-07
+      },
+      "local_cloud_final_lists_exact": true,
+      "manifest_sha256": "d34719302b08256122e45e0f83b6e25bff472eff3ed4638789fd45280b53a456",
+      "model_files_sha256": {
+        "peak-drop-dose-fold0.pt": "a817fd6fdf50ed72f3ff78aed5b7ac9cf6597d0b16ca184edb97759bf58d9a5a",
+        "peak-drop-dose-fold1.pt": "56d1f696d102116b4d841b0cd157f6ddcd437b3c45458ea150ae5bacc1f273e3"
+      },
+      "csv_sha256": "b84df048e46657d17e172be3c95a4fcea86ffd4636268e6ace07a651e1aea913",
+      "output": "p18_c22_submission.csv"
+    },
+    "P19": {
+      "valid_rows": 400,
+      "real_queries": 12,
+      "changed_rows": 12,
+      "exact_fallback_rows": 388,
+      "official_identity_duplicates": 0,
+      "rank_one_changes": 0,
+      "candidate_set_changes": 0,
+      "independent_standardization_error": 0.0,
+      "independent_tail_arithmetic_exact": true,
+      "local_cloud_forward_max_abs_difference": {
+        "c08_raw_fold0": 1.430511474609375e-06,
+        "c08_raw_fold1": 1.430511474609375e-06,
+        "c08_score": 7.3938861663847e-07
+      },
+      "local_cloud_final_lists_exact": true,
+      "manifest_sha256": "c47ae5767606d387bbbbbb1317451a29d286160bb4eb2a1a6afdcba6c57ba799",
+      "model_files_sha256": {
+        "peak-drop-fold0.pt": "839d163c523d685ac4a28fa2d892a5f753d0f75f751d77cee6ce5b083963edab",
+        "peak-drop-fold1.pt": "3b48750d0b61205a69c6365d9e8a83824e1af5dcae5aec80f7dc04bf846e7d9f"
+      },
+      "csv_sha256": "9fa2e5566f2ba1a5ad76150bb53b10cec77c6c1e2b75868b6138e268be6f1883",
+      "output": "submission.csv",
+      "source_output": "p19_c18_submission.csv"
+    }
+  },
+  "training_performed": false,
+  "reserved_labels_read": false,
+  "statistical_promotion": false,
+  "explicit_user_trials": 2,
+  "maximum_pending": 1,
+  "limitation": "Already-used source-shifted development; both chosen confidence intervals include zero. Scoring trials do not establish a hidden gain.",
+  "export_slot": "P19",
+  "joint_prefix_exact": true,
+  "scientific_prefix_sha256": "b88a91052f2264d0952576227cc4e5d0f0b83801ed5d3440e34d923b6026e916",
+  "prefix_audit_path": "outputs\\forks\\p19-c18-past-trained-trial-v1\\independent_past_trials_audit.json",
+  "prefix_audit_sha256": "2206ccce7f45efc5f3ba511a1a224d65daa5572fd73a5dd2292e4a8b2adc262e",
+  "prefix_audit_source_sha256": "55abd9635d3f9ccb421e9ac772c2713877aa253e4554a469b8d7a9cdaf353f9a",
+  "competition_mandated_filename": "submission.csv",
+  "export_receipt_sha256": "b4ea505ce1876cf9ee3149decfbf9e00b6dbb5585e39e1799429c4f8f1b6bc7a",
+  "export_alias_bytes_exact": true
+}

@@ -1,0 +1,9 @@
+{
+  "slot": "P19",
+  "source_file": "p19_c18_submission.csv",
+  "output": "submission.csv",
+  "csv_sha256": "9fa2e5566f2ba1a5ad76150bb53b10cec77c6c1e2b75868b6138e268be6f1883",
+  "scientific_prefix_sha256": "b88a91052f2264d0952576227cc4e5d0f0b83801ed5d3440e34d923b6026e916",
+  "parent_stage_and_both_retained_model_stages_required": true,
+  "training_performed": false
+}

@@ -47,6 +47,12 @@ def main():
     write(OUT/'monitor-attention.json',dict(checked_utc=stamp(),reason='Observation deadline; do not infer completion or re-submit',automatic_retry=False))
 
 if __name__=='__main__':
+    # A temporary thread-scoped system sleep inhibitor keeps the authorized
+    # sequential handoff alive. The display can sleep; no power plan changes.
+    import ctypes
+    if os.name=='nt':ctypes.windll.kernel32.SetThreadExecutionState(0x80000001)
     try:main()
     except BaseException as exc:
         write(OUT/'monitor-attention.json',dict(checked_utc=stamp(),error_type=type(exc).__name__,reason=str(exc),automatic_retry=False));raise
+    finally:
+        if os.name=='nt':ctypes.windll.kernel32.SetThreadExecutionState(0x80000000)

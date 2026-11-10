@@ -15,7 +15,7 @@ Do not select on reserved labels or call weak development changes proven gains.
 Current bounded task: C22 and C18 retained all-mode0.20 tails selected on used240;
 both95%CIs cross0, explicit scoring trials only. Joint v1 realT4 smoke and independent
 audit passed. No scoring entry accepted: custom filenames got HTTP400, with zero
-quota consumed. Separate submission.csv-only export notebooks are running; see
+quota consumed. Both separate submission.csv export notebooks COMPLETE and independent audits PASS; see
 docs/TWO-PAST-TRIALS-2026-11-10.md and outputs/local/two-past-trials-20261110.
 Use submit_past_trial_exports.py and its export qualification after both real
 export smokes/audits. Never use the superseded custom-filename submitter. Maximum
