@@ -105,3 +105,12 @@ has actualPID5620/launcher20732 and deadline11November19:25 UTC. It polls actual
 results, sends P19/C18 once only after P18 reaches an actual score/error, then
 waits for both terminal results and restores the compute pause. It cannot train,
 change recipes or spend a third entry. Source qualification stays immutable.
+
+Observer-only refinement at19:39 UTC: retired observer5620 was verified and
+stopped before replacement by actual28124/launcher18884, using
+monitor_reviewed_past_trials.py. It sends the second fixed entry automatically
+only after a successful actual first score. A first error stops for inspection
+and repair before spending the remaining slot. All source/model/smoke artifacts
+bound by the immutable export qualification remain byte-exact; the qualified
+submission guard and recipes were not changed. There is still exactly one
+accepted P18 reference and one approved entry remaining; no duplicate observer.

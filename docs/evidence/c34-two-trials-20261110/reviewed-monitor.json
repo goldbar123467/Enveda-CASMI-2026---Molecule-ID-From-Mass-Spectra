@@ -1,0 +1,13 @@
+{
+  "checked_utc": "2026-11-10T19:43:32.428446+00:00",
+  "actual_pid": 28124,
+  "launcher_pid": 18884,
+  "retired_pid": 5620,
+  "source": "scripts/monitor_reviewed_past_trials.py",
+  "first_error_requires_review": true,
+  "maximum_new_accepted": 2,
+  "maximum_pending": 1,
+  "qualified_model_source_smoke_artifacts_all_exact": true,
+  "qualification_unchanged": true,
+  "no_new_submission_on_observer_handoff": true
+}

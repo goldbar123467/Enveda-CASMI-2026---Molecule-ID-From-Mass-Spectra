@@ -17,8 +17,9 @@ submission.csv. Actual result PENDING; never resubmit. P19/C18 is the one remain
 approved entry, fixed before either result. Both corrected exportsmokes and
 independent audits PASS. Use submit_past_trial_exports.py only; the custom-name
 transport was rejected twice with HTTP400 and consumed no accepted entry.
-Bounded monitor actual5620/launcher20732 runs to11Nov19:25UTC; it waits for first
-actual score/error, submits exactly one fixed C18 entry, waits both results, then
+Bounded reviewed monitor actual28124/launcher18884 runs to11Nov19:25UTC; it waits
+for first successful actualscore before auto C18. Any first error stops for review
+and repair before spending the remaining entry. It waits both results, then
 restores compute pause and exits. Inspect actual processes/ledger/status before
 any launch or recovery; never duplicate this worker or a pending trial. Maximum
 two accepted total, one pending globally. No training, reserved metrics, third
