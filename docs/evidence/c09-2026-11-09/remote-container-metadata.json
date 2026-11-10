@@ -1,0 +1,36 @@
+{
+  "checked_utc": "2026-11-10T00:07:24.105472+00:00",
+  "kernels": {
+    "p01-public480": {
+      "remote_version": 1,
+      "remote_docker_image": "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461",
+      "machine_shape": "NvidiaTeslaT4",
+      "requested_image": "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461",
+      "requested_pinning_type": null
+    },
+    "p16-external-reference-c09": {
+      "remote_version": 2,
+      "remote_docker_image": "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461",
+      "machine_shape": "NvidiaTeslaT4",
+      "requested_image": "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461",
+      "requested_pinning_type": null
+    },
+    "c09-clean-validation": {
+      "remote_version": 2,
+      "remote_docker_image": "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461",
+      "machine_shape": "NvidiaTeslaT4",
+      "requested_image": "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461",
+      "requested_pinning_type": "original"
+    },
+    "c09-t4-recovery-probe": {
+      "remote_version": 1,
+      "remote_docker_image": "gcr.io/kaggle-private-byod/python@sha256:de153e6d303881930c51286216393d56f56b26458d0661350305a1e8144eea01",
+      "machine_shape": "NvidiaTeslaT4",
+      "requested_image": null,
+      "requested_pinning_type": null
+    }
+  },
+  "p01_p16_c09_remote_image_equal": true,
+  "scientific_sources_or_policy_changed": false,
+  "limitation": "Authenticated deployment metadata, not an in-container digest attestation; the separately executed recovery probe uses a different image and its Torch/CUDA versions must not be attributed to P01/P16/C09."
+}
