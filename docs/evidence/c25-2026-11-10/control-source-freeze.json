@@ -1,0 +1,29 @@
+{
+  "frozen_utc": "2026-11-10T10:49:17.970947+00:00",
+  "source_sha256": {
+    "confirm_c25_negative.py": "f4197395ca900566324199aaf674af23cbbf76896945fcf47ac2e2c4a049f480",
+    "prepare_c25_reserved_inputs.py": "aa355b633b7addfc59a946bac39e49c71b0d13da220dc08b55ec4ef92400f844",
+    "run_c25_confirmation_worker.py": "c760488a97c40214f64b1616a61017896af33b2019189a80ae5b48b1d8387cff",
+    "negative_tail.py": "9733a0c91a5186cc749a3b969711578cdc7d5616e3252f9f8917c249e893318e",
+    "compatible_tail.py": "b5677d884008f0fd16a66ca045eb5c5c61420e895c66612d3fefdef166f58378",
+    "compatible_inference.py": "bd19325814e066615ace15a765c84c74ccedbb867e609b8d95ed4dbcdf092832",
+    "followup_models.py": "efe821f214f1cb20efdfcc38387a43c3d06bb6bbf8cad3051d4abcfedd5685a3",
+    "c14_models.py": "444ad95a85828f2962af070abe37e6ab52a5c5558cac5995d2ac8c7efa5e0f4f",
+    "c15_models.py": "0d675a1d31184ba43ecf6cd14de0730b8816cf81f5f3cb2e90f22e306f0ac89c",
+    "c18_models.py": "55f47735dfe1f5017a1dd85aa7f361e92e5701d987ed2694535adf8dcd970a7b",
+    "c24_models.py": "dc1e691da0dc8bbfffc297fde162c7127351184e2ff918d671adbc41845d3fff",
+    "develop_c21_negative.py": "67a71b808ca5911775f6aa5e88048c12a0e92b7861a013000435c4acce2a4f28",
+    "develop_c24_negative.py": "9d8405fe7fe03b4b312cc5a26a5b46c77dafbb7d7481ecf273214b5d89db2767",
+    "finish_c09_confirmation.py": "d74e3258498cbaf496f91ae3398f54c4131ee25569b269e18e318ed5c9d615af",
+    "tail_fusion.py": "b1fd92ee93412454c80942c70fd3bc72f89f07a673ff1a319d7e821be368a5d4",
+    "c14_confirmation_gate.py": "15ac23f3c2852fe6be550e761539e8a786edfcea9265381a3f4e2ac08c6cc92f"
+  },
+  "config_sha256": "eb754172d99198d02efb0388c17b5ed25285226f8b4b4db3583696e0312321c1",
+  "preparation_sha256": "b52bf9cf0c851e0c871d137a888acd1afca6a1c9a379ee7d09b6e8f0936784a9",
+  "bundle": "outputs\\local\\c21-negative-tail-20261110\\bundles\\p15-parent",
+  "arm": "legacy16-hard",
+  "manifest_sha256": "86c977781695e5bfa8d5dc389c696f190359d9ca46b62fa5d087a4c6feee3909",
+  "recipe": "Original C08/P15 all-mode0.20 tail after complete P01; no labels or model selection.",
+  "C13_confirmation_metrics_read": false,
+  "automatic_submission": false
+}

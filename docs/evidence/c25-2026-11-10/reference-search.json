@@ -1,0 +1,10 @@
+{
+  "queries": 120,
+  "spectra": 120,
+  "reference_rows": 200724,
+  "precursor_candidate_rows": 2047,
+  "query_reference_comparisons": 1092,
+  "query_input_alias_reference_rows": 0,
+  "query_labels_used": false,
+  "limitation": "Rounded full peaks and FP16top96 signatures only; not universal acquisition/provenance exclusion"
+}

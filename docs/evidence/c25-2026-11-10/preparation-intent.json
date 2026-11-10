@@ -1,0 +1,39 @@
+{
+  "prepared_utc": "2026-11-10T10:43:11.840611+00:00",
+  "config_sha256": "eb754172d99198d02efb0388c17b5ed25285226f8b4b4db3583696e0312321c1",
+  "policy_sha256": "ea662270a895dc902cc9dd242afd7cd7f63e4a42ce3468474c6bff73d984043c",
+  "source_sha256": {
+    "prepare_c25_reserved_inputs.py": "aa355b633b7addfc59a946bac39e49c71b0d13da220dc08b55ec4ef92400f844",
+    "external_reference_overlay.py": "826a689fdcecc05436cd201219ac066ef2ebf557df22200ac807c6bb6c0681e5",
+    "c09_spectrum_audit.py": "a4c42efdb41983406d71458eeb093af462bd1432ec774c6628d91861f1a042ac"
+  },
+  "feature_sha256": "a97ad9b3ab3711517864d56e497e1672cb29bb05683c72b52db9f9b0a17b1455",
+  "input_sha256": {
+    "outputs\\forks\\c13-mixed-casmi2022-validation-v2\\c13_report.json": "409763df7c41a04f571673d8f052aa460723a67fd55d148060dafbb82521ef06",
+    "outputs\\forks\\c13-mixed-casmi2022-validation-v2\\c13_p01.csv": "feb6ec4bed2052a924b0cc2df76af3b2785218a5044228a810e08dcc0fc78ce7",
+    "outputs\\forks\\c13-mixed-casmi2022-validation-v2\\c13_p14.csv": "51f85f9dd697450db568197bd4f2fed6556e21d66be55bec65f31d8dd7de9d74",
+    "outputs\\forks\\c13-mixed-casmi2022-validation-v2\\c13_queries.parquet": "e252ce5cb5cdaa049f895b9dad586cd739f0b0b51c077d891091d8e92b646dff",
+    "outputs\\forks\\c13-mixed-casmi2022-validation-v2\\c13_neural_p01.parquet": "e3a01a171fc892d1481deebee92a511b1b81e81098a6da085a03a4c71bb64c40",
+    "outputs\\forks\\c13-mixed-casmi2022-validation-v2\\execution_receipt.json": "252540a688b31c02d6652859b7b0dbc6be02921358c049990e775b8b3a0e4618",
+    "outputs\\forks\\c13-mixed-casmi2022-validation-v2\\neural_public.parquet": "db86edbb962700af439b651fb78387cd4d086bff2fcca1e498447b5f25e7432a",
+    "outputs\\forks\\c13-mixed-casmi2022-validation-v2\\neural_ours.parquet": "bbc0b2c6e1503644f7808c3caf76414023b5ea11061419ecc12caee54a22b3be",
+    "outputs\\local\\c13-confirmation-20261110\\execution-v2-audit.json": "cb96c216034e6cd62a84e16a676926e9fb07139baf01c3f68000f297ad187b15",
+    "outputs\\local\\c13-confirmation-20261110\\labels.csv": "c74a4d91eb1c9fd65855e2804036ab80238732e01e07c1da4ed9229ae152376d",
+    "outputs\\publish\\c13-mixed-casmi2022-20261110\\validation-contract.json": "8ef3d0600cf0dc1ca2e8f2edbe664adffc84e80e75a9e972ea50f5fdaf9554c7",
+    "outputs\\publish\\c13-mixed-casmi2022-20261110\\validation-queries.parquet": "d27999b569708beea4116e78200e09b02071e456d66a7a2ba082900bd1a6cd78",
+    "outputs\\forks\\p16-external-reference-c09-v2\\p16_execution_receipt.json": "2af8dd2d3f21eeda0db8d518a15c55920d81d2370f3b0c56df5d07087cec8251",
+    "outputs\\local\\c12-deep-candidates-20261110\\source-contract.json": "e4f9208dbd1decfede25290f3ed47e1bcd4e347c77e396982ab25a8be70a8be5",
+    "outputs\\local\\c12-deep-candidates-20261110\\all\\preparation.json": "d92484d8d884bd223c06d5cc267d4c4f69cbb199a5e1884995e0c92ac6175125",
+    "outputs\\local\\c12-deep-candidates-20261110\\all\\fingerprint-smiles.parquet": "9d65c4f7645ca91b3e83cd37df83db023ea75f335f0dced900daf15012d45975",
+    "outputs\\local\\c12-deep-candidates-20261110\\all\\fingerprints.npy": "71c5771c2aa3178fb994b448cb36a640af005f65768437fabbc94e5bba533489"
+  },
+  "reference_files_sha256": {
+    "ext_meta.parquet": "9b0c2d675612580a4aedbdd3c8891d046fdf864b0805aaef852acc6653f7d37f",
+    "ext_mz.npy": "a14f750d46bfca4176110d1a83cc3562944a3ca1e3f1344c94141f6d8d85fad5",
+    "ext_in.npy": "e47b359f27d0aacda22f7ef47f8f60f7912136027d70d2bc915890a8d51be841"
+  },
+  "label_values_accessed": false,
+  "C13_prediction_metrics_read": false,
+  "recipe_selected": false,
+  "automatic_submission": false
+}

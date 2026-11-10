@@ -29,6 +29,7 @@ WORKER_RECEIPTS = {
     'C20COL2': ('outputs/local/c20-negative-development-20261110/collector-v2-status.json', 'collected', 'outputs/local/c20-negative-development-20261110/collector-v2-attention.json'),
     'C21W2': ('outputs/local/c21-negative-tail-20261110/worker-status-v2.json', 'complete', 'outputs/local/c21-negative-tail-20261110/worker-attention-v2.json'),
     'C24EW': ('outputs/local/c24-evaluation-20261110/worker-status.json', 'complete', 'outputs/local/c24-evaluation-20261110/worker-attention.json'),
+    'C25W': ('outputs/local/c25-reserved-negative-20261110/worker-status.json', 'complete', 'outputs/local/c25-reserved-negative-20261110/worker-attention.json'),
     'C20LOCAL': ('outputs/research/c20-engine-recovery-20261110/local-engine-status.json', 'complete', 'outputs/research/c20-engine-recovery-20261110/local-engine-attention.json'),
 }
 

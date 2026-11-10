@@ -1,0 +1,15 @@
+{
+  "started_utc": "2026-11-10T10:50:50.499561+00:00",
+  "pid": 7592,
+  "deadline_utc": "2026-11-10T21:40:00+00:00",
+  "source_sha256": {
+    "run_c25_confirmation_worker.py": "c760488a97c40214f64b1616a61017896af33b2019189a80ae5b48b1d8387cff",
+    "confirm_c25_negative.py": "f4197395ca900566324199aaf674af23cbbf76896945fcf47ac2e2c4a049f480",
+    "prepare_c25_reserved_inputs.py": "aa355b633b7addfc59a946bac39e49c71b0d13da220dc08b55ec4ef92400f844",
+    "c14_confirmation_gate.py": "15ac23f3c2852fe6be550e761539e8a786edfcea9265381a3f4e2ac08c6cc92f"
+  },
+  "preparation_sha256": "b52bf9cf0c851e0c871d137a888acd1afca6a1c9a379ee7d09b6e8f0936784a9",
+  "control_receipt_sha256": "de0c83d6e2c76be6ff78a9c3b0bdcb1e972f6e61d217e7e824d1dca4e1ea645d",
+  "C13_confirmation_metrics_read": false,
+  "automatic_submission": false
+}

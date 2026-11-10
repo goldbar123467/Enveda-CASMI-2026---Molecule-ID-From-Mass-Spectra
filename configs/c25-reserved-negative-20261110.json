@@ -1,0 +1,18 @@
+{
+  "campaign": "C25CONF",
+  "queries": 120,
+  "positive": 60,
+  "negative": 60,
+  "weight": 0.2,
+  "offset": 3.0,
+  "selection": "Only the source/model/recipe-frozen global winner of the five C21 groups plus C24 may be evaluated. No winner or a failed gate preserves the reserved panel; no confirmation reselection, subgroup, coefficient or checkpoint search.",
+  "candidate_recipe": "Negative-only tail RRF after the complete fixed P16 parent in each of the two reference views. Positive parent strings, rank1 and candidate identities remain exact.",
+  "reference_views": ["all_reference", "input_alias_excluded"],
+  "primary_gate": "Full120 paired95%lowerbounds strictly positive versus both complete P01 and P16; all absent truths score zero.",
+  "sensitivity_gate": "Alias-excluded full120 mean and paired95%lowerbounds nonnegative versus both complete parents. Both full60 polarity means nonnegative against both parents in both views. Use existing c14_confirmation_gate without changing thresholds.",
+  "controls": "Report original P14 with all explicit unsupported fallbacks and original C08/P15 all-mode0.20tail recipe after P01. P14 negative mode is uninformative; disclose control signs without filtering queries.",
+  "source_limitations": "Measured-reference and public foundation/model exposure cannot be universally excluded. Query-input alias sensitivity is not a universal pretraining exclusion. C20 development uses declared real-generated-candidate recovery for one empty Engine2 pool; C13 already has complete120 Engine2 coverage.",
+  "qualification": "A passing confirmation still requires a real complete Kaggle changed-path smoke and independent source/model/identity/fallback/fusion/local-cloud parity audits, plus zero global pending submissions before the user-approved trial.",
+  "automatic_submission": false,
+  "paid_compute": false
+}

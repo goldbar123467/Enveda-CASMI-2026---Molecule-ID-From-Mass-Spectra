@@ -1,6 +1,6 @@
 # C09 results and P16 scoring trial — 9–10 November
 
-## Current measured state — 10 November,10:38UTC
+## Current measured state — 10 November,10:54UTC
 
 Silver goal UNMET. P16/ref58181280 COMPLETE0.480/noerror; no reported public gain.
 Board10:22UTC:rank960/5062, nominal silver253 at0.484.
@@ -63,6 +63,26 @@ no truthlost,nonnegative polarity means. P14negative noop/wrong-sign controls
 must be disclosed. Freeze ONE global winner before once-only fresh C13mixed120
 alias/polarity gates, then actual Kaggle changed-path smoke and independent
 source/model/identity/fallback/fusion audits before the approved trial.
+
+C25 reserved-confirmation pipeline IMPLEMENTED before any fresh metric read.
+Label-blind full120 preparation completed10:45:01:all original query fields exact,
+full Engine2coverage120/P01replay, 60perpolarity, same fixed P16reference200724rows.
+Both reference views have0promotions/0inputaliases; P16parents equal P01 exactly.
+2843 candidate identities match2916cloud rows exactly;252 oldfeature rows reused.
+P14 supports59/61exactP01fallbacks, all60negative unsupported/noop disclosed.
+Original P15control all120 scored on2070,0errors/fallbacks,rank1+sets exact; its
+scores remain UNREAD. All preparation/control artifacts are source/byte-pinned.
+C25 worker7592 waits actual C24 selector terminal+exit, deadline21:40UTC. If no
+global winner it exits keeping C13metricsunread. Otherwise freezes selected
+model/source/recipe, scores negative60 in both reference views with positive60
+exactpassthrough, freezes all120predictions, and applies unchanged C14gate once.
+A durable C13 evaluation-consumption marker is written BEFORE label parsing;
+any failure after it requires recovery of the SAME recipe, never reselection.
+Five gate tests and actual unavailable-winner/evaluation guards pass. No public
+submission/upload automated. Read scripts/confirm_c25_negative.py and
+outputs/local/c25-reserved-negative-20261110/worker-status.json. C13metrics
+remain UNREAD now; no consumption marker exists. Private model uploads/real
+Kaggle changed-path smoke/independent audits still required after a passing gate.
 
 Native24-hour hourly heartbeat ACTIVE (view verified10:26); tracker296 to22:08UTC.
 Superseded C09coverage remains CANCEL_REQUESTED/old panel discarded. Worker

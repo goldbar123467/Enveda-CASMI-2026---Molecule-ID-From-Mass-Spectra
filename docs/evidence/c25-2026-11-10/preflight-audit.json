@@ -1,0 +1,12 @@
+{
+  "checked_utc": "2026-11-10T10:54:59.369870+00:00",
+  "existing_confirmation_gate_tests": "python -m unittest discover -s tests -p test_c14_confirmation_gate.py:5passed",
+  "unavailable_global_winner_blocks_recipe_freeze": true,
+  "unavailable_selected_protocol_blocks_metric_evaluation": true,
+  "control_source_pins_exact": true,
+  "preparation_sha256": "b52bf9cf0c851e0c871d137a888acd1afca6a1c9a379ee7d09b6e8f0936784a9",
+  "control_receipt_sha256": "de0c83d6e2c76be6ff78a9c3b0bdcb1e972f6e61d217e7e824d1dca4e1ea645d",
+  "consumption_marker_absent": true,
+  "C13_confirmation_metrics_read": false,
+  "automatic_submission": false
+}

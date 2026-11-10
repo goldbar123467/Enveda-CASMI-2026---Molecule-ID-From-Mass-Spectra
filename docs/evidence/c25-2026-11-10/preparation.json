@@ -1,0 +1,58 @@
+{
+  "completed_utc": "2026-11-10T10:45:01.570889+00:00",
+  "preparation_intent_sha256": "8e626ce0f5da9ecfb7f130f52c5a4ffc70512327029205ca07335187b506a38f",
+  "files_sha256": {
+    "P01.csv": "340fa2967928c2b9c587fc25998e6a79184d9be8ac5d72d5c85c2fdcb3b1f440",
+    "P14.csv": "8ee357a51a100433f946980d3af989aea2adf9eff9b607187649c1a11c26f786",
+    "queries.parquet": "1152c1b92cce9b6a308a2a1b90f26babf8da115223ed892506549cd9ad812e2b",
+    "negative-queries.parquet": "31f5f0755a525a0c8c0ebda473a71df2331e42198bf5d1d96da8b88581b77a5f",
+    "reference-matches.parquet": "77bbd5336ff180642ba275366f624d4cd6240722af0dd9165507fa4e673eb7b9",
+    "reference-search.json": "12c47bea5390fb4053c101419b4d5af3da1ae617fb9036b2019fd9bd0d3793c0",
+    "P16-all_reference.csv": "340fa2967928c2b9c587fc25998e6a79184d9be8ac5d72d5c85c2fdcb3b1f440",
+    "actions-all_reference.csv": "7bdb53d70e0fb95799322b2c7584ede8a0ffff1ff5c3c15888ff732e5c5d5497",
+    "P16-input_alias_excluded.csv": "340fa2967928c2b9c587fc25998e6a79184d9be8ac5d72d5c85c2fdcb3b1f440",
+    "actions-input_alias_excluded.csv": "7bdb53d70e0fb95799322b2c7584ede8a0ffff1ff5c3c15888ff732e5c5d5497",
+    "fingerprint-smiles.parquet": "91477094625b3780167f290db607506945205642b4e5ec5882a7afbc0eda328b",
+    "fingerprints.npy": "77e44b2c9afa3a2048382df2be7f8ec67d70af6b53e6c610e2132de5fc7ee5c2"
+  },
+  "queries": 120,
+  "positive": 60,
+  "negative": 60,
+  "original_query_fields_exact": true,
+  "Engine2_complete120": true,
+  "P14_supported": 59,
+  "P14_exact_fallback": 61,
+  "P14_negative_noop_disclosed": true,
+  "feature_structures": 2843,
+  "existing_feature_rows_reused": 252,
+  "reference_search": {
+    "queries": 120,
+    "spectra": 120,
+    "reference_rows": 200724,
+    "precursor_candidate_rows": 2047,
+    "query_reference_comparisons": 1092,
+    "query_input_alias_reference_rows": 0,
+    "query_labels_used": false,
+    "limitation": "Rounded full peaks and FP16top96 signatures only; not universal acquisition/provenance exclusion"
+  },
+  "actions": {
+    "all_reference": {
+      "changed": 0,
+      "reasons": {
+        "no_qualifying_match": 118,
+        "protected_pipeline_library": 2
+      }
+    },
+    "input_alias_excluded": {
+      "changed": 0,
+      "reasons": {
+        "no_qualifying_match": 118,
+        "protected_pipeline_library": 2
+      }
+    }
+  },
+  "label_values_accessed": false,
+  "C13_prediction_metrics_read": false,
+  "recipe_selected": false,
+  "automatic_submission": false
+}

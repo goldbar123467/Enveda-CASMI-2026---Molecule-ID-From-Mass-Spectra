@@ -1,0 +1,10 @@
+{
+  "checked_utc": "2026-11-10T10:49:08.101823+00:00",
+  "cloud_rows": 2916,
+  "unique_structures": 2843,
+  "official_cloud_keys_exact": true,
+  "cache_index_sha256": "91477094625b3780167f290db607506945205642b4e5ec5882a7afbc0eda328b",
+  "cloud_evidence_sha256": "e3a01a171fc892d1481deebee92a511b1b81e81098a6da085a03a4c71bb64c40",
+  "C13_confirmation_metrics_read": false,
+  "labels_read": false
+}

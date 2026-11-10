@@ -153,6 +153,10 @@ scripts/c24_models.py text eol=lf
 scripts/audit_c24_serving.py text eol=lf
 scripts/prepare_c20_local_assets.py text eol=lf
 scripts/run_c20_local_engine.py text eol=lf
+scripts/prepare_c25_reserved_inputs.py text eol=lf
+scripts/confirm_c25_negative.py text eol=lf
+scripts/run_c25_confirmation_worker.py text eol=lf
+configs/c25-reserved-negative-20261110.json text eol=lf
 # Preserve the exact bytes of the already-pushed, SHA-pinned C20 recovery.
 kaggle/forks/c20-generated-recovery/* -text whitespace=trailing-space,space-before-tab,cr-at-eol
 scripts/develop_c24_negative.py text eol=lf
