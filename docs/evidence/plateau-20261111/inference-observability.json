@@ -1,0 +1,12 @@
+{
+  "checked_utc": "2026-11-11T15:20:29.235434+00:00",
+  "source_path": "outputs\\publish\\c18-peak-models-20261110\\inference.py",
+  "source_sha256": "c1ddf144a153b4cd1980b3723a016592066086262bc466de22cc1f7df6af8ae9",
+  "conversion_value_type_errors_skip_spectra": true,
+  "input_errors_counter_hardcoded_zero": true,
+  "unsupported_molecules_reported": true,
+  "smoke_and_used240_have_real_model_score_evidence": true,
+  "hidden_per_query_diagnostics_available": false,
+  "scoring_code_modified": false,
+  "interpretation": "Observability limitation; not evidence these exceptions occurred in the hidden rerun or caused the .002 public loss."
+}

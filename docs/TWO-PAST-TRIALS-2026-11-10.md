@@ -158,3 +158,17 @@ Checkpoint 92a9102 was pushed successfully. The P19 release hold was removed at
 22:01 UTC after all immutable qualification hashes were rechecked and the exact
 observer process was verified live. One P18 entry is still PENDING; the release
 does not bypass the successful-first-result or one-global-pending gate.
+
+Final actual results: P18/C22 ref58212322 is COMPLETE0.478 without a reported
+error. After that result, the observer accepted the second and last authorized
+entry at2026-11-11T00:21:47UTC: P19/C18 guarded v1, ref58219034. It also completed
+at0.478 without a reported error. Observer19988 wrote final-results.json and
+restored the compute pause at05:34:54UTC, then exited. There was no third entry
+and the one-pending global limit was maintained. Both results regress against
+the0.480 champion. Account reconciliation at15:10UTC independently confirms both
+actual scores and zero pending entries. Compact final receipts are retained.
+
+The user's11November instruction is to stop and research the0.480 plateau.
+All training/submission work remains stopped. Read-only research is recorded in
+docs/PLATEAU-RESEARCH-2026-11-11.md; no fresh reserved labels or new training were
+used. The silver goal and native hourly automation remain PAUSED.

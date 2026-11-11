@@ -1,37 +1,31 @@
 # C09 results and P16 scoring trial — 9–10 November
 
-## CURRENT AUTHORIZATION — 10 November, two existing-work scoring trials
+## CURRENT AUTHORIZATION — 11 November, research only; compute stopped
 
-The user explicitly requested two best past-work submissions for scoring. This
-permits bounded evaluation, production packaging, real Kaggle smoke/audits and
-exactly TWO new sequential submissions. No new training or hourly campaign is
-authorized by this instruction. The hourly automation and silver goal stay paused.
-Keep at most one pending globally, reconcile actual results, retain unique durable
-intents and preserve the0.480 champion. Historical stop markers are archived for
-this bounded task; do not treat the older stop paragraph as a current blocker.
-Do not select on reserved labels or call weak development changes proven gains.
+Latest user request: "Stop and research why our score cannot improve from .48".
+Training, cloud launches, scoring submissions and automatic campaign work are
+STOPPED. Keep .local/compute-paused.json (phase user_requested_research_only).
+Do not remove it or resume workers without explicit user instruction. The native
+hourly automation and silver goal remain PAUSED; silver is not achieved.
 
+The two bounded past-work entries are finished and their allowance exhausted:
+P18/C22 ref58212322 COMPLETE0.478 and P19/C18 ref58219034 COMPLETE0.478, no reported
+errors. The second was accepted only after the first actual result. Observer19988
+exited normally at05:34UTC after both results and restored the pause. Fresh API
+check15:10UTC found zero pending. The two remaining local dashboard workers were
+stopped for this request. The obsolete C09 coverage kernel still reports
+CANCEL_REQUESTED; do not requeue or claim acknowledged termination.
 
-Current bounded task: P18/C22 was accepted at 19:19 UTC, ref58212322,
-exact v1 and submission.csv. Its actual result remains PENDING; never resubmit.
-P19/C18 is the one remaining approved entry, fixed before either result.
-Guarded C18 export v1 is COMPLETE and independently audited at 21:58 UTC.
-The raw scoring body, parent/export cells, model weights, recipe and normal
-predictions remain exact. The real Kaggle synthetic preflight-failure probe
-confirms whole-stage cleanup deletes default submission.csv while preserving
-the diagnostic parent. This is not evidence of a failure in pending P18.
-First source, qualification and submission remain immutable.
-
-The guarded qualification is sealed (SHA256 ddeb2321eae1ace3c15d5a2a105e643256bfcd79b8e018dd17ff3de689a9cb38).
-Checkpoint 92a9102 was pushed and the P19 release hold was removed at 22:01 UTC.
-This permits only the one remaining entry after the first actual success.
-Current observer actual19988/launcher22028 uses monitor_reviewed_past_trials.py;
-it requires the first successful actual score before sending P19 and stops
-for review on a first error. The remaining entry MUST use
-submit_guarded_past_trial.py and submission-qualification-guarded.json;
-superseded export submitters must not be used. At most two accepted entries
-in total and one pending globally. No new training, reserved metrics, third
-entry or hourly campaign. The silver goal and hourly automation stay paused.
+Research is complete in docs/PLATEAU-RESEARCH-2026-11-11.md, with compact evidence
+in docs/evidence/plateau-20261111. On used240,90 truths are absent and104 are present
+belowfirst;96 of those104 wrong firsts have the correct formula. Recent tails
+lock rank1 and candidate membership. C18/C22 agree on227/240 truth ranks, with
+small uncertain gains; both publicly regressed. P14 remains a wrong-sign
+validation control. The .31935 fixed-tail oracle is used-panel-only, NOT a Kaggle
+ceiling. Best verified public score remains0.480. No fresh C13 reserved metrics,
+new training, new cloud job or new submission were used in this research.
+All prior qualification/model/source artifacts remain immutable. The older
+campaign authorizations below are historical and cannot resume work.
 
 ## USER STOPPED CAMPAIGN — 10 November,14:59 UTC
 

@@ -1,0 +1,22 @@
+{
+  "checked_utc": "2026-11-11T15:21:31.628588+00:00",
+  "user_instruction": "Stop and research why our score cannot improve from .48",
+  "phase": "research_only",
+  "pause_marker_sha256": "704a719bee9240949e7dabeaaaef8a0355ff16bf7d3d04859de9bd59d4659c39",
+  "hourly_automation": "PAUSED",
+  "score_observer_pid": 19988,
+  "score_observer_final_state": "complete",
+  "score_observer_completed_utc": "2026-11-11T05:34:54.848258+00:00",
+  "stopped_owned_dashboard_pids": [
+    2556,
+    28644
+  ],
+  "pending_submissions": 0,
+  "latest_trials_complete": 2,
+  "new_training_performed": false,
+  "new_cloud_runs": false,
+  "new_submissions": false,
+  "reserved_metrics_read": false,
+  "obsolete_cloud_status": "CANCEL_REQUESTED; termination not acknowledged; no requeue",
+  "resume_requires_explicit_user_instruction": true
+}

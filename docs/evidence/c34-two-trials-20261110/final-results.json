@@ -1,0 +1,49 @@
+{
+  "checked_utc": "2026-11-11T05:34:54.848258+00:00",
+  "pid": 19988,
+  "deadline_utc": "2026-11-11T19:25:00+00:00",
+  "state": "complete",
+  "accepted": 2,
+  "maximum_submissions": 2,
+  "maximum_pending": 1,
+  "submissions": [
+    {
+      "slot": "P18",
+      "marker": "C09-TWO-P18-C22-20261110",
+      "reference": "58212322",
+      "kernel": "clarkkitchen/casmi26-p18-c22-past-trained-trial",
+      "version": 1,
+      "output": "submission.csv",
+      "submitted_utc": "2026-11-10T19:19:08.855374+00:00",
+      "status": "COMPLETE",
+      "csv_sha256": "b84df048e46657d17e172be3c95a4fcea86ffd4636268e6ace07a651e1aea913",
+      "qualification_sha256": "c600490df2b738c1580b736ca247894e785f5bf033514d0a4175c83128e1c9ed",
+      "public_score": 0.478,
+      "error": "",
+      "success": true,
+      "description": "C09-TWO-P18-C22-20261110: Explicit existing-work scoring trial. Complete pinned P16 parent plus retained C22 final55000 two-fold0.20 tail-RRF. Real12/400 Kaggle smoke, independent arithmetic/identity/fallback/local-cloud parity. Development uncertainty includes zero; no hidden-gain claim.",
+      "actual_checked_utc": "2026-11-11T05:34:54.846288+00:00"
+    },
+    {
+      "slot": "P19",
+      "marker": "C09-TWO-P19-C18-20261110",
+      "reference": "58219034",
+      "kernel": "clarkkitchen/casmi26-p19-c18-guarded-export",
+      "version": 1,
+      "output": "submission.csv",
+      "submitted_utc": "2026-11-11T00:21:47.901546+00:00",
+      "status": "COMPLETE",
+      "csv_sha256": "9fa2e5566f2ba1a5ad76150bb53b10cec77c6c1e2b75868b6138e268be6f1883",
+      "qualification_sha256": "ddeb2321eae1ace3c15d5a2a105e643256bfcd79b8e018dd17ff3de689a9cb38",
+      "public_score": 0.478,
+      "error": "",
+      "success": true,
+      "description": "C09-TWO-P19-C18-20261110: Explicit existing-work scoring trial. Complete pinned P16 parent plus retained C18 final45000 two-fold0.20 tail-RRF. Real12/400 Kaggle smoke, independent arithmetic/identity/fallback/local-cloud parity. Development uncertainty includes zero; no hidden-gain claim.",
+      "actual_checked_utc": "2026-11-11T05:34:54.846288+00:00"
+    }
+  ],
+  "training_performed": false,
+  "hourly_campaign_resumed": false,
+  "completed_utc": "2026-11-11T05:34:54.848258+00:00",
+  "no_further_work": true
+}

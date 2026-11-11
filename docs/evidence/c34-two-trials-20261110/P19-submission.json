@@ -1,0 +1,12 @@
+{
+  "slot": "P19",
+  "marker": "C09-TWO-P19-C18-20261110",
+  "reference": 58219034,
+  "kernel": "clarkkitchen/casmi26-p19-c18-guarded-export",
+  "version": 1,
+  "output": "submission.csv",
+  "submitted_utc": "2026-11-11T00:21:47.901546+00:00",
+  "status": "ACCEPTED; ACTUAL SCORE PENDING",
+  "csv_sha256": "9fa2e5566f2ba1a5ad76150bb53b10cec77c6c1e2b75868b6138e268be6f1883",
+  "qualification_sha256": "ddeb2321eae1ace3c15d5a2a105e643256bfcd79b8e018dd17ff3de689a9cb38"
+}

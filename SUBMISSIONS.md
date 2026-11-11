@@ -2,18 +2,18 @@
 
 Public LB = MRR@25 on ~125 public molecules (one rank-2→1 flip ≈ 0.004). Scoring reruns take hours.
 
-Current bounded task: P18/C22, **ref58212322**, was accepted on 10 November at
-19:19 UTC and remains PENDING. This is the only pending submission globally.
-Do not resubmit it. P19/C18 is the one remaining approved entry and must wait
-for the first actual result. Its guarded export completed the real Kaggle GPU
-run and independent audit at 21:58 UTC; normal predictions are byte-identical,
-and its synthetic failure probe confirms cleanup of the default scoring file.
-The qualification and release gate bind that exact source and completed audit.
+Latest actual results, rechecked 11 November at 15:10 UTC: P18/C22,
+**ref58212322**, and P19/C18, **ref58219034**, are both COMPLETE at **0.478**
+without reported errors. There are zero pending entries. The two requested
+past-work trials are exhausted; do not resubmit either. The score observer
+exited at 05:34 UTC after both actual results and restored the compute pause.
+The user's latest instruction is to stop and research the 0.480 plateau.
 
 P16/ref58181280 is COMPLETE at **0.480**, tying P01/P13. P15/ref58163163 is
 COMPLETE at 0.479 without a reported error. The previous unused single-trial
 approval is superseded by the current request for two total new entries. The
 hourly campaign and silver goal remain paused; no new training is authorized.
+Research and measured failure breakdown: docs/PLATEAU-RESEARCH-2026-11-11.md.
 
 | Date (UTC) | Slot | Kernel | Change | Ref | Public LB |
 |---|---|---|---|---|---|
@@ -193,14 +193,15 @@ include zero. The0.480 champion is retained.
 
 | Date (UTC) | Slot | Kernel | Retained recipe | Ref | Public LB |
 |---|---|---|---|---|---|
-|2026-11-10 19:19|P18|casmi26-p18-c22-past-trained-trial v1|Complete pinned P16 plus final55000 C22 two-fold all-mode0.20 tail RRF; exact rank1/membership|58212322|**Pending**|
+|2026-11-10 19:19|P18|casmi26-p18-c22-past-trained-trial v1|Complete pinned P16 plus final55000 C22 two-fold all-mode0.20 tail RRF; exact rank1/membership|58212322|**0.478** (COMPLETE; no error)|
+|2026-11-11 00:21|P19|casmi26-p19-c18-guarded-export v1|Complete pinned P16 plus final45000 C18 two-fold all-mode0.20 tail RRF; whole-stage failure cleanup|58219034|**0.478** (COMPLETE; no error)|
 
-P19/C18 is the remaining approved entry and must wait for P18's actual result.
-Its guarded source is `casmi26-p19-c18-guarded-export` v1, qualified at 21:58 UTC.
-The raw scoring body, parent, model weights and normal output remain exact;
-the whole-stage cleanup wrapper closes a demonstrated preflight error path.
-This does not establish that the pending P18 run encountered that failure.
-Only one pending is allowed globally; exactly two new accepted entries total.
+P19 was accepted only after the actual P18 result. Its guarded source completed
+the real GPU run and independent audit at 21:58 UTC on10November. The raw scoring
+body, parent, model weights and normal output remain exact; whole-stage cleanup
+closes a demonstrated preflight error path. This does not establish that P18's
+hidden rerun encountered that failure. The one-pending global limit was maintained.
+Exactly two entries were accepted; both have now finished and no third is approved.
 The previous unused single-trial approval is superseded, not a third slot.
 Kaggle requires the scoring file to be named submission.csv. Two earlier custom-
 filename HTTP400 requests were rejected and reconciled without an accepted entry
@@ -208,3 +209,9 @@ or quota use. Both corrected exports completed real GPU reruns and independent
 hash/model/fusion/identity/fallback/local-cloud parity audits before P18 was sent.
 See docs/TWO-PAST-TRIALS-2026-11-10.md and compact C34 evidence. The hourly campaign
 and silver goal remain paused; no new training is authorized by these two trials.
+
+Both actual scores are0.002 below the0.480 champion. The small development gains
+did not transfer; both confidence intervals already included zero. Fresh API
+reconciliation confirms no reported errors and no pending submissions. The latest
+research request opened no new reserved labels and launched no further training
+or cloud runs.

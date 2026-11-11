@@ -1,0 +1,37 @@
+{
+  "checked_utc": "2026-11-11T15:20:29.236439+00:00",
+  "sources": [
+    {
+      "url": "https://www.kaggle.com/competitions/enveda-CASMI26-molecule-id-mass-spectra/",
+      "kind": "official competition",
+      "finding": "MRR@25 awards reciprocal first-correct rank and zero if absent. Retrieved via indexed official page; direct page text was unavailable."
+    },
+    {
+      "url": "https://arxiv.org/html/2410.23326v3",
+      "kind": "primary research; MassSpecGym",
+      "finding": "Spectrum heterogeneity, preprocessing and chemical similarity leakage complicate generalization; scaffold/edit-distance splits challenge identity-only evaluation. This supports validation methodology, not a proven hidden gain for our pipeline."
+    },
+    {
+      "url": "https://www.kaggle.com/competitions/enveda-CASMI26-molecule-id-mass-spectra/discussion/748524",
+      "kind": "firsthand participant report",
+      "finding": "Class shares and source/pretraining exposure change validation conclusions; seed sensitivity and same-structure exclusion matter. Reported hidden-class estimates are author hypotheses, not facts about our hidden test."
+    },
+    {
+      "url": "https://www.kaggle.com/competitions/enveda-CASMI26-molecule-id-mass-spectra/discussion/743254",
+      "kind": "firsthand participant report",
+      "finding": "Author describes same-formula isomer errors, limited extra database recall and disagreement between validation panels; checked against our own used240 error audit."
+    },
+    {
+      "url": "https://nihalsulaiman.com/blog/leak-free-validation-casmi/",
+      "kind": "firsthand participant report; 2026-11-02",
+      "finding": "Author reports optimistic exposed-panel validation reversing on a disjoint full-pipeline panel; candidate absence dominated their errors. Independent report, not our measurement."
+    },
+    {
+      "url": "https://raw.githubusercontent.com/shiferaxa/casmi26/main/docs/plan.md",
+      "kind": "firsthand public experiment log",
+      "finding": "Author reports improved fingerprint-channel retrieval failing to improve the full pipeline; changing ranker features and source rows did not automatically fix transfer. No weights/code adopted."
+    }
+  ],
+  "no_external_code_executed": true,
+  "no_external_model_adopted": true
+}

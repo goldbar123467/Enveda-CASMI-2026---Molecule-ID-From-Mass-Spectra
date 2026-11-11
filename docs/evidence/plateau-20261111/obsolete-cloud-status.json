@@ -1,0 +1,7 @@
+{
+  "checked_utc": "2026-11-11T15:18:32.861546+00:00",
+  "obsolete_kernel": "clarkkitchen/casmi26-c09-coverage-controls",
+  "obsolete_kernel_status": "CANCEL_REQUESTED",
+  "cancel_previously_requested": true,
+  "no_requeue": true
+}

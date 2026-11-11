@@ -1,0 +1,24 @@
+{
+  "completed_utc": "2026-11-11T15:14:57.412082+00:00",
+  "source_sha256": "dc463dc37fdebba83c595a145bcc23ed2d26850bfd39569f8962e34b33fa6945",
+  "postmortem_sha256": "6021b1d9b5f11fb6c5c1b698f877ba3f1a7f31cc42f31d9d7d02114b7c58f271",
+  "rank_breakdown_sha256": "994f3b7f37aae58df081b8ec7bb161dc71df88cb2056c1576a61a4c6474b9ae8",
+  "rdkit_version": "2026.03.3",
+  "groups": {
+    "all": {
+      "present_truth_below_first": 104,
+      "same_formula_wrong_first": 96
+    },
+    "positive": {
+      "present_truth_below_first": 72,
+      "same_formula_wrong_first": 66
+    },
+    "negative": {
+      "present_truth_below_first": 32,
+      "same_formula_wrong_first": 30
+    }
+  },
+  "reserved_labels_read": false,
+  "training_performed": false,
+  "limitation": "Formula equality of submitted SMILES on used development, not a hidden-test error distribution. Excludes missing truths and already-correct first choices; this does not establish that every wrong first choice can be fixed by one fragmentation model."
+}

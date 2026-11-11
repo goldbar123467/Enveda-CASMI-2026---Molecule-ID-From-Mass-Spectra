@@ -1,0 +1,107 @@
+{
+  "completed_utc": "2026-11-11T15:13:50.306266+00:00",
+  "source_sha256": "60eea5a57364f02ba344aa2e808d85625c749b008658fe71ca64faad10e3b352",
+  "inputs_sha256": {
+    "outputs\\local\\c21-negative-tail-20261110\\parent.csv": "76f63eb680300424b4c90a33c7cc8c98a2f345c7b734587fdc4ac57dc81792c4",
+    "outputs\\local\\c21-negative-tail-20261110\\queries.parquet": "ef072e28bc637ae3b36cceabbb72f2a431b4125a4f8349a534a60bf01891cc86",
+    "outputs\\local\\c21-negative-tail-20261110\\fingerprint-smiles.parquet": "3c6031cab7803deb24c15e8e5c5c9b2aa4077e8c829d1561be0ba433f4a87e9d",
+    "outputs\\local\\c10-casmi2022-20261110\\labels.csv": "f1d3b96f002827d2c9ddd1e61f0fe4e97551a27859da8c74d248588893515c6a",
+    "outputs\\local\\c20-negative-development-20261110\\labels.csv": "4d0f0803904dcf592fa9bda6786db72b40d9e27790ce0f891bb9ed700f82e1a3",
+    "outputs\\local\\two-past-trials-20261110\\C22-peak-dose_allmode.csv": "ce9a80ed8430203bb6f6a484305eb32501f28edd6fbe7f820126b59d6b1908c0",
+    "outputs\\local\\two-past-trials-20261110\\C18-peak-drop_allmode.csv": "272957fc9a6d963d2aa0886e59cc10c10587017b812faac57936460d91b1b66d",
+    "outputs\\local\\two-past-trials-20261110\\selection.json": "3bc3cb1d6d38ced4a55825b67af81dfd74f2269cc7a3f6f292a4ccd4a83e1903",
+    "outputs\\local\\plateau-research-20261111\\account-status.json": "89c76cadaabe6c0b73a64e3a0d4fd26a7015b8a5e5f644a098b312f364991140"
+  },
+  "all240_labels_previously_consumed": true,
+  "reserved_labels_read": false,
+  "training_performed": false,
+  "gpu_inference_performed": false,
+  "submission_performed": false,
+  "oracle_exhaustive_small_case_checks": 21,
+  "groups": {
+    "all240": {
+      "n": 240,
+      "mrr25": 0.28374784096858907,
+      "truth_present": 150,
+      "truth_absent": 90,
+      "rank1_correct": 46,
+      "rank2_to5": 50,
+      "rank6_to10": 22,
+      "rank11_to25": 32,
+      "oracle_same_candidates_free_rank": 0.625,
+      "oracle_keep_rank1_free_tail": 0.4083333333333333,
+      "oracle_fixed_point2_rrf": 0.31935185185185183,
+      "fixed_rrf_remaining_headroom": 0.03560401088326281
+    },
+    "positive160": {
+      "n": 160,
+      "mrr25": 0.27874430083805085,
+      "truth_present": 100,
+      "truth_absent": 60,
+      "rank1_correct": 28,
+      "rank2_to5": 38,
+      "rank6_to10": 15,
+      "rank11_to25": 19,
+      "oracle_same_candidates_free_rank": 0.625,
+      "oracle_keep_rank1_free_tail": 0.4,
+      "oracle_fixed_point2_rrf": 0.31623511904761903,
+      "fixed_rrf_remaining_headroom": 0.03749081820956821
+    },
+    "negative80": {
+      "n": 80,
+      "mrr25": 0.29375492122966546,
+      "truth_present": 50,
+      "truth_absent": 30,
+      "rank1_correct": 18,
+      "rank2_to5": 12,
+      "rank6_to10": 7,
+      "rank11_to25": 13,
+      "oracle_same_candidates_free_rank": 0.625,
+      "oracle_keep_rank1_free_tail": 0.425,
+      "oracle_fixed_point2_rrf": 0.3255853174603175,
+      "fixed_rrf_remaining_headroom": 0.03183039623065198
+    }
+  },
+  "latest_trials": {
+    "C22-peak-dose_allmode": {
+      "mrr25": 0.284919310153927,
+      "delta": 0.0011714691853379764,
+      "changed_lists": 237,
+      "changed_truth_ranks": 48,
+      "improved": 26,
+      "harmed": 22,
+      "public_score": 0.478,
+      "development_ci95": [
+        -0.000479460344207555,
+        0.0029428504837983303
+      ]
+    },
+    "C18-peak-drop_allmode": {
+      "mrr25": 0.28456299401636087,
+      "delta": 0.0008151530477718387,
+      "changed_lists": 237,
+      "changed_truth_ranks": 48,
+      "improved": 24,
+      "harmed": 24,
+      "public_score": 0.478,
+      "development_ci95": [
+        -0.0008946853072371524,
+        0.002606696964277265
+      ]
+    }
+  },
+  "two_trials_same_full_list_rows": 42,
+  "two_trials_same_truth_ranks": 227,
+  "rrf25_best_rank_by_original_rank": {
+    "2": 2,
+    "3": 2,
+    "5": 3,
+    "10": 6,
+    "15": 8,
+    "20": 9,
+    "25": 10
+  },
+  "statistical_promotion": false,
+  "new_recipe_selected": false,
+  "limitation": "Post-hoc description of used source-shifted development only. Oracles know the answers and are unattainable quality ceilings, not hidden scores. Public aggregate results cannot locate hidden per-molecule errors or prove the pending P18 cleanup failure path executed."
+}

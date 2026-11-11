@@ -1,0 +1,167 @@
+{
+  "checked_utc": "2026-11-11T15:10:03.086553+00:00",
+  "submissions": [
+    {
+      "reference": "58219034",
+      "status": "COMPLETE",
+      "public_score": 0.478,
+      "error": "",
+      "success": true,
+      "description": "C09-TWO-P19-C18-20261110: Explicit existing-work scoring trial. Complete pinned P16 parent plus retained C18 final45000 two-fold0.20 tail-RRF. Real12/400 Kaggle smoke, independent arithmetic/identity/fallback/local-cloud parity. Development uncertainty includes zero; no hidden-gain claim."
+    },
+    {
+      "reference": "58212322",
+      "status": "COMPLETE",
+      "public_score": 0.478,
+      "error": "",
+      "success": true,
+      "description": "C09-TWO-P18-C22-20261110: Explicit existing-work scoring trial. Complete pinned P16 parent plus retained C22 final55000 two-fold0.20 tail-RRF. Real12/400 Kaggle smoke, independent arithmetic/identity/fallback/local-cloud parity. Development uncertainty includes zero; no hidden-gain claim."
+    },
+    {
+      "reference": "58181280",
+      "status": "COMPLETE",
+      "public_score": 0.48,
+      "error": "",
+      "success": true,
+      "description": "C09-P16-EXTREF-20261109: Complete pinned P01 plus fixed measured-reference spectral promotions; official identity dedup. Real12/400 Kaggle smoke, independent peak/merge/fallback/local-cloud parity, frozen development and complete80 confirmation reviewed. External-source/provenance limitations retained; hidden gain unproven."
+    },
+    {
+      "reference": "58163163",
+      "status": "COMPLETE",
+      "public_score": 0.479,
+      "error": "",
+      "success": true,
+      "description": "C08-P15-20261108: C08 selected two-fit320 scorer, conservative tail-only RRF after complete P01. Rank1/candidate set exact. Real12 Kaggle smoke, arithmetic/identity/artifact/local-Kaggle parity audited. Explicit trial; hidden improvement unproven."
+    },
+    {
+      "reference": "58111204",
+      "status": "COMPLETE",
+      "public_score": 0.458,
+      "error": "",
+      "success": true,
+      "description": "F07-P14-20261107: P01 plus development-selected F07R1 frozen DreaMS/MoLFormer50% final-list channel. Reserved conditional MRR .6375 to .7423; real12 Kaggle smoke/400valid, model pins, fusion, unsupported fallback and metric dedup audited. Hidden gain unproven."
+    },
+    {
+      "reference": "58105681",
+      "status": "COMPLETE",
+      "public_score": 0.48,
+      "error": "",
+      "success": true,
+      "description": "F07-P13-20261107: P01 unchanged original/v80 primary; public50/v80-50 outsider blend. Real12 GPU smoke/400valid; exact P01 primary, independent outsider fusion and metric dedup verified. Hidden gain unproven."
+    },
+    {
+      "reference": "58071964",
+      "status": "COMPLETE",
+      "public_score": null,
+      "error": "Your notebook hit an unhandled error while rerunning your code. Note that the hidden dataset can be larger/smaller/different than the public dataset",
+      "success": false,
+      "description": "L06-P12-20261106: user-requested trial; original50 + long-control-fivefold50, 128 epochs each. Real GPU smoke12/400 valid; five pinned models, exact mean/blend and metric dedup verified. Hidden benefit unproven."
+    },
+    {
+      "reference": "58036642",
+      "status": "COMPLETE",
+      "public_score": 0.468,
+      "error": "",
+      "success": true,
+      "description": "EOD11-20261105: public50 + NPcurriculum50 (128+32 epochs). Two excluded-parent validations improve native retrieval and final panel; full GPU smoke12 real/400 valid, exact blend and pinned weights. User-requested EOD best candidate; 2 daily slots reserved."
+    },
+    {
+      "reference": "58032626",
+      "status": "COMPLETE",
+      "public_score": 0.479,
+      "error": "",
+      "success": true,
+      "description": "p02: original Saner scorer control plus fixed documentation prior and metric identity dedup; panel and three NP tail checks improve; real smoke zero errors, original scores match exactly"
+    },
+    {
+      "reference": "58032057",
+      "status": "COMPLETE",
+      "public_score": 0.48,
+      "error": "",
+      "success": true,
+      "description": "p01: public480 reproduction; public+v80 z-score ensemble, documentation prior, metric-key dedup; exact raw local panel .912842 to .918796; real smoke audited"
+    },
+    {
+      "reference": "57915490",
+      "status": "COMPLETE",
+      "public_score": 0.477,
+      "error": "",
+      "success": true,
+      "description": "v1: public v33 real-list residual (logistic re-sort of ranks 2-25 where library < 0.87, leaders fixed)"
+    },
+    {
+      "reference": "57915488",
+      "status": "COMPLETE",
+      "public_score": 0.459,
+      "error": "",
+      "success": true,
+      "description": "w8: s3 + neural scorer = 4 refits trained 128 epochs (kit 16); holdout MRR 0.48->0.71 random, 0.37->0.60 natural products"
+    },
+    {
+      "reference": "57915486",
+      "status": "COMPLETE",
+      "public_score": 0.453,
+      "error": "",
+      "success": true,
+      "description": "w7: s3 + neural scorer = 8 refits trained 64 epochs (kit 16); holdout MRR 0.48->0.66 random, 0.38->0.55 natural products"
+    },
+    {
+      "reference": "57915482",
+      "status": "COMPLETE",
+      "public_score": 0.458,
+      "error": "",
+      "success": true,
+      "description": "w6: s3 + neural scorer = final_model + 8 refits trained 32 epochs (kit 16); holdout MRR 0.48->0.58 random, 0.38->0.43 natural products"
+    },
+    {
+      "reference": "57915477",
+      "status": "COMPLETE",
+      "public_score": 0.46,
+      "error": "",
+      "success": true,
+      "description": "w3: s3 + neural scorer averaged over 9 seeds (original + 8 full-data refits)"
+    },
+    {
+      "reference": "57756861",
+      "status": "COMPLETE",
+      "public_score": 0.47,
+      "error": "",
+      "success": true,
+      "description": "t3b: s3 + fold-safe FPNet vote 0.5 in ranks 2-25 (t3 with the molecule-id fix)"
+    },
+    {
+      "reference": "57751772",
+      "status": "COMPLETE",
+      "public_score": 0.465,
+      "error": "",
+      "success": true,
+      "description": "t4: s3 + fold-safe FPNet vote at weight 1.0 in ranks 2-25"
+    },
+    {
+      "reference": "57751766",
+      "status": "COMPLETE",
+      "public_score": 0.465,
+      "error": "",
+      "success": true,
+      "description": "t3: s3 + fold-safe FPNet vote (5 models) blended into ranks 2-25"
+    },
+    {
+      "reference": "57751756",
+      "status": "COMPLETE",
+      "public_score": 0.476,
+      "error": "",
+      "success": true,
+      "description": "t2: s3 + neural scorer averages final and last-validation checkpoints"
+    },
+    {
+      "reference": "57751749",
+      "status": "COMPLETE",
+      "public_score": 0.465,
+      "error": "",
+      "success": true,
+      "description": "t1: s3 + looser fragment-check rank-1 rule (lib 0.92, >=2 spectra, ranks 2-8, neural margin 0.15)"
+    }
+  ],
+  "pending": [],
+  "read_only": true
+}
