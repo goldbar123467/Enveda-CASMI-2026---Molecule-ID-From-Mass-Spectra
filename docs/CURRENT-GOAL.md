@@ -1,16 +1,24 @@
 # Current project goal — 11 November 2026
 
-Establish a defensible CASMI26 improvement path before spending more GPU time: trace exact final-selection decisions for the 26 retrieved-but-dropped answers; distinguish reproducible implementation defects from deliberate ranking tradeoffs; if a general mechanism exists, freeze and test one CPU-only candidate-retention change using cached complete-pipeline outputs, all missing-truth zeros, chemistry-grouped selection and cross-source checks that count both recovered and displaced answers. If no defensible mechanism or transferable gain exists, audit and define a more representative validation population without tuning panels to match old leaderboard scores. Consume the untouched C13 holdout at most once only after a defensible candidate is frozen and survives prior checks. Preserve the 0.480 champion, keep GPU/encoder training, GPU inference, cloud jobs, submissions and hourly automation paused during this CPU-first investigation; do not infer authorization for new paid compute or scoring submissions. Finish with reproducible evidence and an objective go/no-go decision; do not claim a higher public score from local metrics.
+Build and audit validation with documented target/source support, preserving full
+acquisition sets and mixed polarities. Integrate the confirmed legacy formate
+compatibility repair in controlled validation. Develop and qualify new CPU and
+GPU candidates, then run at most two newly approved scoring submissions,
+provisionally one CPU-backed and one GPU-backed. Wait for each actual terminal
+score and finish after both results. No repeat submission approval is needed.
 
-Native Codex goal: successfully registered after the prior goal was cleared. The user cleared the former paused silver goal; this new objective was created through create_goal without falsely completing the old objective.
+The user explicitly authorized this goal and two new submissions. Local RTX2070
+and free Kaggle CPU/T4 resources are authorized as justified; new paid compute
+is not. Hourly automation stays off; older campaigns stay inactive. Preserve
+the0.480 champion, prior sealed evidence, and fresh C13 until at most one
+properly frozen qualifying use. No cohort tuning to match old leaderboard
+outcomes, absent-truth filtering, truth injection or re-use of exhausted trials.
 
-Success means reproducible selection-loss attribution and an objective go/no-go decision, with one frozen CPU retention test if justified; a local metric is never a claimed public improvement.
+Native goal is ACTIVE. Authorization and working evidence are in
+outputs/local/c38-source-support-20261111/. The old compute-pause marker remains
+as a guard against historical workers; new controlled workers must explicitly
+verify the current C38 authorization rather than restart old controllers.
 
-
-C37 disposition: CPU investigation complete, NO-GO for GPU work, retention-policy
-promotion or submission. All26 observed selection losses are reconciled; a
-separate formate compatibility defect has a tested prospective adapter. Current
-validation populations lack target acquisition support. The prospective
-source-support protocol and corrected mixed-query reporting are frozen.
-Fresh C13 remains unread; no defensible replacement candidate qualified.
-See [C37 evidence and decision](C37-SELECTION-AND-POPULATION-2026-11-11.md).
+C37 completed with no qualified replacement: see
+[C37 report](C37-SELECTION-AND-POPULATION-2026-11-11.md). Its no-go applies to the
+failed candidates and historical state, not a request to refuse the new work.

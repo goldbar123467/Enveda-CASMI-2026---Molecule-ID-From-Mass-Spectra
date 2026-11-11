@@ -1,0 +1,17 @@
+{
+  "authorized_utc": "2026-11-11T22:29:43.286961+00:00",
+  "user_instruction": "Do the next steps as a goal until new gpu and cpu submissions 2 approved",
+  "active": true,
+  "scope": "New source-supported validation, formate compatibility integration, new CPU/GPU candidate development and up to2new scored submissions.",
+  "submissions_approved": 2,
+  "submissions_used": 0,
+  "allocation": "Provisionally1CPU-backed+1GPU-backed; optional user preference pending",
+  "requires_repeat_submission_approval": false,
+  "free_local_and_kaggle_compute_authorized": true,
+  "new_paid_compute_authorized": false,
+  "preserve_champion": 0.48,
+  "hourly_automation": false,
+  "resubmit_exhausted_past_trials": false,
+  "reserved_C13": "At most once after one frozen defensible candidate survives prior/source checks; no assumption of target instrument support",
+  "old_campaigns_stay_inactive": true
+}

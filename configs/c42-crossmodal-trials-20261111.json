@@ -1,0 +1,38 @@
+{
+  "run_id": "C42",
+  "approved_new_scoring_submissions": 2,
+  "intended_pair": ["C40 CPU ridge alignment", "C40 GPU nonlinear alignment"],
+  "freeze_timing": "Before any C39 pipeline-quality metrics or C13 reserved labels are read.",
+  "comparison_kind": "Two controlled exploratory scoring trials, not a claimed validated public improvement.",
+  "candidate_lists": "Real complete reference-masked P01/C41 output lists for development. No truth insertion, forced candidates or absent-truth filtering.",
+  "serving": {
+    "parent": "Unchanged complete P01/P16 production control",
+    "head_weight": 0.2,
+    "rrf_offset": 3.0,
+    "protect_rank_one": true,
+    "preserve_candidate_membership": true,
+    "preserve_formula_positions": true,
+    "head_ranks": "Stable score ranks within each same-formula tail group; the original rank1 is excluded from any permutation.",
+    "support": "At least one supported positive DreaMS acquisition per query. Entire formula group must have valid untruncated MoLFormer candidates; unsupported groups/queries retain parent order."
+  },
+  "new_fitted_component_boundary": "Must pass original-row identity/quarantine audit as well as chemistry-group exclusions; refit if additional contaminated fitting identities are found before outcomes.",
+  "admission": {
+    "minimum_development_point_delta": 0.0,
+    "strict_development_improvement_required": true,
+    "source_and_query_mode_point_deltas_must_be_nonnegative": true,
+    "all_query_zero_accounting": true,
+    "rank1_changes_allowed": 0,
+    "candidate_identity_changes_allowed": 0,
+    "grouped_intervals_reported": true,
+    "uncertain_intervals_are_not_claimed_as_evidence_of_positive_transfer": true,
+    "known_P14_control_reported": true,
+    "qualification_tier": "Engineering-passed exploratory trials if all directional/source gates pass. Local calibration and public pretraining exposure remain disclosed; actual public scores decide improvement."
+  },
+  "C13": "Do not open for candidate or weight search. If both fixed recipes pass earlier checks, freeze a single paired evaluation protocol before one joint reserved-label access. Report both results and their uncertainty; do not revise either recipe using reserved outcomes.",
+  "submission_sequence": "At most two new accepted scoring entries. Real changed-path Kaggle smoke and independent source/artifact checks precede each entry; observe the first actual terminal result before releasing the second.",
+  "no_repeated_user_approval_required": true,
+  "old_exhausted_trials_are_not_candidates": true,
+  "preserve_champion_score": 0.480,
+  "hourly_automation": false,
+  "new_paid_compute": false
+}

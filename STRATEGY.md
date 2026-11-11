@@ -1,5 +1,20 @@
 # C09 results and P16 scoring trial — 9–10 November
 
+## ACTIVE C38 goal — new CPU/GPU work and2new submissions approved
+
+Latest user instruction: "Do the next steps as a goal until new gpu and cpu
+submissions2approved". The new native goal is ACTIVE. Read docs/CURRENT-GOAL.md
+and outputs/local/c38-source-support-20261111/authorization.json. Build audited
+source-supported validation with full acquisition sets and proper mixed modes;
+integrate the formate fix; develop/qualify new candidates; continue through two
+actual new scoring results. Provisionally one CPU-backed and one GPU-backed.
+No repeat submission approval is needed. Local2070/free Kaggle CPU/T4 compute
+is authorized as scientifically justified; no new paid compute is authorized.
+Keep hourly automation and old campaigns off. Preserve0.480 and prior artifacts;
+no exhausted past-trial resubmission, truth injection, favorable-cohort tuning,
+or premature C13 access. The old pause marker only keeps old workers inactive;
+new controlled workers require explicit current authorization and trial caps.
+
 ## Completed C37 CPU-first goal — 11 November; GPU remains paused
 
 Read docs/C37-SELECTION-AND-POPULATION-2026-11-11.md and compact evidence in

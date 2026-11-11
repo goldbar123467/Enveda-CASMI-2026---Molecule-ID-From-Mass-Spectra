@@ -1,0 +1,12 @@
+{
+  "completed_utc": "2026-11-11T23:20:39.735269+00:00",
+  "model_sha256": "9682e6e5c445ce3705512512c3c11f0b2e4c037a97654719b9f01501b0537695",
+  "source_contract_sha256": "1d80e04950a82fc9c219edd45cb0d1d7923ad1ce8c24dddb06b364afe7044207",
+  "fitting_identities": 174328,
+  "seconds": 7.458079000003636,
+  "feature_freeze_sha256": "52b175c134584c3a503bd642d2d8ac9cf519578c08c8a9b0c30964ecc1aafebc",
+  "validation_metrics_read": false,
+  "C13_read": false,
+  "head_fitted_on_cpu": true,
+  "qualified_for_submission": false
+}

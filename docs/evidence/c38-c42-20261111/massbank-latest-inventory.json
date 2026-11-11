@@ -1,0 +1,24 @@
+{
+  "completed_utc": "2026-11-11T22:33:51.645571+00:00",
+  "protocol_sha256": "374eeb7812804f2ed2b89b32d51b27e39711b8c8f1aaf47be88481b2cccd749f",
+  "counts": {
+    "text_records_scanned": 144947,
+    "explicit_tims_records": 291
+  },
+  "tims_ms2_records": 291,
+  "tims_identities": 180,
+  "eligible_records": 0,
+  "eligible_identities": 0,
+  "eligible_modes": {},
+  "instruments": {
+    "TIMS-TOF Pro, Bruker Daltonik; Elute UHPLC System, Bruker Daltonik": 277,
+    "Bruker timsTOF": 14
+  },
+  "eligible_instruments": {},
+  "eligible_licenses": {},
+  "inventory_sha256": "44480482790e18521e74014aa1cafdb1d082b28b3b056a71f05540d932bdeda8",
+  "quality_metrics_read": false,
+  "reserved_C13_read": false,
+  "qualified_validation": false,
+  "limitation": "Primary-record novelty inventory only. Acquisition export, exact/near spectrum tests, chemistry/source partitioning and metadata support checks remain required."
+}

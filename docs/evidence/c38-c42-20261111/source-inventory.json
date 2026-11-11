@@ -1,0 +1,110 @@
+{
+  "completed_utc": "2026-11-11T22:31:04.756916+00:00",
+  "protocol_sha256": "315f73348f71ff363b9974af416d4b511010b2221605d9e6d928e53a272d09c7",
+  "reports": {
+    "gnps_documented_timsTOF": {
+      "all": {
+        "raw_records": 31419,
+        "raw_supplied_keys": 8853,
+        "previously_admitted_records": 21927,
+        "admitted_unique_identities": 8474,
+        "excluded_training_or_reference_records": 21927,
+        "excluded_consumed_panel_records": 0,
+        "inventory_eligible_records": 0,
+        "inventory_eligible_identities": 0,
+        "raw_modes": {
+          "Positive": 31419
+        },
+        "eligible_modes": {}
+      },
+      "by_library": {
+        "GNPS-ION-MOBILITY-LIBRARY": {
+          "raw_records": 24081,
+          "raw_supplied_keys": 7312,
+          "previously_admitted_records": 14997,
+          "admitted_unique_identities": 6818,
+          "excluded_training_or_reference_records": 14997,
+          "excluded_consumed_panel_records": 0,
+          "inventory_eligible_records": 0,
+          "inventory_eligible_identities": 0,
+          "raw_modes": {
+            "Positive": 24081
+          },
+          "eligible_modes": {}
+        },
+        "GNPS-ION-MOBILITY-LIBRARY-FILTERED": {
+          "raw_records": 119,
+          "raw_supplied_keys": 72,
+          "previously_admitted_records": 86,
+          "admitted_unique_identities": 69,
+          "excluded_training_or_reference_records": 86,
+          "excluded_consumed_panel_records": 0,
+          "inventory_eligible_records": 0,
+          "inventory_eligible_identities": 0,
+          "raw_modes": {
+            "Positive": 119
+          },
+          "eligible_modes": {}
+        },
+        "GNPS-REFRAME-DRUG-CCS-LIBRARY": {
+          "raw_records": 7219,
+          "raw_supplied_keys": 5356,
+          "previously_admitted_records": 6844,
+          "admitted_unique_identities": 5328,
+          "excluded_training_or_reference_records": 6844,
+          "excluded_consumed_panel_records": 0,
+          "inventory_eligible_records": 0,
+          "inventory_eligible_identities": 0,
+          "raw_modes": {
+            "Positive": 7219
+          },
+          "eligible_modes": {}
+        }
+      }
+    },
+    "massbank_explicit_timsTOF": {
+      "all": {
+        "raw_records": 291,
+        "raw_supplied_keys": 180,
+        "previously_admitted_records": 272,
+        "admitted_unique_identities": 170,
+        "excluded_training_or_reference_records": 272,
+        "excluded_consumed_panel_records": 0,
+        "inventory_eligible_records": 0,
+        "inventory_eligible_identities": 0,
+        "raw_modes": {
+          "NEGATIVE": 161,
+          "POSITIVE": 130
+        },
+        "eligible_modes": {}
+      },
+      "by_library": {
+        "MassBank-timsTOF": {
+          "raw_records": 291,
+          "raw_supplied_keys": 180,
+          "previously_admitted_records": 272,
+          "admitted_unique_identities": 170,
+          "excluded_training_or_reference_records": 272,
+          "excluded_consumed_panel_records": 0,
+          "inventory_eligible_records": 0,
+          "inventory_eligible_identities": 0,
+          "raw_modes": {
+            "NEGATIVE": 161,
+            "POSITIVE": 130
+          },
+          "eligible_modes": {}
+        }
+      }
+    }
+  },
+  "unique_eligible_identities": 0,
+  "forbidden_identity_count": 278559,
+  "consumed_identity_count": 448,
+  "reserved_C13_labels_or_predictions_read": false,
+  "quality_metrics_computed": false,
+  "new_inference": false,
+  "primary_source_checks_remaining": true,
+  "full_acquisitions_not_yet_exported": true,
+  "known_limitation": "GNPS metadata says Crude and only positive mode for these libraries; source documentation alone does not establish every identity as an authentic-standard truth. Same-lab GNPS collections are not independent laboratories. Exact source and purity/annotation review is required.",
+  "qualified_validation_population": false
+}

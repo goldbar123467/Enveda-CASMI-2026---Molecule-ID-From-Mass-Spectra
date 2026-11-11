@@ -1,0 +1,40 @@
+{
+  "completed_utc": "2026-11-11T22:43:22.489458+00:00",
+  "protocol_sha256": "d1f4ffe9f76ceeca77f91737b3d33d1ff3e440f216e5cdf5b1b5b805791ca323",
+  "queries": 352,
+  "spectra": 1292,
+  "sources": {
+    "enveda-180": 192,
+    "MassBank2026.11-timsTOF": 80,
+    "enveda-np-examples": 80
+  },
+  "partitions": {
+    "development": 192,
+    "source_stress": 160
+  },
+  "chemistry_groups": 273,
+  "development_source_groups_disjoint": true,
+  "development_mode_counts": {
+    "mixed": 46,
+    "positive": 133,
+    "negative": 13
+  },
+  "development_exclusions": {
+    "source_chemistry_overlap": 1
+  },
+  "all_usable_acquisitions_in_selected_source_records_retained": true,
+  "files_sha256": {
+    "outputs\\publish\\c39-source-supported-validation-20261111\\validation-queries.parquet": "9f6182bf33a856b5588a6a0f712eb0577cb2dba888dfaff07eb3f1c178158b9d",
+    "outputs\\publish\\c39-source-supported-validation-20261111\\validation-sample.csv": "e43eeda34ef34713ce9de8a600f46d62db6000a78063f55db5e7d5819c5053e2",
+    "outputs\\local\\c39-source-supported-validation-20261111\\labels.csv": "0c4ac3d6462c924573b6b1dc66da50b00404c4ceb3aa41f5bcc67a130a03014d",
+    "outputs\\local\\c39-source-supported-validation-20261111\\provenance.csv": "7333c9abfa12a0bfe0cb4f781fa576e2681b93700df7bb66a0c00ab413d60bf0",
+    "outputs\\local\\c39-source-supported-validation-20261111\\selected-reference-exclusion-identities.json": "733292df8335f8be5cd3ec5da45961c4bf305f514398dbb6af36e76c6f504ec1"
+  },
+  "known_pretraining_exposure": true,
+  "novel_identity_confirmation": false,
+  "quality_metrics_computed": false,
+  "reserved_C13_read": false,
+  "reference_mask_complete": false,
+  "new_model_fit_exclusions_complete": false,
+  "qualified_for_scoring": false
+}

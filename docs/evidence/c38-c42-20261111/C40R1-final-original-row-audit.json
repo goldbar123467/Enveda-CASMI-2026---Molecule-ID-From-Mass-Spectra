@@ -1,0 +1,8 @@
+{
+  "finalized_reference_exclusion_sha256": "edad548528a2a9c684540a55a37b7b448481580353c09515135072c72e28892b",
+  "fitting_identities_sha256": "2bc2d14c26cb3106406f3d6d58a5364b7da1b04025c1eae9218853bec5f03e10",
+  "final_quarantined_ids_already_absent": true,
+  "additional_refit_required": false,
+  "head_fit_boundary_passed": true,
+  "quality_metrics_read": false
+}

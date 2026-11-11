@@ -1,0 +1,13 @@
+{
+  "completed_utc": "2026-11-11T23:24:59.871386+00:00",
+  "model_sha256": "eee1ef0560242dcb9e7bb7c74c2530abd17693e8621066c7dee2aae71ed0e425",
+  "source_contract_sha256": "bcbc49e30c679136bf3415d69b3b958bd8e465d344adb3c6bcf87d88de4f08ba",
+  "steps": 30000,
+  "fitting_identities": 174328,
+  "final_checkpoint_only": true,
+  "old_head_weights_reused": false,
+  "validation_metrics_read": false,
+  "C13_read": false,
+  "maximum_gpu_reserved_gib": 0.076171875,
+  "qualified_for_submission": false
+}

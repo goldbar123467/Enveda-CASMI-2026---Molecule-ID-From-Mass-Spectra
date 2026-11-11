@@ -1,0 +1,26 @@
+{
+  "completed_utc": "2026-11-11T23:33:57.946755+00:00",
+  "source_sha256": "a3ca8c4a585b06eef37bb118ac6953c1c7d240c929d571ce367beab667d0be4f",
+  "initial_pass_sha256": "7f03110379e27eebc103bc567ed950fbdc633cc1719bb4d6ed7be1254b496abe",
+  "initial_witness_sha256": "9c3b71a0c4231d631ce61e5de8446f69ba9d5e87c087a403527ebc74f800e3dd",
+  "source_structure_pairs": 277566,
+  "source_raw_identities": 275810,
+  "raw_reference_keys_excluded": 32146,
+  "main_reference_SIDs_excluded": 32146,
+  "main_reference_SIDs": 275810,
+  "aliases_retroactively_excluded": 7,
+  "blocked_official_identities": 31993,
+  "new_heads_total_original_fit_identities_to_quarantine": 5,
+  "reference_query_identity_survivors": 0,
+  "first_pass_discovery_order_no_longer_affects_alias_masks": true,
+  "files_sha256": {
+    "main-reference-sid-exclusion.npy": "d196ce36bc524c6258adb8b59b13757f5253282947f0a67bae2be78903cdb94e",
+    "engine2-raw-key-exclusion.json": "ddacce2cf5f2b2195342b7257ae827076e9b6d6c40ab51e54ec8d9a187a8dfad",
+    "original-structure-identity-witnesses.parquet": "5b3848e7d3f6ed8c00ee781d67f0aa5c1abb75b3969c66c6dceea8040a84893f",
+    "additional-fit-identities-to-quarantine.npy": "a855067a32cb7e7503c3dc33f340c4d128142ac75e2872344f099f6442df284e"
+  },
+  "quality_metrics_read": false,
+  "C13_read": false,
+  "runtime_enforcement_not_yet_verified": true,
+  "caveat": "Initial C41 smoke may establish the identical guard code path; full inference must use these finalized global masks and new heads must exclude the finalized quarantine set."
+}

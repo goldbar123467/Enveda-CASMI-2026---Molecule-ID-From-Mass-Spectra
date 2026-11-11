@@ -1,0 +1,37 @@
+{
+  "completed_utc": "2026-11-11T23:19:14.634334+00:00",
+  "protocol_sha256": "64c2c0ad696a68e458b1179ca03498f37e2c78d8f3767440f2761211d09a616b",
+  "heldout_queries": 352,
+  "heldout_chemistry_groups": 273,
+  "total_catalogue": 273833,
+  "excluded_catalogue_identities": 31906,
+  "first_exclusion_reason_counts": {
+    "formula": 12524,
+    "identity": 345,
+    "scaffold": 17251,
+    "known_acquisition_alias": 996,
+    "fingerprint_similarity": 785
+  },
+  "original_fit_identities": 195809,
+  "new_fit_identities": 174328,
+  "new_fit_spectrum_rows": 600815,
+  "maximum_remaining_heldout_tanimoto": 0.6987951993942261,
+  "identity_overlap": 0,
+  "files_sha256": {
+    "excluded-molecules.npy": "b918e5b5b3670f7b057fbd2575841a06555efbd77eaac7a11e5a3a4dd872ac6e",
+    "maximum-heldout-similarity.npy": "6a10e9f697e2cb03e77b54e04337196cf24b3750310d1849882b670a5eb68aa7",
+    "fitting-identities.npy": "2bc2d14c26cb3106406f3d6d58a5364b7da1b04025c1eae9218853bec5f03e10",
+    "fitting-spectrum-rows.npy": "4c97517a01b0c7925b232ecc98e3240c328ed9dcec3e39d4f7f9d97bfdabaf9d"
+  },
+  "source_queries_not_used_for_fit_or_hyperparameters": true,
+  "old_trained_head_weights_not_reused": true,
+  "frozen_encoder_pretraining_exposure_not_claimed_absent": true,
+  "quality_metrics_computed": false,
+  "reserved_C13_read": false,
+  "reference_mask_not_yet_built": true,
+  "raw_near_spectrum_audit_remaining": true,
+  "qualified_for_scoring": false,
+  "original_row_boundary_passed": true,
+  "additional_original_row_identities_excluded": 5,
+  "old_heads_retired": true
+}

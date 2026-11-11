@@ -1,0 +1,13 @@
+{
+  "observed_utc": "2026-11-11T23:52:56.905194+00:00",
+  "kernel": "clarkkitchen/casmi26-c41-smoke-masked-validation",
+  "version": 1,
+  "state": "ERROR",
+  "root_cause": "Engine2 releases L['ik'] before build_index; new mask requires it. Original Engine2 crashed, causing empty ENG; recovery correctly refused to override an existing pool.",
+  "secondary_error": "Recovery is forbidden when the original Engine2 pool has candidates",
+  "fix": "Keep original raw identity strings until the measured-reference guard consumes them, then release them immediately after index construction. Preserve recovery rules.",
+  "two_actual_T4s": true,
+  "encoder_preflight_passed": true,
+  "quality_metrics_read": false,
+  "scoring_submissions_used": 0
+}
