@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "frozen_utc": "2026-11-11T16:32:16.575286+00:00",
+  "auditor_sha256": "0959171e8eb3a519b3b95160a28e74cab9b7addc567f47feaa1f32a8e3e5d820",
+  "inputs": {
+    "target": {
+      "path": "outputs\\local\\c37-selection-trace-20261111\\unlabelled-target\\test.parquet",
+      "sha256": "2fa29c4aa06e93b48e0cd6619fd2de3f4e956f0019d242141678b7287f2b43e0"
+    },
+    "primary": {
+      "path": "outputs\\local\\c21-negative-tail-20261110\\queries.parquet",
+      "sha256": "ef072e28bc637ae3b36cceabbb72f2a431b4125a4f8349a534a60bf01891cc86"
+    },
+    "historical_source": {
+      "path": "outputs\\forks\\c09-clean-validation-v2\\c09_clean_queries.parquet",
+      "sha256": "634b888f74196f703507173e57a6ba18c086af5f58079a3e43ed97b9ce06fff9"
+    }
+  },
+  "scope": "Query metadata and source support only. No fresh C13 data, target truth, predictions, local MRR or historical leaderboard outcomes read.",
+  "prospective_population": {
+    "unit": "One molecule query with its original complete usable acquisition set; never select one scan for convenience.",
+    "sources": "At least two documented external acquisition sources, including a timsTOF source; source held out from candidate-model selection.",
+    "sampling": "Deterministic seeded draw within ionization-mode/canonical-adduct/instrument/acquisition-count strata, independent of predictions and candidate truth coverage.",
+    "target_mix": "Freeze strata from the full unlabelled public test metadata; never optimize strata to reproduce prior leaderboard signs.",
+    "chemistry": "Freeze transitive groups from official identity, scaffold, formula and Morgan Tanimoto>=0.70; no group crosses train/selection/source-confirmation splits.",
+    "exposure": "Audit exact and near acquisition matches and documented training/reference identities for every adopted model. Unknown pretraining exposure must be reported, not assumed absent.",
+    "missing_support": "An absent target stratum or source cannot be repaired with infinite weights, repeated molecules, or resampling; report the gap and obtain new qualifying acquisitions.",
+    "endpoints": "All-query MRR@25 with absent truth zero; candidate recall@25, true-top1 gains/losses, recovered/displaced answers; paired chemistry-cluster uncertainty by source and polarity.",
+    "decision": "Freeze one complete pipeline candidate before source outcomes. Require material supported development gain and no adverse source/polarity point result; separately disclose uncertainty. Use a never-consumed independent confirmation only after those checks.",
+    "interim": "Current panels remain diagnostic. No claim of a representative or leaderboard-calibrated panel until source and covariate support plus exposure audits pass.",
+    "c13": "Existing untouched C13 stays sealed; this audit does not establish that it matches target acquisition support."
+  },
+  "gpu_work": false,
+  "quality_metrics_computed": false
+}

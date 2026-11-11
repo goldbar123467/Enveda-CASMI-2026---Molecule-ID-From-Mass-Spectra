@@ -1,0 +1,45 @@
+{
+  "completed_utc": "2026-11-11T16:35:24.142706+00:00",
+  "auditor_sha256": "a170a95d4e38922ed83a76047c593c771cc752eec97fcde57bbfa8699c680607",
+  "trace_report_sha256": "d26c24208f4304ca7fa9d24e1a45b63c2462a29736bbf62e97f7998de83e45cf",
+  "witness_sha256": "2dbf8edb450a6d99d258811e64dc91f65bae31c625ed23562cfde1598dc7bdaa",
+  "queries": 26,
+  "counts": {
+    "pubchem_five_slot_budget_exhausted": 10,
+    "reciprocal_fusion_40_boundary": 4,
+    "main_top60_to_top25_cutoff": 4,
+    "same_formula_glacier_demoted_across_25": 2,
+    "outside_top25_before_and_after_frag_gap": 2,
+    "outside_top25_before_and_after_glacier": 2,
+    "pubchem_interleave_displaced_main_rank22": 1,
+    "same_formula_frag_gap_demoted_across_25": 1
+  },
+  "by_mode": {
+    "negative": {
+      "pubchem_five_slot_budget_exhausted": 3,
+      "outside_top25_before_and_after_frag_gap": 2,
+      "main_top60_to_top25_cutoff": 1,
+      "same_formula_frag_gap_demoted_across_25": 1
+    },
+    "positive": {
+      "pubchem_five_slot_budget_exhausted": 7,
+      "reciprocal_fusion_40_boundary": 4,
+      "main_top60_to_top25_cutoff": 3,
+      "same_formula_glacier_demoted_across_25": 2,
+      "outside_top25_before_and_after_glacier": 2,
+      "pubchem_interleave_displaced_main_rank22": 1
+    }
+  },
+  "source_BASE_ICE_false_verified": true,
+  "all10_pubchem_losses_unprotected_with_five_prior_proposals_selected": true,
+  "interpretation": "Observed cutoffs, fixed source budgets and same-formula order changes are explicit policies. These losses alone establish neither an implementation defect nor a beneficial replacement rule.",
+  "rank2_overlay_true_evictions": 0,
+  "postfrozen_true_evictions": 0,
+  "retention_rule_frozen_or_quality_tested": false,
+  "no_retention_test_reason": "No label-independent correctness invariant was violated by the selectors. Choosing a new quota or injecting the known missing truths would be outcome-guided ranking design; no defensible frozen rule has emerged from this trace.",
+  "physical_limit": "Saved lists establish three demotions across the25 boundary and four answers already outside25; internal final ranks26-40 and deterministic negative fragment scores were not saved, so no exact within-tail ranks or numerical physical-score cause are claimed.",
+  "validation_fallback": "Use the separately frozen query-only population support audit and prospective validation protocol.",
+  "untouched_holdout_opened": false,
+  "new_predictions": false,
+  "new_gpu_work": false
+}

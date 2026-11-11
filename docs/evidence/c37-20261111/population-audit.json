@@ -1,0 +1,285 @@
+{
+  "completed_utc": "2026-11-11T16:32:16.969492+00:00",
+  "protocol_sha256": "b7a87afb87836d877ae0dac6532ad8fdbdd7b54214982e4928247cf4aa1782f1",
+  "summaries": {
+    "target": {
+      "queries": 400,
+      "spectra": 1213,
+      "mode": {
+        "positive": 276,
+        "mixed": 97,
+        "negative": 27
+      },
+      "dominant_adduct": {
+        "[M+H]+": 347,
+        "[M-H]-": 38,
+        "[M+CH2O2-H]-": 8,
+        "[M+Na]+": 5,
+        "[M+NH4]+": 2
+      },
+      "instruments": {
+        "timsTOF": 400
+      },
+      "spectra_per_query": {
+        "4": 106,
+        "3": 99,
+        "2": 97,
+        "1": 55,
+        "5": 24,
+        "6": 14,
+        "7": 2,
+        "8": 2,
+        "9": 1
+      },
+      "mixed_adduct_queries": 108,
+      "precursor_median_quantiles": {
+        "0.0": 247.1081,
+        "0.1": 280.14367999999996,
+        "0.5": 329.21090000000004,
+        "0.9": 376.28674,
+        "1.0": 440.111
+      },
+      "peaks_median_quantiles": {
+        "0.0": 6.0,
+        "0.1": 47.85000000000001,
+        "0.5": 238.0,
+        "0.9": 637.0,
+        "1.0": 1555.0
+      },
+      "collision_energy_available_queries": 400
+    },
+    "primary": {
+      "queries": 240,
+      "spectra": 240,
+      "mode": {
+        "positive": 160,
+        "negative": 80
+      },
+      "dominant_adduct": {
+        "[M+H]+": 87,
+        "[M-H]-": 47,
+        "[M+NH4]+": 37,
+        "[M+Na]+": 36,
+        "[M+CH2O2-H]-": 25,
+        "[M+Cl]-": 8
+      },
+      "instruments": {
+        "FT": 240
+      },
+      "spectra_per_query": {
+        "1": 240
+      },
+      "mixed_adduct_queries": 0,
+      "precursor_median_quantiles": {
+        "0.0": 98.096313476563,
+        "0.1": 229.1437017064093,
+        "0.5": 400.696238709216,
+        "0.9": 811.2336014040382,
+        "1.0": 1641.715038669478
+      },
+      "peaks_median_quantiles": {
+        "0.0": 6.0,
+        "0.1": 14.0,
+        "0.5": 36.0,
+        "0.9": 108.1,
+        "1.0": 294.0
+      },
+      "collision_energy_available_queries": 0
+    },
+    "historical_source": {
+      "queries": 80,
+      "spectra": 302,
+      "mode": {
+        "mixed": 36,
+        "positive": 30,
+        "negative": 14
+      },
+      "dominant_adduct": {
+        "[M+H]+": 56,
+        "[M-H]-": 18,
+        "[M+NH4]+": 4,
+        "[M+Cl]-": 2
+      },
+      "instruments": {
+        "LC-ESI-QFT": 60,
+        "Orbitrap": 20
+      },
+      "spectra_per_query": {
+        "4": 74,
+        "1": 6
+      },
+      "mixed_adduct_queries": 36,
+      "precursor_median_quantiles": {
+        "0.0": 169.0431,
+        "0.1": 217.7253,
+        "0.5": 614.32495,
+        "0.9": 1016.0680100000002,
+        "1.0": 1752.8048
+      },
+      "peaks_median_quantiles": {
+        "0.0": 3.0,
+        "0.1": 5.0,
+        "0.5": 15.5,
+        "0.9": 76.6000000000001,
+        "1.0": 487.0
+      },
+      "collision_energy_available_queries": 5
+    }
+  },
+  "support": {
+    "primary": {
+      "strata": [
+        {
+          "mode": "mixed",
+          "adduct": "[M+CH2O2-H]-",
+          "target_queries": 6,
+          "panel_queries": 0,
+          "target_weight": 0.015,
+          "importance_weight": null
+        },
+        {
+          "mode": "mixed",
+          "adduct": "[M+H]+",
+          "target_queries": 78,
+          "panel_queries": 0,
+          "target_weight": 0.195,
+          "importance_weight": null
+        },
+        {
+          "mode": "mixed",
+          "adduct": "[M-H]-",
+          "target_queries": 13,
+          "panel_queries": 0,
+          "target_weight": 0.0325,
+          "importance_weight": null
+        },
+        {
+          "mode": "negative",
+          "adduct": "[M+CH2O2-H]-",
+          "target_queries": 2,
+          "panel_queries": 25,
+          "target_weight": 0.005,
+          "importance_weight": 0.048
+        },
+        {
+          "mode": "negative",
+          "adduct": "[M-H]-",
+          "target_queries": 25,
+          "panel_queries": 47,
+          "target_weight": 0.0625,
+          "importance_weight": 0.3191489361702128
+        },
+        {
+          "mode": "positive",
+          "adduct": "[M+H]+",
+          "target_queries": 269,
+          "panel_queries": 87,
+          "target_weight": 0.6725,
+          "importance_weight": 1.8551724137931034
+        },
+        {
+          "mode": "positive",
+          "adduct": "[M+NH4]+",
+          "target_queries": 2,
+          "panel_queries": 37,
+          "target_weight": 0.005,
+          "importance_weight": 0.032432432432432434
+        },
+        {
+          "mode": "positive",
+          "adduct": "[M+Na]+",
+          "target_queries": 5,
+          "panel_queries": 36,
+          "target_weight": 0.0125,
+          "importance_weight": 0.08333333333333334
+        }
+      ],
+      "target_mode_adduct_support_fraction": 0.7575,
+      "importance_effective_queries": 108.52178237948475,
+      "exact_target_instrument_query_support": 0.0,
+      "warning": "Importance weights are a covariate-support diagnostic only. No weighted MRR was computed; unmeasured chemistry and source exposure remain unresolved."
+    },
+    "historical_source": {
+      "strata": [
+        {
+          "mode": "mixed",
+          "adduct": "[M+CH2O2-H]-",
+          "target_queries": 6,
+          "panel_queries": 0,
+          "target_weight": 0.015,
+          "importance_weight": null
+        },
+        {
+          "mode": "mixed",
+          "adduct": "[M+H]+",
+          "target_queries": 78,
+          "panel_queries": 30,
+          "target_weight": 0.195,
+          "importance_weight": 0.52
+        },
+        {
+          "mode": "mixed",
+          "adduct": "[M-H]-",
+          "target_queries": 13,
+          "panel_queries": 6,
+          "target_weight": 0.0325,
+          "importance_weight": 0.43333333333333335
+        },
+        {
+          "mode": "negative",
+          "adduct": "[M+CH2O2-H]-",
+          "target_queries": 2,
+          "panel_queries": 0,
+          "target_weight": 0.005,
+          "importance_weight": null
+        },
+        {
+          "mode": "negative",
+          "adduct": "[M-H]-",
+          "target_queries": 25,
+          "panel_queries": 12,
+          "target_weight": 0.0625,
+          "importance_weight": 0.4166666666666667
+        },
+        {
+          "mode": "positive",
+          "adduct": "[M+H]+",
+          "target_queries": 269,
+          "panel_queries": 26,
+          "target_weight": 0.6725,
+          "importance_weight": 2.069230769230769
+        },
+        {
+          "mode": "positive",
+          "adduct": "[M+NH4]+",
+          "target_queries": 2,
+          "panel_queries": 4,
+          "target_weight": 0.005,
+          "importance_weight": 0.09999999999999999
+        },
+        {
+          "mode": "positive",
+          "adduct": "[M+Na]+",
+          "target_queries": 5,
+          "panel_queries": 0,
+          "target_weight": 0.0125,
+          "importance_weight": null
+        }
+      ],
+      "target_mode_adduct_support_fraction": 0.9675,
+      "importance_effective_queries": 48.829776428498874,
+      "exact_target_instrument_query_support": 0.0,
+      "warning": "Importance weights are a covariate-support diagnostic only. No weighted MRR was computed; unmeasured chemistry and source exposure remain unresolved."
+    }
+  },
+  "target_formate_alias_count": 0,
+  "target_alias_lookup_repair_changes_queries": 0,
+  "conclusion": "Neither current validation population supports the target instrument. Acquisition count, polarity/adduct mix and source provenance require explicit prospective support; resampling existing rows does not fix the missing source.",
+  "labels_read": false,
+  "predictions_read": false,
+  "quality_metrics_computed": false,
+  "reserved_holdout_opened": false,
+  "new_inference": false,
+  "production_changed": false,
+  "validation_population_qualified": false
+}

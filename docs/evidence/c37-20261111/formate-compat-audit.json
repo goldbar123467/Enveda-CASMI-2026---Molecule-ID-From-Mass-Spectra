@@ -1,0 +1,43 @@
+{
+  "completed_utc": "2026-11-11T16:36:51.898713+00:00",
+  "auditor_sha256": "442cc2e38000a6172b3b70e011a8a86b4edc1016e1984b8d11932d840e40d855",
+  "adapter_sha256": "eec91fbef5c8683de63c32ce94d39f95f30f950558b1dd484cf1772617ab7f78",
+  "mounted_inventory_sha256": "6a079dc4cc5b735ffc727375b3d692158602874817707380e72022f935f7f392",
+  "source_sha256": {
+    "chem.py": "99474f23d8a67040b0c0f8c70e73592a6f7f656f50103e350ca473451e2169f1",
+    "frag.py": "809f5582494cee4cf6dcace4b04699b8427e81022b78d42162cc0239a57773de"
+  },
+  "mounted_exact_source_matches": {
+    "chem.py": 2,
+    "frag.py": 2
+  },
+  "patched_source_sha256": {
+    "chem.py": "0aa8e57888acd9b78277e7533768f79cadc28ae6d1fcc32ad74d56df50fb8248",
+    "frag.py": "5f209cca20ba0e8a6b5295b086a381ed3de4336dbaa98445be8e5a538e080f7c"
+  },
+  "queries": 240,
+  "affected_formate_queries": 25,
+  "old_finite_mass": 215,
+  "patched_finite_mass": 240,
+  "affected_queries_missing_pubchem": 25,
+  "existing215_masses_exact": true,
+  "existing_adducts_tested": 59,
+  "supported_mass_vectors_tested": 177,
+  "old_vocabulary_and_indices_exact": true,
+  "unknown_mass_stays_nan": true,
+  "formate_fragment_offsets_equivalent": true,
+  "existing_fragment_offsets_exact": true,
+  "existing_supported_scalar_lookups_exact": true,
+  "shared_query_tokens_unchanged": true,
+  "fresh_holdout_opened": false,
+  "new_predictions": false,
+  "new_gpu_work": false,
+  "production_notebook_changed": false,
+  "quality_metric_claim": null,
+  "disposition": "General parser defect confirmed; prospective local adapter only. Candidate eligibility repair is not demonstrated retrieval or MRR improvement. No GPU run authorized.",
+  "limitations": [
+    "Missing PubChem formate candidates and model logits cannot be reconstructed from saved final outputs.",
+    "Legacy model training exposure and out-of-source benefit remain unqualified.",
+    "Adapter requires explicit future integration into the correct legacy subprocess code directories; it is not installed in production."
+  ]
+}

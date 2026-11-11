@@ -1,0 +1,75 @@
+{
+  "completed_utc": "2026-11-11T16:32:23.594290+00:00",
+  "input_contract_sha256": "e0b3204eef5f678e446f49d3cf8d9736312681e6e0ed76665b0a12b8ead43786",
+  "witnesses_sha256": "ac4d7b827cee7fd1a44b0d62a37300a9fd603d5e177f2b7c1a6a4a465eae1d5a",
+  "overlay_replay": {
+    "c10": {
+      "rows": 160,
+      "inserted": 109,
+      "exact_smiles_list_parity": true,
+      "function_sha256": "645d5cc9cde066aeed0bd2542bf2ac85022338967abc2e86f91a77be499f45c9"
+    },
+    "c20": {
+      "rows": 80,
+      "inserted": 43,
+      "exact_smiles_list_parity": true,
+      "function_sha256": "645d5cc9cde066aeed0bd2542bf2ac85022338967abc2e86f91a77be499f45c9"
+    }
+  },
+  "postfrozen_membership_audit": {
+    "c10": {
+      "frozen_to_custom_membership_rows": 0,
+      "custom_to_parent_membership_rows": 0,
+      "overlay_membership_rows": 3,
+      "overlay_truths_added": 0,
+      "overlay_truths_lost": 0
+    },
+    "c20": {
+      "frozen_to_custom_membership_rows": 0,
+      "custom_to_parent_membership_rows": 0,
+      "overlay_membership_rows": 0,
+      "overlay_truths_added": 0,
+      "overlay_truths_lost": 0
+    }
+  },
+  "historical_dropped26_boundary_counts": {
+    "pubchem_merge_gate_or_budget": 10,
+    "main_prefusion_truncation_or_merge": 5,
+    "reciprocal_fusion_40_boundary": 4,
+    "same_formula_glacier_final25_boundary": 4,
+    "same_formula_frag_gap_final25_boundary": 3
+  },
+  "historical_dropped26_by_mode": {
+    "negative": {
+      "pubchem_merge_gate_or_budget": 3,
+      "same_formula_frag_gap_final25_boundary": 3,
+      "main_prefusion_truncation_or_merge": 1
+    },
+    "positive": {
+      "pubchem_merge_gate_or_budget": 7,
+      "reciprocal_fusion_40_boundary": 4,
+      "same_formula_glacier_final25_boundary": 4,
+      "main_prefusion_truncation_or_merge": 4
+    }
+  },
+  "expanded_truth_coverage": 176,
+  "final_truth_coverage": 150,
+  "newly_observed_from_former_absent64": 0,
+  "all_queries_boundary_counts": {
+    "retained_final": 150,
+    "outside_observed_routes": 64,
+    "pubchem_merge_gate_or_budget": 10,
+    "main_prefusion_truncation_or_merge": 5,
+    "reciprocal_fusion_40_boundary": 4,
+    "same_formula_glacier_final25_boundary": 4,
+    "same_formula_frag_gap_final25_boundary": 3
+  },
+  "reserved_labels_read": false,
+  "inference": false,
+  "gpu_work": false,
+  "limitations": [
+    "Final25 boundary is exact observed membership, not an invented internal physical-score rank.",
+    "Historical 26 denominator retained; expanded intermediate routes are reported separately.",
+    "A selection policy causing a loss is not by itself an implementation defect."
+  ]
+}

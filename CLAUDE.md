@@ -1,6 +1,44 @@
 # Enveda CASMI 2026 — working rules
 
-## CURRENT STATE — 11 November, CPU validation cycle finished; GPU stopped
+## Completed C37 CPU-first goal — 11 November; GPU remains paused
+
+Read docs/C37-SELECTION-AND-POPULATION-2026-11-11.md and compact evidence in
+docs/evidence/c37-20261111. The user cleared the old paused silver goal; the
+new CPU-first goal reached its evidence-based go/no-go endpoint. Silver is
+unmet; no new public improvement is claimed. Preserve0.480 and fresh C13.
+
+All26 losses are explained by observed budgets/cutoffs:10PubChem five-slot
+budget,4main60-to25,1main22 displaced by interleave,4fusion beyond40,
+3physical demotions across25 and4already outside25. Exact executed Engine2
+rank2 replay matches all240 outputs, loses0true answers; later parent membership
+is unchanged. No correctness defect justifies a replacement retention rule.
+
+A separate legacy formate alias bug prevents main/PubChem eligibility on25used
+validation queries. The tested local source adapter preserves all59supported
+adducts, vocabulary/indices,215existing masses and unknown behavior. It is NOT
+installed in production. Public test uses canonical formate already, so this
+is no demonstrated hidden-test gain. No inference/training was run.
+
+Full public test metadata:400queries/1213spectra,97mixed-polarity queries,
+all timsTOF. Primary240has one FT spectrum/query and0mixed queries. Current
+panels lack target instrument support. A query-only prospective two-source
+validation protocol is frozen; do not tune populations to old leaderboard
+outcomes or call resampling a new representative source.
+
+Correction: C36 historical negative31 is first-record-negative (14pure negative
++17mixed), not31pure-negative queries. Proper source groups are30positive,
+14negative,36mixed. Frozen ranker all80 and clean60 scores are unchanged; C36
+still rejected. See corrected-source-polarity receipt.18targeted tests pass;
+independent arithmetic,64identity spot checks and original C36 seals pass.
+
+Keep .local/compute-paused.json. No GPU/encoder training, GPU inference, cloud
+run, submission, paid compute or hourly worker was resumed or newly authorized.
+No candidate qualified for fresh C13 access. Next justified work is acquiring
+and auditing validation acquisitions with documented target/source support.
+Older silver-campaign/training authorizations below are historical, not a
+request to restart them.
+
+## Completed C36 cycle — historical evidence; GPU stopped
 
 Latest user instruction: "repair validation, locate candidate losses, then test
 ranking changes that distinguish isomers before spending more GPU time."

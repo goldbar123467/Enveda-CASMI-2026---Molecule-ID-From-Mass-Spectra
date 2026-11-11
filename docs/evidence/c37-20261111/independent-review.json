@@ -1,0 +1,38 @@
+{
+  "completed_utc": "2026-11-11T16:37:45.578949+00:00",
+  "reviewer_sha256": "b50421fba87cdbe7da5b4e68eb2985e084261bdc6699b64fa5067d380c444bfc",
+  "reviewed_artifacts": {
+    "selection-trace.json": "d26c24208f4304ca7fa9d24e1a45b63c2462a29736bbf62e97f7998de83e45cf",
+    "trace-input-contract.json": "e0b3204eef5f678e446f49d3cf8d9736312681e6e0ed76665b0a12b8ead43786",
+    "boundary-refinement.json": "9572cae7e5ef138b285ae25e6f58dee44d608b4b027cc084280e1745e4a5f9ce",
+    "formate-compat-audit.json": "a9fdd4f48438293b39e897a8517dc18705f10b0d12c3be20cf6901cca5e15be7",
+    "population-audit.json": "7b8df0030528cdef7e5e2be5c5afe3c0917e9fd60385ce022c9b9498baf06ca8",
+    "prospective-validation-protocol.json": "b7a87afb87836d877ae0dac6532ad8fdbdd7b54214982e4928247cf4aa1782f1"
+  },
+  "actual_executed_identity_helper_sample_size": 64,
+  "official_identity_cache_sample_exact": true,
+  "independent_membership_counts": {
+    "overlay_true_answers_displaced": 0,
+    "overlay_true_answers_added": 0,
+    "final_truths": 150,
+    "queries": 240,
+    "overlay_displaced_candidates": 3
+  },
+  "all240_overlay_replay_exact": true,
+  "final_parent_membership_preserved": true,
+  "refined26_counts_reconciled": true,
+  "public_target_metadata_independently_recounted": true,
+  "formate_adapter_current_source_hashes_pass": true,
+  "old_c36_input_and_feature_seals_pass": true,
+  "quality_metrics_computed": false,
+  "reserved_holdout_opened": false,
+  "new_gpu_work": false,
+  "new_cloud_run": false,
+  "new_submission": false,
+  "decision": "NO-GO for GPU work, retention-policy promotion or scoring submission. GO for the documented prospective validation/source-support design; formate scalar compatibility patch is prepared for future controlled integration.",
+  "limitations": [
+    "Independent arithmetic and source extraction in one CPU process, not a separate human or agent review.",
+    "Identity check is a fixed64-case spot check plus receipt-bound prior caches; it is not a new full-database identity audit.",
+    "No beneficial complete-pipeline replacement was frozen; fresh C13 was therefore not consumed."
+  ]
+}

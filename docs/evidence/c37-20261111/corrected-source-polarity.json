@@ -1,0 +1,98 @@
+{
+  "completed_utc": "2026-11-11T16:38:53.263809+00:00",
+  "auditor_sha256": "50cbaffc5cc3da330b91cec55a6e7ad893456a392253f8193e4afdc66f40fe57",
+  "frozen_prediction_sha256": "7625a6206369891f217d7ff18b6e9d71f18e7a98b6d148472537ee0bb800ed42",
+  "query_metadata_sha256": "634b888f74196f703507173e57a6ba18c086af5f58079a3e43ed97b9ce06fff9",
+  "corrected_mode_counts": {
+    "mixed": 36,
+    "positive": 30,
+    "negative": 14
+  },
+  "first_record_label_crosstab": {
+    "mixed": {
+      "negative": 17,
+      "positive": 19
+    },
+    "negative": {
+      "negative": 14,
+      "positive": 0
+    },
+    "positive": {
+      "negative": 0,
+      "positive": 30
+    }
+  },
+  "primary_variant_only": "Previously frozen C36 pairwise_ridge_full; no new fitting, parameter choice, or predictions",
+  "all80": {
+    "n": 80,
+    "independent_groups": 50,
+    "baseline_mrr25": 0.7138591269841269,
+    "candidate_mrr25": 0.723420138888889,
+    "delta": 0.009561011904761905,
+    "ci95": [
+      -0.039357300038270183,
+      0.05439156813519058
+    ],
+    "improved": 11,
+    "harmed": 7
+  },
+  "predeclared_clean60": {
+    "n": 60,
+    "independent_groups": 33,
+    "baseline_mrr25": 0.8266865079365079,
+    "candidate_mrr25": 0.8027777777777778,
+    "delta": -0.023908730158730164,
+    "ci95": [
+      -0.0856080740964462,
+      0.02025834268777816
+    ],
+    "improved": 6,
+    "harmed": 6
+  },
+  "acquisition_mode_results": {
+    "positive": {
+      "n": 30,
+      "independent_groups": 25,
+      "baseline_mrr25": 0.6150000000000001,
+      "candidate_mrr25": 0.6788888888888889,
+      "delta": 0.0638888888888889,
+      "ci95": [
+        -0.030881734006733993,
+        0.16517857142857142
+      ],
+      "improved": 7,
+      "harmed": 1
+    },
+    "negative": {
+      "n": 14,
+      "independent_groups": 12,
+      "baseline_mrr25": 0.5487528344671201,
+      "candidate_mrr25": 0.4766865079365079,
+      "delta": -0.07206632653061225,
+      "ci95": [
+        -0.16666666666666666,
+        0.0
+      ],
+      "improved": 0,
+      "harmed": 3
+    },
+    "mixed": {
+      "n": 36,
+      "independent_groups": 19,
+      "baseline_mrr25": 0.8604497354497354,
+      "candidate_mrr25": 0.8564814814814814,
+      "delta": -0.00396825396825397,
+      "ci95": [
+        -0.06406004709576138,
+        0.03599165974529346
+      ],
+      "improved": 4,
+      "harmed": 3
+    }
+  },
+  "interpretation": "C36 negative31 means first-record-negative, not31 exclusively negative queries. Report pure-negative14, pure-positive30 and mixed36 separately. Overall80 and predeclared clean60 results are unchanged; C36 remains rejected.",
+  "old_c36_artifacts_unchanged": true,
+  "fresh_holdout_opened": false,
+  "model_or_rule_selected": false,
+  "new_gpu_work": false
+}
