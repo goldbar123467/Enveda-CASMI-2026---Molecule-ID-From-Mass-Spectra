@@ -1,0 +1,13 @@
+{
+  "authorized_utc": "2026-11-11T15:34:36.376423+00:00",
+  "user_instruction": "repair validation, locate candidate losses, then test ranking changes that distinguish isomers before spending more GPU time.",
+  "scope": "CPU-only validation/evidence repair, retained candidate-loss audit and small CPU ranking fits on cached scores",
+  "gpu_training": false,
+  "gpu_inference": false,
+  "cloud_runs": false,
+  "submissions": false,
+  "cpu_ranker_fits": true,
+  "hourly_campaign": false,
+  "fresh_reserved_labels_read": false,
+  "prior_pause_sha256": "704a719bee9240949e7dabeaaaef8a0355ff16bf7d3d04859de9bd59d4659c39"
+}

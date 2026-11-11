@@ -1,0 +1,28 @@
+{
+  "completed_utc": "2026-11-11T15:59:33.669865+00:00",
+  "ranking_report_sha256": "33d19d96f37e3bd6957670a660b77ef2e616ff667be5e2c2d2497a9b9213336e",
+  "derived_from_aggregate": true,
+  "formula": "flagged_delta=(full_n*full_delta-clean_n*clean_delta)/(full_n-clean_n)",
+  "results": {
+    "pairwise_ridge_full": {
+      "full80_delta": 0.009561011904761905,
+      "raw_alias_free60_delta": -0.023908730158730164,
+      "predeclared_raw_alias_flagged_queries": 20,
+      "raw_alias_flagged20_delta": 0.10997023809523812
+    },
+    "pairwise_ridge_without_physical": {
+      "full80_delta": 0.004575892857142857,
+      "raw_alias_free60_delta": -0.004166666666666667,
+      "predeclared_raw_alias_flagged_queries": 20,
+      "raw_alias_flagged20_delta": 0.03080357142857143
+    },
+    "fixed_physical_agreement": {
+      "full80_delta": 0.003125,
+      "raw_alias_free60_delta": 0.0,
+      "predeclared_raw_alias_flagged_queries": 20,
+      "raw_alias_flagged20_delta": 0.0125
+    }
+  },
+  "recipe_changed": false,
+  "limitation": "The raw-signature exclusion was fixed before C36 metrics. Exposure flags are warnings, not proof of label leakage. A subgroup point gain is not a hidden-score forecast."
+}

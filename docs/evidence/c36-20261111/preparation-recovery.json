@@ -1,0 +1,10 @@
+{
+  "checked_utc": "2026-11-11T15:45:49.591461+00:00",
+  "stopped_owned_pid": 26064,
+  "reason": "Avoid recomputing known audited canonical identities for every parent candidate; reuse the immutable official-key cache and only compute missing keys",
+  "feature_freeze_created": false,
+  "quality_metrics_read": false,
+  "new_model_fits": false,
+  "gpu_work": false,
+  "archived_contract_sha256": "393ea028d20842fac47fa2c3bc9cfc0310b74dd26069715e7abb5225bb01b110"
+}

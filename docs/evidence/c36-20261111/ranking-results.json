@@ -1,0 +1,418 @@
+{
+  "completed_utc": "2026-11-11T15:47:06.521249+00:00",
+  "source_sha256": "e72feacb81a7c0cebfdd6279e63aeb24270440e6821c163520cd70409ebe37b6",
+  "config_sha256": "93fbd1d6c89df1082ff959c3873281f3b95665c1a048e512d2a2718c13ad7823",
+  "feature_freeze_sha256": "e538b66b676c0f3ed4fa709cc34a4eef5141df2c85747408fc77784db40dcb33",
+  "prediction_freeze_sha256": "7c6557a08b1265357cd7a0aef551fdb3e67e190831e935a884326e3613ef2ba9",
+  "primary_variant": "pairwise_ridge_full",
+  "results": {
+    "fixed_physical_agreement": {
+      "all": {
+        "n": 240,
+        "independent_groups": 169,
+        "baseline_mrr25": 0.28374784096858907,
+        "candidate_mrr25": 0.28546719106293916,
+        "delta": 0.0017193500943500945,
+        "ci95": [
+          8.692902058239924e-05,
+          0.004168785663489052
+        ],
+        "improved": 6,
+        "harmed": 1
+      },
+      "polarity": {
+        "positive": {
+          "n": 160,
+          "independent_groups": 125,
+          "baseline_mrr25": 0.27874430083805085,
+          "candidate_mrr25": 0.281323325979576,
+          "delta": 0.002579025141525142,
+          "ci95": [
+            0.0001236786279196994,
+            0.006252971803467125
+          ],
+          "improved": 6,
+          "harmed": 1
+        },
+        "negative": {
+          "n": 80,
+          "independent_groups": 64,
+          "baseline_mrr25": 0.29375492122966546,
+          "candidate_mrr25": 0.29375492122966546,
+          "delta": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "improved": 0,
+          "harmed": 0
+        }
+      },
+      "changed_lists": 56,
+      "rank1_changes": 0,
+      "rank1_new_correct": 0,
+      "rank1_correct_lost": 0,
+      "candidate_set_changes": 0
+    },
+    "pairwise_ridge_full": {
+      "all": {
+        "n": 240,
+        "independent_groups": 169,
+        "baseline_mrr25": 0.28374784096858907,
+        "candidate_mrr25": 0.3120322589177709,
+        "delta": 0.028284417949181885,
+        "ci95": [
+          0.005326629861833291,
+          0.051536365879228566
+        ],
+        "improved": 48,
+        "harmed": 40
+      },
+      "polarity": {
+        "positive": {
+          "n": 160,
+          "independent_groups": 125,
+          "baseline_mrr25": 0.27874430083805085,
+          "candidate_mrr25": 0.3148236939412926,
+          "delta": 0.036079393103241784,
+          "ci95": [
+            0.005366383371165504,
+            0.066805324081919
+          ],
+          "improved": 35,
+          "harmed": 26
+        },
+        "negative": {
+          "n": 80,
+          "independent_groups": 64,
+          "baseline_mrr25": 0.29375492122966546,
+          "candidate_mrr25": 0.30644938887072753,
+          "delta": 0.012694467641062069,
+          "ci95": [
+            -0.02344123095313952,
+            0.045757698173014054
+          ],
+          "improved": 13,
+          "harmed": 14
+        }
+      },
+      "changed_lists": 237,
+      "rank1_changes": 55,
+      "rank1_new_correct": 8,
+      "rank1_correct_lost": 7,
+      "candidate_set_changes": 0
+    },
+    "pairwise_ridge_without_physical": {
+      "all": {
+        "n": 240,
+        "independent_groups": 169,
+        "baseline_mrr25": 0.28374784096858907,
+        "candidate_mrr25": 0.29861470692785047,
+        "delta": 0.01486686595926147,
+        "ci95": [
+          -0.0072764306511743735,
+          0.03682495782719093
+        ],
+        "improved": 43,
+        "harmed": 42
+      },
+      "polarity": {
+        "positive": {
+          "n": 160,
+          "independent_groups": 125,
+          "baseline_mrr25": 0.27874430083805085,
+          "candidate_mrr25": 0.29474540271497507,
+          "delta": 0.016001101876924242,
+          "ci95": [
+            -0.012990217178123162,
+            0.04443152790439671
+          ],
+          "improved": 29,
+          "harmed": 28
+        },
+        "negative": {
+          "n": 80,
+          "independent_groups": 64,
+          "baseline_mrr25": 0.29375492122966546,
+          "candidate_mrr25": 0.3063533153536014,
+          "delta": 0.012598394123935921,
+          "ci95": [
+            -0.023187610643630056,
+            0.04557573855441903
+          ],
+          "improved": 14,
+          "harmed": 14
+        }
+      },
+      "changed_lists": 235,
+      "rank1_changes": 48,
+      "rank1_new_correct": 7,
+      "rank1_correct_lost": 8,
+      "candidate_set_changes": 0
+    }
+  },
+  "source_stress": {
+    "pairwise_ridge_full": {
+      "all": {
+        "n": 80,
+        "independent_groups": 50,
+        "baseline_mrr25": 0.7138591269841269,
+        "candidate_mrr25": 0.723420138888889,
+        "delta": 0.009561011904761905,
+        "ci95": [
+          -0.039357300038270183,
+          0.05439156813519058
+        ],
+        "improved": 11,
+        "harmed": 7
+      },
+      "polarity": {
+        "positive": {
+          "n": 49,
+          "independent_groups": 33,
+          "baseline_mrr25": 0.7098639455782313,
+          "candidate_mrr25": 0.7489795918367348,
+          "delta": 0.039115646258503396,
+          "ci95": [
+            -0.029916666666666664,
+            0.10756393242332316
+          ],
+          "improved": 9,
+          "harmed": 2
+        },
+        "negative": {
+          "n": 31,
+          "independent_groups": 23,
+          "baseline_mrr25": 0.7201740911418331,
+          "candidate_mrr25": 0.6830197132616488,
+          "delta": -0.03715437788018433,
+          "ci95": [
+            -0.08895502645502645,
+            0.0030788177339901484
+          ],
+          "improved": 2,
+          "harmed": 5
+        }
+      },
+      "raw_alias_free": {
+        "n": 60,
+        "independent_groups": 33,
+        "baseline_mrr25": 0.8266865079365079,
+        "candidate_mrr25": 0.8027777777777778,
+        "delta": -0.023908730158730164,
+        "ci95": [
+          -0.0856080740964462,
+          0.02025834268777816
+        ],
+        "improved": 6,
+        "harmed": 6
+      },
+      "changed_lists": 74,
+      "rank1_changes": 16,
+      "rank1_new_correct": 5,
+      "rank1_correct_lost": 5,
+      "candidate_set_changes": 0
+    },
+    "pairwise_ridge_without_physical": {
+      "all": {
+        "n": 80,
+        "independent_groups": 50,
+        "baseline_mrr25": 0.7138591269841269,
+        "candidate_mrr25": 0.7184350198412698,
+        "delta": 0.004575892857142857,
+        "ci95": [
+          -0.014931195250377376,
+          0.02462720595484571
+        ],
+        "improved": 6,
+        "harmed": 4
+      },
+      "polarity": {
+        "positive": {
+          "n": 49,
+          "independent_groups": 33,
+          "baseline_mrr25": 0.7098639455782313,
+          "candidate_mrr25": 0.7328231292517007,
+          "delta": 0.02295918367346939,
+          "ci95": [
+            0.003787878787878789,
+            0.0436046511627907
+          ],
+          "improved": 6,
+          "harmed": 1
+        },
+        "negative": {
+          "n": 31,
+          "independent_groups": 23,
+          "baseline_mrr25": 0.7201740911418331,
+          "candidate_mrr25": 0.6956925243215566,
+          "delta": -0.024481566820276496,
+          "ci95": [
+            -0.05378932823129251,
+            0.0
+          ],
+          "improved": 0,
+          "harmed": 3
+        }
+      },
+      "raw_alias_free": {
+        "n": 60,
+        "independent_groups": 33,
+        "baseline_mrr25": 0.8266865079365079,
+        "candidate_mrr25": 0.8225198412698412,
+        "delta": -0.004166666666666667,
+        "ci95": [
+          -0.02651893939393939,
+          0.01953125
+        ],
+        "improved": 1,
+        "harmed": 2
+      },
+      "changed_lists": 71,
+      "rank1_changes": 3,
+      "rank1_new_correct": 1,
+      "rank1_correct_lost": 1,
+      "candidate_set_changes": 0
+    },
+    "fixed_physical_agreement": {
+      "all": {
+        "n": 80,
+        "independent_groups": 50,
+        "baseline_mrr25": 0.7138591269841269,
+        "candidate_mrr25": 0.716984126984127,
+        "delta": 0.003125,
+        "ci95": [
+          0.0,
+          0.00888888888888889
+        ],
+        "improved": 2,
+        "harmed": 0
+      },
+      "polarity": {
+        "positive": {
+          "n": 49,
+          "independent_groups": 33,
+          "baseline_mrr25": 0.7098639455782313,
+          "candidate_mrr25": 0.7149659863945578,
+          "delta": 0.00510204081632653,
+          "ci95": [
+            0.0,
+            0.014492753623188408
+          ],
+          "improved": 2,
+          "harmed": 0
+        },
+        "negative": {
+          "n": 31,
+          "independent_groups": 23,
+          "baseline_mrr25": 0.7201740911418331,
+          "candidate_mrr25": 0.7201740911418331,
+          "delta": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "improved": 0,
+          "harmed": 0
+        }
+      },
+      "raw_alias_free": {
+        "n": 60,
+        "independent_groups": 33,
+        "baseline_mrr25": 0.8266865079365079,
+        "candidate_mrr25": 0.8266865079365079,
+        "delta": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "improved": 0,
+        "harmed": 0
+      },
+      "changed_lists": 45,
+      "rank1_changes": 0,
+      "rank1_new_correct": 0,
+      "rank1_correct_lost": 0,
+      "candidate_set_changes": 0
+    }
+  },
+  "controls": {
+    "P14": {
+      "n": 240,
+      "independent_groups": 169,
+      "baseline_mrr25": 0.28374784096858907,
+      "candidate_mrr25": 0.2854064548936503,
+      "delta": 0.0016586139250612934,
+      "ci95": [
+        -0.003285334364879728,
+        0.00713527957853028
+      ],
+      "improved": 27,
+      "harmed": 17
+    },
+    "P15": {
+      "n": 240,
+      "independent_groups": 169,
+      "baseline_mrr25": 0.28374784096858907,
+      "candidate_mrr25": 0.2836196893966488,
+      "delta": -0.00012815157194027177,
+      "ci95": [
+        -0.002050333235204157,
+        0.0017570375328407883
+      ],
+      "improved": 22,
+      "harmed": 28
+    },
+    "P18": {
+      "n": 240,
+      "independent_groups": 169,
+      "baseline_mrr25": 0.28374784096858907,
+      "candidate_mrr25": 0.284919310153927,
+      "delta": 0.0011714691853379764,
+      "ci95": [
+        -0.0004818424795887206,
+        0.0029058176912336807
+      ],
+      "improved": 26,
+      "harmed": 22
+    },
+    "P19": {
+      "n": 240,
+      "independent_groups": 169,
+      "baseline_mrr25": 0.28374784096858907,
+      "candidate_mrr25": 0.28456299401636087,
+      "delta": 0.0008151530477718387,
+      "ci95": [
+        -0.000872983898361102,
+        0.002590798923317877
+      ],
+      "improved": 24,
+      "harmed": 24
+    }
+  },
+  "gate": {
+    "passed": false,
+    "reasons": [
+      "known_harmful_P14_has_wrong_local_sign",
+      "no_untouched_independent_confirmation"
+    ],
+    "leaderboard_calibrated": false,
+    "automatic_gpu_work": false,
+    "automatic_submission": false
+  },
+  "outer_group_counts": 169,
+  "largest_outer_group": 8,
+  "all_queries_retained": true,
+  "missing_truths_score_zero": true,
+  "truth_injection": false,
+  "formula_positions_preserved": true,
+  "no_outer_or_stress_parameter_selection": true,
+  "no_test_queries_in_fit": true,
+  "fresh_reserved_labels_read": false,
+  "cpu_calibration_only": true,
+  "encoder_training": false,
+  "gpu_work": false,
+  "cloud_runs": false,
+  "submission_qualified": false,
+  "limitation": "All panels were already consumed before C36. Nested chemical-group OOF removes new model/alpha fitting leakage, not prior adaptive research reuse or unknown public model pretraining. Source80 is a fixed held-out-source stress check for C36, not a fresh reserved set. A repaired evaluator does not itself establish a leaderboard-predictive validation population."
+}

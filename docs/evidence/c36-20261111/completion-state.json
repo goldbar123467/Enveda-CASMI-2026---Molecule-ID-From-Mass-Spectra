@@ -1,0 +1,16 @@
+{
+  "completed_utc": "2026-11-11T16:00:48.149817+00:00",
+  "phase": "cpu_validation_repair_finished",
+  "pause_marker_sha256": "77f53e90b594a082bf32714b66fd1767ba2a5cb755d6c7f492d10eadc8b38277",
+  "candidate_retrieved_but_lost": 26,
+  "source_gate_passed": false,
+  "fresh_C13_metrics_consumed": false,
+  "new_encoder_training": false,
+  "gpu_inference": false,
+  "cloud_runs": false,
+  "submissions": false,
+  "automatic_continuation": false,
+  "hourly_automation": "PAUSED",
+  "silver_goal": "PAUSED; unmet",
+  "champion": 0.48
+}

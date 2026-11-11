@@ -1,0 +1,33 @@
+{
+  "completed_utc": "2026-11-11T15:46:17.702551+00:00",
+  "input_contract_sha256": "dcfd867e79fd7b95c753f24cfeb2afe401c73d2a3c62fbed3952c75faa20a380",
+  "files_sha256": {
+    "features.parquet": "72cffa17e875aa82f86beeee87d21949904d32adbd0c445ce69007d0f9f674c7",
+    "feature-schema.json": "d4f2b8fd29db26633ffbe7f0032b0038bf6ecc7c54ad438942e21a7612eed107",
+    "label-free-feature-freeze.json": "6d1b663e8c23dc6fdae1846752bb00fa94fdae42694c94c0b7619d5e2dd56801",
+    "queries.csv": "4b085b295446851e058dae149d2e45c54b30aea2a373102f234d44a884dc6b30",
+    "identity-cache.parquet": "99fda2a7e02107bdfff564b1bce058153956a71a840c5965f4f681861b9461ea"
+  },
+  "primary_queries": 240,
+  "stress_queries": 80,
+  "primary_groups": 169,
+  "largest_primary_group": 8,
+  "outer_fold_sizes": {
+    "0": 48,
+    "1": 48,
+    "2": 48,
+    "3": 48,
+    "4": 48
+  },
+  "grouping_edges": {
+    "scaffold": 120,
+    "formula": 30,
+    "tanimoto": 75,
+    "acquisition": 0
+  },
+  "stress_raw_alias_flagged": 20,
+  "stress_clean": 60,
+  "unknown_foundation_model_pretraining_exposure": true,
+  "fresh_reserved_labels_read": false,
+  "gpu_work": false
+}

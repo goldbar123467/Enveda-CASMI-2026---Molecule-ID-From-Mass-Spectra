@@ -1,0 +1,164 @@
+{
+  "prepared_utc": "2026-11-11T15:45:51.165531+00:00",
+  "config_sha256": "93fbd1d6c89df1082ff959c3873281f3b95665c1a048e512d2a2718c13ad7823",
+  "source_sha256": {
+    "prepare_c36_validation.py": "fb37c7bd8ccb9ccd3e93b6ede8386ecae85319c71add812e81f9df556333fa8d",
+    "audit_c36_candidate_losses.py": "d5e01c3953851f7e9f0ac672c14a02537c833761510ff7e84db07c1ee7ea37e1",
+    "evaluate_c36_isomers.py": "e72feacb81a7c0cebfdd6279e63aeb24270440e6821c163520cd70409ebe37b6",
+    "validation_repair.py": "436995bf19c66e8acb25d6b02fad04797b5641b0f59e3332521b22fa8953a3bf"
+  },
+  "feature_identity_source_sha256": "a97ad9b3ab3711517864d56e497e1672cb29bb05683c72b52db9f9b0a17b1455",
+  "inputs": {
+    "parent": {
+      "path": "outputs/local/c21-negative-tail-20261110/parent.csv",
+      "sha256": "76f63eb680300424b4c90a33c7cc8c98a2f345c7b734587fdc4ac57dc81792c4"
+    },
+    "queries": {
+      "path": "outputs/local/c21-negative-tail-20261110/queries.parquet",
+      "sha256": "ef072e28bc637ae3b36cceabbb72f2a431b4125a4f8349a534a60bf01891cc86"
+    },
+    "positive_features": {
+      "path": "outputs/forks/c10-casmi2022-validation-v1/c10_neural_p01.parquet",
+      "sha256": "feee6298e3793e5c24501d8caa586421358583d062303c02e259a98819ad710c"
+    },
+    "negative_features": {
+      "path": "outputs/forks/c20-negative-development-v2/c20_neural_p01.parquet",
+      "sha256": "01cfe127019a1c957fca041f34894b77ee6e0637a9649fa8669ec4fa0bb67d1e"
+    },
+    "primary_index": {
+      "path": "outputs/local/c21-negative-tail-20261110/fingerprint-smiles.parquet",
+      "sha256": "3c6031cab7803deb24c15e8e5c5c9b2aa4077e8c829d1561be0ba433f4a87e9d"
+    },
+    "deep_index": {
+      "path": "outputs/local/c12-deep-candidates-20261110/all/fingerprint-smiles.parquet",
+      "sha256": "9d65c4f7645ca91b3e83cd37df83db023ea75f335f0dced900daf15012d45975"
+    },
+    "deep_pool": {
+      "path": "outputs/local/c12-deep-candidates-20261110/all/pool.parquet",
+      "sha256": "399e8a916f6853b2e3139837bcee7c213be56a9315041338258ee3259b0a8651"
+    },
+    "positive_labels": {
+      "path": "outputs/local/c10-casmi2022-20261110/labels.csv",
+      "sha256": "f1d3b96f002827d2c9ddd1e61f0fe4e97551a27859da8c74d248588893515c6a"
+    },
+    "negative_labels": {
+      "path": "outputs/local/c20-negative-development-20261110/labels.csv",
+      "sha256": "4d0f0803904dcf592fa9bda6786db72b40d9e27790ce0f891bb9ed700f82e1a3"
+    },
+    "P14": {
+      "path": "outputs/local/c21-negative-tail-20261110/P14.csv",
+      "sha256": "edcb3811fe78fe4353891090214f241f103fc07ac621c12d0332c01fedc79063"
+    },
+    "P15": {
+      "path": "outputs/local/c21-negative-tail-20261110/P15.csv",
+      "sha256": "694e9105546860f42bf92423612737c9633355c3dec97abbaa2fcf2ee7d144c8"
+    },
+    "P18": {
+      "path": "outputs/local/two-past-trials-20261110/C22-peak-dose_allmode.csv",
+      "sha256": "ce9a80ed8430203bb6f6a484305eb32501f28edd6fbe7f820126b59d6b1908c0"
+    },
+    "P19": {
+      "path": "outputs/local/two-past-trials-20261110/C18-peak-drop_allmode.csv",
+      "sha256": "272957fc9a6d963d2aa0886e59cc10c10587017b812faac57936460d91b1b66d"
+    },
+    "stress_parent": {
+      "path": "outputs/forks/c09-clean-validation-v2/c09_clean_p01.csv",
+      "sha256": "c797a09efd0d275ed2d7940f43b1782010eba25cdb41c099a12410429372fb97"
+    },
+    "stress_features": {
+      "path": "outputs/forks/c09-clean-validation-v2/c09_clean_neural_p01.parquet",
+      "sha256": "6576afe175fac0af15a4ddf01b96eec613b552ca013e71ceedcafa99856f8e7d"
+    },
+    "stress_queries": {
+      "path": "outputs/forks/c09-clean-validation-v2/c09_clean_queries.parquet",
+      "sha256": "634b888f74196f703507173e57a6ba18c086af5f58079a3e43ed97b9ce06fff9"
+    },
+    "stress_labels": {
+      "path": "outputs/publish/c09-validation-20261109/labels.csv",
+      "sha256": "86f54a9ca39dbf6353eef237a35406f1f8203f0ea5f0bc71fd1f3f420b5c4d4e"
+    },
+    "stress_P14": {
+      "path": "outputs/forks/c09-clean-validation-v2/c09_clean_p14.csv",
+      "sha256": "3a722b125dd474c9e4187872788942dbe658b388c3e8e39f2e18e650f1efead3"
+    },
+    "stress_aliases": {
+      "path": "outputs/forks/c09-spectrum-audit-v3/c09_spectrum_matches.csv",
+      "sha256": "cf6538232ce6f9250b4949b86ac7e25e87f9cd75f1e6b027bd71a28bdb05be03"
+    },
+    "prior_primary_consumption": {
+      "path": "outputs/local/c21-negative-tail-20261110/development.json",
+      "sha256": "458807baec96531230115078c4badb4dae18000e530843b863d077d7ba760e13"
+    },
+    "prior_positive_consumption": {
+      "path": "outputs/local/c12-deep-candidates-20261110/confirmation.json",
+      "sha256": "7b6487a69346523f9c2d67558811dbad4acc07178311d3aa9879e622d1a639f7"
+    },
+    "prior_stress_consumption": {
+      "path": "outputs/local/c09-followup-evaluation-20261109/confirmation.json",
+      "sha256": "f26dada86ba99f81457bdf23b33bab1431437b428ac8f1aadf84289c5a3ab59f"
+    }
+  },
+  "routes": {
+    "positive:eng_lists.json": {
+      "path": "outputs/forks/c10-candidate-pools-v1/eng_lists.json",
+      "sha256": "3c9816792436f394286dcf236e32f79786406a682d121c2746639db3563aa0fd"
+    },
+    "positive:pc_lists.json": {
+      "path": "outputs/forks/c10-candidate-pools-v1/pc_lists.json",
+      "sha256": "df48a2c56346167441c949eaddfa994befbdde6b16da94ae4e435c709fdf16da"
+    },
+    "positive:ice_work/ice_in.json": {
+      "path": "outputs/forks/c10-candidate-pools-v1/ice_work/ice_in.json",
+      "sha256": "8bf72abb8198bcb05f52e8659cd5a4730f8158d00799a5bee433294f1e4112ff"
+    },
+    "positive:ice_work/ice_out.json": {
+      "path": "outputs/forks/c10-candidate-pools-v1/ice_work/ice_out.json",
+      "sha256": "63ac7357d496cd6cf2f9a90f0b9147d94fe8d3999409eba13d4dc940184cc245"
+    },
+    "positive:gl_work/gl_in.json": {
+      "path": "outputs/forks/c10-candidate-pools-v1/gl_work/gl_in.json",
+      "sha256": "27eb2ab07970d9f6bc0d4468025bcd87981d816c07dbb70a184324068c13e179"
+    },
+    "positive:gl_work/gl_out.json": {
+      "path": "outputs/forks/c10-candidate-pools-v1/gl_work/gl_out.json",
+      "sha256": "6f227ed6c5799d0affdf7c09475c68770ad39006e2db0a1b7887c15a9e20377a"
+    },
+    "negative:eng_lists.json": {
+      "path": "outputs/forks/c20-negative-development-v2/eng_lists.json",
+      "sha256": "312193e4830acfb800f79ad3db23c9ed74fa717adf4f712ef7eb8648f4a66294"
+    },
+    "negative:pc_lists.json": {
+      "path": "outputs/forks/c20-negative-development-v2/pc_lists.json",
+      "sha256": "e9da4ed303673d2ff4f7494d3eaabb03412b56419ade05371bc212fb43c9bb35"
+    },
+    "negative:ice_work/ice_in.json": {
+      "path": "outputs/forks/c20-negative-development-v2/ice_work/ice_in.json",
+      "sha256": "320868548b3288e8468d288a34118c8f6372ae667465cb225375de8032045132"
+    },
+    "negative:ice_work/ice_out.json": {
+      "path": "outputs/forks/c20-negative-development-v2/ice_work/ice_out.json",
+      "sha256": "1c71121426bc9028cbc323fbb6df82d6ee8c0793323410d2f657a497f8146186"
+    },
+    "negative:gl_work/gl_in.json": {
+      "path": "outputs/forks/c20-negative-development-v2/gl_work/gl_in.json",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "negative:gl_work/gl_out.json": {
+      "path": "outputs/forks/c20-negative-development-v2/gl_work/gl_out.json",
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    "positive:n1_work/n1_in.json": {
+      "path": "outputs/forks/c10-candidate-pools-v1/n1_work/n1_in.json",
+      "sha256": "319173c691494f19c2ebdf48b944cad1c4b492b55d28d2df2d92ecbcb079a5d5"
+    },
+    "negative:recovered_engine": {
+      "path": "outputs/forks/c20-negative-development-v2/c20_engine2_recovered_lists.json",
+      "sha256": "59cb03b14d2ae06ce8ce200379614e296b4690c020316c866516175f92a91895"
+    }
+  },
+  "fresh_reserved_labels_read": false,
+  "gpu_work": false,
+  "cloud_runs": false,
+  "submissions": false,
+  "selection": "Freeze prior to all new variant metrics; no query filtering based on control or candidate outcomes"
+}

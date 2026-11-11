@@ -1,0 +1,155 @@
+{
+  "completed_utc": "2026-11-11T15:52:32.354221+00:00",
+  "source_sha256": "d5e01c3953851f7e9f0ac672c14a02537c833761510ff7e84db07c1ee7ea37e1",
+  "contract_sha256": "dcfd867e79fd7b95c753f24cfeb2afe401c73d2a3c62fbed3952c75faa20a380",
+  "feature_freeze_sha256": "e538b66b676c0f3ed4fa709cc34a4eef5141df2c85747408fc77784db40dcb33",
+  "witness_sha256": "2a41c8d0c84462ecee6bb3ae305b6fe5dea428f8df5a0260ed3cbfe2b22fe001",
+  "groups": {
+    "all240": {
+      "queries": 240,
+      "truths_final": 150,
+      "truths_retained_union": 176,
+      "dropped_after_retrieval": 26,
+      "absent_in_all_retained_routes": 64,
+      "final_absent_with_neutral_mass_error_gt30ppm": 0,
+      "physical_truth_input_without_score": 10,
+      "by_route": {
+        "engine2": {
+          "truths": 106,
+          "final_absent_truths": 8,
+          "available_queries": 240
+        },
+        "pubchem": {
+          "truths": 74,
+          "final_absent_truths": 12,
+          "available_queries": 215
+        },
+        "ice_input": {
+          "truths": 168,
+          "final_absent_truths": 26,
+          "available_queries": 239
+        },
+        "ice_scored": {
+          "truths": 88,
+          "final_absent_truths": 16,
+          "available_queries": 239
+        },
+        "gl_input": {
+          "truths": 61,
+          "final_absent_truths": 12,
+          "available_queries": 87
+        },
+        "gl_scored": {
+          "truths": 61,
+          "final_absent_truths": 12,
+          "available_queries": 87
+        },
+        "n1_input": {
+          "truths": 28,
+          "final_absent_truths": 3,
+          "available_queries": 37
+        }
+      }
+    },
+    "positive160": {
+      "queries": 160,
+      "truths_final": 100,
+      "truths_retained_union": 119,
+      "dropped_after_retrieval": 19,
+      "absent_in_all_retained_routes": 41,
+      "final_absent_with_neutral_mass_error_gt30ppm": 0,
+      "physical_truth_input_without_score": 3,
+      "by_route": {
+        "engine2": {
+          "truths": 70,
+          "final_absent_truths": 6,
+          "available_queries": 160
+        },
+        "pubchem": {
+          "truths": 50,
+          "final_absent_truths": 8,
+          "available_queries": 160
+        },
+        "ice_input": {
+          "truths": 116,
+          "final_absent_truths": 19,
+          "available_queries": 160
+        },
+        "ice_scored": {
+          "truths": 88,
+          "final_absent_truths": 16,
+          "available_queries": 160
+        },
+        "gl_input": {
+          "truths": 61,
+          "final_absent_truths": 12,
+          "available_queries": 87
+        },
+        "gl_scored": {
+          "truths": 61,
+          "final_absent_truths": 12,
+          "available_queries": 87
+        },
+        "n1_input": {
+          "truths": 28,
+          "final_absent_truths": 3,
+          "available_queries": 37
+        }
+      }
+    },
+    "negative80": {
+      "queries": 80,
+      "truths_final": 50,
+      "truths_retained_union": 57,
+      "dropped_after_retrieval": 7,
+      "absent_in_all_retained_routes": 23,
+      "final_absent_with_neutral_mass_error_gt30ppm": 0,
+      "physical_truth_input_without_score": 7,
+      "by_route": {
+        "engine2": {
+          "truths": 36,
+          "final_absent_truths": 2,
+          "available_queries": 80
+        },
+        "pubchem": {
+          "truths": 24,
+          "final_absent_truths": 4,
+          "available_queries": 55
+        },
+        "ice_input": {
+          "truths": 52,
+          "final_absent_truths": 7,
+          "available_queries": 79
+        },
+        "ice_scored": {
+          "truths": 0,
+          "final_absent_truths": 0,
+          "available_queries": 79
+        },
+        "gl_input": {
+          "truths": 0,
+          "final_absent_truths": 0,
+          "available_queries": 0
+        },
+        "gl_scored": {
+          "truths": 0,
+          "final_absent_truths": 0,
+          "available_queries": 0
+        },
+        "n1_input": {
+          "truths": 0,
+          "final_absent_truths": 0,
+          "available_queries": 0
+        }
+      }
+    }
+  },
+  "positive_deep_truths": 119,
+  "positive_final_absent_in_deep": 19,
+  "invalid_route_structures": 0,
+  "official_identity_join": true,
+  "reserved_labels_read": false,
+  "gpu_work": false,
+  "inference_coverage_caveat": "Raw forward output membership is not evidence of supported negative-mode scoring: production negative final features have no ICE/GL signal. Scores were not newly run or used to modify candidates.",
+  "limitation": "Parallel-route membership witnesses locate observed losses. A missing truth in retained route files does not prove absence from the original full databases; unretained mass filters and candidate budgets cannot be reconstructed from these files alone."
+}

@@ -1,0 +1,61 @@
+{
+  "completed_utc": "2026-11-11T15:55:44.268505+00:00",
+  "auditor_source_sha256": "575ff2c9fd0c769a3e79f118c556e76bbbf8021e530f6b39c824b5945ef6d69f",
+  "fit_audits_sha256": "456b5ff686ebd2a244e54e1a403fcfa5171329f1010a381ced023a01d14a3d46",
+  "ranking_report_sha256": "33d19d96f37e3bd6957670a660b77ef2e616ff667be5e2c2d2497a9b9213336e",
+  "independently_reconstructed_models": 12,
+  "maximum_weight_abs_difference": 1.7763568394002505e-15,
+  "independently_reconstructed_prediction_rows": 640,
+  "all_model_prediction_lists_exact": true,
+  "independent_metrics_exact": true,
+  "formula_slots_and_membership_exact": true,
+  "physical_feature_ablation": {
+    "primary": {
+      "all": {
+        "n": 240,
+        "independent_groups": 169,
+        "baseline_mrr25": 0.29861470692785047,
+        "candidate_mrr25": 0.3120322589177709,
+        "delta": 0.013417551989920411,
+        "ci95": [
+          0.002356102979793832,
+          0.025676198961072157
+        ],
+        "improved": 34,
+        "harmed": 20
+      }
+    },
+    "source_stress": {
+      "all": {
+        "n": 80,
+        "independent_groups": 50,
+        "baseline_mrr25": 0.7184350198412698,
+        "candidate_mrr25": 0.723420138888889,
+        "delta": 0.0049851190476190455,
+        "ci95": [
+          -0.04308827306449589,
+          0.04915873406584919
+        ],
+        "improved": 9,
+        "harmed": 4
+      },
+      "raw_alias_free": {
+        "n": 60,
+        "independent_groups": 33,
+        "baseline_mrr25": 0.8225198412698412,
+        "candidate_mrr25": 0.8027777777777778,
+        "delta": -0.01974206349206349,
+        "ci95": [
+          -0.082847901065188,
+          0.031120071383816676
+        ],
+        "improved": 5,
+        "harmed": 4
+      }
+    }
+  },
+  "limitation": "Matched feature ablation includes each variant's independently inner-selected alpha. This measures the full fixed calibration procedures, not an isolated causal effect of one physical score.",
+  "model_or_recipe_selection": false,
+  "gpu_work": false,
+  "fresh_reserved_labels_read": false
+}

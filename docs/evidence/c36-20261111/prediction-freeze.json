@@ -1,0 +1,15 @@
+{
+  "frozen_utc": "2026-11-11T15:47:06.035249+00:00",
+  "input_freeze_sha256": "9c26073398faed58613b86174cd31df1ebdb36320f7c84a45e45e5c5c396d54e",
+  "files_sha256": {
+    "primary-fixed_physical_agreement.csv": "4a3c91d172d30bd904ae95a51adbdc8ff626253af095e8b43700efac36cf8954",
+    "primary-pairwise_ridge_full.csv": "3e833934734f916dc0049592ca84426eb296048c4c000f2c9eaad3563ffb3cdb",
+    "primary-pairwise_ridge_without_physical.csv": "0561d02391016d6163da065b254706518e8cecd5fcc4389b2e93f1695585023f",
+    "source_stress-pairwise_ridge_full.csv": "7625a6206369891f217d7ff18b6e9d71f18e7a98b6d148472537ee0bb800ed42",
+    "source_stress-pairwise_ridge_without_physical.csv": "75d760c5b72aed00dc3263056536134c9adc09d1703ca9a6a0402c8c946e80b2",
+    "source_stress-fixed_physical_agreement.csv": "6a7ab29da3350ffa8dfe387ccc6af4086120f83d302f87dec7735b2333adfbe5"
+  },
+  "fit_audits_sha256": "456b5ff686ebd2a244e54e1a403fcfa5171329f1010a381ced023a01d14a3d46",
+  "outer_metrics_read": false,
+  "stress_metrics_read": false
+}

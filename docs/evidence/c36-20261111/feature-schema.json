@@ -1,0 +1,135 @@
+{
+  "feature_names": [
+    "inverse_baseline",
+    "library_inverse_baseline",
+    "inverse_main",
+    "inverse_prefusion",
+    "inverse_engine2",
+    "inverse_pubchem",
+    "neural_score_present",
+    "neural_score_z",
+    "neural_score_inverse_rank",
+    "neural_cos_present",
+    "neural_cos_z",
+    "neural_cos_inverse_rank",
+    "neural_fp_present",
+    "neural_fp_z",
+    "neural_fp_inverse_rank",
+    "ice_present",
+    "ice_z",
+    "ice_inverse_rank",
+    "gl_present",
+    "gl_z",
+    "gl_inverse_rank",
+    "proxy_gl_present",
+    "proxy_gl_z",
+    "proxy_gl_inverse_rank",
+    "ice_neural_agreement",
+    "gl_neural_agreement"
+  ],
+  "physical_features": [
+    "ice_present",
+    "ice_z",
+    "ice_inverse_rank",
+    "gl_present",
+    "gl_z",
+    "gl_inverse_rank",
+    "proxy_gl_present",
+    "proxy_gl_z",
+    "proxy_gl_inverse_rank",
+    "ice_neural_agreement",
+    "gl_neural_agreement"
+  ],
+  "inputs": {
+    "parent": {
+      "path": "outputs/local/c21-negative-tail-20261110/parent.csv",
+      "sha256": "76f63eb680300424b4c90a33c7cc8c98a2f345c7b734587fdc4ac57dc81792c4"
+    },
+    "queries": {
+      "path": "outputs/local/c21-negative-tail-20261110/queries.parquet",
+      "sha256": "ef072e28bc637ae3b36cceabbb72f2a431b4125a4f8349a534a60bf01891cc86"
+    },
+    "positive_features": {
+      "path": "outputs/forks/c10-casmi2022-validation-v1/c10_neural_p01.parquet",
+      "sha256": "feee6298e3793e5c24501d8caa586421358583d062303c02e259a98819ad710c"
+    },
+    "negative_features": {
+      "path": "outputs/forks/c20-negative-development-v2/c20_neural_p01.parquet",
+      "sha256": "01cfe127019a1c957fca041f34894b77ee6e0637a9649fa8669ec4fa0bb67d1e"
+    },
+    "primary_index": {
+      "path": "outputs/local/c21-negative-tail-20261110/fingerprint-smiles.parquet",
+      "sha256": "3c6031cab7803deb24c15e8e5c5c9b2aa4077e8c829d1561be0ba433f4a87e9d"
+    },
+    "deep_index": {
+      "path": "outputs/local/c12-deep-candidates-20261110/all/fingerprint-smiles.parquet",
+      "sha256": "9d65c4f7645ca91b3e83cd37df83db023ea75f335f0dced900daf15012d45975"
+    },
+    "deep_pool": {
+      "path": "outputs/local/c12-deep-candidates-20261110/all/pool.parquet",
+      "sha256": "399e8a916f6853b2e3139837bcee7c213be56a9315041338258ee3259b0a8651"
+    },
+    "positive_labels": {
+      "path": "outputs/local/c10-casmi2022-20261110/labels.csv",
+      "sha256": "f1d3b96f002827d2c9ddd1e61f0fe4e97551a27859da8c74d248588893515c6a"
+    },
+    "negative_labels": {
+      "path": "outputs/local/c20-negative-development-20261110/labels.csv",
+      "sha256": "4d0f0803904dcf592fa9bda6786db72b40d9e27790ce0f891bb9ed700f82e1a3"
+    },
+    "P14": {
+      "path": "outputs/local/c21-negative-tail-20261110/P14.csv",
+      "sha256": "edcb3811fe78fe4353891090214f241f103fc07ac621c12d0332c01fedc79063"
+    },
+    "P15": {
+      "path": "outputs/local/c21-negative-tail-20261110/P15.csv",
+      "sha256": "694e9105546860f42bf92423612737c9633355c3dec97abbaa2fcf2ee7d144c8"
+    },
+    "P18": {
+      "path": "outputs/local/two-past-trials-20261110/C22-peak-dose_allmode.csv",
+      "sha256": "ce9a80ed8430203bb6f6a484305eb32501f28edd6fbe7f820126b59d6b1908c0"
+    },
+    "P19": {
+      "path": "outputs/local/two-past-trials-20261110/C18-peak-drop_allmode.csv",
+      "sha256": "272957fc9a6d963d2aa0886e59cc10c10587017b812faac57936460d91b1b66d"
+    },
+    "stress_parent": {
+      "path": "outputs/forks/c09-clean-validation-v2/c09_clean_p01.csv",
+      "sha256": "c797a09efd0d275ed2d7940f43b1782010eba25cdb41c099a12410429372fb97"
+    },
+    "stress_features": {
+      "path": "outputs/forks/c09-clean-validation-v2/c09_clean_neural_p01.parquet",
+      "sha256": "6576afe175fac0af15a4ddf01b96eec613b552ca013e71ceedcafa99856f8e7d"
+    },
+    "stress_queries": {
+      "path": "outputs/forks/c09-clean-validation-v2/c09_clean_queries.parquet",
+      "sha256": "634b888f74196f703507173e57a6ba18c086af5f58079a3e43ed97b9ce06fff9"
+    },
+    "stress_labels": {
+      "path": "outputs/publish/c09-validation-20261109/labels.csv",
+      "sha256": "86f54a9ca39dbf6353eef237a35406f1f8203f0ea5f0bc71fd1f3f420b5c4d4e"
+    },
+    "stress_P14": {
+      "path": "outputs/forks/c09-clean-validation-v2/c09_clean_p14.csv",
+      "sha256": "3a722b125dd474c9e4187872788942dbe658b388c3e8e39f2e18e650f1efead3"
+    },
+    "stress_aliases": {
+      "path": "outputs/forks/c09-spectrum-audit-v3/c09_spectrum_matches.csv",
+      "sha256": "cf6538232ce6f9250b4949b86ac7e25e87f9cd75f1e6b027bd71a28bdb05be03"
+    },
+    "prior_primary_consumption": {
+      "path": "outputs/local/c21-negative-tail-20261110/development.json",
+      "sha256": "458807baec96531230115078c4badb4dae18000e530843b863d077d7ba760e13"
+    },
+    "prior_positive_consumption": {
+      "path": "outputs/local/c12-deep-candidates-20261110/confirmation.json",
+      "sha256": "7b6487a69346523f9c2d67558811dbad4acc07178311d3aa9879e622d1a639f7"
+    },
+    "prior_stress_consumption": {
+      "path": "outputs/local/c09-followup-evaluation-20261109/confirmation.json",
+      "sha256": "f26dada86ba99f81457bdf23b33bab1431437b428ac8f1aadf84289c5a3ab59f"
+    }
+  },
+  "label_free_feature_preparation": true,
+  "formula_from_candidate_only": true
+}

@@ -1,0 +1,45 @@
+{
+  "completed_utc": "2026-11-11T15:50:11.839808+00:00",
+  "reviewer_source_sha256": "6c8e4c37e0b60ccb96b612b46d0beca7b5c1d6d9c4e548a7ad0f360e8ff28463",
+  "admission_source_sha256": "de645c9ec4f2239cba51aee597f1c9a73bd267a53ae05e4eb8d5e11aab3f11f3",
+  "ranking_report_sha256": "33d19d96f37e3bd6957670a660b77ef2e616ff667be5e2c2d2497a9b9213336e",
+  "prediction_freeze_sha256": "7c6557a08b1265357cd7a0aef551fdb3e67e190831e935a884326e3613ef2ba9",
+  "feature_freeze_sha256": "e538b66b676c0f3ed4fa709cc34a4eef5141df2c85747408fc77784db40dcb33",
+  "derived_mass_witness_sha256": "e9000407e1b38bbba2dae1e42c6c6b29e60b268029f02aba655344daae5a82c6",
+  "group_fit_exclusions_passed": true,
+  "inner_selection_exclusions_passed": true,
+  "source_stress_chemistry_exclusions_passed": true,
+  "predictions_immutable_after_metrics": true,
+  "mass_diagnostic": {
+    "queries": 240,
+    "cached_mass_available": 215,
+    "cached_mass_missing": 25,
+    "missing_cached_by_adduct": {
+      "[M+FA-H]-": 25
+    },
+    "derived_mass_available": 240,
+    "derived_errors_over30ppm": 0,
+    "maximum_derived_error_ppm": 7.950466955169789,
+    "diagnostic_only": true,
+    "ranking_inputs_unchanged": true
+  },
+  "admission": {
+    "passed": false,
+    "reasons": [
+      "source_stress_gain_not_supported",
+      "raw_alias_free_source_regression",
+      "source_stress_polarity_regression",
+      "proxy_does_not_detect_known_P14_regression",
+      "untouched_confirmation_not_consumed",
+      "external_model_pretraining_exposure_unresolved"
+    ],
+    "automatic_gpu_work": false,
+    "automatic_submission": false,
+    "interpretation": "An exploratory development gain alone cannot authorize deployment or further compute."
+  },
+  "source_gate_scope": "Independent review; no recipe or parameter was changed after source-stress results. Explicit source-regression blocking supplements the original evaluator gate.",
+  "reserved_labels_read": false,
+  "gpu_work": false,
+  "cloud_runs": false,
+  "submission_qualified": false
+}

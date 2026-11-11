@@ -1,0 +1,17 @@
+{
+  "checked_utc": "2026-11-11T16:00:48.139308+00:00",
+  "unittest_command": ".venv-gpu/Scripts/python.exe -m unittest tests.test_validation_repair",
+  "unit_tests_passed": 10,
+  "tests_source_sha256": "ecfa00c4117bb544cf539351f4e8d105652c3bac64b6943dcaf6c68f8743a0c4",
+  "helper_source_sha256": {
+    "validation_repair.py": "436995bf19c66e8acb25d6b02fad04797b5641b0f59e3332521b22fa8953a3bf",
+    "validation_admission.py": "de645c9ec4f2239cba51aee597f1c9a73bd267a53ae05e4eb8d5e11aab3f11f3",
+    "review_c36_validation.py": "6c8e4c37e0b60ccb96b612b46d0beca7b5c1d6d9c4e548a7ad0f360e8ff28463"
+  },
+  "independent_augmented_least_squares_models": 12,
+  "independent_prediction_rows": 640,
+  "source_and_frozen_artifact_hashes_exact": true,
+  "prior_production_qualification_artifacts_unchanged": true,
+  "new_gpu_work": false,
+  "fresh_reserved_metrics_read": false
+}

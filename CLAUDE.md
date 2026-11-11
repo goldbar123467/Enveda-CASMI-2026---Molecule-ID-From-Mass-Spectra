@@ -1,31 +1,41 @@
 # Enveda CASMI 2026 — working rules
 
-## CURRENT AUTHORIZATION — 11 November, research only; compute stopped
+## CURRENT STATE — 11 November, CPU validation cycle finished; GPU stopped
 
-Latest user request: "Stop and research why our score cannot improve from .48".
-Training, cloud launches, scoring submissions and automatic campaign work are
-STOPPED. Keep .local/compute-paused.json (phase user_requested_research_only).
-Do not remove it or resume workers without explicit user instruction. The native
-hourly automation and silver goal remain PAUSED; silver is not achieved.
+Latest user instruction: "repair validation, locate candidate losses, then test
+ranking changes that distinguish isomers before spending more GPU time."
+The requested C36 CPU-only cycle is complete. Keep .local/compute-paused.json
+(phase cpu_validation_repair_finished). No GPU/encoder training, GPU inference,
+cloud job, scoring submission or hourly campaign was resumed. All CPU workers
+exited. The hourly automation and silver goal remain PAUSED; silver is unmet.
 
-The two bounded past-work entries are finished and their allowance exhausted:
-P18/C22 ref58212322 COMPLETE0.478 and P19/C18 ref58219034 COMPLETE0.478, no reported
-errors. The second was accepted only after the first actual result. Observer19988
-exited normally at05:34UTC after both results and restored the pause. Fresh API
-check15:10UTC found zero pending. The two remaining local dashboard workers were
-stopped for this request. The obsolete C09 coverage kernel still reports
-CANCEL_REQUESTED; do not requeue or claim acknowledged termination.
+Read docs/C36-VALIDATION-REPAIR-2026-11-11.md and docs/evidence/c36-20261111.
+Strict all-query/official-identity evaluation, nested chemistry-group selection,
+held-out-source admission gates and mass diagnostics are repaired. Empirical
+leaderboard calibration remains UNPROVEN: P14 is still a wrong-sign control.
+Do not confuse repaired safeguards with a newly validated population proxy.
 
-Research is complete in docs/PLATEAU-RESEARCH-2026-11-11.md, with compact evidence
-in docs/evidence/plateau-20261111. On used240,90 truths are absent and104 are present
-belowfirst;96 of those104 wrong firsts have the correct formula. Recent tails
-lock rank1 and candidate membership. C18/C22 agree on227/240 truth ranks, with
-small uncertain gains; both publicly regressed. P14 remains a wrong-sign
-validation control. The .31935 fixed-tail oracle is used-panel-only, NOT a Kaggle
-ceiling. Best verified public score remains0.480. No fresh C13 reserved metrics,
-new training, new cloud job or new submission were used in this research.
-All prior qualification/model/source artifacts remain immutable. The older
-campaign authorizations below are historical and cannot resume work.
+Candidate route audit:150/240 truths in final lists,176 in retained route union;
+26retrieved-but-dropped(19positive/7negative),64absent from saved routes. This is
+not proof those64 are absent from full original databases.25missing cached nm
+fields are formate queries; offline diagnostic recomputation supports all240,
+max7.95047ppm. Production/ranking inputs remain unchanged.
+
+CPU isomer ranker primary grouped OOF MRR.283748->.312032(delta+.028284,
+CI[.005327,.051536]), but clean-source60 delta-.023909 and source-negative31
+delta-.037154. REJECTED for source/calibration failure; do not promote, fit an
+encoder, upload or submit it. Physical ablation and fixed physical rule are also
+unqualified. Source80 is historical/used, not fresh. Fresh C13 reserved metrics
+remain UNREAD. No final deployment model was qualified.10tests pass;12CPU fits
+and640learned prediction lists independently reproduced; original qualified
+production sources/models remain byte-exact. See compact evidence.
+
+The previous two past-work entries are exhausted: P18/ref58212322 and
+P19/ref58219034 COMPLETE0.478/no reported error. Best remains0.480; never resubmit
+these entries. Old C09 coverage remains last observed CANCEL_REQUESTED; no
+acknowledged termination or requeue. Older campaign authorizations below are
+historical and cannot resume automatic work. New GPU/submission work requires
+explicit user instruction after a defensible validation result.
 
 ## USER STOPPED CAMPAIGN — 10 November,14:59 UTC
 
