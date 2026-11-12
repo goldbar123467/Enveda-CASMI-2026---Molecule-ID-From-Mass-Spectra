@@ -1,0 +1,14 @@
+{
+  "checked_utc": "2026-11-12T15:48:09.551814+00:00",
+  "adapter_source_sha256": "527ba0738e7154983b0265556875871f273e5e2eecfd37070da2fa15ad3228b0",
+  "evaluation_source_sha256": "f3a20e0f956c969e882254ac0a6042eb7f0f6f1f78cb76ffeed2a11a0542e052",
+  "audit_source_sha256": "8d2c6124326b81c8135caccd5217b8074e85c823a9c2f6d58c5e31f28df4e896",
+  "Windows_manifest_file_path_keys_verified": true,
+  "original_C74_no_outcomes_and_P16_contract_passed": true,
+  "exact_absent_zero_rank_point_synthetic_test_passed": true,
+  "GPU_initialized": false,
+  "new_source_quality_read": false,
+  "C13_read": false,
+  "scoring_entries": 0,
+  "passed": true
+}
