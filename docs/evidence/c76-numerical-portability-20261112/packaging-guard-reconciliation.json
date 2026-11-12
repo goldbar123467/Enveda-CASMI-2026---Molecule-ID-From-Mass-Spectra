@@ -1,0 +1,42 @@
+{
+  "recorded_utc": "2026-11-12T20:01:09.125919+00:00",
+  "failures": {
+    "packaging-attempt01-no-numpy": {
+      "receipt": {
+        "utc": "2026-11-12T19:37:14.760593+00:00",
+        "stage": "stdlib_packaging",
+        "error": "Windows packaging imported NumPy-dependent helper; no inference or remote release",
+        "owned_source": "outputs/publish/c76-complete-direct-pair-20261112",
+        "retained_all_bytes": true
+      },
+      "original_builder_sha256": "83c2dd0da76277f879b166890fc91fe822b472f30bf30510343881678020dd99",
+      "retained_original_bundle_manifest_sha256": "89de8c213e97d2e51b3ca5020abf3cd128beb5a8b974be360d12ecd0f04164d6"
+    },
+    "packaging-attempt02-formate-guard": {
+      "receipt": {
+        "utc": "2026-11-12T19:38:03.937779+00:00",
+        "stage": "source_port_guard",
+        "error": "Guard detected R3 Engine2 formate normalization absent from retired production. Retain exact R3 pv.py; reverse only reference masking.",
+        "inference": false,
+        "remote_release": false
+      },
+      "original_builder_sha256": "5fa8553aa6dfa3ef75be156a48f64540f72ed140860d152096ac5357a8e5780f",
+      "retained_original_bundle_manifest_sha256": "30b332b9a70d4e1d1a4ca344f0e36b35de66d40f8aa0f21b578ec64600c3b7b2"
+    },
+    "packaging-attempt03-fp-formate-guard": {
+      "receipt": {
+        "utc": "2026-11-12T19:38:40.316669+00:00",
+        "stage": "source_port_guard",
+        "error": "Guard also detected R3 pv_fp.py formate token normalization. Keep both exact R3 pv modules; reverse only reference guard.",
+        "inference": false,
+        "remote_release": false
+      },
+      "original_builder_sha256": "8f6f8a9741032ea9b52c2b68d407b7f25b331f2910b94d1eac0709d832313a67",
+      "retained_original_bundle_manifest_sha256": "3dd90a761e5d51617d3fceb434ffc3cb77f83787e2ff417cfdb96ac1d8466898"
+    }
+  },
+  "final_builder_sha256": "327bfbdca6d12b387a2aae318d0d50c455b8dc93b43c0fba528a44a74af86882",
+  "final_independent_source_audit_sha256": "a94d4a0d591c402b6063ad33683d73ec89b8d36ebe4c9e9c4a9e52c908126993",
+  "no_inference_or_remote_release_during_failed_preparation": true,
+  "final_R3_scalar_and_fingerprint_formate_normalization_retained": true
+}

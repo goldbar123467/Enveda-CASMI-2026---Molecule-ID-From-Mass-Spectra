@@ -272,3 +272,7 @@ scripts/*c76*.py -text whitespace=trailing-space,space-before-tab,cr-at-eol
 configs/c76* -text whitespace=trailing-space,space-before-tab,cr-at-eol
 docs/evidence/c76-numerical-portability-20261112/* -text whitespace=trailing-space,space-before-tab,cr-at-eol
 kaggle/forks/c76-cpu-feature-parity/* -text whitespace=trailing-space,space-before-tab,cr-at-eol
+kaggle/forks/c76-full-masked-validation/* -text whitespace=trailing-space,space-before-tab,cr-at-eol
+kaggle/forks/c76-cpu-production/* -text whitespace=trailing-space,space-before-tab,cr-at-eol
+kaggle/forks/c76-gpu-production/* -text whitespace=trailing-space,space-before-tab,cr-at-eol
+kaggle/forks/c76-cpu-head-parity/* -text whitespace=trailing-space,space-before-tab,cr-at-eol

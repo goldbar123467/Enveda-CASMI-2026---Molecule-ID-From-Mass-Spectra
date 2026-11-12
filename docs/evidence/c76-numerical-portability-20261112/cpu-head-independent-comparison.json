@@ -1,0 +1,35 @@
+{
+  "completed_utc": "2026-11-12T19:53:42.762429+00:00",
+  "source_sha256": "d28475804ef177cb0db7a28dcb95cd1ae942418f3a0630ae9a32673716373615",
+  "passed": true,
+  "queries": 12,
+  "acquisitions": 51,
+  "actual_source_and_image_verified": true,
+  "all_101feature_values_and_candidate_records_bitexact": true,
+  "unchanged_physical_parent_exact": true,
+  "trials": {
+    "cpu": {
+      "scores": 300,
+      "maximum_absolute_score_difference": 0.0,
+      "final_lists_exact": true
+    },
+    "gpu": {
+      "scores": 300,
+      "maximum_absolute_score_difference": 0.0,
+      "final_lists_exact": true
+    }
+  },
+  "original_score_tolerance": {
+    "atol": 1e-10,
+    "rtol": 1e-10
+  },
+  "complete_pipeline_binding_sha256": "04b47cac8fe5476613834d4214d53cb51b7cc7a81162bf9516d2119acf7a03b9",
+  "cloud_collection_audit_sha256": "53d8b1c91c63bad1a16f96cf5cb7100c9acca1084401fcb3ca1c2b6c90e5c9f6",
+  "actual_CPU_only": true,
+  "actual_T4_production_smoke": false,
+  "engineering_USED_inputs_only": true,
+  "quality_read": false,
+  "C13_read": false,
+  "scoring_entries": 0,
+  "qualified_for_scoring": false
+}

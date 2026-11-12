@@ -1,0 +1,29 @@
+{
+  "completed_utc": "2026-11-12T19:30:59.557894+00:00",
+  "source_sha256": "78941739994693701fec639b9a54f62e1f259fc6cdf4bace27d3e67ab05c5574",
+  "validation_pin_sha256": "47ba8698ca6fb63f16a11f03f9d020ab582856cdf3ee1b22326239553c8fd811",
+  "passed": true,
+  "outer_change_only_embedded_payload": true,
+  "inner_changed_cells": [
+    41
+  ],
+  "exact_original_source_after_reversing_GL_integration": true,
+  "embedded_loader_and_helper_sha256": {
+    "gl_runner.py": "8cdedc57268fc86755961fd2ddc14bc72f8d9bf8dad3d8a446f97d575f61399d",
+    "c76_gl_portability.py": "9334f533cc00ba289d4c5d57d3f452b13f0a8b346be59546181b45f08a7ca63e"
+  },
+  "metadata_changes_only": [
+    "id",
+    "title"
+  ],
+  "original_datasets_image_and_machine_retained": true,
+  "original_ICE_batch_default_retained": true,
+  "no_local_resource_adapter": true,
+  "original_C73_preserved_as_separate_legacy_control": true,
+  "queries": 512,
+  "acquisitions": 2215,
+  "quality_read": false,
+  "C13_read": false,
+  "scoring_entries": 0,
+  "qualified_for_scoring": false
+}

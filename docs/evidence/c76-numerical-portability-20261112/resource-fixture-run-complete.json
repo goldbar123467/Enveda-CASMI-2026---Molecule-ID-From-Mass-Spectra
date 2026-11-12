@@ -1,0 +1,17 @@
+{
+  "completed_utc": "2026-11-12T19:22:06.317500+00:00",
+  "source_sha256": "0ead9c481317cd058a249a257c65876fd920fea3eeef4c316c486d106c1bbd93",
+  "queries": 12,
+  "acquisitions": 51,
+  "elapsed_seconds": 992.314021209,
+  "working": "/home/imsa/.local/share/enveda-c76/fixture-resource/working",
+  "P01_sha256": "f02633f3e46946163cd3a5c07044abe13da603c931adf59d286aa8a10c80c6e8",
+  "P14_sha256": "cb6bba1e9662eb88637af3b314080c4c2f8f767f012011ce77800aaf91a34d4a",
+  "original_C75_gate_passed": false,
+  "independent_health_source_fidelity_and_GL_branch_audits_required": true,
+  "USED_only": true,
+  "quality_read": false,
+  "C13_read": false,
+  "scoring_entries": 0,
+  "qualified_for_scoring": false
+}

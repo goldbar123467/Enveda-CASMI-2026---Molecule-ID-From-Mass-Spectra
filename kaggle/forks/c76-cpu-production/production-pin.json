@@ -1,0 +1,28 @@
+{
+  "prepared_utc": "2026-11-12T19:38:42.871719+00:00",
+  "builder_sha256": "327bfbdca6d12b387a2aae318d0d50c455b8dc93b43c0fba528a44a74af86882",
+  "trial": "cpu",
+  "notebook_sha256": "1bb0a3700472c0e84843f5b1fc829d533c032e6a6e3c663815b33ead41f18d63",
+  "metadata_sha256": "8e4d41ad158cda115cbf631631b22f16d314c09a3ef2239c4b58b17c83120d97",
+  "production_payload_sha256": "792d6a4f2b32c572c906319a4aa3ed4294e2245b1f0ab1b8274ec63f281385d3",
+  "source_payload_sha256": "182685722cb4bfb9c8bbdbabe1ec2a5ea46784d202d5692156a7faaf1171ffef",
+  "original_C71_R3_payload_sha256": "3f973abbb1593e356db4f6dec149c8ad99f5afa5ded8da8bab59152bd49e60e7",
+  "production_input_and_reference_wiring_cells": [
+    26,
+    27,
+    28,
+    37,
+    32
+  ],
+  "R3_Engine2_formate_normalization_retained_exact": true,
+  "R3_Engine2_fingerprint_adduct_normalization_retained_exact": true,
+  "original_R3_empty_pool_recovery_retained": true,
+  "explicit_C76_GL_integration_retained": true,
+  "original_P16_stage_exact": true,
+  "shared_head_runtime": true,
+  "pair_manifest_sha256": "2868660b0118a2c4746510852eb22bea0c378f78777484caa45b9cbae165ebd2",
+  "cloud_run_released": false,
+  "qualified_for_scoring": false,
+  "quality_read": false,
+  "C13_read": false
+}

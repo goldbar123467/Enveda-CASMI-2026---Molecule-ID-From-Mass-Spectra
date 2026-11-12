@@ -1,0 +1,40 @@
+{
+  "prepared_utc": "2026-11-12T19:21:41.984300+00:00",
+  "source_sha256": "438d45257bc372cfaccfd8656ee47aae67ddf7af159d5a281f832789edb30c34",
+  "queries": 512,
+  "acquisitions": 2215,
+  "original_payload_sha256": "3f973abbb1593e356db4f6dec149c8ad99f5afa5ded8da8bab59152bd49e60e7",
+  "candidate_payload_sha256": "182685722cb4bfb9c8bbdbabe1ec2a5ea46784d202d5692156a7faaf1171ffef",
+  "original_C73_notebook_sha256": "550f328a6edb1ae3ba2841cf4d2933e3ede92c1f8af3fc03e4965a2ac5718d38",
+  "notebook_sha256": "8e0bffb757cbf03c3dc069dcf69521e2578721301b6c5d46c248f24255db2c01",
+  "metadata_sha256": "991b09688865b7db9abe96b56819a291afba54f518aa02769265d3b78af4bb96",
+  "original_GL_runner_sha256": "5c4f74313ac54263d05d987c39d012d81ec57c5f35e1095ecd49a5bcb6440fca",
+  "candidate_GL_runner_sha256": "8cdedc57268fc86755961fd2ddc14bc72f8d9bf8dad3d8a446f97d575f61399d",
+  "helper_sha256": "9334f533cc00ba289d4c5d57d3f452b13f0a8b346be59546181b45f08a7ca63e",
+  "clone_addition_sha256": "c67a069e9bd8f2471006c8349af0c64a67684dee19576412ada8e4b3ad0f1556",
+  "exact_original_C73_source_datasets_and_query_contract_retained": true,
+  "changed_outer_cells": [
+    12
+  ],
+  "changed_inner_cells": [
+    41
+  ],
+  "original_ICE_default_retained_on_actual_T4": true,
+  "local_only_resource_adapter_not_shipped_to_T4": true,
+  "original_C73_required_as_separate_legacy_control": true,
+  "complete_C76_pipeline_binding_still_required": true,
+  "files_sha256": {
+    "kaggle/forks/c73-full-masked-validation/notebook.ipynb": "550f328a6edb1ae3ba2841cf4d2933e3ede92c1f8af3fc03e4965a2ac5718d38",
+    "kaggle/forks/c76-full-masked-validation/notebook.ipynb": "8e0bffb757cbf03c3dc069dcf69521e2578721301b6c5d46c248f24255db2c01",
+    "kaggle/forks/c76-full-masked-validation/kernel-metadata.json": "991b09688865b7db9abe96b56819a291afba54f518aa02769265d3b78af4bb96",
+    "scripts/c76_gl_portability.py": "9334f533cc00ba289d4c5d57d3f452b13f0a8b346be59546181b45f08a7ca63e",
+    "configs/c76-source-controls-addendum-v1.json": "0dce504bf4437c26353f81b232ce65eba085cbd240400c83330d808c231c6e08",
+    "outputs/local/c71-final-clean-direct-pair-20261112/complete-pipeline-binding.json": "ca0102078be7f068d9ffd939a99f1a6e009b560398fd46b04097532176df7288",
+    "outputs/local/c72-clean-target-holdout-20261112/preparation-protocol.json": "0d4b839bfb3e65b9e72036c2b6a9594a0d2d19008d74e228f5ca60bf0332ff5f"
+  },
+  "quality_read": false,
+  "C13_read": false,
+  "scoring_entries": 0,
+  "release_qualified": false,
+  "private_source_inference_only": true
+}

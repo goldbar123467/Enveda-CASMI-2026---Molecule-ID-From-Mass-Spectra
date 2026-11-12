@@ -1,0 +1,27 @@
+{
+  "completed_utc": "2026-11-12T19:40:33.745447+00:00",
+  "source_sha256": "49cf9632aeb2a44009582d56025bd8f57e4e7365d29605049aa7a9c714442f8e",
+  "passed": true,
+  "candidates": {
+    "cpu": {
+      "notebook_sha256": "1bb0a3700472c0e84843f5b1fc829d533c032e6a6e3c663815b33ead41f18d63",
+      "production_pin_sha256": "6c670567d38f32849b16bec3c6fdb6a3d46eea1e4314a49dd56523081c34f4bb"
+    },
+    "gpu": {
+      "notebook_sha256": "54de133e9ec1d9045fadd2a7bbce39285483edd9b04d525488205b2812677e4a",
+      "production_pin_sha256": "330b240bd54a3ee36f67912edf530fd88b58cf3880cdd4581ebc2efea5559613"
+    }
+  },
+  "exact_R3_empty_pool_recovery_retained": true,
+  "exact_R3_Engine2_scalar_and_fingerprint_formate_normalization_retained": true,
+  "exact_C76_classic_and_N1_GL_integration_retained": true,
+  "only_production_input_reference_wiring_and_receipt_mode_adapted": true,
+  "original_P16_stage_exact": true,
+  "shared_head_runtime": true,
+  "scoring_file_removed_before_required_head_stage": true,
+  "actual_production_smoke_still_required": true,
+  "quality_read": false,
+  "C13_read": false,
+  "scoring_entries": 0,
+  "qualified_for_scoring": false
+}

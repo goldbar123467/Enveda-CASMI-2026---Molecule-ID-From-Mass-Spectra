@@ -1,0 +1,22 @@
+{
+  "frozen_utc": "2026-11-12T19:48:21.185878+00:00",
+  "source_sha256": "e11f035d2da214e9ab7a9a2f8b9eba1a066de90a0228f86c6cd705d93b11b64d",
+  "probe_source_sha256": "32a409b91944827bfe3403eab10693a1189f00d559f513d66b2845c5569045f3",
+  "metadata_sha256": "b327b74f50a6c2c131ae43d2a5fd9c101ed672489413df08726de9d54eda65de",
+  "complete_pipeline_binding_sha256": "04b47cac8fe5476613834d4214d53cb51b7cc7a81162bf9516d2119acf7a03b9",
+  "pair_manifest_sha256": "2868660b0118a2c4746510852eb22bea0c378f78777484caa45b9cbae165ebd2",
+  "used_input_contract_sha256": "424501b903c04fece6c7ade3c0105cd7ba87510d0e4ad4a9a47b6b399fb0c7d0",
+  "local_used_score_receipt_sha256": "c4222067d8cb01e11e7957c463e111d38841acefe36ba2ce1b5f1f5b1027e9d0",
+  "original_official_bootstrap_exact": true,
+  "source_label_or_quality_read": false,
+  "comparisons": {
+    "features": "bitexact",
+    "final_lists": "exact",
+    "scores": {
+      "atol": 1e-10,
+      "rtol": 1e-10
+    }
+  },
+  "actual_GPU_disabled": true,
+  "scoring_entries": 0
+}

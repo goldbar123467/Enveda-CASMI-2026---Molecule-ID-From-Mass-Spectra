@@ -1,0 +1,11 @@
+{
+  "recorded_utc": "2026-11-12T19:59:29.417773+00:00",
+  "requested_kernel": "clarkkitchen/casmi26-c76-cpu-head-parity",
+  "actual_kernel": "clarkkitchen/casmi26-c76-cpu-complete-head-parity",
+  "actual_url": "https://www.kaggle.com/code/clarkkitchen/casmi26-c76-cpu-complete-head-parity",
+  "version": 1,
+  "reason": "Kaggle canonicalized the requested id from the supplied title; actual response URL and actual completed status verified. No requeue or additional run.",
+  "notebook_source_and_image_independently_verified": true,
+  "collection_audit_sha256": "53d8b1c91c63bad1a16f96cf5cb7100c9acca1084401fcb3ca1c2b6c90e5c9f6",
+  "scoring_entries": 0
+}

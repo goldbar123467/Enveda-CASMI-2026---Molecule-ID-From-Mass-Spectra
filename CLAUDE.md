@@ -1,3 +1,89 @@
+## Current C76 checkpoint — complete pair frozen; cross-host deployment PASSED
+
+Complete binding SHA04b47cac8fe5476613834d4214d53cb51b7cc7a81162bf9516d2119acf7a03b9
+is outputs/local/c76-numerical-portability-20261112/complete-pipeline-binding.json.
+It pins new full source notebook, both explicit R3 production notebooks, unchanged
+C71 CPU/GPU weights, full P16/physical/ranking code, original C72/masks/controls.
+No model refit or fresh outcome read. Never change these files silently.
+
+Both production SOURCE audits pass. Production reverses only validation input/
+reference wiring, keeps exact R3 empty-pool recovery, BOTH Engine2 scalar and
+fingerprint formate normalization, and both C76 GL paths. Retired C56 parent is
+NOT shipped. Three packaging guard failures were preserved before any inference
+or remote release. See compact reconciliation; raw partial bundles remain ignored.
+
+Real USED12/all51 P16/physical/shared head exercise PASSED at19:42UTC. Both heads
+changed all12tail lists, no leader changes, exact independent arithmetic/list
+reconstruction; membership/formula slots preserved. P16 had0promotions on this
+masked USED fixture; do not claim it exercised a changed physical-reference path.
+
+Actual private CPU cross-host job COMPLETE v1. Canonical handle returned by Kaggle:
+clarkkitchen/casmi26-c76-cpu-complete-head-parity (requested id had no 'complete';
+DO NOT requeue the old requested id). Source/image/GPUdisabled verified. All101
+features and candidate records BITEXACT; all300scores PERHEAD maxdiff0.0; both
+final list sets exact. Auditor session30469 CLOSED0. Full fixture session92177,
+N1session45242 and local complete-head session42142 CLOSED0. No ML job live.
+
+Private frozen pair bundle and USED-only head inputs published READY. No query
+truth or expected head predictions mounted. Original MLenvs unchanged. Generated
+bundle import cache was moved into ignored owned CPU-probe archive before upload;
+all signed payload files preserved. CPU engineering probes are NOT scored entries.
+
+One-time source evaluation code/policy/independent auditor frozen in
+source-quality-plan.json. Guard test PASSED: missing actual legacyT4 collection
+stops before labels or C72 consumption. Do NOT run evaluate_c76_source.py run
+until BOTH actual T4 source arms are collected/audited and both complete parents,
+all6controls and both candidate predictions are jointly sealed.
+
+T4 source launch helper: scripts/release_c76_source_controls.py. push-legacy is
+HELD before known quota refresh; no new cloudGPU push attempted. Actual20:00UTC
+quota snapshot retains refresh2026-11-14T00:00UTC=Nov13 7pmEastern. Legacy C73old
+request is version0 with explicit30hquota rejection; it is NOT a job to poll.
+After reset: launch legacy exact notebook; collect/audit with
+collect_c76_source_controls.py fetch/audit legacy; then launch c76 and collect/
+audit. complete_c76_target.py replays each arm, scores both fixed heads, then
+seals all predictions. Never tune cohorts/recipe after source outcomes.
+
+Remaining: actual T4 source controls; single C72 quality plus independent audit;
+actual new production changed-path smokes/local-cloud list audits; only then the
+existing once-only C13 if defensible; sequential CPU then GPU real scoring.
+Potential independent work before T4 refresh: prepare/audit a bounded local
+production preview using the frozen new notebooks and actual unlabeled production
+inputs, with explicitly separate2070 resource wiring; it cannot replace real T4
+source/production evidence. No extra blind GPU training.
+
+C72/C13 UNCONSUMED, source-results absent, joint source freeze absent, sharedC42
+scoring ledger ABSENT, new scored entries0/2. Champion0.480 preserved; old/hourly
+controllers OFF. Goal ACTIVE: this turn made concrete engineering, deployment,
+freeze and tooling progress. No paid resources. Historical notes below superseded.
+
+## Current C76 checkpoint — complete local engineering audit PASSED
+
+The complete USED12/all51-acquisition resource run finished 2026-11-12 19:22 UTC
+in 992 seconds. Independent audit at 19:26 UTC passed all input, reference,
+core-health, GL adapter and official-list checks. ICE produced 2204 predictions,
+zero failures. The separate real original N1 CPU proxy/merged-CE path passed all
+32 outputs. No inference job is still running; prior sessions 92177 and 45242
+closed successfully. The earlier oversized-batch run remains intentionally stopped.
+
+The successful local resource policy remains cache release before ICE and --bs8;
+no claim of exact ICE parity across batch sizes. Original C75 cloud-reproduction
+gate remains FAILED. This new C76 engineering pass is NOT statistical qualification.
+
+Prepared private actual-T4 source notebook:
+kaggle/forks/c76-full-masked-validation/ (NOT pushed). Independent source audit
+passes: reverse only the explicit GL package integration and recover exact C73.
+Original ICE default, source datasets/image and full512/all2215 panel retained.
+Original C73 remains a separate required legacy control. Next freeze complete
+C76 P16/physical/head binding and controls before any source quality read.
+
+C72/C13 UNCONSUMED; shared C42 scoring ledger ABSENT; new scored entries 0/2.
+Champion 0.480 retained; hourly/old campaigns OFF. Actual T4 quota refresh recorded
+as 2026-11-14 00:00 UTC (Nov13 7pm Eastern). No paid compute.
+
+Historical checkpoints below describe prior states; this checkpoint supersedes
+all earlier claims that the C76 fixture or N1 audit is still running.
+
 ## ACTIVE C76 resource retry — prior oversized-batch run intentionally stopped
 
 NEW LIVE TOOL SESSION92177. Windows supervisor29108; unit

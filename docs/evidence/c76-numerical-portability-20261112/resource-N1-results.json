@@ -1,0 +1,20 @@
+{
+  "completed_utc": "2026-11-12T19:23:15.953856+00:00",
+  "source_sha256": "b0e28dd66a3d2d8dcd0218cd28a3bc9d54156fa2ec7e6c96db77d1a00d0ebd18",
+  "input_intent_sha256": "7c3b77d82bacd408b28d13bcadc0e7da45bd2b48621d66ac2f37dc05de6ed238",
+  "original_driver_real_model": true,
+  "proxy_spectra_covered": 4,
+  "merged_CE_spectra": 2,
+  "finite_outputs": 32,
+  "prediction_or_feature_errors": 0,
+  "C76_loader_executed": true,
+  "output_sha256": "337b17aea16a846eff802e7fd9dae227fe402a94979baafc4a74886c22ed4854",
+  "metadata_sha256": "8368eab2fd3650546d7facdca84b88bf458fa74b912cccabd59da8b7dc5f0afc",
+  "adapter_receipt_sha256": "1d8d3f3fb7ad0f6997656a45f4ebd194e7b2611ea3230a884bb1a81ef589e2ed",
+  "passed": true,
+  "synthetic_only": true,
+  "USED_only": true,
+  "quality_read": false,
+  "C13_read": false,
+  "scoring_entries": 0
+}

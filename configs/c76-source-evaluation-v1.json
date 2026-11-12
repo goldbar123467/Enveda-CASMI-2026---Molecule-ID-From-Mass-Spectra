@@ -1,0 +1,16 @@
+{
+  "kind": "Single joint C72 quality read for the frozen C76 complete pair",
+  "queries": 512,
+  "acquisitions": 2215,
+  "actual_mode_counts": {"positive": 353, "mixed": 124, "negative": 35},
+  "required_controls": ["legacy_P01", "legacy_P16", "legacy_physical"],
+  "additional_reported_controls": ["c76_P01", "c76_P16", "c76_physical"],
+  "gate": "For each fixed CPU/GPU candidate: strictly positive full512 MRR gain against each legacy control, and nonnegative gain for every original actual query mode against each legacy control. Exact rational signs. All absent truths count zero. No cohort or recipe rescue.",
+  "accounting": "Report every comparison to all six controls, recovered/displaced truths, rank improvements/regressions, absent-truth counts and per-query before/after ranks.",
+  "uncertainty": "Whole-panel paired chemistry-cluster bootstrap only, 2000 repetitions with seed20261112. Interval is descriptive and does not replace the original qualification rule.",
+  "bootstrap_repetitions": 2000,
+  "bootstrap_seed": 20261112,
+  "reserved_confirmation": "Only a defensible frozen family after source and production checks; existing C13 at most once. This evaluator never reads C13.",
+  "public_score_claim": false,
+  "automatic_scoring_submission": false
+}

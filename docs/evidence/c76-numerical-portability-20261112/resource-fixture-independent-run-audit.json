@@ -1,0 +1,76 @@
+{
+  "completed_utc": "2026-11-12T19:26:35.162400+00:00",
+  "source_sha256": "fff2141e6841dbdf6c19d9e9cfb36c9cf4006c1e2356da41efca1019e0678cca",
+  "fixture_freeze_sha256": "e493966adf2abd0761d1f20e6b7cae13362912c4a3265c51ad60e94801784ba0",
+  "actual_complete_single_2070_run": true,
+  "queries": 12,
+  "acquisitions": 51,
+  "all_original_metadata_and_peaks_exact": true,
+  "local_resource_policy_sha256": "e1a7fee8307870d72447d52eb4c1302d76bf7e2d13e2dba037e6736fde28c3ef",
+  "ICE_maximum_batch_size": 8,
+  "exact_ICE_parity_across_batch_sizes_not_assumed": true,
+  "full_core_health_passed": {
+    "engine2_reported_query_counts": [
+      12,
+      12,
+      12,
+      12
+    ],
+    "pubchem_reported_query_counts": [
+      12,
+      12
+    ],
+    "main_engine_reported_errors": [
+      0,
+      0
+    ],
+    "required_completed_stage_markers": [
+      "PubChem channel",
+      "Engine 1",
+      "candidate lists",
+      "GLACIER + ICEBERG forward models",
+      "Two-engine fusion",
+      "Metric-identity fusion",
+      "Window-40 overlay",
+      "Execution receipt"
+    ],
+    "no_soft_failed_core_channel": true,
+    "complete_query_coverage": true
+  },
+  "reference_exclusions_passed": true,
+  "lists": {
+    "c41_p01.csv": {
+      "valid_rows": 12,
+      "changed_from_old_local": 8,
+      "leader_changes_from_old_local": 0
+    },
+    "c41_p14.csv": {
+      "valid_rows": 12,
+      "changed_from_old_local": 7,
+      "leader_changes_from_old_local": 0
+    }
+  },
+  "actual_classic_GL_CPU_decision_GPU_intensity": true,
+  "real_original_N1_CPU_proxy_and_merged_CE_exercise": true,
+  "original_C75_exact_cloud_reproduction_gate_passed": false,
+  "C76_engineering_fixture_passed": true,
+  "fresh_source_release_requires_complete_C76_binding": true,
+  "actual_T4_production_smoke_still_required": true,
+  "statistical_qualification": false,
+  "qualified_for_scoring": false,
+  "quality_read": false,
+  "C13_read": false,
+  "scoring_entries": 0,
+  "files_sha256": {
+    "outputs/local/c76-numerical-portability-20261112/fixture-resource-port/fixture-freeze.json": "e493966adf2abd0761d1f20e6b7cae13362912c4a3265c51ad60e94801784ba0",
+    "outputs/local/c76-numerical-portability-20261112/fixture-resource-port/independent-source-audit.json": "c6071ea7eadb3a9ae4fe8c77a284a1bb3c58db548db795404192c7eabf837355",
+    "outputs/local/c76-numerical-portability-20261112/fixture-resource-port/run-complete.json": "e558ca5bbe9e7d51e0a13a775a1d1dcab8cbb0100174c69616013ede82f3b419",
+    "/home/imsa/.local/share/enveda-c76/fixture-resource/working/c41_p01.csv": "f02633f3e46946163cd3a5c07044abe13da603c931adf59d286aa8a10c80c6e8",
+    "/home/imsa/.local/share/enveda-c76/fixture-resource/working/c41_p14.csv": "cb6bba1e9662eb88637af3b314080c4c2f8f767f012011ce77800aaf91a34d4a",
+    "/home/imsa/.local/share/enveda-c76/fixture-resource/working/c41_report.json": "906f1acb464a9bbee676f870d4365e6aa3dcc463230967c1646ce68440526127",
+    "/home/imsa/.local/share/enveda-c76/fixture-resource/working/execution_receipt.json": "29a9cc140c2f32befc553951bab872ef6b6b25900d6fcbbc6b1531ed27965dd8",
+    "/home/imsa/.local/share/enveda-c76/fixture-resource/working/gl_work/gl_out.json.c76_adapter.json": "8e2d40518671d3e2a93db696baf0cd751b69561d6f0399cd2491e7234211fd4f",
+    "outputs/local/c76-numerical-portability-20261112/n1-resource-path-probe/results.json": "795d9f2e6c375e347c391cda6a173d8e8f017cba682783ddf5ee1cbfc517f37f",
+    "outputs/local/c76-numerical-portability-20261112/extended-used-nine-r1/results.json": "1c41b2368ee3115e3b7650f78b118d1ca2d7fa4b75c0843865b9aada8ab73619"
+  }
+}

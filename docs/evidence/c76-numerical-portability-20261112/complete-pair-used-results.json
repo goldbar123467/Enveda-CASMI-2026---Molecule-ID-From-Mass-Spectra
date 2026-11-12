@@ -1,0 +1,22 @@
+{
+  "completed_utc": "2026-11-12T19:42:14.260502+00:00",
+  "source_sha256": "aaef3af4679c7e48521907c0a8f2a1b10bc51c0fc42dd6f2268683e61680d367",
+  "passed": true,
+  "intent_sha256": "dbbe6f0fdeedae7479679a92b3f8ad153f774a571b51ff72d3f2f90e45d09e6b",
+  "pair_manifest_sha256": "2868660b0118a2c4746510852eb22bea0c378f78777484caa45b9cbae165ebd2",
+  "queries": 12,
+  "acquisitions": 51,
+  "real_original_P16_independent_overlay_exact": true,
+  "shared_production_and_validation_head_entry_point_executed": true,
+  "both_heads_changed_real_same_formula_rankings": true,
+  "independent_score_and_formula_slot_reconstruction": true,
+  "score_receipt_sha256": "c4222067d8cb01e11e7957c463e111d38841acefe36ba2ce1b5f1f5b1027e9d0",
+  "actual_local_CPU": true,
+  "actual_T4_smoke": false,
+  "engineering_inputs_only": true,
+  "new_source_quality_read": false,
+  "C13_read": false,
+  "scoring_entries": 0,
+  "qualified_for_scoring": false,
+  "working": "/home/imsa/.local/share/enveda-c76/complete-pair-used/working"
+}

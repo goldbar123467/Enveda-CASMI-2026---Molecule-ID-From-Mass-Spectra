@@ -1,0 +1,27 @@
+{
+  "completed_utc": "2026-11-12T19:53:25.936948+00:00",
+  "source_sha256": "d28475804ef177cb0db7a28dcb95cd1ae942418f3a0630ae9a32673716373615",
+  "kernel": "clarkkitchen/casmi26-c76-cpu-complete-head-parity",
+  "requested_kernel": "clarkkitchen/casmi26-c76-cpu-head-parity",
+  "version": 1,
+  "remote_source_exact": true,
+  "actual_original_image_exact": true,
+  "actual_GPU_disabled": true,
+  "private": true,
+  "listing_pages": 1,
+  "files_sha256": {
+    "results/candidates.parquet": "338d4210c752a84c7343f69b5c94b40a4845db31d2d88c7adf9c0355f5ddc78e",
+    "results/score-receipt.json": "f4270d6fd6b3a7d245ea248a551e5106c3b358f9917cc478b58c7d0834269fc5",
+    "results/physical-parent.csv": "f02633f3e46946163cd3a5c07044abe13da603c931adf59d286aa8a10c80c6e8",
+    "results/gpu.csv": "fe3c9815b583c7b8a415655b7afd9d27c3cdc8f549c487bf40588f2c43af1119",
+    "results/cpu.csv": "20338b25fb6cea7ef63e6bea9411d2985514514aae9eb54ba21cd1fd63f79ec8",
+    "results/gpu-scores.npy": "1b7b37976b438990502e29d9a58df4d15ee87ce9828ff126c04f2957ef7f6c76",
+    "results/cpu-scores.npy": "8fe75d0d758424d24969644b92dbd9d50611b7e30bcbbe30f22689afe6ee35cf",
+    "head-probe.json": "89212c119bf7e0236bf9e4c858229ca88a04a953197ddda5b225596658584245",
+    "results/features.npy": "95ad94e95be4d938eed571ac65a1f2e64fc54e4851c6e347eedbdaa4cec8cf68"
+  },
+  "engineering_USED_inputs_only": true,
+  "quality_read": false,
+  "C13_read": false,
+  "scoring_entries": 0
+}

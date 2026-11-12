@@ -1,0 +1,46 @@
+{
+  "completed_utc": "2026-11-12T19:42:12.916515+00:00",
+  "source_sha256": "98472f942858a006dbafe08667719706ce7faa6249b6018a6797176430638a30",
+  "pair_manifest_sha256": "2868660b0118a2c4746510852eb22bea0c378f78777484caa45b9cbae165ebd2",
+  "P16_receipt_sha256": "afbbaf1ba30a966b62386702e9307dbf05bdc05502af12b216b947ee04d7cec1",
+  "queries": 12,
+  "acquisitions": 51,
+  "valid_rows": 12,
+  "features": 101,
+  "exact_unprocessed_fallback_rows": 0,
+  "trials": {
+    "cpu": {
+      "model_sha256": "96c4e05c7a419f38a0299b102e9007bb317fd1ff4605d65f8663512c6f6889e6",
+      "changed_lists": 12,
+      "rank1_changes": 0,
+      "independent_scores_and_lists_exact": true,
+      "candidate_membership_changes": 0,
+      "formula_position_changes": 0,
+      "official_identity_duplicates": 0
+    },
+    "gpu": {
+      "model_sha256": "85b4dcddc650ffb3036733b76473c3eaa93094b5d7b50eea1dde5436f5a52c9d",
+      "changed_lists": 12,
+      "rank1_changes": 0,
+      "independent_scores_and_lists_exact": true,
+      "candidate_membership_changes": 0,
+      "formula_position_changes": 0,
+      "official_identity_duplicates": 0
+    }
+  },
+  "files_sha256": {
+    "features.npy": "95ad94e95be4d938eed571ac65a1f2e64fc54e4851c6e347eedbdaa4cec8cf68",
+    "feature-names.json": "4658db72d92e094d475c3e2b4b6e5f9d2ce90784f92b677696364e8957d428ce",
+    "gpu-scores.npy": "1b7b37976b438990502e29d9a58df4d15ee87ce9828ff126c04f2957ef7f6c76",
+    "physical-parent-events.json": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "cpu-scores.npy": "8fe75d0d758424d24969644b92dbd9d50611b7e30bcbbe30f22689afe6ee35cf",
+    "cpu.csv": "20338b25fb6cea7ef63e6bea9411d2985514514aae9eb54ba21cd1fd63f79ec8",
+    "candidates.parquet": "338d4210c752a84c7343f69b5c94b40a4845db31d2d88c7adf9c0355f5ddc78e",
+    "physical-parent.csv": "f02633f3e46946163cd3a5c07044abe13da603c931adf59d286aa8a10c80c6e8",
+    "gpu.csv": "fe3c9815b583c7b8a415655b7afd9d27c3cdc8f549c487bf40588f2c43af1119"
+  },
+  "quality_labels_read": false,
+  "C13_read": false,
+  "training_performed": false,
+  "qualified_for_scoring": false
+}

@@ -1,0 +1,10 @@
+{
+  "checked_utc": "2026-11-12T19:59:43.188975+00:00",
+  "passed": true,
+  "expected_stop": "Missing actual T4 legacy collection",
+  "fresh_quality_read": false,
+  "C72_consumption_created": false,
+  "C13_read": false,
+  "scoring_entries": 0,
+  "evaluator_source_sha256": "8358afa1256947d1eda21c6e46fedf53390236645936fecf2f9f635235b06cce"
+}
