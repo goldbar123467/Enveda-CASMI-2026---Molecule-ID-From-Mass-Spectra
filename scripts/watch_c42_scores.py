@@ -31,7 +31,7 @@ def register_actual(record):
     found=False
     for row in rows:
         if row['platform']=='kaggle-submission' and row['ref']==str(record['reference']):
-            found=True;row['status']=record['status'].lower();row['finished_utc']=datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M')
+            found=True;row['status']=record['status'].lower();row['ended_utc']=datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M')
             row['result']='Actual '+record['status']+' public score '+str(record['public_score'])+'; error '+str(record['error'])+'. Fixed approved C42trial; no further entry beyond the pair.'
     assert found,'Accepted scoring entry is not registered in runs.csv'
     temporary=path.with_suffix('.csv.tmp')

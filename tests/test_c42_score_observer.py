@@ -23,8 +23,10 @@ class ScoreObserverTests(unittest.TestCase):
         self.save(self.root/'.local/c38-active-goal.json',dict(active=True,submissions_approved=2,submissions_used=1))
         qsha=observer.sha(self.out/'submission-qualification.json')
         self.save(self.ledger,dict(submissions=[dict(trial='cpu',reference='101',status='ACCEPTED',qualification_sha256=qsha)],intents=[]))
+        with (Path(__file__).resolve().parents[1]/'runs.csv').open(encoding='utf8',newline='') as stream:
+            self.run_fields=next(csv.reader(stream))
         with (self.root/'runs.csv').open('w',newline='') as stream:
-            writer=csv.DictWriter(stream,fieldnames=['platform','ref','status','finished_utc','result']);writer.writeheader()
+            writer=csv.DictWriter(stream,fieldnames=self.run_fields);writer.writeheader()
             writer.writerow(dict(platform='kaggle-submission',ref='101'))
         self.api_calls=0;self.release_calls=[]
 
@@ -39,7 +41,7 @@ class ScoreObserverTests(unittest.TestCase):
         record=dict(trial='gpu',reference='102',status='ACCEPTED',qualification_sha256=ledger['submissions'][0]['qualification_sha256'])
         ledger['submissions'].append(record);self.save(self.ledger,ledger)
         with (self.root/'runs.csv').open('a',newline='') as stream:
-            csv.DictWriter(stream,fieldnames=['platform','ref','status','finished_utc','result']).writerow(dict(platform='kaggle-submission',ref='102'))
+            csv.DictWriter(stream,fieldnames=self.run_fields).writerow(dict(platform='kaggle-submission',ref='102'))
 
     def run_monitor(self,states):
         def history(*args):

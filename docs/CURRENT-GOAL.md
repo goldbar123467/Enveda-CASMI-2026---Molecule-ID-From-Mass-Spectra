@@ -14,7 +14,7 @@ The native goal remains ACTIVE. Current authorization is
 `.local/compute-paused.json` so historical workers stay inactive. Current controlled
 workers use the explicit new authorization. Do not restart old campaigns.
 
-## Live work, verified 12 November 2026 01:36 UTC
+## Live work, verified 12 November 2026 01:58 UTC
 
 - `clarkkitchen/casmi26-c41r3-full-masked-validation`, version1, kernel144498742:
   RUNNING. This is the complete352-query/1292-acquisition C39 reference-masked
@@ -25,18 +25,21 @@ workers use the explicit new authorization. Do not restart old campaigns.
   formula-slot/identity-duplicate changes. Parent exactly matches prior P16;
   local/cloud final lists exact, raw score difference maximum6.02e-5.
 - `clarkkitchen/casmi26-p21-c42-gpu-alignment`, version1, kernel144503174:
-  RUNNING as a private production engineering test, not a scoring entry.
+  COMPLETE and independently engineering-audited at 01:57 UTC. The GPU head also
+  changes 11 real lists, with exact local/cloud rankings and zero protected
+  invariant changes. This private test is not a scoring entry.
 
-Two detached observers have hidden Windows startup and file logs:
+The exact-job observers use hidden Windows startup and file logs:
 
 - `scripts/watch_c41_validation.py`, actual PID27720, observes the same full v1.
   Latest state/logs/attention are under
   `outputs/local/c41r3-masked-pipeline-validation-20261111/`.
   It will collect/audit full outputs, verify all1292original acquisitions, score
   both sealed heads locally and evaluate the fixed C39 gates. Deadline06:56UTC.
-- `scripts/watch_c42_production_smokes.py`, actual PID5312, has audited P20v1 and
-  released P21v1 after its engineering pass. It now observes/audits P21v1. State/logs/attention are under
-  `outputs/local/c42-two-new-submissions-20261111/`. Deadline07:32UTC. An initial auditor-only SDK-environment failure
+- `scripts/watch_c42_production_smokes.py`, former PID5312, has completed both
+  engineering audits and exited normally. Its completion receipt, state and logs
+  are under `outputs/local/c42-two-new-submissions-20261111/`.
+  An initial auditor-only SDK-environment failure
   was fixed by scripts/inspect_c42_remote.py in the existing SDK venv; no cloud
   rerun or model/recipe change was needed. Prior attention/logs were archived.
 
