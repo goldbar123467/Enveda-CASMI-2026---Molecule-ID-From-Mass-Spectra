@@ -1,0 +1,17 @@
+{
+  "checked_utc": "2026-11-12T15:40:16.685666+00:00",
+  "source_sha256": "2db692feb7245a7f4b5528a86998aff930fff082d0d40ec95081dc6f70e4c12a",
+  "cgroup": "/user.slice/user-1000.slice/user@1000.service/app.slice/enveda-c75-bounded-probe.scope",
+  "limits": {
+    "memory.high": "8589934592",
+    "memory.max": "10737418240",
+    "memory.swap.max": "4294967296"
+  },
+  "child_inherits_scope": true,
+  "allocation_bytes": 67108864,
+  "memory_current": 74420224,
+  "task_only": true,
+  "system_wide_policy_changed": false,
+  "scientific_sources_changed": false,
+  "passed": true
+}

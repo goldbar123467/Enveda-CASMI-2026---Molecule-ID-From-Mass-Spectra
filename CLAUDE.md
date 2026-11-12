@@ -1,3 +1,29 @@
+## C75 update — memory-bounded engineering retry running
+
+The first USED12/all51acquisition run stopped at15:28:56UTC when hostRAM
+fell below4GiB during ICEstage startup. Engine2/PubChem/Engine1 had completed
+with0mainerrors. No complete result/parity/quality claim. The original Linux
+process group is stopped. ALL original logs/intents and native working data
+were preserved under fixture-port/attempt-01-host-memory-stop and the owned
+native attempt-01-host-memory-stop-working directory; no prior evidence deleted.
+
+A real inherited systemd user-scope probe PASSED: memory.high8GiB,
+memory.max10GiB, memory.swap.max4GiB. Only this task is limited; no system-wide
+policy, user apps or original scientific sources changed. ONE reconciled retry
+started15:40UTC using scripts/retry_c75_memory_bound.py run, WindowsPID16668,
+LinuxdriverPID/PGID401, toolsession38194. Original notebook/driver/models/masks/
+all51acquisitions unchanged. Host reserve remains4GiB. Latest15:46UTC reserve
+7.19GiB, scopeRAM4.68GiB/swap0.82GiB, oom0/oom_kill0. Innercell32Engine2.
+Do not launch a duplicate or interpret captured child stdout as stopped work.
+
+Prepared/froze complete_c75_local_target.py for honest localfull collection,
+unchanged C74P16/physical-parent replay and frozen C71pair. It only normalizes
+files_sha256 path keys in Windows receipts, never molecular strings. Prepared
+whole512 one-time quality evaluator and independent exact-rank/denominator audit;
+NEITHER fresh predictions nor quality have been run. C72/C13 remain unconsumed,
+0/2scoring approvals used, sharedC42ledger absent. Parity on exact P01/P14lists
+and feature rows/tolerance remains REQUIRED before full512/2215inference.
+
 ## Immediate C75 state — original complete12query local replay is RUNNING
 
 The previous goal turn made concrete progress (clean C71pair/input audits/CUDA
