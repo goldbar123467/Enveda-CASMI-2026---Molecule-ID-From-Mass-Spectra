@@ -1,0 +1,24 @@
+{
+  "checked_utc": "2026-11-12T21:08:48.097589+00:00",
+  "quota": {
+    "quotaRefreshTime": "2026-11-14T00:00:00.000Z",
+    "gpuQuota": {
+      "timeUsed": "27036.50.0s",
+      "timeReserved": "0s",
+      "totalTimeAllowed": "21600s",
+      "minimumTimeAllowed": "21600s",
+      "hasEverRun": true
+    },
+    "tpuQuota": {
+      "timeUsed": "0s",
+      "timeReserved": "0s",
+      "totalTimeAllowed": "72000s",
+      "minimumTimeAllowed": "72000s",
+      "hasEverRun": true
+    }
+  },
+  "new_source_jobs": {},
+  "original_legacy_rejection": "Maximum weekly GPU quota of 30.00 hours reached.",
+  "known_rejected_quota_refresh": "2026-11-14T00:00:00+00:00",
+  "new_scoring_entries": 0
+}

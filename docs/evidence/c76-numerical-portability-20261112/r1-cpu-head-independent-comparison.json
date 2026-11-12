@@ -1,0 +1,29 @@
+{
+  "completed_utc": "2026-11-12T21:06:44.126693+00:00",
+  "source_sha256": "bae9246ff6fe57d8ad3ed222fd51c08d6f6cb69b98794c349d3d768d1aeaf46b",
+  "passed": true,
+  "actual_source_image_and_CPU_only_execution_verified": true,
+  "preview_queries": 12,
+  "acquisitions": 41,
+  "output_rows": 400,
+  "inactive_rows_preserved": 388,
+  "all101features_and_candidate_records_bitexact": true,
+  "trials": {
+    "cpu": {
+      "scores": 300,
+      "maximum_absolute_score_difference": 0.0,
+      "all400_final_lists_exact": true
+    },
+    "gpu": {
+      "scores": 300,
+      "maximum_absolute_score_difference": 0.0,
+      "all400_final_lists_exact": true
+    }
+  },
+  "complete_pipeline_binding_sha256": "0ddc4d46d9dbcb2f8804f3970d6763c38528311dcd24dfe4a704a91df2a36518",
+  "actual_T4_source_or_production_evidence_replaced": false,
+  "quality_read": false,
+  "C13_read": false,
+  "scoring_entries": 0,
+  "qualified_for_scoring": false
+}

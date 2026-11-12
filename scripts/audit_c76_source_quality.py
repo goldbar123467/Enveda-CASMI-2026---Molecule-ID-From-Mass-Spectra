@@ -13,18 +13,18 @@ def main():
     base = ROOT / 'outputs/local/c76-numerical-portability-20261112'
     panel = ROOT / 'outputs/local/c72-clean-target-holdout-20261112'
     target = base / 'independent-source-quality-audit.json'; assert not target.exists()
-    plan = read(base / 'source-quality-plan.json')
+    plan = read(base / 'source-quality-plan-r1.json')
     result = read(base / 'source-results.json')
     consumed = read(panel / 'evaluation-consumption.json')
     assert consumed['state'] == 'complete' and consumed['source_results_sha256'] == sha(base / 'source-results.json')
     assert result['source_sha256'] == plan['evaluator_source_sha256'] == sha(ROOT / 'scripts/evaluate_c76_source.py')
     assert plan['auditor_source_sha256'] == sha(__file__)
-    assert result['quality_plan_sha256'] == sha(base / 'source-quality-plan.json')
+    assert result['quality_plan_sha256'] == sha(base / 'source-quality-plan-r1.json')
     policy_path = ROOT / 'configs/c76-source-evaluation-v1.json'; policy = read(policy_path)
     assert result['policy_sha256'] == plan['policy_sha256'] == sha(policy_path)
     frozen_path = base / 'joint-source-prediction-freeze.json'; frozen = read(frozen_path)
     assert result['joint_prediction_freeze_sha256'] == consumed['joint_prediction_freeze_sha256'] == sha(frozen_path)
-    binding_path = base / 'complete-pipeline-binding.json'
+    binding_path = base / 'complete-pipeline-binding-r1.json'
     assert result['complete_pipeline_binding_sha256'] == plan['complete_pipeline_binding_sha256'] == sha(binding_path)
     for name, pin in read(binding_path)['files_sha256'].items(): assert sha(ROOT / name) == pin, name
     for name, pin in frozen['files_sha256'].items(): assert sha(ROOT / name) == pin, name

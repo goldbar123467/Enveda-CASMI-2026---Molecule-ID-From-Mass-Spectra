@@ -1,0 +1,11 @@
+{
+  "utc": "2026-11-12T20:51:02.908620+00:00",
+  "reason": "Head recovery harness omitted json in the restored notebook globals; failure before model inference. Add the original json module to the restored namespace and use a fresh owned head-input layout.",
+  "source_sha256": "4c5987f655983b0093e7b01e53eae9b721a54198137e4cdf8de6f7aab0ed9830",
+  "scope_observed_inactive": true,
+  "GPU_core_restarted": false,
+  "model_inference_completed": false,
+  "quality_read": false,
+  "C13_read": false,
+  "scoring_entries": 0
+}

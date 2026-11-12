@@ -7,10 +7,10 @@ import sys
 from c75_port_utils import ROOT, read, write, sha, stamp
 
 BASE = ROOT / 'outputs/local/c76-numerical-portability-20261112'
-BINDING = BASE / 'complete-pipeline-binding.json'
+BINDING = BASE / 'complete-pipeline-binding-r1.json'
 PANEL = ROOT / 'outputs/local/c72-clean-target-holdout-20261112'
 OLD_MASK = ROOT / 'outputs/local/c74-complete-clean-target-20261112/target-masked-reference'
-BUNDLE = ROOT / 'outputs/publish/c76-complete-direct-pair-20261112'
+BUNDLE = ROOT / 'outputs/publish/c76-complete-direct-pair-r1-20261112'
 CLOUDS = {arm: ROOT / 'outputs/forks' / (slot + '-v1') for arm, slot in [
     ('legacy', 'c73-full-masked-validation'), ('c76', 'c76-full-masked-validation')]}
 

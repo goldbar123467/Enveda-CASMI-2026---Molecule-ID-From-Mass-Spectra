@@ -1,0 +1,47 @@
+{
+  "frozen_utc": "2026-11-12T20:46:31.029169+00:00",
+  "builder_sha256": "d5b7b43c45ef0768e94181acda8d4f5a38f3dd94381b105b2f66ca56f593e020",
+  "files_sha256": {
+    "score_c76_complete_pair.py": "d9112f4cb17d43a533d7453df9789ee4a912eaa12fb034b28fd4ee90f0271c99",
+    "c67_ranker.py": "ce727ad6809d09fd8b770cedcf3de7f1a64a9520a06f4ebd0f706880ec0364ed",
+    "legacy_formate_compat.py": "eec91fbef5c8683de63c32ce94d39f95f30f950558b1dd484cf1772617ab7f78",
+    "legacy_chem_source.py": "99474f23d8a67040b0c0f8c70e73592a6f7f656f50103e350ca473451e2169f1",
+    "identity_features.py": "a97ad9b3ab3711517864d56e497e1672cb29bb05683c72b52db9f9b0a17b1455",
+    "cpu-model.npz": "96c4e05c7a419f38a0299b102e9007bb317fd1ff4605d65f8663512c6f6889e6",
+    "gpu-model.npz": "85b4dcddc650ffb3036733b76473c3eaa93094b5d7b50eea1dde5436f5a52c9d",
+    "feature-names.json": "61ae50db25cfe3b4458f3ace56a0a0255334777136f411c9890cad0d3661977e",
+    "pool_popularity.csv": "33955e2fb32d3e8b6d030f5585f7823097194829f434df90f8214be44b7ba764"
+  },
+  "source_files_sha256": {
+    "scripts/score_c76_complete_pair.py": "d9112f4cb17d43a533d7453df9789ee4a912eaa12fb034b28fd4ee90f0271c99",
+    "scripts/c67_ranker.py": "ce727ad6809d09fd8b770cedcf3de7f1a64a9520a06f4ebd0f706880ec0364ed",
+    "scripts/legacy_formate_compat.py": "eec91fbef5c8683de63c32ce94d39f95f30f950558b1dd484cf1772617ab7f78",
+    "outputs/local/c37-selection-trace-20261111/pinned-public-source/chem.py": "99474f23d8a67040b0c0f8c70e73592a6f7f656f50103e350ca473451e2169f1",
+    "outputs/local/c45-complete-parent-validation-20261112/frozen-p16-code/c09e_features.py": "a97ad9b3ab3711517864d56e497e1672cb29bb05683c72b52db9f9b0a17b1455",
+    "outputs/local/c71-final-clean-direct-pair-20261112/cpu-model.npz": "96c4e05c7a419f38a0299b102e9007bb317fd1ff4605d65f8663512c6f6889e6",
+    "outputs/local/c71-final-clean-direct-pair-20261112/gpu-model.npz": "85b4dcddc650ffb3036733b76473c3eaa93094b5d7b50eea1dde5436f5a52c9d",
+    "outputs/local/c69-clean-parent-evidence-oof-20261112/feature-names.json": "61ae50db25cfe3b4458f3ace56a0a0255334777136f411c9890cad0d3661977e",
+    "outputs/research/pop-prior/pool_popularity.csv": "33955e2fb32d3e8b6d030f5585f7823097194829f434df90f8214be44b7ba764"
+  },
+  "prior_C71_complete_binding_sha256": "ca0102078be7f068d9ffd939a99f1a6e009b560398fd46b04097532176df7288",
+  "P16_source_files": {
+    "apply_external_reference.py": "a65d0b63ba20b64f8efc49424a2513cc26f492b4148dc66d68bcc0a5ce62beca",
+    "external_reference_overlay.py": "826a689fdcecc05436cd201219ac066ef2ebf557df22200ac807c6bb6c0681e5",
+    "c09_spectrum_audit.py": "a4c42efdb41983406d71458eeb093af462bd1432ec774c6628d91861f1a042ac",
+    "reference_smoke_fixtures.py": "1cedf812a0fb55f22dc0e922664ab5d1bbe90bcf995f7c4f5bd7c847862bd017",
+    "reference_model_audit.py": "32f0c2eafa298be9095c86b2c20073f0e552ad3cabf7652b8d0dcc06dae4d5a8",
+    "c09e_features.py": "a97ad9b3ab3711517864d56e497e1672cb29bb05683c72b52db9f9b0a17b1455"
+  },
+  "P16_policy_sha256": "ea662270a895dc902cc9dd242afd7cd7f63e4a42ce3468474c6bff73d984043c",
+  "reference_policy": "Original frozen production reference; controlled validation uses separately frozen C74 mask",
+  "ranking": "Fixed C71 CPU direct and GPU bounded0.25tanh heads, exact same-formula slots and membership; no model refit",
+  "features": 101,
+  "quality_read": false,
+  "C13_read": false,
+  "qualified_for_scoring": false,
+  "revision": "r1_processed_ID_interface",
+  "prior_pair_manifest_sha256": "2868660b0118a2c4746510852eb22bea0c378f78777484caa45b9cbae165ebd2",
+  "interface_rule": "Use all candidate evidence for every ID with spectra, and preserve every unprocessed answer row. Never filter active IDs by health or truth.",
+  "no_active_queries_candidates_or_acquisitions_dropped": true,
+  "no_model_or_arithmetic_change": true
+}

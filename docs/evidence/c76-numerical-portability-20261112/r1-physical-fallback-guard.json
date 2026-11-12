@@ -1,0 +1,24 @@
+{
+  "completed_utc": "2026-11-12T21:07:25.881042+00:00",
+  "source_sha256": "79929a83638c94c00c64d52d46abd5f1ebf16516749e167cff7e635f7ef0142a",
+  "passed": true,
+  "real_USED_queries": 30,
+  "original_acquisitions": 113,
+  "no_query_truth_used": true,
+  "cases": {
+    "unknown_adduct": {
+      "real_promotions_reverted": 7,
+      "all30_original_lists_exact": true
+    },
+    "inconsistent_mass": {
+      "real_promotions_reverted": 7,
+      "all30_original_lists_exact": true
+    }
+  },
+  "original_reference_data_unchanged": true,
+  "counterfactual_metadata_views_only": true,
+  "model_and_ranking_rules_unchanged": true,
+  "quality_read": false,
+  "C13_read": false,
+  "scoring_entries": 0
+}

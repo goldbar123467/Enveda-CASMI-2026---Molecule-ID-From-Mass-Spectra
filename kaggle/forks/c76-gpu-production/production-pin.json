@@ -1,9 +1,9 @@
 {
-  "prepared_utc": "2026-11-12T19:38:42.963630+00:00",
+  "prepared_utc": "2026-11-12T20:46:31.491453+00:00",
   "builder_sha256": "327bfbdca6d12b387a2aae318d0d50c455b8dc93b43c0fba528a44a74af86882",
   "trial": "gpu",
-  "notebook_sha256": "54de133e9ec1d9045fadd2a7bbce39285483edd9b04d525488205b2812677e4a",
-  "metadata_sha256": "1acd77c93e05882795af1b7cc2fe4c05606b2b061345827a74a2747aa0875a48",
+  "notebook_sha256": "df7c097f5e8a4b2276de1b9f7974912700484d17bedf1ea65b1f21ed0a43a614",
+  "metadata_sha256": "27376697d509cd42c07128603507620fd333f6a11ce5fec6c900d83c664f69b5",
   "production_payload_sha256": "792d6a4f2b32c572c906319a4aa3ed4294e2245b1f0ab1b8274ec63f281385d3",
   "source_payload_sha256": "182685722cb4bfb9c8bbdbabe1ec2a5ea46784d202d5692156a7faaf1171ffef",
   "original_C71_R3_payload_sha256": "3f973abbb1593e356db4f6dec149c8ad99f5afa5ded8da8bab59152bd49e60e7",
@@ -20,9 +20,15 @@
   "explicit_C76_GL_integration_retained": true,
   "original_P16_stage_exact": true,
   "shared_head_runtime": true,
-  "pair_manifest_sha256": "2868660b0118a2c4746510852eb22bea0c378f78777484caa45b9cbae165ebd2",
+  "pair_manifest_sha256": "b0e9c31eb0694996245b4a7fc24aca1ca56a7d64bda15bafcac5c7a5198206e4",
   "cloud_run_released": false,
   "qualified_for_scoring": false,
   "quality_read": false,
-  "C13_read": false
+  "C13_read": false,
+  "interface_revision": "r1",
+  "interface_builder_sha256": "d5b7b43c45ef0768e94181acda8d4f5a38f3dd94381b105b2f66ca56f593e020",
+  "original_r0_notebook_sha256": "54de133e9ec1d9045fadd2a7bbce39285483edd9b04d525488205b2812677e4a",
+  "unchanged_complete_core_and_P16_prefix_exact": true,
+  "weights_features_and_ranking_math_unchanged": true,
+  "old_r0_preview_failed_before_head_inference": true
 }

@@ -1,0 +1,23 @@
+{
+  "frozen_utc": "2026-11-12T21:08:44.138330+00:00",
+  "source_sha256": "dbb6887cb7ea0fe89362a1f4060564d7a1d3aedd34a7491020c5ae0f1bd6b4b4",
+  "complete_pipeline_binding_sha256": "0ddc4d46d9dbcb2f8804f3970d6763c38528311dcd24dfe4a704a91df2a36518",
+  "files_sha256": {
+    "configs/c76-production-evidence-v1.json": "afe8e9c4b4277a799415deefdf593fd552476e12618fc0ff6f5d0eab30755a26",
+    "scripts/freeze_c76_production_evidence.py": "dbb6887cb7ea0fe89362a1f4060564d7a1d3aedd34a7491020c5ae0f1bd6b4b4",
+    "scripts/release_c76_production_smokes.py": "57db7dcf99f23868b0b5cd23ae40aa19d7c0e9d9264002faa42f4b852b0acaf3",
+    "scripts/collect_c76_production_smokes.py": "fd3b75c64ad86bfacd0ac90db81afee3b86663d2dbb7e72cf581bffdd9cc6933",
+    "scripts/audit_c76_cloud_parent_pair.py": "8d63ea34a2e90c878620707c86de5fab0bb5679f6875c9ceffd242e78979633a",
+    "outputs/local/c76-numerical-portability-20261112/complete-pipeline-binding-r1.json": "0ddc4d46d9dbcb2f8804f3970d6763c38528311dcd24dfe4a704a91df2a36518",
+    "outputs/local/c76-numerical-portability-20261112/source-quality-plan-r1.json": "19684194ae287e9a5e736f0bbad4d3b43b86835cba965a19c206e154579538ba",
+    "outputs/local/c76-numerical-portability-20261112/cpu-head-parity-r1/independent-comparison.json": "cc36a39c175cfdad3fdb263d6c487f111497a9c8bbdf589b54ac6cb5175d0056"
+  },
+  "interpretation": "Complete original C75 cross-device core gate remains failed. New frozen C76 uses actual T4 source controls and actual T4 production evidence, plus independent head/list replay on the same cloud inputs. The separately disclosed local batch8 engineering run is not T4 evidence.",
+  "no_scientific_or_source_quality_gate_changed": true,
+  "original_query_selection_and_all_acquisitions_required": true,
+  "local_complete_production_runtime_audit_still_required": true,
+  "source_and_production_cloud_jobs_not_released": true,
+  "C72_outcomes_read": false,
+  "C13_read": false,
+  "scoring_entries": 0
+}

@@ -1,0 +1,12 @@
+{
+  "frozen_utc": "2026-11-12T20:57:38.372914+00:00",
+  "evaluator_source_sha256": "85bfe040b75583564cfb689121167cdb798f8ef6767fbbfeff145e6d60b4a306",
+  "auditor_source_sha256": "f4dbfd77badf78be42633a701e41cd8c9c845d883642d60469e4aa06e1147dab",
+  "policy_sha256": "f95b8b0c8a5dea321898bf71455f62161fefe0d141cefb8d12062bbc1afb29b5",
+  "complete_pipeline_binding_sha256": "0ddc4d46d9dbcb2f8804f3970d6763c38528311dcd24dfe4a704a91df2a36518",
+  "original_C72_preparation_protocol_sha256": "0d4b839bfb3e65b9e72036c2b6a9594a0d2d19008d74e228f5ca60bf0332ff5f",
+  "controls_addendum_sha256": "0dce504bf4437c26353f81b232ce65eba085cbd240400c83330d808c231c6e08",
+  "quality_read": false,
+  "C13_read": false,
+  "scoring_entries": 0
+}

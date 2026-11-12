@@ -1,0 +1,33 @@
+{
+  "prepared_utc": "2026-11-12T20:46:31.505988+00:00",
+  "source_sha256": "d5b7b43c45ef0768e94181acda8d4f5a38f3dd94381b105b2f66ca56f593e020",
+  "old_complete_binding_sha256": "04b47cac8fe5476613834d4214d53cb51b7cc7a81162bf9516d2119acf7a03b9",
+  "original_active_only_runtime_sha256": "98472f942858a006dbafe08667719706ce7faa6249b6018a6797176430638a30",
+  "repaired_runtime_sha256": "d9112f4cb17d43a533d7453df9789ee4a912eaa12fb034b28fd4ee90f0271c99",
+  "bundle": "outputs/publish/c76-complete-direct-pair-r1-20261112",
+  "pair_manifest_sha256": "b0e9c31eb0694996245b4a7fc24aca1ca56a7d64bda15bafcac5c7a5198206e4",
+  "candidates": {
+    "cpu": {
+      "notebook_sha256": "9e9b88581f0b308946f29ae0e7ba47c397abae39aa3e464e78d9545ade46749d",
+      "metadata_sha256": "9ad0b14eca65645d6209be8bce2c4ac912c4ab0a381304aa7ee4f1538a3bf007",
+      "production_pin_sha256": "e220c45b4db725947ebcf880a422f2f2220f9f3cd0ec9b7cf8035128c32595d8",
+      "kernel": "clarkkitchen/casmi26-c76-cpu-production-r1"
+    },
+    "gpu": {
+      "notebook_sha256": "df7c097f5e8a4b2276de1b9f7974912700484d17bedf1ea65b1f21ed0a43a614",
+      "metadata_sha256": "27376697d509cd42c07128603507620fd333f6a11ce5fec6c900d83c664f69b5",
+      "production_pin_sha256": "4d0b41cce3828a1d223223d2111d6250cc1826138b4cac9cc927c29fa7e11903",
+      "kernel": "clarkkitchen/casmi26-c76-gpu-production-r1"
+    }
+  },
+  "entire_core_and_P16_prefixes_byte_exact": true,
+  "no_model_refit": true,
+  "no_scoring_math_change": true,
+  "all_active_spectra_and_all400output_rows_required": true,
+  "prior_sources_preserved": true,
+  "fresh_source_predictions_read": false,
+  "quality_read": false,
+  "C13_read": false,
+  "scoring_entries": 0,
+  "complete_r1_binding_still_required": true
+}

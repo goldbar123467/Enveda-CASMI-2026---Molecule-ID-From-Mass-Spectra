@@ -1,8 +1,8 @@
 # Runs
 
-Updated 2026-11-12 20:23 UTC by `scripts/update_runs.py` (hourly). Generated from `runs.csv` — edit that file, not this one.
+Updated 2026-11-12 21:18 UTC by `scripts/update_runs.py` (hourly). Generated from `runs.csv` — edit that file, not this one.
 
-- Kaggle quota: Prior30hweeklyGPU rejection; actualAPI refresh2026-11-14 00:00UTC. No duration normalization claim;0newscoring.
+- Kaggle quota: Actual21:08UTC API refresh2026-11-14 00:00UTC; original30hweeklyGPU rejection. No newT4sourcejobs or scoring; no duration normalization.
 - Submissions today (UTC): 0 of 5 — see `SUBMISSIONS.md`
 
 ## Active
@@ -10,12 +10,15 @@ Updated 2026-11-12 20:23 UTC by `scripts/update_runs.py` (hourly). Generated fro
 | id | platform | kind | ref | started (UTC) | status | purpose | progress |
 |---|---|---|---|---|---|---|---|
 | C09V | kaggle-gpu | diag | c09-coverage-controls v1 | 2026-11-09 14:44 | **cancel_requested** | C09 dual-device diagnostic: exact P14 full128 external pipeline negative control onGPU0; existing C08 expanded candidate coverage/scoring onGPU1; no scoring submission | Old128 panel superseded after67 base-connected acquisition groups found; cancellation requested, not acknowledged. No allocation/training/validation result; no GPU quota added at16:34UTC. |
-| C76PRODLOCAL | local-2070 | diag | outputs/local/c76-numerical-portability-20261112/local-production-preview | 2026-11-12 20:17 | **running** | Actual unlabeled production preview:original12queries/all41acquisitions; both fixedheads; full400rowfallback; originalP16fixtures | Owned scope30208/session35815. Source/asset auditpassed; high8.75/max10/swap4GiB/hostfloor4. Realruntime/changedphysical audit still required; noquality/scoring/T4claim. |
 
 ## Finished (newest first)
 
 | id | platform | kind | ref | started (UTC) | ended (UTC) | status | purpose | result |
 |---|---|---|---|---|---|---|---|---|
+| C76HEADCPUR1 | kaggle-cpu | diag | c76-r1-cpu-head-parity v1 | 2026-11-12 21:03 | 2026-11-12 21:06 | complete | Actual original-image CPU proof of repaired full400row production interface | Actualsource/image/noGPU verified;101features/candidates bitexact;300scores/head maxdiff0; all400lists exact incl388fallbacks. Completed/validated atcollection; no scoring entry. |
+| C76HEADR1 | local-cpu | diag | outputs/local/c76-numerical-portability-20261112/interface-repair-r1 | 2026-11-12 20:51 | 2026-11-12 20:53 | complete | Repair400row headinterface over immutable completed productioncore/P16prefix | PASSEDboth12listchanges/0leaders,400rows/388exactfallbacks; oldactive12/51allvectors/scores/lists bitexact; badACTIVErow rejected; physical7realpromotions audited. NoGPUcorerestart/noquality. |
+| C76HEADR1A1 | local-cpu | diag | outputs/local/c76-numerical-portability-20261112/interface-repair-r1/head-attempt01-missing-json | 2026-11-12 20:49 | 2026-11-12 20:50 | error | Head-only notebook recovery setup | Stoppedbeforemodelinference:json omitted from restoredglobals. Source/intent preserved; correctedcontext sole retry; terminalobserved on reconciliation. |
+| C76PRODLOCAL | local-2070 | diag | outputs/local/c76-numerical-portability-20261112/local-production-preview | 2026-11-12 20:17 | 2026-11-12 20:36 | error | Actual unlabeled production preview:original12queries/all41acquisitions; both fixedheads; full400rowfallback; originalP16fixtures | Healthy completecore12/all41 and P16real30/7change fixture passed; R0head guard rejected388intentional unprocessed rows in400row evidence. Failedclosed; noquality/scoring. Prefixpreserved; interface-only R1head recovery separate/no GPUrestart. |
 | C76HEADCPU | kaggle-cpu | diag | c76-cpu-complete-head-parity v1 | 2026-11-12 19:51 | 2026-11-12 19:53 | complete | Exact original-image cross-host deployment proof on same USED12/51 inputs | COMPLETE; source/image/noGPU verified;101features/candidate rows bitexact;300scores/head maxdiff0; both final lists exact. No scoring entry. |
 | C76HEADUSED | local-cpu | diag | outputs/local/c76-numerical-portability-20261112/complete-pair-used-probe | 2026-11-12 19:41 | 2026-11-12 19:42 | complete | Real complete P16/physical and shared unchangedCPU/GPU heads on USED12/all51 | PASSED. Both12lists changed tails; no leader changes; independent arithmetic/list exact; noquality. MaskedP16promotions0; no changed-physical-path claim. |
 | C76N1RES | local-cpu | diag | outputs/local/c76-numerical-portability-20261112/n1-resource-path-probe | 2026-11-12 19:23 | 2026-11-12 19:23 | complete | Actual original N1driver CPU proxy and mergedCE exercise after complete resource fixture | PASSED32finite outputs/4proxy spectra/2mergedCE. Loaderbytes exact; no failures; engineering only/no quality. |

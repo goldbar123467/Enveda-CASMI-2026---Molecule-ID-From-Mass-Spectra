@@ -21,7 +21,7 @@ REQUIRED = ['c41_report.json', 'c41_t4_allocation.json', 'c41_gpu1_preflight.jso
 
 
 def verified():
-    binding_path = BASE / 'complete-pipeline-binding.json'
+    binding_path = BASE / 'complete-pipeline-binding-r1.json'
     binding = read(binding_path)
     for name, pin in binding['files_sha256'].items(): assert sha(ROOT / name) == pin, name
     auth = read(ROOT / '.local/c38-active-goal.json')
@@ -173,7 +173,7 @@ def audit(arm):
         kernel=fetched['kernel'], version=1, arm=arm, queries=512, acquisitions=2215,
         actual_two_T4s=True, remote_source_exact=True, actual_original_image_exact=True,
         baseline_replay_exact=True, forbidden_reference_rows=0, formate_source_copy_verified=True,
-        complete_pipeline_binding_sha256=sha(BASE / 'complete-pipeline-binding.json'),
+        complete_pipeline_binding_sha256=sha(BASE / 'complete-pipeline-binding-r1.json'),
         files_sha256=fetched['files_sha256'], quality_metrics_read=False, C13_read=False, scoring_entries=0))
     print('C76 COMPLETE ACTUAL-T4 SOURCE/ACQUISITION/CORE AUDIT PASSED', arm, flush=True)
 

@@ -10,9 +10,9 @@ SLOTS = {'legacy': 'c73-full-masked-validation', 'c76': 'c76-full-masked-validat
 
 
 def verified():
-    binding = BASE / 'complete-pipeline-binding.json'
+    binding = BASE / 'complete-pipeline-binding-r1.json'
     for name, pin in read(binding)['files_sha256'].items(): assert sha(ROOT / name) == pin, name
-    assert read(BASE / 'cpu-head-parity/independent-comparison.json')['passed']
+    assert read(BASE / 'cpu-head-parity-r1/independent-comparison.json')['passed']
     auth = read(ROOT / '.local/c38-active-goal.json')
     assert auth['active'] and auth['submissions_used'] == 0
     assert auth['free_local_and_kaggle_compute_authorized'] and not auth['new_paid_compute_authorized']
@@ -70,7 +70,7 @@ def main():
     intent = out / (arm + '-push-intent.json'); assert not intent.exists(), 'Reconcile prior actual handle; never requeue blindly'
     write(intent, dict(created_utc=stamp(), source_sha256=sha(__file__), kernel=metadata['id'],
         expected_version=1, notebook_sha256=sha(folder / 'notebook.ipynb'),
-        complete_pipeline_binding_sha256=sha(BASE / 'complete-pipeline-binding.json'),
+        complete_pipeline_binding_sha256=sha(BASE / 'complete-pipeline-binding-r1.json'),
         original_version0_rejection_sha256=sha(ROOT / 'outputs/local/c73-clean-target-validation-20261112/kernel-push-result.json'),
         private_inference_only=True, free_T4_only=True, scoring_entries=0))
     response = api.kernels_push(str(folder.resolve()), timeout='32400', acc='NvidiaTeslaT4')

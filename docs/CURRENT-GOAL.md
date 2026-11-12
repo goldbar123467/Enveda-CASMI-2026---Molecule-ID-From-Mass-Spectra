@@ -1,3 +1,88 @@
+## CURRENT C76 R1 — full400row interface PASSED locally and actual cloudCPU
+
+CURRENT COMPLETE BINDING is C76/complete-pipeline-binding-r1.json SHA
+0ddc4d46d9dbcb2f8804f3970d6763c38528311dcd24dfe4a704a91df2a36518.
+Current scripts/complete_c76_target.py, collect/release_c76_source_controls.py,
+evaluate_c76_source.py and audit_c76_source_quality.py now reference R1binding.
+Quality plan is source-quality-plan-r1.json; production plan is
+production-evidence-plan-r1.json. Canonical future production helpers are
+release_c76_production_smokes.py, collect_c76_production_smokes.py,
+audit_c76_cloud_parent_pair.py. Weights/core/source cohort/gates unchanged.
+
+NO LOCAL ML JOB RUNNING. Original production toolsession35815 CLOSED1 at20:36UTC;
+scope30208inactive. Core/P16 executed completely:12queries/all41acquisitions,
+Engine2/PC12each, mainerrors0, ICE1611predictions0fails, GL11of11supported healthy,
+original P16fixture30queries/113acquisitions/7changed lists passed. NewR0HEAD then
+failed because raw NN evidence correctly contains ALL400answerIDs including388
+unprocessed placeholder rows; guard wrongly demanded only12activeIDs. Original
+failure and wholecore/nativeworking preserved. Do NOT claim originalR0fullrunpassed.
+
+R1fix is ONLY three raw/public/ours filters by complete set of IDs WITH SPECTRA;
+NO health/outcome-based filtering, NO activequery/candidate/acquisition dropped,
+NO model/refit/scoring math change. All400answerrows/388inactivefallbacks retained.
+Old runtime/production/operational sources (62files) archived byteexact under
+C76/interface-repair-r1/previous-sources; R0publishedbundle and bindingJSON retained.
+Canonical paths advanced to R1; the oldR0binding no longer verifies CURRENTsource.
+Use archive/Git to reproduceR0; never silently pass oldC75orR0failed gates.
+
+New private R1bundle READY:clarkkitchen/casmi26-c76-complete-direct-pair-r1-20261112.
+ManifestSHA b0e9c31eb0694996245b4a7fc24aca1ca56a7d64bda15bafcac5c7a5198206e4;
+repaired score sourceSHA d9112f4cb17d43a533d7453df9789ee4a912eaa12fb034b28fd4ee90f0271c99.
+Current production notebook folders keep c76-cpu-production/c76-gpu-production;
+new canonical KERNELids end -production-r1. Only last head manifest pin and
+metadata/bundle changed; full0:27core/P16prefix is BYTEEXACT. All oldsourcebytes
+and models retained. No actual T4 production notebook has been pushed.
+
+HEAD-ONLY recovery succeeded using PROVENunchanged core/P16prefix; GPUcore NOT
+restarted. New CPU/GPU stages both12changed tail lists,0leader changes;400rows,
+388inactive rows EXACT, sameparent/features. All old all-active12query/51acq
+features/scores/lists BITEXACT; deliberate unhealthy ACTIVErow was rejected before
+output. First recovery harness lacked json in restoredglobals and stoppedbefore
+head inference; originalattempt preserved. Sole corrected retry session3754 CLOSED0;
+independent audit session67412 CLOSED0. Prefixaudit57125 CLOSED0. No blind requeue.
+
+Independent composedR1audit PASSED; it explicitly records R0runFAILED, recovered
+prefix+headsPASS. Physical rule independently rebuilt on7REAL USEDreference
+promotions:7consistent kept; separate counterfactual reference views verify all7
+unknown-adduct and +10Da inconsistent promotions revert to exact30originallists.
+No original refs changed. Source C76/interface-repair-r1/independent-run-audit.json.
+
+ACTUAL cloudCPU r1job COMPLETE v1:
+clarkkitchen/casmi26-c76-r1-cpu-head-parity . Exact original image/source/GPUdisabled
+verified. All101features/candidate records BITEXACT,300scores PERHEAD maxdiff0.0,
+ALL400final lists exact including388fallbacks. No expected head predictions or
+query truth mounted. Collector/auditor source scripts/c76_r1_cloud_head.py;
+proof C76/cpu-head-parity-r1/independent-comparison.json. Audit67088 CLOSED0.
+New private400row input package READY. Original active-only cloudproof retained.
+
+R1source/production guards tested: missing actualT4legacycollection stops before
+C72labels/consumption; missing sourcequality stops before T4production API/intent.
+Current fullbinding, sourcequality and production evidence plans refrozen BEFORE
+any freshC72source prediction/outcome; no gate/tolerance/recipe/cohort rescue.
+
+T4quota actual21:08UTC API still refresh2026-11-14T00:00UTC=Nov13 7pmEastern.
+Current release_c76_source_controls.py push-legacy is HELD without pushing before
+that reset. Sourcejobs dictEMPTY. Original C73version0quota rejection is NOT a job.
+After reset: push-legacy; collect_c76_source_controls.py fetch/audit legacy;
+then push-c76 and fetch/audit c76. Then complete_c76_target.py replay both arms,
+score, seal all6controls+bothheads. Evaluate ONE joint source via
+scripts/evaluate_c76_source.py run, then independent source quality audit.
+Actual T4source/production remain REQUIRED; localbatch8 never substitutes for
+T4batch96. Actual T4 production audits independently replay SAMECLOUD headinputs
+locally and require identical actualT4parents across both separate head runs.
+Old C75fullcorecross-device gate staysFAILED; no 2070fullcore equivalence claim.
+
+Remaining independent preparation: C13compatibility/composed confirmation wrapper
+and final scoring qualification/terminal-score plumbing for this R1family. Do NOT
+run oldC59/C60/C43release scripts: they bind retired families. Existing untouched
+C13 may be consumed at mostonce ONLY after R1source and actualproduction checks;
+retain all120incl trailing-space formate fallback; no substitution for targetsource.
+
+C72/C13UNCONSUMED, source-results and jointfreezeABSENT, sharedC42scoringledgerABSENT,
+0/2newscored; champion0.480 preserved. Old/hourly controllersOFF; freecomputeonly.
+GoalACTIVE; this turn made substantial concrete production/debug/repair/CPUcloud
+progress, not blocked/no-progress. Historical checkpoints below superseded.
+
 ## LIVE C76 actual production preview — session35815
 
 Actual owned RTX2070 production preview RUNNING. Tool session35815; Windows

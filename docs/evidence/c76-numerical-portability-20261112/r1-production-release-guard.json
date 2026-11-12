@@ -1,0 +1,9 @@
+{
+  "checked_utc": "2026-11-12T21:12:29.147683+00:00",
+  "passed": true,
+  "source_sha256": "57db7dcf99f23868b0b5cd23ae40aa19d7c0e9d9264002faa42f4b852b0acaf3",
+  "reason": "R1 release stops at missing source quality before any API call or intent",
+  "quality_read": false,
+  "C13_read": false,
+  "scoring_entries": 0
+}

@@ -6,14 +6,14 @@ from c75_port_utils import ROOT, read, write, sha, stamp
 BASE = ROOT / 'outputs/local/c76-numerical-portability-20261112'
 PANEL = ROOT / 'outputs/local/c72-clean-target-holdout-20261112'
 POLICY = ROOT / 'configs/c76-source-evaluation-v1.json'
-PLAN = BASE / 'source-quality-plan.json'
+PLAN = BASE / 'source-quality-plan-r1.json'
 
 
 def prepare():
     assert not PLAN.exists() and not (PANEL / 'evaluation-consumption.json').exists()
     assert not (ROOT / 'outputs/local/c13-confirmation-20261110/evaluation-consumption.json').exists()
     assert not (BASE / 'joint-source-prediction-freeze.json').exists()
-    binding = BASE / 'complete-pipeline-binding.json'
+    binding = BASE / 'complete-pipeline-binding-r1.json'
     for name, pin in read(binding)['files_sha256'].items(): assert sha(ROOT / name) == pin, name
     write(PLAN, dict(frozen_utc=stamp(), evaluator_source_sha256=sha(__file__),
         auditor_source_sha256=sha(ROOT / 'scripts/audit_c76_source_quality.py'),

@@ -1,0 +1,9 @@
+{
+  "checked_utc": "2026-11-12T20:36:10.537386+00:00",
+  "source_sha256": "9ec1196b4d8dc1e8d631d54ce57c581f3aa58fd398c55a68b43d72fc8391b4dd",
+  "error": "AssertionError('C76 required head stage failed; inspect c76_pair_inference.log')",
+  "automatic_retry": false,
+  "quality_read": false,
+  "C13_read": false,
+  "scoring_entries": 0
+}

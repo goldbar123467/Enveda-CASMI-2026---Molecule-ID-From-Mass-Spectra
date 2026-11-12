@@ -96,6 +96,11 @@ def run(work, bundle, reference, output, trials=('cpu', 'gpu')):
     raw = pd.read_parquet(work / 'neural_candidate_features.parquet')
     public = pd.read_parquet(work / 'neural_public.parquet')
     ours = pd.read_parquet(work / 'neural_ours.parquet')
+    # Production previews also retain placeholder evidence for unprocessed IDs.
+    # Infer from every ID with spectra; preserve all other answer rows below.
+    raw = raw[raw.molecule_id.isin(active)].reset_index(drop=True)
+    public = public[public.molecule_id.isin(active)].reset_index(drop=True)
+    ours = ours[ours.molecule_id.isin(active)].reset_index(drop=True)
     for frame in [raw, public, ours]:
         assert set(frame.molecule_id) == active
         assert frame.neural_ok.astype(bool).all()

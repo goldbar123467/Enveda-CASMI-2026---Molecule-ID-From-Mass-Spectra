@@ -1,0 +1,197 @@
+{
+  "revised_utc": "2026-11-12T20:56:19.936985+00:00",
+  "files": {
+    "scripts/complete_c76_target.py": {
+      "old_sha256": "27a44f92bd22541b3134aa6f2aa88b9fcc6ef3bbed8b63d48b0f41ba29631629",
+      "new_sha256": "08738d8cbfb1747064710decad71b405eeb461d911d951619637caa75c7458e6",
+      "literal_replacements": [
+        [
+          "complete-pipeline-binding.json",
+          "complete-pipeline-binding-r1.json"
+        ],
+        [
+          "c76-complete-direct-pair-20261112",
+          "c76-complete-direct-pair-r1-20261112"
+        ]
+      ],
+      "counts": {
+        "complete-pipeline-binding.json": 1,
+        "c76-complete-direct-pair-20261112": 1
+      },
+      "all_other_code_exact": true
+    },
+    "scripts/collect_c76_source_controls.py": {
+      "old_sha256": "e1be5a48a9aa0c36a8c1166b97eba0df34eaa79339c4f1023bdc53fa98548247",
+      "new_sha256": "cfe0c02679a9862bf074621a95fb5485179a77359000a62c9ecfae07a03a0bd1",
+      "literal_replacements": [
+        [
+          "complete-pipeline-binding.json",
+          "complete-pipeline-binding-r1.json"
+        ]
+      ],
+      "counts": {
+        "complete-pipeline-binding.json": 2
+      },
+      "all_other_code_exact": true
+    },
+    "scripts/release_c76_source_controls.py": {
+      "old_sha256": "64918be1ef7058ba3a17de7161574d9eb7a2bc54f4ea74a1e4a4a75fdaef99fe",
+      "new_sha256": "d63e113ea29178ee68e45a01529b7b83cf96027c0be4f9b39dc4302d8b5f87d9",
+      "literal_replacements": [
+        [
+          "complete-pipeline-binding.json",
+          "complete-pipeline-binding-r1.json"
+        ],
+        [
+          "cpu-head-parity/independent-comparison.json",
+          "cpu-head-parity-r1/independent-comparison.json"
+        ]
+      ],
+      "counts": {
+        "complete-pipeline-binding.json": 2,
+        "cpu-head-parity/independent-comparison.json": 1
+      },
+      "all_other_code_exact": true
+    },
+    "scripts/evaluate_c76_source.py": {
+      "old_sha256": "8358afa1256947d1eda21c6e46fedf53390236645936fecf2f9f635235b06cce",
+      "new_sha256": "85bfe040b75583564cfb689121167cdb798f8ef6767fbbfeff145e6d60b4a306",
+      "literal_replacements": [
+        [
+          "complete-pipeline-binding.json",
+          "complete-pipeline-binding-r1.json"
+        ],
+        [
+          "source-quality-plan.json",
+          "source-quality-plan-r1.json"
+        ]
+      ],
+      "counts": {
+        "complete-pipeline-binding.json": 1,
+        "source-quality-plan.json": 1
+      },
+      "all_other_code_exact": true
+    },
+    "scripts/audit_c76_source_quality.py": {
+      "old_sha256": "9b51b6bc2d1b9790c8443e7bdffa5c359764c739f71447d011b52f64edc9eae8",
+      "new_sha256": "f4dbfd77badf78be42633a701e41cd8c9c845d883642d60469e4aa06e1147dab",
+      "literal_replacements": [
+        [
+          "complete-pipeline-binding.json",
+          "complete-pipeline-binding-r1.json"
+        ],
+        [
+          "source-quality-plan.json",
+          "source-quality-plan-r1.json"
+        ]
+      ],
+      "counts": {
+        "complete-pipeline-binding.json": 1,
+        "source-quality-plan.json": 2
+      },
+      "all_other_code_exact": true
+    },
+    "scripts/release_c76_production_smokes.py": {
+      "old_sha256": "e35fa67640252867206a4e1ea676c7fb242ea87b32531cc6efba5298d26e1282",
+      "new_sha256": "57db7dcf99f23868b0b5cd23ae40aa19d7c0e9d9264002faa42f4b852b0acaf3",
+      "literal_replacements": [
+        [
+          "complete-pipeline-binding.json",
+          "complete-pipeline-binding-r1.json"
+        ],
+        [
+          "cpu-head-parity/independent-comparison.json",
+          "cpu-head-parity-r1/independent-comparison.json"
+        ],
+        [
+          "local-production-preview/independent-run-audit.json",
+          "interface-repair-r1/independent-run-audit.json"
+        ],
+        [
+          "scripts/audit_c76_local_production_run.py",
+          "scripts/audit_c76_head_recovery_r1.py"
+        ],
+        [
+          "production-evidence-plan.json",
+          "production-evidence-plan-r1.json"
+        ]
+      ],
+      "counts": {
+        "complete-pipeline-binding.json": 2,
+        "cpu-head-parity/independent-comparison.json": 1,
+        "local-production-preview/independent-run-audit.json": 1,
+        "scripts/audit_c76_local_production_run.py": 1,
+        "production-evidence-plan.json": 2
+      },
+      "all_other_code_exact": true
+    },
+    "scripts/collect_c76_production_smokes.py": {
+      "old_sha256": "641dfa236564f45515690911802c1817ef8a007b973b4fcde5e838c34deda25f",
+      "new_sha256": "fd3b75c64ad86bfacd0ac90db81afee3b86663d2dbb7e72cf581bffdd9cc6933",
+      "literal_replacements": [
+        [
+          "complete-pipeline-binding.json",
+          "complete-pipeline-binding-r1.json"
+        ],
+        [
+          "c76-complete-direct-pair-20261112",
+          "c76-complete-direct-pair-r1-20261112"
+        ]
+      ],
+      "counts": {
+        "complete-pipeline-binding.json": 1,
+        "c76-complete-direct-pair-20261112": 1
+      },
+      "all_other_code_exact": true
+    },
+    "scripts/audit_c76_cloud_parent_pair.py": {
+      "old_sha256": "aab31a4679f194f08a7750c892afda52d05462c760de3ac0084a13b4c8c02cfc",
+      "new_sha256": "8d63ea34a2e90c878620707c86de5fab0bb5679f6875c9ceffd242e78979633a",
+      "literal_replacements": [
+        [
+          "complete-pipeline-binding.json",
+          "complete-pipeline-binding-r1.json"
+        ]
+      ],
+      "counts": {
+        "complete-pipeline-binding.json": 2
+      },
+      "all_other_code_exact": true
+    },
+    "scripts/freeze_c76_production_evidence.py": {
+      "old_sha256": "7849dd4048520073cab3164e31194a8a9f5b951c1360c67a977ba320cbf0bbc7",
+      "new_sha256": "dbb6887cb7ea0fe89362a1f4060564d7a1d3aedd34a7491020c5ae0f1bd6b4b4",
+      "literal_replacements": [
+        [
+          "complete-pipeline-binding.json",
+          "complete-pipeline-binding-r1.json"
+        ],
+        [
+          "production-evidence-plan.json",
+          "production-evidence-plan-r1.json"
+        ],
+        [
+          "source-quality-plan.json",
+          "source-quality-plan-r1.json"
+        ],
+        [
+          "cpu-head-parity/independent-comparison.json",
+          "cpu-head-parity-r1/independent-comparison.json"
+        ]
+      ],
+      "counts": {
+        "complete-pipeline-binding.json": 1,
+        "production-evidence-plan.json": 1,
+        "source-quality-plan.json": 1,
+        "cpu-head-parity/independent-comparison.json": 1
+      },
+      "all_other_code_exact": true
+    }
+  },
+  "old_binding_file_retained": true,
+  "old_published_bundle_and_all_previous_artifacts_retained": true,
+  "no_source_quality_mode_threshold_or_ranking_rule_change": true,
+  "old_R0_candidate_retired_unscored": true,
+  "C72_C13_unconsumed": true,
+  "scoring_entries": 0
+}

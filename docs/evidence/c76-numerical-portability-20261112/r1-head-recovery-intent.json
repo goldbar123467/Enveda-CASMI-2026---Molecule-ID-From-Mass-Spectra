@@ -1,0 +1,17 @@
+{
+  "started_utc": "2026-11-12T20:51:14.050455+00:00",
+  "source_sha256": "eb998e87fbda5dcef095e6362e5b0357ce417cd3669e199f024ca08fb6ff4f4e",
+  "completed_prefix_audit_sha256": "48a6d7f560cead8514bcff128604c43c7b838d0209fa6fecf88b5dca27deaf39",
+  "candidate_preparation_sha256": "beeb861db175d77c9b9704cd5fe1cbc2b2d603ef74014edcc8b84761ef944585",
+  "pair_manifest_sha256": "b0e9c31eb0694996245b4a7fc24aca1ca56a7d64bda15bafcac5c7a5198206e4",
+  "recovered_stage_sha256": {
+    "cpu": "cce406c27a6f8acc1aa4105719ee846b7e37b5bf18b53e81e1c27bbcc40c26dd",
+    "gpu": "59e809c0acaf52651c06a221ae3a17a409e0c08fd0c841b2e627ccd1dcac34c1"
+  },
+  "context": "Actual persisted P16 merge status, original sample IDs, actual local payload and same immutable parent files; only head input discovery/hardware/artifact wiring adapted",
+  "actual_GPU_core_restarted": false,
+  "no_new_head_fitting": true,
+  "quality_read": false,
+  "C13_read": false,
+  "scoring_entries": 0
+}

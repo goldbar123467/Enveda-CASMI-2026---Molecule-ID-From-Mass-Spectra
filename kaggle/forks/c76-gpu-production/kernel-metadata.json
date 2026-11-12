@@ -1,6 +1,6 @@
 {
-  "id": "clarkkitchen/casmi26-c76-gpu-production",
-  "title": "casmi26 C76 gpu production",
+  "id": "clarkkitchen/casmi26-c76-gpu-production-r1",
+  "title": "casmi26 C76 gpu production r1",
   "code_file": "notebook.ipynb",
   "language": "python",
   "kernel_type": "notebook",
@@ -23,7 +23,7 @@
     "metric/rdkit-2026-3-3-wheel",
     "takumuhata/casmi26-extlib",
     "clarkkitchen/casmi26-c09e-smoke-fixtures-20261109",
-    "clarkkitchen/casmi26-c76-complete-direct-pair-20261112",
+    "clarkkitchen/casmi26-c76-complete-direct-pair-r1-20261112",
     "clarkkitchen/casmi26-frozen-p14-20261107"
   ],
   "kernel_sources": [

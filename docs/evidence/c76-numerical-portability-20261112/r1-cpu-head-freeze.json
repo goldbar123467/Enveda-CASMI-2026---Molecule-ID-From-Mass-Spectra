@@ -1,0 +1,22 @@
+{
+  "frozen_utc": "2026-11-12T21:00:41.340094+00:00",
+  "source_sha256": "bae9246ff6fe57d8ad3ed222fd51c08d6f6cb69b98794c349d3d768d1aeaf46b",
+  "probe_source_sha256": "5078304036097ddde3ec3f3bfdc03c8abd83cbb14a77cbc149d7c13910ecd05a",
+  "metadata_sha256": "4cbcb20f2a24d80b0b71c70a80572fa5d8f7cf9eab3ef720c8094daebd64163d",
+  "complete_pipeline_binding_sha256": "0ddc4d46d9dbcb2f8804f3970d6763c38528311dcd24dfe4a704a91df2a36518",
+  "pair_manifest_sha256": "b0e9c31eb0694996245b4a7fc24aca1ca56a7d64bda15bafcac5c7a5198206e4",
+  "input_contract_sha256": "9d6544065dca1d664cb59591818796d13f72388fdd27df587a7ceb56f0855add",
+  "comparisons": {
+    "features": "bitexact",
+    "lists": "exact",
+    "scores": {
+      "atol": 1e-10,
+      "rtol": 1e-10
+    }
+  },
+  "original_production_context_including388placeholder_rows": true,
+  "expected_head_predictions_mounted": false,
+  "quality_read": false,
+  "C13_read": false,
+  "scoring_entries": 0
+}
