@@ -1,0 +1,8 @@
+{
+  "checked_utc": "2026-11-12T01:03:17.293918+00:00",
+  "guard": "C43 preparation refuses missing C39 quality admission",
+  "passed": true,
+  "C13_consumption_marker_absent": true,
+  "C13_labels_not_opened": true,
+  "paired_confirmation_not_prepared": true
+}

@@ -1,32 +1,101 @@
-# Current project goal — 11 November 2026
+# Current project goal — active C38/C42 cycle
 
-Build and audit validation with documented target/source support, preserving full
-acquisition sets and mixed polarities. Integrate the confirmed legacy formate
-compatibility repair in controlled validation. Develop and qualify new CPU and
-GPU candidates, then run at most two newly approved scoring submissions,
-provisionally one CPU-backed and one GPU-backed. Wait for each actual terminal
-score and finish after both results. No repeat submission approval is needed.
+Complete the two newly approved scoring trials, provisionally one CPU-fitted
+ridge alignment and one GPU-fitted nonlinear alignment. Both use frozen GPU
+encoders and a complete GPU parent; CPU-fitted does not mean CPU-only serving.
+Observe the first actual terminal score before releasing the second. Preserve
+the 0.480 champion and all earlier evidence. No new paid compute, hourly
+campaign, exhausted P18/P19 resubmission, truth insertion or favorable-cohort
+selection. No repeat submission approval is needed. Two approvals remain unused.
 
-The user explicitly authorized this goal and two new submissions. Local RTX2070
-and free Kaggle CPU/T4 resources are authorized as justified; new paid compute
-is not. Hourly automation stays off; older campaigns stay inactive. Preserve
-the0.480 champion, prior sealed evidence, and fresh C13 until at most one
-properly frozen qualifying use. No cohort tuning to match old leaderboard
-outcomes, absent-truth filtering, truth injection or re-use of exhausted trials.
+The native goal remains ACTIVE. Current authorization is
+`.local/c38-active-goal.json` and
+`outputs/local/c38-source-support-20261111/authorization.json`. Keep the old
+`.local/compute-paused.json` so historical workers stay inactive. Current controlled
+workers use the explicit new authorization. Do not restart old campaigns.
 
-Native goal is ACTIVE. Authorization and working evidence are in
-outputs/local/c38-source-support-20261111/. The old compute-pause marker remains
-as a guard against historical workers; new controlled workers must explicitly
-verify the current C38 authorization rather than restart old controllers.
+## Live work, verified 12 November 2026 01:13 UTC
 
-C37 completed with no qualified replacement: see
-[C37 report](C37-SELECTION-AND-POPULATION-2026-11-11.md). Its no-go applies to the
-failed candidates and historical state, not a request to refuse the new work.
+- `clarkkitchen/casmi26-c41r3-full-masked-validation`, version1, kernel144498742:
+  RUNNING. This is the complete352-query/1292-acquisition C39 reference-masked
+  P01/P14 inference, not a scoring submission.
+- `clarkkitchen/casmi26-p20-c42-cpu-alignment`, version1, kernel144500368:
+  RUNNING. Private production engineering smoke only; quality admission is still
+  pending. Its preview uses12real queries and preserves388unprocessed rows.
 
-Controlled continuation: scripts/watch_c41_validation.py observes exact C41R3 smoke v1, audits it, releases the identical finalized full352 inference only after success, then freezes/scores the two C42R1 heads on real parent lists. It has a six-hour deadline and cannot submit or open C13. Status and attention receipts are in outputs/local/c41r3-masked-pipeline-validation-20261111/. P20/P21 production sources are frozen locally but unqualified. Both scoring approvals remain unused.
+Two detached observers have hidden Windows startup and file logs:
 
-C41R2 finished its core12 pipeline but exposed an actual unguarded analog path: Engine._reps builds its own cache, bypassing Library.representatives. Its predictions are quarantined and quality was not read. C41R3 additionally guards the actual Engine cache and requires nonzero removal/build counters. Sixteen targeted tests and an actual downloaded Engine._reps fixture pass. Current bounded continuation PID28576/session71472 is observing R3v1; no full release or scoring entry yet.
+- `scripts/watch_c41_validation.py`, actual PID27720, observes the same full v1.
+  Latest state/logs/attention are under
+  `outputs/local/c41r3-masked-pipeline-validation-20261111/`.
+  It will collect/audit full outputs, verify all1292original acquisitions, score
+  both sealed heads locally and evaluate the fixed C39 gates. Deadline06:56UTC.
+- `scripts/watch_c42_production_smokes.py`, actual PID26868, observes P20v1 and
+  runs the independent local/cloud production audit. Only after that engineering
+  pass may it release/audit P21v1 in the free slot. State/logs/attention are under
+  `outputs/local/c42-two-new-submissions-20261111/`. Deadline07:08UTC.
 
-C41R3v1 smoke COMPLETE and audited at00:53UTC12Nov. Main library excludes409162rows and59583actual Engine analog representatives;37direct-window calls and0forbidden rows. Engine2 excludes408950rows; complete P01 replay exact; all12queries/37original acquisitions retained. Full352v1 is RUNNING on Kaggle (kernel144498742). Both sealed heads also execute on the real smoke:8changed lists each,4unsupported exact fallbacks,0rank1/membership/formula-slot changes, no quality labels read.
+Neither observer can submit to the leaderboard or open C13. Revalidate actual
+API/process handles before treating a wait as live. Timeout is not termination;
+never requeue merely because observation expired. Never duplicate a durable push
+or submission intent; reconcile its exact handle first.
 
-Continuation now runs detached with hidden Windows startup and file logs, actual PID27720. Read its latest continuation-status.json, continuation-detached.log and continuation-attention.json. Foreground launch receipt was archived before observer-only migration; same cloud full v1 is observed, no requeue. It will collect full outputs, verify all1292acquisitions, score both sealed C42R1 heads locally and evaluate the fixed C39 gates. No scoring submission or C13 access from this worker. Afterward: audit actual full ranking arithmetic, review gates, then eligible production smokes/paired confirmation and two sequential actual scores. Native goal remains ACTIVE;2approvals unused.
+## Completed evidence
+
+C39 has352queries/1292original acquisitions and273chemistry groups. Development
+and source groups are disjoint. New C40R1 fits use174328identities/600815acquisitions;
+all identified original-row aliases and C39 chemistry were excluded. Initial
+C40heads and C41/R2smokes are retired/quarantined, without quality evaluation.
+
+C41R3smoke v1 is COMPLETE and collected: actual dualT4;409162main reference rows
+and59583Engine-owned analog representatives removed;408950Engine2rows removed;
+zero forbidden rows; exact P01replay; all12queries/37original acquisitions exact.
+The guard must cover actual `Engine._reps`, not only Library.representatives.
+Sixteen targeted tests and the exact downloaded-method fixture pass.
+
+Both sealed C42R1heads execute on that real12 parent:8changed lists each,
+4unsupported exact fallbacks, zero rank1/membership/formula-slot changes.
+Independent RRF reconstruction is exact. This is engineering proof, not quality.
+
+The current immutable head bundle is
+`outputs/publish/c42r1-crossmodal-heads-20261111/` with manifestSHA
+`a534d8654ce8d407b6cee9b1c9b6fa7c2e8231dde84e6a232957d097fee8bed6`.
+P20/P21notebooks are frozen under `kaggle/forks/`. Their P16parent differs only
+by the tested legacy scalar formate source copy and the new required head stage.
+No validation-reference masks or query labels are mounted in production.
+
+C39quality and fresh C13 metrics remain UNREAD as of this state check. No new
+scoring entry has been released. Full data/labels/weights stay in ignored local
+storage. Compact receipts and the source study report are in
+`docs/evidence/c38-c42-20261111/` and
+`docs/C38-C42-SOURCE-AND-HEADS-2026-11-11.md`.
+
+## Next required work
+
+After full collection, independently audit its actual C42ranking with
+`scripts/audit_c42_ranking.py`, then review the fixed C39gates. Do not weaken or
+fabricate admission. The study is controlled in-corpus validation: public encoder
+and parent historical exposure remains known or unknown; it is not universally
+unseen validation or established leaderboard calibration.
+
+Only if both fixed recipes pass their prior/source checks, use the prospective
+paired policy `configs/c43-paired-confirmation-20261111.json` and
+`scripts/confirm_c43_pair.py`: prepare, score, then explicitly evaluate --consume.
+The first two phases do not open labels. The last consumes both fixed predictions
+jointly under a global C13marker; no recipe/cohort/model revisions follow it.
+Exact crash recovery must retain the same source/policy/prediction seal. Report
+all-query zeros, query modes, grouped uncertainty, fitting identity/neighbor
+exposure, and P14control. C13is FT/HCDsingle-acquisition source stress and does
+not substitute for timsTOF target support. The closed-gate fixture passes.
+
+Actual P20/P21production smokes must pass
+`scripts/audit_c42_production.py` (remote source, preserved parent, identities,
+independent math, local/cloud agreement and fallback). Once all evidence passes,
+`scripts/qualify_c42_pair.py` seals the pair. `scripts/submit_c42_pair.py` enforces
+two accepted entries maximum, a single pending account entry, durable intents,
+CPUfirst and its actual score before GPUrelease. These are exploratory trials;
+only actual public scores establish improvement. No scoring command has run.
+
+Finish the goal only after both approved entries have actual terminal results,
+or reconcile a demonstrated external blocker under the native blocked-audit
+rules. Keep the full original objective intact across continuation turns.
