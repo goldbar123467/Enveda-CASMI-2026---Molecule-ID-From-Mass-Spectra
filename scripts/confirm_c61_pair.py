@@ -22,7 +22,8 @@ def freeze():
     verified();OUT.mkdir(exist_ok=True);assert not (OUT/'prediction-freeze.json').exists() and not CONSUMPTION.exists()
     family=read(MODELS/'complete-candidate-freeze.json');assert family['policy_sha256']==sha(POLICY)
     cloud=ROOT/'outputs/forks/c59-c13-main-compatibility-v1';health=read(cloud/'independent-core-health-audit.json')
-    assert health['passed'] and health['queries']==120 and health['source_sha256']==sha(ROOT/'scripts/audit_complete_core_health.py')
+    assert health['passed'] and health['queries']==120 and health['source_sha256']==sha(ROOT/'scripts/audit_c59_core_health.py')
+    assert health['pubchem_supported']==119 and health['pubchem_unsupported']==1 and health['all_original_queries_retained']
     for name,pin in health['files_sha256'].items():assert sha(ROOT/name)==pin
     parent=read(BASE/'complete-parent-freeze.json');assert parent['candidate_family_sha256']==sha(BASE/'candidate-family-freeze.json')==sha(MODELS/'complete-candidate-freeze.json')
     for name,pin in parent['files_sha256'].items():assert sha(BASE/name)==pin
@@ -50,7 +51,7 @@ def freeze():
                 if s not in identities:identities[s]=features.structure(s)[0]
     for name,pin in receipt['files_sha256'].items():assert sha(folder/name)==pin;files.append(folder/name)
     files.append(BASE/'queries.parquet')
-    files.extend([cloud/'independent-core-health-audit.json',ROOT/'scripts/audit_complete_core_health.py'])
+    files.extend([cloud/'independent-core-health-audit.json',ROOT/'scripts/audit_c59_core_health.py'])
     files.extend(ROOT/name for name in health['files_sha256'])
     pd.DataFrame([dict(smiles=s,key=k) for s,k in identities.items()]).to_parquet(OUT/'quality-identity-map.parquet',index=False);files.append(OUT/'quality-identity-map.parquet')
     for entry in family['candidates'].values():

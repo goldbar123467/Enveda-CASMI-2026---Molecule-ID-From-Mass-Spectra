@@ -1,0 +1,18 @@
+{
+  "checked_utc": "2026-11-12T11:05:17.293297+00:00",
+  "channel_support_freeze_sha256": "9be918a2cefaeafbbc44591c247bd1d268b521ffc8871c42937f4ac75cf44581",
+  "queries": 120,
+  "pubchem_supported": 119,
+  "pubchem_unsupported": 1,
+  "all120_retained": true,
+  "original_unknown_token": "[M+FA-H]- ",
+  "original_and_prior_cloud_query_fields_and_peaks_exact": true,
+  "old_v2_actual_PubChem_count": 98,
+  "new_exact_main_adapter_finite_inputs": 119,
+  "Engine2_PV_v2_supports_all120": true,
+  "C13_quality_read": false,
+  "C53_quality_read": false,
+  "scoring_entries": 0,
+  "tests": "4syntheticchannelcoveragecasespassed",
+  "no_model_or_cohort_change": true
+}

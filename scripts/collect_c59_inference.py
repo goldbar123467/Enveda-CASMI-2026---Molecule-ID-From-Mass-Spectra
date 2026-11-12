@@ -17,10 +17,10 @@ def main():
         remote=json.loads(client.kernels.kernels_api_client.get_kernel(request).to_json())
     m=remote['metadata'];assert m['currentVersionNumber']==1 and m['isPrivate'] and not m['enableInternet']
     assert scientific_sha(json.loads(remote['blob']['source']))==pin['scientific_sha256']
-    pattern=r'(c13_.*\.(json|csv|parquet|log)|c59_legacy_compatibility\.json|execution_receipt\.json|frozen_candidate_evidence\.parquet|neural_(public|ours|candidate_features)\.parquet|outsider_neural_features\.parquet|effective_query_spectra\.parquet|submission_pipeline\.log)$'
+    pattern=r'(c13_.*\.(json|csv|parquet|log)|c59_legacy_compatibility\.json|execution_receipt\.json|pc_lists\.json|eng_lists\.json|frozen_candidate_evidence\.parquet|neural_(public|ours|candidate_features)\.parquet|outsider_neural_features\.parquet|effective_query_spectra\.parquet|submission_pipeline\.log)$'
     subprocess.run([sys.executable,'scripts/fetch_output.py','c59-c13-main-compatibility',str(dest),pattern],cwd=ROOT,check=True,timeout=1800)
     required=['c13_report.json','c13_t4_allocation.json','c13_gpu1_preflight.json','c13_p01.csv','c13_p14.csv','c13_queries.parquet',
-        'c13_neural_p01.parquet','frozen_candidate_evidence.parquet','outsider_neural_features.parquet','c59_legacy_compatibility.json','execution_receipt.json']
+        'c13_neural_p01.parquet','frozen_candidate_evidence.parquet','outsider_neural_features.parquet','c59_legacy_compatibility.json','execution_receipt.json','pc_lists.json','eng_lists.json']
     for name in required:assert (dest/name).exists(),name
     report=read(dest/'c13_report.json');assert report['queries']==120 and report['baseline_replay_exact']
     assert not report['metrics_computed'] and not report['query_labels_mounted'] and not report['recipe_selection']

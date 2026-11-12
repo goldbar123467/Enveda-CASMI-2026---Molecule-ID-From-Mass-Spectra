@@ -14,7 +14,7 @@ def main():
     push=read(OUT/'kernel-push-result.json');assert push['version']==1 and push['kernel']==KERNEL
     from kaggle.api.kaggle_api_extended import KaggleApi
     api=KaggleApi();api.authenticate();deadline=datetime.now(timezone.utc)+timedelta(hours=8)
-    paths=[Path(__file__),ROOT/'scripts/collect_c59_inference.py',ROOT/'scripts/audit_c59_acquisitions.py',ROOT/'scripts/audit_complete_core_health.py',ROOT/'kaggle/forks/c59-c13-main-compatibility/compatibility-pin.json']
+    paths=[Path(__file__),ROOT/'scripts/collect_c59_inference.py',ROOT/'scripts/audit_c59_acquisitions.py',ROOT/'scripts/audit_c59_core_health.py',OUT/'channel-support-freeze.json',ROOT/'kaggle/forks/c59-c13-main-compatibility/compatibility-pin.json']
     sealed={str(path.relative_to(ROOT)):sha(path) for path in paths}
     write(OUT/'base-only-launch.json',dict(started_utc=stamp(),pid=os.getpid(),kernel=KERNEL,version=1,deadline_utc=deadline.isoformat(),source_seal=sealed,
         can_push_or_requeue=False,can_score_or_read_quality=False,C13_read=False))
@@ -36,7 +36,7 @@ def main():
     cloud=ROOT/'outputs/forks/c59-c13-main-compatibility-v1'
     for name,command,artifact in [('collection',[sys.executable,'scripts/collect_c59_inference.py'],'collection-audit.json'),
         ('fidelity',[str(ROOT/'.venv-gpu/Scripts/python.exe'),'scripts/audit_c59_acquisitions.py'],'acquisition-fidelity-audit.json'),
-        ('core-health',[sys.executable,'scripts/audit_complete_core_health.py',str(cloud),'--queries','120'],'independent-core-health-audit.json')]:
+        ('core-health',[str(ROOT/'.venv-gpu/Scripts/python.exe'),'scripts/audit_c59_core_health.py'],'independent-core-health-audit.json')]:
         check();status('collecting_base_only',step=name)
         if not (cloud/artifact).exists():
             with (OUT/(name+'.log')).open('w',encoding='utf8') as stream:subprocess.run(command,cwd=ROOT,stdout=stream,stderr=subprocess.STDOUT,check=True)

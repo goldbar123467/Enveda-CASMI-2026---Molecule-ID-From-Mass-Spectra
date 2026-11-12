@@ -1,5 +1,5 @@
 {
-  "recorded_utc": "2026-11-12T10:24:34.828109+00:00",
+  "recorded_utc": "2026-11-12T11:05:17.293297+00:00",
   "C57": "RUNNING",
   "both_production_previews_audited": true,
   "C58_mask_audited": true,
@@ -41,5 +41,7 @@
   "C58_original_idle_continuation_retired": 30916,
   "complete_core_health_tests": "5passed; both actual12previews and old352full execution pass",
   "previous352_runtime_seconds": 12876.728947152,
-  "C57_progress": "All482Engine2/PubChem/main lists completed; main errors0, popularity-reordered482. Spectrum simulators next, full core still running."
+  "C57_progress": "All482Engine2/PubChem/main lists completed; main errors0, popularity-reordered482. Spectrum simulators next, full core still running.",
+  "C59_channel_health": "Before inference: exact supportedPC119IDs, Engine2/global120, one unchanged trailing-space fallback. Original-vs-oldcloud query metadata/peaks exact despite different parquet byte hashes.",
+  "C59_channel_tests": "4passed; no quality read or scored entry"
 }

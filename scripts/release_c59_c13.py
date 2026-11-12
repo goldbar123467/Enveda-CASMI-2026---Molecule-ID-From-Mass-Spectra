@@ -45,6 +45,10 @@ def verified():
     assert exposure['global_inventory_keys']==231 and exposure['all_reference_raw_identity_overlap']==exposure['all_reference_official_identity_overlap']==0
     assert exposure['global_inventory_sha256']==sha(ROOT/'outputs/local/c13-confirmation-20261110/identity-inventory.parquet')
     assert exposure['reference_witness_sha256']==sha(model/'original-structure-identity-witnesses.parquet')
+    support=read(OUT/'channel-support-freeze.json')
+    assert support['source_sha256']==sha(ROOT/'scripts/audit_c59_core_health.py') and support['query_sha256']==pin['query_sha256']
+    assert support['queries']==120 and support['pubchem_supported']==119 and support['pubchem_unsupported']==1 and support['all_original_queries_retained']
+    for name,pin_value in support['files_sha256'].items():assert sha(ROOT/name)==pin_value
     metadata=read(FOLDER/'kernel-metadata.json');assert metadata['id']==KERNEL and metadata['is_private'] and not metadata['enable_internet'] and metadata['machine_shape']=='NvidiaTeslaT4'
     return pin
 

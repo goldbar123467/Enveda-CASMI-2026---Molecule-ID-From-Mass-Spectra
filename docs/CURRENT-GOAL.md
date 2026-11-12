@@ -43,7 +43,12 @@ calculation, never deleting a consumption marker or changing a recipe/cohort.
 C59 faithful C13 main/fragment adapter notebook is prepared ONLY, NOT PUSHED.
 Old C13v2 repaired PV only; same production adapter recovers 119/120 main masses,
 retaining the original unsupported trailing-space token. Whole231 identity census
-has zero main-reference and prior-used identity overlaps. C60 whole231 P16 mask /
+has zero main-reference and prior-used identity overlaps. Oldv2also had only98
+PubChem query entries. Exact patched chemistry now predeclares119supported PC
+queries, Engine2/global output must retain all120 including one unchanged trailing-
+space fallback. Independent channel audit compares actual dictionary IDs to this
+input-only declaration;4syntheticcoverage tests pass. No query or model changed.
+C60 whole231 P16 mask /
 replay and C61 single joint confirmation are prepared, conditional on C58 passing.
 All120 original C13 queries and absent-truth zeros must remain; no TIMS calibration
 claim follows from this FT/HCD confirmation.
