@@ -1,0 +1,33 @@
+{
+  "checked_utc": "2026-11-12T21:48:21.566586+00:00",
+  "passed": true,
+  "complete_pipeline_binding_sha256": "0ddc4d46d9dbcb2f8804f3970d6763c38528311dcd24dfe4a704a91df2a36518",
+  "final_operations_plan_sha256": "c687b2e8a934dfb421652e7255476216da047b4a9c7590eeef2cbbbca71b9be3",
+  "adversarial_offline_state_machine_tests": 16,
+  "prior_gate_probes": {
+    "qualify": {
+      "blocked_before_API": true,
+      "expected_missing_file": "outputs/local/c76-numerical-portability-20261112/source-results.json",
+      "error_type": "FileNotFoundError"
+    },
+    "submit_cpu_dry": {
+      "blocked_before_API": true,
+      "expected_missing_file": "outputs/local/c76-numerical-portability-20261112/two-new-scoring-trials-r1/submission-qualification.json",
+      "error_type": "FileNotFoundError"
+    },
+    "production_preflight": {
+      "blocked_before_API": true,
+      "expected_missing_file": "outputs/local/c76-numerical-portability-20261112/source-results.json",
+      "error_type": "FileNotFoundError"
+    },
+    "C13_reserved_evaluation": {
+      "blocked_before_API": true,
+      "expected_missing_file": "outputs/local/c76-numerical-portability-20261112/source-results.json",
+      "error_type": "FileNotFoundError"
+    }
+  },
+  "C72_and_C13_consumption_absent": true,
+  "shared_scoring_ledger_absent": true,
+  "actual_Kaggle_constructor_called": false,
+  "scoring_entries": 0
+}

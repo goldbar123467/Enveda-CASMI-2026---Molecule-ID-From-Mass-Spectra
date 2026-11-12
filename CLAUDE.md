@@ -1,3 +1,49 @@
+## CURRENT C76 R1 — confirmation policy and final scoring guards prepared
+
+R1model/core binding remains UNCHANGED:0ddc4d46d9dbcb2f8804f3970d6763c38528311dcd24dfe4a704a91df2a36518.
+NEW final operations plan:final-operations-plan-r1a.json SHA c687b2e8a934dfb421652e7255476216da047b4a9c7590eeef2cbbbca71b9be3.
+It supplements, never relaxes, original source/actualproduction requirements.
+Initial operations plan d37e36d8... preserved; its16old referenced sources are
+byteexact in C76/final-operations-history-amendment-r1a/previous-sources.
+R1a adds complete opaque-token account pagination: actual35entries,0pending,
+0C76markers at21:46UTC; SDK default20row response was incomplete.
+
+New scripts/c76_submission_contract.py,qualify_c76_pair.py,submit_c76_pair.py
+use the SAME existing C42two-entry ledger/lock. At most2accepted trials,
+CPUfirst, actual terminal finite CPUscore before GPU, max1pending, durable
+intent BEFORE API, no retry after ambiguous result, acceptedERROR consumes entry.
+16adversarial offline guard tests passed, including hidden-page markers/pending,
+repeated history pages, lost response, exact reconciliation, duplicate/third entry.
+Do NOT use retired C42qualification/rank1-protection assumptions for this pair.
+
+Use scripts/release_c76_production_r1.py preflight/push-cpu/push-gpu as the
+canonical wrapper. It checks ALLactual mounted R1datasets before delegating to
+unchanged pinned launcher; the old launcher's extra R0dataset check remains.
+
+configs/c76-c13-confirmation-v1.json frozen BEFORE freshC72 predictions/outcomes.
+All120/all120acq,60pos/60neg incl original trailing-space formate retained;
+PC119/Engine2+global120 required. Both heads nonnegative full+EACHpolarity vs
+EACHlegacyP01/P16/physical control; sixcontrols reported; no cohort/recipe rescue.
+Same-formula rank1changes allowed; candidate membership/formula slots preserved.
+Whole231+allprior chemistry/alias quarantine required; no C72window-mask reuse.
+New evaluate_c76_confirmation.py,audit_c76_confirmation.py and inputguard source
+prepared/frozen 5578f77b4114816035f9be209d37ac37ef5297487cc8218c50fdecf558e1872f;6synthetic tests pass.
+Durable global intent precedes FIRSTlabel access; failed intent prevents reread;
+independent ranks, exactFraction gates, chemistry groups, bootstrap/accounting.
+Actual C13stillUNCONSUMED. Dedicated masked core notebooks/replay/sealer and
+independent execution auditor are STILLTOBEIMPLEMENTED. Actual query mapping
+and inference remain forbidden until BOTHsource+actualproduction checks pass;
+then pin all remaining implementation in inference-plan BEFORE C13inference.
+
+4real precondition probes (qualification, drysubmit, production, C13evaluation)
+all stopped at missing prerequisite BEFORE API/labels/consumption/newledger.
+No new GPUjob or scoring entry. Sourcequota lastactual21:37UTC still refreshes
+Nov14 00:00UTC = Nov13 7pmEastern. Legacy source then C76source afterreset;
+collect/audit each, replay+seal, sourcequality+independent audit, actualproduction,
+once-only pairedC13, then qualify+submit CPU/observe/GPU/observe. No repeat
+user approval required. Champion0.480,0/2slots used, old/hourly controllersOFF.
+GoalACTIVE; substantial code/test preparation progressed this turn, not blocked.
+
 ## CURRENT C76 R1 — full400row interface PASSED locally and actual cloudCPU
 
 CURRENT COMPLETE BINDING is C76/complete-pipeline-binding-r1.json SHA

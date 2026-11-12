@@ -1,0 +1,23 @@
+{
+  "frozen_utc": "2026-11-12T21:48:21.571591+00:00",
+  "complete_pipeline_binding_sha256": "0ddc4d46d9dbcb2f8804f3970d6763c38528311dcd24dfe4a704a91df2a36518",
+  "final_operations_plan_sha256": "c687b2e8a934dfb421652e7255476216da047b4a9c7590eeef2cbbbca71b9be3",
+  "files_sha256": {
+    "scripts/c76_confirmation_inputs.py": "8626a69611a017d58f95c4ff1e0a78f3d2d4e968458934d2a1dbcc414a32aa42",
+    "scripts/evaluate_c76_confirmation.py": "ba5354bb17317b8479faf7cd0e504552092a9cb061de82a7354f3ddc62ca8772",
+    "scripts/audit_c76_confirmation.py": "ee211b30a0e5de3916e18da57e7ac3833791dab1d72b00ba5dd5783ffc0f1bcd",
+    "scripts/probe_c76_confirmation_protocol.py": "f65801475e2312bf2010f6918e5b305f54b71f0da26011a7c1d8787a5bf1c716",
+    "configs/c76-c13-confirmation-v1.json": "29eeafcdcf5f95dda3921d8665df7287496ae6f07edaef1a26850483d8fe16f1",
+    "outputs/local/c76-numerical-portability-20261112/final-operations-plan-r1a.json": "c687b2e8a934dfb421652e7255476216da047b4a9c7590eeef2cbbbca71b9be3",
+    "outputs/local/c76-numerical-portability-20261112/confirmation-protocol-probe-r1.log": "61f96a5571594cf4d56f32ef344aec927fd34e40bced42d1bdeb84c10f858b2f",
+    "outputs/local/c76-numerical-portability-20261112/final-operations-precondition-audit-r1a.json": "a6a947741cbe56061ac60556be16471923b583f85ebcb183880beff36b54f5cb"
+  },
+  "synthetic_only_tests_passed": 6,
+  "real_C13_evaluation_blocked_before_labels_and_API": true,
+  "C13_query_mapping_or_outcomes_read": false,
+  "C72_outcomes_read": false,
+  "dedicated_C13_execution_preparation_complete": false,
+  "remaining": "Prepare current-family strict-reference-mask core notebooks, replay/sealer and independent execution audit, only opening query mapping after source+actual production admission. Pin all sources in inference-plan before new C13 inference.",
+  "scoring_entries": 0,
+  "qualified_for_scoring": false
+}
