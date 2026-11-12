@@ -1,0 +1,29 @@
+{
+  "purpose": "Preserve the original complete-parent controls when evaluating the numerical repair and fixed CPU/GPU heads",
+  "timing": "Predeclared after USED-only engineering checks and before any fresh512prediction or quality read",
+  "candidate_family": "One fixed C76 CPU/GPU pair using the unchanged C71 head weights",
+  "original_C72_panel_and_quality_protocol_unchanged": true,
+  "required_legacy_controls": [
+    "Original unrepaired R3 P01 procedure",
+    "Original P16 procedure over the original unrepaired parent",
+    "Original physical-parent procedure over the original unrepaired parent"
+  ],
+  "additional_C76_controls": [
+    "C76 numerical parent before P16",
+    "P16 over the C76 numerical parent",
+    "Physical parent over the C76 numerical parent"
+  ],
+  "fresh_quality_read_preconditions": [
+    "A new complete-pipeline C76 binding pins the numerical adapter, fixed heads, runtime, reference masks, source cohort and all ranking rules",
+    "Both candidate predictions and every control prediction are immutable before the single quality read",
+    "All controls use the same512queries and all2215acquisitions with the same quarantine rules",
+    "Actual Kaggle T4 execution evidence is required for the original deployment procedure; a differently rounded local2070run is disclosed as a local control and cannot silently stand in for exact original-T4 evidence",
+    "The original C72 gain, mode and absent-truth criteria apply against the legacy controls; C76 counterparts are additional controls",
+    "No post-outcome recipe or cohort rescue; no switch to another family using the consumed panel"
+  ],
+  "original_C75_gate_passed": false,
+  "fresh_source_outcomes_read": false,
+  "C13_read": false,
+  "new_scoring_entries_used": 0,
+  "scoring_qualification": false
+}

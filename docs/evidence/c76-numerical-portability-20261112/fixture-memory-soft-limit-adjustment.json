@@ -1,0 +1,22 @@
+{
+  "adjusted_utc": "2026-11-12T18:30:47.598276+00:00",
+  "source_sha256": "fb627870a47766c6114d150c4b69269656f69722992bc5d0aec5e0b7cda091ce",
+  "unit": "enveda-c76-fixture-19960.scope",
+  "verified_control_group": "/user.slice/user-1000.slice/user@1000.service/app.slice/enveda-c76-fixture-19960.scope",
+  "reason": "Measured memory.high throttling and approximately0.86GiBswap while host retains approximately6GiBfree",
+  "original_memory_high_GiB": 8,
+  "new_memory_high_GiB": 8.75,
+  "unchanged_memory_max_GiB": 10,
+  "unchanged_swap_max_GiB": 4,
+  "original_supervisor_intent_sha256": "e167a0b5f0f99088cf80c4a81de087997f3a8cdf6d22532cc1a72ccfe8bff5d6",
+  "host_free_before_GiB": 5.840496063232422,
+  "host_reserve_GiB": 4,
+  "existing_live_guardian_unchanged": true,
+  "task_only": true,
+  "global_settings_changed": false,
+  "scientific_sources_or_models_changed": false,
+  "automatic_restart": false,
+  "quality_read": false,
+  "C13_read": false,
+  "scoring_entries": 0
+}

@@ -1,3 +1,38 @@
+## Live C76 resource update — ICE still running; no qualification yet
+
+Complete C76 USED12 job remains toolsession40251, scope
+enveda-c76-fixture-19960.scope, Windows supervisor19960, Linuxdriver426,
+mainpipeline499 and ICEchild803. ICE input is BYTEIDENTICAL to prior C75successful
+run (all12candidate orders/spectra exact). EarlierTorch2.11ICE2204predictions took
+409.83prediction seconds; current recoveredTorch2.10ICE is substantiallyslower.
+Native and nonblockingPython profiler reads of ONLY ownedchild803 show CUDAwait
+and changing graphforwardframes (_seg/AvgPooling -> FragGNN.forward339). No
+model/source edits or other-app termination. No completed result claimed.
+
+Measured memory.high throttling and~0.86GiBswap prompted an explicit TASK-ONLY
+soft-limit change8->8.75GiB. Hard10GiB/swap4GiB/hostfloor4GiB and liveguardian
+unchanged; no OOM observed. Authoritative override receipt:
+C76/fixture-port/memory-soft-limit-adjustment.json. Original supervisorstatus
+still repeats historicalhigh8; read the override and actualcgroup. Base/newML
+envs unchanged. Isolated diagnosticsvenv holds onlypy-spy0.4.3; systemensurepip
+was absent, so existingpip was run with --python explicitly targeting diagnostic
+prefix (verified). No pip installs into the MLenvs, no security-policy changes.
+
+After the complete fixture exits successfully, run the prepared realCPU N1path
+exercise using scripts/probe_c76_n1_path.py run in owned enveda-c76-n1-path scope
+(suggest cap3GiB,2threads,startreserve8). Synthetic proxy/adduct/CE input frozen
+already;4candidates,4spectra,2mergedCE,expected32finite outputs. It may NOT overlap
+the completefixture per its predeclared guard. Then run new
+scripts/audit_c76_fixture_run.py under recoveredWSLruntime. Auditor is compiled,
+NOT executed yet. Full core/acquisition/reference/GLadapter/identity checks and
+bothGLpath evidence required; no oldC75reproduction acceptance or queryquality.
+
+configs/c76-source-controls-addendum-v1.json strengthens future source comparison:
+retain original unrepairedR3P01/P16/physical controls plus C76counterparts, freeze
+all predictions before the single originalC72qualityread; original actualT4
+deployment evidence cannot silently be replaced by different local2070rounding.
+No fresh512predictions, C72/C13consumption, or scoring requests made. GoalACTIVE.
+
 ## Current C76 checkpoint — complete USED12 replay RUNNING; 0/2 scored
 
 Goal ACTIVE. Champion0.480 preserved. C72 fresh512/all2215acquisitions and C13
