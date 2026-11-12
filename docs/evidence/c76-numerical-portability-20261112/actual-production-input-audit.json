@@ -1,0 +1,22 @@
+{
+  "completed_utc": "2026-11-12T20:04:59.093201+00:00",
+  "source_sha256": "d72779bc695d6bfc029f8d82a6448051043825fe68b4b15eba110cc6a06232c0",
+  "queries": 400,
+  "acquisitions": 1213,
+  "actual_query_modes": {
+    "positive": 276,
+    "mixed": 97,
+    "negative": 27
+  },
+  "official_API_download_verified": true,
+  "prior_unlabeled_test_bytes_exact": true,
+  "unique_original_spectra_and_sample_ids": true,
+  "all_original_acquisitions_retained": true,
+  "no_query_structures_in_test": true,
+  "download_complete_sha256": "62f95a3cddb2bf1e5378e2ab7bcb698c91966fa7fecc9b29335ce4f96ce74375",
+  "potential_use": "Bounded original production preview only; cannot replace actual T4 source/production qualification",
+  "no_inference_yet": true,
+  "quality_read": false,
+  "C13_read": false,
+  "scoring_entries": 0
+}

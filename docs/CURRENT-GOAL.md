@@ -1,3 +1,22 @@
+## Latest production input readiness — no GPU inference running
+
+2026-11-12: actual Kaggle API test.parquet and sample_submission.csv fetched into
+C76/production-inputs. Independent WSL audit PASSED:400queries/all1213original
+acquisitions;276positive/97mixed/27negative; exact400sampleIDs; no teststructure
+labels; testbytes EXACT with previously audited C37 unlabeled public test.
+Source scripts/prepare_c76_production_inputs.py and compact public receipt frozen.
+This is ready for a bounded LOCAL production preview, not a source-quality check.
+No production preview has launched yet. Namespace pointers are still C75fixture
+input and C76fixture-resource working. Preserve all old data before new own links.
+Next local port must explicitly audit actual2070allocation, singleGPUrecovery1->0,
+local ICEbs8/cache policy, production input/reference configuration, same full
+C76 scientific pipeline/P16/sharedheads and real inactive-row fallback. Required
+actualT4source and production evidence remain unchanged; cannot claim localT4.
+
+C72/C13UNCONSUMED; scoringledgerABSENT;0/2scored. GoalACTIVE. Main completepair/
+source/control/quality work committed and pushed as64d8a43. No paidresources,
+no old/hourly campaign restart. Historical checkpoints below superseded.
+
 ## Current C76 checkpoint — complete pair frozen; cross-host deployment PASSED
 
 Complete binding SHA04b47cac8fe5476613834d4214d53cb51b7cc7a81162bf9516d2119acf7a03b9
