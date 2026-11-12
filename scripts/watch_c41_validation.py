@@ -25,6 +25,7 @@ def sha(path):return hashlib.sha256(Path(path).read_bytes()).hexdigest()
 def authorized():
     auth=json.loads((ROOT/'.local/c38-active-goal.json').read_text())
     assert auth['active'] and auth['submissions_approved']==2 and not auth['hourly_automation']
+    assert not auth.get('scientific_gate_hold'),'C45 complete-parent repair holds the retired automatic evaluation path'
 
 
 def run(args,log):

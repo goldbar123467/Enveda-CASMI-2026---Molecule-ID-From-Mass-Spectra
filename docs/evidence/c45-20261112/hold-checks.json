@@ -1,0 +1,26 @@
+{
+  "checked_utc": "2026-11-12T04:29:02.234423+00:00",
+  "checks": [
+    {
+      "command": [
+        ".venv-gpu/Scripts/python.exe",
+        "scripts/confirm_c43_pair.py",
+        "prepare"
+      ],
+      "blocked_before_labels_or_account_call": true,
+      "returncode": 1
+    },
+    {
+      "command": [
+        ".venv/Scripts/python.exe",
+        "scripts/submit_c42_pair.py",
+        "cpu",
+        "--dry-run"
+      ],
+      "blocked_before_labels_or_account_call": true,
+      "returncode": 1
+    }
+  ],
+  "C13_consumption_exists": false,
+  "submission_ledger_exists": false
+}

@@ -1,0 +1,27 @@
+{
+  "found_utc": "2026-11-12T04:20:19.755739+00:00",
+  "kind": "complete_parent_validation_mismatch_before_outcomes",
+  "production_parent_sha256": "d6b9c9625ad8fb7d503341c6fd702bd909101d719ca55e400145fb96f2b2af6a",
+  "validation_notebook_sha256": "9df6d8fd1ca0e8db13b006349a9021f4a8f173b9912668756a8c3639cdfff5a9",
+  "production_stage_cell": 27,
+  "production_requires_P16_measured_reference_overlay": true,
+  "C41_exports_pre_overlay_P01": true,
+  "automatic_observers_stopped": [
+    21248,
+    27720
+  ],
+  "cloud_base_inference_cancelled": false,
+  "C39_quality_read": false,
+  "C13_consumed": false,
+  "accepted_new_entries": 0,
+  "head_models_or_production_candidates_changed": false,
+  "required_repair": "Reproduce the exact frozen P16 overlay, audit its reference exclusions and complete-candidate changes, then score the unchanged frozen heads. Evaluate both the incremental head and complete candidate before any reserved confirmation.",
+  "frozen_module_sha256": {
+    "apply_external_reference.py": "a65d0b63ba20b64f8efc49424a2513cc26f492b4148dc66d68bcc0a5ce62beca",
+    "c09e_features.py": "a97ad9b3ab3711517864d56e497e1672cb29bb05683c72b52db9f9b0a17b1455",
+    "c09_spectrum_audit.py": "a4c42efdb41983406d71458eeb093af462bd1432ec774c6628d91861f1a042ac",
+    "external_reference_overlay.py": "826a689fdcecc05436cd201219ac066ef2ebf557df22200ac807c6bb6c0681e5",
+    "reference_model_audit.py": "32f0c2eafa298be9095c86b2c20073f0e552ad3cabf7652b8d0dcc06dae4d5a8",
+    "reference_smoke_fixtures.py": "1cedf812a0fb55f22dc0e922664ab5d1bbe90bcf995f7c4f5bd7c847862bd017"
+  }
+}

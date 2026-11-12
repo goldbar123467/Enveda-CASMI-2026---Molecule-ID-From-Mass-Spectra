@@ -1,0 +1,16 @@
+{
+  "started_utc": "2026-11-12T04:20:21.052264+00:00",
+  "pid": 29032,
+  "deadline_utc": "2026-11-12T12:20:21.050263+00:00",
+  "existing_kernel": "clarkkitchen/casmi26-c41r3-full-masked-validation",
+  "source_seal": {
+    "scripts\\watch_c45_base_only.py": "e7225ba7a86e2f8d50bb47171a4f61b9f02d0e56b9c6cb3528d89406ed95bda2",
+    "scripts\\collect_c41_validation.py": "7b27fb298f6e5605f935fda96797d1858e19cf8fa9bd5452d1e8c3df226e0222",
+    "scripts\\audit_c39_acquisitions.py": "6aea814f832eaffc17a6e224691f231db4a77472830d74a127680a1332719dbf",
+    "kaggle\\forks\\c41r3-full-masked-validation\\validation-pin.json": "b7a343755902b45afaa83bff50427d7029105f8e51dcd15b353d8b9a8b180d70"
+  },
+  "new_cloud_run": false,
+  "quality_evaluation": false,
+  "C13_read": false,
+  "submission": false
+}

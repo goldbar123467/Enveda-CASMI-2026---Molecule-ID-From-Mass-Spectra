@@ -45,6 +45,7 @@ def submit(trial,dry=False):
     lock=(ROOT/'.local/c42-submission.lock').open('a+b');lock.write(b'0');lock.flush();lock.seek(0);msvcrt.locking(lock.fileno(),msvcrt.LK_NBLCK,1)
     active_path=ROOT/'.local/c38-active-goal.json';active=json.loads(active_path.read_text())
     assert active['active'] and active['submissions_approved']==2 and active['submissions_used']<=2
+    assert not active.get('scientific_gate_hold'),'Complete-parent scientific qualification is on hold for C45 repair'
     authorization=ROOT/'outputs/local/c38-source-support-20261111/authorization.json'
     qpath=OUT/'submission-qualification.json';q=json.loads(qpath.read_text())
     assert q['decision']=='execution_qualified_fixed_exploratory_pair' and q['maximum_new_accepted_submissions']==2 and q['maximum_pending']==1

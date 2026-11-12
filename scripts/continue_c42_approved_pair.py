@@ -65,6 +65,7 @@ def continue_pair():
     assert not launch.exists(),'Existing continuation must be reconciled, never blindly restarted'
     active=read(ROOT/'.local/c38-active-goal.json')
     assert active['active'] and active['submissions_approved']==2 and active['submissions_used']==0
+    assert not active.get('scientific_gate_hold'),'C45 complete-parent repair holds this retired continuation'
     assert not active['hourly_automation'] and not active['new_paid_compute_authorized']
     policy=read(ROOT/'configs/c43-paired-confirmation-20261111.json')
     assert policy['automatic_confirmation_from_background_worker'] and policy['maximum_new_accepted_submissions']==2

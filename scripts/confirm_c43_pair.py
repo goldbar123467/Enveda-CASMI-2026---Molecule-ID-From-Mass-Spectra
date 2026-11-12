@@ -31,7 +31,9 @@ def stamp():return datetime.now(timezone.utc).isoformat()
 
 
 def authorize():
-    assert json.loads((ROOT/'.local/c38-active-goal.json').read_text())['active']
+    authorization=json.loads((ROOT/'.local/c38-active-goal.json').read_text())
+    assert authorization['active']
+    assert not authorization.get('scientific_gate_hold'),'C45 complete-parent repair must finish before reserved confirmation'
 
 
 def prior():

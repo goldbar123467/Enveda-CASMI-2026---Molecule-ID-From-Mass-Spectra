@@ -1,4 +1,62 @@
-# Current project goal — active C38/C42 cycle
+# Current project goal — active C45 complete-parent repair
+
+The native goal remains ACTIVE: qualify the two new frozen CPU/GPU candidates
+and obtain at most two actual scored results, sequentially. Both approvals are
+unused. Preserve 0.480, prior artifacts and C13 freshness. No repeat approval is
+needed. Local RTX 2070 and free Kaggle compute remain authorized; no paid compute
+or old/hourly campaign is authorized.
+
+At 12 November 04:15 UTC, a real validation mismatch was found: production P20/P21
+include P16's required measured-reference overlay, but C41 exports pre-overlay
+P01. The overlay can promote rank one and insert candidates; treating P01 and
+P16 as interchangeable invalidates complete-candidate qualification.
+
+Both old automatic observers (actual PIDs21248/27720) were stopped before any
+C39 quality result, C13 consumption or new scoring entry existed. They are NOT
+live. `.local/c38-active-goal.json` now contains `scientific_gate_hold`. The retired
+automatic evaluation, confirmation and submission commands explicitly reject
+this hold. Do not clear it or restart those paths merely to get a submission.
+
+The SAME cloud base inference `clarkkitchen/casmi26-c41r3-full-masked-validation`,
+version1, kernel144498742 remains RUNNING. It was not cancelled or requeued and
+its base predictions remain useful. New hidden observer
+`scripts/watch_c45_base_only.py`, actual PID29032, observes/collects/audits this
+exact job only. Its deadline is12:20UTC; timeout is not job termination. Logs and
+state are under `outputs/local/c45-complete-parent-validation-20261112/`.
+It cannot read quality labels, confirm C13, train or submit.
+
+The missing stage's EXACT code, policy and contract were extracted from the
+already frozen P16 notebook into that folder's `frozen-p16-code/`. The original
+production notebooks, head bundle and models remain byte-identical. Both actual
+production engineering audits still pass; these are not scientific admission.
+The same underlying core can be reused without a new GPU inference run.
+
+The prospective correction is `configs/c45-complete-parent-validation-20261112.json`.
+Before quality matching, replay the original overlay with audited validation-only
+reference exclusions, preserve peak/metadata order, verify original-source hashes,
+and reproduce the existing real30 changed-path fixture. Full C39 artifacts need
+`frozen_candidate_evidence.parquet` and identity feature tables in addition to the
+original collector's core exports; the real12 cloud smoke contains these files.
+
+Score the unchanged heads on P16. Evaluate P01, P16, both full candidates and the
+unchanged P14 control. Require both complete candidates versus P01 AND both
+incremental heads versus P16 to pass the original directional/source/mode gates.
+Head rank1/membership/formula invariants are relative to P16; full-composite
+changes must equal the pre-frozen overlay plus head and include honest
+recovered/displaced-answer accounting. Preserve all352queries/1292acquisitions,
+all absent-truth zeros, actual mixed modes and chemistry-grouped uncertainty.
+
+Only after this repair and all gates pass may a source-bound single paired C13
+confirmation run. C13 needs the same complete parent and an identity/input-alias
+mask on the additional reference library before reserved outcomes. The C45 policy
+defines full-candidate and incremental checks. No production recipe, model,
+weight, cohort or source threshold was changed using an outcome.
+
+The earlier C42/C43 protocols and receipts remain preserved historical artifacts;
+they are superseded for promotion by this necessary complete-parent correction.
+The historical instructions below must not be executed as current next steps.
+
+## Historical record before the C45 hold
 
 Complete the two newly approved scoring trials, provisionally one CPU-fitted
 ridge alignment and one GPU-fitted nonlinear alignment. Both use frozen GPU

@@ -1,5 +1,16 @@
 # Enveda CASMI 2026 — working rules
 
+## ACTIVE C45 repair — same two approved new submissions, no outcomes consumed
+
+Read docs/CURRENT-GOAL.md first. Production P20/P21 include P16's measured-reference
+overlay; C41's baseline omitted that outer stage. The old automatic evaluation,
+confirmation and submission observers are stopped and held. The same cloud base
+inference is still useful and running; only the C45 base-only collector is live.
+Repair and audit the complete parent, compare full and incremental candidates,
+then qualify before any C13 outcome or scored entry. Models, recipes and cohorts
+remain frozen; two approvals remain unused. Do not restart historical C42/C43
+paths or clear scientific_gate_hold without the completed C45 evidence.
+
 ## ACTIVE C38 goal — new CPU/GPU work and2new submissions approved
 
 Latest user instruction: "Do the next steps as a goal until new gpu and cpu
