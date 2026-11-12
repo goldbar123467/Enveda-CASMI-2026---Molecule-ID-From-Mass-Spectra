@@ -1,3 +1,51 @@
+## CURRENT C76 R1 — COMPLETE reserved workflow code prepared; actualT4 required
+
+New execution code plan SHA a6213539ee2205e77e74ac60958b5bef1a96ad820d0f31e95e0e8d8793ac1826.
+R1core/models0ddc4d46..., operationsR1a c687b2e8..., C13policy, mask/notebook
+code38f84bb8... and evaluator/auditor5578f77b... all UNCHANGED. New runbook:
+docs/C76-RESUME.md gives ordered Windows SDK / matched WSL ML commands through
+both actual terminal scoring results. No repeat user approval needed.
+
+Implemented c76_confirmation_inference.py, release_c76_confirmation.py,
+collect_c76_confirmation.py, complete_c76_confirmation.py and final
+independent audit_c76_confirmation_execution.py. Actual inference-plan pins
+ALLprepared inputs/masks/notebooks/implementation/unchanged models BEFORE
+private publication/core runs, only after BOTHsource+actualproduction checks.
+Collector verifies exact actualsource/image/dualT4s,all120originalacquisitions,
+exact119PC/120Engine2 IDs, scalar+fragment formate source, reference guards,
+NN/GL/ICEhealth and original trailing-space token/unknownCE. Legacy first.
+
+P16+physical parents replayed for both controls, unchanged CPU/GPUheads scored
+on newparent, all6controls+2heads frozen, independent P16/physical/features/
+score/formula-slot audit, then jointpredictionseal. Global C13consumption
+still ONLY in separate once-only evaluator AFTER allthese stages pass.
+
+8new tests PASSED. Fake private API tests enforce private uploads, reject
+extraneous labels, durable intents/lost-response no-retry and legacy-first.
+Synthetic collector cases reject lost/changed acquisitions/tokens, wrongPCIDs,
+unhealthy NN/GL and wronghardware. BOTH REAL UNCHANGED model NPZs independently
+checked. Functional120SYNTHETICquery test executed original P16runtime twice,
+both realhead models, finalindependentaudit and jointseal. That integration
+case used no externalpromotion; same-formula leader/missing-group fallback
+and valid/inconsistent/unknown mass promotion branches separately tested.
+ALLaccount calls and core receipts in tests FAKE; test stdout's acceptance
+messages are NOTactualKagglejobs. No test receipts promoted outside tempfile.
+First fullprobe caught missing CLOUDSimport beforeP16; originalbadsource/log
+preserved in C76/confirmation-execution-attempt01; fixedbefore8/8pass.
+
+14REAL execution entrypoints held at missing C72source-results BEFORE actual
+C13query/label open, API, ML import, intent or artifact creation. Actual C13
+inference-plan/release/core collections/parents/predictions ABSENT; C13still
+UNCONSUMED. No actual C13data package or core notebooks built. No GPUwork/job
+started. Remaining next required work is ACTUALsource+production qualification,
+then execute the prepared C13workflow and twoapproved scoring trials.
+
+Sourcequota actual22:41UTC still refreshNov14 00:00UTC=Nov13 7pmEastern.
+Original30hweekly rejection version0hasNOjob; newsourcejobsEMPTY. No blind
+requeue or local2070 substitute for requiredT4evidence. OldC75gate staysFAILED.
+C72/C13UNCONSUMED, sharedC42ledgerABSENT,0/2newscoring, champion0.480 preserved.
+Old/hourlycontrollersOFF. GoalACTIVE; this turn made concrete code/test progress.
+
 ## CURRENT C76 R1 — strict reserved mask/notebook preparation code PASSED
 
 New confirmation-inference-preparation-plan-r1.json SHA 38f84bb83dd4479c1b93478cae80bdf76bafcb93a746a640bd7a714cf0983ce6.

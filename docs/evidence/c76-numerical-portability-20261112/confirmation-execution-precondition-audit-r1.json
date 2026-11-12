@@ -1,0 +1,70 @@
+{
+  "checked_utc": "2026-11-12T22:41:07.678449+00:00",
+  "passed": true,
+  "complete_pipeline_binding_sha256": "0ddc4d46d9dbcb2f8804f3970d6763c38528311dcd24dfe4a704a91df2a36518",
+  "execution_code_plan_sha256": "a6213539ee2205e77e74ac60958b5bef1a96ad820d0f31e95e0e8d8793ac1826",
+  "entrypoints": {
+    "inference_plan": {
+      "blocked_before_reserved_mapping_labels_API_or_ML": true,
+      "missing": "source-results.json"
+    },
+    "inference_verify": {
+      "blocked_before_reserved_mapping_labels_API_or_ML": true,
+      "missing": "source-results.json"
+    },
+    "collected_core": {
+      "blocked_before_reserved_mapping_labels_API_or_ML": true,
+      "missing": "source-results.json"
+    },
+    "private_publish": {
+      "blocked_before_reserved_mapping_labels_API_or_ML": true,
+      "missing": "source-results.json"
+    },
+    "push_legacy": {
+      "blocked_before_reserved_mapping_labels_API_or_ML": true,
+      "missing": "source-results.json"
+    },
+    "push_c76": {
+      "blocked_before_reserved_mapping_labels_API_or_ML": true,
+      "missing": "source-results.json"
+    },
+    "private_status": {
+      "blocked_before_reserved_mapping_labels_API_or_ML": true,
+      "missing": "source-results.json"
+    },
+    "fetch_core": {
+      "blocked_before_reserved_mapping_labels_API_or_ML": true,
+      "missing": "source-results.json"
+    },
+    "audit_core": {
+      "blocked_before_reserved_mapping_labels_API_or_ML": true,
+      "missing": "source-results.json"
+    },
+    "replay_parent": {
+      "blocked_before_reserved_mapping_labels_API_or_ML": true,
+      "missing": "source-results.json"
+    },
+    "both_heads": {
+      "blocked_before_reserved_mapping_labels_API_or_ML": true,
+      "missing": "source-results.json"
+    },
+    "artifact_freeze": {
+      "blocked_before_reserved_mapping_labels_API_or_ML": true,
+      "missing": "source-results.json"
+    },
+    "independent_execution_audit": {
+      "blocked_before_reserved_mapping_labels_API_or_ML": true,
+      "missing": "source-results.json"
+    },
+    "joint_prediction_seal": {
+      "blocked_before_reserved_mapping_labels_API_or_ML": true,
+      "missing": "source-results.json"
+    }
+  },
+  "actual_reserved_query_or_label_open_attempts": 0,
+  "Kaggle_constructor_called": false,
+  "actual_reserved_runs_or_predictions_created": false,
+  "C72_and_C13_consumption_absent": true,
+  "shared_scoring_ledger_absent": true,
+  "scoring_entries": 0
+}
