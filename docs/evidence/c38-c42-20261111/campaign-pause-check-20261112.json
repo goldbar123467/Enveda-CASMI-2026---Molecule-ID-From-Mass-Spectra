@@ -1,0 +1,22 @@
+{
+  "checked_utc": "2026-11-12T02:45:25.488262+00:00",
+  "automations": [
+    {
+      "id": "casmi-training-resource-monitor",
+      "name": "CASMI training resource monitor",
+      "status": "PAUSED",
+      "source_sha256": "213c5a4320e3c4c7a79da557266a9ebb9cfa01e65a01937509dcb948c8cd3f90"
+    },
+    {
+      "id": "casmi-silver-campaign-hourly-for-24-hours",
+      "name": "CASMI silver campaign hourly for 24 hours",
+      "status": "PAUSED",
+      "source_sha256": "de9f40d17bc3599501515c9fb121d5994ba17b1d3a6cfbcf5c8bb8d56fa743f7"
+    }
+  ],
+  "read_only": true,
+  "app_views_opened": true,
+  "new_recurring_automation_created": false,
+  "old_campaigns_resumed": false,
+  "current_exact_job_continuation_separate": true
+}

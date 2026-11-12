@@ -14,6 +14,13 @@ The native goal remains ACTIVE. Current authorization is
 `.local/compute-paused.json` so historical workers stay inactive. Current controlled
 workers use the explicit new authorization. Do not restart old campaigns.
 
+Both legacy app automations were checked read-only again on 12 November at
+02:45 UTC: `casmi-training-resource-monitor` and
+`casmi-silver-campaign-hourly-for-24-hours` are PAUSED. Their app views were
+opened and local status/source hashes recorded in
+`docs/evidence/c38-c42-20261111/campaign-pause-check-20261112.json`.
+No recurring automation was created or resumed for this goal.
+
 ## Live work, verified 12 November 2026 01:58 UTC
 
 - `clarkkitchen/casmi26-c41r3-full-masked-validation`, version1, kernel144498742:
