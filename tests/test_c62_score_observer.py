@@ -28,7 +28,7 @@ class ScoreObserverTests(unittest.TestCase):
         with (self.root/'runs.csv').open('w',newline='') as stream:
             writer=csv.DictWriter(stream,fieldnames=self.run_fields);writer.writeheader()
             writer.writerow(dict(platform='kaggle-submission',ref='101'))
-        self.api_calls=0;self.release_calls=[]
+        self.api_calls=0;self.release_calls=[];self.quota_states=[]
 
     def save(self,path,value):path.write_text(json.dumps(value),encoding='utf8')
 
@@ -50,7 +50,8 @@ class ScoreObserverTests(unittest.TestCase):
             state=states.pop(0)
             if isinstance(state,Exception):raise state
             return state
-        api=SimpleNamespace(authenticate=lambda:None,competition_submissions=history)
+        api=SimpleNamespace(authenticate=lambda:None,competition_submissions=history,
+            competition_get_submission_limits=lambda *_:SimpleNamespace(num_allowed_now=self.quota_states.pop(0) if self.quota_states else 5))
         with contextlib.ExitStack() as stack:
             for name,value in [('ROOT',self.root),('OUT',self.out),('LEDGER',self.ledger),('__file__',str(self.source))]:
                 stack.enter_context(patch.object(observer,name,value))
@@ -92,6 +93,13 @@ class ScoreObserverTests(unittest.TestCase):
     def test_other_pending_entry_defers_second_release(self):
         self.run_monitor([[self.row(101,'COMPLETE','.481'),self.row(999,'PENDING')],
             [self.row(101,'COMPLETE','.481'),self.row(999,'COMPLETE','.1')],
+            [self.row(101,'COMPLETE','.481'),self.row(102,'COMPLETE','.482')]])
+        self.assertEqual(self.release_calls,['gpu']);self.assertEqual(self.api_calls,3)
+
+    def test_live_allowance_exhausted_defers_second_until_platform_allows(self):
+        self.quota_states=[0,1]
+        self.run_monitor([[self.row(101,'COMPLETE','.481')],
+            [self.row(101,'COMPLETE','.481')],
             [self.row(101,'COMPLETE','.481'),self.row(102,'COMPLETE','.482')]])
         self.assertEqual(self.release_calls,['gpu']);self.assertEqual(self.api_calls,3)
 

@@ -1,0 +1,13 @@
+{
+  "checked_utc": "2026-11-12T09:26:09.448741+00:00",
+  "competition": "https://www.kaggle.com/competitions/enveda-CASMI26-molecule-id-mass-spectra",
+  "deadline": "2026-12-14T23:59:00.000Z",
+  "code_submissions_only": true,
+  "max_daily_submissions": 5,
+  "actual_submission_allowance": {
+    "numTotal": 35,
+    "numAllowedNow": 5
+  },
+  "new_approved_entries_used": 0,
+  "no_actual_quota_blocker": true
+}

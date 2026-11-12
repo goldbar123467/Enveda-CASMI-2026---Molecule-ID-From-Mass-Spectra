@@ -97,8 +97,8 @@ def observe_accepted_pair():
         if cpu.get('success') and gpu is None:
             pending=[r['reference'] for r in rows if r['status'] not in TERMINAL]
             if pending:status('first_actual_score_observed_waiting_other_pending_entry',CPU=cpu['public_score'],pending=pending)
-            elif sum(r.date.date()==datetime.now(timezone.utc).date() for r in raw)>=5:
-                status('first_actual_score_observed_waiting_daily_quota',CPU=cpu['public_score'])
+            elif api.competition_get_submission_limits(COMP).num_allowed_now<1:
+                status('first_actual_score_observed_waiting_actual_quota',CPU=cpu['public_score'])
             else:
                 status('first_actual_score_observed_releasing_frozen_GPU',CPU=cpu['public_score'],CPU_reference=cpu['reference'])
                 submit('gpu');ledger=json.loads(LEDGER.read_text());assert len(ledger['submissions'])==2

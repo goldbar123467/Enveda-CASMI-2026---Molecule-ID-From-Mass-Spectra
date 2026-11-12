@@ -41,7 +41,7 @@ All120 original C13 queries and absent-truth zeros must remain; no TIMS calibrat
 claim follows from this FT/HCD confirmation.
 
 C62 qualification / shared cap2 ledger / CPU-then-actual-score-then-GPU observer
-are prepared, NOT RELEASED. Ten offline tests cover numeric-score sequencing,
+are prepared, NOT RELEASED. Twelve offline C62tests cover numeric-score sequencing and actual platform quota,
 network/score failures, other pending entries, missing/tampered qualification,
 shared ledger cap, exact durable-intent recovery and retired-controller rejection.
 C62 may activate only its exact evidence-bound qualification; retired C42/C43

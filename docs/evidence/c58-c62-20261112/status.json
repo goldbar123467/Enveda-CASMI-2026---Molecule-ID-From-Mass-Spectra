@@ -8,7 +8,7 @@
   "C59_pushed": false,
   "scoring_entries": 0,
   "goal_active": true,
-  "tests": "C62 offline10passed",
+  "tests": "C62offline12passed, C61synthetic exposure1passed",
   "files": {
     "P30-independent-production-audit.json": "9e453c49ee4a880aebc56864d3455b4aec72d43a398ff2961409c5d44c81d15c",
     "P31-independent-production-audit.json": "47c48f22e3567f8f64fea449e4260933d927f16f306597920d9c9afb8313cf5c",
@@ -35,5 +35,6 @@
   },
   "C59_base_observer": "prepared_only_not_started",
   "confirmation_preflight": "Synthetic exposure report test passed; import corrected before freeze/consumption; reserved labels never read",
-  "undefined_name_check": "All18prepared/currentworkflow scripts pass pyflakes3.4.0 undefined-name checks"
+  "undefined_name_check": "All18prepared/currentworkflow scripts pass pyflakes3.4.0 undefined-name checks",
+  "live_quota_guard": "Authoritative num_allowed_now checked before each entry; no UTC-date inference"
 }

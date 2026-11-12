@@ -103,7 +103,8 @@ def submit_locked(trial,dry):
         assert actual[0]['success'] and actual[0]['public_score'] is not None,'Observe the first actual terminal score before the second release'
         first[0].update(actual[0],checked_utc=stamp())
     else:assert not ledger['submissions']
-    assert sum(x.date.date()==datetime.now(timezone.utc).date() for x in raw)<5,'Conservative five-entry UTC daily account cap'
+    limits=api.competition_get_submission_limits(COMP)
+    assert limits.num_allowed_now>=1,'Actual Kaggle submission allowance exhausted; no release'
     state=json.loads(str(api.kernels_status(e['kernel'])));assert state['status']=='COMPLETE',state
     with api.build_kaggle_client() as client:
         request=ApiGetKernelRequest();request.user_name=e['kernel'].split('/')[0];request.kernel_slug=e['kernel'].split('/')[1]

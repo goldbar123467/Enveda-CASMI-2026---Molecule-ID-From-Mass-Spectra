@@ -26,7 +26,8 @@ class SubmissionGuardTests(unittest.TestCase):
         self.active=dict(active=True,submissions_approved=2,submissions_used=0,submission_controller='C62',
             current_pair_qualification_sha256=self.qsha,scientific_gate_hold='Retired controllers remain held')
         self.save(self.root/'.local/c38-active-goal.json',self.active)
-        self.api=SimpleNamespace(authenticate=lambda:None,competition_submissions=lambda *_:self.rows)
+        self.api=SimpleNamespace(authenticate=lambda:None,competition_submissions=lambda *_:self.rows,
+            competition_get_submission_limits=lambda *_:SimpleNamespace(num_allowed_now=5))
         self.rows=[];self.state=dict(controller='C62',maximum_new_accepted_submissions=2,submissions=[],intents=[])
         self.save(self.ledger,self.state)
 
@@ -65,6 +66,11 @@ class SubmissionGuardTests(unittest.TestCase):
     def test_retired_controller_ledger_cannot_be_reused(self):
         self.state['controller']='C42';self.save(self.ledger,self.state)
         with self.assertRaisesRegex(AssertionError,'Shared ledger belongs to another pair'):self.run_guard()
+
+    def test_no_actual_platform_allowance_blocks_release(self):
+        # Quota is checked before remote execution preflight or a submit call.
+        self.api.competition_get_submission_limits=lambda *_:SimpleNamespace(num_allowed_now=0)
+        with self.assertRaisesRegex(AssertionError,'Actual Kaggle submission allowance exhausted'):self.run_guard()
 
 
 if __name__=='__main__':unittest.main()
