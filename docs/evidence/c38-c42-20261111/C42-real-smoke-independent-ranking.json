@@ -1,0 +1,29 @@
+{
+  "completed_utc": "2026-11-12T00:56:58.541573+00:00",
+  "source_sha256": "a33b46992cf253fb77ee7b0ee61730aed518db9e7bc27e1d3d74d034787a0618",
+  "score_receipt_sha256": "53e2e699add69eb4904b30b46e051816b20f42570485104893c47bec55523575",
+  "parent_sha256": "618758d48bafb4c3569388354ad2d58a0a358507cfec2867ea3eafe79c1f83ab",
+  "trials": {
+    "cpu": {
+      "queries": 12,
+      "changed_lists": 8,
+      "unsupported_query_fallbacks": 4,
+      "independent_RRF_exact": true,
+      "rank1_changes": 0,
+      "candidate_membership_changes": 0,
+      "formula_slot_changes": 0,
+      "official_identity_duplicates": 0
+    },
+    "gpu": {
+      "queries": 12,
+      "changed_lists": 8,
+      "unsupported_query_fallbacks": 4,
+      "independent_RRF_exact": true,
+      "rank1_changes": 0,
+      "candidate_membership_changes": 0,
+      "formula_slot_changes": 0,
+      "official_identity_duplicates": 0
+    }
+  },
+  "quality_labels_read": false
+}

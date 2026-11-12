@@ -1,0 +1,11 @@
+{
+  "reference_rows": 2540359,
+  "excluded_reference_rows": 409162,
+  "window_calls": 37,
+  "representative_calls": 0,
+  "forbidden_rows_retained": 0,
+  "sid_mask_sha256": "21ac8baa8e160a5f5d18a2db5abdc40be91e6b329b82ebeee1706174da02c9cc",
+  "engine_representative_builds": 1,
+  "engine_representatives_removed": 59583,
+  "engine_representatives_retained": 386266
+}

@@ -75,3 +75,5 @@ Primary provenance: [GNPS documentation](https://ccms-ucsd.github.io/GNPSDocumen
 [MoLFormer](https://huggingface.co/ibm-research/MoLFormer-XL-both-10pct).
 
 Both production sources (P20 CPU and P21 GPU) are frozen before quality. They preserve the P16 parent except the formate source copy and append one required head stage. Source-boundary and synthetic missing-bundle cleanup checks pass. They remain local and unqualified; no production cloud run or scoring entry has been released.
+
+The corrected C41R3 smoke is now COMPLETE and independently collected: actual dual T4,409162main measured-reference rows excluded,59583Engine-owned analog representatives removed,408950Engine2rows excluded, zero forbidden rows, exact P01 replay, and all37original acquisitions preserved. The identical full352 scientific payload is RUNNING on Kaggle. Both new heads also execute on its real12-query parent:8changed lists each and4unsupported exact fallbacks, with independent RRF reconstruction exact. No candidate-quality metrics or C13 outcomes were opened. The active goal continues; neither approved scoring entry has been released.

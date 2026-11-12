@@ -1,0 +1,7 @@
+{
+  "queries": 12,
+  "acquisitions": 37,
+  "all_original_acquisitions_retained": true,
+  "precursors_adducts_modes_and_peak_arrays_exact": true,
+  "quality_metrics_read": false
+}
