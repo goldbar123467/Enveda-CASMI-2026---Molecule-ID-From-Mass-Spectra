@@ -48,6 +48,20 @@ API/process handles before treating a wait as live. Timeout is not termination;
 never requeue merely because observation expired. Never duplicate a durable push
 or submission intent; reconcile its exact handle first.
 
+The source-sealed `scripts/continue_c42_approved_pair.py --release-approved-pair`
+coordinator is now live as actual PID21248 (started 02:10 UTC, bounded to 24 hours).
+It observes the same full job and existing validation observer, then independently
+audits ranking and exact quality. Only if BOTH recipes pass those original gates
+and BOTH production audits pass can it execute the one paired C43 confirmation,
+qualify the unchanged pair, submit CPU, observe its actual score, release GPU and
+stop after the second actual result. It cannot fit, tune, select a cohort, launch
+another cloud run or create a third entry. Failed gates stop with a no-go receipt;
+ambiguous or failed mutations stop for investigation without automatic retries.
+Logs, state, launch/source seal and attention receipts are under the C42 folder.
+Do not edit its sealed scripts/configs while it is running. Do not concurrently
+run the same confirmation or scoring steps. The native goal still requires root
+inspection of actual account results and the full completion audit.
+
 ## Completed evidence
 
 C39 has352queries/1292original acquisitions and273chemistry groups. Development
@@ -115,6 +129,17 @@ Five temporary-account tests pass: delayed score propagation, interrupted API
 observation, another pending entry, missing qualification, and terminal failure.
 Ambiguous accepted-response recovery requires the exact durable qualification,
 source and kernel intent, and preserves the qualification pin in the ledger.
+The new coordinator will start this observer only after actual CPU acceptance.
+
+Before any C39 quality or C13 outcome was available, the C43 policy received an
+explicit operational amendment allowing this bounded, source-bound coordinator
+to execute confirmation after the existing gates. All scientific admission
+criteria, models, recipes, cohorts and the one-evaluation limit remain identical.
+The earlier manual-only execution field was changed transparently in the policy;
+the prior closed-gate fixture is preserved, and a new fixture proves the amended
+code still refuses missing C39 quality before creating C13 preparation or consuming
+labels. Ten temporary-account/gate tests pass. This implements the authorized
+continuous goal; it grants no additional entries or compute budget.
 
 Finish the goal only after both approved entries have actual terminal results,
 or reconcile a demonstrated external blocker under the native blocked-audit

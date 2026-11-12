@@ -149,7 +149,7 @@ def chemistry_and_fit_exposure(labels):
 
 
 def evaluate(consume,resume=False):
-    assert consume,'Explicit --consume is required; no background worker opens C13'
+    assert consume,'Explicit --consume is required for the single source-bound paired evaluation'
     import msvcrt
     lock=(C13/'paired-consumption.lock').open('a+b');lock.write(b'0');lock.flush();lock.seek(0);msvcrt.locking(lock.fileno(),msvcrt.LK_NBLCK,1)
     verify();assert not (OUT/'confirmation-results.json').exists()

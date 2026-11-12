@@ -1,0 +1,13 @@
+{
+  "checked_utc": "2026-11-12T02:11:02.991005+00:00",
+  "command": ".venv-gpu/Scripts/python.exe scripts/confirm_c43_pair.py prepare",
+  "expected_returncode": 1,
+  "observed_returncode": 1,
+  "reason": "Missing prerequisite C39 quality-results.json; stopped in prior() before preparation or C13 label access.",
+  "evaluator_source_sha256": "b7ae0a5e1aa378c06217056ac536fcf021ce33d90f6aa4c55d80fd1728773e38",
+  "policy_sha256": "b935a98c61591ebeeb9a43a09849d4cd573f80d8876970af9188fab7927c9df0",
+  "C39_quality_available": false,
+  "C13_preparation_created": false,
+  "C13_consumption_created": false,
+  "scientific_gates_unchanged": true
+}

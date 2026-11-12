@@ -21,8 +21,23 @@
   },
   "negative_control": "Report frozen P14 on the same complete120 with correct all-query zeros; never choose a cohort to make its sign favorable.",
   "qualification_tier": "Exploratory fixed pair, not statistical promotion or a public-gain claim. C39 exclusions apply new fitting heads; C13 near-chemistry and public pretraining exposure remain disclosed.",
-  "submission_sequence": ["cpu", "observe_actual_terminal_cpu_score", "gpu", "observe_actual_terminal_gpu_score"],
+  "submission_sequence": [
+    "cpu",
+    "observe_actual_terminal_cpu_score",
+    "gpu",
+    "observe_actual_terminal_gpu_score"
+  ],
   "maximum_new_accepted_submissions": 2,
-  "automatic_confirmation_from_background_worker": false,
-  "no_repeat_user_approval_required": true
+  "automatic_confirmation_from_background_worker": true,
+  "no_repeat_user_approval_required": true,
+  "operational_amendment_before_outcomes": {
+    "frozen_utc": "2026-11-12T02:09:45.434274+00:00",
+    "reason": "Implement the user-authorized continuous goal with an explicit source-bound --release-approved-pair coordinator instead of repeated agent polling.",
+    "scientific_admission_criteria_changed": false,
+    "model_or_recipe_changed": false,
+    "cohort_changed": false,
+    "C39_quality_available": false,
+    "C13_outcomes_read": false,
+    "conditions": "Only after full C39 collection, independent ranking and exact quality audits pass for BOTH pre-frozen heads, and BOTH real production audits pass. Consume the same paired C13 predictions once through explicit --consume. Stop on any failed gate. At most two entries, first actual score before second."
+  }
 }
