@@ -17,12 +17,14 @@ unchanged parent, rank1/membership/formula slots protected, actual dual T4 execu
 No scored entries were released.
 
 C57 full masked private v1 (482 molecules / 2,125 original usable acquisitions /
-447 chemistry groups) remains RUNNING as of 10:24 UTC Nov12. Actual observer PID
+447 chemistry groups) remains RUNNING as of 11:36 UTC Nov12. Actual observer PID
 26852, deadline16:05UTC: collect/acquisition-audit only, no scoring or evaluation.
 Live SDK logs prove both Engine2 rankers finished all482 in3434s on actual2T4s.
 PubChem also completed all482 (3593s); main library/pool cache and ranker models
 loaded at119.9min. Main candidate lists also completed all482 in903s, errors0,
-popularity-reordered482. Spectrum-prediction stage is next, full core not complete.
+popularity-reordered482. Both GLACIER/ICEBERG forward models completed4029s,
+two-engine fusion150s and metric audit/safe tail149s done. Final ranking/export
+continues; complete job and source quality remain pending.
 A one-shot current-task C58 continuation (actualPID26556,source-health-once) waits for C57 audit,
 then independently requires full Engine2/PubChem coverage, zero main errors and
 all simulator/fusion completion markers before P16 replay, both predictions and the fixed source

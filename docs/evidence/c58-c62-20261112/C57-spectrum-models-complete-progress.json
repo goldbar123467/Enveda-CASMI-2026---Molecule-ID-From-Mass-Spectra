@@ -1,0 +1,32 @@
+{
+  "recorded_utc": "2026-11-12T11:36:25.625633+00:00",
+  "kernel": "clarkkitchen/casmi26-c57-full-masked-validation",
+  "version": 1,
+  "job_complete": false,
+  "source_quality_read": false,
+  "C13_consumed": false,
+  "new_scoring_entries": 0,
+  "live_sdk_log_sha256": "025f99ecac60aac4fe0b6049921c01f40c6be111a1a3515e26fef41b39307c37",
+  "events": [
+    {
+      "stream_name": "stdout",
+      "time": 12163.96920314,
+      "data": "  \u00d0\u00b2\u00d1\u009a\u00e2\u0080\u009c  202.0 min   GLACIER + ICEBERG forward models            4,029 s\n"
+    },
+    {
+      "stream_name": "stdout",
+      "time": 12163.970134797,
+      "data": "      merge stats {'untouched': 0, 'gentle': 479, 'aggressive': 1, 'no_pc': 2, 'promoted': 28}\n"
+    },
+    {
+      "stream_name": "stdout",
+      "time": 12313.97927381,
+      "data": "  \u00d0\u00b2\u00d1\u009a\u00e2\u0080\u009c  204.5 min   Two-engine fusion                             150 s\n"
+    },
+    {
+      "stream_name": "stdout",
+      "time": 12463.411323582,
+      "data": "  \u00d0\u00b2\u00d1\u009a\u00e2\u0080\u009c  207.0 min   Metric audit and safe tail                    149 s\n"
+    }
+  ]
+}
