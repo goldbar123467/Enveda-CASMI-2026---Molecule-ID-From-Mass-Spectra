@@ -1,0 +1,29 @@
+{
+  "completed_utc": "2026-11-12T14:22:18.914878+00:00",
+  "source_sha256": "1e18cd30d55cc3fcd8396f2edf86e3bec2c9a162aa2ce61480cc58a4d0d4cbb4",
+  "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "python": "3.12.3",
+  "interpreter": "/home/imsa/.venvs/enveda-c75/bin/python",
+  "isolated_prefix": "/home/imsa/.venvs/enveda-c75",
+  "versions": {
+    "torch": "2.11.0+cu128",
+    "numpy": "2.2.6",
+    "pandas": "2.2.3",
+    "pyarrow": "19.0.1",
+    "scipy": "1.15.3",
+    "sklearn": "1.6.1",
+    "lightgbm": "4.6.0",
+    "numba": "0.61.2",
+    "rdkit": "2026.03.3"
+  },
+  "actual_GPU": "NVIDIA GeForce RTX 2070",
+  "GPU_count": 1,
+  "VRAM_bytes": 8589475840,
+  "actual_CUDA_matmul_passed": true,
+  "peak_tensor_allocation_bytes": 8523776,
+  "pip_freeze_sha256": "e7490de69adcdb45fe1564b96620c57fdebca715807cc32e47d3b83b5adcb0ca",
+  "scientific_pipeline_parity_not_yet_established": true,
+  "new_source_outcomes_read": false,
+  "C13_read": false,
+  "scoring_entries": 0
+}

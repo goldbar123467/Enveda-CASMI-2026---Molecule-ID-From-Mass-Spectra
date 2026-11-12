@@ -1,3 +1,46 @@
+## C75 update — isolated RTX2070 CUDA execution verified; assets still downloading
+
+At14:22UTC the actual WSL runtime probe PASSED: Python3.12.3, Torch2.11.0+cu128,
+RDKit2026.03.3, NumPy2.2.6, pandas2.2.3, Arrow19.0.1, scipy1.15.3,
+sklearn1.6.1, LightGBM4.6.0, numba0.61.2. All runtime dependencies installed.
+One actual RTX2070/8GiB; real CUDA matmul executed, not just driver discovery.
+Host free RAM after probe15.82GiB. Keep4GiBhost reserve at every heavy stage.
+Windows environments are unchanged; Linuxenv /home/imsa/.venvs/enveda-c75.
+
+Cached the exact4file public neural bundle from outputs/local/kit under C75input;
+all frozen MODEL_PINS match, including public checkpoint44436b2d. Cached v80ours
+checkpoint c08d2101 from outputs/research/v80-output. Both SHA256verified.
+Assets are STILL DOWNLOADING, two active workers/checkpoints. Latestobserved:
+V4G232/237files ~7.13GB/20.08GB; auxiliary165/388files/13.04GBtotal. Reconcile
+actual processes/checkpoints before retries. No local pipeline inference started.
+The core large PubChem/reference arrays remain; small-file completion counts
+are NOT a completed asset package. Tool sessions39744(V4G),97967(auxiliary).
+
+Next port details: the decoder's first literal MODULES={} is intentionally empty;
+recover ALL subsequent AST Subscript Assign/AugAssign literal updates. Already
+extracted10exact modules + original3f973ab notebook into C75private workspace.
+Full P01 also requires original outer neural-public/ours blend and final ranking,
+not merely the inner public0.465core. Port the complete original outer flow.
+
+Prefer a bounded task-owned /kaggle input/working namespace in WSL (initially
+absent), because original manifest-checked asset modules can hardcode these
+paths. Never overwrite unknown existing mounts. Switch only task-owned links,
+sequential fixture/full runs, or use path-only adapters with exact reverse-diff
+proof. Map explicit GPU1calls to localGPU0; retain algorithms/thresholds/models.
+Cap CPU/threads as an operational resource control, without changing features.
+Do NOT report actual_two_T4s for a local run. Persist real hardware/port evidence.
+
+Require metadata-only selected USED real12from completedC57, ALL their original
+acquisitions and ORIGINAL C57reference masks (not new C73masks), then compare
+actual final P01lists/features against the corresponding completed cloud rows.
+Only after that engineering parity run the untouched512with new C73/C74masks.
+The original single C13 and new C72quality remain UNCONSUMED; scoring0/2.
+
+Git5837e70pushed the complete C66-C74audit/source package. New .gitattributes
+preserves all new hash-bound source/contract/evidence bytes EXACTLY; indexbytes
+were independently compared against executed files. Historical C50build-v0
+remains untracked and untouched. Current native goal remains ACTIVE.
+
 ## Immediate runtime state — Kaggle weekly quota rejected; C75 local port underway
 
 At 13:52:36UTC Nov12, the actual C73 T4 push was REJECTED before a version was
