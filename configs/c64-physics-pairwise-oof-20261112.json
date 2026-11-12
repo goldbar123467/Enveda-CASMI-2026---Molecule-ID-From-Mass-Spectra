@@ -1,0 +1,20 @@
+{
+  "kind": "USED-development prototype; not prospective confirmation or submission qualification",
+  "queries": 869,
+  "acquisitions": 3452,
+  "seed": 20261164,
+  "folds": 5,
+  "chemistry_groups": "Union query identities, formulas, nonempty Murcko scaffolds and Morgan2 Tanimoto >=0.7 across all869; whole components assigned to one outer fold",
+  "features": "Whitelisted frozen public-core evidence and query metadata only; no C56fitted projection, truth identities, dataset-source IDs or held-out calibration",
+  "physical_parent": "Retain P16promotion only when reference and query adduct-implied neutral masses agree within max0.002Da/10ppm. Preserve original tokens; unknown mass falls back to P01. Never change a query/cohort.",
+  "ranking": "Learn residual over -log(parent_rank), sort all same-formula slots including the leader, preserve candidate membership/formula slots. Missing core evidence keeps the group unchanged.",
+  "cpu": {"device": "cpu", "model": "linear residual", "loss": "Per-query balanced logistic loss on correct-vs-decoy same-formula pairs", "ridge": 0.1, "optimizer": "LBFGS", "max_iter": 200, "dtype": "float64", "threads": 2},
+  "selection": "One fixed prototype, no outer-fold early stopping or hyperparameter search. Fold scaling and all fitted weights use training folds only. Absent truths remain zero in ALL evaluation denominators.",
+  "cpu_gate_before_GPU": "Positive full869 versus both P01 and P16; original192/352 positive; every original cohort/source/actual-mode guard nonnegative. Report all intersections, rank1 changes and missing-truth zeros.",
+  "prospective_work_remaining": "Any development survivor still needs a new frozen untouched source panel, independent production audits and the single unused C13confirmation before scoring. These869are all USED.",
+  "can_consume_C13": false,
+  "can_submit": false,
+  "can_fit_GPU": false,
+  "method_reference": "https://www.microsoft.com/en-us/research/publication/learning-to-rank-using-gradient-descent/",
+  "runtime_reference": "https://docs.pytorch.org/docs/2.11/generated/torch.nn.BCEWithLogitsLoss.html"
+}

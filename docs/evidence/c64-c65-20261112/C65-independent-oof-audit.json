@@ -1,0 +1,23 @@
+{
+  "completed_utc": "2026-11-12T12:54:33.605556+00:00",
+  "source_sha256": "95b4548e74f2bd38130cf192c393938d5d266e45efc138dcb55d84346ade6a71",
+  "result_sha256": "e0edb4a0097fa505f001fe3b7a5d21ba783da9ba9ccf974461c2e9ac6d4f0ee6",
+  "queries": 869,
+  "acquisitions": 3452,
+  "query_chemistry_edges_never_cross_folds": true,
+  "train_only_scaling_exact": true,
+  "convex_training_objective_gradient_maxima": [
+    7.974805736575552e-07,
+    6.749475477407785e-07,
+    7.509992307423025e-07,
+    6.914193790251433e-07,
+    2.0273391821562514e-07
+  ],
+  "actual_saved_OOF_scores_and_lists_exact": true,
+  "all_original_source_mode_fraction_points_exact": true,
+  "absent_truths_zero": true,
+  "CPU_gate_passed": false,
+  "C13_read": false,
+  "scoring_entries": 0,
+  "prospective_qualification": false
+}

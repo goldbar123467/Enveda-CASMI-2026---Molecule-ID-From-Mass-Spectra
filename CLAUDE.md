@@ -1,3 +1,51 @@
+## Active CPU development — C64/C65 reject; no GPU or scoring release
+
+The native goal remains active until TWO actual new terminal numeric scores.
+0/2 approved entries used; C13 NEVER consumed. Preserve0.480and all prior evidence,
+keep old/hourly controllers off. There is no qualified CPU/GPU pair currently.
+
+C56failed full prospective482C58source: zero improved truths,5/6head harms, plus
+2wrong P16dehydrated-reference promotions. All482are permanently USED. The full
+C57core, source-acquisition/ref-mask audits and P30/P31production checks succeeded,
+but engineering checks cannot override that scientific rejection.
+
+C63isolated both P16errors: same raw precursor, reference[M+H-H2O]+ versus query
+[M+H]+, inferred neutral masses differ by18Da. A label-blind neutral-mass check
+rejects both and restores P01. All869USED queries/3452acquisitions are retained.
+456of482C53truths were protected at ranks1-2; old tail restriction had only23truth
+opportunities. Semantic target regression and correlated CPU/GPU votes failed.
+
+C64prepared21,719candidate rows/87whitelisted raw core features, query metadata,
+741chemistry groups and5whole-component folds over ALL869USED queries. No C56
+fitted projection is reused. Same-formula direct pairwise CPU fitting allows
+leader changes, preserves membership/formula slots, and evaluates every query,
+including absent truths as zero. No fold normalization/fit sees its held-out data.
+
+The fixed C64linear residual improves pooled OOF MRR by+0.000847763versus P01 and
++0.001998511versus P16. Original192/352and whole482improve, BUT oldNP80, both C51
+sources and C53Enveda180/positive guards regress. C64is REJECTED for GPUfollow-up.
+C65weights pairs by RR swap cost: -0.000673968versus P01, also REJECTED. No outer
+fold recipe rescue, no dropped source, no GPUfit or scored entry was launched.
+
+Independent audits reconstruct saved OOF scores/lists, all source/mode exact
+fractions, original source labels and chemistry isolation. Training-only scaling
+matches exactly; convex objective gradients <8e-7verify saved linear optima.
+These remain adaptive USED development, not fresh validation or LBcalibration.
+
+Next safe actions: inspect source failures/physical-channel disagreement in C64,
+test a CPU-only conditional/physical-consensus ranking approach without narrowing
+the cohort, and inventory new source eligibility against the NEW calibration
+fitting boundary (869query identities/chemistry, not the retired153kprojection).
+Any survivor needs separately frozen untouched source outcomes and actual full
+production checks before the sole reserved C13evaluation and two scoring trials.
+C59/C60/C61/C62prepared C56release paths stay HELD; no C13push was made.
+
+Current artifacts: outputs/local/c63-source-loss-diagnosis-20261112;
+outputs/local/c64-pairwise-oof-20261112; outputs/local/c65-rrweighted-oof-20261112;
+configs/c64-physics-pairwise-oof-20261112.json; configs/c65-rrweighted-oof-20261112.json;
+docs/evidence/c64-c65-20261112. All workers have finished; no training/cloud job
+is currently active. Historical sections below preserve prior observations.
+
 ## Active goal — C56 rejected on full C58; CPU loss/ranking work next
 
 The native goal remains active until TWO actual new terminal numeric scored
