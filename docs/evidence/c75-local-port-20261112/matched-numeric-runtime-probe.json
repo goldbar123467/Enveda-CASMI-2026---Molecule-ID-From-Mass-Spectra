@@ -1,0 +1,28 @@
+{
+  "completed_utc": "2026-11-12T16:27:13.033923+00:00",
+  "prefix": "/home/imsa/.venvs/enveda-c75-torch210",
+  "versions": {
+    "torch": "2.10.0+cu128",
+    "numpy": "2.0.2",
+    "pandas": "2.3.3",
+    "scipy": "1.16.3",
+    "scikit-learn": "1.6.1",
+    "lightgbm": "4.6.0",
+    "numba": "0.60.0",
+    "llvmlite": "0.43.0",
+    "pyarrow": "24.0.0",
+    "nvidia-cudnn-cu12": "9.10.2.21",
+    "nvidia-cublas-cu12": "12.8.4.1",
+    "triton": "3.6.0"
+  },
+  "main_rdkit": "2026.3.3",
+  "Python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "cloud_image_runtime_metadata_sha256": "7f42a0c08b46763bdc36407958fe0e0d8f225e29e03e5c7e50650a61036dab97",
+  "config_sha256": "2292bd8431466f77c8551b18bb6616fcc657fef7797e20639e23fac4f20215b7",
+  "actual_CUDA_passed": true,
+  "known_difference": "Python3.12.3 versus cloud3.12.13; Linuxglibc2.39 versus cloud2.35; same major ABI",
+  "original_environments_unchanged": true,
+  "scoring_entries": 0,
+  "new_source_quality_read": false,
+  "C13_read": false
+}

@@ -1,0 +1,14 @@
+{
+  "checked_utc": "2026-11-12T16:44:38.204225+00:00",
+  "kernel": "clarkkitchen/casmi26-c75-original-runtime-inventory",
+  "version": 1,
+  "actual_GPU_disabled": true,
+  "actual_original_image_exact": true,
+  "remote_source_exact": true,
+  "source_sha256": "7a9feffe725553c5da773f2881f7234233ba5d603aa540d32c65c708ba86e8fc",
+  "inventory_sha256": "0bbf1529f42e07543a718d1aac2788a7c97a8870d3d4509b735f1f528579537b",
+  "quality_read": false,
+  "C13_read": false,
+  "scoring_entries": 0,
+  "passed": true
+}

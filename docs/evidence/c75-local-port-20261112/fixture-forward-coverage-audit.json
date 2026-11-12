@@ -1,0 +1,47 @@
+{
+  "completed_utc": "2026-11-12T16:02:40.601197+00:00",
+  "source_sha256": "a409905e4cc5e85e509f193347e445aa132d35a65600a25c043913a0b993d3c9",
+  "mode": "fixture",
+  "run_complete_sha256": "8ab4735c1d7bc422fab209147355658c1436e9cc639a92be88a003090dd79a23",
+  "queries": 12,
+  "acquisitions": 51,
+  "channels": {
+    "ICEBERG": {
+      "metadata_sha256": "39b04dca58e3ea2438bb0f017b906aaa84c79490791af73a6f603e9b97ba5367",
+      "n_mols": 12,
+      "n_mols_scored": 9,
+      "n_mols_covered": 9,
+      "n_cands": 992,
+      "n_scored": 792,
+      "n_pred": 2204,
+      "n_pred_fail": 0,
+      "n_bad_smiles": 0,
+      "seconds": 422.37,
+      "feature_failures": 0,
+      "supported_molecules_complete": true,
+      "time_budget_truncation": false
+    },
+    "GLACIER": {
+      "metadata_sha256": "b7d2455e05ef8864cdf976290bc94bc3fef6142c4f48f13a2e1180f867555bc5",
+      "n_mols": 9,
+      "n_mols_scored": 9,
+      "n_mols_covered": 9,
+      "n_cands": 792,
+      "n_scored": 792,
+      "n_pred": 2113,
+      "n_pred_fail": 0,
+      "n_bad_smiles": 0,
+      "seconds": 34.37,
+      "feature_failures": 0,
+      "supported_molecules_complete": true,
+      "time_budget_truncation": false
+    }
+  },
+  "all_supported_forward_molecules_complete": true,
+  "no_prediction_or_feature_failures": true,
+  "unsupported_coverage_changes_evaluation_denominator": false,
+  "query_truth_or_quality_read": false,
+  "C13_read": false,
+  "scoring_entries": 0,
+  "passed": true
+}

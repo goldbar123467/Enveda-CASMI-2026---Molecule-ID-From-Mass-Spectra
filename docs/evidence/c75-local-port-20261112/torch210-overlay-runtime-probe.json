@@ -1,0 +1,18 @@
+{
+  "completed_utc": "2026-11-12T16:23:14.237743+00:00",
+  "prefix": "/home/imsa/.venvs/enveda-c75-torch210",
+  "torch": "2.10.0+cu128",
+  "torch_file": "/home/imsa/.venvs/enveda-c75-torch210/lib/python3.12/site-packages/torch/__init__.py",
+  "cudnn_version": 91002,
+  "numpy": "2.2.6",
+  "pandas": "2.2.3",
+  "numba": "0.61.2",
+  "device": "NVIDIA GeForce RTX 2070",
+  "actual_CUDA_matmul_passed": true,
+  "base_CPU_dependencies_read_only": true,
+  "base_runtime_freeze_sha256": "e7490de69adcdb45fe1564b96620c57fdebca715807cc32e47d3b83b5adcb0ca",
+  "original_environments_unchanged": true,
+  "new_source_quality_read": false,
+  "C13_read": false,
+  "scoring_entries": 0
+}

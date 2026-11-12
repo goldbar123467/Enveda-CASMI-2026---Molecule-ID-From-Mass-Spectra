@@ -1,0 +1,9 @@
+# Full metadata inventory from the exact C57 image, not guessed versions.
+networkx==3.6.1
+multiprocess==0.70.16
+platformdirs==4.9.6
+dill==0.4.1
+h5py==3.16.0
+joblib==1.5.3
+Pillow==11.3.0
+einops==0.8.2

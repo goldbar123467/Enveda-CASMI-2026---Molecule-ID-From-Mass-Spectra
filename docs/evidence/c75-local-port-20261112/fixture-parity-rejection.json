@@ -1,0 +1,29 @@
+{
+  "checked_utc": "2026-11-12T16:07:53.099185+00:00",
+  "reason": "Frozen exact final lists and predeclared1e-5feature parity failed; not a source-quality result",
+  "diagnosis_sha256": "c487ac5073d149d1ecc6da4f774e6ffffaa8c8c8cb08acba27c3609899055af5",
+  "final_list_comparisons": {
+    "c41_p01.csv": {
+      "queries": 12,
+      "exact_strings": 3,
+      "exact_official_key_order": 3,
+      "identical_official_key_membership": 8,
+      "identical_leader": 12,
+      "changed_slots": 71
+    },
+    "c41_p14.csv": {
+      "queries": 12,
+      "exact_strings": 2,
+      "exact_official_key_order": 2,
+      "identical_official_key_membership": 8,
+      "identical_leader": 12,
+      "changed_slots": 80
+    }
+  },
+  "original_acquisitions_fidelity_assertions_passed_before_final_list_failure": true,
+  "full_fresh_run_held": true,
+  "model_refit_or_quality_tuning": false,
+  "C72_consumed": false,
+  "C13_consumed": false,
+  "scoring_entries": 0
+}

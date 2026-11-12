@@ -1,0 +1,20 @@
+{
+  "checked_utc": "2026-11-12T16:19:29.845748+00:00",
+  "quota": {
+    "quotaRefreshTime": "2026-11-14T00:00:00.000Z",
+    "gpuQuota": {
+      "timeUsed": "27036.50.0s",
+      "timeReserved": "0s",
+      "totalTimeAllowed": "21600s",
+      "minimumTimeAllowed": "21600s",
+      "hasEverRun": true
+    },
+    "tpuQuota": {
+      "timeUsed": "0s",
+      "timeReserved": "0s",
+      "totalTimeAllowed": "72000s",
+      "minimumTimeAllowed": "72000s",
+      "hasEverRun": true
+    }
+  }
+}

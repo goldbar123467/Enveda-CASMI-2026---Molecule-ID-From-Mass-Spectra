@@ -1,0 +1,40 @@
+{
+  "completed_utc": "2026-11-12T16:13:24.883388+00:00",
+  "source_sha256": "8c2add8f386abaf58bc7cb1dea0db8b0d4414a12b6b363d1238037a1a222267e",
+  "intent_sha256": "afd857999237f8d955c0d64993ebd2a1aaa7cbe379a859ccfe3303dab4c13b5c",
+  "results": {
+    "same_input_repeat": {
+      "common_finite_scores": 792,
+      "missing_pattern_changes": 0,
+      "maximum_absolute_difference": 0.0,
+      "outside_1e5_tolerance": 0
+    },
+    "original_cloud_candidate_input_vs_T4": {
+      "common_finite_scores": 219,
+      "missing_pattern_changes": 0,
+      "maximum_absolute_difference": 0.007375944027884884,
+      "outside_1e5_tolerance": 101
+    },
+    "local_candidate_input_vs_T4": {
+      "common_finite_scores": 219,
+      "missing_pattern_changes": 0,
+      "maximum_absolute_difference": 0.007375939461758407,
+      "outside_1e5_tolerance": 104
+    }
+  },
+  "files_sha256": {
+    "cloud-nine.json": "6daff17a32f81fb70417b7cb08aa0d6d6cc0acc46dec2bf9289ca0d45e331dde",
+    "cloud-nine.json.meta.json": "9b8608be32ab266dd3932ca6a0f055533b36577b9cbacdacd1873be9f332276b",
+    "cloud-nine.log": "f75e5a2be98792e475ce4c21d306c794429b7f020b4d6fd139ecb9f3f5d398d4",
+    "intent.json": "afd857999237f8d955c0d64993ebd2a1aaa7cbe379a859ccfe3303dab4c13b5c",
+    "original-cloud-nine-input.json": "121a0b5947a082ed4353a45601ac24e326b1e13207a44caebbf1fb2ffb51b470",
+    "repeat.json": "bea101f8f098c317ab0d004d4b0d1cde7a2cea6e5ba1a259010125983147b294",
+    "repeat.json.meta.json": "daae7eb35d162cbc9890654c385ec3ae53efab9bcf58ef83248b737a72226925",
+    "repeat.log": "ff175142f6b5033dee9f77f1d917dd50720dd3dc14eda04263b95470c9ee6069"
+  },
+  "fitted_or_quality_selected": false,
+  "USED_only": true,
+  "new_source_quality_read": false,
+  "C13_read": false,
+  "scoring_entries": 0
+}

@@ -1,0 +1,10 @@
+{
+  "checked_utc": "2026-11-12T15:28:56.187055+00:00",
+  "source_sha256": "37d31ee96ce1c95bffea56bb7184e30d0e1974b23e2bde293898c40954279bbd",
+  "mode": "fixture",
+  "error": "AssertionError: ('Host RAM reserve below4GiB after owned-cache advice', 2.3450088500976562)",
+  "automatic_retry": false,
+  "new_source_quality_read": false,
+  "C13_read": false,
+  "scoring_entries": 0
+}

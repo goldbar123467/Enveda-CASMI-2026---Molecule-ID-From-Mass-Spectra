@@ -1,0 +1,22 @@
+{
+  "checked_utc": "2026-11-12T16:00:26.169517+00:00",
+  "existing_retired_C56_notebook_sha256": "40dff8ad4b296f81dddcfb2a225be7d501bc6973feee6fd64b7707393a452788",
+  "C71_bound_validation_notebook_sha256": "c652cfa0b87951c8d39efaee5db20d10dfe6b5c574024969d7168292ea9be57a",
+  "old_production_payload_sha256": "c057015d88e77d62be7ed2482694b1e394f6135b20a779abd7bfde9400bf921a",
+  "bound_validation_payload_sha256": "3f973abbb1593e356db4f6dec149c8ad99f5afa5ded8da8bab59152bd49e60e7",
+  "different_inner_cells": [
+    26,
+    27,
+    28,
+    32,
+    37,
+    43
+  ],
+  "production_recipe_requires_bound_R3_empty_pool_recovery": true,
+  "reusing_old_C56_first28_cells_would_not_prove_same_parent": true,
+  "needed": "Create and audit a production wrapper for the bound R3 science with production input/reference configuration; preserve legacy compatibility and actual recovered candidate rules. Do not ship the retired C56 notebook parent silently.",
+  "new_production_notebook_built": false,
+  "source_quality_read": false,
+  "C13_read": false,
+  "scoring_entries": 0
+}

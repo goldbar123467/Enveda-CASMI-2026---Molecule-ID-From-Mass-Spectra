@@ -1,0 +1,62 @@
+{
+  "completed_utc": "2026-11-12T16:46:41.495522+00:00",
+  "source_sha256": "b21e22966a69a4b5b82a68f7ec0e2919846695e90eddcb8447849de1fb471c56",
+  "original_cloud_raw_output_sha256": "d25612e52462855fbdb318edb1a18682b69753961daea64b34bda99172e426f1",
+  "same_original_nine_input_sha256": "121a0b5947a082ed4353a45601ac24e326b1e13207a44caebbf1fb2ffb51b470",
+  "comparisons": {
+    "Torch211_base_CPU": {
+      "molecules": 9,
+      "compared_scores": 799,
+      "missing_pattern_changes": 0,
+      "exact_scores": 13,
+      "maximum_absolute_difference": 0.007375944027884884,
+      "outside_frozen_tolerance": 410,
+      "output_sha256": "6daff17a32f81fb70417b7cb08aa0d6d6cc0acc46dec2bf9289ca0d45e331dde",
+      "metadata_sha256": "9b8608be32ab266dd3932ca6a0f055533b36577b9cbacdacd1873be9f332276b",
+      "torch": "2.11.0+cu128",
+      "all_supported_molecules_complete": true
+    },
+    "Torch210_base_CPU": {
+      "molecules": 9,
+      "compared_scores": 799,
+      "missing_pattern_changes": 0,
+      "exact_scores": 13,
+      "maximum_absolute_difference": 0.007375944027884884,
+      "outside_frozen_tolerance": 410,
+      "output_sha256": "6daff17a32f81fb70417b7cb08aa0d6d6cc0acc46dec2bf9289ca0d45e331dde",
+      "metadata_sha256": "12974223c4846541466b224eab6c55207ad4f2e0bbd319cb9ecf05161a3bab1e",
+      "torch": "2.10.0+cu128",
+      "all_supported_molecules_complete": true
+    },
+    "Torch210_original_numeric": {
+      "molecules": 9,
+      "compared_scores": 799,
+      "missing_pattern_changes": 0,
+      "exact_scores": 13,
+      "maximum_absolute_difference": 0.007375944027884884,
+      "outside_frozen_tolerance": 410,
+      "output_sha256": "6daff17a32f81fb70417b7cb08aa0d6d6cc0acc46dec2bf9289ca0d45e331dde",
+      "metadata_sha256": "f092e781f53eed8461f6c8c9d91cd1ee5a8ee75806803c91e0d2dc73c8492b6a",
+      "torch": "2.10.0+cu128",
+      "all_supported_molecules_complete": true
+    },
+    "Torch210_original_graph": {
+      "molecules": 9,
+      "compared_scores": 799,
+      "missing_pattern_changes": 0,
+      "exact_scores": 13,
+      "maximum_absolute_difference": 0.007375944027884884,
+      "outside_frozen_tolerance": 410,
+      "output_sha256": "6daff17a32f81fb70417b7cb08aa0d6d6cc0acc46dec2bf9289ca0d45e331dde",
+      "metadata_sha256": "476d3873ec43c1cf1fea20d658729132aa1aa6478772bcb7d739fbbadf96fd21",
+      "torch": "2.10.0+cu128",
+      "all_supported_molecules_complete": true
+    }
+  },
+  "full_context_early_rejection_sha256": "fca6bcc2412cb75d30c7571db00242b8e7e8744286654f103e7609aadc5469e3",
+  "USED_only": true,
+  "truth_or_quality_read": false,
+  "new_source_quality_read": false,
+  "C13_read": false,
+  "scoring_entries": 0
+}

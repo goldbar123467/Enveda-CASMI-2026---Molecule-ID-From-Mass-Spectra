@@ -1,3 +1,133 @@
+## Latest C75 checkpoint — NO active inference; exact parity remains unresolved
+
+Goal ACTIVE, submissions0/2used; NOsharedC42ledger, NO C72/C13consumption.
+Do not call complete/blocked: this goal turn made substantial concrete progress.
+NewC71models and entire C72fresh512panel remain frozen; no fresh predictions or
+quality metrics produced. Champion0.480retained; hourly/oldcampaignsOFF.
+
+RAM problem solved: complete USED12/all51P01/P14 replay finished safely.
+Exact parity still FAILS (9of12P01lists,10of12P14lists differ; all leaders same).
+Original individual public/ours neural numeric evidence within1e-5 on295common
+candidates; earlier Engine2/PC/GL evidence differs. No fitted C71head applied.
+
+Runtime investigation completed, NOT a successful fix: CPU-only private probes
+casmi26-c75-original-runtime-metadata and casmi26-c75-original-runtime-inventory
+both COMPLETE v1 in EXACT original C57Dockerimage37c64f7d...; actualGPUdisabled
+and actual remote source verified. Full package inventory private/publicaggregate
+saved. Real original runtime Torch2.10+cu128/NumPy2.0.2/pandas2.3.3/scipy1.16.3/
+Numba0.60/llvmlite0.43/Arrow24, sklearn1.6.1/LGBM4.6. MainRDKit2026.03.3installed
+by notebook; original simulator2025.03.6isolated.
+
+New isolated runtime /home/imsa/.venvs/enveda-c75-torch210 is COMPLETE with real
+CUDAmatmul, original major numerical versions plus graph/optional deps matched:
+networkx3.6.1, multiprocess0.70.16, platformdirs4.9.6, dill0.4.1, h5py3.16.0,
+joblib1.5.3/Pillow11.3/einops0.8.2. Read-only baseCPU fallback .pth is ACTIVE only
+in NEWenv at lib/python3.12/site-packages/c75_readonly_base_cpu_fallback.pth;
+original2.11andWindows envs unchanged. Disable ONLYthisownedpth before future
+pipinstall into NEWenv, to avoid exposing base packages to pipuninstall.
+
+FOUR controlled same-original-nine-input GLprobes all completed9of9. ALL799raw
+output scores and outputfileSHA are BITEXACT across Torch2.11/baseCPU, Torch2.10/
+baseCPU, exact major numerical stack, and exact graph/optional stack. All four
+rawoutputSHA6daff17a32f81fb70417b7cb08aa0d6d6cc0acc46dec2bf9289ca0d45e331dde.
+Against actualC57rawGLout:410of799beyond1e-5, max0.007375944; original C57rawGL
+versus C57featureGL is EXACT (mapping is correct). Thus tested dependency
+versions do NOT explain this GL difference. Never claim runtime mismatch fixed.
+
+A WHOLE original433GLinput replay under matchedstack also diverged: at96
+completedmolecules/7610comparedscores,2856beyondtolerance, max0.0294033. Stopped
+ONLYits verified owned systemd user scope intentionally at16:39UTC because
+whole-parity was already falsified; furtherGPU could not rescue completedscores.
+Not a RAM/OOM failure. Preserve gl-full-context-probe-v1 partialoutputs/logs/
+early-rejection/failed/source-original. Tool70191closed1 after intentionalSIGTERM.
+The scopeguardian source had a missing .scope suffix in exceptional cleanup;
+fixed ONLY AFTER job stopped and prior source bytes preserved. No restart.
+All GPU/pip/probe/fetch jobs FINISHED; no live tool sessions to resume.
+
+Next investigate actual model/checkpoint/source SNAPSHOTS and CPUfeaturizer
+hashes against the original container, rather than more blindGPU/runtime tests.
+Local assets were fetched by latest slug and checked against C20names/sizes and
+internal manifests, but original C57 attached versions are not yet proven. This
+is a HYPOTHESIS, not a diagnosed cause. SDK get_kernel metadata omits versions
+(datasetDataSources are bare slug strings). Both nestedGLraw outputs are fetched
+under original-cloud-raw-forward; inputs/E2/PC/e004 data under original-cloud-
+intermediates. Public/ours pinned checkpoints agree, while unpinned reproduced
+core channels differ. Compare exact artifact/checkpoint/source hashes before
+any fresh validation or long training. No passing fixture-parity-audit exists,
+so C75full512source release is still HELD.
+
+Computer-use skill/read mandatory docs were applied. CUA initialized; IAB2
+privateC57page404, Chrome4createdaboutblanktab1615613217 but attachment failed.
+NativeChrome window3409530 could not be read because helper could not determine
+current URL confidently enough for policy; ComputerUse STOPPED FOR THIS TURN.
+NO furtherUIattempts; completion_summary already sent exactly once. No private
+dataset versions obtained. Next turn must rewriteDocumentation before anyCUA
+continuation. Do not circumvent this browser-policy stop with shell/UItools.
+API/filesystem research remains authorized independently; no permission question.
+
+Actual quota refresh2026-11-14T00:00UTC=Nov13 7pmEastern; T4quotaexhausted.
+NoC73cloudjob exists(version0rejected); two CPUmetadata jobs completed, not
+competition scoring. Shared2entry submission allowance unchanged.
+
+## C75 current — RAM solved; USED parity rejected; exact cloud runtime recovered
+
+The single2070 full USED12/all51acquisition retry COMPLETED16:01UTC, no
+RAM-floor stop or OOM. Engine2/PC/main12each; mainerrors0. Actual ICE9of9
+supported and GL9of9supported complete; zero prediction/feature failures.
+Original frozen scripts/models/queries/masks preserved. Supervisor session38194
+closed0. First stopped attempt remains preserved. NO heavy inference running.
+
+Exact parity FAILED, so fullfresh512 MUST REMAIN HELD. P01exact3of12, P14exact
+2of12; all12leaders identical, candidate membership identical8of12;5candidate
+keys differ out300. Among295common rows: E2rank64differences, GL101beyond1e-5,
+ICE1; public/ours individual neural numeric fields within1e-5. NewC71heads were
+NOT applied. C72freshquality and C13 remain UNCONSUMED, submissions0/2, C42ledger
+absent, champion0.480retained, old/hourly controllersOFF. Not a model quality
+rejection: diagnose runtime/input parity before any new source evaluation.
+
+Corrected an audit log-reader bug: original health checker needs outer stage
+summaries plus inner channel counts. ALL assertions/tolerances unchanged.
+Original auditor bytes and original operational Plan preserved under
+C75/audit-log-repair-v1; current operational Plan has explicit linked audit-only
+revision. No models/scientific source/cohort/reference changes. Corrected audit
+passed health/fidelity before failing exact final list comparison.
+
+Retrieved original C57 intermediates (USED only). Original acquisition inputs
+for ICE/GL exact; E2lists exact1of12, PCcandidate order10of12, PCfloat scores
+differ. TWO small GL tests completed: repeat exact localinput792scores BITEXACT
+(maxdiff0); replacing with original cloud9candidate input still101differences
+(max0.007375944) versusT4. Thus unstable randomness and candidate input selection
+do not explain the GL differences. No new training or label/quality read.
+
+A PRIVATE CPU-only metadata probe COMPLETED in EXACT immutable C57Dockerimage
+37c64f7d..., metadata verified GPUdisabled, no datasets/competition mounted.
+Kernel clarkkitchen/casmi26-c75-original-runtime-metadata v1. Actual original:
+Python3.12.13, Torch2.10.0+cu128, NumPy2.0.2, pandas2.3.3, scipy1.16.3,
+sklearn1.6.1, LightGBM4.6.0, numba0.60.0, llvmlite0.43.0, Arrow24.0.0,
+cuDNN9.10.2.21, cuBLAS12.8.4.1. Main RDKit2026.03.3 is installed by original
+notebook into its own site; simulatorRDKit2025.03.6 remains isolated.
+Local C75base used Torch2.11/NumPy2.2.6/pandas2.2.3/scipy1.15.3/numba0.61.2/
+Arrow19.0.1, so exact numerical environment was not matched.
+
+LIVE: one isolated Torch2.10 install, toolsession11252, systemd user scope
+enveda-c75-torch210-install (MemoryHigh2G/Max4G/SwapMax2G), target
+/home/imsa/.venvs/enveda-c75-torch210. Downloaded official CUDA128 packages;
+pip at installing stage16:21UTC. Original2.11/Windows envs UNCHANGED. Reconcile
+completion before another pip command. No NumPy/pandas etc yet in NEWenv.
+Prepared scripts/probe_c75_torch210_gl.py, NOT RUN. Next: afterinstallcomplete
+add a clearly recorded read-only baseCPUsite fallback .pth to NEWenv only,
+verify torch comes from NEWenv2.10 and realCUDA works; run ONE original-cloud9
+GLprobe (same inputbytes) under newenv in 4G/6G/2Gscope. If needed subsequently
+remove only that owned .pth BEFORE pip installs matched numerical stack into
+NEWenv; preserve first test evidence. Do NOT mutate the frozen baseenv.
+
+Actual Kaggle quota API lists refresh2026-11-14T00:00UTC (Nov13 7pmEastern),
+GPUtime used exceeds allowed; no T4job exists. CPU probe works. Keep GPUquota
+limitation separate from local scientific/runtime progress. Retired C56
+production first28cells use payloadc057..., while C71binds R3payload3f...
+(including genuine emptyE2pool recovery): do NOT silently reuse old wrapper.
+Production wrapper must preserve bound R3science and original productionrefs.
+
 ## C75 update — memory-bounded engineering retry running
 
 The first USED12/all51acquisition run stopped at15:28:56UTC when hostRAM

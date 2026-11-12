@@ -1,0 +1,24 @@
+{
+  "python": "3.12.13",
+  "platform": "Linux-6.18.55+-x86_64-with-glibc2.35",
+  "versions": {
+    "torch": "2.10.0+cu128",
+    "numpy": "2.0.2",
+    "pandas": "2.3.3",
+    "scipy": "1.16.3",
+    "scikit-learn": "1.6.1",
+    "lightgbm": "4.6.0",
+    "numba": "0.60.0",
+    "llvmlite": "0.43.0",
+    "pyarrow": "24.0.0",
+    "rdkit": null,
+    "nvidia-cudnn-cu12": "9.10.2.21",
+    "nvidia-cublas-cu12": "12.8.4.1",
+    "triton": "3.6.0"
+  },
+  "GPU_requested": false,
+  "query_data_mounted": false,
+  "quality_read": false,
+  "C13_read": false,
+  "scoring_entries": 0
+}

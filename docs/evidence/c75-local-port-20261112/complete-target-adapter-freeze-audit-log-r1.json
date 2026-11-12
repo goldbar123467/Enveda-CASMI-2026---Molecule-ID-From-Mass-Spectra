@@ -1,0 +1,44 @@
+{
+  "frozen_utc": "2026-11-12T15:43:49.961423+00:00",
+  "source_sha256": "527ba0738e7154983b0265556875871f273e5e2eecfd37070da2fa15ad3228b0",
+  "files_sha256": {
+    "scripts/complete_c75_local_target.py": "527ba0738e7154983b0265556875871f273e5e2eecfd37070da2fa15ad3228b0",
+    "scripts/c74_complete_target.py": "0533babff38d0fd1b540269758315a0ed014d9ef84b1d178f8fc12981c628b16",
+    "scripts/c67_ranker.py": "ce727ad6809d09fd8b770cedcf3de7f1a64a9520a06f4ebd0f706880ec0364ed",
+    "scripts/legacy_formate_compat.py": "eec91fbef5c8683de63c32ce94d39f95f30f950558b1dd484cf1772617ab7f78",
+    "scripts/audit_c75_run.py": "3f15b805edf0a7e996ad9236c2422f71df8d5e37bcece45fbe331a851a55cee9",
+    "outputs/local/c71-final-clean-direct-pair-20261112/complete-pipeline-binding.json": "ca0102078be7f068d9ffd939a99f1a6e009b560398fd46b04097532176df7288",
+    "outputs/local/c71-final-clean-direct-pair-20261112/complete-candidate-freeze.json": "cdd63ce2fe8da43d525d6234f5745b143f608e29f69da0a88f2edd182ff21b0b",
+    "outputs/local/c71-final-clean-direct-pair-20261112/cpu-model.npz": "96c4e05c7a419f38a0299b102e9007bb317fd1ff4605d65f8663512c6f6889e6",
+    "outputs/local/c71-final-clean-direct-pair-20261112/gpu-model.npz": "85b4dcddc650ffb3036733b76473c3eaa93094b5d7b50eea1dde5436f5a52c9d",
+    "outputs/local/c72-clean-target-holdout-20261112/validation-freeze.json": "d819cd2b8f8cfcf9b05b8f5f3d91417b16e51e4d6788ff9c9cf98fe2b21ee3e3",
+    "outputs/local/c72-clean-target-holdout-20261112/preparation-protocol.json": "0d4b839bfb3e65b9e72036c2b6a9594a0d2d19008d74e228f5ca60bf0332ff5f",
+    "outputs/local/c74-complete-clean-target-20261112/target-masked-reference/mask-manifest.json": "a7fa30b2ea25a03a029887ca240843227b43a398fd3d6347f95bec8ea2670ce0",
+    "outputs/local/c74-complete-clean-target-20261112/target-masked-reference/independent-mask-audit.json": "ac0385f46448cff1815d59e890e160b8ecc1cd75091a718a17c479f2d5599fe7",
+    "outputs/research/pop-prior/pool_popularity.csv": "33955e2fb32d3e8b6d030f5585f7823097194829f434df90f8214be44b7ba764"
+  },
+  "complete_recipe_previously_bound": true,
+  "normalized_manifest_fields": [
+    "files_sha256 keys only"
+  ],
+  "local_source_collection": "outputs\\local\\c75-local-core-port-20261112\\full-collection",
+  "full_core_and_acquisition_audit_required": true,
+  "fixture_exact_parity_required": true,
+  "queries": 512,
+  "acquisitions": 2215,
+  "model_fitting": false,
+  "new_source_quality_read": false,
+  "C13_read": false,
+  "scoring_entries": 0,
+  "actual_two_T4s": false,
+  "operational_audit_revision": {
+    "revised_utc": "2026-11-12T16:03:40.514227+00:00",
+    "reason": "Read actual outer orchestrator summaries together with actual inner scientific channel counts; original health assertions and all parity tolerances unchanged",
+    "original_plan_sha256": "dbe17e2d7f612a28f2af077b6109997a76bda3652bb9857e7a29887b2e54171a",
+    "original_audit_source_sha256": "e468f1120568d9f71469fe67656b5c98eb7966c23d1774bd9d4253cffff125d9",
+    "new_audit_source_sha256": "3f15b805edf0a7e996ad9236c2422f71df8d5e37bcece45fbe331a851a55cee9",
+    "original_evidence_preserved": true,
+    "model_cohort_reference_or_scientific_source_changed": false,
+    "fresh_inference_or_quality_started": false
+  }
+}

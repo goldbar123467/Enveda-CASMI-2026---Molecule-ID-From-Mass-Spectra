@@ -1,0 +1,21 @@
+{
+  "completed_utc": "2026-11-12T16:32:26.360882+00:00",
+  "comparison": {
+    "raw_model_scores": {
+      "n": 799,
+      "maxdiff": 0.007375944027884884,
+      "outside_tol": 410
+    },
+    "original_raw_vs_original_feature": {
+      "n": 219,
+      "maxdiff": 0.0,
+      "outside_tol": 0
+    }
+  },
+  "raw_cloud_file_sha256": "d25612e52462855fbdb318edb1a18682b69753961daea64b34bda99172e426f1",
+  "matched_probe_output_sha256": "6daff17a32f81fb70417b7cb08aa0d6d6cc0acc46dec2bf9289ca0d45e331dde",
+  "USED_only": true,
+  "new_source_quality_read": false,
+  "C13_read": false,
+  "scoring_entries": 0
+}

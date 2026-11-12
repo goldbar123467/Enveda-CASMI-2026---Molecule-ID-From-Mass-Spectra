@@ -47,7 +47,10 @@ def main():
     assert report['queries']==pin['queries'] and report['baseline_replay_exact'] and report['p14_receipt']['input_errors']==0
     assert not report['metrics_computed'] and not report['query_labels_mounted'] and not report['scoring_submission']
     assert execution['is_full_run'] and execution['processed_molecules']==pin['queries']
-    text=(working/'submission_pipeline.log').read_text(encoding='utf8',errors='replace');health=check_events([dict(data=text)],pin['queries'])
+    # Stage summaries are written by the outer orchestrator; detailed channel
+    # counts are in the nested scientific runner. Audit both actual log files.
+    outer_log=port/'local-pipeline.log';inner_log=working/'submission_pipeline.log'
+    health=check_events([dict(data=p.read_text(encoding='utf8',errors='replace')) for p in [outer_log,inner_log]],pin['queries'])
     for name in ['c41_main_reference_mask_audit.json','c41_engine2_reference_mask_receipt.json']:
         receipt=read(working/name);assert receipt['excluded_reference_rows']>0 and receipt['forbidden_rows_retained']==0
         if 'main' in name:assert receipt['window_calls']>0 and receipt['engine_representative_builds']>0 and receipt['engine_representatives_removed']>0
@@ -79,7 +82,7 @@ def main():
     write(dest,dict(completed_utc=stamp(),source_sha256=sha(__file__),run_complete_sha256=sha(port/'run-complete.json'),mode=mode,
         queries=pin['queries'],acquisitions=pin['acquisitions'],actual_single_RTX2070=True,actual_two_T4s=False,
         full_original_acquisitions_metadata_peaks_exact=True,no_core_soft_failure=True,all_reference_guards_forbidden_rows_zero=True,
-        all_neural_rows_healthy=True,**health,numeric_fixture_tolerance=dict(atol=1e-5,rtol=1e-5),fixture_feature_maximum_abs_differences=comparisons,
+        all_neural_rows_healthy=True,**health,actual_health_log_files_sha256={'outer':sha(outer_log),'inner':sha(inner_log)},numeric_fixture_tolerance=dict(atol=1e-5,rtol=1e-5),fixture_feature_maximum_abs_differences=comparisons,
         fixture_P01_and_P14_lists_exact=(mode=='fixture'),source_and_runtime_parity_passed=(mode=='fixture'),
         query_truth_labels_or_quality_read=False,new_source_quality_read=False,C13_read=False,scoring_entries=0,passed=True))
     if mode=='fixture':

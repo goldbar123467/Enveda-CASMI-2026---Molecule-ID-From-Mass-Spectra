@@ -1,0 +1,15 @@
+{
+  "checked_utc": "2026-11-12T16:39:21.131354+00:00",
+  "intent_sha256": "2a512c8d806ee66422ad7f45acb8a17b020768e7cc7ac4b0dd4a38397781b8a9",
+  "partial_output_sha256": "7c8ebfe550e51066bd683735849b9a9af38b898a472a84e598b3450118fc2cd5",
+  "completed_molecules_with_finite_scores": 96,
+  "compared_scores": 7610,
+  "maximum_absolute_difference": 0.02940327794501968,
+  "outside_frozen_tolerance": 2856,
+  "reason": "Whole-context parity already falsified by completed scores; remaining GPU work cannot make all original scores match. Intentional task-only stop; no cohort or metric rescue.",
+  "full_context_does_not_explain_difference": true,
+  "USED_only": true,
+  "new_source_quality_read": false,
+  "C13_read": false,
+  "scoring_entries": 0
+}

@@ -1,0 +1,31 @@
+{
+  "completed_utc": "2026-11-12T16:21:38.502265+00:00",
+  "kernel": "clarkkitchen/casmi26-c75-original-runtime-metadata",
+  "version": 1,
+  "original_C57_image_exact": true,
+  "actual_GPU_disabled": true,
+  "metadata_only": true,
+  "source_sha256": "e2cd21ce4877af6dad19c67304026d8eec81207b57acf4c4d63f45478a177334",
+  "status_sha256": "a151f6f88b309557a9f87cf22ddceae4e5ba6eb85a34a330494548a71d403205",
+  "packages_sha256": "5b26081d2622064c1643a07646b0114fc1f2721b3148b905eb74a2640fc8e423",
+  "versions": {
+    "torch": "2.10.0+cu128",
+    "numpy": "2.0.2",
+    "pandas": "2.3.3",
+    "scipy": "1.16.3",
+    "scikit-learn": "1.6.1",
+    "lightgbm": "4.6.0",
+    "numba": "0.60.0",
+    "llvmlite": "0.43.0",
+    "pyarrow": "24.0.0",
+    "rdkit": null,
+    "nvidia-cudnn-cu12": "9.10.2.21",
+    "nvidia-cublas-cu12": "12.8.4.1",
+    "triton": "3.6.0"
+  },
+  "python": "3.12.13",
+  "no_data_or_labels_mounted": true,
+  "C13_read": false,
+  "scoring_entries": 0,
+  "passed": true
+}

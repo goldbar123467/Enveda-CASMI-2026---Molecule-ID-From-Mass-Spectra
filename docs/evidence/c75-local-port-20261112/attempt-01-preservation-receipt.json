@@ -1,0 +1,23 @@
+{
+  "archived_utc": "2026-11-12T15:40:21.988416+00:00",
+  "source_sha256": "2db692feb7245a7f4b5528a86998aff930fff082d0d40ec95081dc6f70e4c12a",
+  "files_sha256": {
+    "cache-pressure-action.json": "b76b46fae88ce9335047d3c92840d50f708413481bfe1da34377e617dca43c78",
+    "local-pipeline.err": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "local-pipeline.log": "1110b78d3fa2856a9552a76b61475c9d512253139aa34c95632805a53fcc5398",
+    "run-intent.json": "34d74fb731bcae0dc92377af9766a6c76915475086ab2c85aab44714cb06799e",
+    "run-progress.json": "cd6f6ef13f6c2ec00a542e121eb427b05f45299c386f576a3a2dbc06d8eae3be",
+    "supervisor-failed.json": "866a50d9deabda48d13045c9c53d4ece67566ad188c2f565a89203d1cb76817e",
+    "supervisor-intent.json": "7c952eb700d8ed9df2529a364f1ac9188b349fe302006b0799b3e9c77a3b8dc1",
+    "supervisor-status.json": "fb327334afa6cffecfab9528ac1d0466d3948259586e6f51253a0df4dbc93835"
+  },
+  "original_driver_stopped": true,
+  "working_preserved_at": "/home/imsa/.local/share/enveda-c75/fixture/attempt-01-host-memory-stop-working",
+  "fresh_working": "/home/imsa/.local/share/enveda-c75/fixture/working",
+  "only_verified_task_directory_moved": true,
+  "failed_attempt_not_qualified": true,
+  "quality_outcomes_read": false,
+  "C13_read": false,
+  "scoring_entries": 0,
+  "notebook_and_models_unchanged": true
+}

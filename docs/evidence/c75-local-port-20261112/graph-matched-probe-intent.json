@@ -1,0 +1,29 @@
+{
+  "started_utc": "2026-11-12T16:45:15.435952+00:00",
+  "actual_versions": {
+    "torch": "2.10.0+cu128",
+    "numpy": "2.0.2",
+    "pandas": "2.3.3",
+    "scipy": "1.16.3",
+    "scikit-learn": "1.6.1",
+    "numba": "0.60.0",
+    "llvmlite": "0.43.0",
+    "lightgbm": "4.6.0",
+    "pyarrow": "24.0.0",
+    "networkx": "3.6.1",
+    "multiprocess": "0.70.16",
+    "platformdirs": "4.9.6",
+    "dill": "0.4.1",
+    "h5py": "3.16.0",
+    "joblib": "1.5.3",
+    "Pillow": "11.3.0",
+    "einops": "0.8.2"
+  },
+  "source_input_sha256": "121a0b5947a082ed4353a45601ac24e326b1e13207a44caebbf1fb2ffb51b470",
+  "original_image_inventory_audit_sha256": "a271e8bab5fd9865fa66b83ccaf33c7bd06c94d1f9e515e615e853f5ca9454cb",
+  "config_sha256": "3430ec621a3c9388aab15b04c2b822a710a3bc026c533a0a44d730dfa59822ab",
+  "USED_only": true,
+  "new_source_quality_read": false,
+  "C13_read": false,
+  "scoring_entries": 0
+}

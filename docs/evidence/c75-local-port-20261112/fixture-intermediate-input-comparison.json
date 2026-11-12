@@ -1,0 +1,61 @@
+{
+  "completed_utc": "2026-11-12T16:08:50.656417+00:00",
+  "comparison": {
+    "eng_lists.json": {
+      "local_queries": 12,
+      "old_queries": 482,
+      "whole_record_exact": 1,
+      "per_field_exact_queries": {
+        "smiles": 1,
+        "keys": 1
+      }
+    },
+    "pc_lists.json": {
+      "local_queries": 12,
+      "old_queries": 482,
+      "whole_record_exact": 0,
+      "per_field_exact_queries": {
+        "pc": 10,
+        "pc_fz": 0,
+        "pc_keys": 10,
+        "fz_top": 0,
+        "S": 0,
+        "top_pop": 12,
+        "promotion_evidence": 0,
+        "best_pool_fz": 0,
+        "target": 12
+      }
+    },
+    "gl_work/gl_in.json": {
+      "local_molecules": 9,
+      "cloud_molecules": 433,
+      "exact_field_molecules": {
+        "mid": 9,
+        "spectra": 9,
+        "cands": 1
+      }
+    },
+    "ice_work/ice_in.json": {
+      "local_molecules": 12,
+      "cloud_molecules": 482,
+      "exact_field_molecules": {
+        "mid": 12,
+        "spectra": 12,
+        "cands": 4
+      }
+    }
+  },
+  "cloud_files_sha256": {
+    "e004_candidate_inputs.json": "69581883326827dd334e14b70a51c4b448a0ea98020baee1d9fa9931308d728a",
+    "eng_lists.json": "66270dfba807ae77941de48783bd617b596d6bdbce1c5a20a0796e36d46edc2b",
+    "pc_lists.json": "2297d0e2dd2b4671efe43ec19f75d97df179e6dab0c37829e1714677504e54a1",
+    "gl_work/gl_in.json": "9a6f7e249517a82c749a72d2e344c12ec26c4bcea549156323c3f0f75890de56",
+    "gl_work/gl_out.json.meta.json": "da5f4f0651c28abd7f55b5bdd2995fd9b34e60e856761e9c57ea9e4f3afa91e8",
+    "ice_work/ice_in.json": "2bddbf6cf9f9f8fda4288ce2b376b575328dd122680f6c5db4c9b32d4a4739cc",
+    "ice_work/ice_out.json.meta.json": "604283fb1777dc1937e99dafffa36ba7e96f11957537e8a937da5f6ce56a1014"
+  },
+  "USED_only": true,
+  "new_source_quality_read": false,
+  "C13_read": false,
+  "scoring_entries": 0
+}

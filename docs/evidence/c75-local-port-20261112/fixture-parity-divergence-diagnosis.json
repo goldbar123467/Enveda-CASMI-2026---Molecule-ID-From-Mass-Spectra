@@ -1,0 +1,374 @@
+{
+  "completed_utc": "2026-11-12T16:05:00.736392+00:00",
+  "source_sha256": "e6b35b4424f2e7176d965ca1b955e87e5c48980ddf0e37a92a64249245ca94d0",
+  "run_complete_sha256": "8ab4735c1d7bc422fab209147355658c1436e9cc639a92be88a003090dd79a23",
+  "lists": {
+    "c41_p01.csv": {
+      "queries": 12,
+      "exact_strings": 3,
+      "exact_official_key_order": 3,
+      "identical_official_key_membership": 8,
+      "identical_leader": 12,
+      "changed_slots": 71
+    },
+    "c41_p14.csv": {
+      "queries": 12,
+      "exact_strings": 2,
+      "exact_official_key_order": 2,
+      "identical_official_key_membership": 8,
+      "identical_leader": 12,
+      "changed_slots": 80
+    }
+  },
+  "features": {
+    "c41_neural_p01.parquet": {
+      "local_rows": 300,
+      "cloud_rows": 300,
+      "common_candidates": 295,
+      "local_only_candidates": 5,
+      "cloud_only_candidates": 5,
+      "columns": {
+        "baseline_rank": {
+          "equal_including_nan": 225,
+          "nan_mismatches": 0,
+          "maximum_absolute_difference": 23.0,
+          "outside_frozen_tolerance": 70
+        },
+        "engine2_rank": {
+          "equal_including_nan": 231,
+          "nan_mismatches": 0,
+          "maximum_absolute_difference": 37.0,
+          "outside_frozen_tolerance": 64
+        },
+        "gl": {
+          "equal_including_nan": 82,
+          "nan_mismatches": 0,
+          "maximum_absolute_difference": 0.007375939461758407,
+          "outside_frozen_tolerance": 101
+        },
+        "ice": {
+          "equal_including_nan": 81,
+          "nan_mismatches": 0,
+          "maximum_absolute_difference": 0.0024937248609472884,
+          "outside_frozen_tolerance": 1
+        },
+        "library_max": {
+          "equal_including_nan": 295,
+          "nan_mismatches": 0,
+          "maximum_absolute_difference": 0.0,
+          "outside_frozen_tolerance": 0
+        },
+        "main_rank": {
+          "equal_including_nan": 287,
+          "nan_mismatches": 0,
+          "maximum_absolute_difference": 2.0,
+          "outside_frozen_tolerance": 8
+        },
+        "n_adducts": {
+          "equal_including_nan": 295,
+          "nan_mismatches": 0,
+          "maximum_absolute_difference": 0.0,
+          "outside_frozen_tolerance": 0
+        },
+        "n_spectra": {
+          "equal_including_nan": 295,
+          "nan_mismatches": 0,
+          "maximum_absolute_difference": 0.0,
+          "outside_frozen_tolerance": 0
+        },
+        "neural_cos": {
+          "equal_including_nan": 144,
+          "nan_mismatches": 0,
+          "maximum_absolute_difference": 1.1920928955078125e-07,
+          "outside_frozen_tolerance": 0
+        },
+        "neural_fp": {
+          "equal_including_nan": 98,
+          "nan_mismatches": 0,
+          "maximum_absolute_difference": 7.450580596923828e-09,
+          "outside_frozen_tolerance": 0
+        },
+        "neural_ok": {
+          "equal_including_nan": 295,
+          "nan_mismatches": 0,
+          "maximum_absolute_difference": 0.0,
+          "outside_frozen_tolerance": 0
+        },
+        "neural_score": {
+          "equal_including_nan": 0,
+          "nan_mismatches": 0,
+          "maximum_absolute_difference": 0.08141784599041468,
+          "outside_frozen_tolerance": 95
+        },
+        "neural_std": {
+          "equal_including_nan": 55,
+          "nan_mismatches": 0,
+          "maximum_absolute_difference": 8.344650268554688e-07,
+          "outside_frozen_tolerance": 0
+        },
+        "prefusion_rank": {
+          "equal_including_nan": 288,
+          "nan_mismatches": 0,
+          "maximum_absolute_difference": 3.0,
+          "outside_frozen_tolerance": 7
+        },
+        "processed": {
+          "equal_including_nan": 295,
+          "nan_mismatches": 0,
+          "maximum_absolute_difference": 0.0,
+          "outside_frozen_tolerance": 0
+        },
+        "proxy_gl": {
+          "equal_including_nan": 295,
+          "nan_mismatches": 0,
+          "maximum_absolute_difference": 0.0,
+          "outside_frozen_tolerance": 0
+        },
+        "pubchem_rank": {
+          "equal_including_nan": 295,
+          "nan_mismatches": 0,
+          "maximum_absolute_difference": 0.0,
+          "outside_frozen_tolerance": 0
+        },
+        "smiles": {
+          "exact": 295
+        }
+      }
+    },
+    "neural_public.parquet": {
+      "local_rows": 300,
+      "cloud_rows": 300,
+      "common_candidates": 295,
+      "local_only_candidates": 5,
+      "cloud_only_candidates": 5,
+      "columns": {
+        "baseline_rank": {
+          "equal_including_nan": 225,
+          "nan_mismatches": 0,
+          "maximum_absolute_difference": 23.0,
+          "outside_frozen_tolerance": 70
+        },
+        "engine2_rank": {
+          "equal_including_nan": 231,
+          "nan_mismatches": 0,
+          "maximum_absolute_difference": 37.0,
+          "outside_frozen_tolerance": 64
+        },
+        "gl": {
+          "equal_including_nan": 82,
+          "nan_mismatches": 0,
+          "maximum_absolute_difference": 0.007375939461758407,
+          "outside_frozen_tolerance": 101
+        },
+        "ice": {
+          "equal_including_nan": 81,
+          "nan_mismatches": 0,
+          "maximum_absolute_difference": 0.0024937248609472884,
+          "outside_frozen_tolerance": 1
+        },
+        "library_max": {
+          "equal_including_nan": 295,
+          "nan_mismatches": 0,
+          "maximum_absolute_difference": 0.0,
+          "outside_frozen_tolerance": 0
+        },
+        "main_rank": {
+          "equal_including_nan": 287,
+          "nan_mismatches": 0,
+          "maximum_absolute_difference": 2.0,
+          "outside_frozen_tolerance": 8
+        },
+        "n_adducts": {
+          "equal_including_nan": 295,
+          "nan_mismatches": 0,
+          "maximum_absolute_difference": 0.0,
+          "outside_frozen_tolerance": 0
+        },
+        "n_spectra": {
+          "equal_including_nan": 295,
+          "nan_mismatches": 0,
+          "maximum_absolute_difference": 0.0,
+          "outside_frozen_tolerance": 0
+        },
+        "neural_cos": {
+          "equal_including_nan": 119,
+          "nan_mismatches": 0,
+          "maximum_absolute_difference": 1.1920928955078125e-07,
+          "outside_frozen_tolerance": 0
+        },
+        "neural_fp": {
+          "equal_including_nan": 84,
+          "nan_mismatches": 0,
+          "maximum_absolute_difference": 7.450580596923828e-09,
+          "outside_frozen_tolerance": 0
+        },
+        "neural_ok": {
+          "equal_including_nan": 295,
+          "nan_mismatches": 0,
+          "maximum_absolute_difference": 0.0,
+          "outside_frozen_tolerance": 0
+        },
+        "neural_score": {
+          "equal_including_nan": 112,
+          "nan_mismatches": 0,
+          "maximum_absolute_difference": 9.5367431640625e-07,
+          "outside_frozen_tolerance": 0
+        },
+        "neural_std": {
+          "equal_including_nan": 48,
+          "nan_mismatches": 0,
+          "maximum_absolute_difference": 9.5367431640625e-07,
+          "outside_frozen_tolerance": 0
+        },
+        "prefusion_rank": {
+          "equal_including_nan": 288,
+          "nan_mismatches": 0,
+          "maximum_absolute_difference": 3.0,
+          "outside_frozen_tolerance": 7
+        },
+        "processed": {
+          "equal_including_nan": 295,
+          "nan_mismatches": 0,
+          "maximum_absolute_difference": 0.0,
+          "outside_frozen_tolerance": 0
+        },
+        "proxy_gl": {
+          "equal_including_nan": 295,
+          "nan_mismatches": 0,
+          "maximum_absolute_difference": 0.0,
+          "outside_frozen_tolerance": 0
+        },
+        "pubchem_rank": {
+          "equal_including_nan": 295,
+          "nan_mismatches": 0,
+          "maximum_absolute_difference": 0.0,
+          "outside_frozen_tolerance": 0
+        },
+        "smiles": {
+          "exact": 295
+        }
+      }
+    },
+    "neural_ours.parquet": {
+      "local_rows": 300,
+      "cloud_rows": 300,
+      "common_candidates": 295,
+      "local_only_candidates": 5,
+      "cloud_only_candidates": 5,
+      "columns": {
+        "baseline_rank": {
+          "equal_including_nan": 225,
+          "nan_mismatches": 0,
+          "maximum_absolute_difference": 23.0,
+          "outside_frozen_tolerance": 70
+        },
+        "engine2_rank": {
+          "equal_including_nan": 231,
+          "nan_mismatches": 0,
+          "maximum_absolute_difference": 37.0,
+          "outside_frozen_tolerance": 64
+        },
+        "gl": {
+          "equal_including_nan": 82,
+          "nan_mismatches": 0,
+          "maximum_absolute_difference": 0.007375939461758407,
+          "outside_frozen_tolerance": 101
+        },
+        "ice": {
+          "equal_including_nan": 81,
+          "nan_mismatches": 0,
+          "maximum_absolute_difference": 0.0024937248609472884,
+          "outside_frozen_tolerance": 1
+        },
+        "library_max": {
+          "equal_including_nan": 295,
+          "nan_mismatches": 0,
+          "maximum_absolute_difference": 0.0,
+          "outside_frozen_tolerance": 0
+        },
+        "main_rank": {
+          "equal_including_nan": 287,
+          "nan_mismatches": 0,
+          "maximum_absolute_difference": 2.0,
+          "outside_frozen_tolerance": 8
+        },
+        "n_adducts": {
+          "equal_including_nan": 295,
+          "nan_mismatches": 0,
+          "maximum_absolute_difference": 0.0,
+          "outside_frozen_tolerance": 0
+        },
+        "n_spectra": {
+          "equal_including_nan": 295,
+          "nan_mismatches": 0,
+          "maximum_absolute_difference": 0.0,
+          "outside_frozen_tolerance": 0
+        },
+        "neural_cos": {
+          "equal_including_nan": 124,
+          "nan_mismatches": 0,
+          "maximum_absolute_difference": 1.1920928955078125e-07,
+          "outside_frozen_tolerance": 0
+        },
+        "neural_fp": {
+          "equal_including_nan": 81,
+          "nan_mismatches": 0,
+          "maximum_absolute_difference": 7.450580596923828e-09,
+          "outside_frozen_tolerance": 0
+        },
+        "neural_ok": {
+          "equal_including_nan": 295,
+          "nan_mismatches": 0,
+          "maximum_absolute_difference": 0.0,
+          "outside_frozen_tolerance": 0
+        },
+        "neural_score": {
+          "equal_including_nan": 110,
+          "nan_mismatches": 0,
+          "maximum_absolute_difference": 9.5367431640625e-07,
+          "outside_frozen_tolerance": 0
+        },
+        "neural_std": {
+          "equal_including_nan": 37,
+          "nan_mismatches": 0,
+          "maximum_absolute_difference": 9.5367431640625e-07,
+          "outside_frozen_tolerance": 0
+        },
+        "prefusion_rank": {
+          "equal_including_nan": 288,
+          "nan_mismatches": 0,
+          "maximum_absolute_difference": 3.0,
+          "outside_frozen_tolerance": 7
+        },
+        "processed": {
+          "equal_including_nan": 295,
+          "nan_mismatches": 0,
+          "maximum_absolute_difference": 0.0,
+          "outside_frozen_tolerance": 0
+        },
+        "proxy_gl": {
+          "equal_including_nan": 295,
+          "nan_mismatches": 0,
+          "maximum_absolute_difference": 0.0,
+          "outside_frozen_tolerance": 0
+        },
+        "pubchem_rank": {
+          "equal_including_nan": 295,
+          "nan_mismatches": 0,
+          "maximum_absolute_difference": 0.0,
+          "outside_frozen_tolerance": 0
+        },
+        "smiles": {
+          "exact": 295
+        }
+      }
+    }
+  },
+  "USED_only": true,
+  "query_truth_or_quality_read": false,
+  "new_source_quality_read": false,
+  "C13_read": false,
+  "scoring_entries": 0,
+  "full_fresh_inference_held": true,
+  "parity_passed": false
+}
