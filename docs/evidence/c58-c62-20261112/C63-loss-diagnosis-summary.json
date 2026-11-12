@@ -1,0 +1,96 @@
+{
+  "completed_utc": "2026-11-12T12:28:49.465461+00:00",
+  "source_sha256": "bd2a4b75ab24f5932ba7fc1a2b30e296c6cad90bd9806694f1e00f8de9731dfe",
+  "scope": "All482now-USED C53queries/2125acquisitions; diagnosis only, no fresh confirmation or fitting",
+  "queries": 482,
+  "acquisitions": 2125,
+  "source_results_sha256": "a59bd6722233e337fee05737bc37c5a04b9718f931a431b66037bf98883ff685",
+  "independent_audit_sha256": "d537740640bf9533050f94be7913f0d0450b9444dcdc26cea41e0542963a1c10",
+  "frozen_pair_rejected": true,
+  "source_panel_now_used": true,
+  "rank_distribution": {
+    "P01": {
+      "0": 3,
+      "1": 424,
+      "2": 32,
+      "3": 12,
+      "4": 4,
+      "5": 6,
+      "9": 1
+    },
+    "P16": {
+      "0": 3,
+      "1": 422,
+      "2": 34,
+      "3": 12,
+      "4": 4,
+      "5": 6,
+      "9": 1
+    },
+    "cpu": {
+      "0": 3,
+      "1": 422,
+      "2": 34,
+      "3": 11,
+      "4": 3,
+      "5": 6,
+      "6": 2,
+      "9": 1
+    },
+    "gpu": {
+      "0": 3,
+      "1": 422,
+      "2": 34,
+      "3": 11,
+      "4": 3,
+      "5": 6,
+      "6": 2,
+      "10": 1
+    }
+  },
+  "complete_deltas": {
+    "cpu": -0.0025933609958506223,
+    "gpu": -0.0026164130935915166
+  },
+  "head_only_deltas": {
+    "cpu": -0.0005186721991701245,
+    "gpu": -0.0005417242969110189
+  },
+  "head_improved_truths": {
+    "cpu": 0,
+    "gpu": 0
+  },
+  "head_harmed_truths": {
+    "cpu": 5,
+    "gpu": 6
+  },
+  "parent_overlay_delta": -0.002074688796680498,
+  "old_tail_only_truth_opportunities": 23,
+  "old_protected_top2_truths": 456,
+  "old_tail_perfect_order_maximum_incremental_delta": 0.0028123559243891194,
+  "old_tail_perfect_order_maximum_incremental_fraction": "61/21690",
+  "proposed_next_work": [
+    "Test adduct-implied neutral-mass consistency on all USED P16 paths; raw precursor agreement is insufficient for dehydrated ions.",
+    "Assemble all869USED queries for chemistry-group out-of-fold direct isomer-ranking tests with frozen core evidence; test CPU before new GPU fitting.",
+    "Freeze any new candidate and an additional untouched source panel before prospective outcomes. Never call these482fresh again. Keep C13unconsumed until a defensible pair passes."
+  ],
+  "C13_consumed": false,
+  "scoring_entries": 0,
+  "new_GPU_fitting": false,
+  "limitation": "Parent MRR0.926on this in-corpus panel is not leaderboard calibration; historic public parent/encoder exposure persists. CPU/GPU agreement is correlated because the GPU head shares its CPU anchor and training data.",
+  "parent_wrong_promotions_summary": {
+    "count": 2,
+    "original_truth_rank": 1,
+    "new_truth_rank": 2,
+    "reference_adduct": "[M+H-H2O]+",
+    "problem": "Raw precursor coincidence despite different inferred neutral masses",
+    "cosines": [
+      0.8548920553404098,
+      0.8326514053604945
+    ],
+    "neutral_mass_error_ppm": [
+      44552.16551024373,
+      92797.3813882257
+    ]
+  }
+}

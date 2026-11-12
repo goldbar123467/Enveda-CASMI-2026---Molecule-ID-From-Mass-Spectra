@@ -1,0 +1,1479 @@
+{
+  "completed_utc": "2026-11-12T12:14:00.580971+00:00",
+  "source_sha256": "6db5a9cd2f3717b6e1e54535c0e2669cb8e4fc19166d24218782c600bdab5f34",
+  "policy_sha256": "fd6e710b57868ab4a952cc09d7898672827a9a36e0c62da6584aca5a90ae4126",
+  "evaluation_freeze_sha256": "0afd65d369eaf51ca914a219f5ae7cb18a4a7a0c501f86bd387b177fb160dec4",
+  "consumption_sha256": "c164782b3f184c954a8655900cf4094fd08086abaa108b121cdc4adfc6c8b9a1",
+  "queries": 482,
+  "acquisitions": 2125,
+  "chemistry_groups": 447,
+  "results": {
+    "cpu": {
+      "complete": {
+        "all": {
+          "n": 482,
+          "independent_groups": 447,
+          "baseline_mrr25": 0.9259566620562472,
+          "candidate_mrr25": 0.9233633010603965,
+          "delta": -0.0025933609958506223,
+          "ci95": [
+            -0.005740240246676497,
+            -0.0002854950981289313
+          ],
+          "improved": 0,
+          "harmed": 7,
+          "point": {
+            "n": 482,
+            "baseline_MRR": 0.9259566620562472,
+            "candidate_MRR": 0.9233633010603965,
+            "delta": -0.0025933609958506223,
+            "numerator": -5,
+            "denominator": 1928,
+            "strictly_positive": false,
+            "nonnegative": false
+          }
+        },
+        "source": {
+          "enveda-180": {
+            "n": 384,
+            "independent_groups": 361,
+            "baseline_mrr25": 0.9519965277777778,
+            "candidate_mrr25": 0.9516493055555554,
+            "delta": -0.00034722222222222224,
+            "ci95": [
+              -0.0007874015748031497,
+              0.0
+            ],
+            "improved": 0,
+            "harmed": 3,
+            "point": {
+              "n": 384,
+              "baseline_MRR": 0.9519965277777778,
+              "candidate_MRR": 0.9516493055555556,
+              "delta": -0.00034722222222222224,
+              "numerator": -1,
+              "denominator": 2880,
+              "strictly_positive": false,
+              "nonnegative": false
+            }
+          },
+          "enveda-np-examples": {
+            "n": 98,
+            "independent_groups": 86,
+            "baseline_mrr25": 0.823922902494331,
+            "candidate_mrr25": 0.8125283446712017,
+            "delta": -0.011394557823129252,
+            "ci95": [
+              -0.026834021035598704,
+              -0.00034722222222222245
+            ],
+            "improved": 0,
+            "harmed": 4,
+            "point": {
+              "n": 98,
+              "baseline_MRR": 0.8239229024943311,
+              "candidate_MRR": 0.8125283446712018,
+              "delta": -0.011394557823129252,
+              "numerator": -67,
+              "denominator": 5880,
+              "strictly_positive": false,
+              "nonnegative": false
+            }
+          }
+        },
+        "query_mode": {
+          "mixed": {
+            "n": 141,
+            "independent_groups": 135,
+            "baseline_mrr25": 0.928368794326241,
+            "candidate_mrr25": 0.9275413711583924,
+            "delta": -0.0008274231678486998,
+            "ci95": [
+              -0.002278177458033573,
+              0.0
+            ],
+            "improved": 0,
+            "harmed": 2,
+            "point": {
+              "n": 141,
+              "baseline_MRR": 0.9283687943262411,
+              "candidate_MRR": 0.9275413711583924,
+              "delta": -0.0008274231678486998,
+              "numerator": -7,
+              "denominator": 8460,
+              "strictly_positive": false,
+              "nonnegative": false
+            }
+          },
+          "negative": {
+            "n": 34,
+            "independent_groups": 32,
+            "baseline_mrr25": 0.9127450980392157,
+            "candidate_mrr25": 0.9127450980392157,
+            "delta": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "improved": 0,
+            "harmed": 0,
+            "point": {
+              "n": 34,
+              "baseline_MRR": 0.9127450980392157,
+              "candidate_MRR": 0.9127450980392157,
+              "delta": 0.0,
+              "numerator": 0,
+              "denominator": 1,
+              "strictly_positive": false,
+              "nonnegative": true
+            }
+          },
+          "positive": {
+            "n": 307,
+            "independent_groups": 291,
+            "baseline_mrr25": 0.9263119797321753,
+            "candidate_mrr25": 0.9226203402099167,
+            "delta": -0.0036916395222584145,
+            "ci95": [
+              -0.008660130718954249,
+              -0.0002136581469648566
+            ],
+            "improved": 0,
+            "harmed": 5,
+            "point": {
+              "n": 307,
+              "baseline_MRR": 0.9263119797321752,
+              "candidate_MRR": 0.9226203402099168,
+              "delta": -0.003691639522258415,
+              "numerator": -17,
+              "denominator": 4605,
+              "strictly_positive": false,
+              "nonnegative": false
+            }
+          }
+        },
+        "source_mode": {
+          "enveda-180 / mixed": {
+            "n": 93,
+            "independent_groups": 90,
+            "baseline_mrr25": 0.9788530465949821,
+            "candidate_mrr25": 0.9788530465949821,
+            "delta": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "improved": 0,
+            "harmed": 0,
+            "point": {
+              "n": 93,
+              "baseline_MRR": 0.9788530465949821,
+              "candidate_MRR": 0.9788530465949821,
+              "delta": 0.0,
+              "numerator": 0,
+              "denominator": 1,
+              "strictly_positive": false,
+              "nonnegative": true
+            }
+          },
+          "enveda-180 / negative": {
+            "n": 26,
+            "independent_groups": 26,
+            "baseline_mrr25": 0.9551282051282051,
+            "candidate_mrr25": 0.9551282051282051,
+            "delta": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "improved": 0,
+            "harmed": 0,
+            "point": {
+              "n": 26,
+              "baseline_MRR": 0.9551282051282052,
+              "candidate_MRR": 0.9551282051282052,
+              "delta": 0.0,
+              "numerator": 0,
+              "denominator": 1,
+              "strictly_positive": false,
+              "nonnegative": true
+            }
+          },
+          "enveda-180 / positive": {
+            "n": 265,
+            "independent_groups": 251,
+            "baseline_mrr25": 0.9422641509433962,
+            "candidate_mrr25": 0.9417610062893081,
+            "delta": -0.0005031446540880503,
+            "ci95": [
+              -0.0011494775339602927,
+              0.0
+            ],
+            "improved": 0,
+            "harmed": 3,
+            "point": {
+              "n": 265,
+              "baseline_MRR": 0.9422641509433962,
+              "candidate_MRR": 0.9417610062893081,
+              "delta": -0.0005031446540880503,
+              "numerator": -2,
+              "denominator": 3975,
+              "strictly_positive": false,
+              "nonnegative": false
+            }
+          },
+          "enveda-np-examples / mixed": {
+            "n": 48,
+            "independent_groups": 45,
+            "baseline_mrr25": 0.8305555555555556,
+            "candidate_mrr25": 0.828125,
+            "delta": -0.0024305555555555556,
+            "ci95": [
+              -0.006884057971014493,
+              0.0
+            ],
+            "improved": 0,
+            "harmed": 2,
+            "point": {
+              "n": 48,
+              "baseline_MRR": 0.8305555555555556,
+              "candidate_MRR": 0.828125,
+              "delta": -0.0024305555555555556,
+              "numerator": -7,
+              "denominator": 2880,
+              "strictly_positive": false,
+              "nonnegative": false
+            }
+          },
+          "enveda-np-examples / negative": {
+            "n": 8,
+            "independent_groups": 6,
+            "baseline_mrr25": 0.775,
+            "candidate_mrr25": 0.775,
+            "delta": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "improved": 0,
+            "harmed": 0,
+            "point": {
+              "n": 8,
+              "baseline_MRR": 0.775,
+              "candidate_MRR": 0.775,
+              "delta": 0.0,
+              "numerator": 0,
+              "denominator": 1,
+              "strictly_positive": false,
+              "nonnegative": true
+            }
+          },
+          "enveda-np-examples / positive": {
+            "n": 42,
+            "independent_groups": 40,
+            "baseline_mrr25": 0.8256613756613757,
+            "candidate_mrr25": 0.8018518518518518,
+            "delta": -0.023809523809523808,
+            "ci95": [
+              -0.05813953488372093,
+              0.0
+            ],
+            "improved": 0,
+            "harmed": 2,
+            "point": {
+              "n": 42,
+              "baseline_MRR": 0.8256613756613757,
+              "candidate_MRR": 0.8018518518518518,
+              "delta": -0.023809523809523808,
+              "numerator": -1,
+              "denominator": 42,
+              "strictly_positive": false,
+              "nonnegative": false
+            }
+          }
+        },
+        "recovered_truths": 0,
+        "displaced_truths": 0,
+        "truth_absent_queries": 3,
+        "rank1_changes": 2,
+        "candidate_membership_changes": 2
+      },
+      "incremental": {
+        "all": {
+          "n": 482,
+          "independent_groups": 447,
+          "baseline_mrr25": 0.9238819732595667,
+          "candidate_mrr25": 0.9233633010603965,
+          "delta": -0.0005186721991701245,
+          "ci95": [
+            -0.0010504201680672266,
+            -0.00010288065843621396
+          ],
+          "improved": 0,
+          "harmed": 5,
+          "point": {
+            "n": 482,
+            "baseline_MRR": 0.9238819732595667,
+            "candidate_MRR": 0.9233633010603965,
+            "delta": -0.0005186721991701245,
+            "numerator": -1,
+            "denominator": 1928,
+            "strictly_positive": false,
+            "nonnegative": false
+          }
+        },
+        "source": {
+          "enveda-180": {
+            "n": 384,
+            "independent_groups": 361,
+            "baseline_mrr25": 0.9519965277777778,
+            "candidate_mrr25": 0.9516493055555554,
+            "delta": -0.00034722222222222224,
+            "ci95": [
+              -0.0007874015748031497,
+              0.0
+            ],
+            "improved": 0,
+            "harmed": 3,
+            "point": {
+              "n": 384,
+              "baseline_MRR": 0.9519965277777778,
+              "candidate_MRR": 0.9516493055555556,
+              "delta": -0.00034722222222222224,
+              "numerator": -1,
+              "denominator": 2880,
+              "strictly_positive": false,
+              "nonnegative": false
+            }
+          },
+          "enveda-np-examples": {
+            "n": 98,
+            "independent_groups": 86,
+            "baseline_mrr25": 0.8137188208616779,
+            "candidate_mrr25": 0.8125283446712017,
+            "delta": -0.0011904761904761906,
+            "ci95": [
+              -0.0033670481409843116,
+              0.0
+            ],
+            "improved": 0,
+            "harmed": 2,
+            "point": {
+              "n": 98,
+              "baseline_MRR": 0.813718820861678,
+              "candidate_MRR": 0.8125283446712018,
+              "delta": -0.0011904761904761906,
+              "numerator": -1,
+              "denominator": 840,
+              "strictly_positive": false,
+              "nonnegative": false
+            }
+          }
+        },
+        "query_mode": {
+          "mixed": {
+            "n": 141,
+            "independent_groups": 135,
+            "baseline_mrr25": 0.928368794326241,
+            "candidate_mrr25": 0.9275413711583924,
+            "delta": -0.0008274231678486998,
+            "ci95": [
+              -0.002278177458033573,
+              0.0
+            ],
+            "improved": 0,
+            "harmed": 2,
+            "point": {
+              "n": 141,
+              "baseline_MRR": 0.9283687943262411,
+              "candidate_MRR": 0.9275413711583924,
+              "delta": -0.0008274231678486998,
+              "numerator": -7,
+              "denominator": 8460,
+              "strictly_positive": false,
+              "nonnegative": false
+            }
+          },
+          "negative": {
+            "n": 34,
+            "independent_groups": 32,
+            "baseline_mrr25": 0.9127450980392157,
+            "candidate_mrr25": 0.9127450980392157,
+            "delta": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "improved": 0,
+            "harmed": 0,
+            "point": {
+              "n": 34,
+              "baseline_MRR": 0.9127450980392157,
+              "candidate_MRR": 0.9127450980392157,
+              "delta": 0.0,
+              "numerator": 0,
+              "denominator": 1,
+              "strictly_positive": false,
+              "nonnegative": true
+            }
+          },
+          "positive": {
+            "n": 307,
+            "independent_groups": 291,
+            "baseline_mrr25": 0.9230546507419473,
+            "candidate_mrr25": 0.9226203402099167,
+            "delta": -0.00043431053203040176,
+            "ci95": [
+              -0.0009868421052631577,
+              0.0
+            ],
+            "improved": 0,
+            "harmed": 3,
+            "point": {
+              "n": 307,
+              "baseline_MRR": 0.9230546507419471,
+              "candidate_MRR": 0.9226203402099168,
+              "delta": -0.00043431053203040176,
+              "numerator": -2,
+              "denominator": 4605,
+              "strictly_positive": false,
+              "nonnegative": false
+            }
+          }
+        },
+        "source_mode": {
+          "enveda-180 / mixed": {
+            "n": 93,
+            "independent_groups": 90,
+            "baseline_mrr25": 0.9788530465949821,
+            "candidate_mrr25": 0.9788530465949821,
+            "delta": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "improved": 0,
+            "harmed": 0,
+            "point": {
+              "n": 93,
+              "baseline_MRR": 0.9788530465949821,
+              "candidate_MRR": 0.9788530465949821,
+              "delta": 0.0,
+              "numerator": 0,
+              "denominator": 1,
+              "strictly_positive": false,
+              "nonnegative": true
+            }
+          },
+          "enveda-180 / negative": {
+            "n": 26,
+            "independent_groups": 26,
+            "baseline_mrr25": 0.9551282051282051,
+            "candidate_mrr25": 0.9551282051282051,
+            "delta": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "improved": 0,
+            "harmed": 0,
+            "point": {
+              "n": 26,
+              "baseline_MRR": 0.9551282051282052,
+              "candidate_MRR": 0.9551282051282052,
+              "delta": 0.0,
+              "numerator": 0,
+              "denominator": 1,
+              "strictly_positive": false,
+              "nonnegative": true
+            }
+          },
+          "enveda-180 / positive": {
+            "n": 265,
+            "independent_groups": 251,
+            "baseline_mrr25": 0.9422641509433962,
+            "candidate_mrr25": 0.9417610062893081,
+            "delta": -0.0005031446540880503,
+            "ci95": [
+              -0.0011494775339602927,
+              0.0
+            ],
+            "improved": 0,
+            "harmed": 3,
+            "point": {
+              "n": 265,
+              "baseline_MRR": 0.9422641509433962,
+              "candidate_MRR": 0.9417610062893081,
+              "delta": -0.0005031446540880503,
+              "numerator": -2,
+              "denominator": 3975,
+              "strictly_positive": false,
+              "nonnegative": false
+            }
+          },
+          "enveda-np-examples / mixed": {
+            "n": 48,
+            "independent_groups": 45,
+            "baseline_mrr25": 0.8305555555555556,
+            "candidate_mrr25": 0.828125,
+            "delta": -0.0024305555555555556,
+            "ci95": [
+              -0.006884057971014493,
+              0.0
+            ],
+            "improved": 0,
+            "harmed": 2,
+            "point": {
+              "n": 48,
+              "baseline_MRR": 0.8305555555555556,
+              "candidate_MRR": 0.828125,
+              "delta": -0.0024305555555555556,
+              "numerator": -7,
+              "denominator": 2880,
+              "strictly_positive": false,
+              "nonnegative": false
+            }
+          },
+          "enveda-np-examples / negative": {
+            "n": 8,
+            "independent_groups": 6,
+            "baseline_mrr25": 0.775,
+            "candidate_mrr25": 0.775,
+            "delta": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "improved": 0,
+            "harmed": 0,
+            "point": {
+              "n": 8,
+              "baseline_MRR": 0.775,
+              "candidate_MRR": 0.775,
+              "delta": 0.0,
+              "numerator": 0,
+              "denominator": 1,
+              "strictly_positive": false,
+              "nonnegative": true
+            }
+          },
+          "enveda-np-examples / positive": {
+            "n": 42,
+            "independent_groups": 40,
+            "baseline_mrr25": 0.8018518518518518,
+            "candidate_mrr25": 0.8018518518518518,
+            "delta": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "improved": 0,
+            "harmed": 0,
+            "point": {
+              "n": 42,
+              "baseline_MRR": 0.8018518518518518,
+              "candidate_MRR": 0.8018518518518518,
+              "delta": 0.0,
+              "numerator": 0,
+              "denominator": 1,
+              "strictly_positive": false,
+              "nonnegative": true
+            }
+          }
+        },
+        "recovered_truths": 0,
+        "displaced_truths": 0,
+        "truth_absent_queries": 3,
+        "rank1_changes": 0,
+        "candidate_membership_changes": 0
+      },
+      "admission": {
+        "passed": false,
+        "statistical_promotion": false
+      }
+    },
+    "gpu": {
+      "complete": {
+        "all": {
+          "n": 482,
+          "independent_groups": 447,
+          "baseline_mrr25": 0.9259566620562472,
+          "candidate_mrr25": 0.9233402489626557,
+          "delta": -0.0026164130935915166,
+          "ci95": [
+            -0.005772815929355281,
+            -0.000317124735729387
+          ],
+          "improved": 0,
+          "harmed": 8,
+          "point": {
+            "n": 482,
+            "baseline_MRR": 0.9259566620562472,
+            "candidate_MRR": 0.9233402489626557,
+            "delta": -0.0026164130935915166,
+            "numerator": -227,
+            "denominator": 86760,
+            "strictly_positive": false,
+            "nonnegative": false
+          }
+        },
+        "source": {
+          "enveda-180": {
+            "n": 384,
+            "independent_groups": 361,
+            "baseline_mrr25": 0.9519965277777778,
+            "candidate_mrr25": 0.9516493055555554,
+            "delta": -0.00034722222222222224,
+            "ci95": [
+              -0.0007874015748031497,
+              0.0
+            ],
+            "improved": 0,
+            "harmed": 3,
+            "point": {
+              "n": 384,
+              "baseline_MRR": 0.9519965277777778,
+              "candidate_MRR": 0.9516493055555556,
+              "delta": -0.00034722222222222224,
+              "numerator": -1,
+              "denominator": 2880,
+              "strictly_positive": false,
+              "nonnegative": false
+            }
+          },
+          "enveda-np-examples": {
+            "n": 98,
+            "independent_groups": 86,
+            "baseline_mrr25": 0.823922902494331,
+            "candidate_mrr25": 0.8124149659863945,
+            "delta": -0.011507936507936509,
+            "ci95": [
+              -0.026975945017182132,
+              -0.000453514739229025
+            ],
+            "improved": 0,
+            "harmed": 5,
+            "point": {
+              "n": 98,
+              "baseline_MRR": 0.8239229024943311,
+              "candidate_MRR": 0.8124149659863945,
+              "delta": -0.011507936507936509,
+              "numerator": -29,
+              "denominator": 2520,
+              "strictly_positive": false,
+              "nonnegative": false
+            }
+          }
+        },
+        "query_mode": {
+          "mixed": {
+            "n": 141,
+            "independent_groups": 135,
+            "baseline_mrr25": 0.928368794326241,
+            "candidate_mrr25": 0.9275413711583924,
+            "delta": -0.0008274231678486998,
+            "ci95": [
+              -0.002278177458033573,
+              0.0
+            ],
+            "improved": 0,
+            "harmed": 2,
+            "point": {
+              "n": 141,
+              "baseline_MRR": 0.9283687943262411,
+              "candidate_MRR": 0.9275413711583924,
+              "delta": -0.0008274231678486998,
+              "numerator": -7,
+              "denominator": 8460,
+              "strictly_positive": false,
+              "nonnegative": false
+            }
+          },
+          "negative": {
+            "n": 34,
+            "independent_groups": 32,
+            "baseline_mrr25": 0.9127450980392157,
+            "candidate_mrr25": 0.9127450980392157,
+            "delta": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "improved": 0,
+            "harmed": 0,
+            "point": {
+              "n": 34,
+              "baseline_MRR": 0.9127450980392157,
+              "candidate_MRR": 0.9127450980392157,
+              "delta": 0.0,
+              "numerator": 0,
+              "denominator": 1,
+              "strictly_positive": false,
+              "nonnegative": true
+            }
+          },
+          "positive": {
+            "n": 307,
+            "independent_groups": 291,
+            "baseline_mrr25": 0.9263119797321753,
+            "candidate_mrr25": 0.922584147665581,
+            "delta": -0.0037278320665942812,
+            "ci95": [
+              -0.008696460391043178,
+              -0.0002574581463686786
+            ],
+            "improved": 0,
+            "harmed": 6,
+            "point": {
+              "n": 307,
+              "baseline_MRR": 0.9263119797321752,
+              "candidate_MRR": 0.922584147665581,
+              "delta": -0.0037278320665942817,
+              "numerator": -103,
+              "denominator": 27630,
+              "strictly_positive": false,
+              "nonnegative": false
+            }
+          }
+        },
+        "source_mode": {
+          "enveda-180 / mixed": {
+            "n": 93,
+            "independent_groups": 90,
+            "baseline_mrr25": 0.9788530465949821,
+            "candidate_mrr25": 0.9788530465949821,
+            "delta": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "improved": 0,
+            "harmed": 0,
+            "point": {
+              "n": 93,
+              "baseline_MRR": 0.9788530465949821,
+              "candidate_MRR": 0.9788530465949821,
+              "delta": 0.0,
+              "numerator": 0,
+              "denominator": 1,
+              "strictly_positive": false,
+              "nonnegative": true
+            }
+          },
+          "enveda-180 / negative": {
+            "n": 26,
+            "independent_groups": 26,
+            "baseline_mrr25": 0.9551282051282051,
+            "candidate_mrr25": 0.9551282051282051,
+            "delta": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "improved": 0,
+            "harmed": 0,
+            "point": {
+              "n": 26,
+              "baseline_MRR": 0.9551282051282052,
+              "candidate_MRR": 0.9551282051282052,
+              "delta": 0.0,
+              "numerator": 0,
+              "denominator": 1,
+              "strictly_positive": false,
+              "nonnegative": true
+            }
+          },
+          "enveda-180 / positive": {
+            "n": 265,
+            "independent_groups": 251,
+            "baseline_mrr25": 0.9422641509433962,
+            "candidate_mrr25": 0.9417610062893081,
+            "delta": -0.0005031446540880503,
+            "ci95": [
+              -0.0011494775339602927,
+              0.0
+            ],
+            "improved": 0,
+            "harmed": 3,
+            "point": {
+              "n": 265,
+              "baseline_MRR": 0.9422641509433962,
+              "candidate_MRR": 0.9417610062893081,
+              "delta": -0.0005031446540880503,
+              "numerator": -2,
+              "denominator": 3975,
+              "strictly_positive": false,
+              "nonnegative": false
+            }
+          },
+          "enveda-np-examples / mixed": {
+            "n": 48,
+            "independent_groups": 45,
+            "baseline_mrr25": 0.8305555555555556,
+            "candidate_mrr25": 0.828125,
+            "delta": -0.0024305555555555556,
+            "ci95": [
+              -0.006884057971014493,
+              0.0
+            ],
+            "improved": 0,
+            "harmed": 2,
+            "point": {
+              "n": 48,
+              "baseline_MRR": 0.8305555555555556,
+              "candidate_MRR": 0.828125,
+              "delta": -0.0024305555555555556,
+              "numerator": -7,
+              "denominator": 2880,
+              "strictly_positive": false,
+              "nonnegative": false
+            }
+          },
+          "enveda-np-examples / negative": {
+            "n": 8,
+            "independent_groups": 6,
+            "baseline_mrr25": 0.775,
+            "candidate_mrr25": 0.775,
+            "delta": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "improved": 0,
+            "harmed": 0,
+            "point": {
+              "n": 8,
+              "baseline_MRR": 0.775,
+              "candidate_MRR": 0.775,
+              "delta": 0.0,
+              "numerator": 0,
+              "denominator": 1,
+              "strictly_positive": false,
+              "nonnegative": true
+            }
+          },
+          "enveda-np-examples / positive": {
+            "n": 42,
+            "independent_groups": 40,
+            "baseline_mrr25": 0.8256613756613757,
+            "candidate_mrr25": 0.8015873015873017,
+            "delta": -0.024074074074074074,
+            "ci95": [
+              -0.05813953488372093,
+              0.0
+            ],
+            "improved": 0,
+            "harmed": 3,
+            "point": {
+              "n": 42,
+              "baseline_MRR": 0.8256613756613757,
+              "candidate_MRR": 0.8015873015873016,
+              "delta": -0.024074074074074074,
+              "numerator": -13,
+              "denominator": 540,
+              "strictly_positive": false,
+              "nonnegative": false
+            }
+          }
+        },
+        "recovered_truths": 0,
+        "displaced_truths": 0,
+        "truth_absent_queries": 3,
+        "rank1_changes": 2,
+        "candidate_membership_changes": 2
+      },
+      "incremental": {
+        "all": {
+          "n": 482,
+          "independent_groups": 447,
+          "baseline_mrr25": 0.9238819732595667,
+          "candidate_mrr25": 0.9233402489626557,
+          "delta": -0.0005417242969110188,
+          "ci95": [
+            -0.0010767556163358812,
+            -0.00011622501162250116
+          ],
+          "improved": 0,
+          "harmed": 6,
+          "point": {
+            "n": 482,
+            "baseline_MRR": 0.9238819732595667,
+            "candidate_MRR": 0.9233402489626557,
+            "delta": -0.0005417242969110189,
+            "numerator": -47,
+            "denominator": 86760,
+            "strictly_positive": false,
+            "nonnegative": false
+          }
+        },
+        "source": {
+          "enveda-180": {
+            "n": 384,
+            "independent_groups": 361,
+            "baseline_mrr25": 0.9519965277777778,
+            "candidate_mrr25": 0.9516493055555554,
+            "delta": -0.00034722222222222224,
+            "ci95": [
+              -0.0007874015748031497,
+              0.0
+            ],
+            "improved": 0,
+            "harmed": 3,
+            "point": {
+              "n": 384,
+              "baseline_MRR": 0.9519965277777778,
+              "candidate_MRR": 0.9516493055555556,
+              "delta": -0.00034722222222222224,
+              "numerator": -1,
+              "denominator": 2880,
+              "strictly_positive": false,
+              "nonnegative": false
+            }
+          },
+          "enveda-np-examples": {
+            "n": 98,
+            "independent_groups": 86,
+            "baseline_mrr25": 0.8137188208616779,
+            "candidate_mrr25": 0.8124149659863945,
+            "delta": -0.0013038548752834465,
+            "ci95": [
+              -0.0034723975869809212,
+              0.0
+            ],
+            "improved": 0,
+            "harmed": 3,
+            "point": {
+              "n": 98,
+              "baseline_MRR": 0.813718820861678,
+              "candidate_MRR": 0.8124149659863945,
+              "delta": -0.0013038548752834468,
+              "numerator": -23,
+              "denominator": 17640,
+              "strictly_positive": false,
+              "nonnegative": false
+            }
+          }
+        },
+        "query_mode": {
+          "mixed": {
+            "n": 141,
+            "independent_groups": 135,
+            "baseline_mrr25": 0.928368794326241,
+            "candidate_mrr25": 0.9275413711583924,
+            "delta": -0.0008274231678486998,
+            "ci95": [
+              -0.002278177458033573,
+              0.0
+            ],
+            "improved": 0,
+            "harmed": 2,
+            "point": {
+              "n": 141,
+              "baseline_MRR": 0.9283687943262411,
+              "candidate_MRR": 0.9275413711583924,
+              "delta": -0.0008274231678486998,
+              "numerator": -7,
+              "denominator": 8460,
+              "strictly_positive": false,
+              "nonnegative": false
+            }
+          },
+          "negative": {
+            "n": 34,
+            "independent_groups": 32,
+            "baseline_mrr25": 0.9127450980392157,
+            "candidate_mrr25": 0.9127450980392157,
+            "delta": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "improved": 0,
+            "harmed": 0,
+            "point": {
+              "n": 34,
+              "baseline_MRR": 0.9127450980392157,
+              "candidate_MRR": 0.9127450980392157,
+              "delta": 0.0,
+              "numerator": 0,
+              "denominator": 1,
+              "strictly_positive": false,
+              "nonnegative": true
+            }
+          },
+          "positive": {
+            "n": 307,
+            "independent_groups": 291,
+            "baseline_mrr25": 0.9230546507419473,
+            "candidate_mrr25": 0.922584147665581,
+            "delta": -0.0004705030763662685,
+            "ci95": [
+              -0.0010268035732144644,
+              -3.5958288385472814e-05
+            ],
+            "improved": 0,
+            "harmed": 4,
+            "point": {
+              "n": 307,
+              "baseline_MRR": 0.9230546507419471,
+              "candidate_MRR": 0.922584147665581,
+              "delta": -0.00047050307636626855,
+              "numerator": -13,
+              "denominator": 27630,
+              "strictly_positive": false,
+              "nonnegative": false
+            }
+          }
+        },
+        "source_mode": {
+          "enveda-180 / mixed": {
+            "n": 93,
+            "independent_groups": 90,
+            "baseline_mrr25": 0.9788530465949821,
+            "candidate_mrr25": 0.9788530465949821,
+            "delta": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "improved": 0,
+            "harmed": 0,
+            "point": {
+              "n": 93,
+              "baseline_MRR": 0.9788530465949821,
+              "candidate_MRR": 0.9788530465949821,
+              "delta": 0.0,
+              "numerator": 0,
+              "denominator": 1,
+              "strictly_positive": false,
+              "nonnegative": true
+            }
+          },
+          "enveda-180 / negative": {
+            "n": 26,
+            "independent_groups": 26,
+            "baseline_mrr25": 0.9551282051282051,
+            "candidate_mrr25": 0.9551282051282051,
+            "delta": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "improved": 0,
+            "harmed": 0,
+            "point": {
+              "n": 26,
+              "baseline_MRR": 0.9551282051282052,
+              "candidate_MRR": 0.9551282051282052,
+              "delta": 0.0,
+              "numerator": 0,
+              "denominator": 1,
+              "strictly_positive": false,
+              "nonnegative": true
+            }
+          },
+          "enveda-180 / positive": {
+            "n": 265,
+            "independent_groups": 251,
+            "baseline_mrr25": 0.9422641509433962,
+            "candidate_mrr25": 0.9417610062893081,
+            "delta": -0.0005031446540880503,
+            "ci95": [
+              -0.0011494775339602927,
+              0.0
+            ],
+            "improved": 0,
+            "harmed": 3,
+            "point": {
+              "n": 265,
+              "baseline_MRR": 0.9422641509433962,
+              "candidate_MRR": 0.9417610062893081,
+              "delta": -0.0005031446540880503,
+              "numerator": -2,
+              "denominator": 3975,
+              "strictly_positive": false,
+              "nonnegative": false
+            }
+          },
+          "enveda-np-examples / mixed": {
+            "n": 48,
+            "independent_groups": 45,
+            "baseline_mrr25": 0.8305555555555556,
+            "candidate_mrr25": 0.828125,
+            "delta": -0.0024305555555555556,
+            "ci95": [
+              -0.006884057971014493,
+              0.0
+            ],
+            "improved": 0,
+            "harmed": 2,
+            "point": {
+              "n": 48,
+              "baseline_MRR": 0.8305555555555556,
+              "candidate_MRR": 0.828125,
+              "delta": -0.0024305555555555556,
+              "numerator": -7,
+              "denominator": 2880,
+              "strictly_positive": false,
+              "nonnegative": false
+            }
+          },
+          "enveda-np-examples / negative": {
+            "n": 8,
+            "independent_groups": 6,
+            "baseline_mrr25": 0.775,
+            "candidate_mrr25": 0.775,
+            "delta": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "improved": 0,
+            "harmed": 0,
+            "point": {
+              "n": 8,
+              "baseline_MRR": 0.775,
+              "candidate_MRR": 0.775,
+              "delta": 0.0,
+              "numerator": 0,
+              "denominator": 1,
+              "strictly_positive": false,
+              "nonnegative": true
+            }
+          },
+          "enveda-np-examples / positive": {
+            "n": 42,
+            "independent_groups": 40,
+            "baseline_mrr25": 0.8018518518518518,
+            "candidate_mrr25": 0.8015873015873017,
+            "delta": -0.0002645502645502643,
+            "ci95": [
+              -0.0008333333333333324,
+              0.0
+            ],
+            "improved": 0,
+            "harmed": 1,
+            "point": {
+              "n": 42,
+              "baseline_MRR": 0.8018518518518518,
+              "candidate_MRR": 0.8015873015873016,
+              "delta": -0.00026455026455026457,
+              "numerator": -1,
+              "denominator": 3780,
+              "strictly_positive": false,
+              "nonnegative": false
+            }
+          }
+        },
+        "recovered_truths": 0,
+        "displaced_truths": 0,
+        "truth_absent_queries": 3,
+        "rank1_changes": 0,
+        "candidate_membership_changes": 0
+      },
+      "admission": {
+        "passed": false,
+        "statistical_promotion": false
+      }
+    }
+  },
+  "parent_overlay": {
+    "all": {
+      "n": 482,
+      "independent_groups": 447,
+      "baseline_mrr25": 0.9259566620562472,
+      "candidate_mrr25": 0.9238819732595667,
+      "delta": -0.002074688796680498,
+      "ci95": [
+        -0.005197505197505198,
+        0.0
+      ],
+      "improved": 0,
+      "harmed": 2,
+      "point": {
+        "n": 482,
+        "baseline_MRR": 0.9259566620562472,
+        "candidate_MRR": 0.9238819732595667,
+        "delta": -0.002074688796680498,
+        "numerator": -1,
+        "denominator": 482,
+        "strictly_positive": false,
+        "nonnegative": false
+      }
+    },
+    "source": {
+      "enveda-180": {
+        "n": 384,
+        "independent_groups": 361,
+        "baseline_mrr25": 0.9519965277777778,
+        "candidate_mrr25": 0.9519965277777778,
+        "delta": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "improved": 0,
+        "harmed": 0,
+        "point": {
+          "n": 384,
+          "baseline_MRR": 0.9519965277777778,
+          "candidate_MRR": 0.9519965277777778,
+          "delta": 0.0,
+          "numerator": 0,
+          "denominator": 1,
+          "strictly_positive": false,
+          "nonnegative": true
+        }
+      },
+      "enveda-np-examples": {
+        "n": 98,
+        "independent_groups": 86,
+        "baseline_mrr25": 0.823922902494331,
+        "candidate_mrr25": 0.8137188208616779,
+        "delta": -0.01020408163265306,
+        "ci95": [
+          -0.025510204081632654,
+          0.0
+        ],
+        "improved": 0,
+        "harmed": 2,
+        "point": {
+          "n": 98,
+          "baseline_MRR": 0.8239229024943311,
+          "candidate_MRR": 0.813718820861678,
+          "delta": -0.01020408163265306,
+          "numerator": -1,
+          "denominator": 98,
+          "strictly_positive": false,
+          "nonnegative": false
+        }
+      }
+    },
+    "query_mode": {
+      "mixed": {
+        "n": 141,
+        "independent_groups": 135,
+        "baseline_mrr25": 0.928368794326241,
+        "candidate_mrr25": 0.928368794326241,
+        "delta": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "improved": 0,
+        "harmed": 0,
+        "point": {
+          "n": 141,
+          "baseline_MRR": 0.9283687943262411,
+          "candidate_MRR": 0.9283687943262411,
+          "delta": 0.0,
+          "numerator": 0,
+          "denominator": 1,
+          "strictly_positive": false,
+          "nonnegative": true
+        }
+      },
+      "negative": {
+        "n": 34,
+        "independent_groups": 32,
+        "baseline_mrr25": 0.9127450980392157,
+        "candidate_mrr25": 0.9127450980392157,
+        "delta": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "improved": 0,
+        "harmed": 0,
+        "point": {
+          "n": 34,
+          "baseline_MRR": 0.9127450980392157,
+          "candidate_MRR": 0.9127450980392157,
+          "delta": 0.0,
+          "numerator": 0,
+          "denominator": 1,
+          "strictly_positive": false,
+          "nonnegative": true
+        }
+      },
+      "positive": {
+        "n": 307,
+        "independent_groups": 291,
+        "baseline_mrr25": 0.9263119797321753,
+        "candidate_mrr25": 0.9230546507419473,
+        "delta": -0.003257328990228013,
+        "ci95": [
+          -0.008169934640522876,
+          0.0
+        ],
+        "improved": 0,
+        "harmed": 2,
+        "point": {
+          "n": 307,
+          "baseline_MRR": 0.9263119797321752,
+          "candidate_MRR": 0.9230546507419471,
+          "delta": -0.003257328990228013,
+          "numerator": -1,
+          "denominator": 307,
+          "strictly_positive": false,
+          "nonnegative": false
+        }
+      }
+    },
+    "source_mode": {
+      "enveda-180 / mixed": {
+        "n": 93,
+        "independent_groups": 90,
+        "baseline_mrr25": 0.9788530465949821,
+        "candidate_mrr25": 0.9788530465949821,
+        "delta": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "improved": 0,
+        "harmed": 0,
+        "point": {
+          "n": 93,
+          "baseline_MRR": 0.9788530465949821,
+          "candidate_MRR": 0.9788530465949821,
+          "delta": 0.0,
+          "numerator": 0,
+          "denominator": 1,
+          "strictly_positive": false,
+          "nonnegative": true
+        }
+      },
+      "enveda-180 / negative": {
+        "n": 26,
+        "independent_groups": 26,
+        "baseline_mrr25": 0.9551282051282051,
+        "candidate_mrr25": 0.9551282051282051,
+        "delta": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "improved": 0,
+        "harmed": 0,
+        "point": {
+          "n": 26,
+          "baseline_MRR": 0.9551282051282052,
+          "candidate_MRR": 0.9551282051282052,
+          "delta": 0.0,
+          "numerator": 0,
+          "denominator": 1,
+          "strictly_positive": false,
+          "nonnegative": true
+        }
+      },
+      "enveda-180 / positive": {
+        "n": 265,
+        "independent_groups": 251,
+        "baseline_mrr25": 0.9422641509433962,
+        "candidate_mrr25": 0.9422641509433962,
+        "delta": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "improved": 0,
+        "harmed": 0,
+        "point": {
+          "n": 265,
+          "baseline_MRR": 0.9422641509433962,
+          "candidate_MRR": 0.9422641509433962,
+          "delta": 0.0,
+          "numerator": 0,
+          "denominator": 1,
+          "strictly_positive": false,
+          "nonnegative": true
+        }
+      },
+      "enveda-np-examples / mixed": {
+        "n": 48,
+        "independent_groups": 45,
+        "baseline_mrr25": 0.8305555555555556,
+        "candidate_mrr25": 0.8305555555555556,
+        "delta": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "improved": 0,
+        "harmed": 0,
+        "point": {
+          "n": 48,
+          "baseline_MRR": 0.8305555555555556,
+          "candidate_MRR": 0.8305555555555556,
+          "delta": 0.0,
+          "numerator": 0,
+          "denominator": 1,
+          "strictly_positive": false,
+          "nonnegative": true
+        }
+      },
+      "enveda-np-examples / negative": {
+        "n": 8,
+        "independent_groups": 6,
+        "baseline_mrr25": 0.775,
+        "candidate_mrr25": 0.775,
+        "delta": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "improved": 0,
+        "harmed": 0,
+        "point": {
+          "n": 8,
+          "baseline_MRR": 0.775,
+          "candidate_MRR": 0.775,
+          "delta": 0.0,
+          "numerator": 0,
+          "denominator": 1,
+          "strictly_positive": false,
+          "nonnegative": true
+        }
+      },
+      "enveda-np-examples / positive": {
+        "n": 42,
+        "independent_groups": 40,
+        "baseline_mrr25": 0.8256613756613757,
+        "candidate_mrr25": 0.8018518518518518,
+        "delta": -0.023809523809523808,
+        "ci95": [
+          -0.05813953488372093,
+          0.0
+        ],
+        "improved": 0,
+        "harmed": 2,
+        "point": {
+          "n": 42,
+          "baseline_MRR": 0.8256613756613757,
+          "candidate_MRR": 0.8018518518518518,
+          "delta": -0.023809523809523808,
+          "numerator": -1,
+          "denominator": 42,
+          "strictly_positive": false,
+          "nonnegative": false
+        }
+      }
+    },
+    "recovered_truths": 0,
+    "displaced_truths": 0,
+    "truth_absent_queries": 3,
+    "rank1_changes": 2,
+    "candidate_membership_changes": 2
+  },
+  "passed_pair": false,
+  "all_queries_retained": true,
+  "absent_truths_zero": true,
+  "actual_query_modes": {
+    "positive": 307,
+    "mixed": 141,
+    "negative": 34
+  },
+  "C13_read": false,
+  "limitation": "Controlled target-domain in-corpus confirmation, not an independent laboratory or leaderboard-calibrated population. Public parent/encoder historic exposure persists. No recipe/cohort rescue after these outcomes."
+}

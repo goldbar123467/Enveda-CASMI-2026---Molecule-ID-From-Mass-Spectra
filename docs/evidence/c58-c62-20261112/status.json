@@ -1,9 +1,9 @@
 {
-  "recorded_utc": "2026-11-12T11:36:25.625633+00:00",
-  "C57": "RUNNING",
+  "recorded_utc": "2026-11-12T12:31:45.846332+00:00",
+  "C57": "COMPLETE_AUDITED",
   "both_production_previews_audited": true,
   "C58_mask_audited": true,
-  "C53_quality_read": false,
+  "C53_quality_read": true,
   "C13_consumed": false,
   "C59_pushed": false,
   "scoring_entries": 0,
@@ -27,12 +27,8 @@
   },
   "C58_current_task_continuation": {
     "pid": 26556,
-    "stage": "waiting_existing_C57_collection_and_fidelity",
-    "mandatory_full_core_health_before_quality": true,
-    "can_fit": false,
-    "can_push": false,
-    "can_read_C13": false,
-    "can_submit": false
+    "stage": "finished_both_source_candidates_rejected",
+    "alive": false
   },
   "C59_base_observer": "prepared_only_not_started",
   "confirmation_preflight": "Synthetic exposure report test passed; import corrected before freeze/consumption; reserved labels never read",
@@ -43,5 +39,9 @@
   "previous352_runtime_seconds": 12876.728947152,
   "C57_progress": "Both spectrum forward models complete4029s; two-engine fusion150s and metric audit/safe tail149s complete. Final ranking/export remains, whole job not yet complete.",
   "C59_channel_health": "Before inference: exact supportedPC119IDs, Engine2/global120, one unchanged trailing-space fallback. Original-vs-oldcloud query metadata/peaks exact despite different parquet byte hashes.",
-  "C59_channel_tests": "4passed; no quality read or scored entry"
+  "C59_channel_tests": "4passed; no quality read or scored entry",
+  "C58": "COMPLETE_REJECTED_BOTH",
+  "C53_now_USED": true,
+  "source_482_queries_retained": true,
+  "next": "C63loss diagnosis, physical mass consistency and all869chemistry-groupOOF CPU ranking work; no C13or scoring release"
 }

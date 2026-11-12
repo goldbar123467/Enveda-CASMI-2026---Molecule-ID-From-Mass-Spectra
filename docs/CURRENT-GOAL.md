@@ -1,3 +1,57 @@
+## Active goal — C56 rejected on full C58; CPU loss/ranking work next
+
+The native goal remains active until TWO actual new terminal numeric scored
+entries. 0/2 approvals used; no repeat approval needed. Preserve 0.480, keep all
+old/hourly campaigns off. C13 has NEVER been consumed. No pair is qualified now.
+
+C57 private v1 completed successfully at12:06UTC Nov12. Independent collection,
+all2,125original acquisitions/482queries, reference quarantine and full-channel
+health audits pass. P30CPU/P31GPU private previews also pass engineering checks.
+Those checks do not override the failed prospective prediction-quality gate.
+
+C58 replayed exact P16, froze/scored both clean C56 heads, consumed the ENTIRE
+482-query source panel once, and independently confirmed both rejections:
+CPU full delta -0.002593361, GPU -0.002616413 versus P01. P16 itself harmed two
+correct rank1answers to rank2 (-1/482): high raw-precursor cosine matches to
+[M+H-H2O]+ references with incompatible neutral masses. No truths were recovered
+or displaced from lists; all3absent truths remain zeros.
+
+Beyond P16, CPU harmed5 truths (-0.000518672), GPU6 (-0.000541724); neither improved
+one. All queries, both sources and actual307positive/141mixed/34negative modes
+were retained. All482C53queries are now USED, never call them fresh again. Combined
+USED data now869queries/3452acquisitions (old352+35 plus482).
+
+C63 diagnosis preserves every changed-truth case privately. Parent MRR0.92596on
+this in-corpus panel is not leaderboard calibration; public parent/encoder historic
+exposure persists.456truths were protected at ranks1-2; only23were in the old
+ranks3-10 window. Even perfect ordering there can gain only0.002812on this panel.
+CPU/GPU votes are correlated through shared data and the CPU anchor.
+
+Next authorized work: test adduct-implied neutral-mass consistency against ALL
+USED complete parents; assemble chemistry-group out-of-fold direct isomer-ranking
+CPU tests using frozen core evidence. Test CPU before any further GPU fitting.
+A new family needs honest held-out development, a separately frozen untouched
+source panel and both production checks before the sole joint C13evaluation.
+No cohort/recipe rescue or gate weakening inside rejected C56.
+
+C59 faithful query-only C13 main/fragment code is prepared ONLY, NOT PUSHED.
+Its input-only channel preflight derives exact PC119support from the unchanged
+original120queries; Engine2/global output must keep all120, including one trailing-
+space adduct fallback. Oldv2PCcount98proved the missing main adapter. Four coverage
+tests pass. New C59auditor/collector/futureconfirmation bind actual channel IDs and
+all original metadata/peaks. C13 FT/HCD is not target timsTOF calibration.
+
+C59/C60/C61/C62prepared C56release guards remain HELD by the actual rejection.
+No collector/continuation is still running: C57observer26852and C58worker26556
+finished; original idle30916was retired before any quality read. All models,
+predictions, failed families and original evidence remain intact. No new scoring
+ledger exists; eventual new entries must share .local/c42-two-new-submissions-
+20261111.json, cap2accepted,1pending, CPUactualnumeric score before GPUrelease.
+
+Evidence: outputs/local/c58-complete-target-20261112;
+outputs/local/c63-source-loss-diagnosis-20261112; docs/evidence/c58-c62-20261112.
+Historical sections below preserve previous observations and rejected families.
+
 ## Active C56 pair — both production previews pass; fresh C57 core running
 
 The native goal remains active until TWO actual new terminal numeric scores.

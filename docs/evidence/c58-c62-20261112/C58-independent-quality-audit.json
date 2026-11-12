@@ -1,0 +1,20 @@
+{
+  "completed_utc": "2026-11-12T12:14:02.348878+00:00",
+  "source_sha256": "b2bf15de56e7f0b0ea0097ee764479c233c0710c5d974bc39f77960b8feddf8b",
+  "quality_results_sha256": "a59bd6722233e337fee05737bc37c5a04b9718f931a431b66037bf98883ff685",
+  "evaluation_freeze_sha256": "0afd65d369eaf51ca914a219f5ae7cb18a4a7a0c501f86bd387b177fb160dec4",
+  "queries": 482,
+  "acquisitions": 2125,
+  "chemistry_groups": 447,
+  "exact_official_rank_vectors": true,
+  "exact_fraction_points": true,
+  "all_source_denominators_exact": true,
+  "absent_truths_zero": true,
+  "recovered_displaced_counts_exact": true,
+  "admissions": {
+    "cpu": false,
+    "gpu": false
+  },
+  "passed_pair": false,
+  "C13_read": false
+}

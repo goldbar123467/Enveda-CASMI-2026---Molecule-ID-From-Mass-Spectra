@@ -1,0 +1,18 @@
+{
+  "completed_utc": "2026-11-12T12:06:51.972259+00:00",
+  "source_sha256": "ca1899b8e2fb6d3b668039708da4762f6f255f6c3e27907a2ed590f257a8ddc9",
+  "queries": 482,
+  "acquisitions": 2125,
+  "original_query_sha256": "11bac7fbc8ac4e670893e3ccb6113e2c4d43b191ab76272e00ec5fec66972d28",
+  "cloud_query_sha256": "eca4db5e4168a7f7348fdcb836362053079b197a2fa057f537d866b28fc4f738",
+  "all_original_acquisitions_retained": true,
+  "all_original_metadata_and_peak_arrays_exact": true,
+  "actual_query_modes": {
+    "positive": 307,
+    "mixed": 141,
+    "negative": 34
+  },
+  "quality_labels_read": false,
+  "C13_read": false,
+  "limitation": "Controlled in-corpus target-domain holdout, not independent-laboratory calibration. Historic public parent/encoder exposure persists."
+}
