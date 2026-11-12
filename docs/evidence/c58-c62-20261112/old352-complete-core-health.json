@@ -1,0 +1,35 @@
+{
+  "completed_utc": "2026-11-12T09:51:14.849468+00:00",
+  "source_sha256": "a2da74b6909348bde7c96caebd56ae6d103ced30321101edcfd7c09393fca74d",
+  "queries": 352,
+  "passed": true,
+  "quality_labels_read": false,
+  "engine2_reported_query_counts": [
+    352,
+    352
+  ],
+  "pubchem_reported_query_counts": [
+    352
+  ],
+  "main_engine_reported_errors": [
+    0
+  ],
+  "required_completed_stage_markers": [
+    "PubChem channel",
+    "Engine 1",
+    "candidate lists",
+    "GLACIER + ICEBERG forward models",
+    "Two-engine fusion",
+    "Metric-identity fusion",
+    "Window-40 overlay",
+    "Execution receipt"
+  ],
+  "no_soft_failed_core_channel": true,
+  "complete_query_coverage": true,
+  "files_sha256": {
+    "outputs\\forks\\c41r3-full-masked-validation-v1\\collection-audit.json": "f47f2bf062775be6a35c613db9b7cf847c383b759ab7bccfd1daa458c91d178e",
+    "outputs\\forks\\c41r3-full-masked-validation-v1\\execution_receipt.json": "b46b84191459288f0c18096c5caa691c0e156528a86f776c86bd3b96bfae9d4f",
+    "outputs\\forks\\c41r3-full-masked-validation-v1\\casmi26-c41r3-full-masked-validation.log": "7595c50059c493ef503652297989a7c2400c83eb15165bb179aec7c65faf3531"
+  },
+  "limitation": "Execution completeness only; no prediction-quality or public-improvement claim."
+}

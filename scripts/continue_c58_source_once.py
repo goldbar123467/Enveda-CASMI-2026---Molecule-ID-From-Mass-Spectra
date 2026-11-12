@@ -26,11 +26,11 @@ def write(p,v):
 
 def main():
     import msvcrt
-    with (OUT/'source-once.lock').open('a+b') as lock:
+    with (OUT/'source-health-once.lock').open('a+b') as lock:
         lock.write(b'0');lock.flush();lock.seek(0);msvcrt.locking(lock.fileno(),msvcrt.LK_NBLCK,1)
-        assert not (OUT/'source-once-launch.json').exists()
+        assert not (OUT/'source-health-once-launch.json').exists()
         deadline=datetime.fromisoformat(read(BASE/'base-only-launch.json')['deadline_utc'])
-        sources=['continue_c58_source_once.py','c58_complete_target.py','evaluate_c58_target.py','audit_c58_quality.py','audit_c56_ranking.py']
+        sources=['audit_complete_core_health.py','continue_c58_source_once.py','c58_complete_target.py','evaluate_c58_target.py','audit_c58_quality.py','audit_c56_ranking.py']
         paths=[ROOT/'scripts'/s for s in sources]+[MODEL/'complete-candidate-freeze.json',MODEL/'independent-used-quality-audit.json',
             ROOT/'configs/c56-bounded-semantic-pair-20261112.json',OUT/'target-masked-reference/mask-manifest.json',OUT/'target-masked-reference/independent-mask-audit.json',BUNDLE/'head-manifest.json']
         manifest=read(BUNDLE/'head-manifest.json')
@@ -42,8 +42,8 @@ def main():
             for name,pin in sealed.items():assert sha(ROOT/name)==pin,name
         def status(stage,**kw):
             value=dict(checked_utc=stamp(),pid=os.getpid(),stage=stage,deadline_utc=deadline.isoformat(),**kw)
-            write(OUT/'source-once-status.json',value);print('C58 SOURCE ONCE',json.dumps(value),flush=True)
-        check();write(OUT/'source-once-launch.json',dict(started_utc=stamp(),pid=os.getpid(),source_seal=sealed,deadline_utc=deadline.isoformat(),
+            write(OUT/'source-health-once-status.json',value);print('C58 SOURCE ONCE',json.dumps(value),flush=True)
+        check();write(OUT/'source-health-once-launch.json',dict(started_utc=stamp(),pid=os.getpid(),source_seal=sealed,deadline_utc=deadline.isoformat(),
             can_fit=False,can_push=False,can_read_C13=False,can_submit=False,can_evaluate_only_frozen_full_C53_pair=True))
         status('waiting_existing_C57_collection_and_fidelity')
         while not (BASE/'base-only-complete.json').exists():
@@ -58,6 +58,7 @@ def main():
             check();status(stage)
             with (OUT/(stage+'.log')).open('w',encoding='utf8') as log:
                 subprocess.run(command,cwd=ROOT,stdout=log,stderr=subprocess.STDOUT,check=True)
+        run('independent_complete_core_execution_audit',[py,'scripts/audit_complete_core_health.py',str(cloud),'--queries','482'])
         run('complete_P16_replay',[py,'scripts/c58_complete_target.py','replay'])
         run('both_actual_fresh_head_predictions',[encoder,str(BUNDLE/'score_c56_bounded_semantic.py'),str(BUNDLE),
             str(ROOT/'outputs/publish/frozen-p14-20261107'),str(OUT/'P16.csv'),str(OUT/'queries.parquet'),str(OUT/'head-predictions')])
@@ -67,7 +68,7 @@ def main():
         run('independent_full_source_quality_audit',[py,'scripts/audit_c58_quality.py'])
         quality=read(OUT/'source-results.json');audit=read(OUT/'independent-quality-audit.json')
         assert audit['quality_results_sha256']==sha(OUT/'source-results.json') and quality['passed_pair']==audit['passed_pair']
-        write(OUT/'source-once-complete.json',dict(completed_utc=stamp(),passed_pair=quality['passed_pair'],source_results_sha256=sha(OUT/'source-results.json'),
+        write(OUT/'source-health-once-complete.json',dict(completed_utc=stamp(),passed_pair=quality['passed_pair'],source_results_sha256=sha(OUT/'source-results.json'),
             independent_audit_sha256=sha(OUT/'independent-quality-audit.json'),C13_read=False,scoring_entries=0,
             next_action='Inspect actual full-panel admission. Only a passing pair may proceed to faithful C13 inference and once-only confirmation.'))
         status('fixed_source_evaluation_complete',passed_pair=quality['passed_pair'],C13_read=False,scoring_entries=0)
@@ -76,5 +77,5 @@ def main():
 if __name__=='__main__':
     try:main()
     except BaseException as error:
-        write(OUT/'source-once-attention.json',dict(checked_utc=stamp(),error_type=type(error).__name__,reason=str(error),automatic_retry=False,
+        write(OUT/'source-health-once-attention.json',dict(checked_utc=stamp(),error_type=type(error).__name__,reason=str(error),automatic_retry=False,
             C13_read=False,scoring_entries=0));raise

@@ -1,0 +1,58 @@
+{
+  "checked_utc": "2026-11-12T09:53:45.374207+00:00",
+  "auditor_sha256": "a2da74b6909348bde7c96caebd56ae6d103ced30321101edcfd7c09393fca74d",
+  "previews": {
+    "p30-c56-bounded-cpu": {
+      "engine2_reported_query_counts": [
+        12,
+        12
+      ],
+      "pubchem_reported_query_counts": [
+        12
+      ],
+      "main_engine_reported_errors": [
+        0
+      ],
+      "required_completed_stage_markers": [
+        "PubChem channel",
+        "Engine 1",
+        "candidate lists",
+        "GLACIER + ICEBERG forward models",
+        "Two-engine fusion",
+        "Metric-identity fusion",
+        "Window-40 overlay",
+        "Execution receipt"
+      ],
+      "no_soft_failed_core_channel": true,
+      "complete_query_coverage": true,
+      "log_sha256": "9cde61d56be423ec62f5b59d1ef7f04e2fdf20d0f2f19a9283682c1e82b5bace"
+    },
+    "p31-c56-bounded-gpu": {
+      "engine2_reported_query_counts": [
+        12,
+        12
+      ],
+      "pubchem_reported_query_counts": [
+        12
+      ],
+      "main_engine_reported_errors": [
+        0
+      ],
+      "required_completed_stage_markers": [
+        "PubChem channel",
+        "Engine 1",
+        "candidate lists",
+        "GLACIER + ICEBERG forward models",
+        "Two-engine fusion",
+        "Metric-identity fusion",
+        "Window-40 overlay",
+        "Execution receipt"
+      ],
+      "no_soft_failed_core_channel": true,
+      "complete_query_coverage": true,
+      "log_sha256": "f058f699c7ba3a319a412d203d08fb67ded3e88f3852149c5e2cfd6c537a0369"
+    }
+  },
+  "C53_quality_read": false,
+  "C13_consumed": false
+}

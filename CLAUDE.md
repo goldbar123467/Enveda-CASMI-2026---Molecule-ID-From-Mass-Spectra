@@ -20,9 +20,14 @@ C57 full masked private v1 (482 molecules / 2,125 original usable acquisitions /
 447 chemistry groups) remains RUNNING as of 09:10 UTC Nov12. Actual observer PID
 26852, deadline16:05UTC: collect/acquisition-audit only, no scoring or evaluation.
 Live SDK logs prove both Engine2 rankers finished all482 in3434s on actual2T4s.
-A one-shot current-task C58 continuation (actualPID30916) waits for C57 audit,
-then replays P16, scores/freeze both heads and runs only the fixed full source
-evaluation/independent audit. It cannot fit, push, read C13 or submit.
+A one-shot current-task C58 continuation (actualPID26556,source-health-once) waits for C57 audit,
+then independently requires full Engine2/PubChem coverage, zero main errors and
+all simulator/fusion completion markers before P16 replay, both predictions and the fixed source
+evaluation/independent audit. PubChem has a soft-failure fallback, so this explicit
+pre-outcome check is mandatory. Original idle30916retired before any labels read;
+cloud job unchanged. Both actual12previews and old352full run pass the added check.
+The old352full core took3h35; current larger job remains live. This continuation
+cannot fit, push, read C13 or submit.
 Never requeue a healthy handle. Exact frozen P16 reference masking is independently
 complete: 9,177 reachable retained rows, zero forbidden identity/chemistry/input
 aliases. Replay and fresh-head inference await actual C57 collection/fidelity.

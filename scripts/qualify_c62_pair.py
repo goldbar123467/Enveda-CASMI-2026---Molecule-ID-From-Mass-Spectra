@@ -4,6 +4,7 @@ Pure evidence verification: no labels, fitting, account calls or submissions.
 Retired controllers remain held; only this qualification's hash is authorized.
 """
 import hashlib,json
+from audit_complete_core_health import check_events
 from pathlib import Path
 from datetime import datetime,timezone
 
@@ -92,6 +93,9 @@ def main():
         include(ROOT/'scripts/audit_c56_production.py',a['source_sha256'])
         include(folder/'notebook.ipynb',entry['notebook_sha256']);include(folder/'production-pin.json',entry['pin_sha256']);include(folder/'kernel-metadata.json')
         include(cloud/'submission.csv',a['csv_sha256'])
+        log=cloud/(entry['kernel'].split('/')[1]+'.log');include(log)
+        check_events(read(log),12)
+        include(ROOT/'scripts/audit_complete_core_health.py')
         for name,pin in a['artifact_sha256'].items():include(ROOT/name,pin)
         bundle=ROOT/entry['bundle'];manifest=include(bundle/'head-manifest.json',entry['head_manifest_sha256'])
         for name,pin in manifest['files'].items():include(bundle/name,pin)

@@ -37,6 +37,9 @@ def freeze():
     assert not (OUT/'evaluation-freeze.json').exists() and not (PANEL/'evaluation-consumption.json').exists()
     assert not (ROOT/'outputs/local/c13-confirmation-20261110/evaluation-consumption.json').exists()
     family=read(MODELS/'complete-candidate-freeze.json');assert family['policy_sha256']==sha(POLICY)
+    cloud=ROOT/'outputs/forks/c57-full-masked-validation-v1';health=read(cloud/'independent-core-health-audit.json')
+    assert health['passed'] and health['queries']==482 and health['source_sha256']==sha(ROOT/'scripts/audit_complete_core_health.py')
+    for name,pin in health['files_sha256'].items():assert sha(ROOT/name)==pin
     used=read(MODELS/'independent-used-quality-audit.json');assert used['passed_pair']
     parent=read(OUT/'complete-parent-freeze.json');assert parent['candidate_family_sha256']==sha(OUT/'candidate-family-freeze.json')==sha(MODELS/'complete-candidate-freeze.json')
     assert parent['policy_sha256']==sha(POLICY)
@@ -55,6 +58,8 @@ def freeze():
         folder/'score-receipt.json',folder/'independent-ranking-audit.json',PANEL/'validation-freeze.json',PANEL/'independent-acquisition-audit.json',PANEL/'raw-source-alias-audit.json',
         ROOT/'outputs/forks/c57-full-masked-validation-v1/collection-audit.json',ROOT/'outputs/forks/c57-full-masked-validation-v1/acquisition-fidelity-audit.json']
     files.extend(verify_production(family))
+    files.extend([cloud/'independent-core-health-audit.json',ROOT/'scripts/audit_complete_core_health.py'])
+    files.extend(ROOT/name for name in health['files_sha256'])
     for trial,entry in family['candidates'].items():
         bundle=ROOT/entry['bundle'];assert sha(bundle/'head-manifest.json')==entry['head_manifest_sha256']
         notebook=ROOT/entry['path'];assert sha(notebook/'notebook.ipynb')==entry['notebook_sha256'] and sha(notebook/'production-pin.json')==entry['pin_sha256']

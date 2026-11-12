@@ -1,5 +1,5 @@
 {
-  "recorded_utc": "2026-11-12T09:17:48.279107+00:00",
+  "recorded_utc": "2026-11-12T09:53:45.380782+00:00",
   "C57": "RUNNING",
   "both_production_previews_audited": true,
   "C58_mask_audited": true,
@@ -26,8 +26,9 @@
     "source_snapshot_sha256": "170f96b0ed264cac7f2de7b702728edaa642f0d83c00118ba825e512fa8b55df"
   },
   "C58_current_task_continuation": {
-    "pid": 30916,
+    "pid": 26556,
     "stage": "waiting_existing_C57_collection_and_fidelity",
+    "mandatory_full_core_health_before_quality": true,
     "can_fit": false,
     "can_push": false,
     "can_read_C13": false,
@@ -36,5 +37,8 @@
   "C59_base_observer": "prepared_only_not_started",
   "confirmation_preflight": "Synthetic exposure report test passed; import corrected before freeze/consumption; reserved labels never read",
   "undefined_name_check": "All18prepared/currentworkflow scripts pass pyflakes3.4.0 undefined-name checks",
-  "live_quota_guard": "Authoritative num_allowed_now checked before each entry; no UTC-date inference"
+  "live_quota_guard": "Authoritative num_allowed_now checked before each entry; no UTC-date inference",
+  "C58_original_idle_continuation_retired": 30916,
+  "complete_core_health_tests": "5passed; both actual12previews and old352full execution pass",
+  "previous352_runtime_seconds": 12876.728947152
 }
