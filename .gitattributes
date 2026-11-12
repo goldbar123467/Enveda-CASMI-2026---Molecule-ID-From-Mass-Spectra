@@ -264,3 +264,4 @@ configs/c6[6-9]* -text whitespace=trailing-space,space-before-tab,cr-at-eol
 configs/c7[0-5]* -text whitespace=trailing-space,space-before-tab,cr-at-eol
 kaggle/forks/c73-full-masked-validation/* -text whitespace=trailing-space,space-before-tab,cr-at-eol
 docs/evidence/c66-c72-20261112/* -text whitespace=trailing-space,space-before-tab,cr-at-eol
+docs/evidence/c75-local-port-20261112/* -text whitespace=trailing-space,space-before-tab,cr-at-eol

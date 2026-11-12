@@ -1,0 +1,24 @@
+{
+  "versions": {
+    "tokenizers": "0.21.4",
+    "torch": "2.11.0+cu128",
+    "numpy": "2.2.6",
+    "rdkit": "2026.3.3"
+  },
+  "tokenizer_sha256": "3df1f2219653c44fac9fa03b7f788b372eb2544ecc176737bb9aca8411b471a5",
+  "local_only_encoding_check": [
+    0,
+    4,
+    4,
+    9,
+    1
+  ],
+  "matches_prior_frozen_encoder_tokenizers_version": true,
+  "existing_Torch_NumPy_RDKit_versions_unchanged": true,
+  "install_scope": "Only tokenizers0.21.4wheel, no dependency upgrades; before the frozen control first uses tokenizer",
+  "actual_core_run_already_started": true,
+  "scientific_source_weights_thresholds_unchanged": true,
+  "new_source_quality_read": false,
+  "C13_read": false,
+  "scoring_entries": 0
+}

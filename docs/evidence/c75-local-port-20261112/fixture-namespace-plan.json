@@ -1,0 +1,15 @@
+{
+  "prepared_utc": "2026-11-12T14:49:11.901047+00:00",
+  "source_sha256": "df02c4116d00930d78ef79292f8424a28725af479962d2e625390be250d65b39",
+  "owner": "enveda-c75-local-core-port-20261112",
+  "workspace": "/mnt/c/Users/imsa/Documents/Enveda CASMI",
+  "mode": "fixture",
+  "native_root": "/home/imsa/.local/share/enveda-c75/fixture",
+  "input": "/home/imsa/.local/share/enveda-c75/fixture/input",
+  "working": "/home/imsa/.local/share/enveda-c75/fixture/working",
+  "file_links": 651,
+  "complete_asset_freezes_still_required": true,
+  "port_freeze_sha256": "686b0740f33693a5d875bbccec254c555f83b94bf7177b6ffd7de425a7c476c9",
+  "new_source_outcomes_read": false,
+  "C13_read": false
+}

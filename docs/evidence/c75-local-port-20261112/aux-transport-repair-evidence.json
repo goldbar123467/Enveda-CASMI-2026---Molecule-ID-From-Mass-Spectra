@@ -1,0 +1,12 @@
+{
+  "checked_utc": "2026-11-12T15:17:25.671695+00:00",
+  "source_sha256": "6c12aa948bd63d56ec2514f9a54fe1c10992c6bcee53955e4d88ebeaf74ef06e",
+  "original_worker_sha256": "50ce1d8b2c5e92807210b8e45baa0cdaa5c14b3ffd18c5825c9f860de39c703a",
+  "repaired_file_responses": [],
+  "installed_SDK_unchanged": true,
+  "HTTP_and_authentication_errors_preserved": true,
+  "query_or_asset_omission": false,
+  "no_quality_outcomes_read": true,
+  "C13_read": false,
+  "scoring_entries": 0
+}

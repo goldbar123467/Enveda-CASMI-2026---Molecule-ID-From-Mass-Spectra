@@ -1,3 +1,71 @@
+## Immediate C75 state — original complete12query local replay is RUNNING
+
+The previous goal turn made concrete progress (clean C71pair/input audits/CUDA
+runtime). This turn proved the single-card source adapter, selected a metadata-
+only USED12fixture with ALL51original acquisitions, and launched ONE real full
+P01/P14 comparison pipeline. NewC72fresh512quality and C13 remain UNCONSUMED;
+scoring approvals remain0/2, champion0.480untouched, old/hourly controllers OFF.
+
+ALL selected assets are now COMPLETE:237originalV4Gfiles/20,082,868,365bytes and
+388auxiliaryfiles/13,041,244,810bytes. Both freezes exist. Initial SDK2.2.4 JSON
+TypeError was diagnosed: downloaded PROVENANCE.json has list-valued `code`.
+The scoped resume helper preserves HTTP/auth errors and original worker/SDK;
+legitimate2137bytefile verified. A transient locked status-file replace was
+handled with bounded I/O retries. An exact retry of one transient HTTPfailure
+succeeded; all388files were retained, none dropped. Immutable attempt1/2evidence
+and successful resume evidence remain private. No completed large data was redownloaded during recovery.
+
+Windows RDKit/ArrowParquet extensions began returning explicit Application
+Control policy blocks. DO NOT disable/unblock/rename those binaries or alter
+security policy. Pure packaging helpers were decoupled from unnecessary chemistry
+imports, and the already-created/verified Linuxenvironment runs the port work.
+Use WSL for subsequent Parquet/chemistry/model operations; Windows stdlib handles
+SDK, git and the supervisor. Windows frozen environments remain unchanged.
+
+C75fixture port/source audit PASSED. Every original inner scientific cell is
+EXACT except one Engine2recovery GPU1->GPU0mapping. Original outer neural-public/
+ours ensemble and final ranking code are EXACT. Modified outercells only0,6,12,27:
+truthful single2070allocation, fixturecount/hash controls, honest repackaged inner
+payload hash and GPU0negativecontrol. It does NOT claim actual_two_T4s. Original
+cloudC57masks retained byteexact. Original512fresh C73/C74masks are for the later
+full run, not this engineering fixture. Required parity: exact final P01/P14lists,
+featurekeysets/nonfloats/NaNpatterns exact, floats atol=rtol1e-5, all51acquisitions,
+complete actual channels/zero soft failures. See scripts/audit_c75_run.py.
+
+Task-owned /kaggle/input and /kaggle/working links in WSL point ONLY to
+/home/imsa/.local/share/enveda-c75/fixture/{input,working}. Ownership guards reject
+unknown existing namespaces;651file links, no original data deleted/moved. Links
+resolve to the original cached/public assets and query-only fixture; no query
+labels mounted. Complete port is original inner PLUS original outer blend/rank.
+
+LIVE supervisor: scripts/supervise_c75_local_port.py fixture, actualWindowsPID10592
+(venv launcher20264), tool session69046. LinuxdriverPID/PGID319; runnerPID411 and
+Engine2PID454observed. Intents/progress/checkpoints under C75/fixture-port. Do NOT
+restart because a tool poll times out. Supervisor runs one inference, monitors
+hostRAM>=4GiB and terminates only its verified owned Linuxgroup on failure.
+Original code/thresholds/models remain; os.cpu_count4/thread2 is resource control.
+Own input/venv cache advice only on reserve pressure; unrelated WSL/apps untouched.
+
+Observed15:22UTC: original pipeline at innercell32Engine2; actualtask Engine2RSS
+~3.97GB, driver0.69GB, runner0.55GB. Host freeRAM recovered to7.70GiBwithout any
+failure. Main pipeline stdout contains original stage progress, nested engine
+stdout is captured until that process finishes; an unchanged outercell15 does
+NOT mean it is stopped. Read /kaggle/working/submission_pipeline.log via WSL.
+Both original DreaMS/MolFormer graphs passed actualGPU0preflight (peak0.4805GiB).
+Added ONLY tokenizers0.21.4(no dependency upgrades), matching prior encoderenv;
+local frozen tokenizer.json encoding CCO->[0,4,4,9,1] passed. Version addendum saved.
+Torch/NumPy/RDKit versions unchanged. Optional training-only multiprocess/pathos
+is stubbed by the original simulator code; do not install unrelated packages.
+
+NEXT: monitor this specific live run, diagnose any actual errors without changing
+science/cohorts; after successful exit run WSL audit_c75_run.py fixture. If and
+ONLY IF complete flow parity passes, prepare/audit/activate C75full with original
+C73source/C72fresh512querypackage and new masks; run all512/2215acquisitions.
+Then execute audited C74physicalP16 and frozen C71CPU/GPUheads, freeze both before
+one whole-source evaluation, actual production checks, sole joint C13once, and
+CPUscore then GPUscore through one shared durable C42ledger. Never bypass gates.
+KaggleT4launch remains rejected weekly30hourquota(version0); no cloudjob exists.
+
 ## C75 update — isolated RTX2070 CUDA execution verified; assets still downloading
 
 At14:22UTC the actual WSL runtime probe PASSED: Python3.12.3, Torch2.11.0+cu128,

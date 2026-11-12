@@ -1,0 +1,20 @@
+{
+  "started_utc": "2026-11-12T15:17:45.553030+00:00",
+  "pid": 319,
+  "pgid": 319,
+  "source_sha256": "c2cd3b8f45221a6605a841ce738eb4aced203d3894cd13d6463721070eaf85ee",
+  "mode": "fixture",
+  "port_freeze_sha256": "686b0740f33693a5d875bbccec254c555f83b94bf7177b6ffd7de425a7c476c9",
+  "port_source_audit_sha256": "274141faa317358cd8831440c9517cc0176b888045108273f7e0a5196205b4f3",
+  "asset_freezes_sha256": [
+    "dde2053011625a0caa5c0ca67e12d02ab11247d2cd0e7c4c61497e9e3127a4d9",
+    "7d54f6f377df067f6e24bd5207efe4f73443bf44d0bc9920cbc20750383be822"
+  ],
+  "operational_CPU_workers": 4,
+  "threads_per_process": 2,
+  "resource_site_sha256": "c282e9fedb4ead4a5383929a512c4ed4b4c84f733cccc081b9d31433e34d90b9",
+  "quality_outcomes_read": false,
+  "C13_read": false,
+  "scoring_entries": 0,
+  "actual_two_T4s": false
+}

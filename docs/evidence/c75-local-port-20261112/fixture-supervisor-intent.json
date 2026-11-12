@@ -1,0 +1,13 @@
+{
+  "started_utc": "2026-11-12T14:56:09.679343+00:00",
+  "pid": 10592,
+  "source_sha256": "37d31ee96ce1c95bffea56bb7184e30d0e1974b23e2bde293898c40954279bbd",
+  "mode": "fixture",
+  "deadline_utc": "2026-11-12T20:56:09.679343+00:00",
+  "wait_for_complete_assets": true,
+  "exactly_one_local_inference_launch": true,
+  "host_reserve_GiB": 4,
+  "new_source_quality_read": false,
+  "C13_read": false,
+  "scoring_entries": 0
+}

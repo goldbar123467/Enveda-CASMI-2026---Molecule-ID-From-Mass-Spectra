@@ -1,0 +1,20 @@
+{
+  "completed_utc": "2026-11-12T14:46:40.794402+00:00",
+  "source_sha256": "13252ef42a22fcfd5aea0502f192517feb1bf2bc26f1c9a0ede449a5cbda34bb",
+  "port_freeze_sha256": "686b0740f33693a5d875bbccec254c555f83b94bf7177b6ffd7de425a7c476c9",
+  "mode": "fixture",
+  "queries": 12,
+  "acquisitions": 51,
+  "all_original_acquisitions_metadata_peaks_exact": true,
+  "reference_masks_exact": true,
+  "original_outer_neural_ensemble_and_ranking_code_exact": true,
+  "every_inner_scientific_cell_exact_except_one_GPU_index_mapping": true,
+  "original_encoder_preflight_preserved_on_actual_single_card": true,
+  "input_count_and_contract_changes_only": true,
+  "no_query_structure_labels_mounted": true,
+  "source_and_fixture_audit_passed": true,
+  "runtime_parity_not_yet_established": true,
+  "new_source_quality_read": false,
+  "C13_read": false,
+  "scoring_entries": 0
+}

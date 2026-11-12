@@ -1,0 +1,10 @@
+{
+  "file": "casmi26-identity-disjoint-validation-folds/build_folds.py",
+  "expected_bytes": 8031,
+  "actual_bytes": 8031,
+  "sha256": "b837474eccf3922c8517c00bce0166edd34e53115e43298696381b52e05e38e4",
+  "exact_original_authenticated_request_succeeded": true,
+  "credentials_or_access_policy_changed": false,
+  "quality_outcomes_read": false,
+  "C13_read": false
+}
