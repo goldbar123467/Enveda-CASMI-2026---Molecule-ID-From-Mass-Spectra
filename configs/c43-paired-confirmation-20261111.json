@@ -1,0 +1,26 @@
+{
+  "run_id": "C43",
+  "freeze_timing": "Before C39 quality or C13 confirmation outcomes.",
+  "eligible_pair": "Both fixed C42R1 recipes must pass the original C42 development/source/mode gates and source/artifact checks first.",
+  "protocol": "Freeze both complete production sources and both paired predictions, then consume C13 labels together at most once. No recipe, threshold, cohort or model may be chosen using its outcomes.",
+  "source": "Existing immutable C13 CASMI2022 FT/HCD120:60positive+60negative; one acquisition per query. This is source stress confirmation, not a target timsTOF population proxy.",
+  "prediction_inputs": "Existing audited original complete P01 C13 predictions and query-only inputs; no true-answer insertion or candidate filtering.",
+  "admission": {
+    "both_all120_point_deltas_at_least": 0.0,
+    "both_positive60_point_deltas_at_least": 0.0,
+    "negative60_must_retain_parent_exactly": true,
+    "rank1_changes_allowed": 0,
+    "candidate_membership_changes_allowed": 0,
+    "formula_position_changes_allowed": 0,
+    "fitted_head_identity_overlap_allowed": 0,
+    "report_fitting_chemistry_neighbor_exposure": true,
+    "report_grouped_intervals": true,
+    "confidence_intervals_do_not_establish_public_transfer": true
+  },
+  "negative_control": "Report frozen P14 on the same complete120 with correct all-query zeros; never choose a cohort to make its sign favorable.",
+  "qualification_tier": "Exploratory fixed pair, not statistical promotion or a public-gain claim. C39 exclusions apply new fitting heads; C13 near-chemistry and public pretraining exposure remain disclosed.",
+  "submission_sequence": ["cpu", "observe_actual_terminal_cpu_score", "gpu", "observe_actual_terminal_gpu_score"],
+  "maximum_new_accepted_submissions": 2,
+  "automatic_confirmation_from_background_worker": false,
+  "no_repeat_user_approval_required": true
+}
