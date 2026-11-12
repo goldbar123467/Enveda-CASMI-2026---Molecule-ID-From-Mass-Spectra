@@ -1,0 +1,39 @@
+{
+  "prepared_utc": "2026-11-12T08:14:28.861404+00:00",
+  "source_sha256": "5aa011ab9337a6942021d73b3237db1ad3715313074a7d33b5119d45d58e3ded",
+  "old_v2_notebook_sha256": "cbd4503ef7dc1ba089d33d3f3d8a45615db406b236c1b3b135005a47f7d8088f",
+  "notebook_sha256": "f17e63c04e58465127347d7a86492a82e3ccbf7c21e2f53289920a9a06caf667",
+  "scientific_sha256": "f173c804a3f9c97621b890271a9f6b7a374db2cf6bd55337ebad71d01794865d",
+  "frozen_scientific_payload_sha256": "398a7937c75ebb53607a46536ec79bd76431e7cf1bd1a6d6b26e2070811e2de6",
+  "changed_outer_cells": [
+    12
+  ],
+  "changed_inner_cells": [
+    27
+  ],
+  "PV_v2_repair_unchanged": true,
+  "all_other_scientific_cells_exact": true,
+  "source_copy_function_sha256": "57a56d88305d4a54caf70e2f26c21700805fca42bfc7491c6f6654d7b462ed19",
+  "compat_adapter_sha256": "eec91fbef5c8683de63c32ce94d39f95f30f950558b1dd484cf1772617ab7f78",
+  "query_sha256": "d27999b569708beea4116e78200e09b02071e456d66a7a2ba082900bd1a6cd78",
+  "query_contract_sha256": "8ef3d0600cf0dc1ca2e8f2edbe664adffc84e80e75a9e972ea50f5fdaf9554c7",
+  "queries": 120,
+  "query_modes": {
+    "positive": 60,
+    "negative": 60
+  },
+  "query_tokens_or_selection_changed": false,
+  "no_new_reference_intervention": true,
+  "query_labels_mounted": false,
+  "prediction_quality_read": false,
+  "main_scalar_preflight": {
+    "old_finite": 98,
+    "patched_finite": 119,
+    "note": "One original trailing-space formate remains unsupported by the exact production main adapter; retain it and its Engine2fallback. No query rewrite or favorable omission."
+  },
+  "release_authorized_only_after": "C56actualP30/P31production audits AND C58fresh482full/incremental/source/mode admission. This build alone cannot push, submit, consume C13or clear scientific hold.",
+  "private": true,
+  "internet": false,
+  "scoring_submission": false,
+  "cloud_run_released": false
+}

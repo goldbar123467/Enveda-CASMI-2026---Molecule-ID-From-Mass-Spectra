@@ -1,0 +1,12 @@
+{
+  "checked_utc": "2026-11-12T08:26:14.180276+00:00",
+  "global_inventory_sha256": "ecdb7ce02b39fb694f29d3b57e11d4474a8f62f56966e3e289385032c8a0ac15",
+  "reference_witness_sha256": "a2779204463261423061946c7b8f415b4400f55527567f20431cc47e84e9d151",
+  "global_inventory_keys": 231,
+  "all_reference_raw_identity_overlap": 0,
+  "all_reference_official_identity_overlap": 0,
+  "per_query_labels_read": false,
+  "prediction_quality_read": false,
+  "C13_consumed": false,
+  "conclusion": "No main reference intervention needed only if both complete-inventory counts are zero; P16whole231and input-alias masking remains mandatory."
+}

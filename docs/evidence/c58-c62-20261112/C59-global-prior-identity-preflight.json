@@ -1,0 +1,17 @@
+{
+  "checked_utc": "2026-11-12T08:48:14.937702+00:00",
+  "global_inventory_sha256": "ecdb7ce02b39fb694f29d3b57e11d4474a8f62f56966e3e289385032c8a0ac15",
+  "prior_labels_sha256": {
+    "C39": "0c4ac3d6462c924573b6b1dc66da50b00404c4ceb3aa41f5bcc67a130a03014d",
+    "C51": "9b2a71f79ff46aad02dcb7cfbcdca29fa17d72f90cb32428421065d9f42c9a11",
+    "C53": "c0cb5753d96246a4843bf91c36ec71d6fbc3e700d354faa51b2b128b5ab28b62"
+  },
+  "global231_identity_intersections": {
+    "C39": 0,
+    "C51": 0,
+    "C53": 0
+  },
+  "per_query_C13_labels_read": false,
+  "prediction_quality_read": false,
+  "C13_consumed": false
+}

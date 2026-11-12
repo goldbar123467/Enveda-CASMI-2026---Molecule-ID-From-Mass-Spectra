@@ -1,47 +1,55 @@
-## Active C56 pair — clean development passes; C57 fresh inference running
+## Active C56 pair — both production previews pass; fresh C57 core running
 
-The native goal remains active until two actual new scored results.0/2approvals
-used; no repeat approval needed. Preserve0.480and keep old/hourly campaigns off.
-C53andC13quality outcomes remain untouched. Scientific gate hold stays active.
+The native goal remains active until TWO actual new terminal numeric scores.
+0/2 approvals used; no repeat approval needed. Preserve 0.480 and keep old/hourly
+campaigns off. C53 source quality and the single joint C13 confirmation are unread.
 
-C49 failed the fresh35C51gate (one MassBank truth12to14). C54direct fingerprint
-heads and C55bounded fingerprint serving both failed USED development; preserve
-those rejected families. No C54/P28/P29 cloud previews or scored entries were
-released. All387old queries are now USED, never relabel them fresh.
+C56 is a clean CPU ridge / bounded GPU semantic pair fit on 153,401 identities and
+527,097 acquisitions, excluding the entire C53 chemistry and raw/official alias
+closure. All 387 USED development queries pass every fixed guard. Both old352
+deltas are +11/26880 (+0.000409226), old35 unchanged: small uncertain development
+results, never fresh confirmation. Preserve rejected C49/C54/C55 evidence.
 
-C53 freezes482new molecules/2125full usable acquisitions/447chemistry groups:
-384target-proportioned Enveda180plus all98remaining eligible NP identities.
-Actual modes307positive/141mixed/34negative. Independent audit verifies all
-original2539608raw rows, every retained spectrum,679explicit unusable acquisition
-exclusions, source-chemistry separation and alias census. Controlled in-corpus
-holdout; public parent/encoder exposure persists, no independent-lab claim.
+Actual private P30 CPU and P31 GPU v1 previews BOTH completed and passed independent
+production audits. All final lists match local execution; respectively 9 and 8 of
+the 12 real preview queries change. Each has 400 valid rows / 388 exact fallbacks,
+unchanged parent, rank1/membership/formula slots protected, actual dual T4 execution.
+No scored entries were released.
 
-C56 trains fresh semantic CPU ridge and8000update bounded GPU residual on the
-C54clean153401identity/527097acquisition boundary, excluding ALL new C53chemistry
-and original raw aliases. The prior passing proxy overlapped C53and CANNOT qualify.
-Actual clean C56weights pass every original192/352source/mode guard and all35C51
-guards. Both352deltas+11/26880(+0.000409226); C51zero. Independent fitted-model,
-permutation and exact quality audits pass. This is a small uncertain USED effect.
+C57 full masked private v1 (482 molecules / 2,125 original usable acquisitions /
+447 chemistry groups) remains RUNNING as of 09:10 UTC Nov12. Actual observer PID
+26852, deadline16:05UTC: collect/acquisition-audit only, no scoring or evaluation.
+Never requeue a healthy handle. Exact frozen P16 reference masking is independently
+complete: 9,177 reachable retained rows, zero forbidden identity/chemistry/input
+aliases. Replay and fresh-head inference await actual C57 collection/fidelity.
 
-Frozen actual candidates P30CPU/P31GPU only reorder same-formula parent ranks3to10,
-preserving1-2and11-25. GPU inversions require BOTH same-cycle semantic heads.
-C57full masked core privatev1 pushed08:05UTC and RUNNING; base-only observer
-actualPID26852,deadline16:05UTC, cannot evaluate or submit. CPU P30privatev1 also
-pushed08:05and RUNNING. GPU P31NOTPUSHED; wait for one current job to finish to
-keep at most2concurrent private runs. Never requeue a healthy existing handle.
+Prepared C58 workflow freezes BOTH complete predictions before one full-panel
+source evaluation, with unchanged strict all482 full/incremental positive and
+source/mode nonnegative gates. Crash recovery permits ONLY the identical committed
+calculation, never deleting a consumption marker or changing a recipe/cohort.
 
-Next: audit C56production source/local-cloud parity; replay/audit exact frozenP16
-on all482withglobal reference exclusions; freeze both head predictions; evaluate
-C53once under frozen complete/incremental source/mode gates. Only if admissible,
-repair C13legacy main/fragment compatibility (oldv2wasPVonly; query-only scalar
-preflight98old/119patched main masses, one trailing-space token), completeP16with
-whole231identity/input-alias quarantine, then consume C13jointly at most once.
-No old C42/C43 observer may restart or clear the hold. Qualification must bind
-actualP30/P31and full pipeline. Two scored entries use one durable cap2ledger,
-CPUfirst, actual numeric score, thenGPUactual numeric score. No third entry.
+C59 faithful C13 main/fragment adapter notebook is prepared ONLY, NOT PUSHED.
+Old C13v2 repaired PV only; same production adapter recovers 119/120 main masses,
+retaining the original unsupported trailing-space token. Whole231 identity census
+has zero main-reference and prior-used identity overlaps. C60 whole231 P16 mask /
+replay and C61 single joint confirmation are prepared, conditional on C58 passing.
+All120 original C13 queries and absent-truth zeros must remain; no TIMS calibration
+claim follows from this FT/HCD confirmation.
+
+C62 qualification / shared cap2 ledger / CPU-then-actual-score-then-GPU observer
+are prepared, NOT RELEASED. Ten offline tests cover numeric-score sequencing,
+network/score failures, other pending entries, missing/tampered qualification,
+shared ledger cap, exact durable-intent recovery and retired-controller rejection.
+C62 may activate only its exact evidence-bound qualification; retired C42/C43
+controllers retain their nonempty hold. No third scoring entry is authorized.
+
+Next: complete C57 acquisition audit, exact P16 replay, both fresh predictions and
+C58 quality. Only if passing: faithful C59/C60, one C61 confirmation, independently
+verify admission, then qualify and score P30/P31 sequentially. No outcome rescue.
 
 Current paths: outputs/local/c56-bounded-semantic-heads-20261112;
-outputs/local/c57-target-validation-20261112; configs/c56-bounded-semantic-pair-20261112.json.
+outputs/local/c57-target-validation-20261112; outputs/local/c58-complete-target-20261112;
+docs/evidence/c58-c62-20261112. Historical sections below preserve earlier evidence.
 
 ## Active C51 decision — C49 pair rejected on fresh source
 
