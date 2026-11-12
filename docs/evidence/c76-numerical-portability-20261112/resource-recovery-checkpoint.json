@@ -1,0 +1,12 @@
+{
+  "recorded_utc": "2026-11-12T19:08:29.750150+00:00",
+  "phase": "NewcompleteUSED12localresource_retry_running",
+  "local_policy_sha256": "e1a7fee8307870d72447d52eb4c1302d76bf7e2d13e2dba037e6736fde28c3ef",
+  "new_fixture_freeze_sha256": "e493966adf2abd0761d1f20e6b7cae13362912c4a3265c51ad60e94801784ba0",
+  "original_component_gate_results_unchanged": true,
+  "old_attempt_intentionally_stopped": true,
+  "N1input_bytes_unchanged": true,
+  "fresh_source_quality_read": false,
+  "C13_read": false,
+  "scoring_entries": 0
+}

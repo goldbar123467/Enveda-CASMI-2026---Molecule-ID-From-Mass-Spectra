@@ -1,0 +1,20 @@
+{
+  "started_utc": "2026-11-12T19:04:35.346085+00:00",
+  "source_sha256": "0ead9c481317cd058a249a257c65876fd920fea3eeef4c316c486d106c1bbd93",
+  "supervisor_sha256": "be77a70d79f3d3ae5885554ce5b802385a9b83444f769533c7670c1cdaa8672d",
+  "unit": "enveda-c76-fixture-resource-29108",
+  "fixture_freeze_sha256": "e493966adf2abd0761d1f20e6b7cae13362912c4a3265c51ad60e94801784ba0",
+  "host_reserve_GiB": 4,
+  "memory_high_GiB": 8.75,
+  "memory_max_GiB": 10,
+  "swap_max_GiB": 4,
+  "launches": 1,
+  "automatic_retry": false,
+  "prior_attempt_intentionally_stopped": true,
+  "ICE_maximum_batch_size": 8,
+  "parent_unused_CUDA_cache_released_before_ICE": true,
+  "USED_only": true,
+  "quality_read": false,
+  "C13_read": false,
+  "scoring_entries": 0
+}

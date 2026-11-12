@@ -1,0 +1,14 @@
+{
+  "started_utc": "2026-11-12T19:04:37.399627+00:00",
+  "pid": 368,
+  "pgid": 368,
+  "source_sha256": "0ead9c481317cd058a249a257c65876fd920fea3eeef4c316c486d106c1bbd93",
+  "fixture_freeze_sha256": "e493966adf2abd0761d1f20e6b7cae13362912c4a3265c51ad60e94801784ba0",
+  "candidate_freeze_sha256": "3d8d7ff7c63f839f0bc9f9a514d139487c7258b0436346c8d31acc42f19e5016",
+  "actual_single_2070": true,
+  "actual_two_T4s": false,
+  "USED_only": true,
+  "quality_read": false,
+  "C13_read": false,
+  "scoring_entries": 0
+}

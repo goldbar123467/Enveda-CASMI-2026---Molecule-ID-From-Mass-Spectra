@@ -1,0 +1,25 @@
+{
+  "scope": "Local RTX2070 complete USED12 engineering replay only",
+  "reason": "Observed first96item ICE batch still incomplete after more than30minutes at nearfull8GiBVRAM; partial attempt retained",
+  "changes": [
+    "Release unreferenced parent CUDA allocator cache immediately before the separate ICE process",
+    "Use the original supported ICE --bs8 option"
+  ],
+  "unchanged": [
+    "All query and candidate inputs, reference masks, learned parameters and model functions",
+    "The independently tested C76 GL numerical adapter",
+    "Core prediction/scoring formulas and coverage requirements",
+    "Fresh source and confirmation panels and quality protocol"
+  ],
+  "new_working_directory_required": true,
+  "host_reserve_GiB": 4,
+  "task_memory_high_GiB": 8.75,
+  "task_memory_max_GiB": 10,
+  "task_swap_max_GiB": 4,
+  "exact_ICE_score_parity_across_batch_sizes_not_assumed": true,
+  "original_C75_gate_passed": false,
+  "actual_T4_source_and_production_gates_retained": true,
+  "quality_read": false,
+  "C13_read": false,
+  "scoring_entries": 0
+}

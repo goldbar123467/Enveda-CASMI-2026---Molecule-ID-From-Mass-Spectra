@@ -1,0 +1,24 @@
+{
+  "started_utc": "2026-11-12T19:04:35.990158+00:00",
+  "source_sha256": "b0e28dd66a3d2d8dcd0218cd28a3bc9d54156fa2ec7e6c96db77d1a00d0ebd18",
+  "original_fixed_cases_sha256": "b3238a5cde482eb4117662b7a2497ce1695ae6602c7d499d049fa89a6ebbff86",
+  "input_sha256": "311ab5364eb0aef562848549f7dbfc28f4843c2e7d5f2257d24090d21ee8b483",
+  "original_N1_core_sha256": "f7a3b8cd8802a7ba3b69a297603241784a63c069044cf7bd6efda7d68cc8fdfa",
+  "original_N1_driver_sha256": "e919a154b57bda5a52573481348e38d8b4e7c97883532ea5b385bc3cb6f98502",
+  "candidate_GL_runner_sha256": "8cdedc57268fc86755961fd2ddc14bc72f8d9bf8dad3d8a446f97d575f61399d",
+  "helper_sha256": "9334f533cc00ba289d4c5d57d3f452b13f0a8b346be59546181b45f08a7ca63e",
+  "synthetic_only": true,
+  "candidates": 4,
+  "proxy_spectra": 4,
+  "merged_CE_spectra": 2,
+  "tags": {
+    "NH4p": 2,
+    "WLp": 2
+  },
+  "selection": "First already frozen16case input; all its4candidates. Synthetic NH4/water-loss plus single/merged CE path exercise, never quality.",
+  "acceptance": "Real CPU model; all4spectra covered; merged2; all32mean/merged candidate outputs finite; no prediction/feature errors",
+  "USED_only": true,
+  "quality_read": false,
+  "C13_read": false,
+  "scoring_entries": 0
+}

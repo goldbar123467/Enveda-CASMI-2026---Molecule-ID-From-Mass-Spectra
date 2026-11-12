@@ -1,0 +1,18 @@
+{
+  "completed_utc": "2026-11-12T19:03:59.597852+00:00",
+  "source_sha256": "bf89579d0a8b7b6c1673c227509b94b5c2d5668e567789e25ed26845c876ca28",
+  "fixture_freeze_sha256": "e493966adf2abd0761d1f20e6b7cae13362912c4a3265c51ad60e94801784ba0",
+  "passed": true,
+  "only_new_changes": [
+    "Release unused parent CUDA cache before ICE",
+    "Supported ICE CLI --bs8"
+  ],
+  "parent_GL_numerical_source_audit_sha256": "922d78372b93f13bc182db0ca5a88239c300655180f054a29879a2d1b8566ad7",
+  "model_weights_and_functions_unchanged": true,
+  "original_queries_candidates_and_reference_masks_retained": true,
+  "exact_ICE_parity_across_batch_sizes_not_assumed": true,
+  "original_C75_gate_passed": false,
+  "quality_read": false,
+  "C13_read": false,
+  "scoring_entries": 0
+}

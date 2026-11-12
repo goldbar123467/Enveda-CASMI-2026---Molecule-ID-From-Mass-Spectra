@@ -1,0 +1,44 @@
+{
+  "frozen_utc": "2026-11-12T19:02:16.938226+00:00",
+  "source_sha256": "88c71e39c41075bee71761ad8f3b1747189682740a78ac06466461f02c834850",
+  "candidate_freeze_sha256": "3d8d7ff7c63f839f0bc9f9a514d139487c7258b0436346c8d31acc42f19e5016",
+  "parent_notebook_sha256": "cd7db1d1c0fffa786e85b6683b1fc0787f1f16efe645b39a01d0ab6ee41e283e",
+  "notebook_sha256": "7c18ee707c95d20d68cda14aa96d68ce506d51779c0fa1442b20f8df64e670a5",
+  "inner_parent_sha256": "7c3ccf63d7f7d2cbf764a600d12fd1efd0987453b54483db7a22bb38b476d7fb",
+  "inner_candidate_sha256": "ad0a4167291a8bb67bba7c5b82f5b105d9abcfff4c39584d403d70a28cb6e5e1",
+  "original_gl_runner_sha256": "5c4f74313ac54263d05d987c39d012d81ec57c5f35e1095ecd49a5bcb6440fca",
+  "candidate_gl_runner_sha256": "8cdedc57268fc86755961fd2ddc14bc72f8d9bf8dad3d8a446f97d575f61399d",
+  "helper_sha256": "9334f533cc00ba289d4c5d57d3f452b13f0a8b346be59546181b45f08a7ca63e",
+  "inner_changed_cells": [
+    41
+  ],
+  "outer_changed_cells": [
+    12
+  ],
+  "parent_scientific_functions_unchanged": true,
+  "original_checkpoint_sha256": "9192e4c2eeafe83317d5a2c2641e1fc4d68934488757a4faafeb66f2ab397a12",
+  "owned_GL_package": "/home/imsa/.local/share/enveda-c76/fixture/glacier",
+  "owned_working": "/home/imsa/.local/share/enveda-c76/fixture-resource/working",
+  "original_input_target": "/home/imsa/.local/share/enveda-c75/fixture/input",
+  "query_package": "/mnt/c/Users/imsa/Documents/Enveda CASMI/outputs/local/c75-local-core-port-20261112/fixture-port/query-package",
+  "queries": 12,
+  "acquisitions": 51,
+  "both_classic_GL_and_N1_use_same_explicit_adapter": true,
+  "original_reference_masks_preserved": true,
+  "C75_gate_still_failed": true,
+  "quality_read": false,
+  "C13_read": false,
+  "scoring_entries": 0,
+  "qualified_for_scoring": false,
+  "parent_fixture_freeze_sha256": "e4ebe6e54700d2487ccca71c5f878f79de2b2f1c938be4a84d16906b362d1329",
+  "operational_resource_policy_sha256": "e1a7fee8307870d72447d52eb4c1302d76bf7e2d13e2dba037e6736fde28c3ef",
+  "intentional_performance_stop_sha256": "e9eb9f15dea522fb0c0542b4cad8e7fbf2fd09168fccbcaa4635435bf2712284",
+  "operational_changes": [
+    "Empty unused parent CUDA cache before ICE",
+    "Original ICE --bs8"
+  ],
+  "generated_executor_sha256": "0ead9c481317cd058a249a257c65876fd920fea3eeef4c316c486d106c1bbd93",
+  "generated_namespace_activator_sha256": "fc87031ab79ecd6be19f0f35e2416e64979f14ad61923cf667c6eb9f1f0207e8",
+  "models_and_input_data_unchanged": true,
+  "exact_ICE_parity_across_batch_sizes_not_assumed": true
+}

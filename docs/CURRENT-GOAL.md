@@ -1,3 +1,54 @@
+## ACTIVE C76 resource retry — prior oversized-batch run intentionally stopped
+
+NEW LIVE TOOL SESSION92177. Windows supervisor29108; unit
+enveda-c76-fixture-resource-29108.scope. Linux driver368/PGID368 at launch;
+reconcile currentPIDs from run-intent (WSLcan reinitialize between jobs).
+Artifacts/status: outputs/local/c76-numerical-portability-20261112/fixture-resource-port/.
+Read pipeline.log, supervisor-status.json and run-progress.json. Guardian high8.75/
+max10/swap4GiB/hostfloor4, one controlled launch, no automatic restart.
+
+The old session40251 is CLOSED1 after INTENTIONAL owned-scopeSIGTERM (return15).
+All old C76 fixture-port artifacts and nativeworking data preserved. That run is
+NOT complete, NOT a model-quality rejection. A read-only profiler scalar sample
+showed ICE remained in FIRST96item batch (i96, nb96, depth2of3, maxnodes100) after
+>30minutes, physicalGPU~7970of8192MiB with sharedGPUmemory. Fullinput was EXACTLY
+identical to prior successfulC75ICE2204prediction run. Softlimit8->8.75 stopped
+throttling but did not solve performance. Only the verified C76scope was stopped;
+other applications retained. Private profiler-locals JSON stays ignored; only
+whitelisted scalar counters/hash are in public evidence.
+
+New explicit LOCAL resource adapter is frozen in
+configs/c76-local-resource-adapter-v1.json: gc.collect/torch.cuda.empty_cache
+immediately BEFORE separateICE, and original supported ICE --bs8. No model,
+query, candidate, reference mask or scoring-function change. ICE floating-point
+parity across batch sizes is NOT assumed; actualT4source/control/production gates
+remain. Original C75 strictgate stays failed. Independent resource sourceaudit
+PASSED, verifies ONLY those2newchanges against the prior C76notebook. GLhelper,
+checkpoint and both classic/N1GL routes retain their previously proven bytes.
+
+Namespace /kaggle/working NOWpoints
+/home/imsa/.local/share/enveda-c76/fixture-resource/working.
+/kaggle/input remains originalC75fixture inputs. GLpackage still
+/home/imsa/.local/share/enveda-c76/fixture/glacier (frozen owned clone). Root-owner
+activation switched ONLY verified taskworking link; no chmod/security/data change.
+
+After THIS new complete run succeeds, use
+scripts/probe_c76_resource_n1_path.py run in scope containing
+enveda-c76-resource-n1-path (CPU2threads, suggested3GiBcap, startreserve8GiB).
+Its input is BYTEIDENTICAL to earlier prepared N1case; never previously executed.
+It requires new fixture-resource-port/run-complete.json (not the stoppedoldport).
+Then execute scripts/audit_c76_resource_fixture_run.py under recoveredTorch2.10
+WSLruntime. Both scripts compiled, not run yet. Prior non-resource N1/auditor are
+retained historical plans and MUSTNOT be used against the stoppedoldrun.
+
+Next requires a new complete C76binding/P16/physical/head adapter and frozen
+legacy-plus-C76controls before any fresh512quality. Never call oldC75paritypassed
+or reuse retiredC56production parent. C76GL799score parity and actualcloudCPU26
+array checks PASSED already; do not repeat unless a new relevant change warrants.
+New CPU/GPU headweights unchanged. C72/C13UNCONSUMED, sharedC42ledgerABSENT,
+0/2new scored entries, champion0.480 retained. GoalACTIVE; old/hourlycontrollersOFF.
+Quota refresh2026-11-14T00:00UTC=Nov13 7pmEastern. No paid compute.
+
 ## Live C76 resource update — ICE still running; no qualification yet
 
 Complete C76 USED12 job remains toolsession40251, scope

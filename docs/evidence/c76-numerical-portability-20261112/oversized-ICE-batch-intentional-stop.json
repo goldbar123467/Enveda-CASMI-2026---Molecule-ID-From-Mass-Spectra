@@ -1,0 +1,33 @@
+{
+  "stopped_utc": "2026-11-12T18:54:38.540421+00:00",
+  "source_sha256": "f4b9aaa8d34fc5704e976fc1d77c38f70671f20d5c77c8b39a577db73b937c02",
+  "unit": "enveda-c76-fixture-19960.scope",
+  "verified_control_group": "/user.slice/user-1000.slice/user@1000.service/app.slice/enveda-c76-fixture-19960.scope",
+  "reason": "First96itemICEbatch still incomplete after>30minutes; GPU7970of8192MiB and measurable sharedGPUmemory. Earlier identical complete2204predictioninput took409.83seconds in priorruntime.",
+  "read_only_sample_scalar_fields": {
+    "FragGNN.predict_mol": {
+      "max_nodes": "100",
+      "batch_size": "96",
+      "max_depth": "3",
+      "depth": "2"
+    },
+    "Predictor._run": {
+      "nb": "96"
+    },
+    "Predictor.predict": {
+      "i": "96",
+      "L": "55",
+      "bs": "96"
+    }
+  },
+  "private_sample_sha256": "23db1a75d8bb30386eb57e565ba542a8030aeec3c3856386f34ad5263cf4090b",
+  "old_and_new_ICE_input_byte_equality_verified": true,
+  "queries_or_candidates_changed": false,
+  "models_or_scientific_functions_changed": false,
+  "followup": "Prepare explicit supported ICE --bs8 resource adapter in fresh owned working directory. No automatic relaunch.",
+  "all_partial_logs_and_data_retained": true,
+  "other_applications_stopped": false,
+  "quality_read": false,
+  "C13_read": false,
+  "scoring_entries": 0
+}

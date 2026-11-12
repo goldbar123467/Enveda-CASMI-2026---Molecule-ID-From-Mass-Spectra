@@ -1,8 +1,8 @@
 # Runs
 
-Updated 2026-11-12 18:09 UTC by `scripts/update_runs.py` (hourly). Generated from `runs.csv` — edit that file, not this one.
+Updated 2026-11-12 19:08 UTC by `scripts/update_runs.py` (hourly). Generated from `runs.csv` — edit that file, not this one.
 
-- Kaggle quota: Weekly T4 quota unavailable at last launch; actual API refresh 2026-11-14 00:00 UTC. C76 CPU proof complete; no normalized-duration claim.
+- Kaggle quota: T4 weekly quota last rejected; API refresh 2026-11-14 00:00UTC. No normalized-duration claim; no newscored entries.
 - Submissions today (UTC): 0 of 5 — see `SUBMISSIONS.md`
 
 ## Active
@@ -10,12 +10,13 @@ Updated 2026-11-12 18:09 UTC by `scripts/update_runs.py` (hourly). Generated fro
 | id | platform | kind | ref | started (UTC) | status | purpose | progress |
 |---|---|---|---|---|---|---|---|
 | C09V | kaggle-gpu | diag | c09-coverage-controls v1 | 2026-11-09 14:44 | **cancel_requested** | C09 dual-device diagnostic: exact P14 full128 external pipeline negative control onGPU0; existing C08 expanded candidate coverage/scoring onGPU1; no scoring submission | Old128 panel superseded after67 base-connected acquisition groups found; cancellation requested, not acknowledged. No allocation/training/validation result; no GPU quota added at16:34UTC. |
-| C76FIXR1 | local-2070 | diag | outputs/local/c76-numerical-portability-20261112/fixture-port | 2026-11-12 18:07 | **running** | Complete originalR3USED12/all51 replay with explicitC76GLadapter and unchangedC71heads | Actual single2070; freshnamespace, bothGLbranches routed through pinned adapter; high8/max10/swap4GiB,hostfloor4. No freshquality/scoring. |
+| C76FIXRES1 | local-2070 | diag | outputs/local/c76-numerical-portability-20261112/fixture-resource-port | 2026-11-12 19:04 | **running** | CompleteUSED12/all51 C76 replay with explicit local cache-release and ICEbs8 adapter | Freshownedworking; inputs/masks/weights/functions retained. High8.75/max10/swap4GiB/hostfloor4; noauto-retry. Fullengineering audit, realN1path and actualT4gates still required. Noquality/scoring. |
 
 ## Finished (newest first)
 
 | id | platform | kind | ref | started (UTC) | ended (UTC) | status | purpose | result |
 |---|---|---|---|---|---|---|---|---|
+| C76FIXR1 | local-2070 | diag | outputs/local/c76-numerical-portability-20261112/fixture-port | 2026-11-12 18:07 | 2026-11-12 18:54 | killed | Complete originalR3USED12/all51 replay with explicitC76GLadapter and unchangedC71heads | Intentional owned-scope performance stop:ICEfirst96batch incomplete>30min atnearfullVRAM. NoOOM or qualityread; inputbyteidentical. Preservedpartial; explicitbs8resource retry separate. |
 | C76FIXA1 | local-2070 | diag | outputs/local/c76-numerical-portability-20261112/fixture-port/attempt-01-namespace-owner | 2026-11-12 18:05 | 2026-11-12 18:05 | error | Initial completeUSED12fixture setup | Stopped before inference:root-owned task-pointer permissions. Originalsource/log retained; no permissions or scientific changes. |
 | C76CPUPARITY | kaggle-cpu | diag | outputs/local/c76-numerical-portability-20261112/cpu-feature-parity | 2026-11-12 17:56 | 2026-11-12 18:00 | complete | Exact-image CPU proof of C76adapter on same4frozen publicUSEDjobs | Actualprivatev1source/image/noGPU verified;all26feature and spectrum arrays bitexact with localCPU. No quality or scoring. |
 | C76EXTR1 | local-cpu-gpu | diag | outputs/local/c76-numerical-portability-20261112/extended-used-nine-r1 | 2026-11-12 17:53 | 2026-11-12 17:57 | complete | Single reconciled CLI-only recovery; all799scores from earlier byte-frozen USED-nine input | PASSED all799CPU/CUDA scores at original1e-5;max9.853e-8;zero nullmismatches; healthy9of9each. Not quality qualification. |
