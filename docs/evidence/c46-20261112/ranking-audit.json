@@ -1,0 +1,15 @@
+{
+  "completed_utc": "2026-11-12T05:21:02.576902+00:00",
+  "source_sha256": "e609073f58ab836a8418b857c9ff493c904bd3dbf3a90d21c2c9d68ab655ff86",
+  "origin_score_receipt_sha256": "6c0520eeb97e245d7b21b87e00db331194e2095475c24ee0ab4e196917061c59",
+  "deployed_rule_equals_independent_RRF": true,
+  "GPU_top2_exact": true,
+  "changed_GPU_lists": 301,
+  "queries": 352,
+  "candidate_membership_changes": 0,
+  "formula_slot_changes": 0,
+  "official_identity_duplicates": 0,
+  "encoder_or_model_refit": false,
+  "raw_scores_reused_exactly": true,
+  "quality_outcomes_read": false
+}

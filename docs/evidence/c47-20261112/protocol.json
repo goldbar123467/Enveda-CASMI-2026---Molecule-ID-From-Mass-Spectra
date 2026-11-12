@@ -1,0 +1,20 @@
+{
+  "frozen_utc": "2026-11-12T05:23:15.629924+00:00",
+  "source_sha256": "9d109d23cc3d4a72e1f4d53143482e14ea915229155830ccbc8b7b2630c9f8c6",
+  "files_sha256": {
+    "outputs\\local\\c38-source-support-20261111\\massbank-latest-tims-inventory.parquet": "44480482790e18521e74014aa1cafdb1d082b28b3b056a71f05540d932bdeda8",
+    "outputs\\local\\c39-source-supported-validation-20261111\\labels.csv": "0c4ac3d6462c924573b6b1dc66da50b00404c4ceb3aa41f5bcc67a130a03014d",
+    "outputs\\local\\c13-confirmation-20261110\\identity-inventory.parquet": "ecdb7ce02b39fb694f29d3b57e11d4474a8f62f56966e3e289385032c8a0ac15",
+    "outputs\\publish\\c08-validation-20261108\\labels.csv": "5c2b3b269bef779d6364dcebd0edf900f7663cfa13ba18c6cb382c8c2020e820",
+    "outputs\\publish\\c09-validation-20261109\\labels.csv": "86f54a9ca39dbf6353eef237a35406f1f8203f0ea5f0bc71fd1f3f420b5c4d4e",
+    "outputs\\local\\c10-casmi2022-20261110\\labels.csv": "f1d3b96f002827d2c9ddd1e61f0fe4e97551a27859da8c74d248588893515c6a",
+    "outputs\\local\\c20-negative-development-20261110\\labels.csv": "4d0f0803904dcf592fa9bda6786db72b40d9e27790ce0f891bb9ed700f82e1a3"
+  },
+  "rule": "Census ALL valid primary timsTOF identities not in C39, prior used panels or the entire global C13 identity inventory. Also exclude same formula, same nonempty Murcko scaffold or Morgan2 Tanimoto>=.70 to any now-used C39 query. No sampling or performance-based selection.",
+  "purpose": "Determine whether an unmatched chemistry holdout exists before committing another CPU/GPU fit.",
+  "C39_is_now_used": true,
+  "C13_labels_read": false,
+  "predictions_read": false,
+  "new_model_training": false,
+  "limitation": "Remaining chemistry from the SAME MassBank2026.11 archive, not a new laboratory, independent source domain or universally unseen-by-pretraining sample."
+}

@@ -1,8 +1,20 @@
 # Enveda CASMI 2026 — working rules
 
+## ACTIVE goal after C46 no-go — two scoring approvals remain unused
+
+Read docs/CURRENT-GOAL.md first. C45's complete-parent gap is repaired/audited.
+The original GPU head failed development; one prospectively frozen top2-protected
+GPU alternative then failed the MassBank and mixed-query source gates. CPU passed
+with a small uncertain gain. No pair qualifies, C13 is untouched and0/2scored
+entries were used. C39 source outcomes are NOW USED; do not tune another recipe
+against them and call it fresh qualification. Preserve all seals and gate hold.
+Current work is outcome-blind acquisition/source research under C47, not training
+or automatic submission. The native goal is ACTIVE, old/hourly campaigns OFF.
+
 ## ACTIVE C45 repair — same two approved new submissions, no outcomes consumed
 
-Read docs/CURRENT-GOAL.md first. Production P20/P21 include P16's measured-reference
+Historical pre-outcome repair record (superseded by the C46 decision above).
+Production P20/P21 include P16's measured-reference
 overlay; C41's baseline omitted that outer stage. The old automatic evaluation,
 confirmation and submission observers are stopped and held. The same cloud base
 inference completed and passed collection/acquisition audits at04:28UTC; the

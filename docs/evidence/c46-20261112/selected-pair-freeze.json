@@ -1,0 +1,12 @@
+{
+  "frozen_utc": "2026-11-12T05:21:08.977686+00:00",
+  "candidate_pair_sha256": "8834cdbf41d90ec7662114af1565b65d0f45e0befa15e6de594325b51d3a773e",
+  "prediction_freeze_sha256": "55238e9945aa9ad1fefc2c9363469dc3d280e34e24e5405b6d7df09d9451355b",
+  "development_results_sha256": "5628265da44726d71945d0eb83f487af1e4cf587a286cab263351c3de5f8eb0c",
+  "development_ranks_sha256": "d0bece616f605764f1a135d58a907d6e74a1050cfd093bbd5bbbdc1d2cba9241",
+  "both_selected": true,
+  "policy_sha256": "93deb705ebf5b1a2ddfb2ce5d5e16ee02f1102526d2c9221a3c1a203ee1b5a71",
+  "source_sha256": "e609073f58ab836a8418b857c9ff493c904bd3dbf3a90d21c2c9d68ab655ff86",
+  "source_outcomes_read": false,
+  "C13_read": false
+}

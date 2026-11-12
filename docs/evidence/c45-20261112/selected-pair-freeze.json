@@ -1,0 +1,26 @@
+{
+  "frozen_utc": "2026-11-12T05:16:16.065867+00:00",
+  "source_sha256": "e1518c363188fcd5901096647168e8496dc8074cd77f4dd084f33b982492c9e5",
+  "policy_sha256": "25ad2d40aa4d5feadd95233ad0b1cda76e90cbb50316988fbedd580e5b6662a5",
+  "development_results_sha256": "150bd7cbf81da1b3c73d34e5ac00a0465cc294d2285c32e437f617536dd5aa6c",
+  "development_ranks_sha256": "e79b62e33a84a0ef8610ba09923d1c7d4815d1b892d4d0e7fd6dbab42c619ef8",
+  "evaluation_freeze_sha256": "43508285c84ece692ff6e0c62656b2cdd6386049e49896da57e453379d69b9c1",
+  "choices": {
+    "cpu": "P01",
+    "gpu": null
+  },
+  "candidates": {
+    "cpu": {
+      "kernel": "clarkkitchen/casmi26-p22-c45-cpu-p01-parent",
+      "version": 1,
+      "path": "kaggle\\forks\\p22-c45-cpu-p01-parent",
+      "notebook_sha256": "21a34e25a578999b6022fbee6e8e28aefc09acb8717872bd604c867cd071c953",
+      "pin_sha256": "e7ac211ca91eb5475097f78c30e133f7f550f6d3aac656b246040b1bf0095538",
+      "scientific_sha256": "9624f381f02d0094d78c69d9ce76fa96b1d9fdb53a5207ccb22f29ef175d43ae"
+    },
+    "gpu": null
+  },
+  "both_selected": false,
+  "source_outcomes_read": false,
+  "C13_read": false
+}

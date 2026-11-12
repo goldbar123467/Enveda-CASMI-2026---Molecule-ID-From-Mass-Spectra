@@ -1,0 +1,12 @@
+{
+  "completed_utc": "2026-11-12T05:34:05.822912+00:00",
+  "development_results_sha256": "150bd7cbf81da1b3c73d34e5ac00a0465cc294d2285c32e437f617536dd5aa6c",
+  "queries": 192,
+  "source_truth_matching_performed": false,
+  "C13_read": false,
+  "all_exact_rank_vectors_and_fraction_points": true,
+  "decision": "No eligible GPU; CPU P01 eligible; no C45 source evaluation allowed.",
+  "baseline_rank1": 169,
+  "baseline_absent": 1,
+  "baseline_tail": 22
+}

@@ -1,0 +1,30 @@
+{
+  "completed_utc": "2026-11-12T05:21:08.974222+00:00",
+  "prediction_freeze_sha256": "55238e9945aa9ad1fefc2c9363469dc3d280e34e24e5405b6d7df09d9451355b",
+  "queries": 192,
+  "results": {
+    "cpu": {
+      "n": 192,
+      "baseline_MRR": 0.9239149305555555,
+      "candidate_MRR": 0.9243489583333333,
+      "delta": 0.00043402777777777775,
+      "numerator": 1,
+      "denominator": 2304,
+      "strictly_positive": true,
+      "nonnegative": true
+    },
+    "gpu": {
+      "n": 192,
+      "baseline_MRR": 0.9239149305555555,
+      "candidate_MRR": 0.9253100198412698,
+      "delta": 0.0013950892857142857,
+      "numerator": 5,
+      "denominator": 3584,
+      "strictly_positive": true,
+      "nonnegative": true
+    }
+  },
+  "both_pass": true,
+  "source_outcomes_read": false,
+  "C13_read": false
+}

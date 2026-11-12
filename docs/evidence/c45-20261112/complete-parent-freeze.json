@@ -1,0 +1,16 @@
+{
+  "frozen_utc": "2026-11-12T05:13:53.373283+00:00",
+  "source_sha256": "e30dc12fad753c61a5e615831260855f66f5d7caa2d37b29b20e58f65cbba16d",
+  "policy_sha256": "25ad2d40aa4d5feadd95233ad0b1cda76e90cbb50316988fbedd580e5b6662a5",
+  "mask_manifest_sha256": "44d062c12b6d11bac37cd4162f82653004b78aaf5dff706cb39694dd9ba52d84",
+  "parent_audit_sha256": "b82e60590e7f2dc9a12bbb2cc89cddeae95d5ef289e1427159d247836a376296",
+  "files_sha256": {
+    "P01.csv": "45636cfd5f2149f29bc71c3a8cc31c58f315fb40607529a47e10badcff518866",
+    "P14.csv": "15977530b425587252a46b6f474470a74e2bdf297847ba0f29d2924bf58b1084",
+    "P16.csv": "c64d1c19be03be0050792be5a4b31ba36dedce0bf825377a251f1c87bcf8207e",
+    "queries.parquet": "daa95168b92400b634446169040738d9442dc2501ca2685112010c0ff9068a51"
+  },
+  "candidate_family_sha256": "e6f7a5f16ccd6507c2739539f769c6c0433a7618d1030d27c2e19b57b7fec313",
+  "quality_metrics_read": false,
+  "C13_read": false
+}

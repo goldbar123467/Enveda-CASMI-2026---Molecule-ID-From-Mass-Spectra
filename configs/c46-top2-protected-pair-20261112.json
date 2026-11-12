@@ -1,0 +1,46 @@
+{
+  "cycle": "C46",
+  "frozen_utc": "2026-11-12T05:18:41.791409+00:00",
+  "C45_development_sha256": "150bd7cbf81da1b3c73d34e5ac00a0465cc294d2285c32e437f617536dd5aa6c",
+  "rationale": "GPU-alone development loses three original rank2 truths. Test one top2-protected GPU rule using development only. CPU remains the positive C45 P01 candidate. No additional model fitting or encoder inference.",
+  "GPU_new_recipe_candidates": 1,
+  "parameter_or_checkpoint_search": false,
+  "weights_or_training_changed": false,
+  "complete_predictions_required_before_source_outcomes": true,
+  "development_gate": "Each complete candidate strictly positive exact development MRR versus P01.",
+  "source_gate": "Each selected fixed candidate nonnegative exact MRR versus P01 for every source and actual query mode; report all352 and all source/mode intersections with grouped uncertainty.",
+  "C13_policy": {
+    "maximum_joint_outcome_evaluations": 1,
+    "prerequisite": "Both full candidates and both incremental heads pass all C39 gates and full production-source/artifact checks.",
+    "reference_exclusion": "Use the complete original C13 candidate-source identity inventory for official-identity exclusion, conservatively exclude unparseable identities and query-input spectral aliases, without opening the reserved per-query labels. Near-chemistry exposure remains reported, as in the original C13 protocol.",
+    "complete_candidate_vs_P01": "Each exact point delta must be nonnegative for all120, positive60 and negative60.",
+    "incremental_head_vs_P16": "Each selected head must have nonnegative exact point delta versus its own selected parent for all120 and positive60; all60 negative queries retain that own parent exactly.",
+    "head_identity_and_prior_C39_identity_overlap_allowed": 0,
+    "paired_predictions_frozen_before_outcomes": true,
+    "no_recipe_cohort_threshold_or_model_selection_from_outcomes": true,
+    "instrument_limitation": "C13 is single-acquisition FT/HCD source stress; it is not a replacement for target timsTOF evidence."
+  },
+  "C13_parent": "P01 for both candidates: neither production candidate includes the external-reference overlay.",
+  "invariants": {
+    "rank1_changes": 0,
+    "candidate_membership_changes": 0,
+    "formula_slot_changes": 0,
+    "GPU_parent_top2_exact": true
+  },
+  "all_queries": 352,
+  "all_acquisitions": 1292,
+  "absent_truths_zero": true,
+  "source_outcomes_read": false,
+  "C13_read": false,
+  "maximum_new_accepted_scored_entries": 2,
+  "order": [
+    "cpu",
+    "observe_actual_CPU_score",
+    "gpu",
+    "observe_actual_GPU_score"
+  ],
+  "champion_retained": 0.48,
+  "paid_compute": false,
+  "hourly_campaign": false,
+  "limitation": "Development baseline169/192 truths already rank1,1absent,22tail; this is a small exploratory effect, not an established public-score proxy."
+}

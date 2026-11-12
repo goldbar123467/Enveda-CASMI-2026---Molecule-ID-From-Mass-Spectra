@@ -1,0 +1,33 @@
+{
+  "completed_utc": "2026-11-12T05:34:58.284470+00:00",
+  "protocol_sha256": "ad1cd9678043934aa40798e03c02cc6974bf6c6b58b7e7027c9bc59e4b2d5793",
+  "exported_records": 96,
+  "supplied_SDF_structures": 60,
+  "invalid_SDF_records": 0,
+  "first_exclusion_reason_counts": {
+    "non_primary_tims_APCI_comparator": 17,
+    "inventory_survivor": 30,
+    "unsupported_existing_target_adduct": 7,
+    "no_source_SDF_structure": 27,
+    "C39_similarity": 1,
+    "C39_nonempty_scaffold": 7,
+    "used_or_reserved_identity": 1,
+    "C39_formula": 2,
+    "ambiguous_or_missing_primary_metadata": 2,
+    "malformed_exported_comparator_or_record": 2
+  },
+  "survivor_acquisitions": 30,
+  "survivor_identities": 30,
+  "supplied_training_raw_key_overlap": 26,
+  "C40R1_fit_identity_overlap": 20,
+  "files_sha256": {
+    "all-record-audit.parquet": "f801c0b063483835547eb649a0f6eac86b552a2e0d88ac60eea2dc0afb0618f6",
+    "inventory-survivor-acquisitions.parquet": "018aefffa4909fec0bee031fcd5bd95b3e06e97839f227ad868bce900ea96a32"
+  },
+  "C13_read": false,
+  "predictions_read": false,
+  "qualified_validation": false,
+  "mixed_query_support": false,
+  "whole_original_raw_acquisitions_available": false,
+  "limitation": "Public primary APCI-positive consensus library, not ESI/mixed mode or complete raw collision-energy acquisitions. No calibrated target transfer or qualification is claimed."
+}

@@ -1,0 +1,21 @@
+{
+  "completed_utc": "2026-11-12T05:21:35.599028+00:00",
+  "source_sha256": "e899b198ca87cf48ec5d4584aa0428a443482a53afc899c6979fa39a78cb5241",
+  "quality_results_sha256": "376e5ce413fd74a455904ed5839c1777a5f567d9a7fdcb338132ec13a5ccbb60",
+  "selected_pair_sha256": "424a10337a87dce59bed6760f17761ea3ab966c234cc8942ccf5b4aa23114808",
+  "queries": 352,
+  "acquisitions": 1292,
+  "exact_rank_vectors": true,
+  "exact_fraction_points": true,
+  "all_source_mode_denominators_exact": true,
+  "absent_truths_zero": true,
+  "GPU_top2_exact": true,
+  "candidate_membership_changes": 0,
+  "recovered_displaced_accounting_exact": true,
+  "admissions": {
+    "cpu": true,
+    "gpu": false
+  },
+  "passed_pair": false,
+  "C13_read": false
+}

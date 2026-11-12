@@ -1,0 +1,20 @@
+{
+  "frozen_utc": "2026-11-12T05:34:46.168269+00:00",
+  "source_sha256": "34c6214a2ade7ca99a72a4d47cea030ec310d865a04cb95ab9157a2b7e8cd14b",
+  "download_manifest_sha256": "82577dba149f832f1c0e55a70c2df2da07f9703fbe2e8e9d190dac69568abb24",
+  "files_sha256": {
+    "outputs\\local\\c39-source-supported-validation-20261111\\labels.csv": "0c4ac3d6462c924573b6b1dc66da50b00404c4ceb3aa41f5bcc67a130a03014d",
+    "outputs\\local\\c13-confirmation-20261110\\identity-inventory.parquet": "ecdb7ce02b39fb694f29d3b57e11d4474a8f62f56966e3e289385032c8a0ac15",
+    "configs\\c39-source-supported-validation-20261111.json": "3f2a1e7b096a96cbb91ef8c9ed4f45cf5031afaa4840c25514da61117eb7046f",
+    "outputs\\publish\\c08-validation-20261108\\labels.csv": "5c2b3b269bef779d6364dcebd0edf900f7663cfa13ba18c6cb382c8c2020e820",
+    "outputs\\publish\\c09-validation-20261109\\labels.csv": "86f54a9ca39dbf6353eef237a35406f1f8203f0ea5f0bc71fd1f3f420b5c4d4e",
+    "outputs\\local\\c10-casmi2022-20261110\\labels.csv": "f1d3b96f002827d2c9ddd1e61f0fe4e97551a27859da8c74d248588893515c6a",
+    "outputs\\local\\c20-negative-development-20261110\\labels.csv": "4d0f0803904dcf592fa9bda6786db72b40d9e27790ce0f891bb9ed700f82e1a3"
+  },
+  "rule": "Census every exported spectrum. Require explicit original Bruker timsTOF AND APCI, a matching primary metadata row, source-supplied SDF structure agreeing with raw InChIKey, existing C39 supported adduct/minimum3peaks, measured precursor present and mass-consistent10ppm+0.002Da. Exclude all non-tims commercial-library comparator spectra. Preserve every remaining original exported usable acquisition.",
+  "chemistry_rule": "Exclude prior used/reserved identity, C39 formula, nonempty scaffold or Morgan2 Tanimoto>=.70. Report training identity overlap; a future fitted component must be refitted with full holdout exclusions.",
+  "no_performance_sampling": true,
+  "prediction_outcomes_read": false,
+  "C13_labels_read": false,
+  "limitation": "Public primary APCI-positive consensus library, not ESI/mixed mode or complete raw collision-energy acquisitions. No calibrated target transfer or qualification is claimed."
+}

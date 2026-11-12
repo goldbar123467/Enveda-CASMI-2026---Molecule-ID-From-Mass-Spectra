@@ -1,0 +1,20 @@
+{
+  "completed_utc": "2026-11-12T05:23:15.948540+00:00",
+  "protocol_sha256": "ed202f09c71312cdfad8222fff12f8adb3d582bfbe78a57b571e7b2bb2fc9223",
+  "primary_records": 291,
+  "primary_identities": 180,
+  "outcomes": {
+    "inventory_survivor": 12,
+    "used_or_reserved_identity": 86,
+    "C39_nonempty_scaffold": 47,
+    "C39_formula": 35
+  },
+  "remaining_identities": 12,
+  "remaining_primary_records": 12,
+  "remaining_chemistry_sha256": "232ee9669125c6209abe81d7acfa31f73c3d48f11bfa76c7a84052706244b110",
+  "C13_labels_read": false,
+  "predictions_read": false,
+  "qualified_new_panel": false,
+  "acquisition_export_and_fit_reference_masks_required": true,
+  "source_domain_independent": false
+}

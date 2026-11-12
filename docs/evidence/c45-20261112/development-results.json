@@ -1,0 +1,103 @@
+{
+  "completed_utc": "2026-11-12T05:16:16.060364+00:00",
+  "evaluation_freeze_sha256": "43508285c84ece692ff6e0c62656b2cdd6386049e49896da57e453379d69b9c1",
+  "queries": 192,
+  "candidate_family_size": 4,
+  "results": {
+    "cpu_P01": {
+      "complete": {
+        "n": 192,
+        "baseline_MRR": 0.9239149305555555,
+        "candidate_MRR": 0.9243489583333333,
+        "delta": 0.00043402777777777775,
+        "numerator": 1,
+        "denominator": 2304,
+        "strictly_positive": true,
+        "nonnegative": true
+      },
+      "incremental": {
+        "n": 192,
+        "baseline_MRR": 0.9239149305555555,
+        "candidate_MRR": 0.9243489583333333,
+        "delta": 0.00043402777777777775,
+        "numerator": 1,
+        "denominator": 2304,
+        "strictly_positive": true,
+        "nonnegative": true
+      }
+    },
+    "cpu_P16": {
+      "complete": {
+        "n": 192,
+        "baseline_MRR": 0.9239149305555555,
+        "candidate_MRR": 0.9243489583333333,
+        "delta": 0.00043402777777777775,
+        "numerator": 1,
+        "denominator": 2304,
+        "strictly_positive": true,
+        "nonnegative": true
+      },
+      "incremental": {
+        "n": 192,
+        "baseline_MRR": 0.9239149305555555,
+        "candidate_MRR": 0.9243489583333333,
+        "delta": 0.00043402777777777775,
+        "numerator": 1,
+        "denominator": 2304,
+        "strictly_positive": true,
+        "nonnegative": true
+      }
+    },
+    "gpu_P01": {
+      "complete": {
+        "n": 192,
+        "baseline_MRR": 0.9239149305555555,
+        "candidate_MRR": 0.9227058531746032,
+        "delta": -0.001209077380952381,
+        "numerator": -13,
+        "denominator": 10752,
+        "strictly_positive": false,
+        "nonnegative": false
+      },
+      "incremental": {
+        "n": 192,
+        "baseline_MRR": 0.9239149305555555,
+        "candidate_MRR": 0.9227058531746032,
+        "delta": -0.001209077380952381,
+        "numerator": -13,
+        "denominator": 10752,
+        "strictly_positive": false,
+        "nonnegative": false
+      }
+    },
+    "gpu_P16": {
+      "complete": {
+        "n": 192,
+        "baseline_MRR": 0.9239149305555555,
+        "candidate_MRR": 0.9227058531746032,
+        "delta": -0.001209077380952381,
+        "numerator": -13,
+        "denominator": 10752,
+        "strictly_positive": false,
+        "nonnegative": false
+      },
+      "incremental": {
+        "n": 192,
+        "baseline_MRR": 0.9239149305555555,
+        "candidate_MRR": 0.9227058531746032,
+        "delta": -0.001209077380952381,
+        "numerator": -13,
+        "denominator": 10752,
+        "strictly_positive": false,
+        "nonnegative": false
+      }
+    }
+  },
+  "choices": {
+    "cpu": "P01",
+    "gpu": null
+  },
+  "source_outcomes_read": false,
+  "C13_read": false,
+  "exact_rule": "Eligible positive complete and incremental development deltas; highest complete delta within each head; exact ties prefer P01."
+}

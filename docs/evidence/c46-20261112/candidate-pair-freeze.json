@@ -1,0 +1,32 @@
+{
+  "frozen_utc": "2026-11-12T05:18:41.816084+00:00",
+  "policy_sha256": "93deb705ebf5b1a2ddfb2ce5d5e16ee02f1102526d2c9221a3c1a203ee1b5a71",
+  "builder_sha256": "2eee4e6fb427d9a29ea25f69177af6dc4ede4d197f5fc0e92e30207d46528bb8",
+  "candidates": {
+    "cpu": {
+      "path": "kaggle\\forks\\p22-c45-cpu-p01-parent",
+      "kernel": "clarkkitchen/casmi26-p22-c45-cpu-p01-parent",
+      "version": 1,
+      "notebook_sha256": "21a34e25a578999b6022fbee6e8e28aefc09acb8717872bd604c867cd071c953",
+      "pin_sha256": "e7ac211ca91eb5475097f78c30e133f7f550f6d3aac656b246040b1bf0095538",
+      "head_manifest_sha256": "a534d8654ce8d407b6cee9b1c9b6fa7c2e8231dde84e6a232957d097fee8bed6",
+      "scientific_sha256": "9624f381f02d0094d78c69d9ce76fa96b1d9fdb53a5207ccb22f29ef175d43ae",
+      "bundle": "outputs\\publish\\c42r1-crossmodal-heads-20261111",
+      "parent": "P01"
+    },
+    "gpu": {
+      "path": "kaggle\\forks\\p24-c46-gpu-top2-protected",
+      "kernel": "clarkkitchen/casmi26-p24-c46-gpu-top2-protected",
+      "version": 1,
+      "notebook_sha256": "b506e6502dd11e398837a5066fef71c115d30c2d80023d92cf706ba13e9d7093",
+      "pin_sha256": "aa8ba003e83e1581e4178d91942e8c002f6de702d6f389d39ea295d609fdea98",
+      "head_manifest_sha256": "3c265d5a6ae5a3c50f520cc9b074a75229ffaac3092f941b506de2b90c12cfba",
+      "scientific_sha256": "4a064837e10ad0165b093a834abdbe28ead1e675e700bf0693e25a89aa46bef0",
+      "bundle": "outputs\\publish\\c46-top2-gpu-head-20261112",
+      "parent": "P01"
+    }
+  },
+  "source_outcomes_read": false,
+  "C13_read": false,
+  "maximum_new_scored_entries": 2
+}

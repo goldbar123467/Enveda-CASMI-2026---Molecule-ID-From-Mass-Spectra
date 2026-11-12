@@ -1,4 +1,76 @@
-# Current project goal — active C45 complete-parent repair
+# Current project goal — active, after C46 source no-go
+
+The same native goal remains ACTIVE; two actual scored results are still required
+if defensible candidates qualify.0/2approvals used. No C13 consumption, private
+P22/P23/P24 cloud run, new scored entry or new training was released in this pass.
+Old/hourly campaigns remain off and0.480is preserved. Do not ask for approval again.
+
+C45's missing P16 stage is repaired: full352/1292cloud base collected/audited,
+reference mask independently verified, real30changed-path parity and exact
+precursor pruning proved. On the C39 masked panel the overlay changes0lists;
+this is an observed no-op, not an omission. Both unchanged heads ran once locally
+and each parent ranking was independently reconstructed; exact equivalent inputs
+allowed the second parent's head outputs to be derived without duplicate GPU work.
+
+Development192 rejected the original GPU head (delta-0.00120907738), while CPU
+passed(+0.00043402778). One development-motivated GPU alternative was then frozen
+as P24/C46 before testing it: protect parent positions1and2, apply the unchanged
+same-formula0.20/offset3rule below them. The model weights were not refitted.
+Both complete candidates, exact production notebooks and all predictions were
+sealed before C46's first source-outcome evaluation. Development passed for the
+replacement GPU(+0.00139508929); held-out source admission then REJECTED it.
+
+Independently audited C46 outcomes:
+
+- CPU all352 delta+0.00024801587, grouped95%CI[-0.0000805153,+0.0008166376].
+  Every source/mode directional gate passed; this is a small uncertain effect.
+- GPU all352 delta+0.00056899631, grouped95%CI[-0.0001740634,+0.0015814599],
+  BUT MassBank-timsTOF80 delta-0.00084463052 and mixed126 delta-0.00026111455.
+  The fixed source/mode gates fail; no promotion or scored entry is justified.
+- Both retain membership/rank1/formula positions. GPU also retains original top2.
+  All352queries/1292acquisitions and absent-truth zeros were retained.
+
+Evidence is under `outputs/local/c46-top2-protected-pair-20261112/` and
+`docs/evidence/c46-20261112/`. C39 sources are now USED for this adaptive work;
+do not switch recipes/parents based on those outcomes or relabel a favorable
+subset as fresh. C13 remains untouched; it cannot replace target-source evidence.
+The scientific gate hold remains active; no old coordinator may restart.
+
+Current C47 work is a census of unused source data, before any further fit.
+All remaining MassBank2026.11explicit-timsTOF chemistry disconnected from used
+C39/past/reserved identities yields only12identities/12records. This is the same
+source domain and is NOT a qualified mixed-acquisition test panel. Fresh primary
+source research found the public TIMS-Bench Zenodo20816379archive. Its directory
+was read via verified bounded byte ranges; only small source-library files are
+being acquired for provenance, identity and spectral-alias inspection. Do not use
+similarity-derived annotations as truth, confuse the whole-file published MD5
+with a verified full download, or infer novelty before the exposure audit.
+
+The TIMS-Bench source files are now collected with per-member ZIP CRC and SHA256
+receipts. ReFRAME shares all5356supplied identities/7219record count; plant has
+39supplied identities (16C40R1fit overlaps). None of its290spectra matched the
+bounded full/top96 signatures of1184supplied NP-example records; this does NOT
+establish exclusion from other references or universal acquisition novelty.
+
+A separate public NIST experimental plasticizer dataset was collected from
+`https://data.nist.gov/od/id/mds2-4111`. Its96exported records include commercial
+comparator spectra, which are excluded. An outcome-blind primary metadata/SDF/
+precursor/chemistry census yields30APCI-timsTOF positive consensus acquisitions
+for30identities.20overlap C40R1fitting identities;26have supplied raw training keys.
+This is an auxiliary source lead, NOT a qualified panel or mixed ESI proxy.
+All raw collision-energy acquisitions are not supplied in these library exports.
+No predictions were scored on it and no C13 labels were opened. Two malformed
+comparator end markers are conservatively recorded/excluded;3parser tests pass.
+
+No additional GPU training/cloud run is currently justified by this census alone.
+Next inspect acquisition/reference aliases and primary assay provenance; decide
+whether the available12MassBank/30APCIstandards support a defensible prospective
+study. Any refit must exclude ALL new holdout identities, formulas, nonempty
+scaffolds,near neighbors and acquisition aliases, preserve the C39 exclusions,
+and freeze complete candidates before any new-source quality. Do not simply
+retest P24 on a favorable new cohort to erase its recorded source failure.
+
+## Historical C45 repair protocol, before outcomes
 
 The native goal remains ACTIVE: qualify the two new frozen CPU/GPU candidates
 and obtain at most two actual scored results, sequentially. Both approvals are

@@ -1,0 +1,17 @@
+{
+  "plant_acquisitions": 290,
+  "plant_raw_input_signature_matches": 0,
+  "plant_identities": 39,
+  "comparison_raw_NP_acquisitions": 1184,
+  "signature_kind": "original frozen full1mDa/intensity1e-4 and FP16top96",
+  "universal_provenance_exclusion": false,
+  "reframe_records": 7219,
+  "reframe_supplied_training_key_overlap": 5356,
+  "reframe_original_GNPS_reference_records": 7219,
+  "plant_supplied_training_key_overlap": 39,
+  "plant_C40R1_fitting_identity_overlap": 16,
+  "conclusion": "ReFRAME shares all5356supplied identities and the known source record count; exact acquisition novelty has not been established. Plant identities overlap supplied training (16C40R1fitted); no bounded signature matches to1184enveda-np-example records were found. Full other-reference spectral audit and clean refitting remain required. Neither resource is qualified for existing-head confirmation.",
+  "C13_labels_read": false,
+  "prediction_outcomes_read": false,
+  "plant_exact_spectral_exposure_established": false
+}
