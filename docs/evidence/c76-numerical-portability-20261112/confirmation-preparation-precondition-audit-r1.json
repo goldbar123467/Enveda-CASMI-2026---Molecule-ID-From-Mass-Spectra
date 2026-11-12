@@ -1,0 +1,46 @@
+{
+  "checked_utc": "2026-11-12T22:08:12.038162+00:00",
+  "passed": true,
+  "complete_pipeline_binding_sha256": "0ddc4d46d9dbcb2f8804f3970d6763c38528311dcd24dfe4a704a91df2a36518",
+  "preparation_code_plan_sha256": "38f84bb83dd4479c1b93478cae80bdf76bafcb93a746a640bd7a714cf0983ce6",
+  "entrypoints": {
+    "query_access": {
+      "blocked_before_query_API_or_ML_import": true,
+      "missing": "source-results.json"
+    },
+    "raw_aliases": {
+      "blocked_before_query_API_or_ML_import": true,
+      "missing": "source-results.json"
+    },
+    "main_mask": {
+      "blocked_before_query_API_or_ML_import": true,
+      "missing": "source-results.json"
+    },
+    "P16_mask": {
+      "blocked_before_query_API_or_ML_import": true,
+      "missing": "source-results.json"
+    },
+    "query_package": {
+      "blocked_before_query_API_or_ML_import": true,
+      "missing": "source-results.json"
+    },
+    "notebook_build": {
+      "blocked_before_query_API_or_ML_import": true,
+      "missing": "source-results.json"
+    },
+    "notebook_audit": {
+      "blocked_before_query_API_or_ML_import": true,
+      "missing": "source-results.json"
+    },
+    "reference_audit": {
+      "blocked_before_query_API_or_ML_import": true,
+      "missing": "source-results.json"
+    }
+  },
+  "actual_reserved_query_and_label_open_attempts": 0,
+  "Kaggle_constructor_called": false,
+  "actual_reserved_masks_notebooks_or_package_created": false,
+  "C72_and_C13_consumption_absent": true,
+  "shared_scoring_ledger_absent": true,
+  "scoring_entries": 0
+}

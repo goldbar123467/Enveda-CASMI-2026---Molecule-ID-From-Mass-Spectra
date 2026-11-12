@@ -1,3 +1,46 @@
+## CURRENT C76 R1 — strict reserved mask/notebook preparation code PASSED
+
+New confirmation-inference-preparation-plan-r1.json SHA 38f84bb83dd4479c1b93478cae80bdf76bafcb93a746a640bd7a714cf0983ce6.
+Actual R1model/core binding0ddc4d46... and operationsR1a c687b2e8... UNCHANGED.
+New scripts/c76_confirmation_preparation.py gates ALLactual query mapping,
+reference masks/package/notebook builds behind BOTHsource+actualproduction
+checks and current frozen code. All8real entrypoints tested: missing source
+results stops BEFORE actual C13query/label open, API or MLimport. Actual
+reserved package/preparation directory/notebooks still ABSENT; C13UNCONSUMED.
+
+prepare_c76_confirmation_references.py now implements original120raw-signature
+census; only extends C73global chemistry/prior raw+official alias quarantine;
+P16starts from original FULL200724refs, computes exactC13precursor windows,
+all global identity/formula/Murcko/Morgan>=.70 and input-signature exclusions.
+No C72selected rows/outside-window flags reused. New independent reference
+auditor reconstructs census with directwindows, graph closure instead of
+iterative closure, every reachable structure/alias flag and retainedmetadata/
+peak alignment. No query removal or per-query truth mapping packaged.
+
+build_c76_confirmation.py adapts BOTH original C73legacy/C76source notebooks:
+outer count/contract changes and AFTER-core channel-ID receipt only. EVERY
+scientific inner payload byteexact, including R3formate/empty-pool repairs and
+actualT4ICEbatch96. New notebook auditor reverses allowed edits and checks all
+other cells/image/datasets. Both templates tested; no actual notebooks built.
+
+6new tests PASSED, including a functional SYNTHETIC full-size275810main/
+200724P16reference exercise through BOTHpreparer+independent auditor. All8
+exclusion cases/row alignment/alias transitivity checked; fakequeries only.
+Initial probe had a tamper-test harness string/list error, not a pipeline or
+mask failure; fullsynthetic mask alreadypassed. Original failedlog/source in
+C76/confirmation-preparation-attempt01; sole corrected suite6/6passed.
+OwnedlightweightCPU scopes ended; no localML/GPUjob running.
+
+Stillrequired independent implementation: dedicated C13 private publication/
+release/collection, full P16+physical/head replay+jointsealer and independent
+execution auditor. Pin ALLremaining sources in inference-plan BEFORE any
+newC13inference. Do not run retired C59/C60/C43release/evaluate helpers.
+Sourcequota actual22:08UTC still refresh2026-11-14T00:00UTC=Nov13 7pmEastern;
+newsourcejobsEMPTY. Resume legacy source then C76source afterreset, their
+collection/quality audits, actualT4production checks, ONLYTHEN realC13prep.
+0/2newscoring; C72/C13unconsumed;0.480champion preserved, hourlycontrollersOFF.
+GoalACTIVE; this turn made code/test/protocol progress, not a blocked turn.
+
 ## CURRENT C76 R1 — confirmation policy and final scoring guards prepared
 
 R1model/core binding remains UNCHANGED:0ddc4d46d9dbcb2f8804f3970d6763c38528311dcd24dfe4a704a91df2a36518.
