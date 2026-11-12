@@ -1,0 +1,61 @@
+{
+  "verified_utc": "2026-11-12T22:56:58.681096+00:00",
+  "decision": "blocked_audit_passed_external_T4_quota",
+  "consecutive_no_progress_goal_turns": 3,
+  "condition": "KAGGLE_WEEKLY_GPU_QUOTA_REQUIRED_ACTUAL_T4_SOURCE",
+  "original_actual_rejection": "Maximum weekly GPU quota of 30.00 hours reached.",
+  "actual_quota_checked_utc": "2026-11-12T22:52:59.483299+00:00",
+  "quota_refresh_utc": "2026-11-14T00:00:00.000Z",
+  "source_release_held_without_push": true,
+  "accepted_new_source_jobs_tracked": 0,
+  "legacy_handle_http_status": 404,
+  "C76_status_http_status": 403,
+  "C76_state_inferred": false,
+  "actual_scoring_history_rows": 35,
+  "new_C76_scoring_entries": 0,
+  "pending_scoring_entries": 0,
+  "maximum_already_approved_entries": 2,
+  "repeat_user_approval_required": false,
+  "C72_and_C13_unconsumed": true,
+  "champion_0_point_480_preserved": true,
+  "safe_independent_preparation_complete": true,
+  "required_runtime_evidence": {
+    "legacy_actual_source_collection": {
+      "path": "outputs/forks/c73-full-masked-validation-v1/collection-audit.json",
+      "present": false
+    },
+    "C76_actual_source_collection": {
+      "path": "outputs/forks/c76-full-masked-validation-v1/collection-audit.json",
+      "present": false
+    },
+    "source_quality_results": {
+      "path": "outputs/local/c76-numerical-portability-20261112/source-results.json",
+      "present": false
+    },
+    "actual_CPU_production_audit": {
+      "path": "outputs/forks/c76-cpu-production-v1/independent-production-audit.json",
+      "present": false
+    },
+    "actual_GPU_production_audit": {
+      "path": "outputs/forks/c76-gpu-production-v1/independent-production-audit.json",
+      "present": false
+    },
+    "once_C13_results": {
+      "path": "outputs/local/c76-numerical-portability-20261112/reserved-confirmation-r1/confirmation-results.json",
+      "present": false
+    },
+    "scoring_qualification": {
+      "path": "outputs/local/c76-numerical-portability-20261112/two-new-scoring-trials-r1/submission-qualification.json",
+      "present": false
+    },
+    "two_actual_terminal_scores": {
+      "path": "outputs/local/c76-numerical-portability-20261112/two-new-scoring-trials-r1/actual-final-results.json",
+      "present": false
+    }
+  },
+  "native_status_update_pending": true,
+  "goal_achieved": false,
+  "free_compute_only": true,
+  "hourly_automation": false,
+  "next_action": "After the external quota refresh, recheck actual availability and launch guarded legacy source once; follow docs/C76-RESUME.md through all source/production/C13 checks and both terminal scoring results. A resumed blocked goal starts a fresh blocked audit if the same condition still holds."
+}

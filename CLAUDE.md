@@ -1,3 +1,29 @@
+## CURRENT C76 R1 — external T4quota blocker; three-turn blocked audit passed
+
+Actual22:52UTC quota still reports refresh2026-11-14T00:00UTC=Nov13 7pmEastern.
+Original sourcepush version0rejected for MaximumweeklyGPUquota30h; no accepted
+newsourcejob tracked. Current guarded push-legacy is HELD without APIpush.
+Three consecutive no-progress goal turns revalidated this same external
+condition after all independent preparation was completed. Native blocked
+status update is now requested; goal is NOT achieved. Two-scoring approval
+remains valid, no repeat approval required. Old/hourlycontrollersOFF.
+
+Direct actualhandle checks: legacy canonical source404; C76canonical status403,
+so its live/terminal/missing state is UNKNOWN, never inferred from that denial.
+Actual full account history35entries,0newC76markers,0pending scoring entries.
+No owned localMLscope running. Source/production/C13qualification and both
+numeric scoring outcomes are STILLABSENT. C72/C13UNCONSUMED, sharedscoringledger
+ABSENT,0/2used,champion0.480 preserved. No extraGPUtraining substitutes for
+missing actualT4source evidence; originalC75cross-device gate remainsFAILED.
+
+All code/workflow preparation committed/pushed66d301b. Resume from
+scripts/release_c76_source_controls.py status after actualquota refresh, then
+push-legacy ONCE when permitted; docs/C76-RESUME.md gives the full sequence.
+Do not delete intents, resubmit old trials, openC13early or weaken gates.
+On user resumption, audit currentstate afresh; old blocked-turn counts do not
+carry into a newly resumed blocked audit. Evidence:
+docs/evidence/c76-numerical-portability-20261112/external-blocker-audit-20261112.json.
+
 ## CURRENT C76 R1 — COMPLETE reserved workflow code prepared; actualT4 required
 
 New execution code plan SHA a6213539ee2205e77e74ac60958b5bef1a96ad820d0f31e95e0e8d8793ac1826.
