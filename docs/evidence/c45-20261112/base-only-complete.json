@@ -1,0 +1,12 @@
+{
+  "completed_utc": "2026-11-12T04:28:39.347555+00:00",
+  "existing_kernel": "clarkkitchen/casmi26-c41r3-full-masked-validation",
+  "queries": 352,
+  "acquisitions": 1292,
+  "collection_sha256": "f47f2bf062775be6a35c613db9b7cf847c383b759ab7bccfd1daa458c91d178e",
+  "fidelity_sha256": "dcb89d1c1a7584634a410b3fe2f1b555148fbac45a8776a3e5aa3f8175958068",
+  "quality_evaluated": false,
+  "C13_read": false,
+  "scoring_entries_released": 0,
+  "next_action": "Replay and audit the exact P16 external-reference stage with validation-only reference exclusions before scoring either frozen head or opening quality labels."
+}

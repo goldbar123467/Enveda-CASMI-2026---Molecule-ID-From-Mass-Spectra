@@ -18,12 +18,11 @@ automatic evaluation, confirmation and submission commands explicitly reject
 this hold. Do not clear it or restart those paths merely to get a submission.
 
 The SAME cloud base inference `clarkkitchen/casmi26-c41r3-full-masked-validation`,
-version1, kernel144498742 remains RUNNING. It was not cancelled or requeued and
-its base predictions remain useful. New hidden observer
-`scripts/watch_c45_base_only.py`, actual PID29032, observes/collects/audits this
-exact job only. Its deadline is12:20UTC; timeout is not job termination. Logs and
-state are under `outputs/local/c45-complete-parent-validation-20261112/`.
-It cannot read quality labels, confirm C13, train or submit.
+version1, kernel144498742 completed and was collected/audited at04:28UTC.
+All352queries/1292original acquisitions and all runtime reference masks passed.
+It was not cancelled or requeued. The base-only observer exited normally; no
+automatic quality, C13 or submission observer is live. Artifacts/state are under
+`outputs/local/c45-complete-parent-validation-20261112/`.
 
 The missing stage's EXACT code, policy and contract were extracted from the
 already frozen P16 notebook into that folder's `frozen-p16-code/`. The original
@@ -38,13 +37,27 @@ and reproduce the existing real30 changed-path fixture. Full C39 artifacts need
 `frozen_candidate_evidence.parquet` and identity feature tables in addition to the
 original collector's core exports; the real12 cloud smoke contains these files.
 
-Score the unchanged heads on P16. Evaluate P01, P16, both full candidates and the
-unchanged P14 control. Require both complete candidates versus P01 AND both
-incremental heads versus P16 to pass the original directional/source/mode gates.
-Head rank1/membership/formula invariants are relative to P16; full-composite
-changes must equal the pre-frozen overlay plus head and include honest
+Before any quality matching, four complete candidates were frozen: each unchanged
+CPU/GPU head on P01 and on P16. P01-parent notebooks are prospective P22/P23;
+P16-parent notebooks remain original P20/P21. Only development192 may select the
+eligible parent with the highest exact complete delta for each head (ties P01).
+Eligibility requires strictly positive complete AND incremental development gain.
+Seal both choices before source metrics, then evaluate only that selected pair.
+Do not rescue a source failure by switching parents. Require both complete
+candidates versus P01 AND incremental heads versus their own selected parent to
+pass the original directional/source/mode gates. Head rank1/membership/formula
+invariants are relative to that own parent; full-composite changes include honest
 recovered/displaced-answer accounting. Preserve all352queries/1292acquisitions,
 all absent-truth zeros, actual mixed modes and chemistry-grouped uncertainty.
+
+At05:00UTC the additional reference mask completed:200724original rows,
+7754reachable by exact frozen precursor windows,4809retained after the declared
+chemistry/alias exclusions;0forbidden rows retained. Metadata/peak alignment is
+exact. Original real30fixture replay passes (7rank1changes/2insertions); independent
+precursor-pruning proof preserves all final lists, winning matches and comparisons.
+The frozen masked C39 overlay reports0changes/352no-qualifying-match queries.
+Independent parent reconstruction and both frozen-head score sets are in progress.
+No quality outcome, C13 consumption or new scoring entry has been produced.
 
 Only after this repair and all gates pass may a source-bound single paired C13
 confirmation run. C13 needs the same complete parent and an identity/input-alias

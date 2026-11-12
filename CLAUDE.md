@@ -5,7 +5,9 @@
 Read docs/CURRENT-GOAL.md first. Production P20/P21 include P16's measured-reference
 overlay; C41's baseline omitted that outer stage. The old automatic evaluation,
 confirmation and submission observers are stopped and held. The same cloud base
-inference is still useful and running; only the C45 base-only collector is live.
+inference completed and passed collection/acquisition audits at04:28UTC; the
+base-only collector exited normally. The C45 masked overlay replay and frozen
+head scoring are current; old automatic observers remain stopped.
 Repair and audit the complete parent, compare full and incremental candidates,
 then qualify before any C13 outcome or scored entry. Models, recipes and cohorts
 remain frozen; two approvals remain unused. Do not restart historical C42/C43

@@ -4,22 +4,34 @@
   "candidate_change": false,
   "models_or_weights_changed": false,
   "cohort_or_query_acquisitions_changed": false,
-  "production_pair": ["p20-c42-cpu-alignment v1", "p21-c42-gpu-alignment v1"],
+  "production_pair": [
+    "p20-c42-cpu-alignment v1",
+    "p21-c42-gpu-alignment v1"
+  ],
   "head_bundle_manifest_sha256": "a534d8654ce8d407b6cee9b1c9b6fa7c2e8231dde84e6a232957d097fee8bed6",
   "parent_source_sha256": "d6b9c9625ad8fb7d503341c6fd702bd909101d719ca55e400145fb96f2b2af6a",
   "P16_policy_sha256": "ea662270a895dc902cc9dd242afd7cd7f63e4a42ce3468474c6bff73d984043c",
-  "fixed_head_math": {"weight": 0.2, "rrf_offset": 3, "same_formula_tail_only": true},
+  "fixed_head_math": {
+    "weight": 0.2,
+    "rrf_offset": 3,
+    "same_formula_tail_only": true
+  },
   "comparisons": {
     "P01": "Actual stock baseline with the already tested formate compatibility repair; existing reference-masked C41 core output.",
     "P16": "P01 followed by the exact frozen production measured-reference overlay, with validation-only reference exclusions.",
     "cpu_and_gpu": "The same frozen new heads applied to P16, matching the production order.",
     "P14": "Original frozen P14 control on the same P01 core and complete query panel; do not add a new overlay to this historical negative control."
   },
-  "C39_reference_exclusion": "For the additional measured-reference library, exclude official query identities, same formulas, same nonempty Murcko scaffolds, Morgan2 Tanimoto >= 0.70 to any frozen C39 query, unparseable identities, and query-acquisition signature aliases. Preserve retained metadata/peak alignment and original order. Do not change production reference data.",
+  "C39_reference_exclusion": "For the additional measured-reference library, exclude official query identities, same formulas, same nonempty Murcko scaffolds, Morgan2 Tanimoto >= 0.70 to any frozen C39 query, unparseable identities, and query-acquisition signature aliases. Preserve retained metadata/peak alignment and original order. Do not change production reference data. Also preserve the existing global raw/official identity-alias quarantine derived from the original reference witnesses.",
   "admission_before_C13": {
     "complete_cpu_and_gpu_vs_P01": "Each must have strictly positive development192 exact MRR delta and nonnegative exact deltas for every source and actual query mode.",
-    "incremental_cpu_and_gpu_vs_P16": "Each must separately pass the same development/source/query-mode criteria; an old parent overlay cannot qualify a harmful new head.",
-    "head_invariants_relative_to_P16": {"rank1_changes": 0, "candidate_membership_changes": 0, "formula_slot_changes": 0},
+    "incremental_cpu_and_gpu_vs_P16": "Each selected head must separately pass the same criteria versus its own selected parent (P01 or P16); the parent overlay cannot qualify a harmful head.",
+    "head_invariants_relative_to_P16": {
+      "rank1_changes": 0,
+      "candidate_membership_changes": 0,
+      "formula_slot_changes": 0,
+      "scope": "Relative to the selected own parent, P01 or P16."
+    },
     "complete_changes_relative_to_P01": "Must exactly equal the frozen P16 overlay followed by the frozen head. P16 can promote rank1 or insert a reference candidate by its existing policy. Report every recovered/displaced truth and every rank1/membership change; do not incorrectly assert zero for the full composite.",
     "queries": 352,
     "acquisitions": 1292,
@@ -33,15 +45,57 @@
     "prerequisite": "Both full candidates and both incremental heads pass all C39 gates and full production-source/artifact checks.",
     "reference_exclusion": "Use the complete original C13 candidate-source identity inventory for official-identity exclusion, conservatively exclude unparseable identities and query-input spectral aliases, without opening the reserved per-query labels. Near-chemistry exposure remains reported, as in the original C13 protocol.",
     "complete_candidate_vs_P01": "Each exact point delta must be nonnegative for all120, positive60 and negative60.",
-    "incremental_head_vs_P16": "Each exact point delta must be nonnegative for all120 and positive60; all60 negative queries retain P16 exactly.",
+    "incremental_head_vs_P16": "Each selected head must have nonnegative exact point delta versus its own selected parent for all120 and positive60; all60 negative queries retain that own parent exactly.",
     "head_identity_and_prior_C39_identity_overlap_allowed": 0,
     "paired_predictions_frozen_before_outcomes": true,
     "no_recipe_cohort_threshold_or_model_selection_from_outcomes": true,
     "instrument_limitation": "C13 is single-acquisition FT/HCD source stress; it is not a replacement for target timsTOF evidence."
   },
-  "scoring": {"maximum_new_accepted_entries": 2, "maximum_pending": 1, "order": ["cpu", "observe_actual_terminal_cpu_score", "gpu", "observe_actual_terminal_gpu_score"], "repeat_user_approval_required": false},
+  "scoring": {
+    "maximum_new_accepted_entries": 2,
+    "maximum_pending": 1,
+    "order": [
+      "cpu",
+      "observe_actual_terminal_cpu_score",
+      "gpu",
+      "observe_actual_terminal_gpu_score"
+    ],
+    "repeat_user_approval_required": false
+  },
   "qualification_tier": "Exploratory fixed pair, not statistical promotion or established leaderboard calibration. Only actual public scores establish improvement.",
-  "preserve_champion": 0.480,
+  "preserve_champion": 0.48,
   "hourly_automation": false,
-  "new_paid_compute": false
+  "new_paid_compute": false,
+  "original_production_pair_unchanged": true,
+  "prospective_parent_ablation_candidates_added": true,
+  "candidate_family": {
+    "parents": [
+      "P01",
+      "P16"
+    ],
+    "heads": [
+      "cpu",
+      "gpu"
+    ],
+    "total_frozen_complete_candidates": 4,
+    "family_freeze": "outputs/local/c45-complete-parent-validation-20261112/candidate-family-freeze.json"
+  },
+  "selection_before_source_outcomes": {
+    "data": "Only the frozen development192 queries. Do not match source predictions to truth until both choices are sealed.",
+    "eligibility": "Strictly positive exact development MRR delta versus P01 AND versus the candidate own parent.",
+    "rule": "For each head, choose the eligible parent giving the highest exact development complete-candidate MRR. Exact ties prefer P01. No eligible variant means no selected entry.",
+    "after_selection": "Freeze both complete-source notebook pins and chosen predictions before held-out-source metrics. Reject a failing source choice; do not switch to the other parent using source outcomes."
+  },
+  "parent_ablation_amendment_before_outcomes": {
+    "frozen_utc": "2026-11-12T04:41:03.582520+00:00",
+    "C39_quality_available": false,
+    "C13_outcomes_read": false,
+    "reason": "Causal parent ablation after discovering that P16 promotes rank1 and inserts candidates. All four complete pipelines are frozen before any development/source outcome; only development may choose between them. Two scoring entries maximum."
+  },
+  "lossless_reference_preselection": {
+    "frozen_utc": "2026-11-12T04:56:09.753487+00:00",
+    "rule": "Before chemistry parsing, discard references outside the exact union of the original fixed P16 precursor windows for all query acquisitions (10ppm +0.002Da, inclusive bounds). The production matcher cannot access those rows. Preserve original order of reachable rows. Verify unmasked real30 final-list parity independently.",
+    "model_policy_or_query_cohort_changed": false,
+    "quality_outcomes_read": false
+  }
 }

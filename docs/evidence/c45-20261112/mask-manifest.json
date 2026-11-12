@@ -1,0 +1,51 @@
+{
+  "frozen_utc": "2026-11-12T05:00:42.093689+00:00",
+  "kind": "C39_complete_P16_reference_holdout",
+  "source_sha256": "e30dc12fad753c61a5e615831260855f66f5d7caa2d37b29b20e58f65cbba16d",
+  "policy_sha256": "25ad2d40aa4d5feadd95233ad0b1cda76e90cbb50316988fbedd580e5b6662a5",
+  "original_deployment_sha256": "354db801fe158aeb1783e2b09eb53cfacd167b973212ae2c86a85407560c4f6c",
+  "original_reference_files": {
+    "ext_meta.parquet": "9b0c2d675612580a4aedbdd3c8891d046fdf864b0805aaef852acc6653f7d37f",
+    "ext_mz.npy": "a14f750d46bfca4176110d1a83cc3562944a3ca1e3f1344c94141f6d8d85fad5",
+    "ext_in.npy": "e47b359f27d0aacda22f7ef47f8f60f7912136027d70d2bc915890a8d51be841"
+  },
+  "query_sha256": "daa95168b92400b634446169040738d9442dc2501ca2685112010c0ff9068a51",
+  "exclusion_structure_source_sha256": "0c4ac3d6462c924573b6b1dc66da50b00404c4ceb3aa41f5bcc67a130a03014d",
+  "original_global_raw_alias_sha256": "ddacce2cf5f2b2195342b7257ae827076e9b6d6c40ab51e54ec8d9a187a8dfad",
+  "original_structure_witness_sha256": "5b3848e7d3f6ed8c00ee781d67f0aa5c1abb75b3969c66c6dceea8040a84893f",
+  "known_raw_aliases": 32146,
+  "known_official_aliases": 31994,
+  "queries": 352,
+  "acquisitions": 1292,
+  "original_rows": 200724,
+  "excluded_rows": 195915,
+  "retained_rows": 4809,
+  "exact_precursor_reachable_rows": 7754,
+  "lossless_precursor_pruning": true,
+  "nonexclusive_reasons": {
+    "invalid_identity": 0,
+    "query_identity": 18,
+    "known_official_alias": 125,
+    "same_formula": 946,
+    "same_nonempty_scaffold": 2355,
+    "near_query_tanimoto": 75,
+    "outside_all_frozen_precursor_windows": 192970,
+    "known_raw_alias": 2399,
+    "query_input_alias": 0
+  },
+  "forbidden_rows_retained": 0,
+  "retained_order_and_all_peak_fields_exact": true,
+  "production_reference_changed": false,
+  "quality_metrics_read": false,
+  "C13_read": false,
+  "limitation": "Controlled query-chemistry and bounded signature exclusion; public model pretraining exposure remains disclosed. Rounded full-peak/top96 signatures do not prove universal provenance exclusion.",
+  "reference_files": {
+    "ext_meta.parquet": "06969cdde6342001ecf80d44852098d9f6dd8a1dba681f297546f8232933caf0",
+    "ext_mz.npy": "5d33784eea1f4cfb72a3a009d6a75350e9fcb36075509b00749fac619143d509",
+    "ext_in.npy": "247998a0646e80035ba26b672f3917100d1c97285f85ad301c5368349d327ddc"
+  },
+  "audit_files": {
+    "identity-audit.parquet": "adf8a7d712395f38132900344f94182ffcbad0bec2d9de2e8efa9e142c738979",
+    "row-exclusion-audit.parquet": "f1be6849b4f66cb518b08745722c9b30b2ad0b6ec3bb59090bb1ad69bd31e653"
+  }
+}

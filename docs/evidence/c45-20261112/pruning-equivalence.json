@@ -1,0 +1,14 @@
+{
+  "checked_utc": "2026-11-12T05:00:04.132243+00:00",
+  "queries": 30,
+  "acquisitions": 113,
+  "original_reference_rows": 200724,
+  "reachable_reference_rows": 353,
+  "all_final_lists_exact": true,
+  "all_winning_matches_and_peak_scores_exact": true,
+  "all_original_comparisons_preserved": true,
+  "original_parent_sha256": "3a6111921f4d44dc80f8a9ce433879fdbf1a3488617f068a2273c43084898258",
+  "pruned_parent_sha256": "3a6111921f4d44dc80f8a9ce433879fdbf1a3488617f068a2273c43084898258",
+  "original_source_and_policy_unchanged": true,
+  "quality_labels_read": false
+}

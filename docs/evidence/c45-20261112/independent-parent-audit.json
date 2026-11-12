@@ -1,0 +1,16 @@
+{
+  "completed_utc": "2026-11-12T04:50:52.873971+00:00",
+  "source_sha256": "32af1fdef9cd4875cdfdebc80af4b13bdb893bee3a1a5e939feeae43521b8c9c",
+  "receipt_sha256": "71414743db41e6a05cf1a83d5b816886d4211da93330c91f7b78e4913113f7b3",
+  "baseline_sha256": "4e1078e2bb728f33a3cf90c70fc226308d944f71141b7ef70f5ecbbc8b40ede5",
+  "parent_sha256": "3a6111921f4d44dc80f8a9ce433879fdbf1a3488617f068a2273c43084898258",
+  "queries": 30,
+  "independent_fixed_policy_reconstruction_exact": true,
+  "finite_complete_library_confidence": true,
+  "changed_lists": 7,
+  "rank1_changes": 7,
+  "candidate_membership_changes": 2,
+  "official_identity_duplicates": 0,
+  "quality_metrics_read": false,
+  "C13_read": false
+}

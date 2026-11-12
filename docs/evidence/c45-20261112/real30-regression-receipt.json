@@ -1,0 +1,9 @@
+{
+  "queries": 30,
+  "acquisitions": 113,
+  "expected_final_lists_exact": true,
+  "independent_policy_exact": true,
+  "rank1_promotions": 7,
+  "inserted_identities": 2,
+  "quality_labels_read": false
+}

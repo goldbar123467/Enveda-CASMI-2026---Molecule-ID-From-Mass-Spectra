@@ -1,0 +1,50 @@
+{
+ "frozen_utc": "2026-11-12T04:41:16.207064+00:00",
+ "families": {
+  "cpu": {
+   "P01": {
+    "kernel": "clarkkitchen/casmi26-p22-c45-cpu-p01-parent",
+    "version": 1,
+    "path": "kaggle\\forks\\p22-c45-cpu-p01-parent",
+    "notebook_sha256": "21a34e25a578999b6022fbee6e8e28aefc09acb8717872bd604c867cd071c953",
+    "pin_sha256": "e7ac211ca91eb5475097f78c30e133f7f550f6d3aac656b246040b1bf0095538",
+    "scientific_sha256": "9624f381f02d0094d78c69d9ce76fa96b1d9fdb53a5207ccb22f29ef175d43ae"
+   },
+   "P16": {
+    "kernel": "clarkkitchen/casmi26-p20-c42-cpu-alignment",
+    "version": 1,
+    "path": "kaggle\\forks\\p20-c42-cpu-alignment",
+    "notebook_sha256": "a61dc4b838db45a30da5da90f77892a330a1e5a583ed75afbd9c30d23c14953a",
+    "pin_sha256": "65ca13bf0d05cb48edc67ba350bf5fd135d7a420feee7efe4d83e50310edf228",
+    "scientific_sha256": "9056c2fe61cc974939ffa2262e9ac3c42922effadd5988b5e07a3ad565c91224"
+   }
+  },
+  "gpu": {
+   "P01": {
+    "kernel": "clarkkitchen/casmi26-p23-c45-gpu-p01-parent",
+    "version": 1,
+    "path": "kaggle\\forks\\p23-c45-gpu-p01-parent",
+    "notebook_sha256": "e3f7f31ac911d63f0f3a600806653f9ce9ceaf0472d823e8d847dfdd2cdfa357",
+    "pin_sha256": "2ecd9da92d93c523d2f0dcbdc0c911a6dac8a95ccaddd889a73c6b9549e7b71e",
+    "scientific_sha256": "d17a487d81217666afa0ee1e03772cff5409c1eb867f0c9139958ebd1e523291"
+   },
+   "P16": {
+    "kernel": "clarkkitchen/casmi26-p21-c42-gpu-alignment",
+    "version": 1,
+    "path": "kaggle\\forks\\p21-c42-gpu-alignment",
+    "notebook_sha256": "aac48eb510ab298103546ebbace67b4fe1678528d0d6438c63b800af60b2b6c1",
+    "pin_sha256": "39c7815aad55383e9d42d7930edca3318d085859922b0f7ddbe9507a487f9c85",
+    "scientific_sha256": "52e9b698fe007f90614f46579b1b8d5c1c6a6f6b30d3882201b2a585b24996c5"
+   }
+  }
+ },
+ "head_manifest_sha256": "a534d8654ce8d407b6cee9b1c9b6fa7c2e8231dde84e6a232957d097fee8bed6",
+ "selection": "Per fitted head, select the eligible parent with the highest exact development192 complete-candidate MRR; ties prefer P01. Eligibility requires strictly positive development gain versus P01 and versus the candidate own parent. Freeze both choices before source outcomes; never rescue a failing source choice with the other parent.",
+ "development_queries": 192,
+ "source_queries": 160,
+ "quality_metrics_read": false,
+ "C13_read": false,
+ "models_or_weights_changed": false,
+ "maximum_new_accepted_scoring_entries": 2,
+ "additional_cloud_runs_released": 0
+}

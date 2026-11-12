@@ -1,0 +1,20 @@
+{
+ "frozen_utc": "2026-11-12T04:41:16.097579+00:00",
+ "trial": "cpu",
+ "parent_variant": "P01",
+ "original_production_path": "kaggle\\forks\\p20-c42-cpu-alignment",
+ "original_production_sha256": "a61dc4b838db45a30da5da90f77892a330a1e5a583ed75afbd9c30d23c14953a",
+ "parent_notebook_sha256": "3ecfb7eaabb7246f74eb08b78b6917875eca1589e2e15a0d95229d7db28854fa",
+ "notebook_sha256": "21a34e25a578999b6022fbee6e8e28aefc09acb8717872bd604c867cd071c953",
+ "scientific_sha256": "9624f381f02d0094d78c69d9ce76fa96b1d9fdb53a5207ccb22f29ef175d43ae",
+ "head_manifest_sha256": "a534d8654ce8d407b6cee9b1c9b6fa7c2e8231dde84e6a232957d097fee8bed6",
+ "builder_sha256": "225a284e3c7fc52728082a3dc7d7ef1c6d5c66fbd50c03e73a6659fffbe6f05d",
+ "new_candidate_stage_cell": 27,
+ "removed_original_stage_cell": 27,
+ "head_math_changed": false,
+ "core_source_changed": false,
+ "quality_metrics_read": false,
+ "C13_read": false,
+ "cloud_run_released": false,
+ "qualified_for_submission": false
+}
