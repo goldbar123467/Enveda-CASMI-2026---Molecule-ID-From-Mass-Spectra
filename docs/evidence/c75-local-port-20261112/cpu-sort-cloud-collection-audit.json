@@ -1,0 +1,15 @@
+{
+  "completed_utc": "2026-11-12T17:42:20.567602+00:00",
+  "source_sha256": "4dda12e1e8f674de6ada4d3a6aa729913c84a152e11a59f164e28ae7352c5203",
+  "kernel": "clarkkitchen/casmi26-c75-cpu-sort-parity",
+  "version": 1,
+  "remote_source_exact": true,
+  "actual_GPU_disabled": true,
+  "actual_original_image_exact": true,
+  "private": true,
+  "files_sha256": {
+    "sort-receipt.json": "0040d74de9509bca2a18980d570b04ad15a88bd539a7c5c56d8cd389f1d47348",
+    "sort-arrays.npz": "0a15c92900dd02feec2beb4519ff07a1e42833c1809aa6e5113bb57bfff18cd9"
+  },
+  "scoring_entries": 0
+}

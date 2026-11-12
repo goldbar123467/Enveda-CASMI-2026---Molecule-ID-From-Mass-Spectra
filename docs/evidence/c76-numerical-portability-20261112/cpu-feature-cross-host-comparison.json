@@ -1,0 +1,199 @@
+{
+  "completed_utc": "2026-11-12T18:00:19.333284+00:00",
+  "source_sha256": "278a598715c2c133398eae5c0850bfaae5ed1311c81ed63c582faf90658c0207",
+  "local_receipt_sha256": "e752e639d1e99e7b4ff8c8d06461569e47bb67ead7f3f13eb3488b4f4b929bd7",
+  "cloud_receipt_sha256": "4acdf5ff3e3edc1c7179993f3b17e35ef82b90bf3e51bc8f82ce093b8edb0e06",
+  "canonical_strings_exact": true,
+  "checkpoint_exact": true,
+  "checkpoint_sha256": "9192e4c2eeafe83317d5a2c2641e1fc4d68934488757a4faafeb66f2ab397a12",
+  "different_package_files": [],
+  "array_comparisons": {
+    "batch.adduct_mass_shifts": {
+      "shape_equal": true,
+      "dtype_equal": true,
+      "exact": true,
+      "maximum_absolute_difference": 0.0,
+      "outside_1e5_tolerance": 0
+    },
+    "batch.adducts": {
+      "shape_equal": true,
+      "dtype_equal": true,
+      "exact": true,
+      "maximum_absolute_difference": 0.0,
+      "outside_1e5_tolerance": 0
+    },
+    "batch.adj_matrices": {
+      "shape_equal": true,
+      "dtype_equal": true,
+      "exact": true,
+      "maximum_absolute_difference": 0.0,
+      "outside_1e5_tolerance": 0
+    },
+    "batch.atom_form_vecs": {
+      "shape_equal": true,
+      "dtype_equal": true,
+      "exact": true,
+      "maximum_absolute_difference": 0.0,
+      "outside_1e5_tolerance": 0
+    },
+    "batch.atom_hs": {
+      "shape_equal": true,
+      "dtype_equal": true,
+      "exact": true,
+      "maximum_absolute_difference": 0.0,
+      "outside_1e5_tolerance": 0
+    },
+    "batch.collision_engs": {
+      "shape_equal": true,
+      "dtype_equal": true,
+      "exact": true,
+      "maximum_absolute_difference": 0.0,
+      "outside_1e5_tolerance": 0
+    },
+    "batch.graphormer_input.attn_bias": {
+      "shape_equal": true,
+      "dtype_equal": true,
+      "exact": true,
+      "maximum_absolute_difference": 0.0,
+      "outside_1e5_tolerance": 0
+    },
+    "batch.graphormer_input.attn_edge_type": {
+      "shape_equal": true,
+      "dtype_equal": true,
+      "exact": true,
+      "maximum_absolute_difference": 0.0,
+      "outside_1e5_tolerance": 0
+    },
+    "batch.graphormer_input.degree": {
+      "shape_equal": true,
+      "dtype_equal": true,
+      "exact": true,
+      "maximum_absolute_difference": 0.0,
+      "outside_1e5_tolerance": 0
+    },
+    "batch.graphormer_input.edge_input": {
+      "shape_equal": true,
+      "dtype_equal": true,
+      "exact": true,
+      "maximum_absolute_difference": 0.0,
+      "outside_1e5_tolerance": 0
+    },
+    "batch.graphormer_input.spatial_pos": {
+      "shape_equal": true,
+      "dtype_equal": true,
+      "exact": true,
+      "maximum_absolute_difference": 0.0,
+      "outside_1e5_tolerance": 0
+    },
+    "batch.graphormer_input.x": {
+      "shape_equal": true,
+      "dtype_equal": true,
+      "exact": true,
+      "maximum_absolute_difference": 0.0,
+      "outside_1e5_tolerance": 0
+    },
+    "batch.instruments": {
+      "shape_equal": true,
+      "dtype_equal": true,
+      "exact": true,
+      "maximum_absolute_difference": 0.0,
+      "outside_1e5_tolerance": 0
+    },
+    "batch.masses": {
+      "shape_equal": true,
+      "dtype_equal": true,
+      "exact": true,
+      "maximum_absolute_difference": 0.0,
+      "outside_1e5_tolerance": 0
+    },
+    "batch.num_atoms": {
+      "shape_equal": true,
+      "dtype_equal": true,
+      "exact": true,
+      "maximum_absolute_difference": 0.0,
+      "outside_1e5_tolerance": 0
+    },
+    "batch.precursor_mzs": {
+      "shape_equal": true,
+      "dtype_equal": true,
+      "exact": true,
+      "maximum_absolute_difference": 0.0,
+      "outside_1e5_tolerance": 0
+    },
+    "batch.root_form_vecs": {
+      "shape_equal": true,
+      "dtype_equal": true,
+      "exact": true,
+      "maximum_absolute_difference": 0.0,
+      "outside_1e5_tolerance": 0
+    },
+    "batch.total_hs": {
+      "shape_equal": true,
+      "dtype_equal": true,
+      "exact": true,
+      "maximum_absolute_difference": 0.0,
+      "outside_1e5_tolerance": 0
+    },
+    "prediction.0.mz": {
+      "shape_equal": true,
+      "dtype_equal": true,
+      "exact": true,
+      "maximum_absolute_difference": 0.0,
+      "outside_1e5_tolerance": 0
+    },
+    "prediction.0.intensity": {
+      "shape_equal": true,
+      "dtype_equal": true,
+      "exact": true,
+      "maximum_absolute_difference": 0.0,
+      "outside_1e5_tolerance": 0
+    },
+    "prediction.1.mz": {
+      "shape_equal": true,
+      "dtype_equal": true,
+      "exact": true,
+      "maximum_absolute_difference": 0.0,
+      "outside_1e5_tolerance": 0
+    },
+    "prediction.1.intensity": {
+      "shape_equal": true,
+      "dtype_equal": true,
+      "exact": true,
+      "maximum_absolute_difference": 0.0,
+      "outside_1e5_tolerance": 0
+    },
+    "prediction.2.mz": {
+      "shape_equal": true,
+      "dtype_equal": true,
+      "exact": true,
+      "maximum_absolute_difference": 0.0,
+      "outside_1e5_tolerance": 0
+    },
+    "prediction.2.intensity": {
+      "shape_equal": true,
+      "dtype_equal": true,
+      "exact": true,
+      "maximum_absolute_difference": 0.0,
+      "outside_1e5_tolerance": 0
+    },
+    "prediction.3.mz": {
+      "shape_equal": true,
+      "dtype_equal": true,
+      "exact": true,
+      "maximum_absolute_difference": 0.0,
+      "outside_1e5_tolerance": 0
+    },
+    "prediction.3.intensity": {
+      "shape_equal": true,
+      "dtype_equal": true,
+      "exact": true,
+      "maximum_absolute_difference": 0.0,
+      "outside_1e5_tolerance": 0
+    }
+  },
+  "CPU_only": true,
+  "USED_jobs": 4,
+  "query_truth_or_quality_read": false,
+  "C13_read": false,
+  "scoring_entries": 0
+}

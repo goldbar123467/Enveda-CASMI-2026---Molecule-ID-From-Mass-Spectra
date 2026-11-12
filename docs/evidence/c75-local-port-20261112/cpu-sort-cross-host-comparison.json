@@ -1,0 +1,258 @@
+{
+  "completed_utc": "2026-11-12T17:42:49.002354+00:00",
+  "source_sha256": "6b24d0513e25c474f0d9db1414e7b6b78e6e6403ef55401a5b28031828f83daf",
+  "freeze_sha256": "9eb708a24f12cd4f6780f12d3d2169e059dece45abdee6e86e1603dcf0d6bebc",
+  "actual_cloud_audit_sha256": "8b2cd6a911018ef9a73ab7dd7c09fd112a9d89225d746ae141dfc6742631a932",
+  "identical_original_inputs": true,
+  "identical_source": true,
+  "identical_numpy_version": true,
+  "comparisons": {
+    "pv.order.0": {
+      "exact": true,
+      "different_entries": 0,
+      "maximum_absolute_difference": 0.0
+    },
+    "ours.order.0": {
+      "exact": true,
+      "different_entries": 0,
+      "maximum_absolute_difference": 0.0
+    },
+    "blend.order.0": {
+      "exact": true,
+      "different_entries": 0,
+      "maximum_absolute_difference": 0.0
+    },
+    "blend.score.0": {
+      "exact": true,
+      "different_entries": 0,
+      "maximum_absolute_difference": 0.0
+    },
+    "pv.order.1": {
+      "exact": true,
+      "different_entries": 0,
+      "maximum_absolute_difference": 0.0
+    },
+    "ours.order.1": {
+      "exact": true,
+      "different_entries": 0,
+      "maximum_absolute_difference": 0.0
+    },
+    "blend.order.1": {
+      "exact": true,
+      "different_entries": 0,
+      "maximum_absolute_difference": 0.0
+    },
+    "blend.score.1": {
+      "exact": true,
+      "different_entries": 0,
+      "maximum_absolute_difference": 0.0
+    },
+    "pv.order.2": {
+      "exact": true,
+      "different_entries": 0,
+      "maximum_absolute_difference": 0.0
+    },
+    "ours.order.2": {
+      "exact": true,
+      "different_entries": 0,
+      "maximum_absolute_difference": 0.0
+    },
+    "blend.order.2": {
+      "exact": true,
+      "different_entries": 0,
+      "maximum_absolute_difference": 0.0
+    },
+    "blend.score.2": {
+      "exact": true,
+      "different_entries": 0,
+      "maximum_absolute_difference": 0.0
+    },
+    "pv.order.3": {
+      "exact": true,
+      "different_entries": 0,
+      "maximum_absolute_difference": 0.0
+    },
+    "ours.order.3": {
+      "exact": true,
+      "different_entries": 0,
+      "maximum_absolute_difference": 0.0
+    },
+    "blend.order.3": {
+      "exact": true,
+      "different_entries": 0,
+      "maximum_absolute_difference": 0.0
+    },
+    "blend.score.3": {
+      "exact": true,
+      "different_entries": 0,
+      "maximum_absolute_difference": 0.0
+    },
+    "pv.order.4": {
+      "exact": true,
+      "different_entries": 0,
+      "maximum_absolute_difference": 0.0
+    },
+    "ours.order.4": {
+      "exact": true,
+      "different_entries": 0,
+      "maximum_absolute_difference": 0.0
+    },
+    "blend.order.4": {
+      "exact": true,
+      "different_entries": 0,
+      "maximum_absolute_difference": 0.0
+    },
+    "blend.score.4": {
+      "exact": true,
+      "different_entries": 0,
+      "maximum_absolute_difference": 0.0
+    },
+    "pv.order.5": {
+      "exact": true,
+      "different_entries": 0,
+      "maximum_absolute_difference": 0.0
+    },
+    "ours.order.5": {
+      "exact": true,
+      "different_entries": 0,
+      "maximum_absolute_difference": 0.0
+    },
+    "blend.order.5": {
+      "exact": true,
+      "different_entries": 0,
+      "maximum_absolute_difference": 0.0
+    },
+    "blend.score.5": {
+      "exact": true,
+      "different_entries": 0,
+      "maximum_absolute_difference": 0.0
+    },
+    "pv.order.6": {
+      "exact": true,
+      "different_entries": 0,
+      "maximum_absolute_difference": 0.0
+    },
+    "ours.order.6": {
+      "exact": true,
+      "different_entries": 0,
+      "maximum_absolute_difference": 0.0
+    },
+    "blend.order.6": {
+      "exact": true,
+      "different_entries": 0,
+      "maximum_absolute_difference": 0.0
+    },
+    "blend.score.6": {
+      "exact": true,
+      "different_entries": 0,
+      "maximum_absolute_difference": 0.0
+    },
+    "pv.order.7": {
+      "exact": true,
+      "different_entries": 0,
+      "maximum_absolute_difference": 0.0
+    },
+    "ours.order.7": {
+      "exact": true,
+      "different_entries": 0,
+      "maximum_absolute_difference": 0.0
+    },
+    "blend.order.7": {
+      "exact": true,
+      "different_entries": 0,
+      "maximum_absolute_difference": 0.0
+    },
+    "blend.score.7": {
+      "exact": true,
+      "different_entries": 0,
+      "maximum_absolute_difference": 0.0
+    },
+    "pv.order.8": {
+      "exact": true,
+      "different_entries": 0,
+      "maximum_absolute_difference": 0.0
+    },
+    "ours.order.8": {
+      "exact": true,
+      "different_entries": 0,
+      "maximum_absolute_difference": 0.0
+    },
+    "blend.order.8": {
+      "exact": true,
+      "different_entries": 0,
+      "maximum_absolute_difference": 0.0
+    },
+    "blend.score.8": {
+      "exact": true,
+      "different_entries": 0,
+      "maximum_absolute_difference": 0.0
+    },
+    "pv.order.9": {
+      "exact": true,
+      "different_entries": 0,
+      "maximum_absolute_difference": 0.0
+    },
+    "ours.order.9": {
+      "exact": true,
+      "different_entries": 0,
+      "maximum_absolute_difference": 0.0
+    },
+    "blend.order.9": {
+      "exact": true,
+      "different_entries": 0,
+      "maximum_absolute_difference": 0.0
+    },
+    "blend.score.9": {
+      "exact": true,
+      "different_entries": 0,
+      "maximum_absolute_difference": 0.0
+    },
+    "pv.order.10": {
+      "exact": true,
+      "different_entries": 0,
+      "maximum_absolute_difference": 0.0
+    },
+    "ours.order.10": {
+      "exact": true,
+      "different_entries": 0,
+      "maximum_absolute_difference": 0.0
+    },
+    "blend.order.10": {
+      "exact": true,
+      "different_entries": 0,
+      "maximum_absolute_difference": 0.0
+    },
+    "blend.score.10": {
+      "exact": true,
+      "different_entries": 0,
+      "maximum_absolute_difference": 0.0
+    },
+    "pv.order.11": {
+      "exact": true,
+      "different_entries": 0,
+      "maximum_absolute_difference": 0.0
+    },
+    "ours.order.11": {
+      "exact": true,
+      "different_entries": 0,
+      "maximum_absolute_difference": 0.0
+    },
+    "blend.order.11": {
+      "exact": true,
+      "different_entries": 0,
+      "maximum_absolute_difference": 0.0
+    },
+    "blend.score.11": {
+      "exact": true,
+      "different_entries": 0,
+      "maximum_absolute_difference": 0.0
+    }
+  },
+  "arrays_exact": 48,
+  "arrays_compared": 48,
+  "fixed_USED_queries": 12,
+  "query_truth_read": false,
+  "quality_read": false,
+  "C13_read": false,
+  "scoring_entries": 0
+}

@@ -1,0 +1,17 @@
+{
+  "completed_utc": "2026-11-12T18:04:42.999601+00:00",
+  "source_sha256": "d8eee1f19d351c86591a4f84989a40ce0fbaa48cae565736bbfd38e19c771afe",
+  "fixture_freeze_sha256": "e4ebe6e54700d2487ccca71c5f878f79de2b2f1c938be4a84d16906b362d1329",
+  "outer_change": "Only re-encoded inner payload in cell12",
+  "inner_change": "Cell41 GL package path and exact new GL runner hash only",
+  "all_original_GL_function_definitions_retained": true,
+  "only_added_GL_loader_wrapper": true,
+  "original_weight_and_asset_targets_exact": true,
+  "both_classic_and_N1_GL_use_new_loader": true,
+  "original_query_package_and_reference_masks_retained": true,
+  "original_C75_gate_passed": false,
+  "quality_read": false,
+  "C13_read": false,
+  "scoring_entries": 0,
+  "passed": true
+}

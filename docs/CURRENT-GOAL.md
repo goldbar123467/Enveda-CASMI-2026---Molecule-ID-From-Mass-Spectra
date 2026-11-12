@@ -1,3 +1,93 @@
+## Current C76 checkpoint — complete USED12 replay RUNNING; 0/2 scored
+
+Goal ACTIVE. Champion0.480 preserved. C72 fresh512/all2215acquisitions and C13
+remain UNCONSUMED; sharedC42two-entry ledger absent. Old/hourly controllers OFF.
+Actual paginated Kaggle account audit:35records,34terminal numeric results,
+NO pending submissions, best0.480. No new scoring request. T4quota refresh
+2026-11-14T00:00UTC=Nov13 7pmEastern; no paid resources.
+
+Breakthrough: unchanged GL CPU/CUDA raw mass arithmetic is amplified by 4decimal
+binning and peak merging. Pinning fragment decisions alone leaves13of16score
+differences; pinning decisions AND masses removes all, max~1.335e-7. Simple stable
+sort and math-attention changes failed. Float64mass reduction alone still fails4.
+CPU/GPU node embeddings differ~6e-6 but breakpoint choices can change. Do not
+claim one universal cause or call the original C75 exact-reproduction gate passed.
+
+C76 is an EXPLICIT NEW numerical candidate over fixed C71 heads: same original
+learned encoding/fragment functions and weights always CPU (2threads), intensity
+network still requestedCPU/CUDA, existing atom-mass summation promotedfloat64.
+The16case predeclared pilot PASSES:16exact massbins/0different patternbits,
+maxscore3.601e-8. Extended frozenUSEDnine input: BOTHhealthy9of9/2131jobs,
+ALL799scores within original1e-5, zero nullmismatches, max9.853e-8. Private exact-
+image C76CPUprobev1 COMPLETE, actualsource/image/GPUdisabled verified; all26feature
+and predicted-spectrum arrays BITEXACT with localCPU. No fitting or quality read.
+
+Retrieval remains a separate unresolved original-cloud discrepancy: matched
+runtime Engine2 all12lists exactlymatch priorlocal, only1of12matchC57cloud;
+all12leaders same. A private actualCPU raw-sort probe reproducedall48sort/blend
+arrays bitexact acrosshosts. Packageversion/sorting hypotheses did not repair it.
+Original C75 evidence remains unchanged; do not assert all parent parity solved.
+
+RUNNING complete C76 USED12/all51 replay: toolsession40251; supervisor PID19960,
+scope enveda-c76-fixture-19960.scope; Linux driver426/PGID426. Status/log under
+outputs/local/c76-numerical-portability-20261112/fixture-port/supervisor-retry-*
+and pipeline-retry.log. One controlled inference, high8/max10/swap4GiB; hostfloor4.
+Namespace /kaggle/input stillC75fixture inputs; /kaggle/working NOWpoints
+/home/imsa/.local/share/enveda-c76/fixture/working. Oldworking data intact.
+GL clonedpackage native .../enveda-c76/fixture/glacier; all original payload
+entries read-onlysymlinks except explicitloader and pinnedhelper. Innercell41
+changes only GL_PKG path and honestnewrunnerSHA; BOTHclassic/N1route throughsame
+loader. Independent sourceaudit PASSED. Runtimehealth/acquisition/branchcoverage
+and complete local/C71candidate audits still REQUIRED afterrun; no fresh release.
+
+Operational failures preserved: firstextended attempt missed optionalCLIcheckpoint
+arg and stoppedbeforeinference; fixed/archived, sole retry passed799. Firstfixture
+attempt stopped beforeinference on root-owned /kagglelink permissions. Verified
+tasklink switched using same root-owner pattern as prior C75; no chmod/policy or
+data changes, archive retained; retrynowrunning. Do not restart blindly.
+
+Old C71 CPU/GPU modelbytes unchanged. C76 config/freeze-r1 explicitly requires
+complete pipeline qualification, same fixedC72protocol and later actualKaggle
+production smoke. Never reuse retired C56parent or quietly relax oldC75gate.
+
+## Current C75 investigation — GPU numerics localized; retrieval replay running
+
+Goal ACTIVE, 0/2 actual scored submissions. C72 fresh512 and C13 remain UNCONSUMED;
+shared C42 ledger absent, champion0.480 retained, old/hourly campaigns OFF.
+Original strict USED12 parity still FAILS. No tolerance or final-list guard changed.
+
+Exact-image CPU feature probe COMPLETE private v1 (casmi26-c75-cpu-feature-parity).
+Original checkpoint/package hashes and all26feature/prediction arrays BITEXACT
+between KaggleCPU and localCPU on4fixed public USED candidates. All38 scientific
+GL payload files match their published manifest (only publication metadata absent).
+
+Fixed16USED-job device test: CPU13scores outside original T4 tolerance, max.01768845;
+2070four outside, max.00077075. Valid root/node embeddings differ only~3e-6/6e-6,
+amplified to valid breakpoint-logit max.004089 and36different fragment pattern rows.
+No invalid padded atom selected; rawmax1.107 was mostly padding. Stable projected
+or raw-logit sorting FAILED to fix. Enforced math SDPA FAILED too (four outside).
+Both stock paths reproduced previous scores exactly. These are engineering
+counterfactuals, never promoted models. Original GL/C71/C74 science unchanged.
+
+Raw-output mass substitution hypothesis stopped at its alignment guard: case2
+CPU4472rows vsGPU4368rows. Raw arrays preserved; no sole mass-rounding claim.
+Prepared fragment-decision counterfactual to separate selection and arithmetic;
+not launched while retrieval replay holds memory. All probes use same frozen
+16USED jobs, no truth labels or fresh quality.
+
+RUNNING: one matched-cloud-runtime original Engine2 replay on sameUSED12queries
+and reference mask; recovered Torch2.10/NumPy2.0.2/Numba0.60/sklearn1.6.1.
+Source scripts/probe_c75_retrieval_runtime.py, supervisor scripts/supervise_c75_retrieval.py.
+Scope/status/log: outputs/local/c75-local-core-port-20261112/retrieval-runtime-probe-v1-supervisor.*.
+Parent engine code copied unchanged except diagnostic audit-output filename.
+Original public fit arrays only; captures original returned channels for diagnosis.
+Host reserve4GiB; scope high8/max10/swap4GiB; one launch, no automatic retry.
+Tool session31563; scope enveda-c75-retrieval-30680. Reconcile before new heavy job.
+
+Attention probe finished, tool81726 closed0; no other running diagnostic expected.
+T4 quota refresh2026-11-14T00:00UTC (Nov13 7pmEastern). Free CPU probes work;
+no scoring entry consumed by metadata/feature probes. Current turn made progress.
+
 ## Latest C75 checkpoint — NO active inference; exact parity remains unresolved
 
 Goal ACTIVE, submissions0/2used; NOsharedC42ledger, NO C72/C13consumption.

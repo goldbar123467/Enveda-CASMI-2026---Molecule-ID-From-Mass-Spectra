@@ -1,0 +1,19 @@
+{
+  "started_utc": "2026-11-12T17:53:18.357755+00:00",
+  "source_sha256": "054e30f948dfa3c1f2e6ae29d292ea759d6f637bab96577db193a671eb6d4a61",
+  "supervisor_sha256": "259902b1f1f01894c179e13505dca1893166b4607cd6126fb603d765efa1b85b",
+  "unit": "enveda-c76-extended-4524",
+  "host_reserve_GiB": 4,
+  "memory_high_GiB": 6,
+  "memory_max_GiB": 8,
+  "swap_max_GiB": 2,
+  "launches": 1,
+  "automatic_retry": false,
+  "USED_only": true,
+  "quality_read": false,
+  "C13_read": false,
+  "scoring_entries": 0,
+  "completed_utc": "2026-11-12T17:57:10.285091+00:00",
+  "status": "complete",
+  "results_sha256": "1c41b2368ee3115e3b7650f78b118d1ca2d7fa4b75c0843865b9aada8ab73619"
+}

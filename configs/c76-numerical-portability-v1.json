@@ -1,0 +1,41 @@
+{
+  "candidate": "C76 numerical portability repair over the frozen C71 CPU/GPU pair",
+  "scientific_parent_payload_sha256": "3f973abbb1593e356db4f6dec149c8ad99f5afa5ded8da8bab59152bd49e60e7",
+  "changes": [
+    "Original GL molecular encoding, breakpoint logits and breakpoint inference execute on an identical CPU provider with unchanged weights and functions",
+    "Existing GL atom-mass multiplication and summation use float64 before the original float32 output cast",
+    "GL intensity neural inference stays on the requested CPU or GPU"
+  ],
+  "unchanged": [
+    "Both C71 fitted heads and training inventories",
+    "GL checkpoint and learned functions, stock top-k semantics, fragment graph algorithm and scoring",
+    "Complete acquisition sets, mixed-polarity grouping, source/cohort exclusions",
+    "P16, physical-parent and formula-slot ranking rules",
+    "Original C75 failure evidence and its strict unpassed acceptance gate"
+  ],
+  "component_gate": {
+    "input": "Earlier byte-frozen USED-nine GL input",
+    "queries": 9,
+    "finite_scores": 799,
+    "atol": 0.00001,
+    "rtol": 0.00001,
+    "matching_score_keys_and_null_patterns": true,
+    "prediction_or_feature_failures_allowed": 0
+  },
+  "complete_pipeline_gates": [
+    "Actual complete USED12 replay through every changed GL branch, original reference masks and all51acquisitions, with independent health/source/fidelity audits",
+    "A separately frozen C76 complete-pipeline binding and production wrapper; never treat the prior C75 reproduction gate as passed",
+    "Source predictions for both fixed heads frozen before the existing one-time C72 quality gate; retain the original fixed512cohort and all2215acquisitions",
+    "Original C72 gain, mode and recovered/displaced/absent-truth criteria; no recipe or cohort rescue after outcomes",
+    "C13 at most once only after defensible prior/source evidence",
+    "Actual complete Kaggle production smoke and local/cloud head arithmetic/list checks before either score request"
+  ],
+  "full_fresh_inference_currently_held": true,
+  "head_refitting": false,
+  "C72_outcomes_read": false,
+  "C13_read": false,
+  "scoring_qualification": false,
+  "maximum_new_scoring_entries": 2,
+  "maximum_pending": 1,
+  "paid_compute": false
+}

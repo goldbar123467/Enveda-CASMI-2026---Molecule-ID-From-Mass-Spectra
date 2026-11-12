@@ -1,0 +1,28 @@
+{
+  "recorded_utc": "2026-11-12T18:09:54.615127+00:00",
+  "files_sha256": {
+    "candidate-freeze-original.json": "dfc1e351bd377076cb28dea917aa9c817162e961df683c9d3f5422066d5ff16b",
+    "candidate-freeze-r1.json": "3d8d7ff7c63f839f0bc9f9a514d139487c7258b0436346c8d31acc42f19e5016",
+    "cli-attempt01-freeze_c76_portability.py": "9dddcfeaa4d823af38fcf2339f88bce659232ead622027119169bfb9d1637ddb",
+    "cli-attempt01-probe_c76_extended_portability.py": "c1554ab4d68c00814ed1a303ea4ed904e1eed18bc9c1b24063f11a933cfa39bd",
+    "cli-attempt01-run_c76_gl_portable.py": "b4ee8c46a0b375461035745989dc7b1b96ce1dc666baee031148c8e1c21376df",
+    "cli-attempt01-supervise_c76_extended.py": "54cfce088c019bc26b9db5b306be21e38f133b2f3de74a0bd04a88204bd0820a",
+    "complete-fixture-freeze.json": "e4ebe6e54700d2487ccca71c5f878f79de2b2f1c938be4a84d16906b362d1329",
+    "complete-fixture-namespace-activation.json": "1012f466d164e19f1fd3ce5517a7431e57bf4cdf2f2ff8d36b114a5f58a0152b",
+    "complete-fixture-retry-intent.json": "e167a0b5f0f99088cf80c4a81de087997f3a8cdf6d22532cc1a72ccfe8bff5d6",
+    "complete-fixture-run-intent.json": "ed0f7380c6e23b1fcc37d4c4dc011565e9453759e5e0e794000d97992230c89c",
+    "complete-fixture-source-audit.json": "922d78372b93f13bc182db0ca5a88239c300655180f054a29879a2d1b8566ad7",
+    "cpu-feature-cloud-audit.json": "2e13de57bf2867b7f1da48ed14b84d2aff1a95cf5b5399c896b239a843990997",
+    "cpu-feature-cross-host-comparison.json": "c05f74242277ed9764ad9a5f7a347abd018a4f6112b60ef391c24703ede5ca40",
+    "cpu-feature-freeze.json": "d81e653dc6a56c83a2b82bd790d9cc14a077b212511273b952e32f261e59c774",
+    "extended-attempt01-supervisor-failed.json": "c1c8c8138bca55050bacda7c9868958433d7fb6727e74d6f86c3ef4fcce7d73f",
+    "extended-used-nine-results.json": "1c41b2368ee3115e3b7650f78b118d1ca2d7fa4b75c0843865b9aada8ab73619",
+    "extended-used-nine-supervisor.json": "bae8f9d6778c3785011d93d43164263919641253487129e2a08d97129f408f88",
+    "namespace-attempt01-run_c76_fixture.py": "6baa988aee035ae0f18d01b20fcae72fa723275938083adc9f32b350970797cf",
+    "namespace-attempt01-supervise_c76_fixture.py": "0e5938bada93fb115f0427182e619980887d160bcb5ad81f1f9511c3f70bcdee"
+  },
+  "current_phase": "CompleteUSED12pipeline_running",
+  "fresh_source_quality_read": false,
+  "C13_read": false,
+  "new_scoring_entries": 0
+}

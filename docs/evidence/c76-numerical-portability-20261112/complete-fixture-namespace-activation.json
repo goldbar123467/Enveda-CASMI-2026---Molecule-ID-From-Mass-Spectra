@@ -1,0 +1,11 @@
+{
+  "activated_utc": "2026-11-12T18:07:16.534220+00:00",
+  "source_sha256": "1de3ce60df2e6c770ca4167be922dcf9d8db4ccfd26da1b27803bc450d5b8359",
+  "fixture_freeze_sha256": "e4ebe6e54700d2487ccca71c5f878f79de2b2f1c938be4a84d16906b362d1329",
+  "working_target": "/home/imsa/.local/share/enveda-c76/fixture/working",
+  "input_target": "/home/imsa/.local/share/enveda-c75/fixture/input",
+  "owned_GL_package": "/home/imsa/.local/share/enveda-c76/fixture/glacier",
+  "only_verified_owned_working_link_switched": true,
+  "no_directory_permissions_changed": true,
+  "all_old_data_retained": true
+}

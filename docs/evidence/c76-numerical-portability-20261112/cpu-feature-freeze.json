@@ -1,0 +1,14 @@
+{
+  "frozen_utc": "2026-11-12T17:56:54.706057+00:00",
+  "source_sha256": "757b8e5aec44d16e6f918e79f6b04e05460905fad281c7e8215f75c4fe2f19d2",
+  "probe_source_sha256": "e60166c9c20a01c76a8ed98b853898917262c24e5ce3c0f06eb0d6b3abe5706b",
+  "metadata_sha256": "f3ba87f048d36a1347e3325ba47738ef1a2ad5f7536e198f0cdad2d60fbf9e18",
+  "c76_candidate_freeze_sha256": "3d8d7ff7c63f839f0bc9f9a514d139487c7258b0436346c8d31acc42f19e5016",
+  "c76_helper_sha256": "9334f533cc00ba289d4c5d57d3f452b13f0a8b346be59546181b45f08a7ca63e",
+  "original_probe_source_sha256": "e7e37cd931789ecf23898fe044030e901de2f66a89b3c9212914154efd738d6d",
+  "exact_original4USED_jobs": true,
+  "actual_CPU_only": true,
+  "quality_read": false,
+  "C13_read": false,
+  "scoring_entries": 0
+}

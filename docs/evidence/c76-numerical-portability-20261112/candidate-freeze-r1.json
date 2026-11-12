@@ -1,0 +1,42 @@
+{
+  "frozen_utc": "2026-11-12T17:53:17.627915+00:00",
+  "source_sha256": "9dddcfeaa4d823af38fcf2339f88bce659232ead622027119169bfb9d1637ddb",
+  "candidate": "C76 numerical portability",
+  "files_sha256": {
+    "configs/c76-numerical-portability-v1.json": "60e5868dea60e97c96df60581600897cc2a2b7187907cb300ef6d41c443a0f94",
+    "scripts/c76_gl_portability.py": "9334f533cc00ba289d4c5d57d3f452b13f0a8b346be59546181b45f08a7ca63e",
+    "scripts/run_c76_gl_portable.py": "656df157e4c5672d21f6e9a98c6302108a1013ae7ce3bf7c350bddea6ef1fe47",
+    "scripts/probe_c76_extended_portability.py": "054e30f948dfa3c1f2e6ae29d292ea759d6f637bab96577db193a671eb6d4a61",
+    "scripts/freeze_c76_portability.py": "9dddcfeaa4d823af38fcf2339f88bce659232ead622027119169bfb9d1637ddb",
+    "outputs/local/c71-final-clean-direct-pair-20261112/complete-candidate-freeze.json": "cdd63ce2fe8da43d525d6234f5745b143f608e29f69da0a88f2edd182ff21b0b",
+    "outputs/local/c71-final-clean-direct-pair-20261112/complete-pipeline-binding.json": "ca0102078be7f068d9ffd939a99f1a6e009b560398fd46b04097532176df7288",
+    "outputs/local/c71-final-clean-direct-pair-20261112/cpu-model.npz": "96c4e05c7a419f38a0299b102e9007bb317fd1ff4605d65f8663512c6f6889e6",
+    "outputs/local/c71-final-clean-direct-pair-20261112/gpu-model.npz": "85b4dcddc650ffb3036733b76473c3eaa93094b5d7b50eea1dde5436f5a52c9d",
+    "outputs/local/c72-clean-target-holdout-20261112/validation-freeze.json": "d819cd2b8f8cfcf9b05b8f5f3d91417b16e51e4d6788ff9c9cf98fe2b21ee3e3",
+    "outputs/local/c72-clean-target-holdout-20261112/preparation-protocol.json": "0d4b839bfb3e65b9e72036c2b6a9594a0d2d19008d74e228f5ca60bf0332ff5f",
+    "outputs/local/c75-local-core-port-20261112/portable-breakpoints-v1/intent.json": "d14a6487314acf7332c1cbc9a0e37be95af0dd51c3569fe2f83e1ae414535de8",
+    "outputs/local/c75-local-core-port-20261112/portable-breakpoints-v1/results.json": "add1cd0cb884c3c092701c33a94caac203e5a588571ef0ae90e790d430abf4f1"
+  },
+  "fixed_CPU_model_sha256": "96c4e05c7a419f38a0299b102e9007bb317fd1ff4605d65f8663512c6f6889e6",
+  "fixed_GPU_model_sha256": "85b4dcddc650ffb3036733b76473c3eaa93094b5d7b50eea1dde5436f5a52c9d",
+  "previous_complete_parent_binding_sha256": "ca0102078be7f068d9ffd939a99f1a6e009b560398fd46b04097532176df7288",
+  "complete_recipe_revision_required": true,
+  "original_C75_gate_passed": false,
+  "quality_outcomes_read": false,
+  "C13_read": false,
+  "scoring_entries": 0,
+  "qualified_for_scoring": false,
+  "original_candidate_freeze_sha256": "dfc1e351bd377076cb28dea917aa9c817162e961df683c9d3f5422066d5ff16b",
+  "operational_repair_source_sha256": "741b5c6a73a9c4cdd7fba1f2722c169e3fecce8b6a8887f25763f44e9a725924",
+  "operational_repair": "Preserve original optional checkpoint CLI parameter, verify its pin and pass it to both identical providers. New retry output paths only.",
+  "numerical_algorithm_unchanged": true,
+  "models_cases_tolerances_unchanged": true,
+  "single_reconciled_retry": true,
+  "original_executed_sources_archive_sha256": {
+    "freeze_c76_portability.py": "9dddcfeaa4d823af38fcf2339f88bce659232ead622027119169bfb9d1637ddb",
+    "original-candidate-freeze.json": "dfc1e351bd377076cb28dea917aa9c817162e961df683c9d3f5422066d5ff16b",
+    "probe_c76_extended_portability.py": "c1554ab4d68c00814ed1a303ea4ed904e1eed18bc9c1b24063f11a933cfa39bd",
+    "run_c76_gl_portable.py": "b4ee8c46a0b375461035745989dc7b1b96ce1dc666baee031148c8e1c21376df",
+    "supervise_c76_extended.py": "54cfce088c019bc26b9db5b306be21e38f133b2f3de74a0bd04a88204bd0820a"
+  }
+}

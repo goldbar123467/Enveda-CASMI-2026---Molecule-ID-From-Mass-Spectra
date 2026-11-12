@@ -1,0 +1,16 @@
+{
+  "completed_utc": "2026-11-12T17:02:41.493276+00:00",
+  "kernel": "clarkkitchen/casmi26-c75-cpu-feature-parity",
+  "version": 1,
+  "actual_GPU_disabled": true,
+  "actual_original_image_exact": true,
+  "remote_source_exact": true,
+  "files_sha256": {
+    "feature-arrays.npz": "8b4364a5d1d28100a6fff5a6e0d201c1892532abfa08b7ae257239c42f7dc497",
+    "feature-probe.json": "88462f376d4e05310205009874d0a731ece5bbcc9f057745b1848858fe3c4007"
+  },
+  "pages": 1,
+  "scoring_entries": 0,
+  "query_truth_or_quality_read": false,
+  "C13_read": false
+}

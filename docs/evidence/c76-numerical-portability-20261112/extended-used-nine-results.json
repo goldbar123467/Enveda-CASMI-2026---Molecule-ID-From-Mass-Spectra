@@ -1,0 +1,29 @@
+{
+  "completed_utc": "2026-11-12T17:57:04.082032+00:00",
+  "source_sha256": "054e30f948dfa3c1f2e6ae29d292ea759d6f637bab96577db193a671eb6d4a61",
+  "intent_sha256": "f07fcdd4d27e23578b01024cd17a61c1a2f2fe6d9319b17ad9bc3b7850ea36e5",
+  "comparison": {
+    "finite_scores": 799,
+    "null_mismatches": 0,
+    "max_absolute_difference": 9.853169352647129e-08,
+    "outside_original_tolerance": 0
+  },
+  "component_passed": true,
+  "original_C75_gate_passed": false,
+  "qualified_for_scoring": false,
+  "files_sha256": {
+    "cpu.json": "2bef033d1a86a626435b30d81162e0ffc541e2cb81d65d5e53bb6846a32c1825",
+    "cpu.json.meta.json": "99dde8e91f0601d6d214bd003b3d6d0383655bf7d3374a77f3be80480e39b729",
+    "cpu.json.portability.json": "1d8d3f3fb7ad0f6997656a45f4ebd194e7b2611ea3230a884bb1a81ef589e2ed",
+    "cpu.log": "9ce30dba7e7016b354246fae83d287d2a937259b2d1463386f8fefc7a96f1b39",
+    "cuda.json": "6a2a157cab708440791f1c5047d51aaeac729ebeefce56d4199fd48808da25ee",
+    "cuda.json.meta.json": "914145edabc6a522652c5680109b974d8d0b8e227e871e70e82517efa3b22c5d",
+    "cuda.json.portability.json": "8e2d40518671d3e2a93db696baf0cd751b69561d6f0399cd2491e7234211fd4f",
+    "cuda.log": "522a46dd6f7ac687ba4c39bf274f61b1aa5a646e3c624d52b49501aaea45ba42",
+    "intent.json": "f07fcdd4d27e23578b01024cd17a61c1a2f2fe6d9319b17ad9bc3b7850ea36e5"
+  },
+  "USED_only": true,
+  "quality_read": false,
+  "C13_read": false,
+  "scoring_entries": 0
+}

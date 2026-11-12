@@ -1,3 +1,17 @@
+## C76 numerical portability candidate — November12
+
+The original C75 complete-pipeline reproduction failed and remains rejected as
+an exact reproduction. A causal USED-only experiment isolated mass binning and
+fragment decisions as amplifiers of small device differences. Stable sorting,
+attention-backend and package-version changes did not fix them. A new explicit
+CPU decision provider plus float64 atom-mass reduction now passes all799fixed
+development scores acrossCPU/2070 at the original1e-5 tolerance (max9.853e-8),
+and an actual exact-image cloudCPU probe matches all26feature/spectrum arrays.
+The C71 CPU/GPU heads remain frozen. This is engineering evidence, not a quality
+or leaderboard improvement. Complete USED12 replay is running; source512,
+once-onlyconfirmation and production gates remain held. Retrieval's original
+cloud-list discrepancy remains separately unresolved. No new submission used.
+
 # C09 results and P16 scoring trial — 9–10 November
 
 ## ACTIVE C38 goal — new CPU/GPU work and2new submissions approved
