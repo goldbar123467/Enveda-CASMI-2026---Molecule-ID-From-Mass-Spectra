@@ -1,0 +1,10 @@
+{
+  "submitted_utc": "2026-11-12T13:52:36.078945+00:00",
+  "kernel": "clarkkitchen/casmi26-c73-full-masked-validation",
+  "version": 0,
+  "url": "",
+  "error": "Maximum weekly GPU quota of 30.00 hours reached.",
+  "notebook_sha256": "550f328a6edb1ae3ba2841cf4d2933e3ede92c1f8af3fc03e4965a2ac5718d38",
+  "source_sha256": "a701b01782438a62eb21757721c4cac810d49072621d989f050cd95483dc3c4b",
+  "scored_entry": false
+}

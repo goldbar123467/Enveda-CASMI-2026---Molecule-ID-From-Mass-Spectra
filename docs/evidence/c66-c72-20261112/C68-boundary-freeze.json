@@ -1,0 +1,40 @@
+{
+  "completed_utc": "2026-11-12T13:30:52.169165+00:00",
+  "source_sha256": "d81a0570eca3103960b3e4bd0901dd7f8a060ef15cfb7ad25c4fe37a9bbb343d",
+  "queries": 869,
+  "acquisitions": 3452,
+  "candidates": 21719,
+  "fitting_queries": 780,
+  "fitting_candidate_rows": 18833,
+  "global_reserved_identities": 231,
+  "resolved_global_reserved_chemistry": 231,
+  "query_first_exclusion_reasons": {
+    "global_reserved_scaffold": 34,
+    "global_reserved_formula": 20,
+    "global_reserved_near_chemistry": 4
+  },
+  "candidate_first_exclusion_reasons": {
+    "global_reserved_scaffold": 1114,
+    "global_reserved_formula": 272,
+    "global_reserved_near_chemistry": 44,
+    "global_reserved_identity": 2
+  },
+  "excluded_query_chemistry_components": 23,
+  "every_original_evaluation_query_and_candidate_retained": true,
+  "fitting_reserved_identity_or_chemistry_overlap": 0,
+  "global_normalization_must_use_only_fitting_eligible_rows": true,
+  "C13_selected_labels_or_outcomes_read": false,
+  "models_fitted": false,
+  "scoring_entries": 0,
+  "files_sha256": {
+    "outputs\\local\\c66-parent-evidence-oof-20261112\\data-freeze.json": "0856f545382e3366bc485b149b9cbbd2b329684ef45860db8876bba634f4b28f",
+    "outputs\\local\\c66-parent-evidence-oof-20261112\\features.npy": "8c804c5e7b85911f5b87a9322b75ea7ebb76f3bf1a520bdbfa9962fc139b1ac8",
+    "outputs\\local\\c66-parent-evidence-oof-20261112\\feature-names.json": "61ae50db25cfe3b4458f3ace56a0a0255334777136f411c9890cad0d3661977e",
+    "outputs\\local\\c13-confirmation-20261110\\identity-inventory.parquet": "ecdb7ce02b39fb694f29d3b57e11d4474a8f62f56966e3e289385032c8a0ac15",
+    "outputs\\research\\c10-casmi2022-20261110\\casmi_2022.tgz": "febe375faf786ab65950c50ec8f0c4ee8ea9c8ce6ff10b4cd68f25fcd5ce1e31",
+    "outputs\\local\\c68-reserved-fit-boundary-20261112\\protocol.json": "c6807e054cd4a57f1af3425e9740eeae979052639d0b7d52f3d658b1f2b3df52",
+    "outputs\\local\\c68-reserved-fit-boundary-20261112\\global-exclusion-chemistry.parquet": "6fb1d8af482f0ffe4b63a3abcdb0b65912ae6122d07cd3fd1d6083f95fd89738",
+    "outputs\\local\\c68-reserved-fit-boundary-20261112\\queries.parquet": "ef9c625b28682cf35f63fb054160d8d5e2ba74cb7aff735e0cb56aed72a7beb4",
+    "outputs\\local\\c68-reserved-fit-boundary-20261112\\candidates.parquet": "27d91667e2b4015f63f300ffda784ad82c4a2a844ef12f1c17d80fb4c485b578"
+  }
+}

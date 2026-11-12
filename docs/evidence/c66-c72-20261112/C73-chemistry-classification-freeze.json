@@ -1,0 +1,32 @@
+{
+  "completed_utc": "2026-11-12T13:45:51.610017+00:00",
+  "source_sha256": "cfb3b0ca9b7f59033c47cd077eb045ef95bb5a32f66cf8093e1f73d3af42cefa",
+  "global_excluded_chemistry_identities": 1973,
+  "original_reference_official_identities": 274194,
+  "excluded_official_identities": 91452,
+  "reasons": {
+    "prior_reference_quarantine": 60000,
+    "used_fresh_or_global_reserved_formula": 22700,
+    "used_fresh_or_global_reserved_scaffold": 7969,
+    "used_fresh_or_global_reserved_identity": 512,
+    "used_fresh_or_global_reserved_near_chemistry": 271
+  },
+  "files_sha256": {
+    "scripts\\prepare_c73_reference_masks.py": "cfb3b0ca9b7f59033c47cd077eb045ef95bb5a32f66cf8093e1f73d3af42cefa",
+    "outputs\\local\\c56-bounded-semantic-heads-20261112\\original-structure-identity-witnesses.parquet": "a2779204463261423061946c7b8f415b4400f55527567f20431cc47e84e9d151",
+    "outputs\\local\\c56-bounded-semantic-heads-20261112\\engine2-raw-key-exclusion.json": "21faf872853647597ad81a0ed858e70de069d771ca5a519563743e31c81d7c2f",
+    "outputs\\local\\long-frozen-20261107-r1\\molecules.parquet": "2b945d6e40cc9e4fb60220b78078903541419f0a2dae2bc0333e0980c9cf2150",
+    "outputs\\local\\c69-clean-parent-evidence-oof-20261112\\queries.parquet": "ef9c625b28682cf35f63fb054160d8d5e2ba74cb7aff735e0cb56aed72a7beb4",
+    "outputs\\local\\c72-clean-target-holdout-20261112\\labels.csv": "654354336006306fd779a0c710f67a0a27ae2de15da368ae16a3031f96d086d4",
+    "outputs\\local\\c68-reserved-fit-boundary-20261112\\global-exclusion-chemistry.parquet": "6fb1d8af482f0ffe4b63a3abcdb0b65912ae6122d07cd3fd1d6083f95fd89738",
+    "outputs\\publish\\c08-validation-20261108\\labels.csv": "5c2b3b269bef779d6364dcebd0edf900f7663cfa13ba18c6cb382c8c2020e820",
+    "outputs\\publish\\c09-validation-20261109\\labels.csv": "86f54a9ca39dbf6353eef237a35406f1f8203f0ea5f0bc71fd1f3f420b5c4d4e",
+    "outputs\\local\\c10-casmi2022-20261110\\labels.csv": "f1d3b96f002827d2c9ddd1e61f0fe4e97551a27859da8c74d248588893515c6a",
+    "outputs\\local\\c20-negative-development-20261110\\labels.csv": "4d0f0803904dcf592fa9bda6786db72b40d9e27790ce0f891bb9ed700f82e1a3",
+    "outputs\\local\\c73-clean-target-validation-20261112\\global-exclusion-chemistry.parquet": "1561fafc6cc73d1662de3849506b53d36df224790d9a5d6f674fc7de4f82af24",
+    "outputs\\local\\c73-clean-target-validation-20261112\\reference-chemistry-classification.parquet": "d54377d7f40accc8e54122c7f0ab93de06ec1b18d4073c122686c5f73ae59bc8",
+    "outputs\\local\\c73-clean-target-validation-20261112\\reference-mask-protocol.json": "9976a47e329147a762610b50a8e572cd701c73b337dd15f6b01d6f29e80af7b6"
+  },
+  "quality_outcomes_read": false,
+  "C13_query_mapping_read": false
+}

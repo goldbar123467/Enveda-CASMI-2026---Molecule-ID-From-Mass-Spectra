@@ -1,0 +1,15 @@
+{
+  "completed_utc": "2026-11-12T13:35:13.725183+00:00",
+  "source_sha256": "d360990015aeb639e18bbe6abbf4fc2d44502de1f49ab6657d8a3ff1e144015d",
+  "runtime_sha256": "ce727ad6809d09fd8b770cedcf3de7f1a64a9520a06f4ebd0f706880ec0364ed",
+  "full_original_acquisition_feature_parity_receipt_sha256": "21c749927cb66675642af6d14af31460de913bd31cf76c5eab6b1b496774f569",
+  "features": 101,
+  "candidates": 21719,
+  "queries": 869,
+  "original_unlabeled_acquisitions_only": true,
+  "feature_values_bitwise_exact": true,
+  "both_5fold_candidate_lists_exact": true,
+  "reserved_clean_fitting_not_evaluation_filter": true,
+  "C13_read": false,
+  "scoring_entries": 0
+}

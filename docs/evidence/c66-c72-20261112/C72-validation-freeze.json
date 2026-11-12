@@ -1,0 +1,41 @@
+{
+  "completed_utc": "2026-11-12T13:38:58.010465+00:00",
+  "source_sha256": "0fb424f035ef88b23c1138de7b3adb2a1f716b7cbb6af873793c0a7d44998dbb",
+  "protocol_sha256": "0d4b839bfb3e65b9e72036c2b6a9594a0d2d19008d74e228f5ca60bf0332ff5f",
+  "queries": 512,
+  "acquisitions": 2215,
+  "chemistry_groups": 471,
+  "sources": {
+    "enveda-180": 512
+  },
+  "actual_query_modes": {
+    "positive": 353,
+    "mixed": 124,
+    "negative": 35
+  },
+  "source_chemistry_groups_disjoint": true,
+  "eligibility_exclusions": {
+    "used_reserved_or_head_input_identity": 52,
+    "used_or_global_reserved_chemistry": 80
+  },
+  "complete_pipeline_binding_sha256": "ca0102078be7f068d9ffd939a99f1a6e009b560398fd46b04097532176df7288",
+  "new_pair_frozen_before_selection": true,
+  "global_reserved231chemistry_excluded": true,
+  "all_head_input_identity_overlap": 0,
+  "all_usable_original_acquisitions_retained": true,
+  "original_raw_rows_inspected": 2539608,
+  "excluded_acquisitions": 870,
+  "files_sha256": {
+    "outputs\\local\\c72-clean-target-holdout-20261112\\labels.csv": "654354336006306fd779a0c710f67a0a27ae2de15da368ae16a3031f96d086d4",
+    "outputs\\local\\c72-clean-target-holdout-20261112\\provenance.csv": "e0d70d83fd2a0e68e1467b70f578b88d4284d8abb0c5dd5767f277b5b334a5ed",
+    "outputs\\local\\c72-clean-target-holdout-20261112\\selected-chemistry.parquet": "536dcd32d1b6e58f969ea7a975eddfc8e7a89f4c5c7c40a1284ced5b6e5a61bd",
+    "outputs\\local\\c72-clean-target-holdout-20261112\\acquisition-exclusions.json": "f0eb39d21e467da83c9cb13b6a90977d1d36582a9f97635e25edb278fca9d1e5",
+    "outputs\\publish\\c72-clean-target-holdout-20261112\\validation-queries.parquet": "59baf2217042e41f07747c7d20de3f28f1321fb2008bbf2d2c194bd16e827d79",
+    "outputs\\publish\\c72-clean-target-holdout-20261112\\validation-sample.csv": "774a621f5c5a9f4c4c3374c67ddef3c4b974b89ec41d8e519ef47f896d65b2b8"
+  },
+  "no_prediction_outcomes_read": true,
+  "C13_labels_read": false,
+  "model_fit_and_reference_masks_remaining": true,
+  "public_parent_and_encoder_exposure_not_erased": true,
+  "qualified_for_scoring": false
+}

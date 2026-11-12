@@ -1,0 +1,52 @@
+{
+  "frozen_utc": "2026-11-12T13:35:50.888261+00:00",
+  "source_sha256": "0ee3993d0652db1c8a213a53048f780bdfff6a4aade72d4c78b9050f6efcb1f3",
+  "queries_fitted": 780,
+  "acquisitions_fitted": 3220,
+  "candidate_rows_fitted": 18833,
+  "all_USED_evaluation_queries": 869,
+  "all_evaluation_acquisitions": 3452,
+  "all_candidate_rows": 21719,
+  "features": 101,
+  "global_C13_reserved_chemistry_fit_overlap": 0,
+  "CPU_gradient_maximum": 6.447254090637122e-07,
+  "GPU_device": "NVIDIA GeForce RTX 2070",
+  "GPU_epochs": 200,
+  "GPU_peak_memory_allocated": 36908032,
+  "parent": "Exact frozen P01 core + P16external overlay with neutral-mass consistency; unmodified public parent/encoder historical exposure remains",
+  "ranking": "CPU/GPU pairwise direct-ranking models reorder all same-formula slots; preserve candidate membership and formula slots; missing evidence keeps parent group",
+  "CPU_model_sha256": "96c4e05c7a419f38a0299b102e9007bb317fd1ff4605d65f8663512c6f6889e6",
+  "GPU_model_sha256": "85b4dcddc650ffb3036733b76473c3eaa93094b5d7b50eea1dde5436f5a52c9d",
+  "files_sha256": {
+    "scripts\\fit_c71_final_pair.py": "0ee3993d0652db1c8a213a53048f780bdfff6a4aade72d4c78b9050f6efcb1f3",
+    "scripts\\c67_ranker.py": "ce727ad6809d09fd8b770cedcf3de7f1a64a9520a06f4ebd0f706880ec0364ed",
+    "configs\\c69-clean-parent-evidence-oof-20261112.json": "cd50d883c1f9b835f9148033c4edd68666cfb4f0bd1fdc88f1a16a7141439215",
+    "configs\\c70-clean-gpu-parent-evidence-oof-20261112.json": "20916ffad5b1c444defb6c2a55ef1dd74207d27d0ea557cde06ca92be1bffb0d",
+    "outputs\\local\\c69-clean-parent-evidence-oof-20261112\\data-freeze.json": "daef8f56e2da82695764d96c8739b56026b26cf8e8d489970221bf9a75d9b588",
+    "outputs\\local\\c69-clean-parent-evidence-oof-20261112\\independent-oof-audit.json": "e53a98a82485da19990a5ed93f3804bf501a6e6d32ea526e33c84b01b57a6e85",
+    "outputs\\local\\c70-clean-gpu-parent-evidence-oof-20261112\\independent-oof-audit.json": "2ad272596ddec86ecbddd95b809296135669c90e82a3bd9791936c6c7f9a85b3",
+    "outputs\\local\\c70-clean-gpu-parent-evidence-oof-20261112\\runtime-parity-audit.json": "74719fcd1ad5e1ce42f76fa0e4ab7d518f03b81c16e7127818506f47404634c2",
+    "outputs\\local\\c68-reserved-fit-boundary-20261112\\boundary-freeze.json": "9ecf9cf3c8c0364a2b5b37eebd08c8a40b089be83de80f9b21af43073bdf6d55",
+    "outputs\\local\\c71-final-clean-direct-pair-20261112\\fit-run-freeze.json": "929dfc5c8b93620a8eb58c815be131b163e5dc209060ac191f2d4e95155cc237",
+    "outputs\\local\\c71-final-clean-direct-pair-20261112\\cpu-model.npz": "96c4e05c7a419f38a0299b102e9007bb317fd1ff4605d65f8663512c6f6889e6",
+    "outputs\\local\\c71-final-clean-direct-pair-20261112\\gpu-model.npz": "85b4dcddc650ffb3036733b76473c3eaa93094b5d7b50eea1dde5436f5a52c9d",
+    "outputs\\local\\c69-clean-parent-evidence-oof-20261112\\feature-names.json": "61ae50db25cfe3b4458f3ace56a0a0255334777136f411c9890cad0d3661977e",
+    "scripts\\legacy_formate_compat.py": "eec91fbef5c8683de63c32ce94d39f95f30f950558b1dd484cf1772617ab7f78",
+    "outputs\\local\\c45-complete-parent-validation-20261112\\frozen-p16-code\\deployment.json": "354db801fe158aeb1783e2b09eb53cfacd167b973212ae2c86a85407560c4f6c"
+  },
+  "GPU_development_negative_source_mode_intersections": {
+    "C39/enveda-180/mixed": {
+      "n": 46,
+      "delta": -0.0018115942028985507,
+      "nonnegative": false
+    }
+  },
+  "development_gate": "Predeclared whole cohort/source/mode marginal guards passed; report source-mode intersections separately without calling them all nonnegative",
+  "all869_are_USED": true,
+  "new_source_quality_read": false,
+  "C13_read": false,
+  "scoring_entries": 0,
+  "maximum_new_scored_entries": 2,
+  "qualified_for_scoring": false,
+  "limitation": "Development-surviving pair only. Requires new untouched target source panel, independent full production audits, single unused C13confirmation and quota/terminal-score safeguards before scoring."
+}

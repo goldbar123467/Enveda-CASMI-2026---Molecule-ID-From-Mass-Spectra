@@ -1,0 +1,119 @@
+{
+  "completed_utc": "2026-11-12T13:20:00.229845+00:00",
+  "source_sha256": "9898fd84ca0ddaae3df5ed3acf8f7ed437e576cf0d0441a09831aa9fa983d443",
+  "result_sha256": "69ece40f4f0982dde57a94d475a0aba5911bb7d09200c6997277e8827ee94ba9",
+  "queries": 869,
+  "acquisitions": 3452,
+  "parent_evidence_independently_reconstructed": true,
+  "old87_features_and_all_original_inputs_unchanged": true,
+  "source_mode_intersections": {
+    "C39/MassBank2026.11-timsTOF/mixed": {
+      "n": 38,
+      "delta": 0.011257309941520468,
+      "nonnegative": true
+    },
+    "C39/MassBank2026.11-timsTOF/negative": {
+      "n": 32,
+      "delta": 0.004166666666666667,
+      "nonnegative": true
+    },
+    "C39/MassBank2026.11-timsTOF/positive": {
+      "n": 10,
+      "delta": 0.018075396825396824,
+      "nonnegative": true
+    },
+    "C39/enveda-np-examples/positive": {
+      "n": 33,
+      "delta": 0.015151515151515152,
+      "nonnegative": true
+    },
+    "C39/enveda-np-examples/mixed": {
+      "n": 42,
+      "delta": 0.023809523809523808,
+      "nonnegative": true
+    },
+    "C39/enveda-np-examples/negative": {
+      "n": 5,
+      "delta": 0.02666666666666667,
+      "nonnegative": true
+    },
+    "C39/enveda-180/mixed": {
+      "n": 46,
+      "delta": 0.0,
+      "nonnegative": true
+    },
+    "C39/enveda-180/positive": {
+      "n": 133,
+      "delta": 0.003851891633846521,
+      "nonnegative": true
+    },
+    "C39/enveda-180/negative": {
+      "n": 13,
+      "delta": 0.0038461538461538464,
+      "nonnegative": true
+    },
+    "C51/MassBank2026.11-remaining-ESI/positive": {
+      "n": 5,
+      "delta": 0.0033333333333333335,
+      "nonnegative": true
+    },
+    "C51/NIST-public-APCI-timsTOF-standards/positive": {
+      "n": 30,
+      "delta": 0.016666666666666666,
+      "nonnegative": true
+    },
+    "C53/enveda-180/mixed": {
+      "n": 93,
+      "delta": 0.0,
+      "nonnegative": true
+    },
+    "C53/enveda-180/negative": {
+      "n": 26,
+      "delta": 0.0,
+      "nonnegative": true
+    },
+    "C53/enveda-180/positive": {
+      "n": 265,
+      "delta": 0.0011320754716981133,
+      "nonnegative": true
+    },
+    "C53/enveda-np-examples/mixed": {
+      "n": 48,
+      "delta": 0.034027777777777775,
+      "nonnegative": true
+    },
+    "C53/enveda-np-examples/positive": {
+      "n": 42,
+      "delta": 0.05033068783068783,
+      "nonnegative": true
+    },
+    "C53/enveda-np-examples/negative": {
+      "n": 8,
+      "delta": 0.07916666666666666,
+      "nonnegative": true
+    }
+  },
+  "improved_queries": 39,
+  "harmed_queries": 2,
+  "chemistry_group_bootstrap_95_interval": [
+    0.005611601861601862,
+    0.013492801382891502
+  ],
+  "bootstrap_limitation": "Adaptive USED OOF, not a fresh prospective uncertainty guarantee",
+  "query_chemistry_edges_never_cross_folds": true,
+  "train_only_scaling_exact": true,
+  "convex_training_objective_gradient_maxima": [
+    1.9455520686162409e-07,
+    1.677146672617036e-07,
+    1.6170946451690704e-07,
+    3.3910230887515547e-07,
+    1.8846188515331264e-07
+  ],
+  "actual_saved_OOF_scores_and_lists_exact": true,
+  "all_original_source_mode_fraction_points_exact": true,
+  "absent_truths_zero": true,
+  "CPU_gate_passed": true,
+  "C13_read": false,
+  "scoring_entries": 0,
+  "prospective_qualification": false
+}

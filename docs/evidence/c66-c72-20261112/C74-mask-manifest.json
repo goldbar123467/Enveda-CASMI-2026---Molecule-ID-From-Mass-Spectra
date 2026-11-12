@@ -1,0 +1,53 @@
+{
+  "frozen_utc": "2026-11-12T13:59:24.285377+00:00",
+  "kind": "C53_target_complete_P16_reference_holdout",
+  "source_sha256": "0533babff38d0fd1b540269758315a0ed014d9ef84b1d178f8fc12981c628b16",
+  "policy_sha256": "40d8e576b1163a4395f904cef9d5e8d14a10eb30f279f1b771950d8e2d38bf94",
+  "original_deployment_sha256": "354db801fe158aeb1783e2b09eb53cfacd167b973212ae2c86a85407560c4f6c",
+  "original_reference_files": {
+    "ext_meta.parquet": "9b0c2d675612580a4aedbdd3c8891d046fdf864b0805aaef852acc6653f7d37f",
+    "ext_mz.npy": "a14f750d46bfca4176110d1a83cc3562944a3ca1e3f1344c94141f6d8d85fad5",
+    "ext_in.npy": "e47b359f27d0aacda22f7ef47f8f60f7912136027d70d2bc915890a8d51be841"
+  },
+  "query_sha256": "59baf2217042e41f07747c7d20de3f28f1321fb2008bbf2d2c194bd16e827d79",
+  "query_source_kind": "Original independently auditedC53query-only export; cloud fidelity must be exact before replay",
+  "exclusion_structure_source_sha256": "654354336006306fd779a0c710f67a0a27ae2de15da368ae16a3031f96d086d4",
+  "global_exclusion_chemistry_sha256": "1561fafc6cc73d1662de3849506b53d36df224790d9a5d6f674fc7de4f82af24",
+  "original_global_raw_alias_sha256": "c29cf32bdfd0242c63e009182a47e1c2a526d597f25dbbcc5cf956d691085c55",
+  "original_structure_witness_sha256": "0286a8a2ddaa9ed235c15eb7ec19165b385293dfba8edaadc40b46d70c1c9a11",
+  "known_raw_aliases": 91846,
+  "known_official_aliases": 92055,
+  "queries": 512,
+  "acquisitions": 2215,
+  "original_rows": 200724,
+  "excluded_rows": 194538,
+  "retained_rows": 6186,
+  "exact_precursor_reachable_rows": 11978,
+  "lossless_precursor_pruning": true,
+  "nonexclusive_reasons": {
+    "invalid_identity": 0,
+    "query_identity": 19,
+    "known_official_alias": 186,
+    "same_formula": 2263,
+    "same_nonempty_scaffold": 4467,
+    "near_query_tanimoto": 69,
+    "outside_all_frozen_precursor_windows": 188746,
+    "known_raw_alias": 3327,
+    "query_input_alias": 0
+  },
+  "forbidden_rows_retained": 0,
+  "retained_order_and_all_peak_fields_exact": true,
+  "production_reference_changed": false,
+  "quality_metrics_read": false,
+  "C13_read": false,
+  "limitation": "Controlled query-chemistry and bounded signature exclusion; public model pretraining exposure remains disclosed. Rounded full-peak/top96 signatures do not prove universal provenance exclusion.",
+  "reference_files": {
+    "ext_meta.parquet": "376d2963443d751f340f36a56d6ffaf18e47e928a7bf778f69b37f82e6def11b",
+    "ext_mz.npy": "d16dab9c5f5d9b8d9d05df986c76137cb7fae1a42951e2a9225f74f195fb002f",
+    "ext_in.npy": "4beabb0c0c5028b51faec7f0711e655b435859640dab9ba65dbfa5a94d247842"
+  },
+  "audit_files": {
+    "identity-audit.parquet": "0611764edf1f9a83e7cbce6c06fcc4d7cacac3c3a526b0e9101a4a398cf5c4bf",
+    "row-exclusion-audit.parquet": "b995595e72f8823751bf7f393416f7e34c304e8971e24f60c10fc03a004e85a6"
+  }
+}

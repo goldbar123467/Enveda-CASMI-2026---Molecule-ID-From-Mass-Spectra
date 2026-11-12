@@ -1,0 +1,11 @@
+{
+  "kind": "C74complete clean parent validation for frozen C71pair",
+  "queries": 512,
+  "acquisitions": 2215,
+  "parent": "Exact P01scientific payload3f973ab + frozen P16 + frozen neutral-mass consistency adapter",
+  "reference_rule": "Preserve all old masks; global ALLUSED/fresh512/reserved231identity/formula/nonemptyMurcko/Morgan2>=.70 and raw/full/top96acquisition aliases; exclude lossless unreachable precursor windows.",
+  "quality_read": false,
+  "C13_read": false,
+  "can_submit": false,
+  "complete_pipeline_binding": "outputs/local/c71-final-clean-direct-pair-20261112/complete-pipeline-binding.json"
+}

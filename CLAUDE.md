@@ -1,3 +1,105 @@
+## Immediate runtime state — Kaggle weekly quota rejected; C75 local port underway
+
+At 13:52:36UTC Nov12, the actual C73 T4 push was REJECTED before a version was
+created: "Maximum weekly GPU quota of 30.00 hours reached." Response version0,
+emptyURL. The private query dataset is ready. Do NOT blindly requeue or call
+this a running cloud job. No new scored submission exists; approvals remain0/2.
+This is one demonstrated external limitation, not a complete goal blocker while
+local work can progress. No paid compute is authorized or requested.
+
+All C72 acquisition/official-identity/chemistry audits passed:512queries/2215actual
+timsTOFacquisitions,870logged unusable acquisitions, full source fidelity. All
+3220actual fitting acquisitions vs2215new acquisitions have ZERO full/top96input
+aliases; the513raw alias keys have no fitted-query official-identity overlap.
+C73 masks independently passed:91846mainSIDs/rawkeys excluded;182742allowed
+reference identities independently checked against ALLUSED/fresh/global231chemistry.
+C74 P16 external-reference mask independently passed:6186retained of200724rows,
+11978precursor-reachable, exact retained peaks/metadata and zero forbidden/input-
+alias rows. Source labels/quality outcomes and C13 remain unconsumed.
+
+WSL Ubuntu-24.04 is installed and sees the actual local RTX2070(8GiB); Linux
+Python3.12.3. Created ISOLATED /home/imsa/.venvs/enveda-c75 with PyPAvirtualenv
+zipapp, without changing frozen Windows GPU/encoder environments or systemPython.
+CUDA Torch2.11.0+cu128 install succeeded; CPU/runtime dependencies are installing
+from configs/c75-wsl-requirements.txt. Installation file cache briefly reduced
+host reserve; targeted posix_fadvise ONLY on this new venv/pip cache restored
+14.47GiBfree. Preserve at least4GiBhost reserve; never shut down unrelated WSL
+processes or user apps to recover memory.
+
+Active C75asset workers: scripts/prepare_c75_v4g_assets.py (complete original237file,
+20,082,868,365byte public dataset; remote census matches original; reuse pinned
+C20copies) and prepare_c75_aux_assets.py (other5publicdataset mounts,388files,
+13,041,244,810bytes). It explicitly omits ONLY12unused64GiBfingerprint-index binary
+shards: the frozen pipeline/PC runner/helpers never import that index. Full remote
+census is retained. All remaining original inference arrays/helpers are fetched.
+Workers/checkpoints are in outputs/local/c75-local-core-port-20261112. Actual
+process IDs and tool sessions may differ from venv launchers; reconcile them.
+The old compute-paused.json marker is historical (Nov11 before22:29newgoal) and
+MUST stay to disable old controllers. C75uses newer explicit C38authorization.
+
+NEXT: finish isolated deps/assets; verify CUDA; port only paths/GPU1->GPU0/worker
+resource controls while preserving every scientific threshold/model/algorithm.
+Require parity against a metadata-selected USED real12subset of completedC57
+with its ORIGINAL masks before fresh512full inference. Original3f973abpayload
+and decoded helper modules are extracted privately under C75; no port or local
+inference has yet run. Do not claim a Linuxport is an already-qualified pipeline.
+C71models stay frozen; C72fresh quality/C13reserved outcomes remain sealed.
+
+## Active goal — clean C71 pair frozen; C72 fresh source audits underway
+
+The native goal remains ACTIVE until two actual new terminal numeric Kaggle
+scores. 0/2 approved scored entries used; no repeat approval is needed. Preserve
+the 0.480 champion, all historical evidence and the single shared C42 submission
+ledger. Keep old/hourly controllers OFF. C13 has NEVER been consumed.
+
+C64/C65 rejected. Adding omitted parent continuous ranks, documentation and NP
+priors produced development-positive C66 CPU and C67 GPU. A further audit found
+two global reserved structures used as negative training candidates. Those fits
+are permanently HELD from qualification; their positive metrics remain history.
+The unused fit_c67_final_pair.py entry point now explicitly refuses to run.
+
+C68 resolved the ENTIRE public 231-identity reserved inventory for exclusion only,
+without reading the selected120 query mapping or any reserved outcomes. Its
+identity/formula/nonempty-Murcko/Morgan2>=0.70 quarantine excludes connected query
+components and candidate rows from BOTH pair loss and fitted feature scaling.
+All 869 USED queries/3,452 acquisitions/21,719 candidates remain in evaluation;
+780 queries/3,220 acquisitions/18,833 candidate rows are eligible for fitting.
+
+C69 strict CPU OOF passes every predeclared cohort/source/mode marginal guard:
+MRR +0.008493724 vs P01, 36 improved truths and 2 harmed. C70 strict GPU OOF also
+passes those guards: +0.013019999, 47 improved and 4 harmed. GPU has one disclosed
+negative intersection, old Enveda180 mixed46: -0.001811594; do not claim every
+intersection is nonnegative. CPU intersections are all nonnegative. These are
+adaptive USED results, not fresh confirmation or public score predictions.
+
+Independent audits reconstruct features, train-only normalization, exact ranks
+and fractions, convex CPU optima, all five GPU training replays and NumPy serving.
+C71 refit both fixed recipes using ONLY eligible rows, independently replayed the
+actual final fit and bound the complete frozen P01/P16/physical-adapter/head
+recipe. CPU/GPU models are immutable; no new source outcomes have been read.
+
+C72 was selected AFTER that complete binding: 512 untouched Enveda180 identities,
+353 positive/124 mixed/35 negative, all 2,215 usable original acquisitions; 870
+unusable acquisitions explicitly logged. Selection excludes every USED/global
+reserved chemistry and every prior head-input candidate identity, without using
+quality outcomes. NP examples are exhausted; plant metadata remains unresolved.
+This is controlled target-domain in-corpus validation, not independent labs.
+
+Current work: C72 all-raw acquisition alias census, independent acquisition and
+chemistry audit; C73 global reference chemistry/mask preparation. Only then build
+and run the same frozen dual-T4 core, execute physical P16 and both frozen heads,
+freeze predictions before one whole-panel quality evaluation, and independently
+audit it. If both survive, actual production checks and the sole joint unused
+C13 confirmation remain mandatory before CPU submit -> numeric score -> GPU
+submit -> numeric score. C59/C62 old C56 release paths stay HELD.
+
+Current artifacts: outputs/local/c68-reserved-fit-boundary-20261112;
+outputs/local/c69-clean-parent-evidence-oof-20261112;
+outputs/local/c70-clean-gpu-parent-evidence-oof-20261112;
+outputs/local/c71-final-clean-direct-pair-20261112;
+outputs/local/c72-clean-target-holdout-20261112;
+outputs/local/c73-clean-target-validation-20261112; docs/evidence/c66-c72-20261112.
+
 ## Active CPU development — C64/C65 reject; no GPU or scoring release
 
 The native goal remains active until TWO actual new terminal numeric scores.

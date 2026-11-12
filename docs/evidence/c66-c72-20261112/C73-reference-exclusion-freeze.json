@@ -1,0 +1,26 @@
+{
+  "completed_utc": "2026-11-12T13:47:25.307217+00:00",
+  "source_sha256": "cfb3b0ca9b7f59033c47cd077eb045ef95bb5a32f66cf8093e1f73d3af42cefa",
+  "panel_freeze_sha256": "d819cd2b8f8cfcf9b05b8f5f3d91417b16e51e4d6788ff9c9cf98fe2b21ee3e3",
+  "classification_freeze_sha256": "6655fa11df1ff92382bf101a7fe435217970da6ad2a62b46e161b6a2f66caccb",
+  "raw_alias_audit_sha256": "136fa603b9bf8ea6f3b019ab84ed6ffb5f34c0cc0aa72bbea864f668709a38a9",
+  "complete_pipeline_binding_sha256": "ca0102078be7f068d9ffd939a99f1a6e009b560398fd46b04097532176df7288",
+  "reference_structure_sha256": "f20aa1cac23af42e430a6633707fda34e48dea97114bdc3e443897f692df3656",
+  "queries": 512,
+  "acquisitions": 2215,
+  "reference_SIDs": 275810,
+  "excluded_main_SIDs": 91846,
+  "excluded_raw_keys": 91846,
+  "excluded_official_keys": 91452,
+  "alias_closure_rounds": 2,
+  "all_prior_reference_exclusions_preserved": true,
+  "global_all_USED_fresh512_reserved231_chemistry_and_alias_quarantine": true,
+  "files_sha256": {
+    "main-reference-sid-exclusion.npy": "30d713aac248cdcaec35fb702be57e7b3f6f1231594ef4fe9d3829fdf0446ee4",
+    "engine2-raw-key-exclusion.json": "c29cf32bdfd0242c63e009182a47e1c2a526d597f25dbbcc5cf956d691085c55",
+    "original-structure-identity-witnesses.parquet": "0286a8a2ddaa9ed235c15eb7ec19165b385293dfba8edaadc40b46d70c1c9a11"
+  },
+  "query_truth_map_mounted": false,
+  "quality_outcomes_read": false,
+  "C13_read": false
+}

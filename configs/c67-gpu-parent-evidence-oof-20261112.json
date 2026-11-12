@@ -1,0 +1,43 @@
+{
+  "kind": "C67fixed GPU nonlinear direct-ranking residual over independently audited C66CPU",
+  "queries": 869,
+  "acquisitions": 3452,
+  "seed": 20261167,
+  "folds": 5,
+  "chemistry_groups": "Union query identities, formulas, nonempty Murcko scaffolds and Morgan2 Tanimoto >=0.7 across all869; whole components assigned to one outer fold",
+  "features": "Exact frozen101C66features; no identifiers or new fitted encoders",
+  "physical_parent": "Retain P16promotion only when reference and query adduct-implied neutral masses agree within max0.002Da/10ppm. Preserve original tokens; unknown mass falls back to P01. Never change a query/cohort.",
+  "ranking": "Same formula slots over C66CPU score plus bounded nonlinear correction; no membership or formula-slot changes",
+  "cpu": {
+    "device": "cpu",
+    "model": "linear residual",
+    "loss": "Per-query balanced logistic loss on correct-vs-decoy same-formula pairs",
+    "ridge": 0.1,
+    "optimizer": "LBFGS",
+    "max_iter": 200,
+    "dtype": "float64",
+    "threads": 2
+  },
+  "selection": "One fixed GPU prototype after independent CPU guard pass; complete chemistry-fold pipeline remains held out; fixed final epoch, no early stopping; all869USED retained",
+  "cpu_gate_before_GPU": "Positive full869 versus both P01 and P16; original192/352 positive; every original cohort/source/actual-mode guard nonnegative. Report all intersections, rank1 changes and missing-truth zeros.",
+  "prospective_work_remaining": "Any development survivor still needs a new frozen untouched source panel, independent production audits and the single unused C13confirmation before scoring. These869are all USED.",
+  "can_consume_C13": false,
+  "can_submit": false,
+  "can_fit_GPU": true,
+  "method_reference": "https://www.microsoft.com/en-us/research/publication/learning-to-rank-using-gradient-descent/",
+  "runtime_reference": "https://docs.pytorch.org/docs/2.11/generated/torch.nn.BCEWithLogitsLoss.html",
+  "motivation": "C64omitted decisive information already used by the frozen parent. Several harmed examples have stronger documentation priors than the competing structure. Verify label-free reconstruction before CPU OOF; preserve all869and every guard.",
+  "gpu": {
+    "device": "cuda:0",
+    "model": "101->32 GELU(tanh approximation)->1; correction0.25*tanh(output)",
+    "epochs": 200,
+    "optimizer": "AdamW",
+    "learning_rate": 0.001,
+    "weight_decay": 0.01,
+    "correction_MSE_penalty": 0.1,
+    "dropout": 0,
+    "threads": 2,
+    "dtype": "float32",
+    "checkpoint": "final fixed epoch only; no outer label/metric selection"
+  }
+}

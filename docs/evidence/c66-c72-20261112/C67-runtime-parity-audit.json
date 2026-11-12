@@ -1,0 +1,12 @@
+{
+  "completed_utc": "2026-11-12T13:32:31.924429+00:00",
+  "runtime_sha256": "ce727ad6809d09fd8b770cedcf3de7f1a64a9520a06f4ebd0f706880ec0364ed",
+  "features": 101,
+  "candidates": 21719,
+  "queries": 869,
+  "original_unlabeled_acquisitions_only": true,
+  "feature_values_bitwise_exact": true,
+  "both_5fold_candidate_lists_exact": true,
+  "C13_read": false,
+  "scoring_entries": 0
+}

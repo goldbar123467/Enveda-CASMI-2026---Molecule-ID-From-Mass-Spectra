@@ -1,0 +1,37 @@
+{
+  "prepared_utc": "2026-11-12T13:18:22.685228+00:00",
+  "source_sha256": "fe58dc487bcdf4a2953ea57d4b53ea903535ac05f055892dbb8f96bef781f78c",
+  "policy_sha256": "b849848d073e681c0a768e03421f0d5e7d674178e5c193af577c683681b00984",
+  "queries": 869,
+  "acquisitions": 3452,
+  "candidates": 21719,
+  "features": 101,
+  "chemistry_groups": 741,
+  "fold_queries": [
+    171,
+    186,
+    171,
+    171,
+    170
+  ],
+  "all_original_queries_retained": true,
+  "no_C56_fitted_projection_reused": true,
+  "C13_read": false,
+  "model_fitted": false,
+  "scoring_entries": 0,
+  "files_sha256": {
+    "scripts\\prepare_c66_parent_evidence.py": "fe58dc487bcdf4a2953ea57d4b53ea903535ac05f055892dbb8f96bef781f78c",
+    "configs\\c66-parent-evidence-oof-20261112.json": "b849848d073e681c0a768e03421f0d5e7d674178e5c193af577c683681b00984",
+    "outputs\\research\\pop-prior\\pool_popularity.csv": "33955e2fb32d3e8b6d030f5585f7823097194829f434df90f8214be44b7ba764",
+    "outputs\\local\\c64-pairwise-oof-20261112\\data-freeze.json": "d7fbc372f7adb689f21a1d589050ebb5f676f033d2ad63844106fb2249580a2c",
+    "outputs\\forks\\c41r3-full-masked-validation-v1\\c41_neural_p01.parquet": "fc6c3fb7e1d792c0a5d085d1307b66e1dc00336909a5affcb3d6d533888490e8",
+    "outputs\\forks\\c50-full-masked-validation-v1\\c41_neural_p01.parquet": "bb3c0057e75ddec4273b5f8d529bd6e0679960203c4b5fb5b1035e0253ffce55",
+    "outputs\\forks\\c57-full-masked-validation-v1\\c41_neural_p01.parquet": "7634c4d8eca09ff3d2df7524bccc880f740b837041842bff1191f38c56a40426",
+    "outputs\\local\\c66-parent-evidence-oof-20261112\\queries.parquet": "59c9975521d2443895f21dd3e35de78aeb8ab880f9e7a4285655d7e06b1d26a0",
+    "outputs\\local\\c66-parent-evidence-oof-20261112\\candidates.parquet": "a96a7681901854a4d07d5a965fa1948c76daee8d51e3510700954194496ccf3b",
+    "outputs\\local\\c66-parent-evidence-oof-20261112\\features.npy": "8c804c5e7b85911f5b87a9322b75ea7ebb76f3bf1a520bdbfa9962fc139b1ac8",
+    "outputs\\local\\c66-parent-evidence-oof-20261112\\feature-names.json": "61ae50db25cfe3b4458f3ace56a0a0255334777136f411c9890cad0d3661977e",
+    "outputs\\local\\c66-parent-evidence-oof-20261112\\physical-parent-changes.json": "24944c66cd01d44dbc5d9a18a9299618321c7a1f31f48527b9e22d2761a56bcf",
+    "outputs\\local\\c66-parent-evidence-oof-20261112\\parent-score-reconstruction.json": "1245bf9e35ca6e6047eeb49dea4c868d8537a85b6bf3771f910a577b0c55df0e"
+  }
+}

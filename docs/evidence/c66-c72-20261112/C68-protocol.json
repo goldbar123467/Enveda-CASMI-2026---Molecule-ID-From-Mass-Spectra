@@ -1,0 +1,12 @@
+{
+  "frozen_utc": "2026-11-12T13:30:27.253785+00:00",
+  "source_sha256": "d81a0570eca3103960b3e4bd0901dd7f8a060ef15cfb7ad25c4fe37a9bbb343d",
+  "rule": "All231global public-inventory identities plus sameformula/nonemptyMurcko/Morgan2Tanimoto>=.70; remove connected query chemistry components from fitting only and quarantine candidate rows from pair loss AND global feature scaling. No query/candidate is removed from evaluation.",
+  "public_SMILES_only": true,
+  "query_structure_mapping_read": false,
+  "C13_selected120_labels_read": false,
+  "C13_outcomes_read": false,
+  "original_data_freeze_sha256": "0856f545382e3366bc485b149b9cbbd2b329684ef45860db8876bba634f4b28f",
+  "archive_sha256": "febe375faf786ab65950c50ec8f0c4ee8ea9c8ce6ff10b4cd68f25fcd5ce1e31",
+  "global_inventory_sha256": "ecdb7ce02b39fb694f29d3b57e11d4474a8f62f56966e3e289385032c8a0ac15"
+}

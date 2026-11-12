@@ -1,0 +1,29 @@
+{
+  "completed_utc": "2026-11-12T13:46:03.636752+00:00",
+  "source_sha256": "7ad72ebf6799674e07eb51fe527e37c185e15c1500e2eeb7a3e857cee2639cd4",
+  "panel_freeze_sha256": "d819cd2b8f8cfcf9b05b8f5f3d91417b16e51e4d6788ff9c9cf98fe2b21ee3e3",
+  "queries": 512,
+  "acquisitions": 2215,
+  "chemistry_groups": 471,
+  "actual_query_modes": {
+    "positive": 353,
+    "mixed": 124,
+    "negative": 35
+  },
+  "all_original_raw_rows_checked": 2539608,
+  "all_usable_acquisitions_retained": true,
+  "all_original_metadata_and_untrimmed_peak_arrays_exact": true,
+  "all512official_structure_identities_verified": true,
+  "actual_instrument_acquisitions": {
+    "timsTOF": 2215
+  },
+  "every_unusable_acquisition_explicitly_accounted": true,
+  "unusable_acquisitions": 870,
+  "all_USED_and_global231reserved_identity_formula_scaffold_and_near_chemistry_disjoint": true,
+  "all_head_input_identity_overlap": 0,
+  "maximum_to_USED_or_global_reserved_Morgan2_Tanimoto": 0.6557377049180327,
+  "query_labels_mounted": false,
+  "prediction_outcomes_read": false,
+  "C13_read": false,
+  "limitation": "Controlled in-corpus holdout. Public parent/encoder historic exposure persists; no independent laboratory or universal spectral novelty claim."
+}

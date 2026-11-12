@@ -255,3 +255,12 @@ scripts/audit_guarded_past_export.py text eol=lf
 scripts/qualify_guarded_past_export.py text eol=lf
 scripts/submit_guarded_past_trial.py text eol=lf
 kaggle/forks/p19-c18-guarded-export/* -text whitespace=trailing-space,space-before-tab,cr-at-eol
+
+# Preserve executed C66-C75 source/contract bytes, including original mixed
+# Windows/LF generation, because the immutable audit receipts hash those bytes.
+scripts/*c6[6-9]*.py -text whitespace=trailing-space,space-before-tab,cr-at-eol
+scripts/*c7[0-5]*.py -text whitespace=trailing-space,space-before-tab,cr-at-eol
+configs/c6[6-9]* -text whitespace=trailing-space,space-before-tab,cr-at-eol
+configs/c7[0-5]* -text whitespace=trailing-space,space-before-tab,cr-at-eol
+kaggle/forks/c73-full-masked-validation/* -text whitespace=trailing-space,space-before-tab,cr-at-eol
+docs/evidence/c66-c72-20261112/* -text whitespace=trailing-space,space-before-tab,cr-at-eol

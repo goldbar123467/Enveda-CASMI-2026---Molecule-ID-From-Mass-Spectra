@@ -1,0 +1,20 @@
+{
+  "completed_utc": "2026-11-12T13:49:47.789223+00:00",
+  "source_sha256": "74c56e733997d5c4abfaddbfec31e492cd686c45f3fe1c93a7e439f05849e5ec",
+  "reference_exclusion_freeze_sha256": "27195e8bf82a4f0fe12a31accf41a04662e4cad579e9440284ad191b51c9aec9",
+  "main_SIDs": 275810,
+  "excluded_main_SIDs": 91846,
+  "retained_main_SIDs": 183964,
+  "excluded_raw_keys": 91846,
+  "independently_checked_allowed_official_identities": 182742,
+  "maximum_retained_to_global_exclusion_Tanimoto": 0.6987951807228916,
+  "every_raw_and_official_alias_component_uniformly_quarantined": true,
+  "exact_main_SID_mask_reconstructed": true,
+  "all_prior_masks_and_fresh_acquisition_aliases_preserved": true,
+  "retained_global_excluded_identity_formula_scaffold_or_near_chemistry": 0,
+  "query_or_candidate_removal": 0,
+  "per_query_answer_map_mounted": false,
+  "quality_outcomes_read": false,
+  "C13_read": false,
+  "passed": true
+}

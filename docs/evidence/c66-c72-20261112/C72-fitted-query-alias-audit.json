@@ -1,0 +1,18 @@
+{
+  "completed_utc": "2026-11-12T13:46:01.994470+00:00",
+  "queries": 512,
+  "acquisitions": 2215,
+  "actual_fitting_query_acquisitions": 3220,
+  "matched_raw_alias_keys": 513,
+  "official_alias_overlap_with_fitted_query_identities": 0,
+  "full_peak_or_top96_alias_overlap_with_actual_fitting_acquisitions": [
+    0,
+    0
+  ],
+  "all_original_fit_and_new_query_acquisitions_checked": true,
+  "query_removal": 0,
+  "quality_outcomes_read": false,
+  "C13_read": false,
+  "training_data_freeze_sha256": "daef8f56e2da82695764d96c8739b56026b26cf8e8d489970221bf9a75d9b588",
+  "new_panel_freeze_sha256": "d819cd2b8f8cfcf9b05b8f5f3d91417b16e51e4d6788ff9c9cf98fe2b21ee3e3"
+}

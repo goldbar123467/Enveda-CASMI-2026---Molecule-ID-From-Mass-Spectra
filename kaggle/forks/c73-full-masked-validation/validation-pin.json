@@ -1,0 +1,31 @@
+{
+  "prepared_utc": "2026-11-12T13:48:39.111281+00:00",
+  "builder_sha256": "1e74fbcf074877fbae005d0045e16f26a1d3cce0c6a8e739f88dda7d0634bd0f",
+  "template_sha256": "23d06ba65b7c9a22156f72868ea4a790c8f3ba168ae7134dbbce62692145f33a",
+  "notebook_sha256": "550f328a6edb1ae3ba2841cf4d2933e3ede92c1f8af3fc03e4965a2ac5718d38",
+  "query_contract_sha256": "2614e5b0b0ad29150cfe5b59df35c31b2837a7956c95a0d7902d83d7538c46da",
+  "frozen_scientific_payload_sha256": "3f973abbb1593e356db4f6dec149c8ad99f5afa5ded8da8bab59152bd49e60e7",
+  "frozen_changed_cells": {
+    "legacy_source_boundary": 27,
+    "engine2_reference_index": 32,
+    "main_reference_constructor": 37
+  },
+  "outer_changed_cells": [
+    0,
+    6,
+    12,
+    27
+  ],
+  "guard_source_sha256": "985bcfd305b750553b9c0e8d839c03ec03b3f49a1804116f73d4961432bb9847",
+  "compat_source_sha256": "eec91fbef5c8683de63c32ce94d39f95f30f950558b1dd484cf1772617ab7f78",
+  "mode": "full",
+  "queries": 512,
+  "spectra": 2215,
+  "labels_mounted": false,
+  "private": true,
+  "internet": false,
+  "scoring_submission": false,
+  "wrapper_source_sha256": "599e2e12d5ad530a235aa46604ce63fb79e31043b90e4265b5b947e6be61d990",
+  "same_scientific_payload_as_completed_C57": true,
+  "complete_pipeline_binding_sha256": "ca0102078be7f068d9ffd939a99f1a6e009b560398fd46b04097532176df7288"
+}

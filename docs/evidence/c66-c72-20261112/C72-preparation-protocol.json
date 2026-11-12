@@ -1,0 +1,18 @@
+{
+  "frozen_utc": "2026-11-12T13:38:45.986540+00:00",
+  "source_sha256": "0fb424f035ef88b23c1138de7b3adb2a1f716b7cbb6af873793c0a7d44998dbb",
+  "inventory_sha256": "b924aead58cc73da27e0b6982e538235e758f5fdba13336cc5f4f78a996c2df1",
+  "complete_pipeline_binding_sha256": "ca0102078be7f068d9ffd939a99f1a6e009b560398fd46b04097532176df7288",
+  "design": "512deterministically drawn eligible Enveda180identities from the immutable C52bounded inventory,353positive/124mixed/35negative, proportions from original400unlabeled target modes. Exclude ALL previously USED and global231reserved chemistry plus every21719head-input candidate identity. Never select by prediction/error/outcome.",
+  "actual_query_mode_counts": {
+    "positive": 353,
+    "mixed": 124,
+    "negative": 35
+  },
+  "usable_acquisitions": "All original selected-identity aliases/acquisitions with allowed7adducts, positive finite precursor and>=3finite positive peaks. Full untrimmed peaks/originalCE/actualmixedmodes. Canonical legacy formate adapter only.",
+  "source_scope": "Fresh for the frozen new pair. Only Enveda180has sufficient unused supported chemistry; NPexamples exhausted, plant metadata unresolved, prior MassBank/NIST remain USED guards. Controlled in-corpus target validation, not independent laboratories or public leaderboard calibration.",
+  "quality_gate": "Freeze BOTH complete prediction sets before one joint evaluation; full512gain strictpositive versus P01/P16/physicalparent, each original actualmode guard nonnegative, all absent truths zero, recoveries/displacements explicit. No within-family repair or cohort narrowing after outcomes.",
+  "no_prediction_outcomes_read": true,
+  "C13_labels_or_predictions_read": false,
+  "new_model_fits_exclude_entire_panel": true
+}

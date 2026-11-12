@@ -1,0 +1,18 @@
+{
+  "completed_utc": "2026-11-12T13:48:39.173848+00:00",
+  "source_sha256": "599e2e12d5ad530a235aa46604ce63fb79e31043b90e4265b5b947e6be61d990",
+  "dataset": "clarkkitchen/casmi26-c73-full-masked-validation-20261111",
+  "kernel": "clarkkitchen/casmi26-c73-full-masked-validation",
+  "queries": 512,
+  "acquisitions": 2215,
+  "notebook_sha256": "550f328a6edb1ae3ba2841cf4d2933e3ede92c1f8af3fc03e4965a2ac5718d38",
+  "query_contract_sha256": "2614e5b0b0ad29150cfe5b59df35c31b2837a7956c95a0d7902d83d7538c46da",
+  "complete_pipeline_binding_sha256": "ca0102078be7f068d9ffd939a99f1a6e009b560398fd46b04097532176df7288",
+  "same_original_R3_scientific_payload": true,
+  "reference_masks_required": true,
+  "labels_mounted": false,
+  "new_source_outcomes_read": false,
+  "C13_read": false,
+  "scored_entry": false,
+  "models_fitted_in_kernel": false
+}

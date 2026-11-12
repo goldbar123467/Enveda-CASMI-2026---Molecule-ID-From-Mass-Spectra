@@ -1,0 +1,21 @@
+{
+  "completed_utc": "2026-11-12T13:37:33.063713+00:00",
+  "source_sha256": "abaf607a97f666ba7138b43d29acb52248e9b6ce04f69a98600d3de574f1325f",
+  "candidate_freeze_sha256": "cdd63ce2fe8da43d525d6234f5745b143f608e29f69da0a88f2edd182ff21b0b",
+  "fitting_queries": 780,
+  "fitting_acquisitions": 3220,
+  "fitting_candidate_rows": 18833,
+  "candidate_pair_count": 14490,
+  "all869evaluation_queries_retained": true,
+  "all21719evaluation_candidates_retained": true,
+  "reserved_identity_and_chemistry_fit_overlap": 0,
+  "CPU_unique_convex_optimum_gradient_maximum": 6.447254091018761e-07,
+  "CPU_scaling_eligible_rows_only_exact": true,
+  "GPU_actual_clean_CPU_anchor_exact": true,
+  "GPU_fixed_seed_200epoch_training_replay_exact": true,
+  "exported_NumPy_forward_exact": true,
+  "C13_query_mapping_or_outcomes_read": false,
+  "new_source_quality_read": false,
+  "scoring_entries": 0,
+  "qualified_for_scoring": false
+}

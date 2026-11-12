@@ -1,0 +1,32 @@
+{
+  "frozen_utc": "2026-11-12T13:37:33.104312+00:00",
+  "source_sha256": "abaf607a97f666ba7138b43d29acb52248e9b6ce04f69a98600d3de574f1325f",
+  "candidate_freeze_sha256": "cdd63ce2fe8da43d525d6234f5745b143f608e29f69da0a88f2edd182ff21b0b",
+  "P01_frozen_scientific_payload_sha256": "3f973abbb1593e356db4f6dec149c8ad99f5afa5ded8da8bab59152bd49e60e7",
+  "P16_frozen_deployment_sha256": "354db801fe158aeb1783e2b09eb53cfacd167b973212ae2c86a85407560c4f6c",
+  "runtime_sha256": "ce727ad6809d09fd8b770cedcf3de7f1a64a9520a06f4ebd0f706880ec0364ed",
+  "CPU_model_sha256": "96c4e05c7a419f38a0299b102e9007bb317fd1ff4605d65f8663512c6f6889e6",
+  "GPU_model_sha256": "85b4dcddc650ffb3036733b76473c3eaa93094b5d7b50eea1dde5436f5a52c9d",
+  "physical_adapter": "c67_ranker.physical_parent; original adduct tokens; max0.002Da/10ppm neutral-mass check; unknown keepsP01",
+  "reference_use": "Production uses exact frozen reference assets; controlled validation quarantines allUSED/fresh/globalreserved231chemistry and acquisition aliases",
+  "files_sha256": {
+    "outputs\\local\\c71-final-clean-direct-pair-20261112\\complete-candidate-freeze.json": "cdd63ce2fe8da43d525d6234f5745b143f608e29f69da0a88f2edd182ff21b0b",
+    "outputs\\local\\c71-final-clean-direct-pair-20261112\\independent-fitted-pair-audit.json": "38dafe7646f86435da7a8164ffc003dd2132880f7f2fa86c5c66abdc64d6c769",
+    "kaggle\\forks\\c57-full-masked-validation\\notebook.ipynb": "c652cfa0b87951c8d39efaee5db20d10dfe6b5c574024969d7168292ea9be57a",
+    "kaggle\\forks\\c57-full-masked-validation\\validation-pin.json": "9d18c18c5ca39b9a0efb374033e596a3aa29bd91963e1692a6831ea158816c1a",
+    "scripts\\c67_ranker.py": "ce727ad6809d09fd8b770cedcf3de7f1a64a9520a06f4ebd0f706880ec0364ed",
+    "scripts\\legacy_formate_compat.py": "eec91fbef5c8683de63c32ce94d39f95f30f950558b1dd484cf1772617ab7f78",
+    "outputs\\local\\c45-complete-parent-validation-20261112\\frozen-p16-code\\deployment.json": "354db801fe158aeb1783e2b09eb53cfacd167b973212ae2c86a85407560c4f6c",
+    "outputs\\local\\c45-complete-parent-validation-20261112\\frozen-p16-code\\c09e_policy.json": "ea662270a895dc902cc9dd242afd7cd7f63e4a42ce3468474c6bff73d984043c",
+    "outputs\\local\\c45-complete-parent-validation-20261112\\frozen-p16-code\\apply_external_reference.py": "a65d0b63ba20b64f8efc49424a2513cc26f492b4148dc66d68bcc0a5ce62beca",
+    "outputs\\local\\c45-complete-parent-validation-20261112\\frozen-p16-code\\external_reference_overlay.py": "826a689fdcecc05436cd201219ac066ef2ebf557df22200ac807c6bb6c0681e5",
+    "outputs\\local\\c45-complete-parent-validation-20261112\\frozen-p16-code\\c09_spectrum_audit.py": "a4c42efdb41983406d71458eeb093af462bd1432ec774c6628d91861f1a042ac",
+    "outputs\\local\\c45-complete-parent-validation-20261112\\frozen-p16-code\\reference_smoke_fixtures.py": "1cedf812a0fb55f22dc0e922664ab5d1bbe90bcf995f7c4f5bd7c847862bd017",
+    "outputs\\local\\c45-complete-parent-validation-20261112\\frozen-p16-code\\reference_model_audit.py": "32f0c2eafa298be9095c86b2c20073f0e552ad3cabf7652b8d0dcc06dae4d5a8",
+    "outputs\\local\\c45-complete-parent-validation-20261112\\frozen-p16-code\\c09e_features.py": "a97ad9b3ab3711517864d56e497e1672cb29bb05683c72b52db9f9b0a17b1455"
+  },
+  "new_source_outcomes_read": false,
+  "C13_read": false,
+  "scoring_entries": 0,
+  "limitation": "Complete scientific recipe frozen. Source/production/once-onlyconfirmation gates remain required; this receipt is not scoring authorization."
+}
