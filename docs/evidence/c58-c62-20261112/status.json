@@ -1,5 +1,5 @@
 {
-  "recorded_utc": "2026-11-12T09:53:45.380782+00:00",
+  "recorded_utc": "2026-11-12T10:06:48.697859+00:00",
   "C57": "RUNNING",
   "both_production_previews_audited": true,
   "C58_mask_audited": true,
@@ -40,5 +40,6 @@
   "live_quota_guard": "Authoritative num_allowed_now checked before each entry; no UTC-date inference",
   "C58_original_idle_continuation_retired": 30916,
   "complete_core_health_tests": "5passed; both actual12previews and old352full execution pass",
-  "previous352_runtime_seconds": 12876.728947152
+  "previous352_runtime_seconds": 12876.728947152,
+  "C57_progress": "All482Engine2 and PubChem lists completed. Main library/pool cache and ranker models loaded; main candidate processing running. Core is not complete."
 }

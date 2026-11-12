@@ -1,0 +1,32 @@
+{
+  "recorded_utc": "2026-11-12T10:06:48.697859+00:00",
+  "kernel": "clarkkitchen/casmi26-c57-full-masked-validation",
+  "version": 1,
+  "job_complete": false,
+  "source_quality_read": false,
+  "C13_consumed": false,
+  "new_scoring_entries": 0,
+  "live_sdk_log_sha256": "10567247abd199ebdcfd42bc8a4208629ff402df28192076095b8d4d50d9eddb",
+  "events": [
+    {
+      "stream_name": "stdout",
+      "time": 7119.892059889,
+      "data": "      pubchem lists 482 7058s\n"
+    },
+    {
+      "stream_name": "stdout",
+      "time": 7119.89301792,
+      "data": "  \u00d0\u00b2\u00d1\u009a\u00e2\u0080\u009c  118.0 min   PubChem channel                             3,593 s\n"
+    },
+    {
+      "stream_name": "stdout",
+      "time": 7206.265583881,
+      "data": "  \u00d0\u00b2\u00d1\u009a\u00e2\u0080\u009c  119.4 min   Engine 1 \u00d0\u0092\u00c2\u00b7 library, pool, spectrum cache       86 s\n"
+    },
+    {
+      "stream_name": "stdout",
+      "time": 7232.745588106,
+      "data": "  \u00d0\u00b2\u00d1\u009a\u00e2\u0080\u009c  119.9 min   Engine 1 \u00d0\u0092\u00c2\u00b7 models and rankers                 26 s\n"
+    }
+  ]
+}

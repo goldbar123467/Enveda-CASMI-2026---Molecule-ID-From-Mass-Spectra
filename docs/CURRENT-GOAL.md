@@ -17,9 +17,11 @@ unchanged parent, rank1/membership/formula slots protected, actual dual T4 execu
 No scored entries were released.
 
 C57 full masked private v1 (482 molecules / 2,125 original usable acquisitions /
-447 chemistry groups) remains RUNNING as of 09:10 UTC Nov12. Actual observer PID
+447 chemistry groups) remains RUNNING as of 10:06 UTC Nov12. Actual observer PID
 26852, deadline16:05UTC: collect/acquisition-audit only, no scoring or evaluation.
 Live SDK logs prove both Engine2 rankers finished all482 in3434s on actual2T4s.
+PubChem also completed all482 (3593s); main library/pool cache and ranker models
+loaded at119.9min. Main candidate processing remains active, full core not complete.
 A one-shot current-task C58 continuation (actualPID26556,source-health-once) waits for C57 audit,
 then independently requires full Engine2/PubChem coverage, zero main errors and
 all simulator/fusion completion markers before P16 replay, both predictions and the fixed source
