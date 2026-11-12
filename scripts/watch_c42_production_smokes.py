@@ -28,7 +28,7 @@ def main():
     assert not (OUT/'preview-worker-complete.json').exists()
     api=KaggleApi();api.authenticate();deadline=datetime.now(timezone.utc)+timedelta(hours=6)
     slots={'cpu':'p20-c42-cpu-alignment','gpu':'p21-c42-gpu-alignment'}
-    files=[Path(__file__),ROOT/'scripts/audit_c42_production.py',ROOT/'scripts/audit_c42_ranking.py',
+    files=[Path(__file__),ROOT/'scripts/audit_c42_production.py',ROOT/'scripts/audit_c42_ranking.py',ROOT/'scripts/inspect_c42_remote.py',
         ROOT/'outputs/publish/c42r1-crossmodal-heads-20261111/head-manifest.json']
     for slug in slots.values():files += [ROOT/'kaggle/forks'/slug/n for n in ['notebook.ipynb','kernel-metadata.json','production-pin.json']]
     sealed={str(p.relative_to(ROOT)):sha(p) for p in files}

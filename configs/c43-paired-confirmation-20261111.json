@@ -13,6 +13,8 @@
     "candidate_membership_changes_allowed": 0,
     "formula_position_changes_allowed": 0,
     "fitted_head_identity_overlap_allowed": 0,
+    "prior_C39_identity_overlap_allowed": 0,
+    "report_prior_C39_chemistry_overlap": true,
     "report_fitting_chemistry_neighbor_exposure": true,
     "report_grouped_intervals": true,
     "confidence_intervals_do_not_establish_public_transfer": true

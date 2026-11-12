@@ -6,6 +6,7 @@ evaluate command consumes labels; a durable global marker prevents another test.
 import os
 os.environ.setdefault('OMP_NUM_THREADS','2');os.environ.setdefault('MKL_NUM_THREADS','2')
 import argparse,json,subprocess
+from fractions import Fraction
 from datetime import datetime,timezone
 import numpy as np
 import pandas as pd
@@ -36,6 +37,9 @@ def authorize():
 def prior():
     authorize();quality=json.loads((C39/'quality-results.json').read_text())
     assert all(quality['results'][t]['admission']['passed'] for t in ['cpu','gpu']),'Both fixed recipes must qualify before C13 access'
+    independent=json.loads((C39/'independent-quality-audit.json').read_text())
+    assert independent['passed_pair'] and independent['quality_results_sha256']==sha(C39/'quality-results.json')
+    assert independent['source_sha256']==sha(ROOT/'scripts/audit_c42_quality.py')
     assert not quality['C13_read'] and quality['all_queries_retained'] and quality['missing_truths_score_zero']
     freeze=json.loads((C39/'evaluation-freeze.json').read_text())
     assert freeze['source_sha256']==sha(ROOT/'scripts/evaluate_c42_fixed.py')
@@ -115,6 +119,15 @@ def chemistry_and_fit_exposure(labels):
     witnesses=pd.read_parquet(ROOT/'outputs/local/c41r1-masked-pipeline-validation-20261111/original-structure-identity-witnesses.parquet',columns=['raw_key','official_key'])
     fitted_original_official=set(witnesses.loc[witnesses.raw_key.isin(actual_raw_keys),'official_key'].dropna())
     overlaps=labels.key.isin(set(mol.key)|fitted_original_official).to_numpy()
+    prior_labels=pd.read_csv(ROOT/'outputs/local/c39-source-supported-validation-20261111/labels.csv')
+    prior_identity=labels.key.isin(set(prior_labels.key)).to_numpy();prior_maximum=np.zeros(len(labels))
+    prior_formula=np.zeros(len(labels),np.int64);prior_scaffold=np.zeros(len(labels),np.int64)
+    for row in prior_labels.itertuples(index=False):
+        m=Chem.MolFromSmiles(row.smiles);assert m is not None
+        prior_maximum=np.maximum(prior_maximum,DataStructs.BulkTanimotoSimilarity(gen.GetFingerprint(m),fp))
+        prior_formula+=np.asarray([row.formula==v for v in labels.formula])
+        sc=MurckoScaffold.MurckoScaffoldSmiles(mol=m,includeChirality=False)
+        if sc:prior_scaffold+=np.asarray([sc==v for v in scaffold])
     maximum=np.zeros(len(labels));sameformula=np.zeros(len(labels),np.int64);samescaffold=np.zeros(len(labels),np.int64)
     for count,row in enumerate(mol.itertuples(index=False),1):
         m=Chem.MolFromSmiles(row.smiles);assert m is not None
@@ -124,9 +137,12 @@ def chemistry_and_fit_exposure(labels):
         if sc:samescaffold+=np.asarray([sc==v for v in scaffold])
         if count%25000==0:authorize();print('C43 FIT EXPOSURE CHECK',count,'/',len(mol),flush=True)
     exposure=pd.DataFrame(dict(molecule_id=labels.index,fit_identity_overlap=overlaps,maximum_fit_tanimoto=maximum,
-        fitting_same_formula=sameformula,fitting_same_nonempty_scaffold=samescaffold,group=groups))
+        fitting_same_formula=sameformula,fitting_same_nonempty_scaffold=samescaffold,prior_C39_identity_overlap=prior_identity,
+        prior_C39_maximum_tanimoto=prior_maximum,prior_C39_same_formula=prior_formula,prior_C39_same_nonempty_scaffold=prior_scaffold,group=groups))
     exposure.to_csv(OUT/'fitting-exposure.csv',index=False)
     return groups,dict(new_head_identity_overlaps=int(overlaps.sum()),queries_with_fitting_tanimoto_at_least_point7=int((maximum>=.7).sum()),
+        prior_C39_identity_overlaps=int(prior_identity.sum()),queries_with_prior_C39_tanimoto_at_least_point7=int((prior_maximum>=.7).sum()),
+        queries_with_prior_C39_same_formula=int((prior_formula>0).sum()),queries_with_prior_C39_same_nonempty_scaffold=int((prior_scaffold>0).sum()),
         queries_with_fitting_same_formula=int((sameformula>0).sum()),queries_with_fitting_same_nonempty_scaffold=int((samescaffold>0).sum()),
         original_raw_identity_groups_checked=len(actual_raw_keys),query_groups=len(set(groups)),
         near_chemistry_excluded_from_all_training=False,universal_pretraining_exclusion=False)
@@ -165,13 +181,14 @@ def evaluate(consume,resume=False):
         for text in f.smiles:
             for s in text.split(';'):
                 if s not in keys:keys[s]=features.structure(s)[0]
-    rr={};coverage={}
+    rr={};coverage={};ranks={}
     for name,f in frames.items():
-        values=[];present=[]
+        values=[];present=[];positions=[]
         for text,truth in zip(f.smiles,labels.key):
             kk=[keys[s] for s in text.split(';')];assert 1<=len(kk)<=25 and len(set(kk))==len(kk)
-            values.append(1./(1+kk.index(truth)) if truth in kk else 0.);present.append(truth in kk)
-        rr[name]=np.asarray(values);coverage[name]=np.asarray(present)
+            rank=kk.index(truth)+1 if truth in kk else 0
+            positions.append(rank);values.append(1./rank if rank else 0.);present.append(truth in kk)
+        rr[name]=np.asarray(values);coverage[name]=np.asarray(present);ranks[name]=positions
     np.savez(OUT/'confirmation-vectors.npz',**rr)
     groups,exposure=chemistry_and_fit_exposure(labels);results={}
     for name in ['cpu','gpu','P14']:
@@ -182,8 +199,13 @@ def evaluate(consume,resume=False):
             assert np.array_equal(coverage['P01'],coverage[name])
             negative=labels['mode'].eq('negative').to_numpy();assert frames[name].loc[negative].equals(baseline.loc[negative])
             reasons=[]
-            if item['all120']['delta']< -1e-12 or item['mode']['positive']['delta']< -1e-12:reasons.append('predeclared_confirmation_point_regression')
+            def exact_delta(mask):
+                return sum(((Fraction(1,ranks[name][i]) if ranks[name][i] else Fraction(0))-(Fraction(1,ranks['P01'][i]) if ranks['P01'][i] else Fraction(0)) for i in np.flatnonzero(mask)),Fraction(0))/int(mask.sum())
+            exact={k:exact_delta(mask) for k,mask in [('all120',np.ones(120,bool)),('positive60',labels['mode'].eq('positive').to_numpy())]}
+            item['exact_point_deltas']={k:dict(numerator=v.numerator,denominator=v.denominator,value=float(v)) for k,v in exact.items()}
+            if any(v<0 for v in exact.values()):reasons.append('predeclared_confirmation_point_regression')
             if exposure['new_head_identity_overlaps']>0:reasons.append('new_head_fitted_identity_exposure')
+            if exposure['prior_C39_identity_overlaps']>0:reasons.append('prior_C39_identity_exposure')
             item['admission']=dict(passed=not reasons,reasons=reasons,statistical_promotion=False)
         results[name]=item
     record=dict(completed_utc=stamp(),commitment=commitment,queries=120,actual_query_modes=actual_modes.value_counts().to_dict(),results=results,fitting_exposure=exposure,

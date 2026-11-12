@@ -15,7 +15,7 @@ def main():
     assert all(quality['results'][t]['admission']['passed'] and confirmation['results'][t]['admission']['passed'] for t in ['cpu','gpu'])
     assert quality['queries']==352 and quality['all_queries_retained'] and quality['missing_truths_score_zero']
     assert confirmation['queries']==120 and confirmation['one_joint_reserved_evaluation'] and confirmation['no_recipe_or_cohort_selection']
-    assert confirmation['fitting_exposure']['new_head_identity_overlaps']==0 and confirmation['all_absent_truths_zero']
+    assert confirmation['fitting_exposure']['new_head_identity_overlaps']==confirmation['fitting_exposure']['prior_C39_identity_overlaps']==0 and confirmation['all_absent_truths_zero']
     consumed=ROOT/'outputs/local/c13-confirmation-20261110/evaluation-consumption.json';consumption=json.loads(consumed.read_text())
     assert consumption['state']=='completed' and consumption['cycle']=='C43_C42R1_PAIRED' and consumption['results_sha256']==sha(c43/'confirmation-results.json')
     assert consumption['source_sha256']==sha(ROOT/'scripts/confirm_c43_pair.py') and consumption['policy_sha256']==sha(ROOT/'configs/c43-paired-confirmation-20261111.json')
@@ -37,7 +37,7 @@ def main():
     assert all(ranking['trials'][t]['independent_RRF_exact'] for t in ['cpu','gpu'])
     trials={};paths=[c39/n for n in ['quality-results.json','evaluation-freeze.json','score-receipt.json','independent-ranking-audit.json']]
     paths += [c43/n for n in ['confirmation-results.json','preparation.json','prediction-freeze.json','fitting-exposure.csv']]
-    paths += [consumed,full/'collection-audit.json',full/'acquisition-fidelity-audit.json',ROOT/'configs/c43-paired-confirmation-20261111.json',
+    paths += [c39/'independent-quality-audit.json',consumed,full/'collection-audit.json',full/'acquisition-fidelity-audit.json',ROOT/'configs/c43-paired-confirmation-20261111.json',
         ROOT/'outputs/publish/c42r1-crossmodal-heads-20261111/head-manifest.json',ROOT/'outputs/local/c42-crossmodal-engineering-20261111/production-source-audit.json']
     for t,slot in [('cpu','p20-c42-cpu-alignment'),('gpu','p21-c42-gpu-alignment')]:
         folder=ROOT/'kaggle/forks'/slot;cloud=ROOT/'outputs/forks'/(slot+'-v1');ap=cloud/'independent-production-audit.json'
@@ -52,7 +52,7 @@ def main():
         for name,h in audit['artifact_sha256'].items():assert sha(ROOT/name)==h,name;paths.append(ROOT/name)
         trials[t]=dict(kernel='clarkkitchen/casmi26-'+slot,version=1,notebook_path=str((folder/'notebook.ipynb').relative_to(ROOT)),
             audit_path=str(ap.relative_to(ROOT)),smoke_output=str((cloud/'submission.csv').relative_to(ROOT)))
-    for name in ['qualify_c42_pair.py','submit_c42_pair.py','confirm_c43_pair.py','audit_c42_production.py','audit_c42_ranking.py','evaluate_c42_fixed.py']:paths.append(ROOT/'scripts'/name)
+    for name in ['qualify_c42_pair.py','submit_c42_pair.py','confirm_c43_pair.py','audit_c42_production.py','audit_c42_ranking.py','audit_c42_quality.py','evaluate_c42_fixed.py']:paths.append(ROOT/'scripts'/name)
     authorization=ROOT/'outputs/local/c38-source-support-20261111/authorization.json'
     result=dict(qualified_utc=datetime.now(timezone.utc).isoformat(),decision='execution_qualified_fixed_exploratory_pair',order=['cpu','gpu'],
         maximum_new_accepted_submissions=2,maximum_pending=1,authorization_sha256=sha(authorization),champion_retained=.480,

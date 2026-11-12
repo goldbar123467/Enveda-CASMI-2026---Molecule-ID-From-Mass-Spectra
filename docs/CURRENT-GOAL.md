@@ -14,14 +14,18 @@ The native goal remains ACTIVE. Current authorization is
 `.local/compute-paused.json` so historical workers stay inactive. Current controlled
 workers use the explicit new authorization. Do not restart old campaigns.
 
-## Live work, verified 12 November 2026 01:13 UTC
+## Live work, verified 12 November 2026 01:36 UTC
 
 - `clarkkitchen/casmi26-c41r3-full-masked-validation`, version1, kernel144498742:
   RUNNING. This is the complete352-query/1292-acquisition C39 reference-masked
   P01/P14 inference, not a scoring submission.
 - `clarkkitchen/casmi26-p20-c42-cpu-alignment`, version1, kernel144500368:
-  RUNNING. Private production engineering smoke only; quality admission is still
-  pending. Its preview uses12real queries and preserves388unprocessed rows.
+  COMPLETE and independently engineering-audited.11changed real lists,1unsupported
+  exact fallback,388unprocessed exact fallbacks;400valid rows;0rank1/membership/
+  formula-slot/identity-duplicate changes. Parent exactly matches prior P16;
+  local/cloud final lists exact, raw score difference maximum6.02e-5.
+- `clarkkitchen/casmi26-p21-c42-gpu-alignment`, version1, kernel144503174:
+  RUNNING as a private production engineering test, not a scoring entry.
 
 Two detached observers have hidden Windows startup and file logs:
 
@@ -30,10 +34,11 @@ Two detached observers have hidden Windows startup and file logs:
   `outputs/local/c41r3-masked-pipeline-validation-20261111/`.
   It will collect/audit full outputs, verify all1292original acquisitions, score
   both sealed heads locally and evaluate the fixed C39 gates. Deadline06:56UTC.
-- `scripts/watch_c42_production_smokes.py`, actual PID26868, observes P20v1 and
-  runs the independent local/cloud production audit. Only after that engineering
-  pass may it release/audit P21v1 in the free slot. State/logs/attention are under
-  `outputs/local/c42-two-new-submissions-20261111/`. Deadline07:08UTC.
+- `scripts/watch_c42_production_smokes.py`, actual PID5312, has audited P20v1 and
+  released P21v1 after its engineering pass. It now observes/audits P21v1. State/logs/attention are under
+  `outputs/local/c42-two-new-submissions-20261111/`. Deadline07:32UTC. An initial auditor-only SDK-environment failure
+  was fixed by scripts/inspect_c42_remote.py in the existing SDK venv; no cloud
+  rerun or model/recipe change was needed. Prior attention/logs were archived.
 
 Neither observer can submit to the leaderboard or open C13. Revalidate actual
 API/process handles before treating a wait as live. Timeout is not termination;
@@ -73,7 +78,8 @@ storage. Compact receipts and the source study report are in
 ## Next required work
 
 After full collection, independently audit its actual C42ranking with
-`scripts/audit_c42_ranking.py`, then review the fixed C39gates. Do not weaken or
+`scripts/audit_c42_ranking.py`, then independently recompute all352MRR ranks and exact rational directional
+  signs with scripts/audit_c42_quality.py, and review the fixed C39gates. Do not weaken or
 fabricate admission. The study is controlled in-corpus validation: public encoder
 and parent historical exposure remains known or unknown; it is not universally
 unseen validation or established leaderboard calibration.
@@ -99,3 +105,7 @@ only actual public scores establish improvement. No scoring command has run.
 Finish the goal only after both approved entries have actual terminal results,
 or reconcile a demonstrated external blocker under the native blocked-audit
 rules. Keep the full original objective intact across continuation turns.
+
+The residual C44raw-GNPS audit covers the9492records outside previously admitted views. After conservative known-identity exclusion,30records remained:16invalid primary SMILES,8official identities already known,6outside prespecified target adducts. Zero surviving identities; no new panel or qualification claim. C13inventory keys were used only for global exclusion; its reserved outcomes were not accessed.
+
+Prospective C43also rejects prior C39identity overlap and reports its chemistry neighbors, rather than dropping exposed queries after outcomes. Its point-sign gates use exact reciprocal-rank fractions. The independent C39quality audit is required before C43can be prepared. All these criteria are frozen before any C39quality outcome.

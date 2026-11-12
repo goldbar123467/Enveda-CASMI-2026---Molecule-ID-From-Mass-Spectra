@@ -1,0 +1,22 @@
+{
+  "completed_utc": "2026-11-12T01:31:08.445289+00:00",
+  "protocol_sha256": "dee0b85324f9e0b9820acebcbc1adaef84b61e0e7cc0604443a643c9e647ed10",
+  "raw_records": 31419,
+  "raw_records_not_in_previous_admitted_view": 9492,
+  "known_supplied_identity_records": 31389,
+  "residual_records_requiring_primary_structure_check": 30,
+  "unique_primary_smiles_canonicalized": 16,
+  "outcomes": {
+    "invalid_primary_smiles": 16,
+    "official_identity_already_known": 8,
+    "outside_prespecified_target_adducts": 6
+  },
+  "surviving_records": 0,
+  "surviving_identities": 0,
+  "qualified_validation_panel": false,
+  "conservative_supplied_key_exclusion": true,
+  "C13_reserved_outcomes_read": false,
+  "prediction_outcomes_read": false,
+  "source_selection_by_model_performance": false,
+  "limitation": "Previously admitted-view inventory was not an audit of every raw record. This residual check uses the cached November6source snapshot; it does not prove absence of later updates, annotation repairs or other libraries. GNPS Crude/class1 metadata alone does not prove authentic-standard purity."
+}

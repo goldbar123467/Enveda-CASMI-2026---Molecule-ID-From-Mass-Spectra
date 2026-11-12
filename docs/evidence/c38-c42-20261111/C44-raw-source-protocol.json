@@ -1,0 +1,37 @@
+{
+  "frozen_utc": "2026-11-12T01:31:05.720925+00:00",
+  "source_sha256": "c179fb5e5c802e6c1d25f7bfab48545a175219c83c8acf687d8d9200790dbbbe",
+  "libraries": [
+    "GNPS-REFRAME-DRUG-CCS-LIBRARY",
+    "GNPS-ION-MOBILITY-LIBRARY-FILTERED",
+    "GNPS-ION-MOBILITY-LIBRARY"
+  ],
+  "inputs_sha256": {
+    "raw_gnps": "3c0eaae27bd45440270a66c3cd45dcb8d7ebd95831f0bfeca98e58dc3e52c141",
+    "witnesses": "5b3848e7d3f6ed8c00ee781d67f0aa5c1abb75b3969c66c6dceea8040a84893f",
+    "catalogue": "a158239c869f4565971d93d37cae0c88c52677e6622807392222118516c71e09",
+    "external": "b5496a7152c5e6f0482c1d82aa49a103c2017a14b530f27fe8cb53b9c824ae63",
+    "C13_exclusion_inventory": "ecdb7ce02b39fb694f29d3b57e11d4474a8f62f56966e3e289385032c8a0ac15"
+  },
+  "primary_instrument_source": "https://ccms-ucsd.github.io/GNPSDocumentation/gnpslibraries/",
+  "criteria": {
+    "adducts": [
+      "[M+H]+",
+      "[M+Na]+",
+      "[M+K]+",
+      "[M+NH4]+",
+      "[M-H]-",
+      "[M+CH2O2-H]-",
+      "[M+Cl]-"
+    ],
+    "minimum_finite_positive_peaks": 3,
+    "maximum_precursor": 1000,
+    "maximum_mass_error_ppm": 30,
+    "MS_level": 2
+  },
+  "exclusion": "Block already known supplied identity keys first; canonicalize remaining primary SMILES and block official training/reference/prior-panel identities. Conservative: no attempt to repair conflicting supplied identity annotations.",
+  "C13_inventory_keys_used_only_for_global_exclusion": true,
+  "C13_labels_or_outcomes_read": false,
+  "predictions_read": false,
+  "qualification": "Inventory only; primary identity/purity and raw-spectrum audits would still be required for any surviving record."
+}

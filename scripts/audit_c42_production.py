@@ -16,14 +16,13 @@ def main():
     dest=ROOT/'outputs/forks'/(slot+'-v1');dest.mkdir(parents=True,exist_ok=True)
     target=dest/'independent-production-audit.json';assert not target.exists()
     assert sha(folder/'notebook.ipynb')==pin['notebook_sha256']
-    from kaggle.api.kaggle_api_extended import KaggleApi,ApiGetKernelRequest
-    api=KaggleApi();api.authenticate();kernel='clarkkitchen/casmi26-'+slot
-    state=json.loads(str(api.kernels_status(kernel)));assert state['status']=='COMPLETE',state
-    with api.build_kaggle_client() as client:
-        request=ApiGetKernelRequest();request.user_name='clarkkitchen';request.kernel_slug=kernel.split('/')[1]
-        remote=json.loads(client.kernels.kernels_api_client.get_kernel(request).to_json())
-    m=remote['metadata'];assert m['currentVersionNumber']==1 and m['isPrivate'] and not m['enableInternet']
-    remote_sha=scientific_sha(json.loads(remote['blob']['source']));assert remote_sha==pin['scientific_sha256']
+    # SDK and numerical dependencies live in their existing isolated venvs.
+    with (dest/'remote-source-inspection.log').open('w',encoding='utf8') as log:
+        subprocess.run([str(ROOT/'.venv/Scripts/python.exe'),'scripts/inspect_c42_remote.py',trial],cwd=ROOT,stdout=log,stderr=subprocess.STDOUT,check=True)
+    remote=json.loads((dest/'remote-source-audit.json').read_text())
+    assert remote['private'] and not remote['internet'] and remote['version']==1 and remote['remote_source_exact']
+    assert remote['source_sha256']==sha(ROOT/'scripts/inspect_c42_remote.py')
+    remote_sha=remote['scientific_sha256'];assert remote_sha==pin['scientific_sha256']
     pattern=r'(c42_.*\.(csv|json|parquet|log)|c42_scores/.*\.(csv|parquet|json|npz)|execution_receipt\.json|p16_execution_receipt\.json|neural_(public|ours)\.parquet|neural_candidate_features\.parquet|effective_query_spectra\.parquet|submission\.csv)$'
     subprocess.run([str(ROOT/'.venv/Scripts/python.exe'),'scripts/fetch_output.py',slot,str(dest),pattern],cwd=ROOT,check=True,timeout=1800)
     r=json.loads((dest/'c42_execution.json').read_text())
@@ -84,7 +83,8 @@ def main():
         local_cloud_final_lists_exact=True,local_cloud_score_max_abs_difference=error,unchanged_P01_blend_max_abs_error=parent_error,
         parent_preview_exact_previous=True,quality_labels_read=False,C13_read=False,statistical_promotion=False,
         artifact_sha256={str(p.relative_to(ROOT)):sha(p) for p in [dest/'c42_execution.json',dest/'submission.csv',
-            scores/'score-receipt.json',scores/'independent-ranking-audit.json',local/'score-receipt.json',folder/'production-pin.json']})
+            scores/'score-receipt.json',scores/'independent-ranking-audit.json',local/'score-receipt.json',folder/'production-pin.json',
+            dest/'remote-source-audit.json',ROOT/'scripts/inspect_c42_remote.py']})
     write(target,result);print('C42 PRODUCTION AUDIT PASS',json.dumps(result),flush=True)
 
 
