@@ -1,0 +1,8 @@
+{
+  "actual_downloaded_engine_sha256": "e4943fb26a8141f47ea95e744910c2d0f4746e36e72ef43e3263e7f327cfc0b5",
+  "actual_representative_method_sha256": "24b952b37c9577136bad63b8b093893fddc45e8d8be28ea7438c93235946ae4f",
+  "all_retained_fields_exact": true,
+  "blocked_SID_representatives_removed": 2,
+  "forbidden_representatives_retained": 0,
+  "quality_metrics_read": false
+}

@@ -3,7 +3,7 @@ import ast,sys,unittest
 from pathlib import Path
 import numpy as np
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
-from c41_reference_guard import guard_library,mask_engine2_rows,patch_engine2_source,install_library_guard
+from c41_reference_guard import guard_library,mask_engine2_rows,patch_engine2_source,install_library_guard,install_engine_guard
 
 
 class Library:
@@ -60,6 +60,21 @@ def main(L):
         exec(compile(ast.Module(body=[main],type_ignores=[]),'lifetime','exec'),scope)
         library={'ik':['a','b'],'smi':['CCO','CCC']}
         self.assertEqual(scope['main'](library),['a','b']);self.assertEqual(library,{})
+
+    def test_engine_owned_cache_cannot_bypass_library_representative_guard(self):
+        class Engine:
+            def __init__(self,L):self.L=L;self.rep=self._reps()
+            def _reps(self):
+                # The real engine builds this directly from Library arrays;
+                # it does not call Library.representatives().
+                return dict(idx=np.arange(4),sid=self.L.sid,mode=np.asarray([1,1,-1,1]),mass=np.asarray([100.,200.,200.,300.]))
+        install_engine_guard(Engine)
+        library=guard_library(Library(),[False,True,False]);engine=Engine(library)
+        np.testing.assert_equal(engine.rep['idx'],[0,3])
+        np.testing.assert_equal(engine.rep['mass'],[100.,300.])
+        self.assertEqual(library._c41_guard_audit['engine_representatives_removed'],2)
+        self.assertEqual(library._c41_guard_audit['representative_calls'],0)
+        with self.assertRaises(AssertionError):Engine(Library())
 
 
 if __name__=='__main__':unittest.main()

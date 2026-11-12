@@ -11,7 +11,7 @@ from validation_repair import clustered_summary
 
 def main():
     p=argparse.ArgumentParser();p.add_argument('scores');a=p.parse_args();out=ROOT/a.scores
-    cloud=ROOT/'outputs/forks/c41r2-full-masked-validation-v1'
+    cloud=ROOT/'outputs/forks/c41r3-full-masked-validation-v1'
     assert not (out/'quality-results.json').exists() and not (out/'evaluation-freeze.json').exists()
     collection=json.loads((cloud/'collection-audit.json').read_text())
     assert collection['queries']==352 and collection['forbidden_reference_rows']==0

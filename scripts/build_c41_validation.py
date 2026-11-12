@@ -66,10 +66,11 @@ Path('/kaggle/working/c41_legacy_compatibility.json').write_text(json.dumps(dict
         marker="L = _external_reference_library(_EXTERNAL_REFERENCE_STATE); P = Pool('work')"
         if marker in s:
             assert s.count(marker)==1
-            injection='''from c41_reference_guard import install_library_guard as _c41_install_library_guard
+            injection='''from c41_reference_guard import install_library_guard as _c41_install_library_guard, install_engine_guard as _c41_install_engine_guard
 _c41_sid_mask_path = os.environ.get('CASMI_C41_SID_MASK')
 assert _c41_sid_mask_path, 'C41 reference mask is mandatory'
 _c41_install_library_guard(Library, np.load(_c41_sid_mask_path,allow_pickle=False))
+_c41_install_engine_guard(Engine)
 '''
             s=s.replace(marker,injection+'\n'+marker);changes['main_reference_constructor']=i
         cell['source']=s.splitlines(keepends=True)
@@ -89,9 +90,10 @@ def export(scope,root):
     library=scope['L']
     assert hasattr(library,'_c41_guard_audit'),'Main reference guard was not installed'
     audit=dict(library._c41_guard_audit)
-    assert audit['excluded_reference_rows']>0 and audit['window_calls']>0 and audit['representative_calls']>0
-    assert audit['forbidden_rows_retained']==0
     (root/'c41_main_reference_mask_audit.json').write_text(json.dumps(audit,indent=2))
+    assert audit['excluded_reference_rows']>0 and audit['window_calls']>0
+    assert audit['engine_representative_builds']>0 and audit['engine_representatives_removed']>0
+    assert audit['forbidden_rows_retained']==0
     engine=json.loads(Path('/kaggle/working/c41_engine2_reference_mask_audit.json').read_text())
     assert engine['excluded_reference_rows']>0 and engine['forbidden_rows_retained']==0
     (root/'c41_engine2_reference_mask_receipt.json').write_text(json.dumps(engine,indent=2))

@@ -42,6 +42,7 @@ def guard_library(library,sid_mask):
     library.window=types.MethodType(window,library)
     library.representatives=types.MethodType(representatives,library)
     library._c41_guard_audit=audit
+    library._c41_reference_excluded=excluded
     return library
 
 
@@ -51,6 +52,28 @@ def install_library_guard(cls,sid_mask):
     def initialize(self,*args,**kwargs):
         original(self,*args,**kwargs);guard_library(self,sid_mask)
     cls.__init__=initialize;cls._c41_constructor_guard=True
+
+
+def install_engine_guard(cls):
+    """Guard Engine's own (SID,mode,library) cache, used instead of Library.reps."""
+    assert not getattr(cls,'_c41_engine_guard',False),'Already installed'
+    original=cls._reps
+    def representatives(self):
+        result=original(self);library=self.L
+        assert hasattr(library,'_c41_reference_excluded'),'Engine requires a guarded measured library'
+        excluded=library._c41_reference_excluded
+        indices=np.asarray(result['idx'],np.int64);keep=~excluded[indices]
+        # Whole SIDs are excluded, so removing their selected representatives
+        # cannot require choosing an alternative within a retained SID group.
+        assert all(len(v)==len(indices) for v in result.values())
+        result={k:np.asarray(v)[keep] for k,v in result.items()}
+        assert not excluded[np.asarray(result['idx'],np.int64)].any()
+        audit=library._c41_guard_audit
+        audit['engine_representative_builds']=audit.get('engine_representative_builds',0)+1
+        audit['engine_representatives_removed']=audit.get('engine_representatives_removed',0)+int((~keep).sum())
+        audit['engine_representatives_retained']=len(result['idx'])
+        return result
+    cls._reps=representatives;cls._c41_engine_guard=True
 
 
 def patch_engine2_source(source):

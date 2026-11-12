@@ -1,0 +1,14 @@
+{
+  "observed_utc": "2026-11-12T00:23:18.794517+00:00",
+  "kernel": "clarkkitchen/casmi26-c41r2-smoke-masked-validation",
+  "version": 1,
+  "state": "ERROR",
+  "root_cause": "Main Engine._reps constructs its own analog cache directly from Library arrays and bypasses Library.representatives. Main direct windows and Engine2 were guarded; the analog path was not. Export audit correctly refused qualification.",
+  "core_pipeline12_finished": true,
+  "Engine2_excluded_rows": 408950,
+  "main_analog_outputs_quarantined": true,
+  "quality_metrics_read": false,
+  "C13_read": false,
+  "scoring_submissions_used": 0,
+  "fix": "Hook actual Engine._reps before construction, remove every representative of blocked SIDs, assert all retained arrays remain aligned and no forbidden index survives. Require actual builder/removal counters in export audit."
+}

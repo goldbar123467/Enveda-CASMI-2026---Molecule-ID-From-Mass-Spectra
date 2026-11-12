@@ -8,7 +8,7 @@ from pathlib import Path
 from datetime import datetime,timedelta,timezone
 
 ROOT=Path(__file__).resolve().parents[1]
-OUT=ROOT/'outputs/local/c41r2-masked-pipeline-validation-20261111'
+OUT=ROOT/'outputs/local/c41r3-masked-pipeline-validation-20261111'
 SCORES=ROOT/'outputs/local/c42-fixed-c39-validation-20261111'
 
 
@@ -41,13 +41,14 @@ def main():
     assert not (OUT/'continuation-complete.json').exists()
     authorized();api=KaggleApi();api.authenticate();deadline=datetime.now(timezone.utc)+timedelta(hours=6)
     sealed={str(p.relative_to(ROOT)):sha(p) for p in [Path(__file__),ROOT/'scripts/collect_c41_validation.py',ROOT/'scripts/evaluate_c42_fixed.py',
-        ROOT/'kaggle/forks/c41r2-smoke-masked-validation/validation-pin.json',ROOT/'kaggle/forks/c41r2-full-masked-validation/validation-pin.json',
+        ROOT/'kaggle/forks/c41r3-smoke-masked-validation/validation-pin.json',ROOT/'kaggle/forks/c41r3-full-masked-validation/validation-pin.json',
+        ROOT/'scripts/audit_c39_acquisitions.py',
         ROOT/'outputs/publish/c42r1-crossmodal-heads-20261111/head-manifest.json',ROOT/'outputs/local/c42-crossmodal-engineering-20261111/production-source-audit.json']}
     write('continuation-launch.json',dict(started_utc=stamp(),pid=os.getpid(),deadline_utc=deadline.isoformat(),source_seal=sealed,
         scoring_submission=False,C13_read=False,old_campaigns_resumed=False))
     def status(stage,**kw):
         row=dict(updated_utc=stamp(),pid=os.getpid(),stage=stage,deadline_utc=deadline.isoformat(),**kw)
-        write('continuation-status.json',row);print('C41R2 CONTINUATION',json.dumps(row),flush=True)
+        write('continuation-status.json',row);print('C41 CONTINUATION',json.dumps(row),flush=True)
     def check_seal():
         authorized()
         for name,h in sealed.items():assert sha(ROOT/name)==h,name
@@ -59,7 +60,7 @@ def main():
             assert state['status'] not in ['ERROR','CANCELLED','CANCELED','CANCEL_ACKNOWLEDGED'],state
             time.sleep(60)
         raise TimeoutError('Bounded exact-job continuation deadline reached; inspect retained run, do not requeue')
-    smoke='c41r2-smoke-masked-validation';full='c41r2-full-masked-validation'
+    smoke='c41r3-smoke-masked-validation';full='c41r3-full-masked-validation'
     wait(smoke)
     audit=ROOT/'outputs/forks'/(smoke+'-v1')/'collection-audit.json'
     if not audit.exists():run([sys.executable,'scripts/collect_c41_validation.py',smoke],'smoke-collection.log')
@@ -71,7 +72,7 @@ def main():
     response_path=OUT/'full-push-receipt.json'
     if not response_path.exists():
         assert not (OUT/'full-push-intent.json').exists(),'Ambiguous push intent; reconcile before releasing anything'
-        check_seal();assert str(api.dataset_status('clarkkitchen/casmi26-c41r2-full-masked-validation-20261111'))=='ready'
+        check_seal();assert str(api.dataset_status('clarkkitchen/casmi26-c41r3-full-masked-validation-20261111'))=='ready'
         write('full-push-intent.json',dict(created_utc=stamp(),notebook_sha256=pin(full)['notebook_sha256'],smoke_audit_sha256=sha(audit)))
         response=api.kernels_push(str((ROOT/'kaggle/forks'/full).resolve()),timeout='32400',acc='NvidiaTeslaT4')
         write('full-push-receipt.json',dict(response=str(response),url=response.url,version=response.version_number,error=response.error,submitted_utc=stamp()))
@@ -83,6 +84,8 @@ def main():
     check_seal();proof=json.loads(audit.read_text());assert proof['queries']==352 and proof['forbidden_reference_rows']==0
     status('full_verified_encoding_fixed_candidates',full_audit_sha256=sha(audit))
     head=ROOT/'outputs/publish/c42r1-crossmodal-heads-20261111';cloud=audit.parent
+    if not (cloud/'acquisition-fidelity-audit.json').exists():
+        run([str(ROOT/'.venv-gpu/Scripts/python.exe'),'scripts/audit_c39_acquisitions.py','--cloud',str(cloud/'c41_queries.parquet')],'full-acquisition-fidelity.log')
     if not (SCORES/'score-receipt.json').exists():
         assert not SCORES.exists(),'Partial scoring directory; inspect rather than overwrite'
         run([str(ROOT/'.venv-encoders/Scripts/python.exe'),str(head/'score_c42_crossmodal.py'),str(head),

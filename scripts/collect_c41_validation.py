@@ -42,7 +42,8 @@ def main():
     assert len(allocation['devices'])==2 and all('T4' in d['name'] for d in allocation['devices'])
     for name in ['c41_main_reference_mask_audit.json','c41_engine2_reference_mask_receipt.json']:
         audit=json.loads((dest/name).read_text());assert audit['excluded_reference_rows']>0 and audit['forbidden_rows_retained']==0
-        if 'main' in name:assert audit['window_calls']>0 and audit['representative_calls']>0
+        if 'main' in name:
+            assert audit['window_calls']>0 and audit['engine_representative_builds']>0 and audit['engine_representatives_removed']>0
     execution=json.loads((dest/'execution_receipt.json').read_text())
     assert execution['is_full_run'] and execution['processed_molecules']==n
     assert report['p14_receipt']['input_errors']==0

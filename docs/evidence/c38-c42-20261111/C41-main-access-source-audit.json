@@ -1,0 +1,16 @@
+{
+  "source_files_sha256": {
+    "engine.py": "e4943fb26a8141f47ea95e744910c2d0f4746e36e72ef43e3263e7f327cfc0b5",
+    "../fe_v4/v1engine.py": "9074546910ba850a98bb95afe531669c62a26c15ab8b6bf9d6b6020c77ea0e8a",
+    "../fe_v4/hooks_v1.py": "d0cb1e37566a54bbb3082ccd29579ac47fc2526c5d64ef073dc0e628ee5657e8",
+    "../fe_v4/ctxlib.py": "c050e4b0ac937a7d65fa14ac55c6904e2232cb077830a20b653ac6df22922943"
+  },
+  "actual_main_direct_path": "Engine.run -> Library.window",
+  "actual_main_analog_path": "Engine.__init__ -> Engine._reps -> Engine.analogs reads self.rep",
+  "recording_hooks": "hooks_v1.install wraps original Engine.analogs without rebuilding representatives",
+  "inference_resources": "V1FE resources_from_engine shares the existing Engine library; no second measured-reference library is loaded there",
+  "R2_cache_bypass_disqualifies_predictions": true,
+  "R3_guards_both_actual_paths": true,
+  "runtime_proof_still_required": true,
+  "quality_metrics_read": false
+}

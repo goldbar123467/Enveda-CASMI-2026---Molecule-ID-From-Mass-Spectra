@@ -49,14 +49,14 @@ Pure-negative and unsupported queries retain parent ordering. Overlong
 MoLFormer inputs cause complete formula-group fallback. Candidate embedding
 cache reuse requires exact canonical SMILES.
 
-The private 12-query C41 Kaggle smoke, version 1, failed before producing predictions. The new guard attempted to use an identity array released by Engine2 immediately before index construction. Both actual T4 allocations and encoder preflight passed. C41R2 fixes only the identity lifetime: the array is released immediately after guarded index construction; the existing recovery rules are unchanged. A dedicated execution test covers this ordering. The corrected C41R2 smoke, version 1, is running. It is inference
+The private 12-query C41 Kaggle smoke, version 1, failed before producing predictions. The new guard attempted to use an identity array released by Engine2 immediately before index construction. Both actual T4 allocations and encoder preflight passed. C41R2 fixes only the identity lifetime: the array is released immediately after guarded index construction; the existing recovery rules are unchanged. A dedicated execution test covers this ordering. C41R2 completed the core12 pipeline, then its export audit failed: the actual Engine._reps bypassed Library.representatives, leaving the analog path unguarded. Those predictions are quarantined without quality evaluation. C41R3 now hooks the actual Engine cache, removes every representative of blocked SIDs, and preserves every retained field/order. A fixture executes the exact downloaded Engine._reps method and passes. The third private smoke is running with both guards and finalized masks. It is inference
 only and consumes no scoring approval. It requires actual dual T4 allocation,
 reference-mask receipts, formate-copy verification and exact unchanged P01
 replay. The finalized 352-query package is built but will launch only after
 these checks pass. Both use the same scientific payload; the finalized full
 package adds three raw-key aliases to the global mask.
 
-Fifteen targeted unit checks pass. A label-blind local runtime check also
+Sixteen targeted unit checks pass. A label-blind local runtime check also
 executed both heads on eight real queries with fixed synthetic candidates;
 all scores were finite and unsupported fallback was exact. This is engineering
 verification, not quality evidence. C39 quality and fresh C13 metrics remain
