@@ -1,3 +1,50 @@
+## LIVE C76 actual production preview — session35815
+
+Actual owned RTX2070 production preview RUNNING. Tool session35815; Windows
+supervisor30208; systemd user scope enveda-c76-production-preview-30208.scope.
+Linuxdriver416/PGID416. Reconcile /proc/cgroup before relying on oldPIDs.
+Read outputs/local/c76-numerical-portability-20261112/local-production-preview/
+run-progress.json, supervisor-status.json and pipeline.log (filter longSVG lines).
+Inner log native /home/imsa/.local/share/enveda-c76/production-preview/working/
+submission_pipeline.log. No automatic retry. Current inner32Engine2; actual
+source input/preflight and first12public-query smoke selection already passed.
+
+Frozen launch plan SHA3200f6e4c16c1a14545884d73b6801df9815a22892a05db9fb11dee41cbf2197.
+Complete original production recipe port changes ONLY local allocation checks,
+resolved owned preflight path, recoveryCUDA1->0, same explicit ICEcache/bs8 policy,
+honest payload hash, and distinct GPU-head artifact names. Original 12query/
+41acquisition preview selection/all41acquisitions retained;400answer rows,388
+inactive fallbacks. CPUthenGPUfixedheads share exactly one complete parent run.
+Original P16 real30query/113acquisition/7changed-list fixture stage retained.
+No fresh labels, newheadfit, quality evaluation, scoring or actualT4claim.
+
+Source/asset/preview audit PASSED before launch. Initial directory links hid
+assets from Path.rglob; unused layout preserved as native input-layout-attempt01.
+New real directories expose675links to the EXACTsame original files. Signed
+input-layout-amendment and link map retained; no filebytes changed. Initial
+sourceauditor reversed a payload literal with different assignment spacing; old
+bytes preserved; exact original spelling restoration fixed the auditor only.
+Every science/asset/tolerance requirement retained; no inference before repairs.
+
+Namespace /kaggle/input NOWpoints native .../enveda-c76/production-preview/input;
+/kaggle/working NOWpoints .../enveda-c76/production-preview/working. Only both
+verified owned links switched by their existing root owner; original C75/C76
+inputs/workings retained, no permissions or security policy changed.
+
+Resource: original matchedTorch2.10WSLenv;4workers/2threads; high8.75/max10/swap4GiB,
+hostfloor4GiB. Current RAM~6GiBfree, swap~2GiB; scope remains active. Do not stop
+other applications or alter globalWSLmemory. Scope guardian handles reserve.
+After THIS run succeeds execute scripts/audit_c76_local_production_run.py under
+matchedWSLruntime. It checks fullsource/41acquisitions/core health, both separate
+heads/388inactivefallback rows, original P16fixtures, and independently reconstructs
+physical mass filtering on seven REAL reference promotions from that USEDfixture.
+No runtime audit has run yet; execution success/quality unproven.
+
+Main complete family binding remains04b47cac... unchanged. T4sourcegate held for
+Nov14 00:00UTC=Nov13 7pmEastern. Old source rejectionversion0 is not a job. C72
+and C13UNCONSUMED; C42scoringledgerABSENT;0/2newscored; champion0.480retained.
+GoalACTIVE: concrete local production progress this turn. Old/hourly campaignsOFF.
+
 ## Latest production input readiness — no GPU inference running
 
 2026-11-12: actual Kaggle API test.parquet and sample_submission.csv fetched into

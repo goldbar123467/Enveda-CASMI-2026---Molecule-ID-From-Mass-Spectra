@@ -1,0 +1,22 @@
+{
+  "purpose": "Bounded actual unlabeled production preview of the frozen C76 complete pair",
+  "selection": "Original production preview rule: lexicographically first12public molecule IDs, retaining every original acquisition; all400sample rows retained",
+  "changed_path_fixtures": "Original frozen P16 30USED-query/113-acquisition regression fixtures",
+  "local_device": "One actual RTX2070; original Engine2 recovery device1 maps to0",
+  "local_resource_changes": ["Release unused parent CUDA cache immediately before separate ICE", "Original supported ICE --bs8"],
+  "preflight_path_change": "Resolve the exact owned competition input path through the task namespace link",
+  "head_execution": "Run CPU and GPU trained fixed heads separately over exactly the same P16 parent; preserve both artifacts",
+  "CPU_workers": 4,
+  "threads_per_process": 2,
+  "host_reserve_GiB": 4,
+  "memory_high_GiB": 8.75,
+  "memory_max_GiB": 10,
+  "swap_max_GiB": 4,
+  "automatic_retry": false,
+  "no_new_head_fitting": true,
+  "exact_ICE_cross_batch_parity_assumed": false,
+  "replaces_actual_T4_source_or_production_evidence": false,
+  "quality_read": false,
+  "C13_read": false,
+  "scoring_entries": 0
+}

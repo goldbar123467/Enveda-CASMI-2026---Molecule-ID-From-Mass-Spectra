@@ -1,0 +1,10 @@
+{
+  "checked_utc": "2026-11-12T20:11:42.148762+00:00",
+  "reason": "Directory links are not traversed by Path.rglob; zero checkpoints/manifests discovered before inference",
+  "actual_counts": {
+    "public_checkpoints": 0,
+    "pair_manifests": 0
+  },
+  "inference_started": false,
+  "all_original_files_preserved": true
+}

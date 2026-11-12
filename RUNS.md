@@ -1,8 +1,8 @@
 # Runs
 
-Updated 2026-11-12 20:01 UTC by `scripts/update_runs.py` (hourly). Generated from `runs.csv` — edit that file, not this one.
+Updated 2026-11-12 20:23 UTC by `scripts/update_runs.py` (hourly). Generated from `runs.csv` — edit that file, not this one.
 
-- Kaggle quota: Actual20:00UTC API refresh2026-11-14 00:00UTC; prior30hweeklyGPU rejection. No duration normalization claim. No new scoring entries.
+- Kaggle quota: Prior30hweeklyGPU rejection; actualAPI refresh2026-11-14 00:00UTC. No duration normalization claim;0newscoring.
 - Submissions today (UTC): 0 of 5 — see `SUBMISSIONS.md`
 
 ## Active
@@ -10,6 +10,7 @@ Updated 2026-11-12 20:01 UTC by `scripts/update_runs.py` (hourly). Generated fro
 | id | platform | kind | ref | started (UTC) | status | purpose | progress |
 |---|---|---|---|---|---|---|---|
 | C09V | kaggle-gpu | diag | c09-coverage-controls v1 | 2026-11-09 14:44 | **cancel_requested** | C09 dual-device diagnostic: exact P14 full128 external pipeline negative control onGPU0; existing C08 expanded candidate coverage/scoring onGPU1; no scoring submission | Old128 panel superseded after67 base-connected acquisition groups found; cancellation requested, not acknowledged. No allocation/training/validation result; no GPU quota added at16:34UTC. |
+| C76PRODLOCAL | local-2070 | diag | outputs/local/c76-numerical-portability-20261112/local-production-preview | 2026-11-12 20:17 | **running** | Actual unlabeled production preview:original12queries/all41acquisitions; both fixedheads; full400rowfallback; originalP16fixtures | Owned scope30208/session35815. Source/asset auditpassed; high8.75/max10/swap4GiB/hostfloor4. Realruntime/changedphysical audit still required; noquality/scoring/T4claim. |
 
 ## Finished (newest first)
 

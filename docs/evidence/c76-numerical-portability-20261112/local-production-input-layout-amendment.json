@@ -1,0 +1,16 @@
+{
+  "completed_utc": "2026-11-12T20:11:59.417257+00:00",
+  "source_sha256": "0e43bd2dc70186f2da14fe69de59e783d2d73721ec82ebc33f0228a340a28605",
+  "original_preview_freeze_sha256": "6421a13af5e7467009d52d9d5db2a905c87773daae2f81a26fffa412ae43dca1",
+  "original_layout_preserved": "/home/imsa/.local/share/enveda-c76/production-preview/input-layout-attempt01",
+  "new_owned_layout": "/home/imsa/.local/share/enveda-c76/production-preview/input",
+  "linked_files": 675,
+  "file_links_sha256": "d313815f131ca758f094331f9b173b221d503b12448811406254346ed8dba58f",
+  "source_and_asset_bytes_changed": false,
+  "only_directory_discoverability_repaired": true,
+  "active_namespace_changed": false,
+  "inference_started": false,
+  "quality_read": false,
+  "C13_read": false,
+  "scoring_entries": 0
+}

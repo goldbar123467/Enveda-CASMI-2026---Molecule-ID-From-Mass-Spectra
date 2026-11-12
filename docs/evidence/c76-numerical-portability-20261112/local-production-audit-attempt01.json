@@ -1,0 +1,7 @@
+{
+  "recorded_utc": "2026-11-12T20:14:12.831663+00:00",
+  "original_auditor_sha256": "a2f3ae1d1865a52f0305e57c515be7e4e21566e8896c860944d156d7ed82f1d7",
+  "reason": "Reversing the payload-pin literal inserted assignment spacing absent from original production stage. Restore the exact original assignment spelling before exact source comparison. No runtime or scientific source change.",
+  "inference_started": false,
+  "all_asserted_scientific_rules_retained": true
+}

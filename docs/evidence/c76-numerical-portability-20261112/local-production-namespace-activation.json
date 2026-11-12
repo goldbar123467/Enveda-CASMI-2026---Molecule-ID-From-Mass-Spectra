@@ -1,0 +1,11 @@
+{
+  "activated_utc": "2026-11-12T20:17:36.487309+00:00",
+  "source_sha256": "368ec5bde19aa2498309f704dfc810eeb75866cc8b6908988b628b57802dd4b1",
+  "preview_freeze_sha256": "6421a13af5e7467009d52d9d5db2a905c87773daae2f81a26fffa412ae43dca1",
+  "launch_plan_sha256": "3200f6e4c16c1a14545884d73b6801df9815a22892a05db9fb11dee41cbf2197",
+  "input_target": "/home/imsa/.local/share/enveda-c76/production-preview/input",
+  "working_target": "/home/imsa/.local/share/enveda-c76/production-preview/working",
+  "only_verified_owned_namespace_links_switched": true,
+  "all_prior_working_data_retained": true,
+  "no_permission_or_security_policy_changes": true
+}

@@ -1,0 +1,31 @@
+{
+  "frozen_utc": "2026-11-12T20:17:03.734449+00:00",
+  "files_sha256": {
+    "scripts/prepare_c76_local_production.py": "a60fae82303cf33430bde67f4cd7b6d68ba0f92d46e7ed5b1a6871cbc2a02658",
+    "scripts/materialize_c76_production_inputs.py": "0e43bd2dc70186f2da14fe69de59e783d2d73721ec82ebc33f0228a340a28605",
+    "scripts/audit_c76_local_production_source.py": "c6414655fe462ebada8a8bbe3bc8f8472213c2c8658ac9033cb222689e5b057f",
+    "scripts/activate_c76_local_production.py": "368ec5bde19aa2498309f704dfc810eeb75866cc8b6908988b628b57802dd4b1",
+    "scripts/run_c76_local_production.py": "9ec1196b4d8dc1e8d631d54ce57c581f3aa58fd398c55a68b43d72fc8391b4dd",
+    "scripts/supervise_c76_local_production.py": "e1a677a892b3bf5e1911386b7667c4a457e4c344219ee88e84e64e44ef1920a0",
+    "scripts/audit_c76_local_production_run.py": "7fd9f85971162f0c8ee9b2d061a1ad6c5a6beffa5ab6d51c47533ce25c14bcd3",
+    "configs/c76-local-production-preview-v1.json": "b358d826de411b716edcb88ac4980f2608417448ee422215d1f58a0e0ab10864",
+    "outputs/local/c76-numerical-portability-20261112/local-production-preview/preview-freeze.json": "6421a13af5e7467009d52d9d5db2a905c87773daae2f81a26fffa412ae43dca1",
+    "outputs/local/c76-numerical-portability-20261112/local-production-preview/input-layout-amendment.json": "e1547cfc7f5e502f6f43a5df9b142ccbe53f6c4822b8e6e5c34c8869d0e1b8e3",
+    "outputs/local/c76-numerical-portability-20261112/local-production-preview/independent-source-audit.json": "1e245df3ddcd36f0428fc08a17149063beb68912d99b81c170b0c3ae38dffae4",
+    "outputs/local/c76-numerical-portability-20261112/complete-pipeline-binding.json": "04b47cac8fe5476613834d4214d53cb51b7cc7a81162bf9516d2119acf7a03b9"
+  },
+  "actual_single_2070": true,
+  "actual_T4_evidence": false,
+  "preview_queries": 12,
+  "preview_acquisitions": 41,
+  "output_rows": 400,
+  "no_new_head_fitting": true,
+  "automatic_retry": false,
+  "host_reserve_GiB": 4,
+  "memory_high_GiB": 8.75,
+  "memory_max_GiB": 10,
+  "swap_max_GiB": 4,
+  "quality_read": false,
+  "C13_read": false,
+  "scoring_entries": 0
+}
