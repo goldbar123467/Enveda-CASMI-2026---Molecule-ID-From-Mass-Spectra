@@ -1,0 +1,547 @@
+{
+  "completed_utc": "2026-11-12T07:21:39.501824+00:00",
+  "source_sha256": "153b0afdd4a18c6304d47133d661719b14236391e61346789fc9e3245d339c8b",
+  "policy_sha256": "f76b4e4855c20593cd01cc7f646581322284d6ce34d0fe91847fa776d4e923aa",
+  "evaluation_freeze_sha256": "907b3f643f87f56196cb2859a5795e8ab4dff73ae35563ba020733d9b0818b30",
+  "consumption_sha256": "fd29f29504477d28044b2daebde0fdae19fef6c64843f3638590a53b2254a1a7",
+  "queries": 35,
+  "acquisitions": 35,
+  "chemistry_groups": 21,
+  "results": {
+    "cpu": {
+      "complete": {
+        "all": {
+          "n": 35,
+          "independent_groups": 21,
+          "baseline_mrr25": 0.7690476190476191,
+          "candidate_mrr25": 0.7687074829931972,
+          "delta": -0.0003401360544217687,
+          "ci95": [
+            -0.0012531328320802004,
+            0.0
+          ],
+          "improved": 0,
+          "harmed": 1,
+          "point": {
+            "n": 35,
+            "baseline_MRR": 0.7690476190476191,
+            "candidate_MRR": 0.7687074829931972,
+            "delta": -0.0003401360544217687,
+            "numerator": -1,
+            "denominator": 2940,
+            "strictly_positive": false,
+            "nonnegative": false
+          }
+        },
+        "source": {
+          "MassBank2026.11-remaining-ESI": {
+            "n": 5,
+            "independent_groups": 4,
+            "baseline_mrr25": 0.21666666666666665,
+            "candidate_mrr25": 0.21428571428571427,
+            "delta": -0.0023809523809523807,
+            "ci95": [
+              -0.008928571428571428,
+              0.0
+            ],
+            "improved": 0,
+            "harmed": 1,
+            "point": {
+              "n": 5,
+              "baseline_MRR": 0.21666666666666667,
+              "candidate_MRR": 0.21428571428571427,
+              "delta": -0.002380952380952381,
+              "numerator": -1,
+              "denominator": 420,
+              "strictly_positive": false,
+              "nonnegative": false
+            }
+          },
+          "NIST-public-APCI-timsTOF-standards": {
+            "n": 30,
+            "independent_groups": 17,
+            "baseline_mrr25": 0.861111111111111,
+            "candidate_mrr25": 0.861111111111111,
+            "delta": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "improved": 0,
+            "harmed": 0,
+            "point": {
+              "n": 30,
+              "baseline_MRR": 0.8611111111111112,
+              "candidate_MRR": 0.8611111111111112,
+              "delta": 0.0,
+              "numerator": 0,
+              "denominator": 1,
+              "strictly_positive": false,
+              "nonnegative": true
+            }
+          }
+        },
+        "query_mode": {
+          "positive": {
+            "n": 35,
+            "independent_groups": 21,
+            "baseline_mrr25": 0.7690476190476191,
+            "candidate_mrr25": 0.7687074829931972,
+            "delta": -0.0003401360544217687,
+            "ci95": [
+              -0.0012531328320802004,
+              0.0
+            ],
+            "improved": 0,
+            "harmed": 1,
+            "point": {
+              "n": 35,
+              "baseline_MRR": 0.7690476190476191,
+              "candidate_MRR": 0.7687074829931972,
+              "delta": -0.0003401360544217687,
+              "numerator": -1,
+              "denominator": 2940,
+              "strictly_positive": false,
+              "nonnegative": false
+            }
+          }
+        },
+        "recovered_truths": 0,
+        "displaced_truths": 0,
+        "truth_absent_queries": 3,
+        "rank1_changes": 0,
+        "candidate_membership_changes": 0
+      },
+      "incremental": {
+        "all": {
+          "n": 35,
+          "independent_groups": 21,
+          "baseline_mrr25": 0.7690476190476191,
+          "candidate_mrr25": 0.7687074829931972,
+          "delta": -0.0003401360544217687,
+          "ci95": [
+            -0.0012531328320802004,
+            0.0
+          ],
+          "improved": 0,
+          "harmed": 1,
+          "point": {
+            "n": 35,
+            "baseline_MRR": 0.7690476190476191,
+            "candidate_MRR": 0.7687074829931972,
+            "delta": -0.0003401360544217687,
+            "numerator": -1,
+            "denominator": 2940,
+            "strictly_positive": false,
+            "nonnegative": false
+          }
+        },
+        "source": {
+          "MassBank2026.11-remaining-ESI": {
+            "n": 5,
+            "independent_groups": 4,
+            "baseline_mrr25": 0.21666666666666665,
+            "candidate_mrr25": 0.21428571428571427,
+            "delta": -0.0023809523809523807,
+            "ci95": [
+              -0.008928571428571428,
+              0.0
+            ],
+            "improved": 0,
+            "harmed": 1,
+            "point": {
+              "n": 5,
+              "baseline_MRR": 0.21666666666666667,
+              "candidate_MRR": 0.21428571428571427,
+              "delta": -0.002380952380952381,
+              "numerator": -1,
+              "denominator": 420,
+              "strictly_positive": false,
+              "nonnegative": false
+            }
+          },
+          "NIST-public-APCI-timsTOF-standards": {
+            "n": 30,
+            "independent_groups": 17,
+            "baseline_mrr25": 0.861111111111111,
+            "candidate_mrr25": 0.861111111111111,
+            "delta": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "improved": 0,
+            "harmed": 0,
+            "point": {
+              "n": 30,
+              "baseline_MRR": 0.8611111111111112,
+              "candidate_MRR": 0.8611111111111112,
+              "delta": 0.0,
+              "numerator": 0,
+              "denominator": 1,
+              "strictly_positive": false,
+              "nonnegative": true
+            }
+          }
+        },
+        "query_mode": {
+          "positive": {
+            "n": 35,
+            "independent_groups": 21,
+            "baseline_mrr25": 0.7690476190476191,
+            "candidate_mrr25": 0.7687074829931972,
+            "delta": -0.0003401360544217687,
+            "ci95": [
+              -0.0012531328320802004,
+              0.0
+            ],
+            "improved": 0,
+            "harmed": 1,
+            "point": {
+              "n": 35,
+              "baseline_MRR": 0.7690476190476191,
+              "candidate_MRR": 0.7687074829931972,
+              "delta": -0.0003401360544217687,
+              "numerator": -1,
+              "denominator": 2940,
+              "strictly_positive": false,
+              "nonnegative": false
+            }
+          }
+        },
+        "recovered_truths": 0,
+        "displaced_truths": 0,
+        "truth_absent_queries": 3,
+        "rank1_changes": 0,
+        "candidate_membership_changes": 0
+      },
+      "admission": {
+        "passed": false,
+        "statistical_promotion": false
+      }
+    },
+    "gpu": {
+      "complete": {
+        "all": {
+          "n": 35,
+          "independent_groups": 21,
+          "baseline_mrr25": 0.7690476190476191,
+          "candidate_mrr25": 0.7687074829931972,
+          "delta": -0.0003401360544217687,
+          "ci95": [
+            -0.0012531328320802004,
+            0.0
+          ],
+          "improved": 0,
+          "harmed": 1,
+          "point": {
+            "n": 35,
+            "baseline_MRR": 0.7690476190476191,
+            "candidate_MRR": 0.7687074829931972,
+            "delta": -0.0003401360544217687,
+            "numerator": -1,
+            "denominator": 2940,
+            "strictly_positive": false,
+            "nonnegative": false
+          }
+        },
+        "source": {
+          "MassBank2026.11-remaining-ESI": {
+            "n": 5,
+            "independent_groups": 4,
+            "baseline_mrr25": 0.21666666666666665,
+            "candidate_mrr25": 0.21428571428571427,
+            "delta": -0.0023809523809523807,
+            "ci95": [
+              -0.008928571428571428,
+              0.0
+            ],
+            "improved": 0,
+            "harmed": 1,
+            "point": {
+              "n": 5,
+              "baseline_MRR": 0.21666666666666667,
+              "candidate_MRR": 0.21428571428571427,
+              "delta": -0.002380952380952381,
+              "numerator": -1,
+              "denominator": 420,
+              "strictly_positive": false,
+              "nonnegative": false
+            }
+          },
+          "NIST-public-APCI-timsTOF-standards": {
+            "n": 30,
+            "independent_groups": 17,
+            "baseline_mrr25": 0.861111111111111,
+            "candidate_mrr25": 0.861111111111111,
+            "delta": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "improved": 0,
+            "harmed": 0,
+            "point": {
+              "n": 30,
+              "baseline_MRR": 0.8611111111111112,
+              "candidate_MRR": 0.8611111111111112,
+              "delta": 0.0,
+              "numerator": 0,
+              "denominator": 1,
+              "strictly_positive": false,
+              "nonnegative": true
+            }
+          }
+        },
+        "query_mode": {
+          "positive": {
+            "n": 35,
+            "independent_groups": 21,
+            "baseline_mrr25": 0.7690476190476191,
+            "candidate_mrr25": 0.7687074829931972,
+            "delta": -0.0003401360544217687,
+            "ci95": [
+              -0.0012531328320802004,
+              0.0
+            ],
+            "improved": 0,
+            "harmed": 1,
+            "point": {
+              "n": 35,
+              "baseline_MRR": 0.7690476190476191,
+              "candidate_MRR": 0.7687074829931972,
+              "delta": -0.0003401360544217687,
+              "numerator": -1,
+              "denominator": 2940,
+              "strictly_positive": false,
+              "nonnegative": false
+            }
+          }
+        },
+        "recovered_truths": 0,
+        "displaced_truths": 0,
+        "truth_absent_queries": 3,
+        "rank1_changes": 0,
+        "candidate_membership_changes": 0
+      },
+      "incremental": {
+        "all": {
+          "n": 35,
+          "independent_groups": 21,
+          "baseline_mrr25": 0.7690476190476191,
+          "candidate_mrr25": 0.7687074829931972,
+          "delta": -0.0003401360544217687,
+          "ci95": [
+            -0.0012531328320802004,
+            0.0
+          ],
+          "improved": 0,
+          "harmed": 1,
+          "point": {
+            "n": 35,
+            "baseline_MRR": 0.7690476190476191,
+            "candidate_MRR": 0.7687074829931972,
+            "delta": -0.0003401360544217687,
+            "numerator": -1,
+            "denominator": 2940,
+            "strictly_positive": false,
+            "nonnegative": false
+          }
+        },
+        "source": {
+          "MassBank2026.11-remaining-ESI": {
+            "n": 5,
+            "independent_groups": 4,
+            "baseline_mrr25": 0.21666666666666665,
+            "candidate_mrr25": 0.21428571428571427,
+            "delta": -0.0023809523809523807,
+            "ci95": [
+              -0.008928571428571428,
+              0.0
+            ],
+            "improved": 0,
+            "harmed": 1,
+            "point": {
+              "n": 5,
+              "baseline_MRR": 0.21666666666666667,
+              "candidate_MRR": 0.21428571428571427,
+              "delta": -0.002380952380952381,
+              "numerator": -1,
+              "denominator": 420,
+              "strictly_positive": false,
+              "nonnegative": false
+            }
+          },
+          "NIST-public-APCI-timsTOF-standards": {
+            "n": 30,
+            "independent_groups": 17,
+            "baseline_mrr25": 0.861111111111111,
+            "candidate_mrr25": 0.861111111111111,
+            "delta": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "improved": 0,
+            "harmed": 0,
+            "point": {
+              "n": 30,
+              "baseline_MRR": 0.8611111111111112,
+              "candidate_MRR": 0.8611111111111112,
+              "delta": 0.0,
+              "numerator": 0,
+              "denominator": 1,
+              "strictly_positive": false,
+              "nonnegative": true
+            }
+          }
+        },
+        "query_mode": {
+          "positive": {
+            "n": 35,
+            "independent_groups": 21,
+            "baseline_mrr25": 0.7690476190476191,
+            "candidate_mrr25": 0.7687074829931972,
+            "delta": -0.0003401360544217687,
+            "ci95": [
+              -0.0012531328320802004,
+              0.0
+            ],
+            "improved": 0,
+            "harmed": 1,
+            "point": {
+              "n": 35,
+              "baseline_MRR": 0.7690476190476191,
+              "candidate_MRR": 0.7687074829931972,
+              "delta": -0.0003401360544217687,
+              "numerator": -1,
+              "denominator": 2940,
+              "strictly_positive": false,
+              "nonnegative": false
+            }
+          }
+        },
+        "recovered_truths": 0,
+        "displaced_truths": 0,
+        "truth_absent_queries": 3,
+        "rank1_changes": 0,
+        "candidate_membership_changes": 0
+      },
+      "admission": {
+        "passed": false,
+        "statistical_promotion": false
+      }
+    }
+  },
+  "parent_overlay": {
+    "all": {
+      "n": 35,
+      "independent_groups": 21,
+      "baseline_mrr25": 0.7690476190476191,
+      "candidate_mrr25": 0.7690476190476191,
+      "delta": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "improved": 0,
+      "harmed": 0,
+      "point": {
+        "n": 35,
+        "baseline_MRR": 0.7690476190476191,
+        "candidate_MRR": 0.7690476190476191,
+        "delta": 0.0,
+        "numerator": 0,
+        "denominator": 1,
+        "strictly_positive": false,
+        "nonnegative": true
+      }
+    },
+    "source": {
+      "MassBank2026.11-remaining-ESI": {
+        "n": 5,
+        "independent_groups": 4,
+        "baseline_mrr25": 0.21666666666666665,
+        "candidate_mrr25": 0.21666666666666665,
+        "delta": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "improved": 0,
+        "harmed": 0,
+        "point": {
+          "n": 5,
+          "baseline_MRR": 0.21666666666666667,
+          "candidate_MRR": 0.21666666666666667,
+          "delta": 0.0,
+          "numerator": 0,
+          "denominator": 1,
+          "strictly_positive": false,
+          "nonnegative": true
+        }
+      },
+      "NIST-public-APCI-timsTOF-standards": {
+        "n": 30,
+        "independent_groups": 17,
+        "baseline_mrr25": 0.861111111111111,
+        "candidate_mrr25": 0.861111111111111,
+        "delta": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "improved": 0,
+        "harmed": 0,
+        "point": {
+          "n": 30,
+          "baseline_MRR": 0.8611111111111112,
+          "candidate_MRR": 0.8611111111111112,
+          "delta": 0.0,
+          "numerator": 0,
+          "denominator": 1,
+          "strictly_positive": false,
+          "nonnegative": true
+        }
+      }
+    },
+    "query_mode": {
+      "positive": {
+        "n": 35,
+        "independent_groups": 21,
+        "baseline_mrr25": 0.7690476190476191,
+        "candidate_mrr25": 0.7690476190476191,
+        "delta": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "improved": 0,
+        "harmed": 0,
+        "point": {
+          "n": 35,
+          "baseline_MRR": 0.7690476190476191,
+          "candidate_MRR": 0.7690476190476191,
+          "delta": 0.0,
+          "numerator": 0,
+          "denominator": 1,
+          "strictly_positive": false,
+          "nonnegative": true
+        }
+      }
+    },
+    "recovered_truths": 0,
+    "displaced_truths": 0,
+    "truth_absent_queries": 3,
+    "rank1_changes": 0,
+    "candidate_membership_changes": 0
+  },
+  "passed_pair": false,
+  "all_queries_retained": true,
+  "absent_truths_zero": true,
+  "actual_query_modes": {
+    "positive": 35
+  },
+  "C13_read": false,
+  "limitation": "Small positive-only panel, mostly APCI consensus exports. Not target mixed-ESI calibration; public encoder/parent pretraining exposure is not erased. No cohort/recipe revision after these outcomes."
+}

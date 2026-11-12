@@ -1,0 +1,35 @@
+{
+  "cycle": "C49",
+  "frozen_utc": "2026-11-12T06:30:06.805421+00:00",
+  "C48_policy_sha256": "8e97fb4c8ea9890740096b2666459bee6e5f8baad479c83f95da0c30e4ab3178",
+  "C48_models_and_fit_boundary_unchanged": true,
+  "C48_GPU_recipe_rejected": true,
+  "new_model_fitting": false,
+  "new_encoder_inference": false,
+  "rationale": "Used-development causal ablation isolates one extra residual-model harm independent of top2protection. Test one global agreement rule, never an identity/source/mode-specific exception.",
+  "cpu": "Unchanged C48 clean CPU ridge on complete formate-compatible P16 parent.",
+  "gpu": "Same C48 clean ridge and GPU-fitted residual. Compute each fixed0.20/offset3same-formula tail RRF utility, then allow adjacent inversions only when BOTH utilities strictly prefer them. Rank1/membership/formula slots protected; ties/unsupported/missing group features retain parent.",
+  "development_roles": "All original352queries/1292acquisitions are USED development. Keep strict original192and all352gains, and nonnegative EVERY original source and positive/mixed/negative mode; grouped intervals/intersections/absent zeros required.",
+  "auxiliary": "Unchanged full35auxiliary queries/21chemistry groups:5remaining MassBank ESI+30public experimental APCI. No outcomes yet. Nonnegative complete-vsP01 AND incremental-vsP16 points on all35and EACH source. No post-outcome recipe/cohort revision.",
+  "C13": "Same corrected C45 once-only jointly sealed full/incremental protocol after both prior checks and production audits. Whole231source-identity/input-alias exclusion for P16; C13 cannot establish target timsTOF calibration.",
+  "candidate_family": {
+    "cpu": 1,
+    "gpu": 1
+  },
+  "source_outcomes_read": false,
+  "C13_read": false,
+  "maximum_new_accepted_entries": 2,
+  "maximum_pending": 1,
+  "order": [
+    "cpu",
+    "actual_numeric_CPU_score",
+    "gpu",
+    "actual_numeric_GPU_score"
+  ],
+  "approval_already_granted": true,
+  "paid_compute": false,
+  "hourly_automation": false,
+  "champion_retained": 0.48,
+  "statistical_promotion": false,
+  "limitation": "Small uncertain adaptive-development effect. Auxiliary data are positive-only and mostly APCI, not an ESI mixed-population replacement. Public transfer is uncalibrated."
+}

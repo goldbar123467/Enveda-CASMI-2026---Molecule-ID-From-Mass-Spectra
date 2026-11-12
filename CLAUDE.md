@@ -1,3 +1,52 @@
+## Active C51 decision — C49 pair rejected on fresh source
+
+Both frozen C49 candidates failed the prospectively frozen complete and incremental
+nonregression gates on all 35 auxiliary queries and the five-query MassBank source.
+One truth moved 12 to 14: all35 delta -1/2940 (-0.000340136); MassBank delta -1/420.
+The 30 NIST APCI queries were unchanged. Independent exact-rank audit agrees.
+Preserve this failure; no recipe/cohort rescue inside C49. Auxiliary outcomes are
+now USED development, C13 remains untouched and 0/2 approvals have been used.
+The native goal remains active. Old/hourly campaigns remain off; preserve 0.480.
+
+CPU P25 private v1 completed at07:23UTC; its independent production audit is
+running. GPU P27 private v1 is running. Engineering audits cannot override the
+scientific rejection. Next work diagnoses structural isomer ranking and inventories
+a new separated validation population before another model fit. The remaining
+C13 compatibility gap must still be repaired before any eventual once-only use.
+
+Evidence: docs/evidence/c51-20261112 and outputs/local/c51-complete-auxiliary-20261112.
+
+## Active C49 pair — fresh source replay and private production checks
+
+The native goal remains active: complete at most two approved scored entries,
+CPU first and then GPU after its actual numeric score. Neither approval is used.
+C13 outcomes remain untouched; the 0.480 champion is preserved and hourly/old
+campaigns remain off. No repeat approval is needed.
+
+C48 refitted clean CPU ridge and a bounded GPU residual on 174,051 identities /
+600,060 acquisitions, excluding the entire new auxiliary chemistry and raw alias
+closure. The original C48 GPU serving recipe failed used development. C49 retains
+those weights but requires both heads to support every tail inversion. Its full
+352-query / 1,292-acquisition used-development audit passes every original source
+and mode guard; the improvement is small and uncertain. C39 is USED development.
+
+The fresh auxiliary panel contains all 35 usable supplied exports: 30 public
+experimental NIST APCI timsTOF standards and five remaining MassBank ESI queries.
+All are positive; this panel cannot establish mixed ESI target calibration.
+C50 cloud core completed and passed exact acquisition and exclusion audits at
+07:08 UTC. C51 now masks and replays the complete frozen P16 outer stage before
+both frozen predictions are evaluated. No auxiliary quality outcomes read yet.
+
+Frozen production candidates: P25 CPU (C48 clean ridge) and P27 GPU (C49 agreement),
+private v1 previews pushed 06:59 and 07:16 UTC. Both need actual production audits.
+P26 is rejected. Keep scientific_gate_hold until fresh source checks, faithful
+C13 complete-parent confirmation (at most once), and both production audits pass.
+Inspect legacy formate compatibility in original C13 v2 before reusing its parent;
+its PV-only repair is not proof of the later main/fragment adapter.
+
+Current evidence: outputs/local/c49-consensus-pair-20261112 and
+outputs/local/c50-auxiliary-validation-20261112; policy configs/c49-consensus-pair-20261112.json.
+
 # Enveda CASMI 2026 — working rules
 
 ## ACTIVE goal after C46 no-go — two scoring approvals remain unused

@@ -1,0 +1,19 @@
+{
+  "frozen_utc": "2026-11-12T06:11:58.095178+00:00",
+  "trial": "gpu",
+  "parent_variant": "P16",
+  "parent_notebook_sha256": "d6b9c9625ad8fb7d503341c6fd702bd909101d719ca55e400145fb96f2b2af6a",
+  "original_production_path": "kaggle\\forks\\p21-c42-gpu-alignment",
+  "original_production_sha256": "aac48eb510ab298103546ebbace67b4fe1678528d0d6438c63b800af60b2b6c1",
+  "notebook_sha256": "c00e202418e53195c34cc8565f54c5a91cbe61d0519a4b0c09716aac9a2ce593",
+  "scientific_sha256": "7082ee2f7a53f422a054d2cf08be9b63beca052bd2e7c964d0128e8a3189f35c",
+  "head_manifest_sha256": "7095842c42cdfb81149f3bc448a65bd62a0877ebb9bbdb56a3f41a18747e4f78",
+  "builder_sha256": "74944f84e60685200b4c254ad1f80c8f6346b30661c1f1e9bae37404581db3f2",
+  "new_candidate_stage_cell": 28,
+  "complete_parent_all_cells_exact": true,
+  "protected_parent_prefix": 2,
+  "new_source_quality_read": false,
+  "C13_read": false,
+  "cloud_run_released": false,
+  "qualified_for_submission": false
+}

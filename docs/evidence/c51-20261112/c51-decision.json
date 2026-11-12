@@ -1,0 +1,11 @@
+{
+  "completed_utc": "2026-11-12T07:22:24.477269+00:00",
+  "disposition": "REJECT_C49_PAIR",
+  "quality_audit_sha256": "345fdc79e27c4f3260b3f6c3b01578ea6f720b4ffbde3efca9fd68f11622dc7b",
+  "source_results_sha256": "2a0363bd82303d22af33b565a7759a12c09da12d5c6bc18bbc50ec16b0467a17",
+  "unchanged_predeclared_gates": true,
+  "C13_consumed": false,
+  "scoring_entries_used": 0,
+  "no_post_outcome_recipe_or_cohort_revision": true,
+  "next_action": "Preserve rejected family; diagnose used-development loss, then seek a new genuinely separated validation population for a mechanistic isomer-ranking improvement."
+}

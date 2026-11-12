@@ -1,0 +1,22 @@
+{
+  "completed_utc": "2026-11-12T06:59:34.026819+00:00",
+  "source_sha256": "a86fc02b7c63ea7020f0bb1ec63d44f0a490cccf9c24471275f5db7edc6fa942",
+  "CPU_model_sha256": "f4db1c7c3c3c2c3258d12bbd31f7ce7b8ce96b6f81b1c56ef9fa1671b1e74ebf",
+  "GPU_model_sha256": "6f0b764e17a40e8dd871ce834adff3a90b1ccc879f5beacebc226e3177e618a4",
+  "fit_boundary_sha256": "56ec9091585aa98d391d9b1760a8d8c89bcca7a025bc1184e6a358125c667ae3",
+  "fitting_identities": 174051,
+  "fitting_acquisitions": 600060,
+  "all_original_exclusions_preserved": true,
+  "C39_auxiliary_and_global_C13_inventory_fit_identity_overlaps": 0,
+  "original_row_official_identity_overlaps": 0,
+  "original_raw_quarantine_survivors": 0,
+  "CPU_normal_equation_max_abs_residual": 1.0020190024939701e-09,
+  "target_unit_norm_max_abs_error": 8.355971026219322e-09,
+  "GPU_actual_anchor_exactly_clean_CPU": true,
+  "GPU_final_steps": 8000,
+  "GPU_maximum_observed_relative_residual": 0.13771416246891022,
+  "molecular_geometry_unchanged": true,
+  "quality_outcomes_read": false,
+  "C13_labels_read": false,
+  "limitation": "Actual fitted-component audit; public parent/encoder historical exposure is not removed. C13global inventory is used only for exclusion verification, not reserved query label matching."
+}

@@ -1,0 +1,16 @@
+{
+  "completed_utc": "2026-11-12T07:08:49.763604+00:00",
+  "source_sha256": "bae8a11d7f5211cf4e4012885c1d9e11f98bb9eb62ff32e7f24b65c990d1c22b",
+  "queries": 35,
+  "acquisitions": 35,
+  "original_query_sha256": "6fdbdfb25e4da4be7caee1a5a87e5ed07543758e7b08a198ffbe0599e5f7edd8",
+  "cloud_query_sha256": "8fae12c715ce3e814f5a7a47de151c68becf44e002725dddc6b98991d8c6157f",
+  "all_original_acquisitions_retained": true,
+  "all_original_metadata_and_peak_arrays_exact": true,
+  "actual_query_modes": {
+    "positive": 35
+  },
+  "quality_labels_read": false,
+  "C13_read": false,
+  "limitation": "Positive-only small auxiliary source; not a substitute for original1292acquisitions/mixed checks or target-population calibration."
+}

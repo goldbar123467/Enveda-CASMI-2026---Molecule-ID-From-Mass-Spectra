@@ -1,0 +1,22 @@
+{
+  "frozen_utc": "2026-11-12T06:30:06.944323+00:00",
+  "trial": "gpu",
+  "parent_variant": "P16",
+  "parent_notebook_sha256": "d6b9c9625ad8fb7d503341c6fd702bd909101d719ca55e400145fb96f2b2af6a",
+  "original_production_path": "kaggle\\forks\\p26-c48-bounded-gpu",
+  "original_production_sha256": "c00e202418e53195c34cc8565f54c5a91cbe61d0519a4b0c09716aac9a2ce593",
+  "notebook_sha256": "1b40cbdaedc88a04f865785f66189246e18966e011e921139fcace1545847607",
+  "scientific_sha256": "daaf513355a8b80c9caba639ac331c8ca40febe70abd11111f956520fd5c3109",
+  "head_manifest_sha256": "7afc1bb6378b18da9683b94511af5a1b1a7468d452fab6c28bd7a189efc01782",
+  "builder_sha256": "2d6dacde6fae7162cfcae3a817a195c67d091c0d4fd245f40e87b97d029b7222",
+  "new_candidate_stage_cell": 28,
+  "complete_parent_all_cells_exact": true,
+  "protected_parent_prefix": 1,
+  "new_source_quality_read": false,
+  "C13_read": false,
+  "cloud_run_released": false,
+  "qualified_for_submission": false,
+  "GPU_consensus": true,
+  "fitted_weights_changed": false,
+  "source_quality_read": false
+}

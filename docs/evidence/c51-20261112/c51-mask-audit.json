@@ -1,0 +1,17 @@
+{
+  "completed_utc": "2026-11-12T07:18:57.169722+00:00",
+  "source_sha256": "70fcaf5a91f238b214169c0a554fc0ebf397cece42018a2887fcc0aa1e45e0e4",
+  "mask_manifest_sha256": "cd053e028059a869b5f5cc677a897057fd63d4386d08613d4d80992508a0e615",
+  "original_rows": 200724,
+  "reachable_rows": 506,
+  "retained_rows": 309,
+  "all_original_row_and_peak_alignment_exact": true,
+  "direct_precursor_union_exact": true,
+  "every_recorded_structure_exclusion_applied": true,
+  "global_alias_quarantine_exact": true,
+  "independently_recomputed_all_reachable_peak_aliases": true,
+  "forbidden_rows_retained": 0,
+  "quality_outcomes_read": false,
+  "C13_read": false,
+  "limitation": "Identity descriptor generation is source-pinned and unit-tested; this alignment audit does not independently reimplement tautomer chemistry or prove universal provenance exclusion."
+}

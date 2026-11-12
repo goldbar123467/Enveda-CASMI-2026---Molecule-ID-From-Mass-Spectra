@@ -1,0 +1,36 @@
+{
+  "frozen_utc": "2026-11-12T06:30:06.969864+00:00",
+  "source_sha256": "2d6dacde6fae7162cfcae3a817a195c67d091c0d4fd245f40e87b97d029b7222",
+  "policy_sha256": "f76b4e4855c20593cd01cc7f646581322284d6ce34d0fe91847fa776d4e923aa",
+  "candidates": {
+    "cpu": {
+      "path": "kaggle\\forks\\p25-c48-clean-cpu-ridge",
+      "kernel": "clarkkitchen/casmi26-p25-c48-clean-cpu-ridge",
+      "version": 1,
+      "notebook_sha256": "4e425c3ed6e4d2b5f7a3b426c85b454a5528266987330328539311132a5efd49",
+      "scientific_sha256": "723f7dad1b7811c03e5606f600add4fd836ad0d542c3a21779a31916e1420c7a",
+      "pin_sha256": "b987611902dbda0d030510d9c4120b21fee87f4e5bc0b88668b7d317d1f9af52",
+      "parent": "P16",
+      "bundle": "outputs\\publish\\c48-clean-residual-heads-20261112",
+      "head_manifest_sha256": "7095842c42cdfb81149f3bc448a65bd62a0877ebb9bbdb56a3f41a18747e4f78"
+    },
+    "gpu": {
+      "path": "kaggle\\forks\\p27-c49-gpu-agreement",
+      "kernel": "clarkkitchen/casmi26-p27-c49-gpu-agreement",
+      "version": 1,
+      "notebook_sha256": "1b40cbdaedc88a04f865785f66189246e18966e011e921139fcace1545847607",
+      "scientific_sha256": "daaf513355a8b80c9caba639ac331c8ca40febe70abd11111f956520fd5c3109",
+      "pin_sha256": "c6737d1bbfd6da999b7f568ef2e4b74d4b220bde564ec1fe7725467e956d3a06",
+      "parent": "P16",
+      "bundle": "outputs\\publish\\c49-consensus-heads-20261112",
+      "head_manifest_sha256": "7afc1bb6378b18da9683b94511af5a1b1a7468d452fab6c28bd7a189efc01782"
+    }
+  },
+  "used_development_rule_sha256": "99d11773493685f4620d4b9ae436fc4ba1c0447a6b5983615bc98bc1fba65559",
+  "used_development_results_sha256": "ff701c1cacee5d4d2ced83740879a2c08428d1e6f590fed65b6fb66ba7211019",
+  "auxiliary_panel_freeze_sha256": "5b3fb97a4fe5b28114ffe1c81857adfab8757d3df5f7779446d201276ea933fe",
+  "source_outcomes_read": false,
+  "C13_read": false,
+  "maximum_new_accepted_entries": 2,
+  "CPU_and_GPU_models_same_clean_C48_fit": true
+}
