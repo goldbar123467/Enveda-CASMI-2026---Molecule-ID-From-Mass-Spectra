@@ -102,6 +102,17 @@ two accepted entries maximum, a single pending account entry, durable intents,
 CPUfirst and its actual score before GPUrelease. These are exploratory trials;
 only actual public scores establish improvement. No scoring command has run.
 
+The source-bound `scripts/watch_c42_scores.py` is ready but has NOT been started.
+Start it with `.venv` and `--release-second` only after qualification and actual
+CPU acceptance. It observes real account status, waits for a numeric terminal
+CPU score, releases the same qualified GPU entry through the submission guard,
+and stops after both actual results. Missing observations never imply failure
+or authorize a repeat submission. A real scoring error stops for investigation.
+Five temporary-account tests pass: delayed score propagation, interrupted API
+observation, another pending entry, missing qualification, and terminal failure.
+Ambiguous accepted-response recovery requires the exact durable qualification,
+source and kernel intent, and preserves the qualification pin in the ledger.
+
 Finish the goal only after both approved entries have actual terminal results,
 or reconcile a demonstrated external blocker under the native blocked-audit
 rules. Keep the full original objective intact across continuation turns.

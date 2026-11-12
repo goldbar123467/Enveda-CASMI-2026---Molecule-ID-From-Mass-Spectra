@@ -65,8 +65,16 @@ def submit(trial,dry=False):
     if matches:
         record=next((r for r in ledger['submissions'] if r['trial']==trial),None)
         if record is None:
-            record=dict(trial=trial,marker=marker,kernel=e['kernel'],version=e['version'],reconciled_utc=stamp(),**matches[0]);ledger['submissions'].append(record)
-        else:record.update(matches[0],checked_utc=stamp())
+            intents=[i for i in ledger['intents'] if i['marker']==marker]
+            assert len(intents)==1,'Existing account marker requires its exact durable intent'
+            intent=intents[0]
+            assert intent['qualification_sha256']==sha(qpath) and intent['remote_scientific_sha256']==audit['remote_scientific_sha256']
+            assert intent['kernel']==e['kernel'] and intent['version']==e['version']
+            record=dict(trial=trial,marker=marker,kernel=e['kernel'],version=e['version'],reconciled_utc=stamp(),
+                qualification_sha256=sha(qpath),csv_sha256=audit['csv_sha256'],**matches[0]);ledger['submissions'].append(record)
+        else:
+            assert record['qualification_sha256']==sha(qpath) and record['csv_sha256']==audit['csv_sha256']
+            record.update(matches[0],checked_utc=stamp())
         for intent in ledger['intents']:
             if intent['marker']==marker:intent.update(resolved=True,reference=record['reference'])
         if not dry:

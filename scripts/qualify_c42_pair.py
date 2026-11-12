@@ -52,7 +52,7 @@ def main():
         for name,h in audit['artifact_sha256'].items():assert sha(ROOT/name)==h,name;paths.append(ROOT/name)
         trials[t]=dict(kernel='clarkkitchen/casmi26-'+slot,version=1,notebook_path=str((folder/'notebook.ipynb').relative_to(ROOT)),
             audit_path=str(ap.relative_to(ROOT)),smoke_output=str((cloud/'submission.csv').relative_to(ROOT)))
-    for name in ['qualify_c42_pair.py','submit_c42_pair.py','confirm_c43_pair.py','audit_c42_production.py','audit_c42_ranking.py','audit_c42_quality.py','evaluate_c42_fixed.py']:paths.append(ROOT/'scripts'/name)
+    for name in ['qualify_c42_pair.py','submit_c42_pair.py','watch_c42_scores.py','confirm_c43_pair.py','audit_c42_production.py','audit_c42_ranking.py','audit_c42_quality.py','evaluate_c42_fixed.py']:paths.append(ROOT/'scripts'/name)
     authorization=ROOT/'outputs/local/c38-source-support-20261111/authorization.json'
     result=dict(qualified_utc=datetime.now(timezone.utc).isoformat(),decision='execution_qualified_fixed_exploratory_pair',order=['cpu','gpu'],
         maximum_new_accepted_submissions=2,maximum_pending=1,authorization_sha256=sha(authorization),champion_retained=.480,
