@@ -1,4 +1,5 @@
 """Source-pinned exposure/grouping report after the single C13consumption."""
+import json
 import numpy as np
 import pandas as pd
 from rdkit import Chem,DataStructs

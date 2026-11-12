@@ -33,5 +33,7 @@
     "can_read_C13": false,
     "can_submit": false
   },
-  "C59_base_observer": "prepared_only_not_started"
+  "C59_base_observer": "prepared_only_not_started",
+  "confirmation_preflight": "Synthetic exposure report test passed; import corrected before freeze/consumption; reserved labels never read",
+  "undefined_name_check": "All18prepared/currentworkflow scripts pass pyflakes3.4.0 undefined-name checks"
 }
