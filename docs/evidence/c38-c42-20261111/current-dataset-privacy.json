@@ -1,0 +1,20 @@
+[
+  {
+    "dataset": "casmi26-c41r2-smoke-masked-validation-20261111",
+    "privacy": {
+      "isPrivate": true
+    }
+  },
+  {
+    "dataset": "casmi26-c41r2-full-masked-validation-20261111",
+    "privacy": {
+      "isPrivate": true
+    }
+  },
+  {
+    "dataset": "casmi26-c42r1-crossmodal-heads-20261111",
+    "privacy": {
+      "isPrivate": true
+    }
+  }
+]

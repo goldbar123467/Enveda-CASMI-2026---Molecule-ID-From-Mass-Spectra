@@ -1,0 +1,35 @@
+{
+  "completed_utc": "2026-11-12T00:09:05.461416+00:00",
+  "source_sha256": "6aea814f832eaffc17a6e224691f231db4a77472830d74a127680a1332719dbf",
+  "query_sha256": "9f6182bf33a856b5588a6a0f712eb0577cb2dba888dfaff07eb3f1c178158b9d",
+  "validation_freeze_sha256": "00b2941aec224f410c9c36e9272c1926230ac2e06cd4f75ee6b26ada68e5c921",
+  "queries": 352,
+  "acquisitions": 1292,
+  "actual_query_modes": {
+    "positive": 176,
+    "mixed": 126,
+    "negative": 50
+  },
+  "maximum_neutral_mass_error_ppm": 24.115839149921843,
+  "acquisitions_over30ppm": 0,
+  "per_source": {
+    "MassBank2026.11-timsTOF": {
+      "queries": 80,
+      "acquisitions": 121,
+      "maximum_mass_error_ppm": 24.115839149921843
+    },
+    "enveda-180": {
+      "queries": 192,
+      "acquisitions": 812,
+      "maximum_mass_error_ppm": 4.907600919092414
+    },
+    "enveda-np-examples": {
+      "queries": 80,
+      "acquisitions": 359,
+      "maximum_mass_error_ppm": 12.646776694143407
+    }
+  },
+  "quality_metrics_read": false,
+  "predictions_read": false,
+  "C13_read": false
+}

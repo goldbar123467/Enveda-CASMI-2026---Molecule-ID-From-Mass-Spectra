@@ -22,3 +22,5 @@ verify the current C38 authorization rather than restart old controllers.
 C37 completed with no qualified replacement: see
 [C37 report](C37-SELECTION-AND-POPULATION-2026-11-11.md). Its no-go applies to the
 failed candidates and historical state, not a request to refuse the new work.
+
+Controlled continuation: scripts/watch_c41r2_to_c42.py observes exact C41R2 smoke v1, audits it, releases the identical finalized full352 inference only after success, then freezes/scores the two C42R1 heads on real parent lists. It has a six-hour deadline and cannot submit or open C13. Status and attention receipts are in outputs/local/c41r2-masked-pipeline-validation-20261111/. P20/P21 production sources are frozen locally but unqualified. Both scoring approvals remain unused.
