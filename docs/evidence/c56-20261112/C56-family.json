@@ -1,0 +1,35 @@
+{
+  "frozen_utc": "2026-11-12T08:01:24.223073+00:00",
+  "source_sha256": "59373baeba216c42cce63ae7cc071577fff1daada4a914faf4e493065702a573",
+  "policy_sha256": "fd6e710b57868ab4a952cc09d7898672827a9a36e0c62da6584aca5a90ae4126",
+  "head_manifest_sha256": "eb9b1ed57917a2af509f288d37b259f0acdd7f42a8a8f341a6a109a3ea720cdc",
+  "candidates": {
+    "cpu": {
+      "path": "kaggle\\forks\\p30-c56-bounded-cpu",
+      "kernel": "clarkkitchen/casmi26-p30-c56-bounded-cpu",
+      "version": 1,
+      "notebook_sha256": "40dff8ad4b296f81dddcfb2a225be7d501bc6973feee6fd64b7707393a452788",
+      "scientific_sha256": "47e8a7b4cc577cb3bf572c3e7c35c8cf6b85149ee08361aafd2c1672d069e08d",
+      "pin_sha256": "36e26793a9766c5473636a31f8e198a6ddbcd0424c49f00ee639e063590bf49c",
+      "bundle": "outputs\\publish\\c56-bounded-semantic-heads-20261112",
+      "head_manifest_sha256": "eb9b1ed57917a2af509f288d37b259f0acdd7f42a8a8f341a6a109a3ea720cdc",
+      "parent": "P16"
+    },
+    "gpu": {
+      "path": "kaggle\\forks\\p31-c56-bounded-gpu",
+      "kernel": "clarkkitchen/casmi26-p31-c56-bounded-gpu",
+      "version": 1,
+      "notebook_sha256": "806b4abded56f109b8d92a13cb9b97b87782f15a4ffa5abec748d46871f465a2",
+      "scientific_sha256": "4d7ff3fc9dcdf80bd0278cdeabb37e818a8751fec210cc80063e2c1919de0385",
+      "pin_sha256": "3bb46f0f227d491dad292812f106ccab3ccf559e450558534493015ebff27bc7",
+      "bundle": "outputs\\publish\\c56-bounded-semantic-heads-20261112",
+      "head_manifest_sha256": "eb9b1ed57917a2af509f288d37b259f0acdd7f42a8a8f341a6a109a3ea720cdc",
+      "parent": "P16"
+    }
+  },
+  "C39_and_C51_used_development": true,
+  "C53_panel_freeze_sha256": "4dea520ed6c2629377306e7a841bd0675dd86c065b3b7b2be0db5b633d6dcc49",
+  "C53_quality_read": false,
+  "C13_read": false,
+  "maximum_scored_entries": 2
+}

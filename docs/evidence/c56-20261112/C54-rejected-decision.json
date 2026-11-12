@@ -1,0 +1,50 @@
+{
+  "disposition": "REJECT_C54_PAIR",
+  "old352": {
+    "cpu": {
+      "n": 352,
+      "baseline_MRR": 0.8036176497113997,
+      "candidate_MRR": 0.8028074564881049,
+      "delta": -0.0008101932232948276,
+      "numerator": -16799,
+      "denominator": 20734560,
+      "strictly_positive": false,
+      "nonnegative": false
+    },
+    "gpu": {
+      "n": 352,
+      "baseline_MRR": 0.8036176497113997,
+      "candidate_MRR": 0.8032118055555556,
+      "delta": -0.00040584415584415587,
+      "numerator": -1,
+      "denominator": 2464,
+      "strictly_positive": false,
+      "nonnegative": false
+    }
+  },
+  "old35": {
+    "cpu": {
+      "n": 35,
+      "baseline_MRR": 0.7690476190476191,
+      "candidate_MRR": 0.768452380952381,
+      "delta": -0.0005952380952380953,
+      "numerator": -1,
+      "denominator": 1680,
+      "strictly_positive": false,
+      "nonnegative": false
+    },
+    "gpu": {
+      "n": 35,
+      "baseline_MRR": 0.7690476190476191,
+      "candidate_MRR": 0.7685714285714286,
+      "delta": -0.0004761904761904762,
+      "numerator": -1,
+      "denominator": 2100,
+      "strictly_positive": false,
+      "nonnegative": false
+    }
+  },
+  "new_C53_outcomes_read": false,
+  "C13_read": false,
+  "scoring_submissions": 0
+}

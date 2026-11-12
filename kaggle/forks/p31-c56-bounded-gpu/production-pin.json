@@ -1,0 +1,20 @@
+{
+  "frozen_utc": "2026-11-12T08:01:24.200518+00:00",
+  "trial": "gpu",
+  "parent_variant": "P16",
+  "parent_notebook_sha256": "d6b9c9625ad8fb7d503341c6fd702bd909101d719ca55e400145fb96f2b2af6a",
+  "original_production_path": "kaggle\\forks\\p27-c49-gpu-agreement",
+  "original_production_sha256": "1b40cbdaedc88a04f865785f66189246e18966e011e921139fcace1545847607",
+  "notebook_sha256": "806b4abded56f109b8d92a13cb9b97b87782f15a4ffa5abec748d46871f465a2",
+  "scientific_sha256": "4d7ff3fc9dcdf80bd0278cdeabb37e818a8751fec210cc80063e2c1919de0385",
+  "head_manifest_sha256": "eb9b1ed57917a2af509f288d37b259f0acdd7f42a8a8f341a6a109a3ea720cdc",
+  "builder_sha256": "59373baeba216c42cce63ae7cc071577fff1daada4a914faf4e493065702a573",
+  "new_candidate_stage_cell": 28,
+  "complete_parent_all_cells_exact": true,
+  "protected_parent_prefix": 2,
+  "last_reorderable_parent_rank": 10,
+  "C53_quality_read": false,
+  "C13_read": false,
+  "cloud_run_released": false,
+  "qualified_for_submission": false
+}

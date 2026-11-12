@@ -1,0 +1,75 @@
+{
+  "run_id": "C56",
+  "output": "outputs/local/c56-bounded-semantic-heads-20261112",
+  "cache": "outputs/local/long-frozen-20261107-r1",
+  "frozen_encoders": "outputs/pretrained/frozen-20261107",
+  "used_development": "All352C39plus35C51 are USED; C53andC13 remain untouched.",
+  "auxiliary_source": "outputs/local/c48-auxiliary-holdout-20261112",
+  "parent": "Exact frozen P16 complete pipeline with the tested formate compatibility repair; no parent selection from new-source outcomes.",
+  "candidate_count": {
+    "cpu": 1,
+    "gpu": 1
+  },
+  "rationale": "Direct fingerprint supervision and its bounded serving variant failed USED development. A single bounded semantic proxy passes all387old guards. Refit both semantic heads on the C54clean153401identity boundary before any new-source comparison; the old proxy models overlap C53and cannot qualify.",
+  "fit_boundary": "Exact immutable C54boundary:153401identities/527097acquisitions, all original exclusions plus all482C53query chemistry/raw aliases. No old fitted-head weights reused.",
+  "training_unit": "Equally weighted identity; same mean supported positive acquisition embeddings, metadata and adduct frequencies as C40R1. Recompute all fitting-only input statistics and target center after exclusions.",
+  "cpu": {
+    "kind": "ridge_alignment",
+    "ridge_l2": 0.1,
+    "equal_identity_weight": true,
+    "block_size": 2048
+  },
+  "gpu": {
+    "kind": "bounded_spectral_residual_around_same_cycle_clean_ridge",
+    "hidden": 512,
+    "dropout": 0.1,
+    "maximum_relative_residual_norm": 0.15,
+    "batch_size": 512,
+    "steps": 8000,
+    "learning_rate": 0.0002,
+    "weight_decay": 0.01,
+    "warmup_steps": 200,
+    "checkpoint_interval": 1000,
+    "seed": 202611120,
+    "memory_fraction": 0.4,
+    "minimum_free_ram_gib": 4,
+    "maximum_hours": 2,
+    "loss": "Mean1-cosine(prediction,fitting-only centered unit MoLFormer target). Ridge anchor frozen; zero final residual layer at initialization; only residual weights fitted on the GPU.",
+    "checkpoint_selection": "Only final fixed8000updates; no query-quality checkpoint or architecture search."
+  },
+  "serving": {
+    "same_formula_tail_RRF_weight": 0.2,
+    "offset": 3,
+    "protected_parent_prefix": 2,
+    "last_reorderable_parent_rank": 10,
+    "cpu": "Fixed RRF among positions3through10 within formula.",
+    "gpu": "Require both same-cycle CPU and bounded GPU RRF utilities to support every inversion among positions3through10.",
+    "unsupported": "Exact parent fallback; positions1-2and11-25/member/formula slots fixed."
+  },
+  "admission": {
+    "used": "Preserve original192and352strict complete/incremental gains and nonnegative every original source/mode. Also nonnegative full/incremental all35C51and every C51source; no source filtered.",
+    "new_holdout": "One jointly frozen pair after used guards and production audits: nonnegative full/incremental all482, each source, actual positive/mixed/negative mode; strictly positive all482. All2125acquisitions/447chemistry groups/absent zeros and grouped uncertainty retained. Never revise recipe/cohort after these outcomes.",
+    "C13": "At most once after prior source and production checks, with faithful main/fragment-compatible parent and whole231identity/input-alias masking on P16. Both full and incremental all120/pos60/neg60 nonnegative; no target-instrument proxy claim."
+  },
+  "source_quality_outcomes_read": false,
+  "C39_quality_already_used": true,
+  "C13_read": false,
+  "new_paid_compute": false,
+  "hourly_automation": false,
+  "scoring": {
+    "maximum_new_accepted_entries": 2,
+    "maximum_pending": 1,
+    "order": [
+      "cpu",
+      "actual_numeric_CPU_score",
+      "gpu",
+      "actual_numeric_GPU_score"
+    ],
+    "approval_already_granted": true
+  },
+  "champion_retained": 0.48,
+  "qualification_tier": "Exploratory fixed pair only; no established leaderboard calibration or statistical promotion. Actual scored results alone establish public improvement.",
+  "frozen_utc": "2026-11-12T07:58:59.639092+00:00",
+  "new_holdout": "outputs/local/c53-target-holdout-20261112",
+  "semantic_proxy": "outputs/local/c56-bounded-semantic-proxy-20261112/used-development-rule-results.json"
+}

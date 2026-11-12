@@ -23,7 +23,7 @@ def main():
     assert remote['private'] and not remote['internet'] and remote['version']==1 and remote['remote_source_exact']
     assert remote['source_sha256']==sha(ROOT/'scripts/inspect_c49_remote.py')
     remote_sha=remote['scientific_sha256'];assert remote_sha==pin['scientific_sha256']
-    pattern=r'(c42_.*\.(csv|json|parquet|log)|c42_scores/.*\.(csv|parquet|json|npz)|execution_receipt\.json|p16_execution_receipt\.json|neural_(public|ours)\.parquet|neural_candidate_features\.parquet|effective_query_spectra\.parquet|submission\.csv)$'
+    pattern=r'(c42_.*\.(csv|json|parquet|log)|c42_scores/.*\.(csv|parquet|json|npz|npy)|execution_receipt\.json|p16_execution_receipt\.json|neural_(public|ours)\.parquet|neural_candidate_features\.parquet|effective_query_spectra\.parquet|submission\.csv)$'
     subprocess.run([str(ROOT/'.venv/Scripts/python.exe'),'scripts/fetch_output.py',slot,str(dest),pattern],cwd=ROOT,check=True,timeout=1800)
     r=json.loads((dest/'c42_execution.json').read_text())
     assert r['trial']==trial and not r['is_hidden_rerun'] and r['valid_rows']==400 and r['actual_query_count']==12

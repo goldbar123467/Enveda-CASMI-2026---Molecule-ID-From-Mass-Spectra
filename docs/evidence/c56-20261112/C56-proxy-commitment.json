@@ -1,0 +1,22 @@
+{
+  "frozen_utc": "2026-11-12T07:57:22.573152+00:00",
+  "source_sha256": "c1fc87ba845cf47b8f89ff94212c28b3841516237112b4e697627d2b446b7746",
+  "tail_sha256": "9e863ec569e585caef0c5faab0c0d0e77eb3edbf6630e89b6dfb902e33fe6a80",
+  "original_C54_family_sha256": "f8e17d250a45800adb2f35d2c9451b4aed7ac551e928d9f37c18a4e4cfce37a4",
+  "old352_sha256": "effd10a9c2794afeaef50811981b34e96b5a99140a50432aa43f5048a5c32fc4",
+  "old35_sha256": "2a0363bd82303d22af33b565a7759a12c09da12d5c6bc18bbc50ec16b0467a17",
+  "C54_fingerprint_recipe_rejected": true,
+  "proxy_only": true,
+  "new_C53_overlap_in_old_models": true,
+  "clean_refit_required_before_real_candidate": true,
+  "rationale": "Protect the first2ranks against high-MRR damage and freeze low-reward ranks11to25. Only ranks3to10 are reordered by unchanged same-formula0.20/offset3RRF; GPU inversions additionally require both semantic heads. Reuse old semantic scores as a hypothesis proxy only; those models include newC53chemistry and CANNOT qualify. New clean fitting is required if this proxy passes. One global rule, no source/identity exception, threshold grid or new fit.",
+  "model_weights_unchanged": true,
+  "candidate_count": {
+    "cpu": 1,
+    "gpu": 1
+  },
+  "original352_and_used35_gates_unchanged": true,
+  "all_original_queries_retained": true,
+  "new_C53_outcomes_read": false,
+  "C13_read": false
+}

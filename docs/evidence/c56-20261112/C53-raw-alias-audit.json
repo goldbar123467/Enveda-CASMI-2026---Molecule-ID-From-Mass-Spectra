@@ -1,0 +1,24 @@
+{
+  "completed_utc": "2026-11-12T07:34:50.807091+00:00",
+  "source_sha256": "d704201a667d250c4c82b811c46cad2146ba7f17fe4098da325edf4be0abced1",
+  "protocol_sha256": "2d8e04ab493f08092cdcfff6135ca0b2f16e99fc58f3ae84ee4f25b27cf34366",
+  "queries": 482,
+  "query_acquisitions": 2125,
+  "raw_rows": 2539608,
+  "raw_precursor_candidate_rows": 492917,
+  "match_records": 4250,
+  "query_identities_with_any_signature_match": 482,
+  "matched_raw_keys": 482,
+  "overlap_queries_by_signature": {
+    "FP16_top96": 482,
+    "full_1mDa_1e-4": 482
+  },
+  "files_sha256": {
+    "raw-source-alias-matches.parquet": "1fba9fd3181f9029165baace42d62fd6dedef8546faa0437898f9ac07fffdb78",
+    "additional-raw-alias-quarantine.json": "c64c34957904c4c369c4fd890287a379290a1d1bebaaa696977e6c003d0eadac"
+  },
+  "queries_removed": 0,
+  "C13_labels_read": false,
+  "prediction_outcomes_read": false,
+  "limitation": "Bounded precursor equality signatures; not universal exposure exclusion. Frozen public encoders/parent historical exposure remains known or unknown."
+}

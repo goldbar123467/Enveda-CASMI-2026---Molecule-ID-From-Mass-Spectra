@@ -1,0 +1,78 @@
+{
+  "run_id": "C54",
+  "frozen_utc": "2026-11-12T07:34:51.297054+00:00",
+  "output": "outputs/local/c54-isomer-fingerprint-heads-20261112",
+  "cache": "outputs/local/long-frozen-20261107-r1",
+  "frozen_encoders": "outputs/pretrained/frozen-20261107",
+  "used_development": "All352C39plus35C51queries. Both old auxiliary recipes rejected; these outcomes are now USED. No old trained-head weights reused.",
+  "new_holdout": "outputs/local/c53-target-holdout-20261112",
+  "parent": "Same frozen complete formate-compatible P16 pipeline; exact full and incremental comparisons required.",
+  "candidate_count": {
+    "cpu": 1,
+    "gpu": 1
+  },
+  "rationale": "Five rank-changing within-formula pairs are distinguishable by Morgan2 fingerprints;154365of174051previous fit identities have same-formula peers. Test direct structure-fingerprint supervision and explicit same-formula negatives instead of another serving-only adjustment to generic molecular embeddings.",
+  "fit_boundary": "Preserve every C48 exclusion. Add all482C53identities/formulas/nonempty scaffolds/Morgan2Tanimoto>=.70 and whole original raw/official alias components. Refit input statistics, fingerprint center and both heads only on retained training identities.",
+  "target": {
+    "kind": "Morgan_radius2_2048_binary",
+    "center": "Fitting-only mean fingerprint",
+    "normalization": "Unit centered fingerprint; same deterministic transform for known candidates",
+    "cached_source": "outputs/local/n0/cache/fingerprints.npy",
+    "verify": "All catalogue keys/SMILES/order and deterministic fingerprint witnesses must match before reuse."
+  },
+  "cpu": {
+    "kind": "ridge_alignment_to_centered_unit_Morgan",
+    "ridge_l2": 0.1,
+    "equal_identity_weight": true,
+    "block_size": 2048
+  },
+  "gpu": {
+    "kind": "bounded_spectral_residual_with_same_formula_pair_loss",
+    "hidden": 512,
+    "dropout": 0.1,
+    "maximum_relative_residual_norm": 0.5,
+    "batch_size": 512,
+    "steps": 8000,
+    "learning_rate": 0.0002,
+    "weight_decay": 0.01,
+    "warmup_steps": 200,
+    "checkpoint_interval": 1000,
+    "seed": 202611121,
+    "memory_fraction": 0.4,
+    "minimum_free_ram_gib": 4,
+    "maximum_hours": 2,
+    "pair_weight": 0.5,
+    "pair_margin": 0.05,
+    "pair_temperature": 0.05,
+    "loss": "Mean1-cosine to fixed fingerprint target plus0.5softplus((same-formula-negative-cosine minus true-cosine plus0.05)/0.05), averaged across pairs available in an equal-identity random batch. One random distinct same-formula fitting identity per eligible anchor. Fixed geometry; no query labels used.",
+    "checkpoint_selection": "Final fixed8000updates only; no validation checkpoint or hyperparameter selection."
+  },
+  "serving": {
+    "same_formula_tail_RRF_weight": 0.2,
+    "offset": 3,
+    "protected_parent_prefix": 1,
+    "unsupported": "Exact own-parent fallback for pure-negative/no supported positive acquisitions; group missing deterministic structures retains own parent. No rank1/member/formula-slot changes."
+  },
+  "admission": {
+    "used": "Preserve original192and352strict complete/incremental gains and nonnegative every original source/mode. Also nonnegative full/incremental all35C51and every C51source; no source filtered.",
+    "new_holdout": "One jointly frozen pair after used guards and production audits: nonnegative full/incremental all482, each source, actual positive/mixed/negative mode; strictly positive all482. All2125acquisitions/447chemistry groups/absent zeros and grouped uncertainty retained. Never revise recipe/cohort after these outcomes.",
+    "C13": "At most once after prior source and production checks, with faithful main/fragment-compatible parent and whole231identity/input-alias masking on P16. Both full and incremental all120/pos60/neg60 nonnegative; no target-instrument proxy claim."
+  },
+  "source_quality_outcomes_read": false,
+  "C13_read": false,
+  "scoring": {
+    "maximum_new_accepted_entries": 2,
+    "maximum_pending": 1,
+    "order": [
+      "cpu",
+      "actual_numeric_CPU_score",
+      "gpu",
+      "actual_numeric_GPU_score"
+    ],
+    "approval_already_granted": true
+  },
+  "new_paid_compute": false,
+  "hourly_automation": false,
+  "champion_retained": 0.48,
+  "statistical_promotion": false
+}

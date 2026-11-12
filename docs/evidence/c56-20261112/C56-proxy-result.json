@@ -1,0 +1,295 @@
+{
+  "completed_utc": "2026-11-12T07:57:23.705516+00:00",
+  "source_sha256": "c1fc87ba845cf47b8f89ff94212c28b3841516237112b4e697627d2b446b7746",
+  "commitment_sha256": "e7cad47350d71314a7a20d9fc712b81c3c57e32c26cad28c60f52de687e5149e",
+  "results": {
+    "C39": {
+      "cpu": {
+        "all": {
+          "n": 352,
+          "baseline_MRR": 0.8036176497113997,
+          "candidate_MRR": 0.8041215728715728,
+          "delta": 0.0005039231601731602,
+          "numerator": 149,
+          "denominator": 295680,
+          "strictly_positive": true,
+          "nonnegative": true
+        },
+        "source": {
+          "MassBank2026.11-timsTOF": {
+            "n": 80,
+            "baseline_MRR": 0.4114384920634921,
+            "candidate_MRR": 0.412390873015873,
+            "delta": 0.0009523809523809524,
+            "numerator": 1,
+            "denominator": 1050,
+            "strictly_positive": true,
+            "nonnegative": true
+          },
+          "enveda-180": {
+            "n": 192,
+            "baseline_MRR": 0.9239149305555555,
+            "candidate_MRR": 0.9244419642857142,
+            "delta": 0.0005270337301587301,
+            "numerator": 17,
+            "denominator": 32256,
+            "strictly_positive": true,
+            "nonnegative": true
+          },
+          "enveda-np-examples": {
+            "n": 80,
+            "baseline_MRR": 0.9070833333333334,
+            "candidate_MRR": 0.9070833333333334,
+            "delta": 0.0,
+            "numerator": 0,
+            "denominator": 1,
+            "strictly_positive": false,
+            "nonnegative": true
+          }
+        },
+        "query_mode": {
+          "mixed": {
+            "n": 126,
+            "baseline_MRR": 0.7593915343915344,
+            "candidate_MRR": 0.7598544973544974,
+            "delta": 0.000462962962962963,
+            "numerator": 1,
+            "denominator": 2160,
+            "strictly_positive": true,
+            "nonnegative": true
+          },
+          "negative": {
+            "n": 50,
+            "baseline_MRR": 0.5543333333333333,
+            "candidate_MRR": 0.5543333333333333,
+            "delta": 0.0,
+            "numerator": 0,
+            "denominator": 1,
+            "strictly_positive": false,
+            "nonnegative": true
+          },
+          "positive": {
+            "n": 176,
+            "baseline_MRR": 0.9060989357864357,
+            "candidate_MRR": 0.9067753427128427,
+            "delta": 0.0006764069264069264,
+            "numerator": 5,
+            "denominator": 7392,
+            "strictly_positive": true,
+            "nonnegative": true
+          }
+        },
+        "original_development192": {
+          "n": 192,
+          "baseline_MRR": 0.9239149305555555,
+          "candidate_MRR": 0.9244419642857142,
+          "delta": 0.0005270337301587301,
+          "numerator": 17,
+          "denominator": 32256,
+          "strictly_positive": true,
+          "nonnegative": true
+        },
+        "passed": true,
+        "changed_lists": 249
+      },
+      "gpu": {
+        "all": {
+          "n": 352,
+          "baseline_MRR": 0.8036176497113997,
+          "candidate_MRR": 0.8041215728715728,
+          "delta": 0.0005039231601731602,
+          "numerator": 149,
+          "denominator": 295680,
+          "strictly_positive": true,
+          "nonnegative": true
+        },
+        "source": {
+          "MassBank2026.11-timsTOF": {
+            "n": 80,
+            "baseline_MRR": 0.4114384920634921,
+            "candidate_MRR": 0.412390873015873,
+            "delta": 0.0009523809523809524,
+            "numerator": 1,
+            "denominator": 1050,
+            "strictly_positive": true,
+            "nonnegative": true
+          },
+          "enveda-180": {
+            "n": 192,
+            "baseline_MRR": 0.9239149305555555,
+            "candidate_MRR": 0.9244419642857142,
+            "delta": 0.0005270337301587301,
+            "numerator": 17,
+            "denominator": 32256,
+            "strictly_positive": true,
+            "nonnegative": true
+          },
+          "enveda-np-examples": {
+            "n": 80,
+            "baseline_MRR": 0.9070833333333334,
+            "candidate_MRR": 0.9070833333333334,
+            "delta": 0.0,
+            "numerator": 0,
+            "denominator": 1,
+            "strictly_positive": false,
+            "nonnegative": true
+          }
+        },
+        "query_mode": {
+          "mixed": {
+            "n": 126,
+            "baseline_MRR": 0.7593915343915344,
+            "candidate_MRR": 0.7598544973544974,
+            "delta": 0.000462962962962963,
+            "numerator": 1,
+            "denominator": 2160,
+            "strictly_positive": true,
+            "nonnegative": true
+          },
+          "negative": {
+            "n": 50,
+            "baseline_MRR": 0.5543333333333333,
+            "candidate_MRR": 0.5543333333333333,
+            "delta": 0.0,
+            "numerator": 0,
+            "denominator": 1,
+            "strictly_positive": false,
+            "nonnegative": true
+          },
+          "positive": {
+            "n": 176,
+            "baseline_MRR": 0.9060989357864357,
+            "candidate_MRR": 0.9067753427128427,
+            "delta": 0.0006764069264069264,
+            "numerator": 5,
+            "denominator": 7392,
+            "strictly_positive": true,
+            "nonnegative": true
+          }
+        },
+        "original_development192": {
+          "n": 192,
+          "baseline_MRR": 0.9239149305555555,
+          "candidate_MRR": 0.9244419642857142,
+          "delta": 0.0005270337301587301,
+          "numerator": 17,
+          "denominator": 32256,
+          "strictly_positive": true,
+          "nonnegative": true
+        },
+        "passed": true,
+        "changed_lists": 231
+      }
+    },
+    "C51": {
+      "cpu": {
+        "all": {
+          "n": 35,
+          "baseline_MRR": 0.7690476190476191,
+          "candidate_MRR": 0.7690476190476191,
+          "delta": 0.0,
+          "numerator": 0,
+          "denominator": 1,
+          "strictly_positive": false,
+          "nonnegative": true
+        },
+        "source": {
+          "MassBank2026.11-remaining-ESI": {
+            "n": 5,
+            "baseline_MRR": 0.21666666666666667,
+            "candidate_MRR": 0.21666666666666667,
+            "delta": 0.0,
+            "numerator": 0,
+            "denominator": 1,
+            "strictly_positive": false,
+            "nonnegative": true
+          },
+          "NIST-public-APCI-timsTOF-standards": {
+            "n": 30,
+            "baseline_MRR": 0.8611111111111112,
+            "candidate_MRR": 0.8611111111111112,
+            "delta": 0.0,
+            "numerator": 0,
+            "denominator": 1,
+            "strictly_positive": false,
+            "nonnegative": true
+          }
+        },
+        "query_mode": {
+          "positive": {
+            "n": 35,
+            "baseline_MRR": 0.7690476190476191,
+            "candidate_MRR": 0.7690476190476191,
+            "delta": 0.0,
+            "numerator": 0,
+            "denominator": 1,
+            "strictly_positive": false,
+            "nonnegative": true
+          }
+        },
+        "passed": true,
+        "changed_lists": 28
+      },
+      "gpu": {
+        "all": {
+          "n": 35,
+          "baseline_MRR": 0.7690476190476191,
+          "candidate_MRR": 0.7690476190476191,
+          "delta": 0.0,
+          "numerator": 0,
+          "denominator": 1,
+          "strictly_positive": false,
+          "nonnegative": true
+        },
+        "source": {
+          "MassBank2026.11-remaining-ESI": {
+            "n": 5,
+            "baseline_MRR": 0.21666666666666667,
+            "candidate_MRR": 0.21666666666666667,
+            "delta": 0.0,
+            "numerator": 0,
+            "denominator": 1,
+            "strictly_positive": false,
+            "nonnegative": true
+          },
+          "NIST-public-APCI-timsTOF-standards": {
+            "n": 30,
+            "baseline_MRR": 0.8611111111111112,
+            "candidate_MRR": 0.8611111111111112,
+            "delta": 0.0,
+            "numerator": 0,
+            "denominator": 1,
+            "strictly_positive": false,
+            "nonnegative": true
+          }
+        },
+        "query_mode": {
+          "positive": {
+            "n": 35,
+            "baseline_MRR": 0.7690476190476191,
+            "candidate_MRR": 0.7690476190476191,
+            "delta": 0.0,
+            "numerator": 0,
+            "denominator": 1,
+            "strictly_positive": false,
+            "nonnegative": true
+          }
+        },
+        "passed": true,
+        "changed_lists": 25
+      }
+    }
+  },
+  "passed_pair": true,
+  "new_C53_quality_read": false,
+  "C13_read": false,
+  "files_sha256": {
+    "C39-cpu.csv": "628f3ae723b4b2b9bcd3d36c1369bee6af38bd83618a1ccbdde4de5ea9084924",
+    "C39-gpu.csv": "2dbf2d4db44dca64a252269ccd7d08f7c295489345a21400225d0972a162278d",
+    "C39-used-ranks.npz": "927d0504dd53c19d9b8536bacc0f9dfa7293ae1c1e0e2e3d65f9ada1b5e62ecb",
+    "C51-cpu.csv": "9feebade9b1bab5522312f10aea492afdf43e494aaef140c5e1275c5d37a928f",
+    "C51-gpu.csv": "1f2946f1909b8ff35ca04fa3a1fd070c5487541efd4e223c36b4ccdfd8829a6e",
+    "C51-used-ranks.npz": "86b07eaf1d5fbab428d5a2aa38b65091f2d7efff22ff443b8f74eb0067228386"
+  },
+  "statistical_promotion": false
+}

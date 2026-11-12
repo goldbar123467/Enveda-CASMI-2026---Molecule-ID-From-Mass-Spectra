@@ -1,0 +1,23 @@
+{
+  "completed_utc": "2026-11-12T07:39:07.920867+00:00",
+  "source_sha256": "ed9ab332c1986b2e461870edbe3ace463148a732fe721ee306d793b642361106",
+  "panel_freeze_sha256": "4dea520ed6c2629377306e7a841bd0675dd86c065b3b7b2be0db5b633d6dcc49",
+  "queries": 482,
+  "acquisitions": 2125,
+  "chemistry_groups": 447,
+  "actual_query_modes": {
+    "positive": 307,
+    "mixed": 141,
+    "negative": 34
+  },
+  "all_original_raw_rows_checked": 2539608,
+  "all_usable_acquisitions_retained": true,
+  "all_original_metadata_and_untrimmed_peak_arrays_exact": true,
+  "every679unusable_acquisition_explicitly_accounted": true,
+  "source_identity_formula_scaffold_and_near_chemistry_disjoint": true,
+  "maximum_between_source_Morgan2_Tanimoto": 0.3888888888888889,
+  "query_labels_mounted": false,
+  "prediction_outcomes_read": false,
+  "C13_read": false,
+  "limitation": "Controlled in-corpus holdout. Public parent/encoder historic exposure persists; no independent laboratory or universal spectral novelty claim."
+}

@@ -1,0 +1,37 @@
+{
+  "completed_utc": "2026-11-12T07:33:09.550428+00:00",
+  "source_sha256": "b8158ed697a1df3613a42f8956e0e6863830f468fa5ef95323bdc33a01c76058",
+  "protocol_sha256": "257b106c083d6cf089c134c200d263a15513cace2b3930d25c637487dcc27092",
+  "queries": 482,
+  "acquisitions": 2125,
+  "chemistry_groups": 447,
+  "sources": {
+    "enveda-180": 384,
+    "enveda-np-examples": 98
+  },
+  "actual_query_modes": {
+    "positive": 307,
+    "mixed": 141,
+    "negative": 34
+  },
+  "source_chemistry_groups_disjoint": true,
+  "source_isolation_exclusions": {
+    "NP_source_chemistry_connection": 4
+  },
+  "all_usable_original_acquisitions_retained": true,
+  "original_raw_rows_inspected": 2539608,
+  "excluded_acquisitions": 679,
+  "files_sha256": {
+    "outputs\\local\\c53-target-holdout-20261112\\labels.csv": "c0cb5753d96246a4843bf91c36ec71d6fbc3e700d354faa51b2b128b5ab28b62",
+    "outputs\\local\\c53-target-holdout-20261112\\provenance.csv": "01176800f7425b887f6e0b7a6ef109d167ca64668fdcd436293a1395e0c02643",
+    "outputs\\local\\c53-target-holdout-20261112\\selected-chemistry.parquet": "6bd47e6bd3b3f0c0316126134cf39dbac88b67d21e3e969509c224100b45403a",
+    "outputs\\local\\c53-target-holdout-20261112\\acquisition-exclusions.json": "87dd27672290bd03b73ef24cd40c1c13397aeb1d7f9300170e000c53f343aa1b",
+    "outputs\\publish\\c53-target-holdout-20261112\\validation-queries.parquet": "11bac7fbc8ac4e670893e3ccb6113e2c4d43b191ab76272e00ec5fec66972d28",
+    "outputs\\publish\\c53-target-holdout-20261112\\validation-sample.csv": "9637e58ce69c1712045968436b4fd14d9d09c8bb23c11586521b4e04ff850ee5"
+  },
+  "no_prediction_outcomes_read": true,
+  "C13_labels_read": false,
+  "model_fit_and_reference_masks_remaining": true,
+  "public_parent_and_encoder_exposure_not_erased": true,
+  "qualified_for_scoring": false
+}

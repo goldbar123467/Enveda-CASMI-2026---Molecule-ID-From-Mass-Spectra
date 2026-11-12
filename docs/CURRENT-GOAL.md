@@ -1,3 +1,48 @@
+## Active C56 pair — clean development passes; C57 fresh inference running
+
+The native goal remains active until two actual new scored results.0/2approvals
+used; no repeat approval needed. Preserve0.480and keep old/hourly campaigns off.
+C53andC13quality outcomes remain untouched. Scientific gate hold stays active.
+
+C49 failed the fresh35C51gate (one MassBank truth12to14). C54direct fingerprint
+heads and C55bounded fingerprint serving both failed USED development; preserve
+those rejected families. No C54/P28/P29 cloud previews or scored entries were
+released. All387old queries are now USED, never relabel them fresh.
+
+C53 freezes482new molecules/2125full usable acquisitions/447chemistry groups:
+384target-proportioned Enveda180plus all98remaining eligible NP identities.
+Actual modes307positive/141mixed/34negative. Independent audit verifies all
+original2539608raw rows, every retained spectrum,679explicit unusable acquisition
+exclusions, source-chemistry separation and alias census. Controlled in-corpus
+holdout; public parent/encoder exposure persists, no independent-lab claim.
+
+C56 trains fresh semantic CPU ridge and8000update bounded GPU residual on the
+C54clean153401identity/527097acquisition boundary, excluding ALL new C53chemistry
+and original raw aliases. The prior passing proxy overlapped C53and CANNOT qualify.
+Actual clean C56weights pass every original192/352source/mode guard and all35C51
+guards. Both352deltas+11/26880(+0.000409226); C51zero. Independent fitted-model,
+permutation and exact quality audits pass. This is a small uncertain USED effect.
+
+Frozen actual candidates P30CPU/P31GPU only reorder same-formula parent ranks3to10,
+preserving1-2and11-25. GPU inversions require BOTH same-cycle semantic heads.
+C57full masked core privatev1 pushed08:05UTC and RUNNING; base-only observer
+actualPID26852,deadline16:05UTC, cannot evaluate or submit. CPU P30privatev1 also
+pushed08:05and RUNNING. GPU P31NOTPUSHED; wait for one current job to finish to
+keep at most2concurrent private runs. Never requeue a healthy existing handle.
+
+Next: audit C56production source/local-cloud parity; replay/audit exact frozenP16
+on all482withglobal reference exclusions; freeze both head predictions; evaluate
+C53once under frozen complete/incremental source/mode gates. Only if admissible,
+repair C13legacy main/fragment compatibility (oldv2wasPVonly; query-only scalar
+preflight98old/119patched main masses, one trailing-space token), completeP16with
+whole231identity/input-alias quarantine, then consume C13jointly at most once.
+No old C42/C43 observer may restart or clear the hold. Qualification must bind
+actualP30/P31and full pipeline. Two scored entries use one durable cap2ledger,
+CPUfirst, actual numeric score, thenGPUactual numeric score. No third entry.
+
+Current paths: outputs/local/c56-bounded-semantic-heads-20261112;
+outputs/local/c57-target-validation-20261112; configs/c56-bounded-semantic-pair-20261112.json.
+
 ## Active C51 decision — C49 pair rejected on fresh source
 
 Both frozen C49 candidates failed the prospectively frozen complete and incremental

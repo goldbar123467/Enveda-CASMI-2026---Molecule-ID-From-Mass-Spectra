@@ -1,0 +1,29 @@
+{
+  "completed_utc": "2026-11-12T08:09:08.052214+00:00",
+  "source_sha256": "67cb0fd0a462ea885712bb4c1d638eab67fe11b942c937787e7de91e180ff551",
+  "complete_candidate_freeze_sha256": "4cf0e8d26de18161dab3996248b26bae8b84f3349b5fdfead33d5601ea865d04",
+  "old352_result_sha256": "692284969efb531b8a9ea31fb46b7d0c77825c6932c0cd5acdee39f16da616f3",
+  "used35_result_sha256": "a89f260a98f9182552c7d7378654116741d56fe022df4699e5d3eae136a5d300",
+  "used_queries": 387,
+  "used_acquisitions": 1327,
+  "exact_official_rank_vectors": true,
+  "exact_fraction_arithmetic": true,
+  "all_original_source_and_actual_mode_guards_retained": true,
+  "absent_truths_zero": true,
+  "recovered_displaced_counts_exact": true,
+  "first2_and_beyond10_exact": true,
+  "admissions": {
+    "C39": {
+      "cpu": true,
+      "gpu": true
+    },
+    "C51": {
+      "cpu": true,
+      "gpu": true
+    }
+  },
+  "passed_pair": true,
+  "C53_quality_read": false,
+  "C13_read": false,
+  "statistical_promotion": false
+}
