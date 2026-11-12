@@ -43,13 +43,13 @@ The CPU head is a ridge alignment with L2 0.1. The nonlinear head uses two MLP
 towers and the fixed final checkpoint after 30,000 updates on the RTX 2070.
 Neither hyperparameters nor checkpoint were chosen using C39 or C13 quality.
 C42 seals both models, scaling statistics and runtime code before outcomes.
-Its two fixed recipes use weight 0.2 and RRF offset 3 within same-formula tail
+C42R1 adds runtime verification of the cached molecular structures and embeddings, leaving both models and rankings byte-identical in the engineering fixture. Its two fixed recipes use weight 0.2 and RRF offset 3 within same-formula tail
 groups. Rank one, candidate membership and formula positions remain fixed.
 Pure-negative and unsupported queries retain parent ordering. Overlong
 MoLFormer inputs cause complete formula-group fallback. Candidate embedding
 cache reuse requires exact canonical SMILES.
 
-The private 12-query C41 Kaggle smoke, version 1, failed before producing predictions. The new guard attempted to use an identity array released by Engine2 immediately before index construction. Both actual T4 allocations and encoder preflight passed. C41R2 fixes only the identity lifetime: the array is released immediately after guarded index construction; the existing recovery rules are unchanged. A dedicated execution test covers this ordering. The corrected smoke is being uploaded. It is inference
+The private 12-query C41 Kaggle smoke, version 1, failed before producing predictions. The new guard attempted to use an identity array released by Engine2 immediately before index construction. Both actual T4 allocations and encoder preflight passed. C41R2 fixes only the identity lifetime: the array is released immediately after guarded index construction; the existing recovery rules are unchanged. A dedicated execution test covers this ordering. The corrected C41R2 smoke, version 1, is running. It is inference
 only and consumes no scoring approval. It requires actual dual T4 allocation,
 reference-mask receipts, formate-copy verification and exact unchanged P01
 replay. The finalized 352-query package is built but will launch only after
@@ -73,3 +73,5 @@ Primary provenance: [GNPS documentation](https://ccms-ucsd.github.io/GNPSDocumen
 [Enveda-180](https://github.com/enveda/enveda-180),
 [DreaMS](https://zenodo.org/records/10997887) and
 [MoLFormer](https://huggingface.co/ibm-research/MoLFormer-XL-both-10pct).
+
+Both production sources (P20 CPU and P21 GPU) are frozen before quality. They preserve the P16 parent except the formate source copy and append one required head stage. Source-boundary and synthetic missing-bundle cleanup checks pass. They remain local and unqualified; no production cloud run or scoring entry has been released.

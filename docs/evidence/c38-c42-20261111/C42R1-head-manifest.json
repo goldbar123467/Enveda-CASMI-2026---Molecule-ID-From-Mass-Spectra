@@ -1,0 +1,35 @@
+{
+  "frozen_utc": "2026-11-11T23:56:15.057607+00:00",
+  "run_id": "C42",
+  "fitted_heads": "C40R1",
+  "files": {
+    "cpu-model.npz": "9682e6e5c445ce3705512512c3c11f0b2e4c037a97654719b9f01501b0537695",
+    "gpu-model.pt": "eee1ef0560242dcb9e7bb7c74c2530abd17693e8621066c7dee2aae71ed0e425",
+    "fit-scaling.npz": "3c2f6b3d535562db505c99905e0eaf9fef46ce864cc9afbd319b9a3f32335d3d",
+    "features.py": "a97ad9b3ab3711517864d56e497e1672cb29bb05683c72b52db9f9b0a17b1455",
+    "trial-plan.json": "27b18b18859a06c4082edebac4df92c02bc64c27be512548bef0769ff6f32acb",
+    "c40_gpu_model.py": "4a677fb6cc8633a1e60564d12da2c2d7bfc5d36f77a16e6fc94b5380eded1e74",
+    "crossmodal_heads.py": "a9b737e80409d4b59b8979819033a63db99668e97cbc769123f2e6f4f7408b42",
+    "crossmodal_tail.py": "cb218b241f5d3c278b95bd4b102d2b69e0c45e13f0dc834e261e2c6443c63a5f",
+    "score_c42_crossmodal.py": "59156c2a05005e1ef6e0b179525a24e235ef61482f5f0f03f3413925bee37cb4"
+  },
+  "encoder_bundle_manifest_sha256": "22c5300c20a942fdd346aa26ca5f57237664e6a251e4c48ba18daaace16eac19",
+  "encoders": {
+    "dreams.ts": "35403da79f1410bcbe6bd7aa2aeed00d7844fe64c82d444327349099d4ae53d4",
+    "molformer.ts": "10dadd143be58100cc660a06f057a395961564f68094bcc5839dcca09795c07d",
+    "tokenizer.json": "3df1f2219653c44fac9fa03b7f788b372eb2544ecc176737bb9aca8411b471a5"
+  },
+  "boundary_audit_sha256": "e6187ea53c499c58a9724b7c5940b2179d50831859027298c05137088609e19d",
+  "fit_boundary_sha256": "e65fab14ca6936fb0e423cee66b0e8bd3e3cd82eedd7d7f509166a3a6865f3c8",
+  "feature_freeze_sha256": "52b175c134584c3a503bd642d2d8ac9cf519578c08c8a9b0c30964ecc1aafebc",
+  "fitting_identities": 174328,
+  "fitting_acquisitions": 600815,
+  "spectrum_preprocessing": "Stable intensity/original-index cutoff, top100+precursor1.1; float16 stored embeddings.",
+  "candidate_cache": "Exact canonical SMILES only; over202token candidates ineligible; complete formula-group fallback.",
+  "CPU_trial": "CPU-fitted ridge head over frozen GPU encoders and complete GPU P01 parent; not CPU-only execution.",
+  "GPU_trial": "Fresh nonlinear GPU head, fixed final30000updates; same frozen encoders and parent.",
+  "query_features": "Mean of all supported positive acquisitions; pure-negative/unsupported parent fallback.",
+  "quality_read": false,
+  "C13_read": false,
+  "qualified_for_submission": false
+}

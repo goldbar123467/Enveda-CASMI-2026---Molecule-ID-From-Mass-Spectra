@@ -19,7 +19,7 @@ def main():
     receipt=json.loads((out/'score-receipt.json').read_text())
     for n,h in receipt['files_sha256'].items():assert sha(out/n)==h,n
     assert receipt['baseline_sha256']==sha(cloud/'c41_p01.csv')
-    bundle=ROOT/'outputs/publish/c42-crossmodal-heads-20261111'
+    bundle=ROOT/'outputs/publish/c42r1-crossmodal-heads-20261111'
     assert receipt['head_manifest_sha256']==sha(bundle/'head-manifest.json')
     assert receipt['source_sha256']==json.loads((bundle/'head-manifest.json').read_text())['files']['score_c42_crossmodal.py']
     plan=json.loads((bundle/'trial-plan.json').read_text())

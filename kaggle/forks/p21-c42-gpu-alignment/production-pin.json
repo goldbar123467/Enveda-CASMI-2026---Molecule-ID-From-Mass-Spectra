@@ -1,0 +1,24 @@
+{
+  "frozen_utc": "2026-11-11T23:57:48.088572+00:00",
+  "trial": "gpu",
+  "parent_notebook_sha256": "d6b9c9625ad8fb7d503341c6fd702bd909101d719ca55e400145fb96f2b2af6a",
+  "notebook_sha256": "aac48eb510ab298103546ebbace67b4fe1678528d0d6438c63b800af60b2b6c1",
+  "scientific_sha256": "52e9b698fe007f90614f46579b1b8d5c1c6a6f6b30d3882201b2a585b24996c5",
+  "head_manifest_sha256": "a534d8654ce8d407b6cee9b1c9b6fa7c2e8231dde84e6a232957d097fee8bed6",
+  "builder_sha256": "ce5e0278b5bbe9f41c7d2842ec47302870d47f8f751e0f3cb8d35cdb620f28e7",
+  "parent_outer_changed_cells": [
+    12
+  ],
+  "parent_frozen_changed_cells": [
+    27
+  ],
+  "parent_only_change": "Legacy scalar formate alias source adapter",
+  "new_candidate_stage_cell": 28,
+  "legacy_helper_sha256": "b8524a204f640d42b2a20a9abe57eac6e8e53214cd554fd358f0b7e1fdb3322a",
+  "compat_source_sha256": "eec91fbef5c8683de63c32ce94d39f95f30f950558b1dd484cf1772617ab7f78",
+  "scoring_submission": false,
+  "quality_metrics_read": false,
+  "C13_read": false,
+  "mandatory_real_smoke": true,
+  "qualified_for_submission": false
+}

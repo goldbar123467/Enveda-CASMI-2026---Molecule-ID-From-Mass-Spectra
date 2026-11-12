@@ -6,7 +6,7 @@ from precision_cache import ROOT,sha,write
 
 def main():
     source=ROOT/'outputs/local/c40r1-crossmodal-heads-20261111'
-    out=ROOT/'outputs/publish/c42-crossmodal-heads-20261111'
+    out=ROOT/'outputs/publish/c42r1-crossmodal-heads-20261111'
     assert json.loads((ROOT/'.local/c38-active-goal.json').read_text())['active']
     assert not (out/'head-manifest.json').exists()
     final=json.loads((source/'original-row-finalization-audit.json').read_text())
@@ -40,7 +40,7 @@ def main():
         query_features='Mean of all supported positive acquisitions; pure-negative/unsupported parent fallback.',
         quality_read=False,C13_read=False,qualified_for_submission=False)
     write(out/'head-manifest.json',manifest)
-    write(out/'dataset-metadata.json',dict(id='clarkkitchen/casmi26-c42-crossmodal-heads-20261111',
+    write(out/'dataset-metadata.json',dict(id='clarkkitchen/casmi26-c42r1-crossmodal-heads-20261111',
         title='CASMI26 C42 CPU and GPU alignment heads',licenses=[dict(name='CC-BY-NC-4.0')]))
     print('SEALED C42',sha(out/'head-manifest.json'),flush=True)
 

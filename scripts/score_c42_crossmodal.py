@@ -50,6 +50,9 @@ def score(heads,encoders,baseline,queries,output,device='cuda',only='both'):
     assert not (output/'score-receipt.json').exists(),'Scoring output is immutable'
     manifest=json.loads((heads/'head-manifest.json').read_text())
     for n,h in manifest['files'].items():assert sha(heads/n)==h,n
+    assert sha(encoders/'frozen-manifest.json')==manifest['encoder_bundle_manifest_sha256']
+    encoder_manifest=json.loads((encoders/'frozen-manifest.json').read_text())
+    for n in ['molecules.parquet','molecule_embeddings.npy']:assert sha(encoders/n)==encoder_manifest['files'][n],n
     for n,h in manifest['encoders'].items():assert sha(encoders/n)==h,n
     sys.path.insert(0,str(heads));import features
     parent=pd.read_csv(baseline,dtype=str,keep_default_na=False)

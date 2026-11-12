@@ -1,0 +1,28 @@
+{
+  "completed_utc": "2026-11-11T23:59:28.205968+00:00",
+  "source_sha256": "4dcacd32076bd17f996bc4f47a0190f0ac7b8a112969b1812006ca44f217df31",
+  "head_manifest_sha256": "a534d8654ce8d407b6cee9b1c9b6fa7c2e8231dde84e6a232957d097fee8bed6",
+  "trials": {
+    "cpu": {
+      "notebook_sha256": "a61dc4b838db45a30da5da90f77892a330a1e5a583ed75afbd9c30d23c14953a",
+      "scientific_sha256": "9056c2fe61cc974939ffa2262e9ac3c42922effadd5988b5e07a3ad565c91224",
+      "parent_only_formate_source_copy": true,
+      "other_parent_cells_exact": true,
+      "no_validation_masks_mounted": true,
+      "complete_stage_preflight_cleanup_passed": true,
+      "synthetic_only": true
+    },
+    "gpu": {
+      "notebook_sha256": "aac48eb510ab298103546ebbace67b4fe1678528d0d6438c63b800af60b2b6c1",
+      "scientific_sha256": "52e9b698fe007f90614f46579b1b8d5c1c6a6f6b30d3882201b2a585b24996c5",
+      "parent_only_formate_source_copy": true,
+      "other_parent_cells_exact": true,
+      "no_validation_masks_mounted": true,
+      "complete_stage_preflight_cleanup_passed": true,
+      "synthetic_only": true
+    }
+  },
+  "quality_metrics_read": false,
+  "C13_read": false,
+  "cloud_smoke_still_required": true
+}
